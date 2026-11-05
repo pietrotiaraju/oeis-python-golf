@@ -1,0 +1,6 @@
+{
+  "name": "Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of permutations s of [0, ..., n-1] such that s(i) != i and s(i) != i+1 (mod n) for all i.",
+  "offset": 0,
+  "min_terms": 451,
+  "timeout": 60
+}
