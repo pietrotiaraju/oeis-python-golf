@@ -179,6 +179,7 @@ sequence for the code and how it works.
 | [A000169](seq/A000xxx/A000169/) | Number of labeled rooted trees with n nodes: n^(n-1). | **29** | 100 |
 | [A000170](seq/A000xxx/A000170/) | Number of ways of placing n nonattacking queens on an n X n board. | **122** | 13 |
 | [A000172](seq/A000xxx/A000172/) | The Franel number a(n) = Sum\_{k = 0..n} binomial(n,k)^3. | **68** | 1001 |
+| [A000174](seq/A000xxx/A000174/) | Number of partitions of n into 5 squares. | **89** | 1000 |
 | [A000175](seq/A000xxx/A000175/) | Related to zeros of Bessel function. | **119** | 100 |
 | [A000178](seq/A000xxx/A000178/) | Superfactorials: product of first n factorials. | **38** | 47 |
 | [A000179](seq/A000xxx/A000179/) | Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of… | **62** | 451 |
