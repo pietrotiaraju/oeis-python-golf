@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of Boolean functions of n variables under action of AG(n,2).",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}
