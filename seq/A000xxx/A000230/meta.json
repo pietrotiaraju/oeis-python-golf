@@ -1,0 +1,6 @@
+{
+  "name": "a(0)=2; for n>=1, a(n) = smallest prime p such that there is a gap of exactly 2n between p and next prime, or -1 if no such prime exists.",
+  "offset": 0,
+  "min_terms": 24,
+  "timeout": 60
+}
