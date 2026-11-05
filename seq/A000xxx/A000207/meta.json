@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent ways of dissecting a regular (n+2)-gon into n triangles by n-1 non-intersecting diagonals under rotations and reflections; also the number of (unlabeled) maximal outerplanar graphs on n+2 vertices.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
