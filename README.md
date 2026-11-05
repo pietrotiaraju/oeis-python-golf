@@ -231,6 +231,7 @@ sequence for the code and how it works.
 | [A000221](seq/A000xxx/A000221/) | Take sum of squares of digits of previous term; start with 5. | **49** | 100 |
 | [A000222](seq/A000xxx/A000222/) | a(n) = A058057(n,n-2). | **66** | 151 |
 | [A000223](seq/A000xxx/A000223/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)Pi\*n^(3/2),… | **293** | 20 |
+| [A000225](seq/A000xxx/A000225/) | a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that… | **25** | 1001 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
