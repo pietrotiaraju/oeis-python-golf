@@ -1,0 +1,6 @@
+{
+  "name": "Unitary-sociable numbers (smallest member of each cycle).",
+  "offset": 1,
+  "min_terms": 3,
+  "timeout": 60
+}
