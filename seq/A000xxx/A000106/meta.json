@@ -1,0 +1,6 @@
+{
+  "name": "2nd power of rooted tree enumerator; number of linear forests of 2 rooted trees.",
+  "offset": 2,
+  "min_terms": 999,
+  "timeout": 60
+}
