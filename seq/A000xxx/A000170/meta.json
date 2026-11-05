@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of placing n nonattacking queens on an n X n board.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
