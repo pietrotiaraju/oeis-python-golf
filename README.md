@@ -194,7 +194,7 @@ sequence for the code and how it works.
 | [A000184](seq/A000xxx/A000184/) | Number of genus 0 rooted maps with 3 faces with n vertices. | **48** | 499 |
 | [A000185](seq/A000xxx/A000185/) | a(n) = A058087(n,n-5). | **113** | 246 |
 | [A000186](seq/A000xxx/A000186/) | Number of 3 X n Latin rectangles in which the first row is in order. | **78** | 208 |
-| [A000187](seq/A000xxx/A000187/) | Generalized Euler numbers, c(5,n). | **93** | 251 |
+| [A000187](seq/A000xxx/A000187/) | Generalized Euler numbers, c(5,n). | **88** | 251 |
 | [A000188](seq/A000xxx/A000188/) | (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of… | **52** | 10000 |
 | [A000189](seq/A000xxx/A000189/) | Number of solutions to x^3 == 0 (mod n). | **53** | 10000 |
 | [A000190](seq/A000xxx/A000190/) | Number of solutions to x^4 == 0 (mod n). | **53** | 10000 |
