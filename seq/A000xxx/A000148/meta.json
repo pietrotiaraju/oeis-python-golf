@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions into non-integral powers.",
+  "offset": 2,
+  "min_terms": 40,
+  "timeout": 60
+}
