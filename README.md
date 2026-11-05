@@ -133,6 +133,7 @@ sequence for the code and how it works.
 | [A000122](seq/A000xxx/A000122/) | Expansion of Jacobi theta function theta\_3(x) = Sum\_{m =-oo..oo}… | **40** | 10001 |
 | [A000123](seq/A000xxx/A000123/) | Number of binary partitions: number of partitions of 2n into powers… | **40** | 65537 |
 | [A000124](seq/A000xxx/A000124/) | Central polygonal numbers (the Lazy Caterer's sequence): n(n+1)/2 +… | **31** | 1001 |
+| [A000125](seq/A000xxx/A000125/) | Cake numbers: maximal number of pieces resulting from n planar cuts… | **37** | 1001 |
 | [A000126](seq/A000xxx/A000126/) | A nonlinear binomial sum. | **40** | 201 |
 | [A000127](seq/A000xxx/A000127/) | Maximal number of regions obtained by joining n points around a… | **41** | 1000 |
 | [A000128](seq/A000xxx/A000128/) | A nonlinear binomial sum. | **47** | 201 |
