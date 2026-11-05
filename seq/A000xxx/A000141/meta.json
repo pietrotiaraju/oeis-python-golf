@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of writing n as a sum of 6 squares.",
+  "offset": 0,
+  "min_terms": 100,
+  "timeout": 60
+}
