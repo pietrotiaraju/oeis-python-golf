@@ -217,6 +217,7 @@ sequence for the code and how it works.
 | [A000207](seq/A000xxx/A000207/) | Number of inequivalent ways of dissecting a regular (n+2)-gon into n… | **94** | 200 |
 | [A000208](seq/A000xxx/A000208/) | Number of even sequences with period 2n. | **107** | 1001 |
 | [A000210](seq/A000xxx/A000210/) | A Beatty sequence: floor(n\*(e-1)). | **44** | 1000 |
+| [A000211](seq/A000xxx/A000211/) | a(n) = a(n-1) + a(n-2) - 2, a(0) = 4, a(1) = 3. | **35** | 501 |
 | [A000212](seq/A000xxx/A000212/) | a(n) = floor(n^2/3). | **29** | 5001 |
 | [A000215](seq/A000xxx/A000215/) | Fermat numbers: a(n) = 2^(2^n) + 1. | **26** | 12 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
