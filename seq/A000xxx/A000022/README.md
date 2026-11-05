@@ -5,11 +5,11 @@
 
 Offset 0: 0, 1, 0, 1, 1, 2, 2, 6, 9, 20, 37, 86, 181, 422, 943, 2223, …
 
-### Python 3 — 247 bytes
+### Python 3 — 200 bytes
 
 ```python
-n=X=0
-while[print(X)]:n+=1;B=1<<9*n+9;M=B**-~n;V=[1]*5*n;S=0;exec('a=V[1];V[:n+1]=[1+B**k*((V[k]**3+3*V[k]*V[2*k]+2*V[3*k])%M//6)for k in range(n+1)];S+=(V[1]-a)*(V[1]-1);'*-~n);f,g,t,q=V[1:5];X=(B*((f**4+6*f*f*g+8*f*t+3*g*g+6*q)%M//24)-S)%M//B**n
+m=1
+while B:=4**m:V=P=[1]*4*m;print((-sum(V[1]*(V[1]-(V:=[1+B**k*(V[k]**3+3*V[k]*V[2*k]+2*V[3*k])%B**m//6for k in range(m)]+P)[1])for _ in P)-B//8*((V[1]**2+V[2])**2-2*V[2]**2-2*V[4]))//B**~-m%B);m+=1
 ```
 
 **How it works**
@@ -17,56 +17,77 @@ while[print(X)]:n+=1;B=1<<9*n+9;M=B**-~n;V=[1]*5*n;S=0;exec('a=V[1];V[:n+1]=[1+B
 The count is over carbon skeletons (trees with all degrees ≤ 4) whose
 center is a single atom. It follows the method of Rains and Sloane,
 [On Cayley's enumeration of alkanes](https://arxiv.org/abs/math/0207176),
-the one behind the Mathematica program on the entry:
+the one behind the Mathematica program on the entry, and then rewrites
+their formula so that it needs no F(x³) and no division by 24:
 
 - Let T_h(x) count rooted ternary trees of height ≤ h, the empty tree
   included, by number of nodes. Then T₋₁ = 1 and
   **T_h = 1 + x·S₃(T_{h−1})**, where S₃(F) = (F(x)³ + 3F(x)F(x²) + 2F(x³))/6
-  is the cycle index of S₃ (three unordered branches).
-- A centered tree, rooted at its center, is a carbon with four unordered
-  branches of which at least two reach the greatest height h. All carbons
-  with four branches give x·S₄(T), with S₄(F) = (F⁴ + 6F²F(x²) + 8F·F(x³)
-  + 3F(x²)² + 6F(x⁴))/24. The bad ones have one branch of height exactly h,
-  counted by T_h − T_{h−1}, and three below it, counted by S₃(T_{h−1}) =
-  (T_h − 1)/x. So
+  is the cycle index of S₃ (three unordered branches). Write T = T_∞ and
+  E_h = T_h − T_{h−1} (trees of height exactly h).
+- Rooted at its center, a centered tree is a carbon with four unordered
+  branches of which at least two reach the greatest height. All carbons
+  with four branches give x·S₄(T); the bad ones have one branch of height
+  exactly h and three below it, so
+  a(x) = x·S₄(T) − Σ_h E_h·(T_h − 1).
+- Newton's identities 4S₄ = F·S₃ + F(x²)S₂ + F(x³)S₁ + F(x⁴) and
+  3S₃ = F·S₂ + F(x²)F + F(x³), together with x·S₃(T) = T − 1, eliminate
+  F(x³): **x·S₄(T) = T(T − 1) − x·Λ²(S₂(T))**, where S₂(F) = (F² + F(x²))/2
+  and Λ²(G) = (G² − G(x²))/2 counts pairs of distinct items.
+- Since T² − 1 = Σ_h E_h(T_h + T_{h−1}), the two parts combine into
 
-  **a(x) = x·S₄(T) − Σ_{h≥0} (T_h − T_{h−1})(T_h − 1),**
+  **a(x) = Σ_h E_h·T_{h−1} − x·Λ²(S₂(T)),**
 
-  which needs no separate cycle index for the subtracted part.
-- Power series are packed into big integers (Kronecker substitution): x
-  becomes B = 2^(9n+9), wide enough for every coefficient up to degree n,
-  and `%M` with M = B^(n+1) cuts the series at xⁿ. `V[k]` holds
-  T_h(x^k), so `V[2*k]` and `V[3*k]` are F(x²) and F(x³) without any
-  substitution; entries with k > n stay 1, which is right modulo x^(n+1).
-- The divisions by 6 and 24 come after `%M`: the cut series has
-  coefficients divisible by 6 (or 24), while the digits above xⁿ are
-  incomplete and would spoil the floor division.
-- `exec('…'*-~n)` runs the update n + 1 times (h = 0…n, more than the
-  height of any tree with n atoms), and `S` collects the subtracted sum.
-  `a` keeps the old T_h(x) for the difference.
-- The final `B*` multiplies by x, `-S` subtracts, and `%M//B**n` reads off
-  the coefficient of xⁿ. Everything is recomputed from scratch for each n.
-- `while[print(X)]:` prints in the loop condition: `[None]` is a non-empty
-  list, so it is true. Printing `X` before computing it gives a(0) = 0.
+  and 8Λ²(S₂(T)) = (T² + T(x²))² − 2T(x²)² − 2T(x⁴).
+- Power series are packed into big integers in base B = 4^m, with
+  m = n + 1. `V[k]` holds T_h(x^k), so `V[2*k]` and `V[3*k]` are F(x²) and
+  F(x³) without any substitution; entries with k ≥ m stay 1, which is right
+  modulo x^m (that is the padding `+P`).
+- The shift by x^k comes before the cut: `B**k*(…)%B**m` keeps exactly the
+  digits of degree ≤ n, all multiples of 6, so the floor division by 6 is
+  exact. The update leaves V[0] as junk, but only V[0] reads V[0].
+- `V[1]*(V[1]-(V:=…)[1])` is T_{h−1}·(T_{h−1} − T_h) = −E_h·T_{h−1}: it reads
+  the old T_{h−1}(x) twice, then builds the new list. The generator runs
+  4m times, more than the height of any tree with n atoms.
+- `B//8` is x/8. The coefficients of degree ≤ n of the bracket are
+  multiples of 8, so B/8 times it agrees with x·Λ² up to xⁿ, and the
+  digits above only add multiples of B^(n+1). For n = 0, `B//8` is 0,
+  which is right because the term starts at x¹.
+- `//B**~-m%B` reads off the coefficient of xⁿ. The sum and the product
+  are exact values of polynomials at B, so the only digits that have to
+  fit are those of the answer.
+
+**Why the base is wide enough**
+
+A tree whose nodes have at most 3 children (the root at most 4) is fixed
+by its child counts in preorder, so there are at most 4^(j−1) rooted
+ternary trees with j nodes and at most 5·4^(j−2) centered trees with
+j ≥ 2 atoms. The digits of degree ≤ n − k of the S₃ numerator are at most
+6·4^(n−1), and a(n) is at most 5·4^(n−2); both are below B = 4^(n+1).
+Carries from higher digits only move up.
 
 **Golf tricks**
 
-- `-~n` is n + 1, so `B**-~n` and `'…'*-~n` need no parentheses.
-- `V=[1]*5*n` is long enough for index 3n and for `V[1:5]` when n = 1.
-- The slice assignment `V[:n+1]=[…]` updates T_h(x^k) for k ≤ n in place.
+- Looping over m = n + 1 makes the cut `B**m`, the range `range(m)` and
+  the padding `[1]*4*m` short, and n = 0 an ordinary case.
+- `while B:=4**m:` assigns B in the loop condition.
+- The sum comes first in the printed expression, so `V[1]`, `V[2]` and
+  `V[4]` after it already hold the final T(x), T(x²) and T(x⁴): no
+  variables for them.
+- `[1]*4*m` (not 3) keeps `V[4]` in range when n = 0.
 
 **Notes**
 
-- The program prints 40 terms in about 16 s and 49 in a minute; the bar is
+- The program prints 58 terms in a minute on a desktop PC; the bar is
   40 terms in 60 s. The b-file has 61 terms.
-- Coefficients of T grow like 2.82ⁿ and those of the products stay far below
-  2^(9n+9), so B is wide enough for every n.
+- The same packing gives [A000200](../A000200/) (bicentered).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 247 | first entry |
+| 2026-11-05 | Python 3 | 200 | shift before the cut, base 4^(n+1), a = ΣE_h·T_{h−1} − x·Λ²(S₂(T)) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
