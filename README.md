@@ -13,7 +13,7 @@ sequence for the code and how it works.
 <!-- records:start -->
 | Sequence | Name | Python 3 | Python 3 + sympy | Terms checked |
 |---|---|---|---|---|
-| [A000001](seq/A000001/) | Number of groups of order n. | **260** | — | 6 |
+| [A000001](seq/A000001/) | Number of groups of order n. | **256** | — | 6 |
 | [A000002](seq/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | — | 10502 |
 | [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **147** | — | 300 |
 | [A000004](seq/A000004/) | The zero sequence. | **16** | — | 1001 |
@@ -22,6 +22,7 @@ sequence for the code and how it works.
 | [A000007](seq/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | — | 1001 |
 | [A000008](seq/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
 | [A000009](seq/A000009/) | Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n… | **68** | — | 500 |
+| [A000010](seq/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | 67 | **52** | 500 |
 | [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |

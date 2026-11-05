@@ -1,0 +1,6 @@
+{
+  "name": "Euler totient function phi(n): count numbers <= n and prime to n.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}

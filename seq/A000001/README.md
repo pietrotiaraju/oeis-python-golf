@@ -9,12 +9,12 @@ There is no formula for a(n) in general; the b-file values (n ≤ 2047) come
 from group-theory software and its library of small groups. A short program
 can only enumerate group tables, so it gets a handful of terms.
 
-### Python 3 — 260 bytes
+### Python 3 — 256 bytes
 
 ```python
 from itertools import*
 print(0);n=1;Q=product
-while 1:P=[*permutations(R:=range(n))];k=len(P)//n;print(sum(all(p[t[a][b]]==t[p[a]][p[b]]for a in R for b in R)for t in Q(*batched(P,k))if all(t[t[a][b]][c]==t[a][t[b][c]]for a,b,c in Q(R,R,R))for p in P)//k);n+=1
+while 1:P=[*permutations(R:=range(n))];k=len(P)//n;print(sum(all(p[t[a][b]]==t[p[a]][p[b]]for a,b in Q(R,R))for t in Q(*batched(P,k))if all(t[t[a][b]][c]==t[a][t[b][c]]for a,b,c in Q(R,R,R))for p in P)//k);n+=1
 ```
 
 **How it works**
@@ -42,13 +42,16 @@ while 1:P=[*permutations(R:=range(n))];k=len(P)//n;print(sum(all(p[t[a][b]]==t[p
 - Other shapes tried: a set of canonical relabelled tables (276 bytes); the
   row filter `[q for q in P if q[0]==x]` instead of `batched` (273); all
   (n!)ⁿ row tuples plus a column check (269, but it stops at a(4) and misses
-  the bar).
+  the bar). Folding both checks into one `all` over the triples (235 bytes)
+  is correct but tests associativity once per pair (table, p): about
+  9.6·10⁸ pairs for n = 5, so it stops at a(4) and misses the bar.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 260 | first entry |
+| 2026-11-05 | Python 3 | 256 | `for a,b in Q(R,R)` (pietrotiaraju) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
