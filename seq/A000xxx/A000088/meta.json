@@ -1,0 +1,6 @@
+{
+  "name": "Number of simple graphs on n unlabeled nodes.",
+  "offset": 0,
+  "min_terms": 40,
+  "timeout": 60
+}
