@@ -1,0 +1,6 @@
+{
+  "name": "Nearest integer to e^n.",
+  "offset": 0,
+  "min_terms": 15,
+  "timeout": 60
+}
