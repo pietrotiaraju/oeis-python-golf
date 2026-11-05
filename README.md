@@ -29,13 +29,13 @@ sequence for the code and how it works.
 | [A000014](seq/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
 | [A000015](seq/A000015/) | Smallest prime power >= n. | **83** | — | 10000 |
 | [A000016](seq/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **97** | — | 3335 |
-| [A000018](seq/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **103** | — | 24 |
+| [A000018](seq/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **101** | — | 24 |
 | [A000019](seq/A000019/) | Number of primitive permutation groups of degree n. | **469** | — | 5 |
 | [A000020](seq/A000020/) | Number of primitive polynomials of degree n over GF(2) (version 2). | 83 | **66** | 24 |
-| [A000021](seq/A000021/) | Number of positive integers <= 2^n of form x^2 + 12 y^2. | **103** | — | 24 |
+| [A000021](seq/A000021/) | Number of positive integers <= 2^n of form x^2 + 12 y^2. | **101** | — | 24 |
 | [A000022](seq/A000022/) | Number of centered hydrocarbons with n atoms. | **247** | — | 40 |
 | [A000023](seq/A000023/) | a(n) is the number of permutations on {1,2,...,n} with an even number… | **40** | — | 251 |
-| [A000024](seq/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **103** | — | 24 |
+| [A000024](seq/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **101** | — | 24 |
 | [A000025](seq/A000025/) | Coefficients of the 3rd-order mock theta function f(q). | **119** | — | 400 |
 | [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |

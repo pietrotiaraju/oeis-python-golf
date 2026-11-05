@@ -8,18 +8,23 @@ Offset 0: 1, 1, 2, 2, 4, 8, 13, 25, 44, 83, 152, 286, 538, 1020, 1942, …
 ([A000017](https://oeis.org/A000017) is marked erroneous on the OEIS and is
 skipped.)
 
-### Python 3 — 103 bytes
+### Python 3 — 101 bytes
 
 ```python
 n=0
-while[print(len({v for x in range(2<<n//2)for y in range(1<<n//2)if(v:=x*x+16*y*y)<=2**n})-1)]:n+=1
+while[print(len([r:=range(2<<n//2)]and{v for x in r for y in r if(v:=x*x+16*y*y)<=2**n})-1)]:n+=1
 ```
 
 **How it works**
 
-- Signs do not matter, so x, y ≥ 0. Any value up to 2ⁿ has x ≤ 2^(n/2) and
-  y ≤ 2^(n/2)/4, and `2<<n//2` and `1<<n//2` are above those bounds for
-  every n.
+- Signs do not matter, so x, y ≥ 0. Any value up to 2ⁿ has x, y ≤ 2^(n/2),
+  and `range(2<<n//2)` goes past that bound for every n, so one range
+  serves both variables.
+- A walrus may not appear in a comprehension's iterable, so
+  `[r:=range(2<<n//2)]and{…}` names the range in a one-element list just
+  before the set. The list is truthy, so `and` returns the set. Writing
+  the range once is 2 bytes shorter than two separate ranges, at the cost
+  of twice the pairs.
 - The set comprehension keeps each value ≤ 2ⁿ once, however many ways it can
   be written. The walrus in the condition names the value so it is computed
   only once.
@@ -28,17 +33,19 @@ while[print(len({v for x in range(2<<n//2)for y in range(1<<n//2)if(v:=x*x+16*y*
 
 **Notes**
 
-- Term n costs about 2ⁿ pairs and the set grows to a(n) elements, so the
-  program prints a(0)…a(25) in a minute. The bar is 24 terms in 60 s; the
-  b-file goes to n = 45, far beyond any enumeration.
-- With `range(2<<n//2)` for y as well (four times the pairs) it is 104 bytes
-  with a `0<v` test, and one term slower.
+- Term n costs about 2ⁿ⁺¹ pairs and the set grows to a(n) elements, so the
+  program prints a(0)…a(23) in about 18 s and a(24) at about 42 s. The bar
+  is 24 terms in 60 s; the b-file goes to n = 45, far beyond any
+  enumeration.
+- The 103-byte version used `range(1<<n//2)` for y (half the pairs, one
+  more term per minute).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 103 | first entry |
+| 2026-11-05 | Python 3 | 101 | one range for x and y, named by a walrus before the set |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
