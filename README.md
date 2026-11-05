@@ -164,6 +164,7 @@ sequence for the code and how it works.
 | [A000153](seq/A000xxx/A000153/) | a(n) = n\*a(n-1) + (n-2)\*a(n-2), with a(0) = 0, a(1) = 1. | **48** | 251 |
 | [A000155](seq/A000xxx/A000155/) | Nearest integer to modified Bessel function K\_n(1). | **50** | 201 |
 | [A000156](seq/A000xxx/A000156/) | Number of ways of writing n as a sum of 24 squares. | **76** | 45 |
+| [A000158](seq/A000xxx/A000158/) | Number of partitions into non-integral powers. | **172** | 35 |
 | [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **108** | 248 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
