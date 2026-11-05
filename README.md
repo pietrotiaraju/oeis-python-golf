@@ -51,6 +51,7 @@ sequence for the code and how it works.
 | [A000037](seq/A000xxx/A000037/) | Numbers that are not squares (or, the nonsquares). | **39** | — | 10000 |
 | [A000038](seq/A000xxx/A000038/) | Twice A000007. | **23** | — | 10001 |
 | [A000039](seq/A000xxx/A000039/) | Coefficient of q^(2n) in the series expansion of Ramanujan's mock… | **96** | — | 200 |
+| [A000040](seq/A000xxx/A000040/) | The prime numbers. | **40** | — | 10000 |
 | [A000041](seq/A000xxx/A000041/) | a(n) is the number of partitions of n (the partition numbers). | 79 | **54** | 5000 |
 | [A000042](seq/A000xxx/A000042/) | Unary representation of natural numbers. | **28** | — | 1000 |
 | [A000044](seq/A000xxx/A000044/) | Dying rabbits: a(0) = 1; for 1 <= n <= 12, a(n) = Fibonacci(n); for n… | **42** | — | 1001 |
