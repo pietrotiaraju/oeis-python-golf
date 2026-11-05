@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = numerator((n^2 + 3*n + 2)/n^3).",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
