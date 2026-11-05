@@ -59,6 +59,7 @@ sequence for the code and how it works.
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **88** | — | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | — | 101 |
+| [A000058](seq/A000xxx/A000058/) | Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(0) = 2. | **28** | — | 13 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
