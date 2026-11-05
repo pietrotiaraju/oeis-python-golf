@@ -1,0 +1,6 @@
+{
+  "name": "Generalized tangent numbers d_(n,2).",
+  "offset": 1,
+  "min_terms": 4500,
+  "timeout": 60
+}
