@@ -80,6 +80,7 @@ sequence for the code and how it works.
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k… | 80 | **61** | 1001 |
 | [A000071](seq/A000xxx/A000071/) | a(n) = Fibonacci(n) - 1. | **32** | — | 500 |
 | [A000073](seq/A000xxx/A000073/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with… | **41** | — | 3001 |
+| [A000076](seq/A000xxx/A000076/) | Number of integers <= 2^n of form 4 x^2 + 4 x y + 5 y^2. | **97** | — | 24 |
 | [A000078](seq/A000xxx/A000078/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) for n >=… | **41** | — | 3506 |
 | [A000079](seq/A000xxx/A000079/) | Powers of 2: a(n) = 2^n. | **24** | — | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
