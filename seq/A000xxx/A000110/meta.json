@@ -1,0 +1,6 @@
+{
+  "name": "Bell or exponential numbers: number of ways to partition a set of n labeled elements.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
