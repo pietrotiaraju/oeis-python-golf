@@ -198,6 +198,7 @@ sequence for the code and how it works.
 | [A000188](seq/A000xxx/A000188/) | (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of… | **52** | 10000 |
 | [A000189](seq/A000xxx/A000189/) | Number of solutions to x^3 == 0 (mod n). | **53** | 10000 |
 | [A000190](seq/A000xxx/A000190/) | Number of solutions to x^4 == 0 (mod n). | **53** | 10000 |
+| [A000191](seq/A000xxx/A000191/) | Generalized tangent numbers d(3, n). | **80** | 251 |
 | [A000192](seq/A000xxx/A000192/) | Generalized Euler numbers c(6,n). | **89** | 251 |
 | [A000194](seq/A000xxx/A000194/) | n appears 2n times, for n >= 1; also nearest integer to square root… | **37** | 1001 |
 | [A000196](seq/A000xxx/A000196/) | Integer part of square root of n. Or, number of positive squares <=… | **38** | 10001 |
