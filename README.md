@@ -213,6 +213,7 @@ sequence for the code and how it works.
 | [A000203](seq/A000xxx/A000203/) | a(n) = sigma(n), the sum of the divisors of n. Also called sigma\_1(n). | **56** | 15000 |
 | [A000204](seq/A000xxx/A000204/) | Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) =… | **33** | 4780 |
 | [A000205](seq/A000xxx/A000205/) | Number of positive integers <= 2^n of form x^2 + 3 y^2. | **91** | 24 |
+| [A000206](seq/A000xxx/A000206/) | Even sequences with period 2n. | **122** | 1001 |
 | [A000207](seq/A000xxx/A000207/) | Number of inequivalent ways of dissecting a regular (n+2)-gon into n… | **94** | 200 |
 | [A000208](seq/A000xxx/A000208/) | Number of even sequences with period 2n. | **107** | 1001 |
 | [A000210](seq/A000xxx/A000210/) | A Beatty sequence: floor(n\*(e-1)). | **44** | 1000 |
