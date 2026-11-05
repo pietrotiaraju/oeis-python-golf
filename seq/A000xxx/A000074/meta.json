@@ -1,0 +1,6 @@
+{
+  "name": "Number of odd integers <= 2^n of form x^2 + y^2.",
+  "offset": 1,
+  "min_terms": 25,
+  "timeout": 60
+}
