@@ -1,0 +1,6 @@
+{
+  "name": "Number of positive integers <= 2^n of the form 3*x^2 + 4*y^2.",
+  "offset": 0,
+  "min_terms": 24,
+  "timeout": 60
+}
