@@ -1,0 +1,6 @@
+{
+  "name": "Let A(n) = #{(i,j): i^2 + j^2 <= n}, V(n) = Pi*n, P(n) = A(n) - V(n); A000099 gives values of n where |P(n)| sets a new record; sequence gives closest integer to P(A000099(n)).",
+  "offset": 1,
+  "min_terms": 50,
+  "timeout": 60
+}
