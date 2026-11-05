@@ -1,0 +1,6 @@
+{
+  "name": "Primes that divide at least one term in every Fibonacci sequence.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
