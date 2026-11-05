@@ -9,7 +9,8 @@
      so it never competes with plain Python 3.
 2. **Output:** print the terms in order, starting at the OEIS offset, one term
    per line, and keep going forever (or stop at the end of a finite sequence).
-   Nothing else goes to stdout; stderr is ignored.
+   Nothing else goes to stdout; stderr is ignored, so warnings such as the
+   `SyntaxWarning` for `1for` are fine.
 3. **Interpreter:** CPython 3.12, run as `python -u file.py`, with no other
    command-line flags and no input.
 4. **Size:** the UTF-8 bytes of the file with LF line endings. A single
