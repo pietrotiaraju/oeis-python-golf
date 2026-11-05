@@ -151,6 +151,7 @@ sequence for the code and how it works.
 | [A000141](seq/A000xxx/A000141/) | Number of ways of writing n as a sum of 6 squares. | **74** | 100 |
 | [A000142](seq/A000xxx/A000142/) | Factorial numbers: n! = 1\*2\*3\*4\*...\*n (order of symmetric group S\_n,… | **31** | 101 |
 | [A000143](seq/A000xxx/A000143/) | Number of ways of writing n as a sum of 8 squares. | **74** | 80 |
+| [A000145](seq/A000xxx/A000145/) | Number of ways of writing n as a sum of 12 squares. | **76** | 70 |
 | [A000147](seq/A000xxx/A000147/) | Number of trees of diameter 5. | **129** | 1000 |
 | [A000148](seq/A000xxx/A000148/) | Number of partitions into non-integral powers. | **102** | 40 |
 | [A000149](seq/A000xxx/A000149/) | a(n) = floor(e^n). | **77** | 301 |
