@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that (2k)^4 + 1 is prime.",
+  "offset": 1,
+  "min_terms": 120,
+  "timeout": 60
+}
