@@ -111,6 +111,7 @@ sequence for the code and how it works.
 | [A000100](seq/A000xxx/A000100/) | a(n) is the number of compositions of n in which the maximal part is… | **57** | 201 |
 | [A000101](seq/A000xxx/A000101/) | Record gaps between primes (upper end) (compare A002386, which gives… | **67** | 14 |
 | [A000102](seq/A000xxx/A000102/) | a(n) = number of compositions of n in which the maximum part size is… | **63** | 201 |
+| [A000103](seq/A000xxx/A000103/) | Number of n-node triangulations of sphere in which every node has… | **427** | 7 |
 | [A000104](seq/A000xxx/A000104/) | Number of n-celled free polyominoes without holes. | **285** | 12 |
 | [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **209** | 13 |
 | [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **112** | 999 |
