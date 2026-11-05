@@ -224,6 +224,7 @@ sequence for the code and how it works.
 | [A000214](seq/A000xxx/A000214/) | Number of equivalence classes of Boolean functions of n variables… | **197** | 4 |
 | [A000215](seq/A000xxx/A000215/) | Fermat numbers: a(n) = 2^(2^n) + 1. | **26** | 12 |
 | [A000216](seq/A000xxx/A000216/) | Take sum of squares of digits of previous term, starting with 2. | **44** | 100 |
+| [A000217](seq/A000xxx/A000217/) | Triangular numbers: a(n) = binomial(n+1,2) = n\*(n+1)/2 = 0 + 1 + 2 +… | **29** | 30001 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |

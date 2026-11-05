@@ -1,0 +1,6 @@
+{
+  "name": "Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.",
+  "offset": 0,
+  "min_terms": 30001,
+  "timeout": 60
+}
