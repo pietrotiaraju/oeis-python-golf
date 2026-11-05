@@ -1,0 +1,6 @@
+{
+  "name": "Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.",
+  "offset": 0,
+  "min_terms": 3335,
+  "timeout": 60
+}
