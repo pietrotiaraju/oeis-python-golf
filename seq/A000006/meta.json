@@ -1,0 +1,6 @@
+{
+  "name": "Integer part of square root of n-th prime.",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}

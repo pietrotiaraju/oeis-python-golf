@@ -18,6 +18,7 @@ sequence for the code and how it works.
 | [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **148** | — | 300 |
 | [A000004](seq/A000004/) | The zero sequence. | **16** | — | 1001 |
 | [A000005](seq/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **53** | — | 10000 |
+| [A000006](seq/A000006/) | Integer part of square root of n-th prime. | **57** | — | 5000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **66** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
 | [A300002](seq/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
