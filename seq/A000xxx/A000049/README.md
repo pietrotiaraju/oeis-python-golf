@@ -21,7 +21,7 @@ while 1:r=range(2<<n//2);print(len({min(3*x*x+4*y*y,2**n+1)for x in r for y in r
   That cap is always in the set, because the largest x in the range already
   gives 3x² > 2ⁿ. The set then holds 0 = 3·0² + 4·0², the cap, and each
   positive value ≤ 2ⁿ once, so `-2` leaves a(n).
-- The cap is 3 bytes shorter than filtering with a walrus,
+- The cap is 4 bytes shorter than filtering with a walrus,
   `{v for … if(v:=3*x*x+4*y*y)<=2**n}` and `-1`.
 - A plain `while 1:` body can assign `r=range(…);` directly. That is 4 bytes
   shorter than `while[print(…)]:n+=1`, which needs `[r:=range(…)]and` to
