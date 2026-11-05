@@ -1,0 +1,6 @@
+{
+  "name": "Number of squares mod n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
