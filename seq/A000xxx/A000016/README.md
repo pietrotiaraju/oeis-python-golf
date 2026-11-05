@@ -6,12 +6,12 @@
 
 Offset 0: 1, 1, 1, 2, 2, 4, 6, 10, 16, 30, 52, 94, 172, 316, 586, 1096, …
 
-### Python 3 — 97 bytes
+### Python 3 — 96 bytes
 
 ```python
-from math import*
+import math
 n=1;k=0
-while[print(sum(n//(g:=gcd(j,n))%2<<g-1for j in range(n))//n)]:n+=k;k=1
+while[print(sum(n//(g:=math.gcd(j,n))%2<<g-1for j in range(n))//n)]:n+=k;k=1
 ```
 
 **How it works**
@@ -39,6 +39,7 @@ while[print(sum(n//(g:=gcd(j,n))%2<<g-1for j in range(n))//n)]:n+=k;k=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 97 | first entry |
+| 2026-11-05 | Python 3 | 96 | `import math` instead of `from math import*` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

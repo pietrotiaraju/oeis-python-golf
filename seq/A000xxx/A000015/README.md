@@ -7,14 +7,14 @@ Offset 1: 1, 2, 3, 4, 5, 7, 7, 8, 9, 11, 11, 13, 13, 16, 16, 16, 17, 19, …
 
 1 counts as a prime power (p⁰).
 
-### Python 3 — 83 bytes
+### Python 3 — 82 bytes
 
 ```python
-from math import*
+import math
 n=m=L=1
 while[print(m)]:
  n+=1
- while L%m<1or m<n:L=lcm(L,m);m+=1
+ while L%m<1or m<n:L=math.lcm(L,m);m+=1
 ```
 
 **How it works**
@@ -45,6 +45,7 @@ while[print(m)]:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 83 | first entry |
+| 2026-11-05 | Python 3 | 82 | `import math` instead of `from math import*` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

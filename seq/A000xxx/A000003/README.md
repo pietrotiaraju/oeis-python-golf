@@ -7,12 +7,12 @@
 
 Offset 1: 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 3, 2, 2, 4, 2, 2, 4, 2, 3, 4, …
 
-### Python 3 — 147 bytes
+### Python 3 — 146 bytes
 
 ```python
-from math import*
+import math
 n=1
-while[print(sum(gcd(a,b,c)+r<2for a in range(1,n+1)for b in range(-a,a)for c,r in[divmod(b*b+4*n,4*a)]if(c,-b)>=(a,0)))]:n+=1
+while[print(sum(math.gcd(a,b,c)+r<2for a in range(1,n+1)for b in range(-a,a)for c,r in[divmod(b*b+4*n,4*a)]if(c,-b)>=(a,0)))]:n+=1
 ```
 
 **How it works**
@@ -26,8 +26,8 @@ while[print(sum(gcd(a,b,c)+r<2for a in range(1,n+1)for b in range(-a,a)for c,r i
 - `divmod(b*b+4*n,4*a)` gives c and a remainder `r`; the form exists only when
   r = 0 (odd B never divides evenly).
 - `(c,-b)>=(a,0)` is "a < c, or a = c and B ≥ 0" in one tuple comparison.
-- `gcd(a,b,c)+r<2` is true only when r = 0 and the form is primitive, so the
-  divisibility test needs no `and`.
+- `math.gcd(a,b,c)+r<2` is true only when r = 0 and the form is primitive,
+  so the divisibility test needs no `and`.
 - a runs up to n, far past the real bound a ≤ √(4n/3); the extra values of a
   just never satisfy a ≤ c.
 - `while[print(...)]:` prints in the loop condition: `[None]` is a non-empty
@@ -38,10 +38,11 @@ while[print(sum(gcd(a,b,c)+r<2for a in range(1,n+1)for b in range(-a,a)for c,r i
 
 - Each term costs about n² steps, so the program prints about 640 terms a
   minute; the bar for this sequence is 300 terms in 60 s.
-- Bounding a with `range(1,isqrt(4*n)+1)` costs 9 bytes more (156) and gives
-  about 6500 terms a minute.
+- Bounding a with `range(1,isqrt(4*n)+1)` costs 10 bytes more (156, back on
+  `from math import*` since it then uses two names) and gives about 6500
+  terms a minute.
 - `b` running over `range(1-a,a+1)` with the condition `(c,b)>=(a,0)` is the
-  same program in 149 bytes.
+  same program in 148 bytes.
 
 ## History
 
@@ -49,6 +50,7 @@ while[print(sum(gcd(a,b,c)+r<2for a in range(1,n+1)for b in range(-a,a)for c,r i
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 148 | first entry |
 | 2026-11-05 | Python 3 | 147 | `while[print(...)]:` loop |
+| 2026-11-05 | Python 3 | 146 | `import math` instead of `from math import*` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
