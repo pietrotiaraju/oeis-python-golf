@@ -68,6 +68,7 @@ sequence for the code and how it works.
 | [A000059](seq/A000xxx/A000059/) | Numbers k such that (2k)^4 + 1 is prime. | **64** | — | 120 |
 | [A000060](seq/A000xxx/A000060/) | Number of signed trees with n nodes. | **131** | — | 500 |
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | — | 996 |
+| [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | 81 | **56** | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
