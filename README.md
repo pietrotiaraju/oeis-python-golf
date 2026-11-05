@@ -114,6 +114,7 @@ sequence for the code and how it works.
 | [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **112** | 999 |
 | [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **121** | 1001 |
 | [A000108](seq/A000xxx/A000108/) | Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!). | **39** | 1001 |
+| [A000109](seq/A000xxx/A000109/) | Number of simplicial polyhedra with n vertices; simple planar graphs… | **495** | 8 |
 | [A000110](seq/A000xxx/A000110/) | Bell or exponential numbers: number of ways to partition a set of n… | **48** | 501 |
 | [A000111](seq/A000xxx/A000111/) | Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n >= 2,… | **56** | 486 |
 | [A000112](seq/A000xxx/A000112/) | Number of partially ordered sets ("posets") with n unlabeled elements. | **228** | 7 |
