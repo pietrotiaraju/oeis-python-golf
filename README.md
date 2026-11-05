@@ -92,6 +92,7 @@ sequence for the code and how it works.
 | [A000080](seq/A000xxx/A000080/) | Number of nonisomorphic minimal triangle graphs. | **347** | — | 6 |
 | [A000081](seq/A000xxx/A000081/) | Number of unlabeled rooted trees with n nodes (or connected functions… | **87** | — | 1001 |
 | [A000082](seq/A000xxx/A000082/) | a(n) = n^2\*Product\_{p\|n} (1 + 1/p). | **75** | — | 1000 |
+| [A000083](seq/A000xxx/A000083/) | Number of mixed Husimi trees with n nodes; or polygonal cacti with… | **262** | — | 501 |
 | [A000084](seq/A000xxx/A000084/) | Number of series-parallel networks with n unlabeled edges. Also… | **91** | — | 1001 |
 | [A000085](seq/A000xxx/A000085/) | Number of self-inverse permutations on n letters, also known as… | **40** | — | 801 |
 | [A000089](seq/A000xxx/A000089/) | Number of solutions to x^2 + 1 == 0 (mod n). | **54** | — | 10000 |
