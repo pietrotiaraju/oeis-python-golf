@@ -26,7 +26,7 @@ sequence for the code and how it works.
 | [A000010](seq/A000xxx/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | **67** | 500 |
 | [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **111** | 3336 |
 | [A000012](seq/A000xxx/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | 10001 |
-| [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **97** | 3335 |
+| [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **96** | 3335 |
 | [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **167** | 1001 |
 | [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **82** | 10000 |
 | [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **96** | 3335 |

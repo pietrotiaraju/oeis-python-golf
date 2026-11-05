@@ -26,8 +26,8 @@ program run on even lengths only.
   2^g strings when N/g is even and none when it is odd.
 - Half of what the two symmetries for j fix is 2^g, or 2^(g−1) when N/g is
   odd: `1<<g-n//g%2`. Subtracting the parity in the exponent is a byte
-  shorter than A000013's `1<<g>>n//g%2`. Summing over j and dividing by N
-  gives the average over all 2N symmetries, the OEIS formula
+  shorter than shifting right with `1<<g>>n//g%2`. Summing over j and
+  dividing by N gives the average over all 2N symmetries, the OEIS formula
   Σ φ(2d)·2^(2n/d) / (4n) over d | 2n.
 - The walrus assigns `g` before `n//g` is evaluated, since Python reads
   the left operand of `-` first.
