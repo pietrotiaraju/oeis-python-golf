@@ -237,6 +237,7 @@ sequence for the code and how it works.
 | [A000227](seq/A000xxx/A000227/) | Nearest integer to e^n. | **71** | 15 |
 | [A000228](seq/A000xxx/A000228/) | Number of hexagonal polyominoes (or hexagonal polyforms, or planar… | **229** | 10 |
 | [A000231](seq/A000xxx/A000231/) | Number of inequivalent Boolean functions of n variables under action… | **42** | 12 |
+| [A000232](seq/A000xxx/A000232/) | Construct a triangle as in A036262. Sequence is one less than the… | **110** | 50 |
 | [A000233](seq/A000xxx/A000233/) | Generalized class numbers c\_(n,1). | **115** | 6500 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
