@@ -59,6 +59,7 @@ sequence for the code and how it works.
 | [A000046](seq/A000xxx/A000046/) | Number of primitive n-bead necklaces (turning over is allowed) where… | 133 | **119** | 1001 |
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | — | 25 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |
+| [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3*x^2 + 4*y^2. | **94** | — | 24 |
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **88** | — | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | — | 101 |
 | [A000058](seq/A000xxx/A000058/) | Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(0) = 2. | **28** | — | 13 |
