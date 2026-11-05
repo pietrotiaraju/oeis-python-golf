@@ -1,0 +1,6 @@
+{
+  "name": "Number of 3-dimensional polyominoes (or polycubes) with n cells.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
