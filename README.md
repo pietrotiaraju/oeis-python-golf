@@ -59,8 +59,8 @@ sequence for the code and how it works.
 | [A000046](seq/A000xxx/A000046/) | Number of primitive n-bead necklaces (turning over is allowed) where… | 133 | **119** | 1001 |
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | — | 25 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |
-| [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3*x^2 + 4*y^2. | **94** | — | 24 |
-| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **88** | — | 25 |
+| [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3*x^2 + 4*y^2. | **93** | — | 24 |
+| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **87** | — | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | — | 101 |
 | [A000052](seq/A000xxx/A000052/) | 1-digit numbers arranged in alphabetical order, then the 2-digit… | **389** | — | 10000 |
 | [A000055](seq/A000xxx/A000055/) | Number of trees with n unlabeled nodes. | **138** | — | 1001 |
@@ -74,7 +74,7 @@ sequence for the code and how it works.
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | — | 996 |
 | [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **69** | — | 1001 |
 | [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | 81 | **56** | 1001 |
-| [A000067](seq/A000xxx/A000067/) | Number of positive integers <= 2^n of form x^2 + 2 y^2. | **90** | — | 24 |
+| [A000067](seq/A000xxx/A000067/) | Number of positive integers <= 2^n of form x^2 + 2 y^2. | **89** | — | 24 |
 | [A000068](seq/A000xxx/A000068/) | Numbers k such that k^4 + 1 is prime. | **60** | — | 120 |
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | — | 10001 |
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k… | 80 | **61** | 1001 |
