@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-node triangulations of sphere in which every node has degree >= 4.",
+  "offset": 4,
+  "min_terms": 7,
+  "timeout": 60
+}
