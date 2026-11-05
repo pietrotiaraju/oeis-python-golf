@@ -1,0 +1,6 @@
+{
+  "name": "Number of unlabeled rooted trees with n nodes (or connected functions with a fixed point).",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
