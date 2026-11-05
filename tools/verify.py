@@ -35,8 +35,13 @@ def size(prog):
     return len(data) - data.endswith(b"\n")
 
 
+def bucket(aid):
+    """Folder holding a thousand sequences and their b-files: A000026 -> A000xxx."""
+    return aid[:-3] + "xxx"
+
+
 def bfile(aid):
-    path = BFILES / f"b{aid[1:]}.txt"
+    path = BFILES / bucket(aid) / f"b{aid[1:]}.txt"
     terms = []
     for line in path.read_text().splitlines():
         if line.strip() and not line.startswith("#"):
@@ -114,7 +119,7 @@ def table(rows):
                 cells.append("—")
             else:
                 cells.append(f"**{r['bytes']}**" if r["bytes"] == best else str(r["bytes"]))
-        out.append(f"| [{aid}](seq/{aid}/) | {name} | " + " | ".join(cells) + f" | {terms} |")
+        out.append(f"| [{aid}](seq/{bucket(aid)}/{aid}/) | {name} | " + " | ".join(cells) + f" | {terms} |")
     return "\n".join(out)
 
 
@@ -124,8 +129,13 @@ def main(argv):
     only = {a.upper() for a in argv if not a.startswith("--")}
     problems, rows = [], []
 
-    for d in sorted(p for p in SEQ.iterdir() if p.is_dir()):
+    # A bucket is the only kind of name that is its own bucket.
+    problems += [f"seq/{p.name}: move it to seq/{bucket(p.name)}/{p.name}/"
+                 for p in sorted(SEQ.iterdir()) if p.is_dir() and p.name != bucket(p.name)]
+    for d in sorted((p for p in SEQ.glob("*/A*") if p.is_dir()), key=lambda p: p.name):
         aid = d.name
+        if d.parent.name != bucket(aid):
+            problems.append(f"seq/{d.parent.name}/{aid}: move it to seq/{bucket(aid)}/{aid}/")
         meta = json.loads((d / "meta.json").read_text(encoding="utf-8"))
         page = (d / "README.md").read_text(encoding="utf-8")
         ref = bfile(aid)
