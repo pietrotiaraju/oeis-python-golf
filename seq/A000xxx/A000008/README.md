@@ -5,21 +5,27 @@
 
 Offset 0: 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 19, 22, 25, 28, …
 
-### Python 3 — 73 bytes
+### Python 3 — 67 bytes
 
 ```python
-n=0
-while[print(sum((m+2)//2*((n-5*m+2)//2)for m in range(n//5+1)))]:n+=1
+m=12
+while[print(sum((m-j)//10*(j//2)for j in range(m,1,-5)))]:m+=1
 ```
 
 **How it works**
 
-- Group the 5- and 10-cent coins into m "units of 5": c nickels and d dimes
-  with c + 2d = m. There are ⌊m/2⌋ + 1 such pairs.
-- The remaining n − 5m cents are paid with 1s and 2s in ⌊(n − 5m)/2⌋ + 1
-  ways.
-- So a(n) = Σ (⌊m/2⌋ + 1)(⌊(n − 5m)/2⌋ + 1) for m = 0…⌊n/5⌋, written as
-  `(m+2)//2*((n-5*m+2)//2)`. Exact integers, n/5 steps per term.
+- Group the 5- and 10-cent coins into t "units of 5": c nickels and d dimes
+  with c + 2d = t. There are ⌊t/2⌋ + 1 such pairs.
+- The remaining k = n − 5t cents are paid with 1s and 2s in ⌊k/2⌋ + 1 ways.
+- With m = n + 12 and j = k + 2 = n + 2 − 5t, the first factor is
+  (m − j)/10 = 1 + t/2 rounded down and the second is ⌊j/2⌋, so a(n) is the
+  sum of `(m-j)//10*(j//2)` over j = m, m − 5, m − 10, … down to 2.
+- Starting the loop at m instead of n + 2 costs nothing: the first two
+  values j = m and j = m − 5 have weight 0. The stop value 1 is safe too:
+  j = 0 and j = 1 give ⌊j/2⌋ = 0. Counting with m = n + 12 directly saves
+  the `+2`s and the `5*` of the old form `(m+2)//2*((n-5*m+2)//2)`
+  (73 bytes), and the range needs no `n//5+1`. The same substitution is
+  used for [A000064](../A000064/).
 - `while[print(...)]:` prints in the loop condition (`[None]` is true) and
   saves a byte over `while 1:print(...);`.
 
@@ -35,6 +41,7 @@ while[print(sum((m+2)//2*((n-5*m+2)//2)for m in range(n//5+1)))]:n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 73 | first entry |
+| 2026-11-05 | Python 3 | 67 | count down from j = n + 12 in steps of 5 (-6) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -20,7 +20,7 @@ sequence for the code and how it works.
 | [A000005](seq/A000xxx/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **52** | — | 10000 |
 | [A000006](seq/A000xxx/A000006/) | Integer part of square root of n-th prime. | **56** | — | 5000 |
 | [A000007](seq/A000xxx/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | — | 1001 |
-| [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
+| [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **67** | — | 10001 |
 | [A000009](seq/A000xxx/A000009/) | Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n… | **68** | — | 500 |
 | [A000010](seq/A000xxx/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | 67 | **52** | 500 |
 | [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **111** | — | 3336 |

@@ -1,2 +1,2 @@
-n=0
-while[print(sum((m+2)//2*((n-5*m+2)//2)for m in range(n//5+1)))]:n+=1
+m=12
+while[print(sum((m-j)//10*(j//2)for j in range(m,1,-5)))]:m+=1
