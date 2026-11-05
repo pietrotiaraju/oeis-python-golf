@@ -236,6 +236,7 @@ sequence for the code and how it works.
 | [A000226](seq/A000xxx/A000226/) | Number of n-node unlabeled connected graphs with one cycle of length… | **167** | 500 |
 | [A000227](seq/A000xxx/A000227/) | Nearest integer to e^n. | **71** | 15 |
 | [A000228](seq/A000xxx/A000228/) | Number of hexagonal polyominoes (or hexagonal polyforms, or planar… | **229** | 10 |
+| [A000230](seq/A000xxx/A000230/) | a(0)=2; for n>=1, a(n) = smallest prime p such that there is a gap of… | **71** | 24 |
 | [A000231](seq/A000xxx/A000231/) | Number of inequivalent Boolean functions of n variables under action… | **42** | 12 |
 | [A000233](seq/A000xxx/A000233/) | Generalized class numbers c\_(n,1). | **115** | 6500 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
