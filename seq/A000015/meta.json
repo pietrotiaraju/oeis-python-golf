@@ -1,0 +1,6 @@
+{
+  "name": "Smallest prime power >= n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
