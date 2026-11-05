@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = number of compositions of n in which the maximum part size is 4.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
