@@ -5,11 +5,11 @@
 
 Offset 0: 1, 2, 4, 6, 10, 18, 33, 60, 111, 205, 385, 725, 1374, 2610, …
 
-### Python 3 — 90 bytes
+### Python 3 — 89 bytes
 
 ```python
 n=0
-while 1:r=range(2<<n//2);print(len({min(x*x+2*y*y,2**n)for x in r for y in r})-1);n+=1
+while r:=range(2<<n//2):print(len({min(x*x+2*y*y,2**n)for x in r for y in r})-1);n+=1
 ```
 
 **How it works**
@@ -23,6 +23,9 @@ while 1:r=range(2<<n//2);print(len({min(x*x+2*y*y,2**n)for x in r for y in r})-1
   when n = 2k, and 0² + 2·(2^k)² when n = 2k+1. So the set holds exactly
   the values in [0, 2ⁿ], without an `if` filter.
 - 0 = 0² + 2·0² is in the set and is not positive, so `-1` removes it.
+- As in A000050, `while r:=range(2<<n//2):` names the range in the loop
+  condition. A non-empty range is truthy, so the loop never stops, and this
+  is 1 byte shorter than a `while 1:` body that assigns `r=range(…);`.
 
 **Notes**
 
@@ -30,6 +33,8 @@ while 1:r=range(2<<n//2);print(len({min(x*x+2*y*y,2**n)for x in r for y in r})-1
   set grows to a(n) elements. The program prints a(0)…a(23) in about 14 s
   and a(24) at about 37 s. The bar is 24 terms in 60 s; the b-file goes to
   n = 58, far beyond any enumeration.
+- The 90-byte version had a `while 1:` body starting `r=range(2<<n//2);`.
+  It runs at the same speed.
 - A number is of this form exactly when every prime ≡ 5 or 7 (mod 8)
   divides it to an even power, but testing that for every m ≤ 2ⁿ is both
   longer and no faster than the enumeration.
@@ -39,6 +44,7 @@ while 1:r=range(2<<n//2);print(len({min(x*x+2*y*y,2**n)for x in r for y in r})-1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 90 | first entry |
+| 2026-11-05 | Python 3 | 89 | range named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
