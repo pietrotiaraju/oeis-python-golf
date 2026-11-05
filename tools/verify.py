@@ -130,7 +130,8 @@ def table(rows):
     for aid, name, recs, terms in rows:
         if len(name) > NAME_WIDTH:
             name = name[:NAME_WIDTH].rsplit(" ", 1)[0] + "…"
-        name = name.replace("|", "\\|")  # a bare | in a name (p|n) would split the cell
+        for ch in "\\|*_":  # p|n would split the cell, 3*x^2 + 4*y^2 or p_j^k_j turn italic
+            name = name.replace(ch, "\\" + ch)
         best = min(r["bytes"] for r in recs)
         cells = []
         for c in cats:
@@ -179,7 +180,9 @@ def main(argv):
     text = README.read_text(encoding="utf-8")
     head, rest = text.split(START, 1)
     _, tail = rest.split(END, 1)
-    new = f"{head}{START}\n{table(rows)}\n{END}{tail}"
+    # Blank lines around the table: without them kramdown (GitHub Pages) reads the
+    # comment and the table as one paragraph. GitHub's own renderer does not mind.
+    new = f"{head}{START}\n\n{table(rows)}\n\n{END}{tail}"
     if new != text:
         if write:
             README.write_text(new, encoding="utf-8", newline="\n")
