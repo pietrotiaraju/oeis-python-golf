@@ -1,0 +1,6 @@
+{
+  "name": "Number of partially ordered sets (\"posets\") with n unlabeled elements.",
+  "offset": 0,
+  "min_terms": 7,
+  "timeout": 60
+}
