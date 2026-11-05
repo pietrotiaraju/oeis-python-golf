@@ -1,0 +1,6 @@
+{
+  "name": "Number of fixed points of Gamma_0 (n) of type i.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
