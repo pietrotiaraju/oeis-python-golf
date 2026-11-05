@@ -205,6 +205,7 @@ sequence for the code and how it works.
 | [A000195](seq/A000xxx/A000195/) | a(n) = floor(log(n)). | **63** | 1200 |
 | [A000196](seq/A000xxx/A000196/) | Integer part of square root of n. Or, number of positive squares <=… | **38** | 10001 |
 | [A000197](seq/A000xxx/A000197/) | a(n) = (n!)!. | **54** | 6 |
+| [A000198](seq/A000xxx/A000198/) | Largest order of automorphism group of a tournament with n nodes. | **84** | 1000 |
 | [A000199](seq/A000xxx/A000199/) | Coefficient of q^(2n-1) in the series expansion of Ramanujan's mock… | **106** | 500 |
 | [A000201](seq/A000xxx/A000201/) | Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi),… | **43** | 10000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
