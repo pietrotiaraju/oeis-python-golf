@@ -153,6 +153,12 @@ def main(argv=None):
     rebuild_table(wt)
     if git("diff", "--cached", "--quiet", cwd=wt, check=False).returncode:
         git("commit", "-q", "--amend", "--no-edit", cwd=wt)
+    # The rules may have changed on main since the worktree was made: check with main's verify.py
+    # now, or the ship workflow would refuse the branch after we report it pushed.
+    check = subprocess.run([sys.executable, "tools/verify.py", "--no-run"], cwd=wt, capture_output=True, text=True)
+    if check.returncode:
+        fails = "\n".join(x for x in check.stdout.splitlines() if x.startswith("FAIL"))
+        sys.exit(f"after the rebase on origin/main, tools/verify.py fails; not pushed:\n{fails}")
     if a.no_push:
         print(f"{branch} is ready in {wt}; not pushed")
         return
