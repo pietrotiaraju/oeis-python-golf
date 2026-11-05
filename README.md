@@ -29,6 +29,7 @@ sequence for the code and how it works.
 | [A000014](seq/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
 | [A000015](seq/A000015/) | Smallest prime power >= n. | **83** | — | 10000 |
 | [A000016](seq/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **97** | — | 3335 |
+| [A000018](seq/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **103** | — | 24 |
 | [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
