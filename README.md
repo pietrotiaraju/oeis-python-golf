@@ -53,6 +53,7 @@ sequence for the code and how it works.
 | [A000039](seq/A000xxx/A000039/) | Coefficient of q^(2n) in the series expansion of Ramanujan's mock… | **96** | — | 200 |
 | [A000042](seq/A000xxx/A000042/) | Unary representation of natural numbers. | **28** | — | 1000 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |
+| [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | — | 101 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
