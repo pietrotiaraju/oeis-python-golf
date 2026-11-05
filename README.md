@@ -168,6 +168,7 @@ sequence for the code and how it works.
 | [A000158](seq/A000xxx/A000158/) | Number of partitions into non-integral powers. | **172** | 35 |
 | [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **108** | 248 |
 | [A000160](seq/A000xxx/A000160/) | Number of partitions into non-integral powers. | **188** | 38 |
+| [A000164](seq/A000xxx/A000164/) | Number of partitions of n into 3 squares (allowing part zero). | **79** | 800 |
 | [A000165](seq/A000xxx/A000165/) | Double factorial of even numbers: (2n)!! = 2^n\*n!. | **33** | 404 |
 | [A000166](seq/A000xxx/A000166/) | Subfactorial or rencontres numbers, or derangements: number of… | **34** | 451 |
 | [A000167](seq/A000xxx/A000167/) | Nearest integer to modified Bessel function K\_n(2). | **69** | 201 |
