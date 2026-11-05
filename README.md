@@ -54,6 +54,7 @@ sequence for the code and how it works.
 | [A000040](seq/A000xxx/A000040/) | The prime numbers. | **40** | — | 10000 |
 | [A000041](seq/A000xxx/A000041/) | a(n) is the number of partitions of n (the partition numbers). | 79 | **54** | 5000 |
 | [A000042](seq/A000xxx/A000042/) | Unary representation of natural numbers. | **28** | — | 1000 |
+| [A000043](seq/A000xxx/A000043/) | Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1… | **65** | — | 15 |
 | [A000044](seq/A000xxx/A000044/) | Dying rabbits: a(0) = 1; for 1 <= n <= 12, a(n) = Fibonacci(n); for n… | **42** | — | 1001 |
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | — | 25 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |

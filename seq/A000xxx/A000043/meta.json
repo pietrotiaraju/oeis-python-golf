@@ -1,0 +1,6 @@
+{
+  "name": "Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1 is called a Mersenne prime.",
+  "offset": 1,
+  "min_terms": 15,
+  "timeout": 60
+}
