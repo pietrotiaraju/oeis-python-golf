@@ -26,6 +26,7 @@ sequence for the code and how it works.
 | [A000011](seq/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **112** | — | 3336 |
 | [A000012](seq/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | — | 10001 |
 | [A000013](seq/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **98** | — | 3335 |
+| [A000014](seq/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
 | [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
