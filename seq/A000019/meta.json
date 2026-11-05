@@ -1,0 +1,6 @@
+{
+  "name": "Number of primitive permutation groups of degree n.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 120
+}
