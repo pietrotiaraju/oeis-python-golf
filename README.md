@@ -103,6 +103,7 @@ sequence for the code and how it works.
 | [A000093](seq/A000xxx/A000093/) | a(n) = floor(n^(3/2)). | **41** | — | 501 |
 | [A000094](seq/A000xxx/A000094/) | Number of trees of diameter 4. | 86 | **61** | 500 |
 | [A000095](seq/A000xxx/A000095/) | Number of fixed points of Gamma\_0 (n) of type i. | **57** | — | 10000 |
+| [A000096](seq/A000xxx/A000096/) | a(n) = n\*(n+3)/2. | **31** | — | 10001 |
 | [A000097](seq/A000xxx/A000097/) | Number of partitions of n if there are two kinds of 1's and two kinds… | 87 | **76** | 5000 |
 | [A000098](seq/A000xxx/A000098/) | Number of partitions of n if there are two kinds of 1, two kinds of 2… | **87** | — | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | — | 1000 |
