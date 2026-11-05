@@ -209,6 +209,7 @@ sequence for the code and how it works.
 | [A000199](seq/A000xxx/A000199/) | Coefficient of q^(2n-1) in the series expansion of Ramanujan's mock… | **106** | 500 |
 | [A000200](seq/A000xxx/A000200/) | Number of bicentered hydrocarbons with n atoms. | **163** | 50 |
 | [A000201](seq/A000xxx/A000201/) | Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi),… | **43** | 10000 |
+| [A000204](seq/A000xxx/A000204/) | Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) =… | **33** | 4780 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | 1000 |
