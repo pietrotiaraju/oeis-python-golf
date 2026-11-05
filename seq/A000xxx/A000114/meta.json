@@ -1,0 +1,6 @@
+{
+  "name": "Number of cusps of principal congruence subgroup Gamma^{hat}(n).",
+  "offset": 2,
+  "min_terms": 9999,
+  "timeout": 60
+}
