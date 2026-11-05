@@ -37,6 +37,7 @@ sequence for the code and how it works.
 | [A000023](seq/A000023/) | a(n) is the number of permutations on {1,2,...,n} with an even number… | **40** | — | 251 |
 | [A000024](seq/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **101** | — | 24 |
 | [A000025](seq/A000025/) | Coefficients of the 3rd-order mock theta function f(q). | **119** | — | 400 |
+| [A000026](seq/A000026/) | Mosaic numbers or multiplicative projection of n: if n = Product… | 95 | **80** | 10000 |
 | [A000027](seq/A000027/) | The positive integers. Also called the natural numbers, the whole… | **24** | — | 500000 |
 | [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |

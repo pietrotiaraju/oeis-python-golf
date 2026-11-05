@@ -1,0 +1,6 @@
+{
+  "name": "Mosaic numbers or multiplicative projection of n: if n = Product (p_j^k_j) then a(n) = Product (p_j * k_j).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
