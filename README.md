@@ -199,6 +199,7 @@ sequence for the code and how it works.
 | [A000189](seq/A000xxx/A000189/) | Number of solutions to x^3 == 0 (mod n). | **53** | 10000 |
 | [A000190](seq/A000xxx/A000190/) | Number of solutions to x^4 == 0 (mod n). | **53** | 10000 |
 | [A000194](seq/A000xxx/A000194/) | n appears 2n times, for n >= 1; also nearest integer to square root… | **37** | 1001 |
+| [A000196](seq/A000xxx/A000196/) | Integer part of square root of n. Or, number of positive squares <=… | **38** | 10001 |
 | [A000197](seq/A000xxx/A000197/) | a(n) = (n!)!. | **54** | 6 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
