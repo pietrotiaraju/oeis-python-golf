@@ -202,6 +202,7 @@ sequence for the code and how it works.
 | [A000192](seq/A000xxx/A000192/) | Generalized Euler numbers c(6,n). | **89** | 251 |
 | [A000193](seq/A000xxx/A000193/) | Nearest integer to log n. | **97** | 10000 |
 | [A000194](seq/A000xxx/A000194/) | n appears 2n times, for n >= 1; also nearest integer to square root… | **37** | 1001 |
+| [A000195](seq/A000xxx/A000195/) | a(n) = floor(log(n)). | **63** | 1200 |
 | [A000196](seq/A000xxx/A000196/) | Integer part of square root of n. Or, number of positive squares <=… | **38** | 10001 |
 | [A000197](seq/A000xxx/A000197/) | a(n) = (n!)!. | **54** | 6 |
 | [A000201](seq/A000xxx/A000201/) | Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi),… | **43** | 10000 |
