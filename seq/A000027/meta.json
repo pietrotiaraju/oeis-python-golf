@@ -1,0 +1,6 @@
+{
+  "name": "The positive integers. Also called the natural numbers, the whole numbers or the counting numbers, but these terms are ambiguous.",
+  "offset": 1,
+  "min_terms": 500000,
+  "timeout": 60
+}
