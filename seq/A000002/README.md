@@ -6,11 +6,11 @@
 
 Offset 1: 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 1, 2, 2, …
 
-### Python 3 — 54 bytes
+### Python 3 — 53 bytes
 
 ```python
 x=y=-1
-while 1:print(2-x%2);f=y&~-~y;x^=f;y=y+1|f&x>>1
+while[print(2-x%2)]:f=y&~-~y;x^=f;y=y+1|f&x>>1
 ```
 
 **How it works**
@@ -35,6 +35,8 @@ entry, squeezed:
 - `y+1|f&x>>1` needs no parentheses: `>>` binds tighter than `&`, and `&`
   tighter than `|`.
 - `2-x%2` prints 1 or 2 from the low bit (`x%2` is 0 or 1 even for negative x).
+- `while[print(...)]:` prints in the loop condition: `[None]` is a non-empty
+  list, so it is true, and it saves a byte over `while 1:print(...);`.
 
 **Notes**
 
@@ -42,14 +44,15 @@ entry, squeezed:
 - Checked against the whole b-file (10 502 terms) and, outside the verifier,
   against the plain list construction for the first 10⁶ terms.
 - Other shapes tried, all building the list `[1,2,2]` and appending runs of
-  `1+i%2`: printing with a lag of two (56 bytes), guarding the first two
-  steps with `*(i>1)` (60), the same with `enumerate` (61).
+  `1+i%2`: printing with a lag of two (55 bytes), guarding the first two
+  steps with `*(i>1)` (59), the same with `enumerate` (61).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 54 | first entry |
+| 2026-11-05 | Python 3 | 53 | `while[print(...)]:` loop |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

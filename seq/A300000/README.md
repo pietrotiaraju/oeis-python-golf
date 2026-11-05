@@ -6,11 +6,11 @@
 
 Offset 1: 1, 10, 99, 999, 9990, 99900, 999000, 9990000, 99900000, …
 
-### Python 3 — 66 bytes
+### Python 3 — 65 bytes
 
 ```python
 q='';c=0
-while 1:print(a:=9*c+int(q[1:2]or 1));c+=a;q=q[1:]+str(a)
+while[print(a:=9*c+int(q[1:2]or 1))]:c+=a;q=q[1:]+str(a)
 ```
 
 **How it works**
@@ -26,6 +26,8 @@ while 1:print(a:=9*c+int(q[1:2]or 1));c+=a;q=q[1:]+str(a)
 - In the first two steps the digit needed is the leading digit of the term
   being computed (a(1) = 1, a(2) = 10), so `q` does not have it yet and
   `or 1` supplies it.
+- `while[print(...)]:` prints in the loop condition: `[None]` is a non-empty
+  list, so it is true, and it saves a byte over `while 1:print(...);`.
 
 **Notes**
 
@@ -33,14 +35,15 @@ while 1:print(a:=9*c+int(q[1:2]or 1));c+=a;q=q[1:]+str(a)
   program stops with `ValueError` after a(4301). `python -X
   int_max_str_digits=0` lifts the limit (tested to 6000 terms).
 - Other shapes tried: indexing the whole string with a fallback,
-  `(s+'1')[n]` (68 bytes); prefix differences `int(s[:n])` (68); the queue read
-  with `q[:1]` (67).
+  `(s+'1')[n]` (67 bytes); prefix differences `int(s[:n])` (67); the queue read
+  with `q[:1]` (66).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 66 | first entry |
+| 2026-11-05 | Python 3 | 65 | `while[print(...)]:` loop |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

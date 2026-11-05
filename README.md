@@ -14,12 +14,14 @@ sequence for the code and how it works.
 | Sequence | Name | Python 3 | Python 3 + sympy | Terms checked |
 |---|---|---|---|---|
 | [A000001](seq/A000001/) | Number of groups of order n. | **260** | — | 6 |
-| [A000002](seq/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **54** | — | 10502 |
-| [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **148** | — | 300 |
+| [A000002](seq/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | — | 10502 |
+| [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **147** | — | 300 |
 | [A000004](seq/A000004/) | The zero sequence. | **16** | — | 1001 |
-| [A000005](seq/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **53** | — | 10000 |
-| [A000006](seq/A000006/) | Integer part of square root of n-th prime. | **57** | — | 5000 |
-| [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **66** | — | 1001 |
+| [A000005](seq/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **52** | — | 10000 |
+| [A000006](seq/A000006/) | Integer part of square root of n-th prime. | **56** | — | 5000 |
+| [A000007](seq/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | — | 1001 |
+| [A000008](seq/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
+| [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
 | [A300002](seq/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
 <!-- records:end -->

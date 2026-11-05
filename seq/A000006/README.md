@@ -5,11 +5,11 @@
 
 Offset 1: 1, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 8, …
 
-### Python 3 — 57 bytes
+### Python 3 — 56 bytes
 
 ```python
 k=P=s=1
-while 1:P%k and print(s);P*=k*k;k+=1;s+=s*(s+2)<k
+while[P%k and print(s)]:P*=k*k;k+=1;s+=s*(s+2)<k
 ```
 
 **How it works**
@@ -21,13 +21,15 @@ while 1:P%k and print(s);P*=k*k;k+=1;s+=s*(s+2)<k
 - `s` stays equal to ⌊√k⌋ with exact integers: k grows by 1 per step, so s
   grows by at most 1, exactly when (s+1)² ≤ k, that is s(s+2) < k.
 - `P%k and print(s)` prints only at primes.
+- `while[print(...)]:` prints in the loop condition: `[None]` is a non-empty
+  list, so it is true, and it saves a byte over `while 1:print(...);`.
 
 **Notes**
 
-- `int(k**.5)` instead of tracking `s` is 51 bytes, but the float square root
+- `int(k**.5)` instead of tracking `s` is 50 bytes, but the float square root
   is wrong for large k (just below a big square it rounds up, and past 10³⁰⁸
   it overflows), so it breaks the exact-arithmetic rule.
-- `math.isqrt(k)` is exact but costs 67 bytes with the import.
+- `math.isqrt(k)` is exact but costs 66 bytes with the import.
 - `P` grows like (k!)², so the program slows down: about 8300 terms a minute.
   The bar for this sequence is 5000 terms in 60 s.
 
@@ -36,6 +38,7 @@ while 1:P%k and print(s);P*=k*k;k+=1;s+=s*(s+2)<k
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 57 | first entry |
+| 2026-11-05 | Python 3 | 56 | `while[print(...)]:` loop |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
