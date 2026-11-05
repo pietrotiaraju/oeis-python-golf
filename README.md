@@ -51,6 +51,7 @@ sequence for the code and how it works.
 | [A000037](seq/A000xxx/A000037/) | Numbers that are not squares (or, the nonsquares). | **39** | — | 10000 |
 | [A000038](seq/A000xxx/A000038/) | Twice A000007. | **23** | — | 10001 |
 | [A000039](seq/A000xxx/A000039/) | Coefficient of q^(2n) in the series expansion of Ramanujan's mock… | **96** | — | 200 |
+| [A000041](seq/A000xxx/A000041/) | a(n) is the number of partitions of n (the partition numbers). | 79 | **54** | 5000 |
 | [A000042](seq/A000xxx/A000042/) | Unary representation of natural numbers. | **28** | — | 1000 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | — | 3321 |
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **88** | — | 25 |
