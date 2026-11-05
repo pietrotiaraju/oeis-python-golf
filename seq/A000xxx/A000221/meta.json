@@ -1,0 +1,6 @@
+{
+  "name": "Take sum of squares of digits of previous term; start with 5.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
