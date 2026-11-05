@@ -7,12 +7,12 @@ Offset 1: 2, 6, 9, 12, 15, 18, 21, 24, 27, 31, 34, 37, 40, 43, 46, 49, 53, …
 
 The zeros of J₀ are 2.405, 5.520, 8.654, 11.79, …, about π apart.
 
-### Python 3 — 93 bytes
+### Python 3 — 92 bytes
 
 ```python
 p=k=1
-while 1:
- k+=2;j=b=0;u=p
+while u:=p:
+ k+=2;j=b=0
  while b*b<u*u:b=b*j*j+u;j+=4;u*=-k*k
  if b<0:print(k//2);p=-p
 ```
@@ -76,12 +76,15 @@ while 1:
     to m either way), but is the same length and twice as slow.
   - `fractions.Fraction` instead of scaled integers: the import alone
     costs 24 bytes.
+- `while u:=p:` resets `u` in the loop condition, 1 byte under
+  `while 1:` plus `;u=p`: p is ±1, so the condition is always true.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 93 | first entry |
+| 2026-11-05 | Python 3 | 92 | `u=p` moved into the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

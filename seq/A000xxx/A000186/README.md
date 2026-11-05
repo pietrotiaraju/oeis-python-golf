@@ -5,11 +5,11 @@
 
 Offset 0: 1, 0, 0, 2, 24, 552, 21280, 1073760, 70299264, 5792853248, …
 
-### Python 3 — 78 bytes
+### Python 3 — 77 bytes
 
 ```python
 a=b=c=f=n=0
-while 1:f=2**n*~-n-n*f;a,b,c=n*(n*a+b+2*c)-f,n*a,n*b;print(a);n+=1
+while f:=2**n*~-n-n*f:a,b,c=n*(n*a+b+2*c)-f,n*a,n*b;print(a);n+=1
 ```
 
 **How it works**
@@ -39,6 +39,11 @@ while 1:f=2**n*~-n-n*f;a,b,c=n*(n*a+b+2*c)-f,n*a,n*b;print(a);n+=1
 - Each term is a handful of big-integer operations; the whole b-file
   (208 terms) prints in well under a second. The bar is the whole
   b-file in 60 s.
+- `while f:=…:` computes f in the loop condition, 1 byte under `while 1:`.
+  It never stops the loop, because f is never 0. Mod 3 the update
+  f = 2ⁿ(n−1) − n·f gives f ≡ −(−1)ⁿ when 3 | n, f ≡ −f_{n−1} when
+  n ≡ 1, and f ≡ 2ⁿ + f_{n−1} ≡ 2·(−1)ⁿ when n ≡ 2 (mod 3), so f is
+  never divisible by 3.
 - Python's 4300-digit limit for printing ints stops the program after
   a(859) (4297 digits); a(860) has 4303.
 
@@ -47,6 +52,7 @@ while 1:f=2**n*~-n-n*f;a,b,c=n*(n*a+b+2*c)-f,n*a,n*b;print(a);n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 78 | first entry |
+| 2026-11-05 | Python 3 | 77 | f computed in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
