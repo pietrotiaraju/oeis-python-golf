@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n into 3 squares (allowing part zero).",
+  "offset": 0,
+  "min_terms": 800,
+  "timeout": 60
+}
