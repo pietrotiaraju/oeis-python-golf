@@ -193,6 +193,7 @@ sequence for the code and how it works.
 | [A000184](seq/A000xxx/A000184/) | Number of genus 0 rooted maps with 3 faces with n vertices. | **48** | 499 |
 | [A000185](seq/A000xxx/A000185/) | a(n) = A058087(n,n-5). | **113** | 246 |
 | [A000186](seq/A000xxx/A000186/) | Number of 3 X n Latin rectangles in which the first row is in order. | **78** | 208 |
+| [A000187](seq/A000xxx/A000187/) | Generalized Euler numbers, c(5,n). | **93** | 251 |
 | [A000188](seq/A000xxx/A000188/) | (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of… | **52** | 10000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
