@@ -1,0 +1,6 @@
+{
+  "name": "Number of representations of n as a sum of Fibonacci numbers (1 is allowed twice as a part).",
+  "offset": 0,
+  "min_terms": 6766,
+  "timeout": 60
+}
