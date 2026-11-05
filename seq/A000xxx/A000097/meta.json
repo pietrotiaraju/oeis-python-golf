@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n if there are two kinds of 1's and two kinds of 2's.",
+  "offset": 0,
+  "min_terms": 5000,
+  "timeout": 60
+}
