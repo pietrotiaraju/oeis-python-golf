@@ -8,11 +8,11 @@ Offset 0: 1, 1, 2, 2, 4, 8, 13, 25, 44, 83, 152, 286, 538, 1020, 1942, …
 ([A000017](https://oeis.org/A000017) is marked erroneous on the OEIS and is
 skipped.)
 
-### Python 3 — 93 bytes
+### Python 3 — 92 bytes
 
 ```python
 n=0
-while 1:r=range(2<<n//2);print(len({min(x*x+16*y*y,2**n+1)for x in r for y in r})-2);n+=1
+while r:=range(2<<n//2):print(len({min(x*x+16*y*y,2**n+1)for x in r for y in r})-2);n+=1
 ```
 
 **How it works**
@@ -27,12 +27,15 @@ while 1:r=range(2<<n//2);print(len({min(x*x+16*y*y,2**n+1)for x in r for y in r}
   leaves a(n).
 - The cap is 4 bytes shorter than filtering with a walrus,
   `{v for … if(v:=x*x+16*y*y)<=2**n}` and `-1`.
-- A plain `while 1:` body can assign `r=range(…);` directly. That is 4 bytes
-  shorter than `while[print(…)]:n+=1`, which needs `[r:=range(…)]and` to
-  name the range inside the expression, because a walrus may not appear in a
-  comprehension's iterable.
+- A range is truthy when it is not empty, so `while r:=range(2<<n//2):`
+  names the range and keeps the loop going, with the print and `n+=1`
+  after the colon. That is 1 byte shorter than a `while 1:` body that
+  assigns `r=range(…);`, and 5 bytes shorter than `while[print(…)]:n+=1`,
+  which needs `[r:=range(…)]and` to name the range inside the expression,
+  because a walrus may not appear in a comprehension's iterable.
 
-The same two tricks were first used for [A000049](../A000049/).
+The cap was first used for [A000049](../A000049/), and the
+`while r:=range(…):` loop for [A000047](../A000047/).
 
 **Notes**
 
@@ -43,6 +46,8 @@ The same two tricks were first used for [A000049](../A000049/).
 - The 101-byte walrus-filter version printed a(0)…a(23) in about 12 s on the
   same machine. Calling `min` on every pair, and adding the cap to the set
   again each time, makes a term take 1.15 to 1.35 times as long.
+- The 93-byte version had a `while 1:` body starting `r=range(2<<n//2);`.
+  It runs at the same speed.
 - The 103-byte version used `range(1<<n//2)` for y (half the pairs, one
   more term per minute).
 
@@ -53,6 +58,7 @@ The same two tricks were first used for [A000049](../A000049/).
 | 2026-11-05 | Python 3 | 103 | first entry |
 | 2026-11-05 | Python 3 | 101 | one range for x and y, named by a walrus before the set |
 | 2026-11-05 | Python 3 | 93 | while 1: body and min cap instead of walrus filter |
+| 2026-11-05 | Python 3 | 92 | range named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
