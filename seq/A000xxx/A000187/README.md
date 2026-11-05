@@ -5,12 +5,12 @@
 
 Offset 0: 2, 30, 3522, 1066590, 604935042, 551609685150, 737740947722562, …
 
-### Python 3 — 93 bytes
+### Python 3 — 88 bytes
 
 ```python
 r=[s:=2];p=1
 while[print(s)]:
- for s in 0,(p:=p*-4)+p*abs(p):r=[s:=s+5*x for x in[0]+r[::-1]]
+ for s in 0,(p:=p*-4)*p^p:r=[s:=s+5*x for x in[0]+r[::-1]]
 ```
 
 **How it works**
@@ -31,8 +31,11 @@ while[print(s)]:
   odd rows. The even part of the output is sec 5x·U, the e.g.f. of a(n),
   so T(2n,2n) = a(n).
 - Each pass of the `while` computes two rows: an odd row starting at 0,
-  then an even row starting at u_(2n). `p` holds (−4)ⁿ and
-  (−16)ⁿ = p·|p|.
+  then an even row starting at u_(2n). `p` holds (−4)ⁿ, and
+  u_(2n) = p·p ^ p: for even n the bits of 16ⁿ and 4ⁿ don't overlap, so
+  XOR is addition; for odd n, p = −4ⁿ has every bit from 2n up set, and
+  XOR with 16ⁿ clears bit 4n, which subtracts 16ⁿ. That is 5 B under
+  `p+p*abs(p)`.
 - `s` is the `for` target, so it already holds the row's first value when
   the comprehension starts. The extra `[0]` in front of the reversed row
   makes the first element s + 0, and the walrus carries the running sum
@@ -52,6 +55,7 @@ while[print(s)]:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 93 | first entry |
+| 2026-11-05 | Python 3 | 88 | u = p·p ^ p instead of p + p·abs(p) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
