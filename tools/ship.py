@@ -159,6 +159,11 @@ def main(argv=None):
     if check.returncode:
         fails = "\n".join(x for x in check.stdout.splitlines() if x.startswith("FAIL"))
         sys.exit(f"after the rebase on origin/main, tools/verify.py fails; not pushed:\n{fails}")
+    guard = subprocess.run([sys.executable, "tools/guard.py", "origin/main", "--strict"], cwd=wt,
+                           capture_output=True, text=True)
+    if guard.returncode:
+        refused = "\n".join(x for x in guard.stdout.splitlines() if x.startswith("REFUSED"))
+        sys.exit(f"tools/guard.py refuses the branch; not pushed:\n{refused}")
     if a.no_push:
         print(f"{branch} is ready in {wt}; not pushed")
         return

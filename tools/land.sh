@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# Land branch $1 on main: merge it, run the programs it adds or changes, rebuild the
-# records table and push main. Run by .github/workflows/ship.yml; safe to run again.
+# Land branch $1 on main: merge it, check it with guard.py, run the programs it adds or
+# changes, rebuild the records table and push main. Run by .github/workflows/ship.yml,
+# which takes this script and guard.py from main so a branch cannot loosen them; safe
+# to run again.
 set -euo pipefail
 branch=$1
+guard=${GUARD:-tools/guard.py}
 
 merge() {
   git fetch -q origin main "$branch"
@@ -18,6 +21,7 @@ merge() {
     git add README.md
     git commit -q --no-edit
   fi
+  python "$guard" origin/main --strict
   python tools/verify.py --since=origin/main --write "$@"
   git diff --quiet || git commit -q -a --amend --no-edit
 }
