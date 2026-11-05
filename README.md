@@ -70,6 +70,7 @@ sequence for the code and how it works.
 | [A000060](seq/A000xxx/A000060/) | Number of signed trees with n nodes. | **131** | — | 500 |
 | [A000062](seq/A000xxx/A000062/) | A Beatty sequence: a(n) = floor(n/(e-2)). | **53** | — | 1000 |
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | — | 996 |
+| [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **69** | — | 1001 |
 | [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | 81 | **56** | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
