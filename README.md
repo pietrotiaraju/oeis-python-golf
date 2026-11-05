@@ -218,6 +218,7 @@ sequence for the code and how it works.
 | [A000208](seq/A000xxx/A000208/) | Number of even sequences with period 2n. | **107** | 1001 |
 | [A000210](seq/A000xxx/A000210/) | A Beatty sequence: floor(n\*(e-1)). | **44** | 1000 |
 | [A000212](seq/A000xxx/A000212/) | a(n) = floor(n^2/3). | **29** | 5001 |
+| [A000215](seq/A000xxx/A000215/) | Fermat numbers: a(n) = 2^(2^n) + 1. | **26** | 12 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
