@@ -180,6 +180,7 @@ sequence for the code and how it works.
 | [A000170](seq/A000xxx/A000170/) | Number of ways of placing n nonattacking queens on an n X n board. | **122** | 13 |
 | [A000171](seq/A000xxx/A000171/) | Number of self-complementary graphs with n nodes. | **147** | 65 |
 | [A000172](seq/A000xxx/A000172/) | The Franel number a(n) = Sum\_{k = 0..n} binomial(n,k)^3. | **68** | 1001 |
+| [A000173](seq/A000xxx/A000173/) | Unitary-sociable numbers (smallest member of each cycle). | **135** | 3 |
 | [A000174](seq/A000xxx/A000174/) | Number of partitions of n into 5 squares. | **89** | 1000 |
 | [A000175](seq/A000xxx/A000175/) | Related to zeros of Bessel function. | **119** | 100 |
 | [A000177](seq/A000xxx/A000177/) | Number of partitions of n into 6 squares. | **94** | 200 |
