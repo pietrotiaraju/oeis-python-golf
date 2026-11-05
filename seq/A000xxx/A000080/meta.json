@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonisomorphic minimal triangle graphs.",
+  "offset": 3,
+  "min_terms": 6,
+  "timeout": 60
+}
