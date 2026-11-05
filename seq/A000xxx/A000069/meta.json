@@ -1,0 +1,6 @@
+{
+  "name": "Odious numbers: numbers with an odd number of 1's in their binary expansion.",
+  "offset": 1,
+  "min_terms": 10001,
+  "timeout": 60
+}
