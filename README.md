@@ -62,6 +62,7 @@ sequence for the code and how it works.
 | [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3*x^2 + 4*y^2. | **94** | — | 24 |
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **88** | — | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | — | 101 |
+| [A000055](seq/A000xxx/A000055/) | Number of trees with n unlabeled nodes. | **138** | — | 1001 |
 | [A000057](seq/A000xxx/A000057/) | Primes that divide at least one term in every Fibonacci sequence. | **54** | — | 100 |
 | [A000058](seq/A000xxx/A000058/) | Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(0) = 2. | **28** | — | 13 |
 | [A000059](seq/A000xxx/A000059/) | Numbers k such that (2k)^4 + 1 is prime. | **64** | — | 120 |
