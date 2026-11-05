@@ -109,6 +109,7 @@ sequence for the code and how it works.
 | [A000098](seq/A000xxx/A000098/) | Number of partitions of n if there are two kinds of 1, two kinds of 2… | **87** | 1001 |
 | [A000099](seq/A000xxx/A000099/) | Let A(n) = #{(i,j): i^2 + j^2 <= n}, V(n) = Pi\*n, P(n) = A(n) - V(n);… | **178** | 50 |
 | [A000100](seq/A000xxx/A000100/) | a(n) is the number of compositions of n in which the maximal part is… | **57** | 201 |
+| [A000101](seq/A000xxx/A000101/) | Record gaps between primes (upper end) (compare A002386, which gives… | **67** | 14 |
 | [A000102](seq/A000xxx/A000102/) | a(n) = number of compositions of n in which the maximum part size is… | **63** | 201 |
 | [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **112** | 999 |
 | [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **121** | 1001 |

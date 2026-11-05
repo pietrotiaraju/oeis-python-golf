@@ -1,0 +1,6 @@
+{
+  "name": "Record gaps between primes (upper end) (compare A002386, which gives lower ends of these gaps).",
+  "offset": 1,
+  "min_terms": 14,
+  "timeout": 60
+}
