@@ -1,0 +1,6 @@
+{
+  "name": "Number of series-parallel networks with n unlabeled edges. Also called yoke-chains by Cayley and MacMahon.",
+  "offset": 1,
+  "min_terms": 1001,
+  "timeout": 60
+}
