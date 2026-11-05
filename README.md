@@ -15,6 +15,8 @@ sequence for the code and how it works.
 |---|---|---|---|---|
 | [A000001](seq/A000001/) | Number of groups of order n. | **260** | — | 6 |
 | [A000002](seq/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **54** | — | 10502 |
+| [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **148** | — | 300 |
+| [A000004](seq/A000004/) | The zero sequence. | **16** | — | 1001 |
 | [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **66** | — | 1001 |
 | [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
 | [A300002](seq/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |

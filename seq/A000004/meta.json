@@ -1,0 +1,6 @@
+{
+  "name": "The zero sequence.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
