@@ -37,3 +37,13 @@ while[print(M//F)]:F*=n;n+=1;M=M*n+1
 - M and F grow like n!, so each term costs time proportional to log n!.
   It prints the whole b-file (1000 terms) at once and about 129000 terms
   in 60 s; the bar is the whole b-file in 60 s.
+
+## History
+
+| Date | Category | Bytes | Note |
+|---|---|---|---|
+| 2026-11-05 | Python 3 | 44 | first entry |
+
+---
+Sequence name and terms from [The On-Line Encyclopedia of Integer
+Sequences](https://oeis.org/A000210), CC BY-SA 4.0.
