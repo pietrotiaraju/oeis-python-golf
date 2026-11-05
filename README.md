@@ -72,6 +72,7 @@ sequence for the code and how it works.
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | — | 996 |
 | [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **69** | — | 1001 |
 | [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | 81 | **56** | 1001 |
+| [A000067](seq/A000xxx/A000067/) | Number of positive integers <= 2^n of form x^2 + 2 y^2. | **90** | — | 24 |
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | — | 10001 |
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k… | 80 | **61** | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
