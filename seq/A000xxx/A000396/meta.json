@@ -1,0 +1,6 @@
+{
+  "name": "Perfect numbers k: k is equal to the sum of the proper divisors of k.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}
