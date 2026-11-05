@@ -44,6 +44,7 @@ sequence for the code and how it works.
 | [A000030](seq/A000xxx/A000030/) | Initial digit of n. | **31** | — | 10001 |
 | [A000031](seq/A000xxx/A000031/) | Number of n-bead necklaces with 2 colors when turning over is not… | **84** | — | 3334 |
 | [A000032](seq/A000xxx/A000032/) | Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1)… | **33** | — | 4776 |
+| [A000034](seq/A000xxx/A000034/) | Period 2: repeat [1, 2]; a(n) = 1 + (n mod 2). | **21** | — | 10000 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
