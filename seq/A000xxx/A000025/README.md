@@ -5,12 +5,12 @@
 
 Offset 0: 1, 1, −2, 3, −3, 3, −5, 7, −6, 6, −10, 12, −11, 13, −17, 20, …
 
-### Python 3 — 119 bytes
+### Python 3 — 118 bytes
 
 ```python
 m=0
-while 1:
- r=[1]*-~m;k=m
+while r:=[1]*-~m:
+ k=m
  while k:
   for j in[*range(k,m+1)]*2:r[j]-=r[j-k]
   k-=1;r=[1]+[0]*2*k+r
@@ -46,12 +46,16 @@ while 1:
 - Packing the series into one big integer, with the divisions done as
   modular inverses `pow(1+B**k,-2,M)`, is exact but needs a signed decode of
   the digit and was longer (about 142 bytes).
+- The 119-byte version began its `while 1:` body with `r=[1]*-~m;`. Naming
+  the value in the loop condition is 1 byte shorter and keeps the loop
+  going, because the list has m + 1 ≥ 1 entries.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 119 | first entry |
+| 2026-11-05 | Python 3 | 118 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

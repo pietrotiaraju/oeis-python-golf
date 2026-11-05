@@ -5,11 +5,11 @@
 
 Offset 0: 1, 1, 2, 4, 7, 12, 22, 41, 72, 137, 254, 476, 901, 1716, 3274, …
 
-### Python 3 — 92 bytes
+### Python 3 — 91 bytes
 
 ```python
 n=0
-while 1:r=range(2<<n//2);print(len({min(x*x+4*y*y,2**n+1)for x in r for y in r})-2);n+=1
+while r:=range(2<<n//2):print(len({min(x*x+4*y*y,2**n+1)for x in r for y in r})-2);n+=1
 ```
 
 **How it works**
@@ -44,12 +44,16 @@ while 1:r=range(2<<n//2);print(len({min(x*x+4*y*y,2**n+1)for x in r for y in r})
   set grows to a(n) elements. The program prints a(0)…a(24) in about 33 s
   and a(25) at about 54 s. The bar is 25 terms in 60 s, the same as
   A000050; the b-file goes to n = 60, far beyond any enumeration.
+- The 92-byte version began its `while 1:` body with `r=range(2<<n//2);`.
+  Naming the value in the loop condition is 1 byte shorter and keeps the
+  loop going, because the range is never empty.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 92 | first entry |
+| 2026-11-05 | Python 3 | 91 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

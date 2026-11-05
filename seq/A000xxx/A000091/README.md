@@ -7,11 +7,11 @@
 
 Offset 1: 1, 2, 2, 2, 0, 4, 2, 2, 0, 0, 0, 4, 2, 4, 0, 2, 0, 0, 2, 0, 4, 0, 0, 4, 0, 4, …
 
-### Python 3 — 89 bytes
+### Python 3 — 88 bytes
 
 ```python
 n=0
-while 1:R=range(n:=n+1);print(sum(x*x%n==x for x in R)*any((x*x+3<<n)%n<1for x in R))
+while R:=range(n:=n+1):print(sum(x*x%n==x for x in R)*any((x*x+3<<n)%n<1for x in R))
 ```
 
 **How it works**
@@ -59,12 +59,16 @@ while 1:R=range(n:=n+1);print(sum(x*x%n==x for x in R)*any((x*x+3<<n)%n<1for x i
 - Tried and longer: `sum(any(…)for x in R if x*x%n==x)` (+2), `0in{…}`
   instead of `any` (+1, because of the parentheses), and a set of pairs
   `len({x for x in R for y in R if…})` (+3, and quadratic time).
+- The 89-byte version began its `while 1:` body with `R=range(n:=n+1);`.
+  Naming the value in the loop condition is 1 byte shorter and keeps the
+  loop going, because the range is never empty.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 89 | first entry |
+| 2026-11-05 | Python 3 | 88 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

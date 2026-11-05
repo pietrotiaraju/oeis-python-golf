@@ -7,14 +7,14 @@ Offset 1: 1, 1, 2, 2, 5, 4, 7, 7, 11, 9, 8, 6, 9, 4, 6, 22, 10, 4, 8, 4, …
 
 Groups are counted up to conjugacy in Sₙ.
 
-### Python 3 — 469 bytes
+### Python 3 — 468 bytes
 
 ```python
 from itertools import*
 c=lambda K:K<(T:={tuple(a[i]for i in b)for a in K for b in K})and c(T)or K
 n=1
-while 1:
- P=[*permutations(R:=range(n))];L=[{P[0]}]
+while P:=[*permutations(R:=range(n))]:
+ L=[{P[0]}]
  for H in L:
   D={*H}
   for g in P:
@@ -58,12 +58,17 @@ while 1:
   least 4 generators.
 - Without the coset skip the program is 427 bytes, but it does not reach
   a(5) in 120 s.
+- The 469-byte version began its `while 1:` body with
+  `P=[*permutations(…)];`. Naming the value in the loop condition is 1 byte
+  shorter and keeps the loop going, because the list of permutations is
+  never empty.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 469 | first entry |
+| 2026-11-05 | Python 3 | 468 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
