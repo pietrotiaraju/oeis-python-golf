@@ -1,3 +1,2 @@
-from math import*
-n=5
-while[print(n*sum((-1)**j*perm(j,4)*comb(2*n-2-j,j)*perm(n+~j)for j in range(n))//60)]:n+=1
+a=b=0;c=1;n=3
+while[print((n+2)*abs(~-n*(8*a+n)-8*n*c-6*~b)//30)]:a,b,c=b,c,n*(b-c)-a;n+=1

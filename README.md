@@ -166,7 +166,7 @@ sequence for the code and how it works.
 | [A000156](seq/A000xxx/A000156/) | Number of ways of writing n as a sum of 24 squares. | **76** | 45 |
 | [A000157](seq/A000xxx/A000157/) | Number of Boolean functions of n variables. | **239** | 6 |
 | [A000158](seq/A000xxx/A000158/) | Number of partitions into non-integral powers. | **172** | 35 |
-| [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **108** | 248 |
+| [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **77** | 248 |
 | [A000160](seq/A000xxx/A000160/) | Number of partitions into non-integral powers. | **188** | 38 |
 | [A000161](seq/A000xxx/A000161/) | Number of partitions of n into 2 squares. | **63** | 8000 |
 | [A000162](seq/A000xxx/A000162/) | Number of 3-dimensional polyominoes (or polycubes) with n cells. | **273** | 7 |
@@ -188,11 +188,11 @@ sequence for the code and how it works.
 | [A000178](seq/A000xxx/A000178/) | Superfactorials: product of first n factorials. | **38** | 47 |
 | [A000179](seq/A000xxx/A000179/) | Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of… | **62** | 451 |
 | [A000180](seq/A000xxx/A000180/) | Expansion of E.g.f. exp(-x)/(1-3x). | **33** | 101 |
-| [A000181](seq/A000xxx/A000181/) | a(n) = A058087(n,n-4). | **113** | 247 |
+| [A000181](seq/A000xxx/A000181/) | a(n) = A058087(n,n-4). | **89** | 247 |
 | [A000182](seq/A000xxx/A000182/) | Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f.… | **66** | 243 |
 | [A000183](seq/A000xxx/A000183/) | Number of discordant permutations of length n. | **98** | 11 |
 | [A000184](seq/A000xxx/A000184/) | Number of genus 0 rooted maps with 3 faces with n vertices. | **48** | 499 |
-| [A000185](seq/A000xxx/A000185/) | a(n) = A058087(n,n-5). | **113** | 246 |
+| [A000185](seq/A000xxx/A000185/) | a(n) = A058087(n,n-5). | **90** | 246 |
 | [A000186](seq/A000xxx/A000186/) | Number of 3 X n Latin rectangles in which the first row is in order. | **78** | 208 |
 | [A000187](seq/A000xxx/A000187/) | Generalized Euler numbers, c(5,n). | **88** | 251 |
 | [A000188](seq/A000xxx/A000188/) | (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of… | **52** | 10000 |
