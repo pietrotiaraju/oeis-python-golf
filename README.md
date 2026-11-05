@@ -143,6 +143,7 @@ sequence for the code and how it works.
 | [A000132](seq/A000xxx/A000132/) | Number of ways of writing n as a sum of 5 squares. | **74** | 100 |
 | [A000133](seq/A000xxx/A000133/) | Number of Boolean functions of n variables. | **41** | 11 |
 | [A000134](seq/A000xxx/A000134/) | Positive zeros of Bessel function of order 0 rounded to nearest… | **93** | 200 |
+| [A000135](seq/A000xxx/A000135/) | Number of partitions into non-integral powers. | **211** | 38 |
 | [A000136](seq/A000xxx/A000136/) | Number of ways of folding a strip of n labeled stamps. | **145** | 10 |
 | [A000137](seq/A000xxx/A000137/) | Series-parallel numbers. | **133** | 1000 |
 | [A000138](seq/A000xxx/A000138/) | Expansion of e.g.f. exp(-x^4/4)/(1-x). | **54** | 101 |
