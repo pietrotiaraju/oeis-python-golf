@@ -190,6 +190,7 @@ sequence for the code and how it works.
 | [A000180](seq/A000xxx/A000180/) | Expansion of E.g.f. exp(-x)/(1-3x). | **33** | 101 |
 | [A000181](seq/A000xxx/A000181/) | a(n) = A058087(n,n-4). | **113** | 247 |
 | [A000182](seq/A000xxx/A000182/) | Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f.… | **66** | 243 |
+| [A000183](seq/A000xxx/A000183/) | Number of discordant permutations of length n. | **98** | 11 |
 | [A000184](seq/A000xxx/A000184/) | Number of genus 0 rooted maps with 3 faces with n vertices. | **48** | 499 |
 | [A000185](seq/A000xxx/A000185/) | a(n) = A058087(n,n-5). | **113** | 246 |
 | [A000186](seq/A000xxx/A000186/) | Number of 3 X n Latin rectangles in which the first row is in order. | **78** | 208 |
