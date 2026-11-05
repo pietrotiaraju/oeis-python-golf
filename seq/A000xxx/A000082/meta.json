@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = n^2*Product_{p|n} (1 + 1/p).",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

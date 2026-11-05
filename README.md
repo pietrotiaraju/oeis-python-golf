@@ -86,6 +86,7 @@ sequence for the code and how it works.
 | [A000077](seq/A000xxx/A000077/) | Number of positive integers <= 2^n of form x^2 + 6 y^2. | **91** | — | 24 |
 | [A000078](seq/A000xxx/A000078/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) for n >=… | **41** | — | 3506 |
 | [A000079](seq/A000xxx/A000079/) | Powers of 2: a(n) = 2^n. | **24** | — | 1001 |
+| [A000082](seq/A000xxx/A000082/) | a(n) = n^2*Product_{p|n} (1 + 1/p). | **75** | — | 1000 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
