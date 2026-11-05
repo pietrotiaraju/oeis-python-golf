@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of writing n as a sum of 8 squares.",
+  "offset": 0,
+  "min_terms": 80,
+  "timeout": 60
+}
