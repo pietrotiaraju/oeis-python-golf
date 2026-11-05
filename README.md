@@ -183,6 +183,7 @@ sequence for the code and how it works.
 | [A000173](seq/A000xxx/A000173/) | Unitary-sociable numbers (smallest member of each cycle). | **135** | 3 |
 | [A000174](seq/A000xxx/A000174/) | Number of partitions of n into 5 squares. | **89** | 1000 |
 | [A000175](seq/A000xxx/A000175/) | Related to zeros of Bessel function. | **119** | 100 |
+| [A000176](seq/A000xxx/A000176/) | Generalized tangent numbers d\_(n,2). | **126** | 4500 |
 | [A000177](seq/A000xxx/A000177/) | Number of partitions of n into 6 squares. | **94** | 200 |
 | [A000178](seq/A000xxx/A000178/) | Superfactorials: product of first n factorials. | **38** | 47 |
 | [A000179](seq/A000xxx/A000179/) | Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of… | **62** | 451 |
