@@ -1,0 +1,26 @@
+name: ship
+
+# Pushing a branch named add/... or golf/... lands it on main without a pull request,
+# once tools/verify.py passes for the sequences it adds or changes.
+on:
+  push:
+    branches: ["add/**", "golf/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  ship:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          bash tools/land.sh "$GITHUB_REF_NAME"
