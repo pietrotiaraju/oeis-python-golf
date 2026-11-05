@@ -89,6 +89,7 @@ sequence for the code and how it works.
 | [A000077](seq/A000xxx/A000077/) | Number of positive integers <= 2^n of form x^2 + 6 y^2. | **91** | — | 24 |
 | [A000078](seq/A000xxx/A000078/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) for n >=… | **41** | — | 3506 |
 | [A000079](seq/A000xxx/A000079/) | Powers of 2: a(n) = 2^n. | **24** | — | 1001 |
+| [A000080](seq/A000xxx/A000080/) | Number of nonisomorphic minimal triangle graphs. | **347** | — | 6 |
 | [A000081](seq/A000xxx/A000081/) | Number of unlabeled rooted trees with n nodes (or connected functions… | **87** | — | 1001 |
 | [A000082](seq/A000xxx/A000082/) | a(n) = n^2\*Product\_{p\|n} (1 + 1/p). | **75** | — | 1000 |
 | [A000084](seq/A000xxx/A000084/) | Number of series-parallel networks with n unlabeled edges. Also… | **91** | — | 1001 |
