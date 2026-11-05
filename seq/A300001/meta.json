@@ -1,0 +1,6 @@
+{
+  "name": "Side length of the smallest equilateral triangle that can be dissected into n equilateral triangles with integer sides, or 0 if no such triangle exists.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

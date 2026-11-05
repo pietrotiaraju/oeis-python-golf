@@ -1,0 +1,6 @@
+{
+  "name": "Lexicographically earliest sequence of positive integers such that no k+2 points fall on any polynomial of degree k.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 120
+}

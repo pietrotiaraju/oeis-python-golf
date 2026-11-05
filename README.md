@@ -1,0 +1,65 @@
+# OEIS Python Golf
+
+Shortest known Python programs that generate sequences from the
+[OEIS](https://oeis.org/). Every record is run and checked against the
+sequence's OEIS b-file, locally and in CI.
+
+## Records
+
+Size in bytes, shortest in bold. The last column is how many terms every
+program for that sequence must reproduce within its time limit. Click a
+sequence for the code and how it works.
+
+<!-- records:start -->
+| Sequence | Name | Python 3 | Python 3 + sympy | Terms checked |
+|---|---|---|---|---|
+| [A000001](seq/A000001/) | Number of groups of order n. | **260** | — | 6 |
+| [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **66** | — | 1001 |
+| [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
+| [A300002](seq/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
+<!-- records:end -->
+
+## Rules in short
+
+- Print the sequence from its OEIS offset, one term per line, forever.
+- CPython 3.12, no flags, no input. Size = file bytes, trailing newline free.
+- Plain Python 3 and each "Python 3 + library" are separate categories.
+- Correct for every n, with exact arithmetic; hard-coding only with a proof on
+  the page.
+
+Full rules and how to send a record: [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Verify locally
+
+```bash
+pip install -r requirements.txt
+python tools/verify.py
+```
+
+## Why "shortest known"
+
+No record here is proved minimal, and in general none can be:
+
+- A function that returns the length of the shortest program for any output
+  cannot exist (the Berry paradox argument behind Kolmogorov complexity).
+- Even deciding whether a given program prints a given infinite sequence is
+  undecidable (Rice's theorem): a program that prints the sequence but switches
+  to 0 once some machine halts prints it exactly when that machine never halts.
+- For one specific record of, say, 66 bytes, ruling out every shorter program
+  means about 96⁶⁵ ≈ 10¹²⁸ candidates, each needing a proof about its infinite
+  output.
+
+So a record stands until someone finds a shorter program.
+
+## Related
+
+- [LODA](https://loda-lang.org/) mines programs for OEIS sequences in its own
+  assembly-like language, at a much larger scale and without byte golfing.
+- The `%o` lines of each OEIS entry hold readable reference programs.
+
+## License
+
+Programs and tools: [MIT](LICENSE). Sequence names, b-files and other data
+come from [The On-Line Encyclopedia of Integer Sequences](https://oeis.org/)
+under [CC BY-SA 4.0](https://oeis.org/LICENSE); the pages that quote them are
+under CC BY-SA 4.0 too.

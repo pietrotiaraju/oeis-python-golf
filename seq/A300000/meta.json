@@ -1,0 +1,6 @@
+{
+  "name": "The sum of the first n terms of the sequence is the concatenation of the first n digits of the sequence, with a(1) = 1.",
+  "offset": 1,
+  "min_terms": 1001,
+  "timeout": 60
+}
