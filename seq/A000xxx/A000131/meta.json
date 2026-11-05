@@ -1,0 +1,6 @@
+{
+  "name": "Number of asymmetrical dissections of n-gon.",
+  "offset": 7,
+  "min_terms": 994,
+  "timeout": 60
+}
