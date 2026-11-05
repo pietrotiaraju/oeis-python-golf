@@ -6,12 +6,12 @@
 
 Offset 0: 1, 1, 2, 2, 4, 4, 8, 9, 18, 23, 44, 63, 122, 190, 362, 612, …
 
-### Python 3 — 112 bytes
+### Python 3 — 111 bytes
 
 ```python
-from math import*
+import math
 n=1;k=0
-while[print(sum((2-n//(g:=gcd(j,n))%2<<g)+(2<<n//2)for j in range(n))//4//n)]:n+=k;k=1
+while[print(sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)for j in range(n))//4//n)]:n+=k;k=1
 ```
 
 **How it works**
@@ -34,7 +34,8 @@ symmetry fixes.
 
 **Notes**
 
-- `print(1);n=1` with `n+=1` is one byte longer.
+- `print(1);n=1` with `n+=1` is one byte longer; `print(n:=1)` with `n+=1`
+  ties.
 - Counting canonical strings directly (each n-bit string compared with all
   its rotations, reversals and complements) is 156 bytes and exponential.
 - The OEIS sum over divisors with `sympy.totient` comes out at 115 bytes, so
@@ -45,6 +46,7 @@ symmetry fixes.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 112 | first entry |
+| 2026-11-05 | Python 3 | 111 | `import math` instead of `from math import*` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

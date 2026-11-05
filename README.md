@@ -15,7 +15,7 @@ sequence for the code and how it works.
 |---|---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **256** | — | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | — | 10502 |
-| [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **147** | — | 300 |
+| [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **146** | — | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | — | 1001 |
 | [A000005](seq/A000xxx/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **52** | — | 10000 |
 | [A000006](seq/A000xxx/A000006/) | Integer part of square root of n-th prime. | **56** | — | 5000 |
@@ -23,12 +23,12 @@ sequence for the code and how it works.
 | [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
 | [A000009](seq/A000xxx/A000009/) | Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n… | **68** | — | 500 |
 | [A000010](seq/A000xxx/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | 67 | **52** | 500 |
-| [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **112** | — | 3336 |
+| [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **111** | — | 3336 |
 | [A000012](seq/A000xxx/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | — | 10001 |
-| [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **98** | — | 3335 |
+| [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **97** | — | 3335 |
 | [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
-| [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **83** | — | 10000 |
-| [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **97** | — | 3335 |
+| [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **82** | — | 10000 |
+| [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **96** | — | 3335 |
 | [A000018](seq/A000xxx/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **101** | — | 24 |
 | [A000019](seq/A000xxx/A000019/) | Number of primitive permutation groups of degree n. | **469** | — | 5 |
 | [A000020](seq/A000xxx/A000020/) | Number of primitive polynomials of degree n over GF(2) (version 2). | 83 | **66** | 24 |

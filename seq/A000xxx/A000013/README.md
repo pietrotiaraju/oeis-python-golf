@@ -6,12 +6,12 @@
 
 Offset 0: 1, 1, 2, 2, 4, 4, 8, 10, 20, 30, 56, 94, 180, 316, 596, 1096, …
 
-### Python 3 — 98 bytes
+### Python 3 — 97 bytes
 
 ```python
-from math import*
+import math
 n=1;k=0
-while[print(sum(1<<(g:=gcd(j,n))>>n//g%2for j in range(n))//n)]:n+=k;k=1
+while[print(sum(1<<(g:=math.gcd(j,n))>>n//g%2for j in range(n))//n)]:n+=k;k=1
 ```
 
 **How it works**
@@ -43,6 +43,7 @@ without complementing every bead.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 98 | first entry |
+| 2026-11-05 | Python 3 | 97 | `import math` instead of `from math import*` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
