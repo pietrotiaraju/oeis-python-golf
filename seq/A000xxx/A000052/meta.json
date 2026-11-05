@@ -1,0 +1,6 @@
+{
+  "name": "1-digit numbers arranged in alphabetical order, then the 2-digit numbers arranged in alphabetical order, then the 3-digit numbers, etc.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
