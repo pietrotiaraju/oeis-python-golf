@@ -1,0 +1,6 @@
+{
+  "name": "From von Staudt-Clausen representation of Bernoulli numbers: a(n) = Bernoulli(2n) + Sum_{(p-1)|2n} 1/p.",
+  "offset": 1,
+  "min_terms": 150,
+  "timeout": 60
+}

@@ -153,6 +153,7 @@ sequence for the code and how it works.
 | [A000143](seq/A000xxx/A000143/) | Number of ways of writing n as a sum of 8 squares. | **74** | 80 |
 | [A000144](seq/A000xxx/A000144/) | Number of ways of writing n as a sum of 10 squares. | **76** | 75 |
 | [A000145](seq/A000xxx/A000145/) | Number of ways of writing n as a sum of 12 squares. | **76** | 70 |
+| [A000146](seq/A000xxx/A000146/) | From von Staudt-Clausen representation of Bernoulli numbers: a(n) =… | **101** | 150 |
 | [A000147](seq/A000xxx/A000147/) | Number of trees of diameter 5. | **129** | 1000 |
 | [A000148](seq/A000xxx/A000148/) | Number of partitions into non-integral powers. | **102** | 40 |
 | [A000149](seq/A000xxx/A000149/) | a(n) = floor(e^n). | **76** | 301 |
