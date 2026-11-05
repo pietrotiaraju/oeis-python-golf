@@ -1,0 +1,6 @@
+{
+  "name": "Series-parallel numbers.",
+  "offset": 2,
+  "min_terms": 160,
+  "timeout": 60
+}
