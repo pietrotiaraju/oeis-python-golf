@@ -49,9 +49,6 @@ while[print((-~n*F(n)+sum(F(gcd(j,n))for j in range(n))+n%2*n*F(m:=-~n//2)*m)//1
 - a(n) ~ 3/(8·√(3π))·(27/4)ⁿ·n^(−5/2) (Lorand), so a(5199) is the first term
   whose decimal form passes Python's 4300-digit int-to-str limit. The
   program prints 5198 terms and stops there.
-- With sympy, `binomial(3*k,k)/…` stays an exact rational, so `4*` and
-  `//12//n` turn into `/3/n`. But `from sympy import*`, `binomial` and
-  `igcd` cost as much as that saves, and it ties at 160 bytes.
 
 ## History
 

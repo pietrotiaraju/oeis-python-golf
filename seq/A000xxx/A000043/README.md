@@ -55,11 +55,6 @@ prime. A composite n therefore never passes.
   agrees with this sequence for every n ≤ 1300. It is not a proof, though:
   sₙ − 2 = 12(s₀s₁⋯sₙ₋₂)², so it would accept a composite M whose prime factors
   all divide some sᵢ, and nothing known rules that out.
-- sympy's `isprime(~-2**n)` makes a 62-byte program, but above about 3·10²⁴
-  (n > 81) `isprime` is the BPSW probable-prime test, which is not proved.
-  For 2ⁿ − 1 its base-2 strong test always passes, so the Lucas half does all
-  the work. `is_mersenne_prime` looks n up in a table of the known exponents
-  and is 73 bytes anyway. So there is no sympy entry.
 
 ## History
 

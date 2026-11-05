@@ -2,15 +2,11 @@
 
 ## What counts as a program
 
-1. **One file per program**, at `seq/AXXXxxx/AXXXXXX/<category>.py`. Sequences
-   are grouped a thousand to a folder named after their first digits, so
-   A000026 lives in `seq/A000xxx/A000026/` and A300001 in
-   `seq/A300xxx/A300001/`. Its b-file follows the same rule:
-   `bfiles/A000xxx/b000026.txt`.
-   - `py3.py`: Python 3, standard library only.
-   - `py3-<lib>.py` (for example `py3-sympy.py`): Python 3 plus a library from
-     [`requirements.txt`](requirements.txt). Each library is its own category,
-     so it never competes with plain Python 3.
+1. **One program per sequence**, at `seq/AXXXxxx/AXXXXXX/py3.py`: Python 3,
+   **standard library only** (no sympy or other packages). Sequences are
+   grouped a thousand to a folder named after their first digits, so A000026
+   lives in `seq/A000xxx/A000026/` and A300001 in `seq/A300xxx/A300001/`. Its
+   b-file follows the same rule: `bfiles/A000xxx/b000026.txt`.
 2. **Output:** print the terms in order, starting at the OEIS offset, one term
    per line, and keep going forever (or stop at the end of a finite sequence).
    Nothing else goes to stdout; stderr is ignored, so warnings such as the
@@ -19,9 +15,6 @@
    command-line flags and no input.
 4. **Size:** the UTF-8 bytes of the file with LF line endings. A single
    trailing newline is not counted.
-5. **Libraries** must be general-purpose packages that already exist on PyPI.
-   A library written for a sequence (say, one exporting `a300002()`) is not
-   allowed. Adding a library to `requirements.txt` is a pull request of its own.
 
 ## What counts as correct
 
@@ -53,7 +46,6 @@ heading `### <category> — <bytes> bytes`, and that the records table in the
 [README](README.md) is up to date.
 
 ```bash
-pip install -r requirements.txt
 python tools/verify.py            # everything
 python tools/verify.py A300002    # one sequence
 python tools/verify.py --write    # also rewrite the records table

@@ -33,23 +33,11 @@ while[print(next((b for b in range(2,11)if(m:=sum(n//b**i%b*10**i for i in range
   the recursion `f=lambda n,b:n and n%b+10*f(n//b,b)` takes 162 bytes and
   about 10 000 terms a minute. The recursion alone, with the slow test, is 135.
 
-### Python 3 + sympy — 124 bytes
-
-```python
-from sympy import*
-n=1
-while[print(next((b for b in range(2,11)if isprime(sum(n//b**i%b*10**i for i in range(n)))),0))]:n+=1
-```
-
-- The same digit sum, with `isprime` for the test. With the recursive `f`
-  it is 128 bytes and runs to the end of the b-file in seconds.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 131 | first entry |
-| 2026-11-05 | Python 3 + sympy | 124 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

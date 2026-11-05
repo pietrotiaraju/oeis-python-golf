@@ -27,8 +27,6 @@ while[print(a)]:a,b=b,a+b
   shorter than `a,b=2,1`.
 - Starting one step earlier, from L(-1) = -1 and L(0) = 2, needs `a,b=2,-1`
   (with `b,a=a,a+b`, so `a` is still printed first), one byte more.
-- `from sympy import*` + `n=0` + `while[print(lucas(n))]:n+=1` is 50 bytes,
-  longer than the plain loop, so there is no sympy entry.
 - Python's 4300-digit limit on int-to-str conversion stops the program at
   L(20576), the first Lucas number with 4301 digits, after printing L(0) to
   L(20575). The limit is not counted as a failure.

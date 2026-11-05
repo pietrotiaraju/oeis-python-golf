@@ -54,10 +54,6 @@ while[-1in(k**4%~d for d in range(k*k))or print(k)]:k+=1
 - Fermat's test is shorter but wrong: 2³² + 1 = 256⁴ + 1 is
   641 · 6 700 417, yet 2^(N−1) ≡ 1 (mod N), as for every Fermat number, so it
   would print 256.
-- `from sympy import*` + `k=1` +
-  `while[isprime(k**4+1)and print(k)]:k+=1` is 62 bytes, longer than plain
-  Python, and above 3.3·10²⁴ `isprime` is the BPSW probable-prime test, which
-  is not proved. So there is no sympy entry.
 
 ## History
 

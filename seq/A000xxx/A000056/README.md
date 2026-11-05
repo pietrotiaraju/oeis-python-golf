@@ -53,8 +53,6 @@ while[print(n*f(n))]:n+=1
 - Having `f` return a(n) through n³ = Σ_{d|n} a(d)·n/d (the Dirichlet series
   ζ(s−3)/ζ(s−1)) is 86 bytes, and trial division with `a-=a//p//p` for each
   prime p | n, starting from a = n³, is 103.
-- With sympy, n·Σ_{d|n} μ(n/d)·d² through `mobius` and `divisors` is
-  86 bytes, longer than the plain program, so there is no sympy entry.
 
 ## History
 

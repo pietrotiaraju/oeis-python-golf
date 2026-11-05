@@ -38,24 +38,11 @@ while[print(a[-1]-1)]:n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
 - Excluding the part N (`range(n+1,0)`) gives p(N) − 1 directly, but the
   list then needs p(N) again for the later terms, so it is longer.
 
-### Python 3 + sympy — 56 bytes
-
-```python
-from sympy import*
-n=0
-while[print(partition(n)-1)]:n+=1
-```
-
-- `partition(n)` is sympy's exact partition function; asked for n in order
-  it extends a cached recurrence. The whole b-file prints in a few seconds,
-  most of it the sympy import.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 81 | first entry |
-| 2026-11-05 | Python 3 + sympy | 56 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

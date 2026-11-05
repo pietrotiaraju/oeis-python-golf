@@ -42,30 +42,11 @@ while[print(a[-1])]:n-=1;a+=sum(d*sum(a[d::d])<<(d>-3)for d in range(n,0))//n,
   1/((1 − x)(1 − x²)) factor at print time, as [A000070](../A000070/) does
   with `sum(a)`, is longer: the double running sum needs extra state.
 
-### Python 3 + sympy — 76 bytes
-
-```python
-from sympy import*
-s=n=u=v=0
-while 1:s+=partition(n);u,v=v,u+s;print(v);n+=1
-```
-
-- `partition(n)` is sympy's exact partition function, and `s` is the
-  running sum p(0) + … + p(n), which is [A000070](../A000070/)(n).
-- Dividing by 1 − x² is a running sum with step 2:
-  **a(n) = a(n − 2) + s(n)**. `u` and `v` hold a(n − 2) and a(n − 1) before
-  the swap and a(n − 1) and a(n) after it.
-- Asked for n in order, as here, `partition` extends a cached recurrence.
-  The whole b-file prints in about 2.5 s.
-- The same count with a(n) = w(n) − a(n − 1), where w is the running sum of
-  s (`w+=s;print(v:=w-v)`), also comes to 76 bytes.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 87 | first entry |
-| 2026-11-05 | Python 3 + sympy | 76 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

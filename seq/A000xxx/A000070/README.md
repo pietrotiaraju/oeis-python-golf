@@ -40,25 +40,11 @@ while[print(sum(a))]:n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
   Writing it as `(d<<(d>-2))` is 89 bytes, and subtracting `sum(a)` before
   the division is 88.
 
-### Python 3 + sympy — 61 bytes
-
-```python
-from sympy import*
-s=n=0
-while[print(s:=s+partition(n))]:n+=1
-```
-
-- `partition(n)` is sympy's exact partition function, and `s` keeps the
-  running sum. The walrus adds p(n) and prints the new total in one step.
-- Asked for n in order, as here, `partition` extends a cached recurrence.
-  The whole b-file prints in about 2 s.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 80 | first entry |
-| 2026-11-05 | Python 3 + sympy | 61 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

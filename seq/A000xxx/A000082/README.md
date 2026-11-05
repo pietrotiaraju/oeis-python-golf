@@ -42,8 +42,6 @@ while 1:a=n=k;P=k=1;exec("P*=k*k;k+=1;a+=(P%k>n%k)*a//k;"*n);print(a*n)
 - `P*=k` with the test `P*P%k>n%k` is also 31 bytes inside the string.
   Without the square, `(k-1)!%4` is 2, and k = 4 would count as a prime
   divisor of every multiple of 4.
-- sympy does not help: `primefactors(n)` with `[a:=a+a//p for p in …]` is
-  87 bytes, the `from sympy import*` line alone being 18.
 - Each term costs about n big-integer steps plus compiling a string of 31·n
   characters, so the whole b-file (1000 terms) takes about 12 s. The bar is
   the whole b-file in 60 s.

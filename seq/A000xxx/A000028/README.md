@@ -41,8 +41,6 @@ while[f[n]<0==print(n)]:n+=1;f+=-sum(f[d]for d in range(1,n)if n%d<(d*d!=n)),
   page: A000028 and its complement A000379 are the unique split of the
   positive integers where products of two distinct elements of either class
   occur equally often.
-- Plain trial division with `e.bit_count()` per prime is 114 bytes, and
-  sympy's `factorint` is 98, so there is no sympy entry.
 
 ## History
 

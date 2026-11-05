@@ -47,8 +47,6 @@ while r:=range(2<<n//2):print(len({max(x*~x+y*~y,-2**n)for x in r for y in r})-1
   25 terms in 60 s; the b-file goes to n = 50, far beyond any enumeration.
 - `min(x*x+x+y*y+y,2**n)` is 91 bytes, and filtering the A000050 set for odd
   values, `{v for x in r for y in r if(v:=x*x+y*y)>>n<v%2}`, is 93.
-- There is no sympy entry: testing each odd m ≤ 2ⁿ by factoring cannot come
-  near 25 terms in 60 s.
 
 ## History
 

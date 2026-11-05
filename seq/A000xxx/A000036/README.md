@@ -60,11 +60,6 @@ while 1:
 - Floats are not enough: telling which of two n has the larger |P| needs
   π to more digits as n grows, and how many is exactly what Mahler's bound
   pins down. A fixed π would fail for some large n.
-- With sympy, `if(Q:=abs(A-n*pi))>R:R=Q;print(A-(2*n*pi+1)//2)` makes a
-  156-byte program whose comparisons are decided by sympy's adaptive
-  `evalf`, but it prints only about 44 terms a minute, under the bar.
-  `floor(pi*S)` in place of the series gives up (`PrecisionExhausted`) once
-  S passes about 10¹⁰⁰. So there is no sympy entry.
 
 ## History
 

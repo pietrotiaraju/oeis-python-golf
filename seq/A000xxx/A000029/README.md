@@ -52,9 +52,6 @@ half of what rotation j and reflection j fix together, divided by n.
   bytes; printing a(0) with `print(n:=1)` and the term inside `print` is
   100; the reflections as one closed form,
   `sum(2<<math.gcd(j,n)for j in range(n))//n+(3+n%2<<n//2)>>2`, is 99.
-- sympy's `necklaces` and `bracelets` only generate the bracelets one by
-  one, which is exponential, and `from sympy import*` costs more than
-  `import math`, so there is no sympy entry.
 
 ## History
 

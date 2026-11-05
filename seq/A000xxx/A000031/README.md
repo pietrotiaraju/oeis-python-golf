@@ -37,8 +37,6 @@ Burnside's lemma over the n rotations.
 - The whole b-file (3334 terms) takes about 1.5 s.
 - a(14299) is the first term with more than 4300 digits, so Python 3.11+
   stops there with a `ValueError` from the int-to-str limit.
-- `from sympy import*` costs more than `import math` and has no necklace
-  count, so there is no sympy entry.
 
 ## History
 

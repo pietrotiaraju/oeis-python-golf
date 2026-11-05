@@ -28,8 +28,6 @@ while[print(a)]:a,b=b,a+b
 - `a=b=1` + `while[print(b-a)]:a,b=b,a+b` is also 33 bytes: it starts one step
   later, at (F(1), F(2)), and prints the difference b − a = F(n). The 2 bytes
   saved on the start are spent on `-a`.
-- Growing a list, `f=[0,1]` + `for x in f:print(x);f+=x+f[-1],`, is 39 bytes.
-  sympy's `fibonacci(n)` in an `n+=1` loop is 54, so there is no sympy entry.
 - Python ints are exact, so the only limit is the 4300-digit int-to-str limit
   of Python 3.11+: the program prints F(0) to F(20577) and then stops with a
   `ValueError` at F(20578), the first term with more than 4300 digits.

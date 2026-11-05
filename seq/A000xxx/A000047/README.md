@@ -45,10 +45,6 @@ values in that range and counts them.
   the program prints a(0)…a(24) in about 20 s and a(25) at about 34 s. The
   bar is 25 terms in 60 s; the b-file goes to n = 50, far beyond any
   enumeration.
-- The OEIS entry's PARI program tests the factorization instead: m has
-  this form exactly when every prime p ≡ 3 or 5 (mod 8) divides m to an
-  even power. Factoring every m up to 2²⁴ is both longer and far too slow
-  for the bar, even with sympy's `factorint`, so there is no sympy entry.
 
 ## History
 

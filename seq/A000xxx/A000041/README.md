@@ -44,26 +44,11 @@ while[print(a[-1])]:n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
   missing negative indices make it longer: a dict with `a.get(…,0)` over
   k = −n…n − 1 is 99 bytes.
 
-### Python 3 + sympy — 54 bytes
-
-```python
-from sympy import*
-n=0
-while[print(partition(n))]:n+=1
-```
-
-- `partition(n)` is sympy's exact partition function. Asked for n in order,
-  as here, it extends a cached recurrence; for a large n far past the cache
-  it switches to the Hardy–Ramanujan–Rademacher series. `npartitions` is the
-  older, longer name, and `nT(n)` is not exported by `from sympy import*`.
-- The whole b-file prints in about 2 s.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 79 | first entry |
-| 2026-11-05 | Python 3 + sympy | 54 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

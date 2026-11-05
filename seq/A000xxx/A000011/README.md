@@ -38,8 +38,6 @@ symmetry fixes.
   ties.
 - Counting canonical strings directly (each n-bit string compared with all
   its rotations, reversals and complements) is 156 bytes and exponential.
-- The OEIS sum over divisors with `sympy.totient` comes out at 115 bytes, so
-  sympy does not beat plain Python here.
 
 ## History
 

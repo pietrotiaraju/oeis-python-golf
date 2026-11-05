@@ -43,8 +43,6 @@ while[print(sum(n-2==x*x%n*2for x in range(n)))]:n+=2
 - The multiplicative formula (a(n) = 0 if 4 | n, otherwise the product of
   1 + (−1/p) over the primes p dividing n, with (−1/2) = 1) needs a
   factorisation and is much longer.
-- With sympy, `len(sqrt_mod(n-1,2*n,1))` in the same loop needs the
-  19-byte import and comes out longer than the plain program.
 
 ## History
 

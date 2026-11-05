@@ -47,30 +47,11 @@ while[print(a)]:
   `p=2` and a last `a*e` outside the loop and came out at 99 bytes, as did
   moving `a*=e` into the loop condition as `while~-m*(a:=a*e):`.
 
-### Python 3 + sympy — 80 bytes
-
-```python
-from sympy import*
-n=1
-while[print(prod(f:=factorint(n))*prod(f.values()))]:n+=1
-```
-
-- `factorint(n)` is the dict {p: e}. `prod` (from the star import)
-  multiplies the keys, which gives the radical p₁p₂⋯, and then the values,
-  which gives the exponents' product e₁e₂⋯: a(n) = rad(n)·Πe, the formula
-  A007947(n)·A005361(n) on the OEIS page. For n = 1 the dict is empty and
-  both products are 1.
-- The walrus is allowed as a call argument but not as the iterable of a
-  comprehension, so `prod(p*f[p]for p in(f:=factorint(n)))` is a
-  SyntaxError. `prod(p*e for p,e in factorint(n).items())` is 83 bytes.
-- The whole b-file prints in about 1 s.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 95 | first entry |
-| 2026-11-05 | Python 3 + sympy | 80 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
