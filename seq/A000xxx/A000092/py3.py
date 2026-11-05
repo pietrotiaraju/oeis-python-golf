@@ -1,6 +1,7 @@
 from math import*
-n=a=m=q=k=0
-while R:=range(-(r:=isqrt(n:=n+1)),r+1):
- A=sum(2*isqrt(t)+1for x in R for y in R if(t:=n-x*x-y*y)>=0)
- while abs(d:=abs(A*2**k-isqrt(q*n**3))-abs(a*2**k-isqrt(q*m**3)))<=A:k+=3;q=sum(32*4**k//i//i//comb(2*i,i)for i in range(1,k))
- if d>0:print(m:=n);a=A
+s=lambda t,d=3:t and t+s(t*~-d//4//d,d+2)
+X=lambda n:G*sum(2*isqrt(n-a-b)+1for a in Q for b in Q if a+b<=n)-s(n*isqrt(12*n*G*G))
+p=n=0;Q=[0];G=8**8
+while Q:=Q+[n:=n+1,n]*(isqrt(n)**2==n):
+ while abs(d:=abs(X(n))-abs(X(p)))<n*G**.5:G*=2
+ 0<d==print(p:=n)

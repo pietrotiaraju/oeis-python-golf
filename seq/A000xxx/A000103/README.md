@@ -10,7 +10,7 @@ triangulations one by one, so a short program has to enumerate too: it walks
 through every triangulation with n vertices and counts those without a vertex
 of degree 3.
 
-### Python 3 — 427 bytes
+### Python 3 — 425 bytes
 
 ```python
 R=lambda a,b,c:{(a,b):c,(b,c):a,(c,a):b}
@@ -18,10 +18,10 @@ def l(s,D,L):
  for a,b in D:
   for _ in D:D+=[(b,a)][b in L:];L+=b,;b=F[(a,b)[::s]]
  return*map(L.index,L),
-n=3
-while 1:
- n+=1;Q=[G:={}];S={N:=0}
- for i in range(2,n):G|=R(n,i-1,i)|R(1,i+1,i)
+n=1
+while Q:=[G:={}]:
+ S={N:=0}
+ for i in range(n:=n+1):G|=R(n,i-1,i)|R(-1,i+1,i)
  for F in Q:
   if{c:=min(l(s,[d],[])for s in(1,-1)for d in F)}-S:S|={c};N+=c[3]>0;Q+=[{k:F[k]for k in F if{*k}^{u,v}}|R(x,u,y)|R(x,y,v)for u,v in F if(u<v)>((x:=F[u,v],y:=F[v,u])in F)]
  print(N)
@@ -33,9 +33,10 @@ while 1:
   to the third vertex c of the face on its left, so following `F[a,b]` from
   neighbour to neighbour goes once round a. `R(a,b,c)` is the three entries
   of the face (a, b, c).
-- **A seed for each n.** Vertices 1 and n are joined to everything and
-  2 … n − 1 form a path: faces (n, i − 1, i) and (1, i + 1, i) for
-  i = 2 … n − 1. For n = 4 that is K4.
+- **A seed for each n.** The loop's `n` is the number of vertices minus 2.
+  Vertices −1 and n are joined to everything and 0 … n − 1 form a path:
+  faces (n, i − 1, i) and (−1, i + 1, i) for i = 0 … n − 1. `n` starts at 1,
+  so the first seed is K4 on −1, 0, 1, 2.
 - **Flips.** An edge uv with faces (u, v, x) and (v, u, y) can be swapped for
   xy, with faces (x, u, y) and (x, y, v), when x and y are not already
   neighbours. The new dict is F without (u, v) and (v, u), plus the two new
@@ -76,7 +77,9 @@ while 1:
   degree is at least 3, and `c[3]` is 0 exactly when it is 3. `N+=c[3]>0`
   counts the rest. K4 and the bipyramid (n = 4, 5) have degree-3 vertices,
   so the first two terms come out 0 with no special case.
-- **Small things.** `S` starts as `{0}`, which no code equals, and that line
+- **Small things.** `while Q:=[G:={}]:` resets the queue and the seed in
+  the loop condition (a non-empty list is always true), and `n:=n+1` sits
+  in the seed's `range`. `S` starts as `{0}`, which no code equals, and that line
   also sets `N` to 0. `{c:=…}-S` is shorter than `(c:=…)not in S`. The flips
   are one list comprehension, with a filtered dict comprehension in place of
   a copy plus `del`. `return*map(L.index,L),` returns a tuple without
@@ -94,6 +97,9 @@ while 1:
   faster, but it does not work: in the bipyramid over an (n − 2)-cycle every
   edge has an end of degree 4, so no flip keeps the minimum degree at 4 and
   that class is not connected by flips from there.
+- [A000109](../A000109/)'s `Q+=[…]*(S<(S:=S|{…}))`, which needs no `if`
+  line, is 2 bytes longer here: the count then has to be taken at the end,
+  `print(sum(c[3]>0for c in S))`, which costs more than `N`.
 - Correct for every n given the two theorems above. Nothing is hard-coded.
 
 ## History
@@ -101,6 +107,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 427 | first entry |
+| 2026-11-05 | Python 3 | 425 | seed with poles −1 and n, reset in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
