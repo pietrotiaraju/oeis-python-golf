@@ -1,0 +1,6 @@
+{
+  "name": "Number of hexagonal polyominoes (or hexagonal polyforms, or planar polyhexes) with n cells.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}
