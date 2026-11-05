@@ -151,6 +151,7 @@ sequence for the code and how it works.
 | [A000141](seq/A000xxx/A000141/) | Number of ways of writing n as a sum of 6 squares. | **74** | 100 |
 | [A000142](seq/A000xxx/A000142/) | Factorial numbers: n! = 1\*2\*3\*4\*...\*n (order of symmetric group S\_n,… | **31** | 101 |
 | [A000143](seq/A000xxx/A000143/) | Number of ways of writing n as a sum of 8 squares. | **74** | 80 |
+| [A000145](seq/A000xxx/A000145/) | Number of ways of writing n as a sum of 12 squares. | **76** | 70 |
 | [A000149](seq/A000xxx/A000149/) | a(n) = floor(e^n). | **77** | 301 |
 | [A000150](seq/A000xxx/A000150/) | Number of dissections of an n-gon, rooted at an exterior edge,… | **61** | 201 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
