@@ -130,6 +130,7 @@ def table(rows):
     for aid, name, recs, terms in rows:
         if len(name) > NAME_WIDTH:
             name = name[:NAME_WIDTH].rsplit(" ", 1)[0] + "…"
+        name = name.replace("|", "\\|")  # a bare | in a name (p|n) would split the cell
         best = min(r["bytes"] for r in recs)
         cells = []
         for c in cats:
