@@ -6,12 +6,12 @@
 
 Offset 0: 1, 1, 2, 2, 4, 4, 8, 10, 20, 30, 56, 94, 180, 316, 596, 1096, …
 
-### Python 3 — 97 bytes
+### Python 3 — 96 bytes
 
 ```python
 import math
 n=1;k=0
-while[print(sum(1<<(g:=math.gcd(j,n))>>n//g%2for j in range(n))//n)]:n+=k;k=1
+while[print(sum(1<<(g:=math.gcd(j,n))-n//g%2for j in range(n))//n)]:n+=k;k=1
 ```
 
 **How it works**
@@ -23,7 +23,9 @@ without complementing every bead.
   fixes 2^g strings. With the complement, each cycle has to alternate, so it
   fixes 2^g strings when n/g is even and none when it is odd.
 - So the two symmetries for j fix 2·2^g or 2^g strings together, and half of
-  that is `1<<g>>n//g%2`: 2^g, shifted right once when n/g is odd.
+  that is 2^g, or 2^(g−1) when n/g is odd: `1<<g-n//g%2`, the parity
+  subtracted in the exponent. The walrus assigns `g` before `n//g` is
+  evaluated, since Python reads the left operand of `-` first.
 - Summing over j and dividing by n gives the average over all 2n symmetries.
   This is the OEIS formula Σ φ(2d)·2^(n/d) / (2n) over d | n, with the
   divisor sum rewritten as a sum over j.
@@ -44,6 +46,7 @@ without complementing every bead.
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 98 | first entry |
 | 2026-11-05 | Python 3 | 97 | `import math` instead of `from math import*` |
+| 2026-11-05 | Python 3 | 96 | `1<<g-n//g%2` instead of `1<<g>>n//g%2` (from [A000116](../A000116/)) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
