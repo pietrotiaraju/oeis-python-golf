@@ -1,0 +1,6 @@
+{
+  "name": "Number of primitive n-bead necklaces (turning over is allowed) where complements are equivalent.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
