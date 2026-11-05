@@ -67,7 +67,7 @@ sequence for the code and how it works.
 | [A000056](seq/A000xxx/A000056/) | Order of the group SL(2,Z_n). | **81** | — | 1000 |
 | [A000057](seq/A000xxx/A000057/) | Primes that divide at least one term in every Fibonacci sequence. | **54** | — | 100 |
 | [A000058](seq/A000xxx/A000058/) | Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(0) = 2. | **28** | — | 13 |
-| [A000059](seq/A000xxx/A000059/) | Numbers k such that (2k)^4 + 1 is prime. | **64** | — | 120 |
+| [A000059](seq/A000xxx/A000059/) | Numbers k such that (2k)^4 + 1 is prime. | **63** | — | 120 |
 | [A000060](seq/A000xxx/A000060/) | Number of signed trees with n nodes. | **131** | — | 500 |
 | [A000061](seq/A000xxx/A000061/) | Generalized tangent numbers d(n,1). | **158** | — | 1000 |
 | [A000062](seq/A000xxx/A000062/) | A Beatty sequence: a(n) = floor(n/(e-2)). | **53** | — | 1000 |
