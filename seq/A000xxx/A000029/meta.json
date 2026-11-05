@@ -1,0 +1,6 @@
+{
+  "name": "Number of necklaces with n beads of 2 colors, allowing turning over (these are also called bracelets).",
+  "offset": 0,
+  "min_terms": 301,
+  "timeout": 60
+}
