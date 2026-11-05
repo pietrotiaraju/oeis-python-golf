@@ -100,6 +100,7 @@ sequence for the code and how it works.
 | [A000090](seq/A000xxx/A000090/) | Expansion of e.g.f. exp((-x^3)/3)/(1-x). | **58** | — | 101 |
 | [A000093](seq/A000xxx/A000093/) | a(n) = floor(n^(3/2)). | **41** | — | 501 |
 | [A000095](seq/A000xxx/A000095/) | Number of fixed points of Gamma\_0 (n) of type i. | **57** | — | 10000 |
+| [A000098](seq/A000xxx/A000098/) | Number of partitions of n if there are two kinds of 1, two kinds of 2… | **87** | — | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
