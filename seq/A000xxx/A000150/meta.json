@@ -1,0 +1,6 @@
+{
+  "name": "Number of dissections of an n-gon, rooted at an exterior edge, asymmetric with respect to that edge.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
