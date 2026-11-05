@@ -1,0 +1,6 @@
+{
+  "name": "Look and Say sequence: describe the previous term! (method A - initial term is 1).",
+  "offset": 1,
+  "min_terms": 25,
+  "timeout": 60
+}
