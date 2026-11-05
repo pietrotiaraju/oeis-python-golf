@@ -140,6 +140,7 @@ sequence for the code and how it works.
 | [A000129](seq/A000xxx/A000129/) | Pell numbers: a(0) = 0, a(1) = 1; for n > 1, a(n) = 2\*a(n-1) + a(n-2). | **35** | 1001 |
 | [A000130](seq/A000xxx/A000130/) | One-half the number of permutations of length n with exactly 1 rising… | **88** | 201 |
 | [A000131](seq/A000xxx/A000131/) | Number of asymmetrical dissections of n-gon. | **117** | 994 |
+| [A000133](seq/A000xxx/A000133/) | Number of Boolean functions of n variables. | **41** | 11 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | 1000 |
