@@ -1,0 +1,6 @@
+{
+  "name": "Decimal representation of n-th iteration of the one-dimensional cellular automaton defined by Rule 950, based on the 4-celled von Neumann neighborhood starting with a single black cell.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

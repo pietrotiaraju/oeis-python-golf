@@ -90,6 +90,7 @@ sequence for the code and how it works.
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
 | [A300002](seq/A300xxx/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
+| [A334244](seq/A334xxx/A334244/) | Decimal representation of n-th iteration of the one-dimensional… | **46** | — | 1000 |
 | [A384128](seq/A384xxx/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | — | 106 |
 | [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | 131 | **124** | 200 |
 <!-- records:end -->
