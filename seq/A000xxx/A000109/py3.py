@@ -1,16 +1,10 @@
 R=lambda a,b,c:{(a,b):c,(b,c):a,(c,a):b}
-def C(N):
- for s in 1,-1:
-  for a,b in N:
-   D={a:0};Q=[(a,b,b)];c=[]
-   for x,y,z in Q:
-    while(z:=N[(x,z)[::s]])!=y:Q+=[(z,x,x)][z in D:];c+=D[x],D.setdefault(z,len(D))
-   yield c
-T=R(0,1,2)|R(1,0,2);S=[]
-while[print(len(S)or 1)]:
- (u,v),w=T.popitem();T|=R(u,v,k:=len(T))|R(v,w,k)|R(w,u,k);S=[];Q=[T]
- for T in Q:
-  for u,v in T:
-   if(x:=T[u,v],y:=T[v,u])not in T:
-    M=T|R(x,u,y)|R(y,v,x);del M[u,v],M[v,u]
-    if(k:=min(C(M)))not in S:S+=k,;Q+=M,
+def l(s,D,L):
+ for a,b in D:
+  for _ in D:D+=[(b,a)][b in L:];L+=b,;b=F[(a,b)[::s]]
+ return*map(L.index,L),
+n,=S=1,
+while[print(len(S))]:
+ n+=1;Q=[G:={}];S={*G}
+ for i in range(n):G|=R(n,i-1,i)|R(-1,i+1,i)
+ for F in Q:Q+=[{k:F[k]for k in F if{*k}^{u,v}}|R(x,u,y)|R(x,y,v)for u,v in F if(u<v)>((x:=F[u,v],y:=F[v,u])in F)]*(S<(S:=S|{min(l(s,[d],[])for s in(1,-1)for d in F)}))
