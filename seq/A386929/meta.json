@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the least base b in {2,...,10} such that the base-b expansion of n, when read as a decimal integer, is prime; a(n) = 0 if no such base exists.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
