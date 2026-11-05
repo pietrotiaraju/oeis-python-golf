@@ -1,0 +1,6 @@
+{
+  "name": "Kendall-Mann numbers: the most common number of inversions in a permutation on n letters is floor(n*(n-1)/4); a(n) is the number of permutations with this many inversions.",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}
