@@ -172,6 +172,7 @@ sequence for the code and how it works.
 | [A000166](seq/A000xxx/A000166/) | Subfactorial or rencontres numbers, or derangements: number of… | **34** | 451 |
 | [A000167](seq/A000xxx/A000167/) | Nearest integer to modified Bessel function K\_n(2). | **69** | 201 |
 | [A000168](seq/A000xxx/A000168/) | a(n) = 2\*3^n\*(2\*n)!/(n!\*(n+2)!). | **43** | 926 |
+| [A000169](seq/A000xxx/A000169/) | Number of labeled rooted trees with n nodes: n^(n-1). | **29** | 100 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | 1000 |
