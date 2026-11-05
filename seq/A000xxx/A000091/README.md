@@ -60,30 +60,11 @@ while 1:R=range(n:=n+1);print(sum(x*x%n==x for x in R)*any((x*x+3<<n)%n<1for x i
   instead of `any` (+1, because of the parentheses), and a set of pairs
   `len({x for x in R for y in R if…})` (+3, and quadratic time).
 
-### Python 3 + sympy — 80 bytes
-
-```python
-from sympy import*
-n=1
-while[print(is_quad_residue(-3*4**n,n)<<primenu(n))]:n+=1
-```
-
-- The same two parts. `primenu(n)` is ω(n), and `True<<k` is 2ᵏ while
-  `False<<k` is 0.
-- `is_quad_residue(a,n)` handles composite n: it checks each prime power.
-  4ⁿ is a square that is a unit mod the odd part, so the test there is
-  "−3 is a square". Mod 2ᵛ the number −3·4ⁿ is 0, which is always a
-  square. This is the same test as the plain program's.
-- `2**primenu(n)*…` is 82 bytes.
-- The whole b-file prints in about 1.5 s, and about 140 000 terms print
-  in 60 s.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 89 | first entry |
-| 2026-11-05 | Python 3 + sympy | 80 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

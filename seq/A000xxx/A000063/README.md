@@ -39,11 +39,6 @@ while k:=n//2:d[k]=d[k-1]*(4*k-6)//k;print(d[k]-d.get(n/4,0)-d.get(n/6,0));n+=1
   are exact floats for every n it gets that far.
 - The whole b-file (996 terms, n = 5 … 1000) prints in under 0.1 s. The bar
   is the whole b-file in 60 s.
-- `while 1:k=n//2;` … `;n+=1` is 92 bytes. Growing `d` by one key per n,
-  `d[n]=d[n-1]*(4*n-6)//n`, needs `n>4and` before the print and `d[n//2]`
-  in it: 95. `math.comb` with `c=lambda m:comb(2*m,m)//(4*m-2)` and
-  `(n%4<1)*c(n//4)` is 112. With sympy's `catalan` it is 105, so there is no
-  sympy entry.
 
 ## History
 

@@ -45,8 +45,6 @@ of 1-cent coin: a(n) counts the partitions of n into parts 1 (two kinds),
   (`m=9`, `range(m,0,-20)`, `m+=2`) is 71 bytes.
 - The closed form on the OEIS entry (Tani Akinari, 2014) needs a (−1)ⁿ term
   and a period-5 table, both growing with n, and is over 80 bytes.
-- There is no sympy entry: sympy has no restricted-partition counter, and
-  expanding the g.f. with `series` is far longer.
 
 ## History
 

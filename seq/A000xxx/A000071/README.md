@@ -31,8 +31,6 @@ while[print(a)]:a,b=b,a-~b
   two bytes and the plain `a+b` step saves only one.
 - `b=a-~(a:=b)` for the step is also right (the left `a` is read before
   the walrus changes it) but one byte longer than `a,b=b,a-~b`.
-- sympy's `fibonacci(n)-1` in an `n+=1` loop is 56 bytes, so there is no
-  sympy entry.
 - Python ints are exact, so the only limit is the 4300-digit int-to-str
   limit of Python 3.11+: the program prints a(1) to a(20577) and then stops
   with a `ValueError` at a(20578), the first term with more than 4300

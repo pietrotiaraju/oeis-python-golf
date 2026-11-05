@@ -34,9 +34,6 @@ while[print(a)]:a,b,c=b,c,a+b+c
 - The closed form a(n) = floor(2^(n^2+n)/(2^(3n) - 2^(2n) - 2^n - 1)) mod
   2^n (Prunescu and Sauras Altuzarra) is exact but needs 58 bytes:
   `n=0` + `while[print(2**(n*n+n)//(8**n-4**n-2**n-1)%2**n)]:n+=1`.
-- sympy's `tribonacci(n)` starts T(0) = 0, T(1) = T(2) = 1, so it is
-  a(n+1); with `from sympy import*` alone taking 18 bytes there is no sympy
-  entry.
 - Python's 4300-digit limit on int-to-str conversion stops the program at
   a(16251), the first term with 4301 digits, after printing a(0) to
   a(16250). The limit is not counted as a failure.

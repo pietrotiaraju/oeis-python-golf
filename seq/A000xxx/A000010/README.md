@@ -32,20 +32,11 @@ while[print(sum(1%n==pow(k,F,n)for k in range(n)))]:n+=1;F*=n
   range(n))`, is 72 bytes and about 30 times faster. The divisor-sum
   recurrence φ(n) = n − Σ φ(d) over proper divisors d is 76.
 
-### Python 3 + sympy — 52 bytes
-
-```python
-from sympy import*
-n=1
-while[print(totient(n))]:n+=1
-```
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 67 | first entry |
-| 2026-11-05 | Python 3 + sympy | 52 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

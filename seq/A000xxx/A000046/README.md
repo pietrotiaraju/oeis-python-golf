@@ -47,32 +47,11 @@ while[print(a[-1]>>2)]:a+=sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)-(g==j)*n*
   everything, with `(1<<g>>n//g%2)+(1<<n//2)`, `a=[2]` and `>>1`, is 134.
   `while n:=len(a):` in place of `n=1;` … `;n+=1` ties at 133.
 
-### Python 3 + sympy — 119 bytes
-
-```python
-from sympy import*
-n=1;k=0
-while[print(sum(mobius(d)*((d%2<<n//d)+(n<<n//d//2+1))for d in divisors(n))//4//n)]:n+=k;k=1
-```
-
-- Robert A. Russell's formula on the OEIS page,
-  a(n) = (Σ_{odd d|n} μ(d)·2^(n/d) / (2n) + Σ_{d|n} μ(n/d)·2^⌊d/2⌋) / 2,
-  times 4n and with d → n/d in the second sum, is
-  4n·a(n) = Σ_{d|n} μ(d)·((d mod 2)·2^(n/d) + n·2^(⌊n/d/2⌋+1)).
-  `d%2<<n//d` keeps only the odd d in the first part, and `mobius` and
-  `divisors` come from the star import.
-- n = 0 would divide by zero, but a(0) = a(1) = 1, so the loop prints
-  n = 1 twice: `k` is 0 on the first pass, then 1 (as in A000011).
-- Multiplying by 2n instead, `(d%2<<n//d-1)+(n<<n//d//2)` with `//2//n`,
-  ties at 119.
-- The whole b-file prints in about 2 s.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 133 | first entry |
-| 2026-11-05 | Python 3 + sympy | 119 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

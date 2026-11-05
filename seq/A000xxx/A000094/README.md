@@ -44,25 +44,11 @@ while[print(a[n>>-n]+n)]:n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
   without the 0 in front, but both are 87 bytes. With the 0 in front,
   `a[~0**-n]` in place of `a[n>>-n]` is 87 bytes too, and `a[n and-1]` 88.
 
-### Python 3 + sympy — 61 bytes
-
-```python
-from sympy import*
-n=0
-while[print(partition(n)-n-0**n)]:n+=1
-```
-
-- `partition(n)` is sympy's exact partition function. Here `n` counts up
-  from 0, so `0**n` is 1 only at n = 0 and `-n-0**n` subtracts max(n, 1),
-  two bytes shorter than `-max(n,1)`. The whole b-file prints in under a
-  second, most of it the sympy import.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 86 | first entry |
-| 2026-11-05 | Python 3 + sympy | 61 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

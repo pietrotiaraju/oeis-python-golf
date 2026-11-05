@@ -26,7 +26,7 @@ NAME_WIDTH = 70
 
 
 def category(prog):
-    """py3.py -> 'Python 3', py3-sympy.py -> 'Python 3 + sympy'."""
+    """py3.py -> 'Python 3'."""
     return " + ".join(["Python 3"] + prog.stem.split("-")[1:])
 
 
@@ -168,7 +168,9 @@ def main(argv):
         selected = not only or aid in only
         if selected:
             print(f"{aid}  ({len(ref)} terms in b-file)")
-        for prog in sorted(d.glob("py3*.py")):
+        problems += [f"{aid}/{p.name}: only plain Python 3 counts (py3.py, standard library); delete it"
+                     for p in sorted(d.glob("py3-*.py"))]
+        for prog in sorted(d.glob("py3.py")):
             runs = execute and selected and (to_run is None or aid in to_run)
             rec, probs = check_program(prog, ref, meta, page, runs) if selected else (
                 {"category": category(prog), "bytes": size(prog)}, [])

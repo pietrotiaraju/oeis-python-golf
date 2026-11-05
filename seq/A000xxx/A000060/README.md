@@ -48,10 +48,6 @@ while[print(sum(a[i]*((2*i==n)-a[~i])for i in range(n)))]:a+=2*sum(d*a[-d]*sum(a
   is the whole b-file in 60 s.
 - a(n) grows about 5.6ⁿ, so from about n = 5700 its decimal form passes
   Python's 4300-digit int-to-str limit.
-- A first version with a₀ = 0, k running upwards with `a[-k::-k]` and
-  `a[n]+~n%2*a[n//2]-sum(map(int.__mul__,a,a[::-1]))` as the term was 137
-  bytes.
-  sympy has nothing for these trees, so there is no sympy entry.
 
 ## History
 

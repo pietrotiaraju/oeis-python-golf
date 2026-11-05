@@ -41,9 +41,6 @@ while[print(a[m])]:m+=1;a+=(2**~-m-sum(k*a[k]for k in range(1,m)if m%(2*k)==k))/
   Python's 4300-digit int-to-str limit.
 - `m/k%2==1` is 91 bytes, but it uses floats and is exact only while
   m < 2^53, so it is not accepted (as in [A000037](../A000037/)).
-- Storing k·a(k) instead and printing `b[m]//(m or 1)` is 96 bytes. The
-  OEIS formula Σ μ(d)·2^(n/d) / (2n) over odd d | n with sympy's `mobius`
-  and `divisors` is 103, so there is no sympy entry.
 
 ## History
 

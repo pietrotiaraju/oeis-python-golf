@@ -43,9 +43,6 @@ while[-P%k==1==print(k)]:P*=k;k+=1
 - Trial division, `n=1` + `while n:=n+1:all(n%d for d in range(2,n))and
   print(n)`, is 57 bytes. Fermat's test `2**n%n==2` would be shorter but is
   wrong: 341 = 11 · 31 passes it.
-- sympy cannot win: `from sympy import*` and its newline already take 19
-  bytes, and `n=1` + `while[print(prime(n))]:n+=1` brings it to 50, so there
-  is no sympy entry.
 
 ## History
 

@@ -32,8 +32,6 @@ while 1:a,*l=*l,sum(l);print(a)
 - Four named variables, `a,b,c,d=0,0,0,1` + `while[print(a)]:a,b,c,d=b,c,d,a+b+c+d`,
   are 53 bytes. Growing a list while iterating over it,
   `l=[0,0,0,1]` + `for x in l:print(x);l+=sum(l[-4:]),`, is 47.
-- sympy 1.14 has `fibonacci` and `tribonacci` but no tetranacci function, so
-  there is no sympy entry.
 - Python's 4300-digit limit on int-to-str conversion stops the program at
   a(15092), the first term with 4301 digits, after printing a(0) to a(15091).
   The limit is not counted as a failure.

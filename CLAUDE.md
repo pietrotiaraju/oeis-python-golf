@@ -5,6 +5,11 @@ the main checkout is shared between them. Rules and layout are in
 [CONTRIBUTING.md](CONTRIBUTING.md); a sequence lives in `seq/AXXXxxx/AXXXXXX/`
 and its b-file in `bfiles/AXXXxxx/bXXXXXX.txt`.
 
+Only plain Python 3 counts: one `py3.py` per sequence, standard library only.
+Don't write `py3-sympy.py` or any other library version, and don't add "with
+sympy it would be N bytes" notes to the pages: `tools/verify.py` refuses
+`py3-*.py` files.
+
 ## Your own worktree
 
 Never commit, switch branches, reset, stash or `git add -A` in the shared

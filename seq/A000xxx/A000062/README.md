@@ -47,10 +47,6 @@ while 1:k+=1;d=d*k+1;f*=k;print((k-2)*f//d)
   about 1.39·n.
 - The numbers have about N·log₂N bits; the whole b-file, 1000 terms,
   takes well under a second, and the bar is all of it in 60 s.
-- Printing in the loop condition, `while[print((k-2)*f//d)]:`, needs the
-  N = 3 start `d=4;f=6;k=3` and is 54 bytes. With sympy,
-  `floor(n/(E-2))` after `from sympy import*` is 59 bytes, longer than
-  plain Python.
 
 ## History
 

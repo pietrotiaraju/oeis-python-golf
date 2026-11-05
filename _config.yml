@@ -1,4 +1,4 @@
 title: OEIS Python Golf
 description: Shortest known Python programs for OEIS sequences, each checked against its b-file.
 theme: jekyll-theme-minimal
-exclude: [tools, bfiles, requirements.txt]
+exclude: [tools, bfiles]

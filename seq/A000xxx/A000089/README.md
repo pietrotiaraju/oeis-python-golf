@@ -34,8 +34,6 @@ while[print(sum(x*x%n>n-2for x in range(n)))]:n+=1
 - The multiplicative formula (a(n) = 0 if 4 | n, else the product of
   1 + (−1/p) over the odd primes p dividing n) needs a factorisation and is
   much longer.
-- With sympy, `len(sqrt_mod(-1,n,1))` in the same loop is 63 bytes, longer
-  than the plain program.
 
 ## History
 

@@ -37,24 +37,11 @@ while[print(sum(math.gcd(k,2**n-1)<2for k in range(2**n))//n)]:n+=1
 - Term n costs 2ⁿ gcds, so the program prints 25 terms in a minute. The bar
   is 24 terms in 60 s.
 
-### Python 3 + sympy — 66 bytes
-
-```python
-from sympy import*
-n=1
-while[print(totient(2**n-1)//n+(n<2))]:n+=1
-```
-
-- The same formula with `totient`, which factors 2ⁿ − 1, and `+(n<2)` for the
-  initial 2. It prints about 150 terms in a minute; past that the
-  factorisations of 2ⁿ − 1 get hard.
-
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 83 | first entry |
-| 2026-11-05 | Python 3 + sympy | 66 | first entry |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
