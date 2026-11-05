@@ -1,0 +1,6 @@
+{
+  "name": "Number of iterations for the circular absolute first-difference on decimal digits to reach a repdigit.",
+  "offset": 1,
+  "min_terms": 106,
+  "timeout": 60
+}
