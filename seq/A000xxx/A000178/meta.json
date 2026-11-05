@@ -1,0 +1,6 @@
+{
+  "name": "Superfactorials: product of first n factorials.",
+  "offset": 0,
+  "min_terms": 47,
+  "timeout": 60
+}
