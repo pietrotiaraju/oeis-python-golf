@@ -217,6 +217,7 @@ sequence for the code and how it works.
 | [A000207](seq/A000xxx/A000207/) | Number of inequivalent ways of dissecting a regular (n+2)-gon into n… | **94** | 200 |
 | [A000208](seq/A000xxx/A000208/) | Number of even sequences with period 2n. | **107** | 1001 |
 | [A000210](seq/A000xxx/A000210/) | A Beatty sequence: floor(n\*(e-1)). | **44** | 1000 |
+| [A000212](seq/A000xxx/A000212/) | a(n) = floor(n^2/3). | **29** | 5001 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
