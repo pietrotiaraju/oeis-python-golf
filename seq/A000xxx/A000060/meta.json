@@ -1,0 +1,6 @@
+{
+  "name": "Number of signed trees with n nodes.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
