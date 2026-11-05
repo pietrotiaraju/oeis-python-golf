@@ -1,14 +1,21 @@
 name: verify
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python tools/verify.py
+      # Programs run only for the sequences this push or pull request changes;
+      # pages, sizes and the records table are checked for all of them.
+      - run: python tools/verify.py --since=${{ github.event.pull_request.base.sha || github.event.before }}

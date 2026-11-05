@@ -2,7 +2,11 @@
 
 ## What counts as a program
 
-1. **One file per program**, at `seq/AXXXXXX/<category>.py`.
+1. **One file per program**, at `seq/AXXXxxx/AXXXXXX/<category>.py`. Sequences
+   are grouped a thousand to a folder named after their first digits, so
+   A000026 lives in `seq/A000xxx/A000026/` and A300001 in
+   `seq/A300xxx/A300001/`. Its b-file follows the same rule:
+   `bfiles/A000xxx/b000026.txt`.
    - `py3.py`: Python 3, standard library only.
    - `py3-<lib>.py` (for example `py3-sympy.py`): Python 3 plus a library from
      [`requirements.txt`](requirements.txt). Each library is its own category,
@@ -25,7 +29,7 @@
   checked. Exact arithmetic is expected: floats that happen to round right on
   the b-file are not enough.
 - Hard-coding terms is allowed only when the page explains why it is right,
-  for example the impossible cases n = 2, 3, 5 in [A300001](seq/A300001/).
+  for example the impossible cases n = 2, 3, 5 in [A300001](seq/A300xxx/A300001/).
   A program that embeds the b-file is not accepted.
 - If correctness beyond the b-file rests on a theorem or a conjecture, the
   page must say which.
@@ -53,17 +57,23 @@ pip install -r requirements.txt
 python tools/verify.py            # everything
 python tools/verify.py A300002    # one sequence
 python tools/verify.py --write    # also rewrite the records table
+python tools/verify.py --since=main  # run only what changed since main
 ```
+
+CI uses `--since`: it runs the programs of the sequences a push or pull
+request adds or edits, and checks the pages, sizes and table of all of them.
+A program that only moved, unchanged, is not run again.
 
 ## Sending a record
 
 1. Add or replace the program file. For a new sequence, also add
-   `seq/AXXXXXX/meta.json` (name, offset, `min_terms`, `timeout`), the b-file (`bfiles/bXXXXXX.txt`, as downloaded
-   from `https://oeis.org/AXXXXXX/bXXXXXX.txt`) and a page `seq/AXXXXXX/README.md`
-   (copy an existing one).
+   `seq/AXXXxxx/AXXXXXX/meta.json` (name, offset, `min_terms`, `timeout`), the
+   b-file (`bfiles/AXXXxxx/bXXXXXX.txt`, as downloaded from
+   `https://oeis.org/AXXXXXX/bXXXXXX.txt`) and a page
+   `seq/AXXXxxx/AXXXXXX/README.md` (copy an existing one).
 2. Explain the trick on the page and add a line to its history table.
 3. Run `python tools/verify.py --write` and open a pull request. CI runs the
-   same check.
+   same check for the sequences the pull request changes.
 
 Every record here is the **shortest known**, never a proof of minimality: see
 [the README](README.md#why-shortest-known).

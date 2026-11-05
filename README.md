@@ -13,37 +13,39 @@ sequence for the code and how it works.
 <!-- records:start -->
 | Sequence | Name | Python 3 | Python 3 + sympy | Terms checked |
 |---|---|---|---|---|
-| [A000001](seq/A000001/) | Number of groups of order n. | **256** | — | 6 |
-| [A000002](seq/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | — | 10502 |
-| [A000003](seq/A000003/) | Number of classes of primitive positive definite binary quadratic… | **147** | — | 300 |
-| [A000004](seq/A000004/) | The zero sequence. | **16** | — | 1001 |
-| [A000005](seq/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **52** | — | 10000 |
-| [A000006](seq/A000006/) | Integer part of square root of n-th prime. | **56** | — | 5000 |
-| [A000007](seq/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | — | 1001 |
-| [A000008](seq/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
-| [A000009](seq/A000009/) | Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n… | **68** | — | 500 |
-| [A000010](seq/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | 67 | **52** | 500 |
-| [A000011](seq/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **112** | — | 3336 |
-| [A000012](seq/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | — | 10001 |
-| [A000013](seq/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **98** | — | 3335 |
-| [A000014](seq/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
-| [A000015](seq/A000015/) | Smallest prime power >= n. | **83** | — | 10000 |
-| [A000016](seq/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **97** | — | 3335 |
-| [A000018](seq/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **101** | — | 24 |
-| [A000019](seq/A000019/) | Number of primitive permutation groups of degree n. | **469** | — | 5 |
-| [A000020](seq/A000020/) | Number of primitive polynomials of degree n over GF(2) (version 2). | 83 | **66** | 24 |
-| [A000021](seq/A000021/) | Number of positive integers <= 2^n of form x^2 + 12 y^2. | **101** | — | 24 |
-| [A000022](seq/A000022/) | Number of centered hydrocarbons with n atoms. | **247** | — | 40 |
-| [A000023](seq/A000023/) | a(n) is the number of permutations on {1,2,...,n} with an even number… | **40** | — | 251 |
-| [A000024](seq/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **101** | — | 24 |
-| [A000025](seq/A000025/) | Coefficients of the 3rd-order mock theta function f(q). | **119** | — | 400 |
-| [A000027](seq/A000027/) | The positive integers. Also called the natural numbers, the whole… | **24** | — | 500000 |
-| [A276805](seq/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
-| [A300000](seq/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
-| [A300001](seq/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
-| [A300002](seq/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
-| [A384128](seq/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | — | 106 |
-| [A386929](seq/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | 131 | **124** | 200 |
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **256** | — | 6 |
+| [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | — | 10502 |
+| [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **147** | — | 300 |
+| [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | — | 1001 |
+| [A000005](seq/A000xxx/A000005/) | d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n. | **52** | — | 10000 |
+| [A000006](seq/A000xxx/A000006/) | Integer part of square root of n-th prime. | **56** | — | 5000 |
+| [A000007](seq/A000xxx/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | — | 1001 |
+| [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **73** | — | 10001 |
+| [A000009](seq/A000xxx/A000009/) | Expansion of Product_{m >= 1} (1 + x^m); number of partitions of n… | **68** | — | 500 |
+| [A000010](seq/A000xxx/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | 67 | **52** | 500 |
+| [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **112** | — | 3336 |
+| [A000012](seq/A000xxx/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | — | 10001 |
+| [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **98** | — | 3335 |
+| [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **167** | — | 1001 |
+| [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **83** | — | 10000 |
+| [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **97** | — | 3335 |
+| [A000018](seq/A000xxx/A000018/) | Number of positive integers <= 2^n of form x^2 + 16*y^2. | **101** | — | 24 |
+| [A000019](seq/A000xxx/A000019/) | Number of primitive permutation groups of degree n. | **469** | — | 5 |
+| [A000020](seq/A000xxx/A000020/) | Number of primitive polynomials of degree n over GF(2) (version 2). | 83 | **66** | 24 |
+| [A000021](seq/A000xxx/A000021/) | Number of positive integers <= 2^n of form x^2 + 12 y^2. | **101** | — | 24 |
+| [A000022](seq/A000xxx/A000022/) | Number of centered hydrocarbons with n atoms. | **247** | — | 40 |
+| [A000023](seq/A000xxx/A000023/) | a(n) is the number of permutations on {1,2,...,n} with an even number… | **40** | — | 251 |
+| [A000024](seq/A000xxx/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **101** | — | 24 |
+| [A000025](seq/A000xxx/A000025/) | Coefficients of the 3rd-order mock theta function f(q). | **119** | — | 400 |
+| [A000026](seq/A000xxx/A000026/) | Mosaic numbers or multiplicative projection of n: if n = Product… | 95 | **80** | 10000 |
+| [A000027](seq/A000xxx/A000027/) | The positive integers. Also called the natural numbers, the whole… | **24** | — | 500000 |
+| [A000028](seq/A000xxx/A000028/) | Let k = p_1^e_1 p_2^e_2 p_3^e_3 ... be the prime factorization of n.… | **88** | — | 10000 |
+| [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
+| [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
+| [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | — | 100 |
+| [A300002](seq/A300xxx/A300002/) | Lexicographically earliest sequence of positive integers such that no… | 209 | **152** | 10 |
+| [A384128](seq/A384xxx/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | — | 106 |
+| [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | 131 | **124** | 200 |
 <!-- records:end -->
 
 ## Rules in short

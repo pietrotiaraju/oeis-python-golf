@@ -1,0 +1,6 @@
+{
+  "name": "Let k = p_1^e_1 p_2^e_2 p_3^e_3 ... be the prime factorization of n. Sequence gives k such that the sum of the numbers of 1's in the binary expansions of e_1, e_2, e_3, ... is odd.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
