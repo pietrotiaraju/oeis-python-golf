@@ -1,0 +1,6 @@
+{
+  "name": "Number of solutions to x^2 + 1 == 0 (mod n).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
