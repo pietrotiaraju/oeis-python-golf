@@ -1,0 +1,6 @@
+{
+  "name": "Coefficient of q^(2n-1) in the series expansion of Ramanujan's mock theta function f(q).",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
