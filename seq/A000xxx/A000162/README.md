@@ -40,9 +40,9 @@ while[print(len(s))]:s={(*min(sorted((x-a,y-b,z-c)for x,y,z in r)for r in F({q+(
   orientation makes about 24·n candidates per polycube, each with its own
   orbit, so time and memory grow about seven-fold per term: on the machine
   that set the bar, a(1)…a(8) take about 39 s and a(9) is out of reach in
-  60 s (and would need about 24 × 48311 stored orientations). Attaching
-  cells in all six directions to the canonical forms only is four times
-  faster but about 30 bytes longer. The bar is 7 terms in 60 s.
+  60 s. Attaching cells in all six directions to the canonical forms only
+  is four times faster but about 30 bytes longer. The bar is 7 terms in
+  60 s.
 
 ## History
 
