@@ -34,7 +34,7 @@ sequence for the code and how it works.
 | [A000019](seq/A000xxx/A000019/) | Number of primitive permutation groups of degree n. | **468** | 5 |
 | [A000020](seq/A000xxx/A000020/) | Number of primitive polynomials of degree n over GF(2) (version 2). | **83** | 24 |
 | [A000021](seq/A000xxx/A000021/) | Number of positive integers <= 2^n of form x^2 + 12 y^2. | **92** | 24 |
-| [A000022](seq/A000xxx/A000022/) | Number of centered hydrocarbons with n atoms. | **247** | 40 |
+| [A000022](seq/A000xxx/A000022/) | Number of centered hydrocarbons with n atoms. | **200** | 40 |
 | [A000023](seq/A000xxx/A000023/) | a(n) is the number of permutations on {1,2,...,n} with an even number… | **40** | 251 |
 | [A000024](seq/A000xxx/A000024/) | Number of positive integers <= 2^n of form x^2 + 10 y^2. | **92** | 24 |
 | [A000025](seq/A000xxx/A000025/) | Coefficients of the 3rd-order mock theta function f(q). | **118** | 400 |
