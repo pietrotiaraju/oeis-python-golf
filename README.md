@@ -169,6 +169,7 @@ sequence for the code and how it works.
 | [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **108** | 248 |
 | [A000160](seq/A000xxx/A000160/) | Number of partitions into non-integral powers. | **188** | 38 |
 | [A000161](seq/A000xxx/A000161/) | Number of partitions of n into 2 squares. | **63** | 8000 |
+| [A000163](seq/A000xxx/A000163/) | Series-parallel numbers. | **160** | 160 |
 | [A000164](seq/A000xxx/A000164/) | Number of partitions of n into 3 squares (allowing part zero). | **79** | 800 |
 | [A000165](seq/A000xxx/A000165/) | Double factorial of even numbers: (2n)!! = 2^n\*n!. | **33** | 404 |
 | [A000166](seq/A000xxx/A000166/) | Subfactorial or rencontres numbers, or derangements: number of… | **34** | 451 |
