@@ -12,13 +12,13 @@ terms (n ≤ 25) come from Martin Fuller's C program, which builds the
 systems with nauty. A short program can only enumerate, so it gets a
 handful of terms.
 
-### Python 3 — 347 bytes
+### Python 3 — 340 bytes
 
 ```python
 from itertools import*
 e=lambda T,s=1:2**n-1in[s:=s|t for t in T*n if s&t]
-n=3
-while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,combinations(T,k)))==(T in D)!=D.update((*sorted(sum((t>>i&1)<<p[i]for i in R)for t in T),)for p in permutations(R))for k in R[:-2]for U in combinations([2*x for x in range(1<<n-1)if x.bit_count()==3],k)));n+=1
+n=3;C=combinations
+while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,C(T,k)))==(T in D)!=D.update((*sorted(sum((t>>i&1)<<p[i]for i in R)for t in T),)for p in permutations(R))for k in R[:-2]for U in C([2*x for x in range(1<<n-1)if x.bit_count()==3],k)));n+=1
 ```
 
 **How it works**
@@ -45,7 +45,7 @@ while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,combinations(T,k)))==(
   sharing one pair.
 - **One chain of comparisons** does the rest, stopping at the first false
   link:
-  - `e(T)>any(map(e,combinations(T,k)))`: T is connected and no T minus one
+  - `e(T)>any(map(e,C(T,k)))`: T is connected and no T minus one
     triple is (T has k + 1 triples).
   - `==(T in D)`: `any(…)` is `False` here, so this holds when T is not in
     `D`, the set of every relabelling of the systems counted so far.
@@ -62,6 +62,11 @@ while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,combinations(T,k)))==(
   two smaller minimal systems that again have the same graph, and induction
   on n finishes the proof. The counts also match Fuller's graph counts for
   every n the program reaches.
+- **Imports.** `combinations` is used twice, so `;C=combinations` (15
+  bytes) pays for itself and saves 7. `permutations` is used once and keeps
+  its name. Dropping the `*` costs more: `import itertools as I` gives 352
+  bytes, `from itertools import combinations as C,permutations` gives 355,
+  and plain `import itertools` gives 371.
 - `2**n-1in` prints a `SyntaxWarning` (invalid decimal literal) on stderr.
 
 **Limits**
@@ -71,7 +76,8 @@ while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,combinations(T,k)))==(
   after about 7 minutes, so the bar is 6 terms in 60 s.
 - `D` keeps every labelled copy of every class of the current n: about
   250 MB by the time the check stops the program during n = 9.
-- Other shapes tried: triples as tuples with set closures (382 bytes, n = 8
+- Other shapes tried, measured before the `C=` alias: triples as tuples
+  with set closures (382 bytes, n = 8
   in 25 s); `if 1==e(T)>any(…)` as a filter with `T not in D!=D.update(…)`
   as the term (353 bytes, a little faster); orbit removal from a set S of
   all valid T instead of `D` (361 bytes, little memory); triple masks from
@@ -83,6 +89,7 @@ while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,combinations(T,k)))==(
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 347 | first entry |
+| 2026-11-05 | Python 3 | 340 | `C=combinations` alias (pietrotiaraju) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
