@@ -1,0 +1,6 @@
+{
+  "name": "a(8i+j) = 13i + a(j), where 1<=j<=8.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
