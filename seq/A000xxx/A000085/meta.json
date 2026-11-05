@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-inverse permutations on n letters, also known as involutions; number of standard Young tableaux with n cells.",
+  "offset": 0,
+  "min_terms": 801,
+  "timeout": 60
+}
