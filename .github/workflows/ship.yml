@@ -1,7 +1,8 @@
 name: ship
 
 # Pushing a branch named add/... or golf/... lands it on main without a pull request,
-# once tools/verify.py passes for the sequences it adds or changes.
+# once tools/guard.py and tools/verify.py pass for the sequences it adds or changes.
+# Only seq/, bfiles/ and README.md land this way; anything else needs a pull request.
 on:
   push:
     branches: ["add/**", "golf/**"]
@@ -22,4 +23,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          bash tools/land.sh "$GITHUB_REF_NAME"
+          # The checks come from main, so a branch cannot loosen the rules it is checked by.
+          git show origin/main:tools/land.sh > "$RUNNER_TEMP/land.sh"
+          git show origin/main:tools/guard.py > "$RUNNER_TEMP/guard.py"
+          GUARD="$RUNNER_TEMP/guard.py" bash "$RUNNER_TEMP/land.sh" "$GITHUB_REF_NAME"

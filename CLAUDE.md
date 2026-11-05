@@ -41,3 +41,11 @@ A000011 -b golf/import-math -m "A000003, A000011: import math (-1 byte each)"`.
 
 Don't open pull requests for sequence work, and don't edit the records table by
 hand: `tools/verify.py --write` rebuilds it.
+
+`tools/guard.py` refuses, for sequences already on `main`: a `py3.py` that is not
+shorter (unless the old one is wrong and a commit message says "fix"), any change
+to their b-file, a lower `min_terms`, a longer `timeout` or a new offset in
+`meta.json`, and deleting their program, page or `meta.json`. The `ship` workflow
+also refuses anything outside `seq/`, `bfiles/` and `README.md`: changes to
+`tools/`, workflows, `CLAUDE.md` or `CONTRIBUTING.md` need a pull request that
+the user merges.

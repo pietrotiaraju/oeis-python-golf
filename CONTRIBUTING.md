@@ -67,11 +67,22 @@ A program that only moved, unchanged, is not run again.
 3. Run `python tools/verify.py --write` and open a pull request. CI runs the
    same check for the sequences the pull request changes.
 
+For a sequence that is already here, `tools/guard.py` (run by CI and the `ship`
+workflow) holds the line:
+
+- a new `py3.py` must be **shorter** than the one it replaces. A correction of a
+  program found wrong may be longer, if a commit message says "fix";
+- the b-file and the bar in `meta.json` stay as they are (same offset,
+  `min_terms` not lower, `timeout` not longer), and the program, page and
+  `meta.json` are not deleted.
+
 With write access to this repository there is a shorter way: push a branch
 named `add/…` (new sequences) or `golf/…` (shorter records), for example with
 `python tools/ship.py AXXXXXX`. The `ship` workflow merges it into `main`, runs
-the programs it adds or changes, rebuilds the records table and deletes the
-branch; if the check fails, nothing reaches `main`.
+the guard and the programs it adds or changes, rebuilds the records table and
+deletes the branch; if a check fails, nothing reaches `main`. Only `seq/`,
+`bfiles/` and `README.md` land this way: changes to tools, workflows or these
+rules go through a pull request.
 
 Every record here is the **shortest known**, never a proof of minimality: see
 [the README](README.md#why-shortest-known).
