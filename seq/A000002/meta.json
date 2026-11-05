@@ -1,0 +1,6 @@
+{
+  "name": "Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.",
+  "offset": 1,
+  "min_terms": 10502,
+  "timeout": 60
+}
