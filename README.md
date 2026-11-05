@@ -234,6 +234,7 @@ sequence for the code and how it works.
 | [A000224](seq/A000xxx/A000224/) | Number of squares mod n. | **53** | 10000 |
 | [A000225](seq/A000xxx/A000225/) | a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that… | **25** | 1001 |
 | [A000226](seq/A000xxx/A000226/) | Number of n-node unlabeled connected graphs with one cycle of length… | **167** | 500 |
+| [A000227](seq/A000xxx/A000227/) | Nearest integer to e^n. | **71** | 15 |
 | [A000228](seq/A000xxx/A000228/) | Number of hexagonal polyominoes (or hexagonal polyforms, or planar… | **229** | 10 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
