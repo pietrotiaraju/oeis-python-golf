@@ -227,6 +227,7 @@ sequence for the code and how it works.
 | [A000217](seq/A000xxx/A000217/) | Triangular numbers: a(n) = binomial(n+1,2) = n\*(n+1)/2 = 0 + 1 + 2 +… | **29** | 30001 |
 | [A000218](seq/A000xxx/A000218/) | Take sum of squares of digits of previous term; start with 3. | **49** | 100 |
 | [A000219](seq/A000xxx/A000219/) | Number of plane partitions (or planar partitions) of n. | **82** | 6501 |
+| [A000220](seq/A000xxx/A000220/) | Number of asymmetric trees with n nodes (also called identity trees). | **143** | 1000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
