@@ -1,0 +1,6 @@
+{
+  "name": "Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.",
+  "offset": 0,
+  "min_terms": 2001,
+  "timeout": 60
+}
