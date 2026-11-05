@@ -5,11 +5,11 @@
 
 Offset 1: 1, 3, 4, 6, 8, 9, 11, 12, 14, 16, …
 
-### Python 3 — 43 bytes
+### Python 3 — 42 bytes
 
 ```python
-l=[2]
-for d in l:l+=(1,2)[-d:print(len(l))]
+l=[0]
+for d in l:l+=(1,0)[d:print(len(l))]
 ```
 
 **How it works**
@@ -25,10 +25,14 @@ for d in l:l+=(1,2)[-d:print(len(l))]
 - |φ′(d)| = d, so when the loop reaches F_k the list has length
   1 + F_0 + … + F_{k−1} = a(1) + (a(k+1) − a(1)) = a(k+1). That length is
   the term: no counter is needed.
-- φ′(d) is `(1,2)[-d:]`: the whole tuple for d = 2, just `(2,)` for d = 1.
-  `print` returns `None`, so it fits in the slice's end: `[-d:None]` is
-  `[-d:]`, and the print runs before `+=` grows the list. One byte under
-  `print(len(l));l+=(1,2)[-d:]`.
+- The program stores the letters renamed 2 → 0, 1 → 1, which turns φ′ into
+  0 → 10, 1 → 0 and the list into the Fibonacci word 0100101001… itself.
+  Then φ′(d) is `(1,0)[d:]`: the whole tuple for d = 0, just `(0,)` for
+  d = 1, so the slice start needs no minus sign (the old letters 2, 1 needed
+  `(1,2)[-d:]`, one byte more).
+- `print` returns `None`, so it fits in the slice's end: `[d:None]` is
+  `[d:]`, and the print runs before `+=` grows the list. One byte under
+  `print(len(l));l+=(1,0)[d:]`.
 
 **Notes**
 
@@ -46,6 +50,7 @@ for d in l:l+=(1,2)[-d:print(len(l))]
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 43 | first entry |
+| 2026-11-05 | Python 3 | 42 | letters 0/1, slice `[d:]` instead of `[-d:]` (found while doing A035513) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
