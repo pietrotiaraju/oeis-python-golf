@@ -57,7 +57,12 @@ pip install -r requirements.txt
 python tools/verify.py            # everything
 python tools/verify.py A300002    # one sequence
 python tools/verify.py --write    # also rewrite the records table
+python tools/verify.py --since=main  # run only what changed since main
 ```
+
+CI uses `--since`: it runs the programs of the sequences a push or pull
+request adds or edits, and checks the pages, sizes and table of all of them.
+A program that only moved, unchanged, is not run again.
 
 ## Sending a record
 
@@ -68,7 +73,7 @@ python tools/verify.py --write    # also rewrite the records table
    `seq/AXXXxxx/AXXXXXX/README.md` (copy an existing one).
 2. Explain the trick on the page and add a line to its history table.
 3. Run `python tools/verify.py --write` and open a pull request. CI runs the
-   same check.
+   same check for the sequences the pull request changes.
 
 Every record here is the **shortest known**, never a proof of minimality: see
 [the README](README.md#why-shortest-known).

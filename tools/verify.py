@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Check every golfed program against its OEIS b-file and keep the README records table in sync.
 
-usage: python tools/verify.py [AXXXXXX ...] [--write] [--no-run]
+usage: python tools/verify.py [AXXXXXX ...] [--write] [--no-run] [--since=REF]
 
-  --write   rewrite the records table in README.md instead of only checking it
-  --no-run  skip running the programs (sizes, pages and table only)
+  --write       rewrite the records table in README.md instead of only checking it
+  --no-run      skip running the programs (sizes, pages and table only)
+  --since=REF   run only the programs of sequences whose files changed since git REF
+                (a file moved without changes does not count); still check every page
 """
 import json
 import subprocess
@@ -47,6 +49,23 @@ def bfile(aid):
         if line.strip() and not line.startswith("#"):
             terms.append(line.split()[1])
     return terms
+
+
+def changed(ref):
+    """Sequences whose files differ from git REF, or None (run everything) when git cannot tell."""
+    git = subprocess.run(["git", "diff", "--name-only", "--find-renames=100%", "--diff-filter=AM",
+                          ref, "--", "seq", "bfiles"], cwd=ROOT, capture_output=True, text=True)
+    if git.returncode:
+        print(f"git diff {ref} failed, running everything: {git.stderr.strip()}")
+        return None
+    aids = set()
+    for line in git.stdout.splitlines():
+        path = Path(line)
+        if path.parts[0] == "seq" and len(path.parts) > 3:
+            aids.add(path.parts[2])
+        elif path.parts[0] == "bfiles" and path.stem.startswith("b"):
+            aids.add("A" + path.stem[1:])
+    return aids
 
 
 def run(prog, want, timeout):
@@ -127,6 +146,10 @@ def main(argv):
     write = "--write" in argv
     execute = "--no-run" not in argv
     only = {a.upper() for a in argv if not a.startswith("--")}
+    since = next((a.split("=", 1)[1] for a in argv if a.startswith("--since=")), None)
+    to_run = changed(since) if since else None
+    if to_run is not None:
+        print(f"changed since {since}: {', '.join(sorted(to_run)) or 'nothing'}")
     problems, rows = [], []
 
     # A bucket is the only kind of name that is its own bucket.
@@ -144,7 +167,8 @@ def main(argv):
         if selected:
             print(f"{aid}  ({len(ref)} terms in b-file)")
         for prog in sorted(d.glob("py3*.py")):
-            rec, probs = check_program(prog, ref, meta, page, execute and selected) if selected else (
+            runs = execute and selected and (to_run is None or aid in to_run)
+            rec, probs = check_program(prog, ref, meta, page, runs) if selected else (
                 {"category": category(prog), "bytes": size(prog)}, [])
             problems += [f"{aid}/{p}" for p in probs]
             if rec:
