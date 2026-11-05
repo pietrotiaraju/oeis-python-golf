@@ -1,0 +1,6 @@
+{
+  "name": "Nearest integer to tan n.",
+  "offset": 0,
+  "min_terms": 900,
+  "timeout": 60
+}
