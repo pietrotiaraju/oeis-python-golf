@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the number of permutations on {1,2,...,n} with an even number of fixed points minus the number of permutations with an odd number of fixed points.",
+  "offset": 0,
+  "min_terms": 251,
+  "timeout": 60
+}

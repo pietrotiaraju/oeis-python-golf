@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of the 3rd-order mock theta function f(q).",
+  "offset": 0,
+  "min_terms": 400,
+  "timeout": 60
+}
