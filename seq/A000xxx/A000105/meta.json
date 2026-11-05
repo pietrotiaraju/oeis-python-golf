@@ -1,0 +1,6 @@
+{
+  "name": "Number of free polyominoes (or square animals) with n cells.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
