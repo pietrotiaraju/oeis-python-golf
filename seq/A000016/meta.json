@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the number of distinct (infinite) output sequences from binary n-stage shift register which feeds back the complement of the last stage.",
+  "offset": 0,
+  "min_terms": 3335,
+  "timeout": 60
+}
