@@ -79,6 +79,7 @@ sequence for the code and how it works.
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | — | 10001 |
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k… | 80 | **61** | 1001 |
 | [A000071](seq/A000xxx/A000071/) | a(n) = Fibonacci(n) - 1. | **32** | — | 500 |
+| [A000073](seq/A000xxx/A000073/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with… | **41** | — | 3001 |
 | [A000079](seq/A000xxx/A000079/) | Powers of 2: a(n) = 2^n. | **24** | — | 1001 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3*n + 2)/n^3). | **41** | — | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | — | 1001 |
