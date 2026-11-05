@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is not allowed but the two colors can be interchanged.",
+  "offset": 0,
+  "min_terms": 3321,
+  "timeout": 60
+}
