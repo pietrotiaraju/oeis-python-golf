@@ -212,6 +212,7 @@ sequence for the code and how it works.
 | [A000202](seq/A000xxx/A000202/) | a(8i+j) = 13i + a(j), where 1<=j<=8. | **29** | 10000 |
 | [A000203](seq/A000xxx/A000203/) | a(n) = sigma(n), the sum of the divisors of n. Also called sigma\_1(n). | **56** | 15000 |
 | [A000204](seq/A000xxx/A000204/) | Lucas numbers (beginning with 1): L(n) = L(n-1) + L(n-2) with L(1) =… | **33** | 4780 |
+| [A000205](seq/A000xxx/A000205/) | Number of positive integers <= 2^n of form x^2 + 3 y^2. | **91** | 24 |
 | [A000210](seq/A000xxx/A000210/) | A Beatty sequence: floor(n\*(e-1)). | **44** | 1000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
