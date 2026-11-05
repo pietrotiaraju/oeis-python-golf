@@ -1,0 +1,6 @@
+{
+  "name": "Number of simplicial polyhedra with n vertices; simple planar graphs with n vertices and 3n-6 edges; maximal simple planar graphs with n vertices; planar triangulations with n vertices; triangulations of the sphere with n vertices; 3-connected cubic planar graphs on 2n-4 vertices.",
+  "offset": 3,
+  "min_terms": 8,
+  "timeout": 60
+}
