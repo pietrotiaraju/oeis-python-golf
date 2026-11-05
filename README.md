@@ -222,6 +222,7 @@ sequence for the code and how it works.
 | [A000212](seq/A000xxx/A000212/) | a(n) = floor(n^2/3). | **29** | 5001 |
 | [A000213](seq/A000xxx/A000213/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with… | **39** | 3773 |
 | [A000215](seq/A000xxx/A000215/) | Fermat numbers: a(n) = 2^(2^n) + 1. | **26** | 12 |
+| [A000216](seq/A000xxx/A000216/) | Take sum of squares of digits of previous term, starting with 2. | **44** | 100 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
