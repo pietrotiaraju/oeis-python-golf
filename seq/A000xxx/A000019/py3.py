@@ -1,8 +1,8 @@
 from itertools import*
 c=lambda K:K<(T:={tuple(a[i]for i in b)for a in K for b in K})and c(T)or K
 n=1
-while 1:
- P=[*permutations(R:=range(n))];L=[{P[0]}]
+while P:=[*permutations(R:=range(n))]:
+ L=[{P[0]}]
  for H in L:
   D={*H}
   for g in P:

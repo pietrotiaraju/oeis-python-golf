@@ -6,13 +6,13 @@
 
 Offset 1: 1, 2, 5, 10, 20, 24, 26, 41, 53, 130, 149, 205, 234, 287, 340, …
 
-### Python 3 — 178 bytes
+### Python 3 — 177 bytes
 
 ```python
 from math import*
 n=a=m=0
-while 1:
- n+=1;S=9**isqrt(n);x=p=2*S;i=A=1
+while S:=9**isqrt(n:=n+1):
+ x=p=2*S;i=A=1
  while x:x=x*i//(i-~i);p+=x;A+=i*i<=n and 4+4*isqrt(n-i*i);i+=1
  if abs(A*S-p*n)>abs(a*S-p*m):a=A;print(m:=n)
 ```
@@ -64,12 +64,17 @@ while 1:
 - Floats are not enough: telling which of two n has the larger |P| needs
   π to more digits as n grows, and how many is what Mahler's bound pins
   down.
+- The 178-byte version began its `while 1:` body with `n+=1;S=9**isqrt(n);`.
+  Naming the value in the loop condition is 1 byte shorter and keeps the
+  loop going, because S is a positive power of 9, and `n:=n+1` moves into
+  it.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 178 | first entry |
+| 2026-11-05 | Python 3 | 177 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

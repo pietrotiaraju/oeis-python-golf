@@ -12,13 +12,13 @@ terms (n ≤ 25) come from Martin Fuller's C program, which builds the
 systems with nauty. A short program can only enumerate, so it gets a
 handful of terms.
 
-### Python 3 — 340 bytes
+### Python 3 — 339 bytes
 
 ```python
 from itertools import*
 e=lambda T,s=1:2**n-1in[s:=s|t for t in T*n if s&t]
 n=3;C=combinations
-while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,C(T,k)))==(T in D)!=D.update((*sorted(sum((t>>i&1)<<p[i]for i in R)for t in T),)for p in permutations(R))for k in R[:-2]for U in C([2*x for x in range(1<<n-1)if x.bit_count()==3],k)));n+=1
+while R:=range(n):D={0};print(sum(e(T:=(7,)+U)>any(map(e,C(T,k)))==(T in D)!=D.update((*sorted(sum((t>>i&1)<<p[i]for i in R)for t in T),)for p in permutations(R))for k in R[:-2]for U in C([2*x for x in range(1<<n-1)if x.bit_count()==3],k)));n+=1
 ```
 
 **How it works**
@@ -84,12 +84,19 @@ while 1:R=range(n);D={0};print(sum(e(T:=(7,)+U)>any(map(e,C(T,k)))==(T in D)!=D.
   `map(sum,combinations(powers,3))` (1 byte shorter, but the masks come out
   of order, T is no longer sorted, and classes get counted twice).
 
+**Notes**
+
+- The 340-byte version began its `while 1:` body with `R=range(n);`. Naming
+  the value in the loop condition is 1 byte shorter and keeps the loop
+  going, because the range is never empty (n starts at 3).
+
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 347 | first entry |
 | 2026-11-05 | Python 3 | 340 | `C=combinations` alias (pietrotiaraju) |
+| 2026-11-05 | Python 3 | 339 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

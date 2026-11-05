@@ -7,13 +7,13 @@
 
 Offset 1: 1, 2, 5, 6, 14, 21, 29, 30, 54, 90, 134, 155, 174, 230, 234, 251, 270, …
 
-### Python 3 — 285 bytes
+### Python 3 — 284 bytes
 
 ```python
 from math import*
 n=a=m=q=k=0
-while 1:
- n+=1;R=range(-(r:=isqrt(n)),r+1);A=sum(2*isqrt(t)+1for x in R for y in R if(t:=n-x*x-y*y)>=0)
+while R:=range(-(r:=isqrt(n:=n+1)),r+1):
+ A=sum(2*isqrt(t)+1for x in R for y in R if(t:=n-x*x-y*y)>=0)
  while abs(d:=abs(A*2**k-isqrt(q*n**3))-abs(a*2**k-isqrt(q*m**3)))<=A:k+=3;q=sum(32*4**k//i//i//comb(2*i,i)for i in range(1,k))
  if d>0:print(m:=n);a=A
 ```
@@ -80,12 +80,16 @@ while 1:
   to 4, that is a transcendence measure of π rather than Mahler's
   irrationality measure. Refining until the sign is certain needs no such
   bound, only that the two values are never equal.
+- The 285-byte version began its `while 1:` body with `n+=1;R=range(…);`.
+  Naming the value in the loop condition is 1 byte shorter and keeps the
+  loop going, because the range always holds 0, and `n:=n+1` moves into it.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 285 | first entry |
+| 2026-11-05 | Python 3 | 284 | value named in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
