@@ -1,0 +1,6 @@
+{
+  "name": "Number of trees with n nodes, 3 of which are labeled.",
+  "offset": 3,
+  "min_terms": 198,
+  "timeout": 60
+}
