@@ -28,7 +28,7 @@ while 1:
   Two nonempty unordered branches have series H₂(A)−A; three have
   H₃(A)−H₂(A). Adding the central carbon contributes one factor x.
 - A000598 prints Aₙ. A000599 and A000600 first print their zero
-  constant term, then print respectively [x^n](H₂(A)−A) and
+  constant term, then print respectively `[x^n](H₂(A)−A)` and
   Aₙ₊₁−[x^n]H₂(A). Removing the empty branch enforces secondary
   and tertiary alcohols rather than primary ones.
 

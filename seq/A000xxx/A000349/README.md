@@ -22,7 +22,7 @@ while[R:=range(n),print(sum((-1)**m*m*~-m*(n-m)*comb(n-m,j)*perm(n+~j,n+~m)for m
   and the blocks can come in any of k! orders. So the number of
   (permutation, marked set) pairs is N_m = k!·c(k, m), where c(k, m)
   counts compositions of n into k parts with weight 2 for each part of
-  length ≥ 2: c(k, m) = [yᵐ]((1+y)/(1−y))ᵏ, since a part of length ℓ
+  length ≥ 2: `c(k, m) = [yᵐ]((1+y)/(1−y))ᵏ`, since a part of length ℓ
   contributes 2y^(ℓ−1) (or 1 for ℓ = 1). Expanding (1+y)ᵏ(1−y)⁻ᵏ gives
   c(k, m) = Σⱼ C(k, j)·C(m−j+k−1, k−1).
 - Summing t^(successions) over permutations is Σ_m N_m·(t−1)^m (each

@@ -1,6 +1,6 @@
 # A000279
 
-> Card matching: coefficients B[n,1] of t in the reduced hit polynomial A[n,n,n](t).
+> Card matching: coefficients B[n,1] of t in the reduced hit polynomial `A[n,n,n](t)`.
 > — [OEIS A000279](https://oeis.org/A000279)
 
 Offset 1: 3, 24, 216, 1824, 15150, 124416, 1014888, 8241792, 66724398, 538990800, …

@@ -1,6 +1,6 @@
 # A000535
 
-> Card matching: coefficients B[n,2] of t^2 in the reduced hit polynomial A[n,n,n](t).
+> Card matching: coefficients B[n,2] of t^2 in the reduced hit polynomial `A[n,n,n](t)`.
 > — [OEIS A000535](https://oeis.org/A000535)
 
 Offset 1: 0, 27, 378, 4536, 48600, 489780, 4738104, 44535456, 409752432, 3708359550, …
