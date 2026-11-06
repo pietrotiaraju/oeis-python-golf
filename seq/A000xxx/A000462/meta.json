@@ -1,0 +1,6 @@
+{
+  "name": "Numbers written in base of triangular numbers.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

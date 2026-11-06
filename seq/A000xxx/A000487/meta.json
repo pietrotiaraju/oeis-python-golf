@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n with exactly two valleys.",
+  "offset": 5,
+  "min_terms": 196,
+  "timeout": 60
+}

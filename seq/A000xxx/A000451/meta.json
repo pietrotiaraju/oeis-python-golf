@@ -1,0 +1,6 @@
+{
+  "name": "Smallest number that is the sum of 3 squares in at least n ways.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

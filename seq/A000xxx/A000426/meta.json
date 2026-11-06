@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of m\u00e9nage hit polynomials.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

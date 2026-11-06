@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = Sum_{k=1..n-1} k^3*sigma(k)*sigma(n-k).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

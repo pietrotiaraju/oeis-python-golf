@@ -423,39 +423,60 @@ sequence for the code and how it works.
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **147** | 14 |
+| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **128** | 184 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
 | [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
+| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **161** | 1000 |
+| [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
 | [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **40** | 150 |
 | [A000423](seq/A000xxx/A000423/) | a(n) is smallest number > a(n-1) of form a(i)\*a(j), i < j < n. | **79** | 49 |
+| [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **86** | 16 |
+| [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **81** | 100 |
+| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **161** | 1000 |
+| [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **129** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
 | [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
+| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **123** | 101 |
+| [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **59** | 98 |
 | [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **114** | 447 |
+| [A000451](seq/A000xxx/A000451/) | Smallest number that is the sum of 3 squares in at least n ways. | **168** | 200 |
+| [A000452](seq/A000xxx/A000452/) | The greedy sequence of integers which avoids 3-term geometric… | **156** | 10000 |
 | [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **50** | 197 |
 | [A000454](seq/A000xxx/A000454/) | Unsigned Stirling numbers of first kind s(n,4). | **68** | 97 |
 | [A000455](seq/A000xxx/A000455/) | Digits of powers of 2. | **39** | 10000 |
 | [A000456](seq/A000xxx/A000456/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
+| [A000457](seq/A000xxx/A000457/) | Exponential generating function: (1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
 | [A000459](seq/A000xxx/A000459/) | Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no… | **66** | 101 |
 | [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **50** | 998 |
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
+| [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **121** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
+| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **123** | 216 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
+| [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
+| [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **129** | 10000 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **70** | 97 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
+| [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **79** | 96 |
+| [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **66** | 196 |
+| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **115** | 195 |
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
+| [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **73** | 197 |
+| [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
