@@ -5,12 +5,12 @@
 
 Offset 2: 0, 6, 350, 43260, 14591171, 14657461469, 46173502811223, 474928141312623525, 16489412944755088235117, 1985178211854071817861662307, …
 
-### Python 3 — 147 bytes
+### Python 3 — 144 bytes
 
 ```python
-from math import*
-s=[0,2,-3,1];n=2
-while[print(-sum(s[k+1]*comb(2**k-1,n)for k in range(n)))]:
+import math
+s=0,2,-3,1;n=2
+while[print(-sum(s[k+1]*math.comb(2**k-1,n)for k in range(n)))]:
  n+=1;s=[0]+[s[k-1]-n*s[k]for k in range(1,n+1)]+[1]
 ```
 
@@ -18,7 +18,7 @@ while[print(-sum(s[k+1]*comb(2**k-1,n)for k in range(n)))]:
 
 The OEIS gives a(n) = -sum(s(n+1,k+1)*C(2^k-1,n), k=0..n-1),
 where s is the signed Stirling number of the first kind. The state
-`s` stores coefficients of x(x-1)...(x-n), initially x(x-1)(x-2).
+`s` starts as a tuple of coefficients and then becomes a list; it stores coefficients of x(x-1)...(x-n), initially x(x-1)(x-2).
 Multiplying by x-(n+1) after each output updates those coefficients.
 All binomial arguments are nonnegative; math.comb returns zero when
 there are fewer than n available rows. This counts the column
@@ -35,6 +35,7 @@ degeneracies in the sequence definition, rather than all singular matrices.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 147 | first entry |
+| 2026-11-06 | Python 3 | 144 | import math and start the coefficients as a tuple |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
