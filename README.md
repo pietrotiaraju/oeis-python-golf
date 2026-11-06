@@ -415,6 +415,7 @@ sequence for the code and how it works.
 | [A000398](seq/A000xxx/A000398/) | Numbers of form x^2 + 2y^2 + 2yz + 4z^2. | **79** | 450 |
 | [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000400](seq/A000xxx/A000400/) | Powers of 6: a(n) = 6^n. | **24** | 101 |
+| [A000401](seq/A000xxx/A000401/) | Numbers of form x^2 + y^2 + 2\*z^2. | **61** | 1000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
