@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       # Programs run only for the sequences this push or pull request changes;
-      # pages, sizes and the records table are checked for all of them.
+      # pages, sizes and the records tables are checked for all of them.
       - run: python tools/verify.py --since=${{ github.event.pull_request.base.sha || github.event.before }}
       # Records only get shorter, and existing b-files and bars stay; guard.py comes from
       # the base, so a pull request cannot loosen it for itself.

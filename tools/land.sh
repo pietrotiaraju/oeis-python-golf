@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Land branch $1 on main: merge it, check it with guard.py, run the programs it adds or
-# changes, rebuild the records table and push main. Run by .github/workflows/ship.yml,
+# changes, rebuild the records tables and push main. Run by .github/workflows/ship.yml,
 # which takes this script and guard.py from main so a branch cannot loosen them; safe
 # to run again.
 set -euo pipefail
@@ -11,19 +11,22 @@ merge() {
   git fetch -q origin main "$branch"
   git checkout -q -B main origin/main
   if ! git merge -q --no-ff -m "Merge $branch" "origin/$branch"; then
-    # Only the records table may clash: it is generated, so keep main's and rebuild it.
-    if [ "$(git diff --name-only --diff-filter=U)" != README.md ]; then
+    # Only the records tables (README.md, seq/AXXXxxx/README.md) may clash: they are
+    # generated, so keep main's and rebuild them.
+    clashes=$(git diff --name-only --diff-filter=U)
+    if [ -z "$clashes" ] || grep -qvE '^(README\.md|seq/[^/]+/README\.md)$' <<<"$clashes"; then
       git merge --abort
-      echo "$branch conflicts with main outside README.md: rebase it by hand" >&2
+      echo "$branch conflicts with main outside the records tables: rebase it by hand" >&2
       exit 1
     fi
-    git checkout -q --ours README.md
-    git add README.md
+    git checkout -q --ours -- $clashes
+    git add -- $clashes
     git commit -q --no-edit
   fi
   python "$guard" origin/main --strict
   python tools/verify.py --since=origin/main --write "$@"
-  git diff --quiet || git commit -q -a --amend --no-edit
+  git add -- README.md ':(glob)seq/*/README.md'  # a new folder's table is a new file
+  git diff --cached --quiet || git commit -q --amend --no-edit
 }
 
 merge

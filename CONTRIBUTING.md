@@ -42,13 +42,14 @@ every printed line with the b-file in [`bfiles/`](bfiles/). A program passes
 when every line it printed is right and it printed at least `min_terms` lines.
 
 The script also checks that each page shows the program verbatim under a
-heading `### <category> — <bytes> bytes`, and that the records table in the
-[README](README.md) is up to date.
+heading `### Python 3 — <bytes> bytes`, and that the records tables are up to
+date: the totals, folders and latest records in the [README](README.md), and
+the full table of each folder in `seq/AXXXxxx/README.md`.
 
 ```bash
 python tools/verify.py            # everything
 python tools/verify.py A300002    # one sequence
-python tools/verify.py --write    # also rewrite the records table
+python tools/verify.py --write    # also rewrite the records tables
 python tools/verify.py --since=main  # run only what changed since main
 ```
 
@@ -79,7 +80,7 @@ workflow) holds the line:
 With write access to this repository there is a shorter way: push a branch
 named `add/…` (new sequences) or `golf/…` (shorter records), for example with
 `python tools/ship.py AXXXXXX`. The `ship` workflow merges it into `main`, runs
-the guard and the programs it adds or changes, rebuilds the records table and
+the guard and the programs it adds or changes, rebuilds the records tables and
 deletes the branch; if a check fails, nothing reaches `main`. Only `seq/`,
 `bfiles/` and `README.md` land this way: changes to tools, workflows or these
 rules go through a pull request.
