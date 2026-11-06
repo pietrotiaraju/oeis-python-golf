@@ -26,20 +26,42 @@ while 1:
 
 **How it works**
 
-The definition identifies row permutations and excludes zero
-rows and repeated rows. Thus each matrix is one n-element
-subset of the nonzero binary n-vectors. Enumerate these subsets
-with combinations. The function performs integer Gaussian
-elimination: swap in a nonzero pivot, then replace a lower
-row by pivot*row-entry*pivot_row. This preserves rational rank
-and introduces no division. Failure to find a pivot means the
-matrix is singular. Sum that indicator over the row subsets.
+- The OEIS count identifies row permutations and requires distinct,
+  nonzero rows. Encode each binary row by an integer from 1 through
+  2ⁿ−1. `combinations(...,n)` then chooses every permitted row
+  set once, with no additional division by n!.
+- s(V) expands the selected integers into an n×n matrix using
+  their bits. It tests rank over the rationals, not over the
+  two-element field; integer arithmetic keeps that distinction exact.
+- In column i, search rows i through n−1 for a nonzero pivot.
+  If none exists, the matrix is singular and the function returns 1.
+  Otherwise swap that row into position i.
+- For each lower row j with entry b in the pivot column, replace
+  row_j by A[i][i]·row_j−b·row_i. Its pivot-column entry
+  becomes zero. Multiplication by a nonzero pivot and subtraction
+  preserve rational rank, without introducing fractions.
+- Successful pivots in all n columns establish full rank, returning
+  0. The outer sum therefore counts precisely the singular row
+  sets. The size starts at n=1 and advances after each output.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 5 terms in 10 s; the official b-file contains 9 terms.
-- Enumeration grows as C(2^n-1,n). The bar includes all five values through 5 by 5 matrices, including the first nonzero singular counts.
+- Rank modulo 2 would count a different sequence. For example rows
+  (1,1,0), (1,0,1), (0,1,1) have determinant −2: they are
+  independent over the rationals, despite dependence modulo 2.
+- [A000409](../A000409/) counts only the zero-column or
+  repeated-column degeneracies within the same row convention.
+  Here all rational dependencies are counted: at n=4 the two
+  counts are respectively 350 and 425.
+- There are C(2ⁿ−1,n) candidates. Even n=5 already tests
+  C(31,5)=169911 matrices, and each elimination takes O(n³)
+  arithmetic operations. The division-free updates can also grow
+  intermediate integers, so larger sizes become expensive quickly.
+- Only one row set and its matrix are needed at a time. The program
+  is a complete finite enumeration at each size, with no stored
+  sequence values or floating-point rank tolerance.
+- The b-file has 9 terms (indices 1 through 9). The bar is the
+  first 5 terms in 10 s.
 
 ## History
 

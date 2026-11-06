@@ -28,21 +28,45 @@ while 1:
 
 **How it works**
 
-M enumerates perfect matchings by pairing the least remaining
-vertex with each possible partner. An edge {a,b}, a<b, has bit
-b*(b-1)/2+a. F(E) counts partitions of the remaining edge set
-into perfect matchings. Choose its least edge p; the matching
-containing p is uniquely determined within each factorization,
-so summing over compatible matchings counts each unordered
-factorization exactly once. Memoize the remaining edge masks.
-The complete graph on n vertices has all C(n,2) low bits set;
-advance n by two after each count.
+- A 1-factor is a perfect matching: every vertex belongs to one
+  selected edge. A 1-factorization partitions all edges of K_n
+  into n−1 such matchings. Vertices are labeled, while the
+  collection of factors is unordered. The code's n is twice
+  the OEIS index.
+- M(V) pairs the least remaining vertex a with each possible
+  partner b and recursively pairs the rest. Each matching has
+  exactly one such first pair, so this generates all (n−1)!!
+  perfect matchings once.
+- Edge {a,b}, with a<b, occupies bit b(b−1)/2+a. The blocks
+  for successive larger endpoints fill positions 0 through
+  C(n,2)−1, so `(1<<(n*(n-1)//2))-1` is the complete edge mask.
+- F(E) counts factorizations of the remaining edge set. The empty
+  set has one empty factorization. Otherwise `p=E&-E` isolates
+  its least edge; consider only matching masks x containing p
+  and lying wholly in E.
+- `x&E==x` is the subset test. Under that condition `E^x`
+  removes exactly x's edges, and the recursive count covers the
+  rest. If no matching fits, the empty sum gives zero.
+- Every factorization contains exactly one matching covering the
+  chosen least edge. Repeating this rule gives it a unique order
+  of removal, so factor permutations are not overcounted.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 4 terms in 10 s; the official b-file contains 7 terms.
-- This exact-cover enumeration has exponential cost. The bar includes K_2 through K_8; later complete graphs require substantially more resources.
+- `@cache` shares repeated remaining-edge subproblems. F is
+  redefined for each graph size, so cached values never mix two
+  different edge encodings or matching lists.
+- This is an exact-cover count with exact integer masks and sums.
+  Its recursion has n−1 matching-removal levels, but the number
+  of reachable masks can be very large.
+- [A000474](../A000474/) further identifies factorizations
+  under vertex relabeling. For K₆ this page counts six labeled
+  factorizations, all in its single isomorphism class; for K₈
+  the counts are 6240 and six respectively.
+- [A000479](../A000479/) uses the same least-edge recurrence
+  for complete bipartite graphs, with a different matching generator.
+- The b-file has 7 terms (indices 1 through 7). The bar is the
+  first 4 terms in 10 s.
 
 ## History
 

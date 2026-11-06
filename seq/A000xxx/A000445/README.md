@@ -67,11 +67,41 @@ while 1:print(V(n));n+=1
 
 **How it works**
 
-The search uses a finite-color formulation; it does not embed the six known terms.
-For each unit a modulo n put d=gcd(a-1,n). A large prime l
-with l=a mod n has n-th-power residues described by the kernel
-of a completely additive map f from positive rationals to Z/dZ.
-Values on primes determine f.
+- The output index n is the power-residue exponent. For a unit
+  a modulo n, put d=gcd(a−1,n). Large primes in that residue
+  class have their n-th-power residues described by the zero
+  colors of a map f into ℤ/dℤ, with f(xy)=f(x)+f(y).
+  Thus assigning the colors of primes determines those of all
+  positive integers.
+- `value(n)` enumerates these residue classes a. The pair
+  `(d,cond)` describes the effective color group and quadratic
+  restrictions; `types` avoids searching the same pair twice.
+  Primes dividing n are checked directly at the end as ramified
+  exceptions.
+- `quadratic_relations(n)` lists squarefree r whose positive
+  fundamental discriminant divides n, together with their prime
+  factors ps. A repeated factor rejects r. J computes the Jacobi
+  symbol by removing powers of two and quadratic reciprocity;
+  it supplies the required parity of the colors in ps.
+- Inside search, F[x] is the color assigned to x. Start with
+  `[0,0]`, using position 0 as a placeholder and f(1)=0.
+  At x=len(F), `factor(x)` is the least prime factor: at a
+  prime branch over all colors, while at a composite derive
+  `(F[p]+F[x//p])%d` from smaller integers.
+- At x=2, only zero and the proper divisors of d are needed.
+  Multiplying every color by a unit modulo d preserves its zero
+  set and parity conditions; these choices represent all possible
+  greatest common divisors of the original color with d.
+- After appending c, check each relation whose largest prime
+  has just been assigned. All its referenced F entries then
+  exist. Reject the branch if the sum of those colors has the
+  wrong parity.
+- `c==F[-1]==0` detects the first adjacent zero colors,
+  at x−1 and x. Return x−1 immediately; otherwise recurse.
+  Taking maxima over branches and then over types finds the
+  latest first pair. The finiteness and realizability arguments
+  below explain why this finite search answers a question over
+  infinitely many primes.
 
 **Which finite color patterns are realizable**
 
@@ -117,9 +147,22 @@ and the OEIS references on consecutive power residues.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 2 terms in 10 s; the official b-file contains 6 terms.
-- Exhaustive color search is expensive. The first two values are independently computed as 9 and 77. Later searches can exceed CPython's default recursion-depth limit, which the contribution rules explicitly treat as an interpreter limit rather than a mathematical failure. No conjectural stabilization in a scan of primes is assumed.
+- For the first value, modulo 43 the first consecutive positive
+  quadratic residues are 9 and 10. This witnesses the lower bound
+  a(2)≥9; the exhaustive color search and theorem give the matching
+  global upper bound, rather than assuming a prime scan has stabilized.
+- The six b-file values are not stored in the program. Its only
+  initial colors express f(1)=0; all output values arise from
+  branching, arithmetic and the realizability conditions.
+- `factor` is cached because the same integers occur on many
+  branches. The color lists and recursion, however, are explored
+  exhaustively, so larger exponents have severe time and memory
+  costs. Deep searches can meet CPython's default recursion limit.
+- Mathematical termination and practical completion are distinct:
+  Hildebrand's uniform bound proves a finite tree, without making
+  that tree small enough to traverse within the verification timeout.
+- The b-file has 6 terms (indices 2 through 7). The bar is the
+  first 2 terms in 10 s.
 
 ## History
 
