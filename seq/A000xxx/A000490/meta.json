@@ -1,0 +1,6 @@
+{
+  "name": "Generalized Euler numbers c(4,n).",
+  "offset": 0,
+  "min_terms": 195,
+  "timeout": 60
+}

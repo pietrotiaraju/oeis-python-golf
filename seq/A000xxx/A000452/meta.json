@@ -1,0 +1,6 @@
+{
+  "name": "The greedy sequence of integers which avoids 3-term geometric progressions.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

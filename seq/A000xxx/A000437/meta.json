@@ -1,0 +1,6 @@
+{
+  "name": "Smallest nonnegative number that is the sum of 3 squares in exactly n ways.",
+  "offset": 1,
+  "min_terms": 43,
+  "timeout": 60
+}
