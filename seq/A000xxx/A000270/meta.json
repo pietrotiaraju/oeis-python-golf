@@ -1,0 +1,6 @@
+{
+  "name": "For n >= 2, a(n) = b(n+1)+b(n)+b(n-1), where the b(i) are the ménage numbers A000179; a(0)=a(1)=1.",
+  "offset": 0,
+  "min_terms": 176,
+  "timeout": 60
+}
