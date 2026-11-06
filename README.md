@@ -350,6 +350,7 @@ sequence for the code and how it works.
 | [A000368](seq/A000xxx/A000368/) | Number of connected graphs with one cycle of length 4. | **170** | 1997 |
 | [A000369](seq/A000xxx/A000369/) | Triangle of numbers related to triangle A049213; generalization of… | **76** | 1275 |
 | [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **235** | 7 |
+| [A000371](seq/A000xxx/A000371/) | a(n) = Sum\_{k=0..n} (-1)^(n-k)\*binomial(n,k)\*2^(2^k). | **59** | 9 |
 | [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **74** | 7 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |
