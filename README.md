@@ -250,6 +250,7 @@ sequence for the code and how it works.
 | [A000242](seq/A000xxx/A000242/) | 3rd power of rooted tree enumerator; number of linear forests of 3… | **107** | 198 |
 | [A000244](seq/A000xxx/A000244/) | Powers of 3: a(n) = 3^n. | **24** | 201 |
 | [A000245](seq/A000xxx/A000245/) | a(n) = 3\*(2\*n)!/((n+2)!\*(n-1)!). | **45** | 101 |
+| [A000246](seq/A000xxx/A000246/) | Number of permutations in the symmetric group S\_n that have odd order. | **35** | 451 |
 | [A000247](seq/A000xxx/A000247/) | a(n) = 2^n - n - 2. | **31** | 299 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
