@@ -1,3 +1,2 @@
-from math import*
-n=8
-while[print(comb(n,8))]:n+=1
+n=8;a=1
+while[print(a)]:n+=1;a=a*n//(n-8)
