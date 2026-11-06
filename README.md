@@ -376,6 +376,7 @@ sequence for the code and how it works.
 | [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **74** | 7 |
 | [A000373](seq/A000xxx/A000373/) | Conjectured dimension of a module associated with the free… | **182** | 200 |
 | [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **77** | 480 |
+| [A000375](seq/A000xxx/A000375/) | Topswops (1): start by shuffling n cards labeled 1..n. If top card is… | **125** | 10 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |
 | [A000380](seq/A000xxx/A000380/) | Number of permutations of an n-sequence discordant with three given… | **116** | 6 |
