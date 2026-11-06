@@ -1,0 +1,6 @@
+{
+  "name": "Number of triangular polyominoes (or triangular polyforms, or polyiamonds) with n cells (turning over is allowed, holes are allowed, must be connected along edges).",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}
