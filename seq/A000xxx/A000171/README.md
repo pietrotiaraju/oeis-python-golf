@@ -5,11 +5,11 @@
 
 Offset 1: 1, 0, 0, 1, 2, 0, 0, 10, 36, 0, 0, 720, 5600, 0, 0, 703760, 11220000, …
 
-### Python 3 — 147 bytes
+### Python 3 — 146 bytes
 
 ```python
-from math import*
-f=lambda r,*L:r<1or sum(n%4%3*f(r+k,*L,k)<<2*~k+4*sum(map(gcd,L,[k]*n))for k in range(-r,0))//r
+import math
+f=lambda r,*L:r<1or sum(n%4%3*f(r+k,*L,k)<<2*~k+4*sum(map(math.gcd,L,[k]*n))for k in range(-r,0))//r
 n=2
 while[print(+f(n+1>>2))]:n+=1
 ```
@@ -86,6 +86,7 @@ the same lemma as in the first step, where H = S_n and g = complement.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 147 | first entry |
+| 2026-11-06 | Python 3 | 146 | `import math` and `math.gcd` (−1 byte) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
