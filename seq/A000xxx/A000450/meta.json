@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = A058057(n,n-4).",
+  "offset": 4,
+  "min_terms": 447,
+  "timeout": 60
+}
