@@ -350,6 +350,7 @@ sequence for the code and how it works.
 | [A000336](seq/A000xxx/A000336/) | a(n) = a(n-1)\*a(n-2)\*a(n-3)\*a(n-4); for n < 5, a(n) = n. | **53** | 15 |
 | [A000337](seq/A000xxx/A000337/) | a(n) = (n-1)\*2^n + 1. | **33** | 1001 |
 | [A000338](seq/A000xxx/A000338/) | Expansion of x^3\*(5-2\*x)\*(1-x^3)/(1-x)^4. | **38** | 998 |
+| [A000339](seq/A000xxx/A000339/) | Number of partitions into non-integral powers. | **62** | 560 |
 | [A000340](seq/A000xxx/A000340/) | a(0)=1, a(n) = 3\*a(n-1) + n + 1. | **34** | 1001 |
 | [A000341](seq/A000xxx/A000341/) | Number of ways to pair up {1..2n} so sum of each pair is prime. | **144** | 11 |
 | [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
