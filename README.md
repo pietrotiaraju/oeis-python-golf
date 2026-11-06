@@ -302,6 +302,7 @@ sequence for the code and how it works.
 | [A000288](seq/A000xxx/A000288/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) with… | **39** | 3504 |
 | [A000289](seq/A000xxx/A000289/) | A nonlinear recurrence: a(n) = a(n-1)^2 - 3\*a(n-1) + 3 (for n>1). | **32** | 13 |
 | [A000290](seq/A000xxx/A000290/) | The squares: a(n) = n^2. | **26** | 10001 |
+| [A000291](seq/A000xxx/A000291/) | Number of bipartite partitions of n white objects and 2 black ones. | **99** | 5000 |
 | [A000292](seq/A000xxx/A000292/) | Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) =… | **34** | 10001 |
 | [A000295](seq/A000xxx/A000295/) | Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1… | **30** | 501 |
 | [A000296](seq/A000xxx/A000296/) | Set partitions without singletons: number of partitions of an n-set… | **56** | 576 |
