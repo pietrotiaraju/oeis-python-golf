@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of e.g.f. 1/(1 - 2*sinh(x)).",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

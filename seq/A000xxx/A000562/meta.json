@@ -1,0 +1,6 @@
+{
+  "name": "Number of discordant permutations.",
+  "offset": 4,
+  "min_terms": 36,
+  "timeout": 60
+}
