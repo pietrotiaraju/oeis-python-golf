@@ -354,6 +354,7 @@ sequence for the code and how it works.
 | [A000354](seq/A000xxx/A000354/) | Expansion of e.g.f. exp(-x)/(1-2\*x). | **36** | 101 |
 | [A000356](seq/A000xxx/A000356/) | Number of rooted cubic maps with 2n nodes and a distinguished… | **53** | 800 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
+| [A000358](seq/A000xxx/A000358/) | Number of binary necklaces of length n with no subsequence 00,… | **99** | 1000 |
 | [A000359](seq/A000xxx/A000359/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000360](seq/A000xxx/A000360/) | Distribution of nonempty triangles inside a fractal rep-4-tile. | **47** | 10001 |
 | [A000363](seq/A000xxx/A000363/) | Number of permutations of [n] with exactly 2 increasing runs of… | **49** | 997 |
