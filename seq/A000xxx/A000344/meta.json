@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 5*binomial(2n, n-2)/(n+3).",
+  "offset": 2,
+  "min_terms": 299,
+  "timeout": 60
+}
