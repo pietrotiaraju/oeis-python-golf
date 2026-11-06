@@ -345,6 +345,7 @@ sequence for the code and how it works.
 | [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **235** | 7 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
+| [A000391](seq/A000xxx/A000391/) | Euler transform of A000332. | **103** | 500 |
 | [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **40** | 201 |
 | [A000393](seq/A000xxx/A000393/) | Number of n-node rooted trees of height 6. | **124** | 200 |
 | [A000394](seq/A000xxx/A000394/) | Numbers of form x^2 + y^2 + 7z^2. | **75** | 60 |
