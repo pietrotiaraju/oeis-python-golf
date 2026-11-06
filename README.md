@@ -359,6 +359,7 @@ sequence for the code and how it works.
 | [A000352](seq/A000xxx/A000352/) | One half of the number of permutations of [n] such that the… | **42** | 397 |
 | [A000353](seq/A000xxx/A000353/) | Primes p == 7, 19, 23 (mod 40) such that (p-1)/2 is also prime. | **74** | 230 |
 | [A000354](seq/A000xxx/A000354/) | Expansion of e.g.f. exp(-x)/(1-2\*x). | **36** | 101 |
+| [A000355](seq/A000xxx/A000355/) | Primes p == 3, 9, 11 (mod 20) such that 2p+1 is also prime. | **77** | 230 |
 | [A000356](seq/A000xxx/A000356/) | Number of rooted cubic maps with 2n nodes and a distinguished… | **53** | 800 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000358](seq/A000xxx/A000358/) | Number of binary necklaces of length n with no subsequence 00,… | **99** | 1000 |
