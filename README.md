@@ -514,6 +514,21 @@ sequence for the code and how it works.
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **73** | 197 |
 | [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **240** | 18 |
+| [A000501](seq/A000xxx/A000501/) | a(n) = floor(cosh(n)). | **100** | 30 |
+| [A000502](seq/A000xxx/A000502/) | Number of genus 0 rooted maps with 6 faces and n vertices. | **109** | 496 |
+| [A000503](seq/A000xxx/A000503/) | a(n) = floor(tan(n)). | **261** | 100 |
+| [A000504](seq/A000xxx/A000504/) | S2(j,2j+3) where S2(n,k) is a 2-associated Stirling number of the… | **84** | 17 |
+| [A000505](seq/A000xxx/A000505/) | Eulerian numbers (Euler's triangle: column k=5 of A008292, column k=4… | **93** | 996 |
+| [A000506](seq/A000xxx/A000506/) | One half of the number of permutations of [n] such that the… | **116** | 18 |
+| [A000507](seq/A000xxx/A000507/) | Number of permutations of [n] with exactly 3 increasing runs of… | **91** | 18 |
+| [A000508](seq/A000xxx/A000508/) | Generalized class numbers c\_(n,3). | **143** | 21 |
+| [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **93** | 995 |
+| [A000515](seq/A000xxx/A000515/) | a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)\*binomial(2n,n)^2. | **51** | 101 |
+| [A000517](seq/A000xxx/A000517/) | Number of permutations of length n with exactly three valleys. | **100** | 194 |
+| [A000518](seq/A000xxx/A000518/) | Generalized tangent numbers d\_(n,4). | **155** | 1000 |
+| [A000520](seq/A000xxx/A000520/) | Nearest integer to log\_10(n). | **39** | 1000 |
+| [A000522](seq/A000xxx/A000522/) | Total number of ordered k-tuples (k=0..n) of distinct elements from… | **36** | 451 |
+| [A000523](seq/A000xxx/A000523/) | a(n) = floor(log\_2(n)). | **36** | 105 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

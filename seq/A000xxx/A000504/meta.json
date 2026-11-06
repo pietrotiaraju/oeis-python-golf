@@ -1,0 +1,6 @@
+{
+  "name": "S2(j,2j+3) where S2(n,k) is a 2-associated Stirling number of the second kind.",
+  "offset": 1,
+  "min_terms": 17,
+  "timeout": 60
+}
