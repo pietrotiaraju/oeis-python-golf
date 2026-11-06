@@ -319,6 +319,7 @@ sequence for the code and how it works.
 | [A000302](seq/A000xxx/A000302/) | Powers of 4: a(n) = 4^n. | **24** | 101 |
 | [A000303](seq/A000xxx/A000303/) | Number of permutations of [n] in which the longest increasing run has… | **83** | 464 |
 | [A000304](seq/A000xxx/A000304/) | a(n) = a(n-1)\*a(n-2). | **33** | 17 |
+| [A000306](seq/A000xxx/A000306/) | Number of trees of diameter 8. | **178** | 2500 |
 | [A000307](seq/A000xxx/A000307/) | Number of 4-level labeled rooted trees with n leaves. | **85** | 441 |
 | [A000308](seq/A000xxx/A000308/) | a(n) = a(n-1)\*a(n-2)\*a(n-3) with a(1)=1, a(2)=2 and a(3)=3. | **43** | 15 |
 | [A000309](seq/A000xxx/A000309/) | Number of rooted planar bridgeless cubic maps with 2n nodes. | **55** | 101 |
