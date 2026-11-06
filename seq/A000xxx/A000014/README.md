@@ -8,10 +8,10 @@ Offset 0: 0, 1, 1, 0, 1, 1, 2, 2, 4, 5, 10, 14, 26, 42, 78, 132, 249, …
 Series-reduced trees (homeomorphically irreducible trees) have no node of
 degree 2.
 
-### Python 3 — 165 bytes
+### Python 3 — 163 bytes
 
 ```python
-A=0,1;F=A*1;n=0
+A=0,1;F=A;n=0
 while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F+=sum(d*A[d]*sum(F[-d::-d])for d in range(1,n+1))//n,;A+=F[-1]-A[-1],
 ```
 
@@ -32,7 +32,7 @@ while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F
   is Fₙ + ((−1)ⁿ·A_⌊n/2⌋ − Σ Aᵢ·Fₙ₋ᵢ)/2, which is the printed expression.
 - The two states run one step ahead of n (they start at A₁ = F₁ = 1), so the
   division by n never meets n = 0 and a(0) = 0 needs no special case.
-  `F=A*1` initially shares the tuple; each `+=` then rebinds its own state.
+  `F=A` initially shares the tuple; each `+=` then rebinds its own state.
 
 **Notes**
 
@@ -48,6 +48,7 @@ while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 167 | first entry |
 | 2026-11-06 | Python 3 | 165 | use a tuple for the initial A state |
+| 2026-11-06 | Python 3 | 163 | share the immutable initial tuple directly |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
