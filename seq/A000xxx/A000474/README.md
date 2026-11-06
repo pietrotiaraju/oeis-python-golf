@@ -36,21 +36,45 @@ while 1:
 
 **How it works**
 
-Enumerate every unordered 1-factorization by the exact-cover
-construction of [A000438](../A000438/), then quotient by all
-vertex permutations. Matchings are edge masks; a factorization
-is a frozenset of matching masks, so factor order is immaterial.
-Whenever a factorization has not yet been seen, count one new
-isomorphism class and add every vertex relabeling to S.
-Its entire orbit is then skipped by subsequent enumerated
-factorizations. This is an exhaustive finite procedure for
-each n, with no precomputed sequence values.
+- First enumerate the labeled factorizations of K_n by the
+  least-uncovered-edge construction of [A000438](../A000438/).
+  The code uses n=2,4,6,… vertices, twice the OEIS index.
+- M generates each perfect matching as an edge bit mask. H(E)
+  chooses a matching containing `E&-E`, removes it and yields
+  the remaining factor tuple. The empty graph yields the empty
+  tuple, completing one exact-cover path.
+- The forced least-edge order counts each unordered factorization
+  once. For isomorphism testing, `frozenset(t)` explicitly removes
+  factor order from its representation.
+- If this frozenset is not already in S, increment the class count.
+  Q then records each matching as a list of bit positions, using
+  A's fixed list of edges (i,j), i<j.
+- For every vertex permutation p, B maps an old edge position to
+  the bit of its relabeled edge {p[i],p[j]}. Taking its smaller
+  and larger endpoints restores the triangular bit encoding.
+- `sum(B[k]for k in q)` makes a relabeled matching mask.
+  Distinct edges have distinct image bits, so their sum equals
+  their bitwise union. Store the frozenset of those masks in S.
+- Thus the whole vertex-permutation orbit is marked before the
+  next factorization is considered. Every isomorphism class is
+  encountered and counted exactly once.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 4 terms in 20 s; the official b-file contains 7 terms.
-- Both exact-cover enumeration and vertex-permutation orbits grow quickly. The bar includes the first nontrivial six classes on eight vertices.
+- Vertex relabeling preserves adjacency and factor membership.
+  Factor names are already discarded; the orbit calculation
+  handles the remaining vertex isomorphisms.
+- One cannot generally divide the labeled factorization count by
+  n!: different factorizations have different stabilizers. For K₈,
+  the 6240 labeled objects of [A000438](../A000438/) fall
+  into six classes, the first nontrivial output of this page.
+- Exact integer masks and exhaustive permutations make the procedure
+  independent of graph-isomorphism heuristics or numerical tests.
+- The work includes both exact-cover enumeration and n! relabelings
+  for each new orbit representative. S stores every marked image,
+  so memory as well as runtime grows sharply beyond small orders.
+- The b-file has 7 terms (indices 1 through 7). The bar is the
+  first 4 terms in 20 s.
 
 ## History
 
