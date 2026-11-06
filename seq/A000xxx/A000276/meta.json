@@ -1,0 +1,6 @@
+{
+  "name": "Associated Stirling numbers.",
+  "offset": 4,
+  "min_terms": 447,
+  "timeout": 60
+}
