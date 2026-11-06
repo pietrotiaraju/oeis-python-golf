@@ -301,7 +301,7 @@ sequence for the code and how it works.
 | [A000283](seq/A000xxx/A000283/) | a(n) = a(n-1)^2 + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 15 |
 | [A000284](seq/A000xxx/A000284/) | a(n) = a(n-1)^3 + a(n-2) with a(0)=0, a(1)=1. | **36** | 11 |
 | [A000285](seq/A000xxx/A000285/) | a(0) = 1, a(1) = 4, and a(n) = a(n-1) + a(n-2) for n >= 2. | **33** | 501 |
-| [A000286](seq/A000xxx/A000286/) | Number of positive integers <= 2^n of form 2 x^2 + 5 y^2. | **81** | 12 |
+| [A000286](seq/A000xxx/A000286/) | Number of positive integers <= 2^n of form 2 x^2 + 5 y^2. | **80** | 12 |
 | [A000287](seq/A000xxx/A000287/) | Number of rooted polyhedral graphs with n edges. | **77** | 995 |
 | [A000288](seq/A000xxx/A000288/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) with… | **39** | 3504 |
 | [A000289](seq/A000xxx/A000289/) | A nonlinear recurrence: a(n) = a(n-1)^2 - 3\*a(n-1) + 3 (for n>1). | **32** | 13 |
