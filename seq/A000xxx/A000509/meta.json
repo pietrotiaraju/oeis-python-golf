@@ -1,0 +1,6 @@
+{
+  "name": "Size of second largest n-arc in PG(2,q), where q runs through the primes and prime powers >= 7.",
+  "offset": 1,
+  "min_terms": 2,
+  "timeout": 60
+}

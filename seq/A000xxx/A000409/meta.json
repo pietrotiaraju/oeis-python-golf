@@ -1,0 +1,6 @@
+{
+  "name": "Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices having distinct, nonzero ordered rows, but having at least two equal columns or at least one zero column.",
+  "offset": 2,
+  "min_terms": 14,
+  "timeout": 60
+}

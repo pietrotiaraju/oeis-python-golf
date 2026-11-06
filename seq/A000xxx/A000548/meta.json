@@ -1,0 +1,6 @@
+{
+  "name": "Squares that are not the sum of 2 nonzero squares.",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Wythoff array read by falling antidiagonals.",
+  "offset": 1,
+  "min_terms": 5151,
+  "timeout": 60
+}

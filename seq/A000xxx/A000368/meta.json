@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected graphs with one cycle of length 4.",
+  "offset": 4,
+  "min_terms": 1997,
+  "timeout": 60
+}

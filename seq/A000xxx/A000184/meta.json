@@ -1,0 +1,6 @@
+{
+  "name": "Number of genus 0 rooted maps with 3 faces with n vertices.",
+  "offset": 2,
+  "min_terms": 499,
+  "timeout": 60
+}

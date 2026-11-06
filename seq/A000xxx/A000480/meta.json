@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = floor(cos(n)).",
+  "offset": 0,
+  "min_terms": 80,
+  "timeout": 60
+}

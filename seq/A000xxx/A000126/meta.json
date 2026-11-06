@@ -1,0 +1,6 @@
+{
+  "name": "A nonlinear binomial sum.",
+  "offset": 1,
+  "min_terms": 201,
+  "timeout": 60
+}

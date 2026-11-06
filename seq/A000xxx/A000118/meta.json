@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.",
+  "offset": 0,
+  "min_terms": 10000,
+  "timeout": 60
+}

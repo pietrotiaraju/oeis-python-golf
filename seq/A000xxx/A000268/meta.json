@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f.: -log(1+log(1+log(1-x))).",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}

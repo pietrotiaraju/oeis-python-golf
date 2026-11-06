@@ -1,0 +1,6 @@
+{
+  "name": "Number of plane partitions (or planar partitions) of n.",
+  "offset": 0,
+  "min_terms": 6501,
+  "timeout": 60
+}

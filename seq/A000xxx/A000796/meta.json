@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of Pi (or digits of Pi).",
+  "offset": 1,
+  "min_terms": 20000,
+  "timeout": 60
+}

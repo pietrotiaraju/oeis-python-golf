@@ -1,0 +1,6 @@
+{
+  "name": "Convolution of A000203 with itself.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

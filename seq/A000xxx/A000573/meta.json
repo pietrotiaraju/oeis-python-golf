@@ -1,0 +1,6 @@
+{
+  "name": "Number of 4 X n normalized Latin rectangles.",
+  "offset": 4,
+  "min_terms": 3,
+  "timeout": 60
+}

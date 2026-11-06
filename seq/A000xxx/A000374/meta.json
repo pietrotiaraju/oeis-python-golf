@@ -1,0 +1,6 @@
+{
+  "name": "Number of cycles (mod n) under doubling map.",
+  "offset": 1,
+  "min_terms": 480,
+  "timeout": 60
+}

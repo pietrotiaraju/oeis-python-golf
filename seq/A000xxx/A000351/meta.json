@@ -1,0 +1,6 @@
+{
+  "name": "Powers of 5: a(n) = 5^n.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of placing n labeled balls into 3 indistinguishable boxes with at least 2 balls in each box.",
+  "offset": 6,
+  "min_terms": 195,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = floor(cosh(n)).",
+  "offset": 0,
+  "min_terms": 30,
+  "timeout": 60
+}

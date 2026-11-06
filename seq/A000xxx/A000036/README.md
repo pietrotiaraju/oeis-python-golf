@@ -7,14 +7,14 @@
 
 Offset 1: 2, 3, 5, 6, 6, −6, 7, 8, 10, 13, 13, 13, 14, −17, 17, 17, 18, …
 
-### Python 3 — 205 bytes
+### Python 3 — 204 bytes
 
 ```python
 from math import*
 n=a=m=0
 while 1:
  n+=1;S=6*n**47;x=p=2*S;i=1;A=1+4*sum(isqrt(n-i*i)for i in range(isqrt(n)+1))
- while x:x=x*i//(i-~i);p+=x;i+=1
+ while x:=x*i//(i-~i):p+=x;i+=1
  if abs(F:=A*S-p*n)>abs(a*S-p*m):a=A;m=n;print((F+S//2)//S)
 ```
 
@@ -29,6 +29,9 @@ while 1:
   the current term (ratio i/(2i+1), with `i-~i` = 2i+1) and p the running
   sum. Each floor loses less than 1 and the earlier losses halve at every
   step, so 0 ≤ πS − p < E = 2·log₂S + 6.
+- Updating `x` in the `while` condition saves one byte. When the next term
+  is zero, the loop stops instead of adding zero to `p`; the skipped final
+  increment of `i` is unused, since `i` is reset for each n.
 - `F` = A·S − p·n is S·P(n), off by less than n·E. The record is kept as
   the pair (a, m) = (A(m), m), and |P(n)| > |P(m)| is tested as
   |F| > |a·S − p·m|, so the old record is measured again with the new p.
@@ -66,6 +69,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 205 | first entry |
+| 2026-11-06 | Python 3 | 204 | update the series term in the while condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

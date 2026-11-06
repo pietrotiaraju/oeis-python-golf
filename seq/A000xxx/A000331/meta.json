@@ -1,0 +1,6 @@
+{
+  "name": "Related to zeros of Bessel function.",
+  "offset": 4,
+  "min_terms": 192,
+  "timeout": 60
+}

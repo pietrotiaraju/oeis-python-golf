@@ -1,0 +1,6 @@
+{
+  "name": "Number of oriented rooted trees with n nodes. Also rooted trees with n nodes and 2-colored non-root nodes.",
+  "offset": 1,
+  "min_terms": 1300,
+  "timeout": 60
+}

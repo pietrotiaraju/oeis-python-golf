@@ -1,0 +1,6 @@
+{
+  "name": "Number of trees of diameter 8.",
+  "offset": 9,
+  "min_terms": 2500,
+  "timeout": 60
+}

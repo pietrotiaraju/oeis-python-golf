@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations in the symmetric group S_n that have odd order.",
+  "offset": 0,
+  "min_terms": 451,
+  "timeout": 60
+}

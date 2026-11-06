@@ -1,0 +1,6 @@
+{
+  "name": "Crossing number of complete graph with n nodes.",
+  "offset": 0,
+  "min_terms": 15,
+  "timeout": 60
+}

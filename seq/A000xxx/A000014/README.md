@@ -8,10 +8,10 @@ Offset 0: 0, 1, 1, 0, 1, 1, 2, 2, 4, 5, 10, 14, 26, 42, 78, 132, 249, …
 Series-reduced trees (homeomorphically irreducible trees) have no node of
 degree 2.
 
-### Python 3 — 167 bytes
+### Python 3 — 163 bytes
 
 ```python
-A=[0,1];F=A*1;n=0
+A=0,1;F=A;n=0
 while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F+=sum(d*A[d]*sum(F[-d::-d])for d in range(1,n+1))//n,;A+=F[-1]-A[-1],
 ```
 
@@ -30,9 +30,9 @@ while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F
   (Harary and Palmer, in Somos's form):
   a(n) = [xⁿ] ((1 − x)·A(x²) + (1 + x)·A·(2 − A))/2. With F = (1 + x)·A this
   is Fₙ + ((−1)ⁿ·A_⌊n/2⌋ − Σ Aᵢ·Fₙ₋ᵢ)/2, which is the printed expression.
-- The lists run one step ahead of n (they start at A₁ = F₁ = 1), so the
+- The two states run one step ahead of n (they start at A₁ = F₁ = 1), so the
   division by n never meets n = 0 and a(0) = 0 needs no special case.
-  `F=A*1` is a copy, not a second name for the same list.
+  `F=A` initially shares the tuple; each `+=` then rebinds its own state.
 
 **Notes**
 
@@ -47,6 +47,8 @@ while[print(F[n]+(A[n//2]*(-1)**n-sum(A[i]*F[n-i]for i in range(n)))//2)]:n+=1;F
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 167 | first entry |
+| 2026-11-06 | Python 3 | 165 | use a tuple for the initial A state |
+| 2026-11-06 | Python 3 | 163 | share the immutable initial tuple directly |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

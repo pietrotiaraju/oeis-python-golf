@@ -1,0 +1,6 @@
+{
+  "name": "Topswops (2): start by shuffling n cards labeled 1..n. If the top card is m, reverse the order of the top m cards. Repeat until 1 gets to the top, then stop. Suppose the whole deck is now sorted (if not, discard this case). a(n) is the maximal number of steps before 1 got to the top.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 60
+}

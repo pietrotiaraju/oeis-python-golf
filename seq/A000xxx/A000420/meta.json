@@ -1,0 +1,6 @@
+{
+  "name": "Powers of 7: a(n) = 7^n.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

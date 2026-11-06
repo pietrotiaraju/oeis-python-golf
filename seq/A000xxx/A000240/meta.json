@@ -1,0 +1,6 @@
+{
+  "name": "Rencontres numbers: number of permutations of [n] with exactly one fixed point.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

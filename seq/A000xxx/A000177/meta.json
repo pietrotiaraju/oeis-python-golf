@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n into 6 squares.",
+  "offset": 0,
+  "min_terms": 200,
+  "timeout": 60
+}

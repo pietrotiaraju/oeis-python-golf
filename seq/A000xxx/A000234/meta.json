@@ -1,0 +1,6 @@
+{
+  "name": "Partitions into non-integral powers (see Comments for precise definition).",
+  "offset": 1,
+  "min_terms": 26,
+  "timeout": 60
+}

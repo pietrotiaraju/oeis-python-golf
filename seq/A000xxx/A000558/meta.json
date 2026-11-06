@@ -1,0 +1,6 @@
+{
+  "name": "Generalized Stirling numbers of second kind.",
+  "offset": 2,
+  "min_terms": 557,
+  "timeout": 60
+}

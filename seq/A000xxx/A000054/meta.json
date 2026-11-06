@@ -1,0 +1,6 @@
+{
+  "name": "Local stops on New York City A line subway.",
+  "offset": 1,
+  "min_terms": 25,
+  "timeout": 60
+}

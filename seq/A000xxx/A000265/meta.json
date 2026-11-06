@@ -1,0 +1,6 @@
+{
+  "name": "Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.",
+  "offset": 1,
+  "min_terms": 100000,
+  "timeout": 60
+}

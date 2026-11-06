@@ -1,0 +1,6 @@
+{
+  "name": "Total number of ordered k-tuples (k=0..n) of distinct elements from an n-element set: a(n) = Sum_{k=0..n} n!/k!.",
+  "offset": 0,
+  "min_terms": 451,
+  "timeout": 60
+}

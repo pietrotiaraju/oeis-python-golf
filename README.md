@@ -4,22 +4,31 @@ Shortest known Python programs that generate sequences from the
 [OEIS](https://oeis.org/). Every record is run and checked against the
 sequence's OEIS b-file, locally and in CI.
 
+New to golfing these? The [golf tricks](TRICKS.md) page collects the
+techniques that come up again and again across the sequence pages, each with a
+short example and links to the sequences that use it.
+
 ## Records
 
-Size in bytes, shortest in bold. The last column is how many terms every
-program for that sequence must reproduce within its time limit. Click a
-sequence for the code and how it works.
+Open a folder for its complete records table, with program sizes in bytes
+and the number of terms required within each time limit. Click a sequence
+for its code and explanation. The latest records are listed below.
 
 <!-- records:start -->
 
-**117 sequences**, 11579 bytes in all.
+**609 sequences**, 67776 bytes in all.
 
 | Folder | Sequences |
 |---|---|
-| [A000000 to A000999](seq/A000xxx/) | 110 |
+| [A000000 to A000999](seq/A000xxx/) | 597 |
+| [A005000 to A005999](seq/A005xxx/) | 1 |
+| [A034000 to A034999](seq/A034xxx/) | 1 |
+| [A035000 to A035999](seq/A035xxx/) | 1 |
+| [A139000 to A139999](seq/A139xxx/) | 1 |
 | [A276000 to A276999](seq/A276xxx/) | 1 |
 | [A300000 to A300999](seq/A300xxx/) | 3 |
 | [A334000 to A334999](seq/A334xxx/) | 1 |
+| [A335000 to A335999](seq/A335xxx/) | 1 |
 | [A384000 to A384999](seq/A384xxx/) | 1 |
 | [A386000 to A386999](seq/A386xxx/) | 1 |
 
@@ -27,26 +36,26 @@ Latest 20 records:
 
 | Date | Sequence | Bytes | Note |
 |---|---|---|---|
-| 2026-11-05 | [A000024](seq/A000xxx/A000024/) | 92 | range named in the while condition |
-| 2026-11-05 | [A000021](seq/A000xxx/A000021/) | 92 | range named in the while condition |
-| 2026-11-05 | [A000018](seq/A000xxx/A000018/) | 92 | range named in the while condition |
-| 2026-11-05 | [A000080](seq/A000xxx/A000080/) | 339 | value named in the while condition |
-| 2026-11-05 | [A000013](seq/A000xxx/A000013/) | 96 | `1<<g-n//g%2` instead of `1<<g>>n//g%2` (from A000116) |
-| 2026-11-05 | [A000003](seq/A000xxx/A000003/) | 146 | `import math` instead of `from math import*` |
-| 2026-11-05 | [A000001](seq/A000xxx/A000001/) | 255 | value named in the while condition |
-| 2026-11-05 | [A300000](seq/A300xxx/A300000/) | 65 | `while[print(...)]:` loop |
-| 2026-11-05 | [A000099](seq/A000xxx/A000099/) | 177 | value named in the while condition |
-| 2026-11-05 | [A000092](seq/A000xxx/A000092/) | 284 | value named in the while condition |
-| 2026-11-05 | [A000091](seq/A000xxx/A000091/) | 88 | value named in the while condition |
-| 2026-11-05 | [A000072](seq/A000xxx/A000072/) | 91 | value named in the while condition |
-| 2026-11-05 | [A000067](seq/A000xxx/A000067/) | 89 | range named in the while condition |
-| 2026-11-05 | [A000059](seq/A000xxx/A000059/) | 63 | ~d gives negative divisors, so the range starts at 0 (-1) |
-| 2026-11-05 | [A000050](seq/A000xxx/A000050/) | 87 | range named in the while condition |
-| 2026-11-05 | [A000049](seq/A000xxx/A000049/) | 93 | range named in the while condition |
-| 2026-11-05 | [A000025](seq/A000xxx/A000025/) | 118 | value named in the while condition |
-| 2026-11-05 | [A000019](seq/A000xxx/A000019/) | 468 | value named in the while condition |
-| 2026-11-05 | [A000016](seq/A000xxx/A000016/) | 96 | `import math` instead of `from math import*` |
-| 2026-11-05 | [A000015](seq/A000xxx/A000015/) | 82 | `import math` instead of `from math import*` |
+| 2026-11-06 | [A000474](seq/A000xxx/A000474/) | 550 | read each matching bit directly while relabeling |
+| 2026-11-06 | [A000445](seq/A000xxx/A000445/) | 934 | generate quadratic relations lazily and combine finite maxima |
+| 2026-11-06 | [A000421](seq/A000xxx/A000421/) | 369 | enumerate edge multisets and mark their vertex-permutation orbits |
+| 2026-11-06 | [A000001](seq/A000xxx/A000001/) | 217 | fix the identity row, fuse the two checks, update the factorial incrementally |
+| 2026-11-06 | [A000500](seq/A000xxx/A000500/) | 229 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-06 | [A000492](seq/A000xxx/A000492/) | 228 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-06 | [A000491](seq/A000xxx/A000491/) | 193 | accumulate the five black-partition filters directly |
+| 2026-11-06 | [A000483](seq/A000xxx/A000483/) | 101 | flatten the four-column recurrence into one list |
+| 2026-11-06 | [A000476](seq/A000xxx/A000476/) | 221 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-06 | [A000470](seq/A000xxx/A000470/) | 229 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-06 | [A000465](seq/A000xxx/A000465/) | 187 | accumulate the four black-partition filters directly |
+| 2026-11-06 | [A000448](seq/A000xxx/A000448/) | 319 | use Wilson prime generation and shorten exact threshold expressions |
+| 2026-11-06 | [A000446](seq/A000xxx/A000446/) | 370 | use Wilson prime generation, cached lambdas and a shared target |
+| 2026-11-06 | [A000440](seq/A000xxx/A000440/) | 228 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-06 | [A000438](seq/A000xxx/A000438/) | 262 | express the lazy matching generator as a lambda |
+| 2026-11-06 | [A000436](seq/A000xxx/A000436/) | 120 | remove addition of zero in the binomial argument |
+| 2026-11-06 | [A000428](seq/A000xxx/A000428/) | 111 | reorder the Euler-transform sum and use one coefficient list |
+| 2026-11-06 | [A000417](seq/A000xxx/A000417/) | 111 | reorder the Euler-transform sum and use one coefficient list |
+| 2026-11-06 | [A000412](seq/A000xxx/A000412/) | 152 | sum the black-partition cases directly and use the divisor recurrence |
+| 2026-11-06 | [A000282](seq/A000xxx/A000282/) | 271 | import math for a single prod call |
 
 <!-- records:end -->
 

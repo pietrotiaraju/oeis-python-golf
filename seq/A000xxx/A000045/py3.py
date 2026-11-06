@@ -1,2 +1,2 @@
-a,b=0,1
-while[print(a)]:a,b=b,a+b
+a=b=1
+while[print(a:=b-a)]:b+=a

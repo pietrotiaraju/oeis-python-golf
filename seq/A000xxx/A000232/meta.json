@@ -1,0 +1,6 @@
+{
+  "name": "Construct a triangle as in A036262. Sequence is one less than the position of the first number larger than 2 in the n-th row (n-th difference).",
+  "offset": 1,
+  "min_terms": 50,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent ways to color vertices of a cube using at most n colors.",
+  "offset": 0,
+  "min_terms": 25,
+  "timeout": 60
+}

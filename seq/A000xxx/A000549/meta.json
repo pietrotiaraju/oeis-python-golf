@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 2 squares but not sum of 3 nonzero squares.",
+  "offset": 1,
+  "min_terms": 30,
+  "timeout": 60
+}

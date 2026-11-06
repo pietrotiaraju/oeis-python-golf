@@ -1,0 +1,6 @@
+{
+  "name": "Primes p == 3, 9, 11 (mod 20) such that 2p+1 is also prime.",
+  "offset": 1,
+  "min_terms": 230,
+  "timeout": 60
+}

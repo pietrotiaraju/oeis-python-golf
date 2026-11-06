@@ -1,0 +1,6 @@
+{
+  "name": "Number of partially labeled rooted trees with n nodes (4 of which are labeled).",
+  "offset": 4,
+  "min_terms": 21,
+  "timeout": 60
+}

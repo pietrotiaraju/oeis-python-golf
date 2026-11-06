@@ -6,11 +6,11 @@
 
 Offset 0: 1, 1, 1, 1, 2, 3, 5, 8, 14, 21, 39, 62, 112, 189, 352, 607, …
 
-### Python 3 — 133 bytes
+### Python 3 — 132 bytes
 
 ```python
 import math
-n=1;a=[4]
+n=1;a=4,
 while[print(a[-1]>>2)]:a+=sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)-(g==j)*n*a[j]for j in range(n))//n,;n+=1
 ```
 
@@ -21,7 +21,7 @@ while[print(a[-1]>>2)]:a+=sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)-(g==j)*n*
   n/d times, so A000011(n) = Σ a(d) over the divisors d of n, as on the
   OEIS page. That gives a(n) = A000011(n) − Σ a(d) over the divisors d < n,
   with no Möbius function needed.
-- The list `a` holds b(k) = 4·a(k). For each rotation j,
+- The tuple `a` holds b(k) = 4·a(k). For each rotation j,
   `(2-n//g%2<<g)+(2<<n//2)` is the Burnside term from the A000011 page, and
   the terms add up to 4n·A000011(n).
 - `-(g==j)*n*a[j]` subtracts n·b(d) = 4n·a(d) for each proper divisor d.
@@ -29,7 +29,7 @@ while[print(a[-1]>>2)]:a+=sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)-(g==j)*n*
   gcd is n, not 0, so the loop over rotations also walks the divisors
   d < n. For n = 6 that is j = 1, 2, 3, while j = 4 has gcd 2.
 - The sum is then 4n·a(n), and `//n` leaves b(n), appended as a one-tuple.
-  Keeping 4·a in the list saves the `//4` and the `*4` on each subtracted
+  Keeping 4·a in the tuple saves the `//4` and the `*4` on each subtracted
   term, for a `>>2` in the print: storing a(n) itself is 134 bytes.
 - `a=[4]` is b(0), so the first line is a(0) = 1. j = 0 never passes the
   `g==j` test, so b(0) is never subtracted. The loop condition
@@ -52,6 +52,7 @@ while[print(a[-1]>>2)]:a+=sum((2-n//(g:=math.gcd(j,n))%2<<g)+(2<<n//2)-(g==j)*n*
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 133 | first entry |
+| 2026-11-06 | Python 3 | 132 | use a tuple for the initial a state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

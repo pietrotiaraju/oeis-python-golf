@@ -1,0 +1,6 @@
+{
+  "name": "Number of 3-edge-connected rooted cubic maps with 2n nodes and a distinguished Hamiltonian cycle.",
+  "offset": 1,
+  "min_terms": 120,
+  "timeout": 60
+}

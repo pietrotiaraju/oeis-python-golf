@@ -1,0 +1,6 @@
+{
+  "name": "Number of bicentered hydrocarbons with n atoms.",
+  "offset": 0,
+  "min_terms": 50,
+  "timeout": 60
+}

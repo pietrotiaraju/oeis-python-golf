@@ -1,0 +1,6 @@
+{
+  "name": "Lower Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi), where phi = (1+sqrt(5))/2 = A001622.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

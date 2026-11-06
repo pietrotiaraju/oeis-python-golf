@@ -1,0 +1,6 @@
+{
+  "name": "Concatenation of numbers from n down to 1.",
+  "offset": 1,
+  "min_terms": 150,
+  "timeout": 60
+}

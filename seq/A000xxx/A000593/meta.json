@@ -1,0 +1,6 @@
+{
+  "name": "Sum of odd divisors of n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

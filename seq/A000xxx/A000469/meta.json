@@ -1,0 +1,6 @@
+{
+  "name": "1 together with products of 2 or more distinct primes.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

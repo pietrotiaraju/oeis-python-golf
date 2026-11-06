@@ -1,0 +1,6 @@
+{
+  "name": "Number of steps to reach 1 in sequence A000546.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Positive zeros of Bessel function of order 0 rounded to nearest integer.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

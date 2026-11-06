@@ -1,0 +1,6 @@
+{
+  "name": "Euler transform of A000292.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}

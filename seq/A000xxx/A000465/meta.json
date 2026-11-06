@@ -1,0 +1,6 @@
+{
+  "name": "Number of bipartite partitions of n white objects and 4 black ones.",
+  "offset": 0,
+  "min_terms": 5001,
+  "timeout": 60
+}

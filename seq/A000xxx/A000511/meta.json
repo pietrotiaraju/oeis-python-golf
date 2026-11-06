@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step spiral self-avoiding walks on hexagonal lattice, where at each step one may continue in same direction or make turn of 2*Pi/3 counterclockwise.",
+  "offset": 0,
+  "min_terms": 20,
+  "timeout": 60
+}

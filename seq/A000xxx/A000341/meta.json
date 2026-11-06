@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways to pair up {1..2n} so sum of each pair is prime.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 60
+}

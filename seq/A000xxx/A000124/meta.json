@@ -1,0 +1,6 @@
+{
+  "name": "Central polygonal numbers (the Lazy Caterer's sequence): n(n+1)/2 + 1; or, maximal number of pieces formed when slicing a pancake with n cuts.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

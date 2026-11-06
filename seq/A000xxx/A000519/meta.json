@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of nonzero regular 0-1 matrices of order n.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}

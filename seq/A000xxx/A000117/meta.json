@@ -1,0 +1,6 @@
+{
+  "name": "Number of even sequences with period 2n (bisection of A000011).",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}

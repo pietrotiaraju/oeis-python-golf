@@ -1,0 +1,6 @@
+{
+  "name": "Tangent (or \"Zag\") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).",
+  "offset": 1,
+  "min_terms": 243,
+  "timeout": 60
+}

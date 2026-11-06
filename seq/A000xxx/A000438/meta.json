@@ -1,0 +1,6 @@
+{
+  "name": "Number of 1-factorizations of complete graph K_{2n}.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 10
+}

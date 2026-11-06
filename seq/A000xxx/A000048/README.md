@@ -6,10 +6,10 @@
 
 Offset 0: 1, 1, 1, 1, 2, 3, 5, 9, 16, 28, 51, 93, 170, 315, 585, 1091, …
 
-### Python 3 — 93 bytes
+### Python 3 — 92 bytes
 
 ```python
-a=[1];m=0
+a=1,;m=0
 while[print(a[m])]:m+=1;a+=(2**~-m-sum(k*a[k]for k in range(1,m)if m%(2*k)==k))//m,
 ```
 
@@ -27,7 +27,7 @@ while[print(a[m])]:m+=1;a+=(2**~-m-sum(k*a[k]for k in range(1,m)if m%(2*k)==k))/
   the smaller such k, so no Möbius function is needed.
 - `m%(2*k)==k` is "k divides m with an odd quotient": for m = q·k, m mod 2k
   is k when q is odd and 0 when q is even, and it is never k when k ∤ m.
-- `a=[1]` holds a(0) = 1, so `a[k]` is a(k); `range(1,m)` skips k = 0.
+- `a=1,` holds a(0) = 1, so `a[k]` is a(k); `range(1,m)` skips k = 0.
   `2**~-m` is 2^(m−1), and `a+=(…)//m,` appends a(m) as a one-tuple.
 - `while[print(a[m])]` prints a(m), then loops forever because the list is
   non-empty.
@@ -47,6 +47,7 @@ while[print(a[m])]:m+=1;a+=(2**~-m-sum(k*a[k]for k in range(1,m)if m%(2*k)==k))/
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 93 | first entry |
+| 2026-11-06 | Python 3 | 92 | use a tuple for the initial a state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

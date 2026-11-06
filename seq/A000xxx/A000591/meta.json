@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-state 2-input 1-output automata with one initial and one terminal state.",
+  "offset": 1,
+  "min_terms": 13,
+  "timeout": 60
+}

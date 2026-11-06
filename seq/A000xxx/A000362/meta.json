@@ -1,0 +1,6 @@
+{
+  "name": "Generalized class numbers c_(n,2).",
+  "offset": 1,
+  "min_terms": 4700,
+  "timeout": 60
+}

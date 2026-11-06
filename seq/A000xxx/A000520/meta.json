@@ -1,0 +1,6 @@
+{
+  "name": "Nearest integer to log_10(n).",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

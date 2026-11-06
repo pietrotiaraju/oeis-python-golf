@@ -10,13 +10,13 @@ As the OEIS entry notes, a(n) is the smallest positive integer that is not the
 value at x = n of any polynomial interpolating a nonempty subset of the
 earlier points. Both programs try all 2ⁿ⁻¹ subsets with exact arithmetic.
 
-### Python 3 — 209 bytes
+### Python 3 — 208 bytes
 
 ```python
-from math import*
+import math
 from fractions import*
 a=[]
-while 1:r=range(n:=len(a));print(v:=min({*range(2<<n)}-{sum(a[i]*prod(Fraction(n-j,i-j)for j in r if m>>j&(i!=j))for i in r if m>>i&1)for m in range(2**n)}));a+=v,
+while 1:r=range(n:=len(a));print(v:=min({*range(2<<n)}-{sum(a[i]*math.prod(Fraction(n-j,i-j)for j in r if m>>j&(i!=j))for i in r if m>>i&1)for m in range(2**n)}));a+=v,
 ```
 
 **How it works**
@@ -34,6 +34,7 @@ while 1:r=range(n:=len(a));print(v:=min({*range(2<<n)}-{sum(a[i]*prod(Fraction(n
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 209 | first entry |
+| 2026-11-06 | Python 3 | 208 | `import math` and `math.prod` (−1 byte) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
