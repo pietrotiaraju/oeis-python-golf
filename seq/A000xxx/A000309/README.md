@@ -27,9 +27,9 @@ while[print(a)]:a=a*27*j*-~j//(j+5)//(2*j+7);j+=3
   divisions in a row are one exact division.
 - This is [A000139](../A000139/) times 2^(n−1), and its step
   `a*27*m*~-m//-~(m:=m+3)//(4*m-2)` (with m = 3n − 1) works here too as
-  `//(2*m-1)`, but m starts at 2, and `a=1;m=2` costs the 2 bytes the
-  walrus saves (also 55 bytes). Starting j at 1 with the walrus,
-  `//(2+(j:=j+3))//(2*j+1)`, is 2 bytes longer.
+  `//(2*m-1)`: that step is as long as the one above, but m starts at 2,
+  and `a=1;m=2` makes the program 57 bytes. Starting j at 1 with the
+  walrus, `//(2+(j:=j+3))//(2*j+1)`, is also 2 bytes longer.
 - Exact integer arithmetic, so the program is right for every n. a(3813)
   is the first term with more than 4300 digits, so Python 3.11+ stops
   there with a `ValueError` from the int-to-str limit, which is not counted

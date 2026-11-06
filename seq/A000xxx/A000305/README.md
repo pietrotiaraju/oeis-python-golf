@@ -51,8 +51,8 @@ while 1:n+=1;y=z=j=0;b=1;exec("x,y,z=y,z,b-z+y;b=b*(3*n+~j)//(j:=j+1);"*n);print
 
 - Alternatives: the A091665 double sum with factorials is about 190
   bytes; reading the coefficient of u(1+2u)/(1+u−u²) from one big integer
-  (u iterated in base 8ⁿ, then a modular inverse with `pow`) is 106 bytes
-  and much slower; an order-3 recurrence with quartic coefficients fits
+  (u iterated in base 8ⁿ, then a modular inverse with `pow`) is 105 bytes
+  and much slower (117 terms in 30 s); an order-3 recurrence with quartic coefficients fits
   the data but is longer.
 - Each term costs n steps, so the program prints about 1500 terms in 60 s
   (the 4300-digit limit is near n = 5190, much later).
