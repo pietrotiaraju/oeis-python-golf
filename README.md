@@ -246,6 +246,7 @@ sequence for the code and how it works.
 | [A000236](seq/A000xxx/A000236/) | Maximum m such that there are no two adjacent elements belonging to… | **216** | 4 |
 | [A000237](seq/A000xxx/A000237/) | Number of mixed Husimi trees with n nodes; or rooted polygonal cacti… | **169** | 501 |
 | [A000238](seq/A000xxx/A000238/) | Number of oriented trees with n nodes. | **119** | 1000 |
+| [A000239](seq/A000xxx/A000239/) | One-half of number of permutations of [n] with exactly one run of… | **100** | 40 |
 | [A000240](seq/A000xxx/A000240/) | Rencontres numbers: number of permutations of [n] with exactly one… | **36** | 100 |
 | [A000242](seq/A000xxx/A000242/) | 3rd power of rooted tree enumerator; number of linear forests of 3… | **107** | 198 |
 | [A000244](seq/A000xxx/A000244/) | Powers of 3: a(n) = 3^n. | **24** | 201 |

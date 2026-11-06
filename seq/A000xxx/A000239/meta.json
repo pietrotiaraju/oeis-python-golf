@@ -1,0 +1,6 @@
+{
+  "name": "One-half of number of permutations of [n] with exactly one run of adjacent symbols differing by 1.",
+  "offset": 1,
+  "min_terms": 40,
+  "timeout": 60
+}
