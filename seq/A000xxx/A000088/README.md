@@ -5,55 +5,58 @@
 
 Offset 0: 1, 1, 2, 4, 11, 34, 156, 1044, 12346, 274668, 12005168, 1018997864, 165091172592, 50502031367952, 29054155657235488, …
 
-### Python 3 — 172 bytes
+### Python 3 — 169 bytes
 
 ```python
-import math
-f=lambda n,k,L,w,d=1:n>=k and f(n,k+1,L,w)+f(n-k,k,L+[k],w//k//d<<sum(math.gcd(k,j)for j in L)+k//2,d+1)or 0**n*w
-n=0;F=1
-while[print(f(n,1,[],F)//F)]:n+=1;F*=n
+import math,functools as F
+f=F.cache(lambda r,*L:r<1or sum(f(r+k,*sorted(L+(k,)))<<-k//2+sum(map(math.gcd,L,[k]*n))for k in range(-r,0))//r)
+n=0
+while[print(+f(n))]:n+=1
 ```
 
 **How it works**
 
 - Burnside's lemma: a(n) = (1/n!)·Σ_π 2^e(π) over the permutations π of the
   n nodes, where e(π) is the number of orbits π has on the C(n, 2) possible
-  edges. e depends only on the cycle type λ of π:
-  **e(λ) = Σ_{i<j} gcd(λᵢ, λⱼ) + Σᵢ ⌊λᵢ/2⌋**. Two cycles of lengths a and b
+  edges. e depends only on the cycles of π: two cycles of lengths a and b
   move their a·b connecting edges in orbits of length lcm(a, b), so there are
-  gcd(a, b) of them; one a-cycle has ⌊a/2⌋ orbits on its own C(a, 2) edges.
-  There are n!/z_λ permutations of type λ, with z_λ = Π k^(c_k)·c_k!, so
-  **a(n) = Σ_λ 2^e(λ) / z_λ** over the partitions λ of n. This is the formula
-  of Andrew Howroyd's PARI program on the OEIS page.
-- `f` walks the partitions with parts in nondecreasing order as a binary
-  recursion. With `n` still to fill and `k` the smallest part allowed, it
-  either moves on to bigger parts, `f(n,k+1,L,w)`, or takes a part k,
-  `f(n-k,k,L+[k],…)`. `L` lists the parts taken so far and `d` is one more
-  than the number of k's among them; moving on resets it to 1 through the
-  default argument.
-- `w` is 2^e·n!/z for the parts taken so far and starts at F = n!. A new part
-  k adds Σ_{j∈L} gcd(k, j) + ⌊k/2⌋ to e (the shift) and contributes k·d to
-  z (the c_k! grows by the factor d). Both divisions are exact: for a partial
-  partition μ, z_μ divides |μ|!, which divides n!, so `w//k//d` loses nothing
-  and the shift can come after it without parentheses.
-- When k > n the walk stops: with n = 0 the partition is complete and its
-  weight `w` counts; with 0 < n < k it is a dead end worth 0. `0**n*w` gives
-  both. When n ≥ k the two branches always add up to something positive (one
-  of them contains the partition that ends with the part n), so `and`/`or`
-  is safe.
-- The main loop keeps F = n! and prints `f(n,1,[],F)//F`.
-- `import math` plus `math.gcd` is a byte shorter than `from math import*`,
-  since `gcd` appears once. Counting the k's in `d` instead of with
-  `-~L.count(k)` saves 3 more.
+  gcd(a, b) of them, and one a-cycle has ⌊a/2⌋ orbits on its own C(a, 2)
+  edges.
+- Instead of summing over partitions with the weights 1/z_λ, `f` builds π
+  one cycle at a time: the cycle through a fixed point of the r points still
+  free has length k with probability 1/r for each k = 1 … r. So
+  f(r, L) = (1/r)·Σ_k 2^(⌊k/2⌋ + Σ_{j∈L} gcd(k, j))·f(r − k, L + k), where
+  `L` holds the cycles already chosen and the shift is the number of edge
+  orbits the new cycle adds (inside itself and towards each earlier cycle).
+  f(0, L) = 1 and a(n) = f(n, ()). This is the recursion of the A000273
+  (digraph) record with the graph exponent in place of the digraph one.
+- `//r` at every level is exact: f(r, L) is (1/r!)·Σ_{σ∈S_r} of 2 to the
+  number of orbits that σ×τ adds, with τ any permutation of cycle type L
+  on the points already used. That average counts the S_r-orbits of sets of
+  edges touching the r free points that τ maps to themselves, so it is an
+  integer (de Bruijn's form of Burnside's lemma, as in A000171).
+- Cycle lengths are stored negated, `for k in range(-r,0)`: `f(r+k,…)`,
+  `-k//2` = ⌊|k|/2⌋, and gcd ignores the sign. `map(math.gcd,L,[k]*n)` uses
+  the global n, which works because L never has more than n parts.
+- The recursion on its own visits every composition of n, 2^(n−1) of them,
+  and gets only 22 terms in 60 s. But f(r, L) depends only on the multiset
+  L, so `functools.cache` with L kept sorted, `*sorted(L+(k,))`, cuts the
+  states to the pairs (r, partition of a number ≤ n − r) and the cache is
+  shared by all n. `import math,functools as F` and `F.cache` are 3 bytes
+  under the separate imports.
+- `r<1or` returns True for r = 0, and `print(+f(n))` turns it into 1 for
+  a(0).
 
 **Notes**
 
 - Exact integer arithmetic, so the program is right for every n.
-- The work grows with the number of partitions: a(0) … a(39) print in about
-  2 s and about 58 terms in 60 s. The b-file goes to n = 87, where
-  p(87) = 38 887 673, out of reach of a partition sum in Python; the Python
-  program on the OEIS page is about as fast as this one. The bar is 40 terms
-  in 60 s.
+- a(0) … a(39) print in about 16 s and about 45 terms in 60 s, with about
+  0.45 GB of cache at 44 terms. The bar is 40 terms in 60 s. The b-file goes
+  to n = 87, out of reach of any partition sum in Python.
+- The previous record (172 bytes) walked the partitions with weights
+  2^e·n!/z_λ and was faster (about 58 terms in 60 s):
+  `f=lambda n,k,L,w,d=1:n>=k and f(n,k+1,L,w)+f(n-k,k,L+[k],w//k//d<<sum(math.gcd(k,j)for j in L)+k//2,d+1)or 0**n*w`
+  started at w = n! and divided by n! at the end.
 - The recursion is about n calls deep, and a(n) ~ 2^C(n,2)/n! passes
   Python's 4300-digit int-to-str limit from n = 176; neither is reached in
   practice.
@@ -63,6 +66,7 @@ while[print(f(n,1,[],F)//F)]:n+=1;F*=n
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 172 | first entry |
+| 2026-11-06 | Python 3 | 169 | A000273's divide-by-r cycle recursion, cached on the sorted cycle list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
