@@ -1,0 +1,6 @@
+{
+  "name": "Number of mixed Husimi trees with n nodes; or rooted polygonal cacti with bridges.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}

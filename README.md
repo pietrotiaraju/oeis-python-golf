@@ -242,6 +242,7 @@ sequence for the code and how it works.
 | [A000232](seq/A000xxx/A000232/) | Construct a triangle as in A036262. Sequence is one less than the… | **110** | 50 |
 | [A000233](seq/A000xxx/A000233/) | Generalized class numbers c\_(n,1). | **115** | 6500 |
 | [A000235](seq/A000xxx/A000235/) | Number of n-node rooted trees of height 3. | **113** | 200 |
+| [A000237](seq/A000xxx/A000237/) | Number of mixed Husimi trees with n nodes; or rooted polygonal cacti… | **169** | 501 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
