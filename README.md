@@ -422,6 +422,22 @@ sequence for the code and how it works.
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **147** | 14 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
+| [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **40** | 150 |
+| [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
+| [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
+| [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
+| [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **59** | 98 |
+| [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **114** | 447 |
+| [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **50** | 197 |
+| [A000454](seq/A000xxx/A000454/) | Unsigned Stirling numbers of first kind s(n,4). | **68** | 97 |
+| [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **50** | 998 |
+| [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
+| [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
+| [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
+| [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
+| [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **70** | 97 |
+| [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
+| [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

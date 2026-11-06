@@ -1,0 +1,6 @@
+{
+  "name": "Concatenate n n times.",
+  "offset": 1,
+  "min_terms": 333,
+  "timeout": 60
+}
