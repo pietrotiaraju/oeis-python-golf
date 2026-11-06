@@ -1,0 +1,6 @@
+{
+  "name": "Card matching: coefficients B[n,1] of t in the reduced hit polynomial A[n,n,n](t).",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}
