@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted simplicial 3-polytopes with n+3 nodes; or rooted 3-connected triangulations with 2n+2 faces; or rooted 3-connected trivalent maps with 2n+2 vertices.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
