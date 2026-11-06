@@ -345,6 +345,7 @@ sequence for the code and how it works.
 | [A000366](seq/A000xxx/A000366/) | Genocchi numbers of second kind (A005439) divided by 2^(n-1). | **81** | 100 |
 | [A000369](seq/A000xxx/A000369/) | Triangle of numbers related to triangle A049213; generalization of… | **76** | 1275 |
 | [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **235** | 7 |
+| [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **74** | 7 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000383](seq/A000xxx/A000383/) | Hexanacci numbers with a(0) = ... = a(5) = 1. | **39** | 3359 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
