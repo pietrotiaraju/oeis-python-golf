@@ -1,0 +1,6 @@
+{
+  "name": "Number of 7-dimensional partitions of n.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 10
+}

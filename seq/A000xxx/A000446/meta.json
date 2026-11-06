@@ -1,0 +1,6 @@
+{
+  "name": "Smallest number that is the sum of 2 squares (allowing zeros) in exactly n ways.",
+  "offset": 1,
+  "min_terms": 1458,
+  "timeout": 60
+}
