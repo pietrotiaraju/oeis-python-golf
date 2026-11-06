@@ -1,0 +1,6 @@
+{
+  "name": "Nearest integer to modified Bessel function K_n(5).",
+  "offset": 0,
+  "min_terms": 300,
+  "timeout": 60
+}

@@ -255,6 +255,7 @@ sequence for the code and how it works.
 | [A000246](seq/A000xxx/A000246/) | Number of permutations in the symmetric group S\_n that have odd order. | **35** | 451 |
 | [A000247](seq/A000xxx/A000247/) | a(n) = 2^n - n - 2. | **31** | 299 |
 | [A000248](seq/A000xxx/A000248/) | Expansion of e.g.f. exp(x\*exp(x)). | **73** | 125 |
+| [A000249](seq/A000xxx/A000249/) | Nearest integer to modified Bessel function K\_n(5). | **239** | 300 |
 | [A000250](seq/A000xxx/A000250/) | Number of symmetric reflexive relations on n nodes: (1/2)\*A000666. | **137** | 18 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
