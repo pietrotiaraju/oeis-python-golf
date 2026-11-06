@@ -313,6 +313,7 @@ sequence for the code and how it works.
 | [A000299](seq/A000xxx/A000299/) | Number of n-node rooted trees of height 4. | **121** | 1000 |
 | [A000300](seq/A000xxx/A000300/) | 4th power of rooted tree enumerator: linear forests of 4 rooted trees. | **107** | 497 |
 | [A000301](seq/A000xxx/A000301/) | a(n) = a(n-1)\*a(n-2) with a(0) = 1, a(1) = 2; also a(n) =… | **32** | 19 |
+| [A000302](seq/A000xxx/A000302/) | Powers of 4: a(n) = 4^n. | **24** | 101 |
 | [A000307](seq/A000xxx/A000307/) | Number of 4-level labeled rooted trees with n leaves. | **85** | 441 |
 | [A000310](seq/A000xxx/A000310/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
