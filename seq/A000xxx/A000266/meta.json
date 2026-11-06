@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of e.g.f. exp(-x^2/2) / (1-x).",
+  "offset": 0,
+  "min_terms": 451,
+  "timeout": 60
+}
