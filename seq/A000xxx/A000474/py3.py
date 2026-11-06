@@ -6,8 +6,8 @@ while 1:
  L=list(M(range(n)));A=[(i,j)for j in range(n)for i in range(j)];S=set();c=0
  for t in H((1<<len(A))-1):
   if frozenset(t)in S:continue
-  c+=1;Q=[[k for k in range(len(A))if x>>k&1]for x in t]
+  c+=1
   for p in permutations(range(n)):
    B=[1<<((b:=max(p[i],p[j]))*(b-1)//2+min(p[i],p[j]))for i,j in A]
-   S.add(frozenset(sum(B[k]for k in q)for q in Q))
+   S.add(frozenset(sum(B[k]for k in range(len(A))if x>>k&1)for x in t))
  print(c);n+=2

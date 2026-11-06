@@ -5,11 +5,11 @@
 
 Offset 1: 0, 1, 9, 34, 95, 210, 406, 740, 1161, 1920, …
 
-### Python 3 — 82 bytes
+### Python 3 — 79 bytes
 
 ```python
 n=1
-while 1:print(n**1*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
+while 1:print(n*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
 ```
 
 **How it works**
@@ -51,6 +51,7 @@ while 1:print(n**1*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 82 | first entry |
+| 2026-11-06 | Python 3 | 79 | remove the identity exponent on n |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,27 +5,32 @@
 
 Offset 0: 1, 3, 4, 6, 8, 9, 11, 13, 15, 17, …
 
-### Python 3 — 116 bytes
+### Python 3 — 100 bytes
 
 ```python
 from math import*
-n=a=0
-while 1:
- r=sum(isqrt(n-x*x)**2==n-x*x for x in range(isqrt(n)+1))
- if r:a+=r;print(a)
- n+=1
+a=n=0
+while[a==(a:=sum(1+isqrt(n-x*x)for x in range(isqrt(n)+1)))or print(a)]:n+=1
 ```
 
 **How it works**
 
-- For each squared radius n, count ordered nonnegative lattice points
-  on x²+y²=n. Once x is fixed, the second coordinate exists exactly when
-  n−x² is a square; `isqrt` decides this exactly.
-- Add this count to the running total and print only for nonempty
-  shells. Thus the argument is the shell number, rather than every
-  integer radius. This distinction gives 1,3,4,6,8,… as required.
-- The origin forms the first shell and contributes the initial 1.
-  Pairs (x,y) and (y,x) are counted separately when they differ.
+- For a squared radius n, let F(n) count ordered nonnegative pairs
+  with x²+y²≤n. For each x=0,…,floor(√n), the y coordinates
+  are 0,…,floor(√(n−x²)), hence
+
+  **F(n)=Σₓ₌₀^⌊√n⌋(1+floor(√(n−x²)))**.
+
+- The difference F(n)−F(n−1) is the number of points on the
+  shell x²+y²=n. Consequently a nonempty shell occurs precisely
+  when the cumulative total changes; print that new total.
+- In `a==(a:=...)`, Python reads the old a before assigning F(n)
+  to the new a. If they are equal, `or` skips the print. Otherwise
+  print the updated a. The enclosing one-element list stays truthy
+  in both cases, and the loop advances n.
+- With a initially zero, F(0)=1 prints the origin as the first
+  shell. Swapped coordinates are distinct when unequal, and points
+  on either axis are included.
 
 **Notes**
 
@@ -39,6 +44,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 116 | first entry |
+| 2026-11-06 | Python 3 | 100 | count the quarter disk and print when its total changes |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
