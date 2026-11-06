@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted polyhedral graphs with n edges.",
+  "offset": 6,
+  "min_terms": 995,
+  "timeout": 60
+}

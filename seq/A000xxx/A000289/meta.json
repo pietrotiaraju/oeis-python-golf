@@ -1,0 +1,6 @@
+{
+  "name": "A nonlinear recurrence: a(n) = a(n-1)^2 - 3*a(n-1) + 3 (for n>1).",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
