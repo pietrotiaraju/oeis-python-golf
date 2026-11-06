@@ -268,6 +268,7 @@ sequence for the code and how it works.
 | [A000258](seq/A000xxx/A000258/) | Expansion of e.g.f. exp(exp(exp(x)-1)-1). | **84** | 476 |
 | [A000259](seq/A000xxx/A000259/) | Number of certain rooted planar maps. | **67** | 350 |
 | [A000260](seq/A000xxx/A000260/) | Number of rooted simplicial 3-polytopes with n+3 nodes; or rooted… | **62** | 201 |
+| [A000261](seq/A000xxx/A000261/) | a(n) = n\*a(n-1) + (n-3)\*a(n-2), with a(1) = 0, a(2) = 1. | **46** | 102 |
 | [A000262](seq/A000xxx/A000262/) | Number of "sets of lists": number of partitions of {1,...,n} into any… | **46** | 445 |
 | [A000265](seq/A000xxx/A000265/) | Remove all factors of 2 from n; or largest odd divisor of n; or odd… | **32** | 100000 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
