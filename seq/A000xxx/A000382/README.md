@@ -38,10 +38,12 @@ while[print(c+(a>1))]:a,b,c=b,c,a+b+c
   column of A008305, divided by 4", but that is the permanent of
   I + P + P² + P³ (P the n-cycle) over 4, which is 264/4 = 66 at n = 8,
   not 65; the two agree only for n ≤ 7 (the permanent minus 4·a(n) is
-  4, 8, 16, 32, 60, … for n = 8, 9, 10, …). No set of allowed
-  displacements, cyclic or not, among −3 … 4 reproduces the terms.
-- Keeping a(n) itself with `-2` in the update, or four values with
-  a(n) = 2a(n−1) − a(n−4), is longer (53 and 56 bytes).
+  4, 8, 16, 32, 60, … for n = 8, 9, 10, …). No set of at most
+  five allowed displacements in −3 … 4, cyclic or not, reproduces the
+  terms.
+- Keeping a(n) itself, with `-2` in the update and a patch for a(4), is
+  53 bytes, and a window of four values in which a(4) never enters the
+  recurrence is 56.
 
 ## History
 

@@ -39,8 +39,8 @@ while[*map(print,r),k:=4*len(r)]:r=[p+(p:=x)*(k:=k-1)for x in r+[0]]
   4300-digit int-to-str limit of Python 3.11+ stops the program, far
   beyond it. The bar is the whole b-file in 60 s.
 - Pairing the entries with `zip(r+[0],[0]+r)` and `x*(k:=k-1)+y` is
-  7 bytes longer, and resetting `p:=0` in the header instead of the early
-  start costs a byte more.
+  8 bytes longer, and `r=[1];p=0` without the early start is 2 bytes
+  longer.
 
 ## History
 

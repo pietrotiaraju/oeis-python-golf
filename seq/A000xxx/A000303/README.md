@@ -49,7 +49,7 @@ while[print(v[0]-1)]:v=[i*v[i-1]+-~i*sum(v[i:i+2])for i in range(len(v)+1)]
   1/Σ(x^(3j)/(3j)! − x^(3j+1)/(3j+1)!),
   `sum(math.comb(n,k)*(-k%3-1)*b[-k]for k in range(n+1))` (the k = 0
   term subtracts the 1), is 104 bytes with the import, and printing after
-  the update from `v=[1]` is 83 bytes as well.
+  the update from `v=[1]` is 84.
 
 ## History
 

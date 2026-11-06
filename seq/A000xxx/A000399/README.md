@@ -35,8 +35,8 @@ while[print(a:=a*n+b)]:b=b*n+c;c*=n;n+=1
   Python 3.11+. The bar is the whole b-file in 60 s.
 - Reading the coefficient of B³ in B(B+1)…(B+n−1) with B = nⁿ,
   `math.prod(range(B:=n**n,B+n))//B**3%B`, is 72 bytes with the import.
-  The sum over pairs, a(n) = Σ_{1≤j<i<n} (n−1)!/(ij) (one cycle of the
-  three holds 1, the other two start at their least elements), is 84,
+  The sum over pairs, a(n) = Σ_{1≤j<i<n} (n−1)!/(ij) (the coefficient of
+  x² in (x+1)…(x+n−1)), is 84,
   and the recurrence a(n) = (n−3)! + (2n−3)a(n−1) − (n−2)²a(n−2) also
   needs three values of state and longer coefficients.
 
