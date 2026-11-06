@@ -274,6 +274,7 @@ sequence for the code and how it works.
 | [A000265](seq/A000xxx/A000265/) | Remove all factors of 2 from n; or largest odd divisor of n; or odd… | **32** | 100000 |
 | [A000266](seq/A000xxx/A000266/) | Expansion of e.g.f. exp(-x^2/2) / (1-x). | **48** | 451 |
 | [A000267](seq/A000xxx/A000267/) | Integer part of square root of 4n+1. | **37** | 10001 |
+| [A000272](seq/A000xxx/A000272/) | Number of trees on n labeled nodes: n^(n-2) with a(0)=1. | **36** | 389 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
