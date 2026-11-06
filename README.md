@@ -579,6 +579,12 @@ sequence for the code and how it works.
 | [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
 | [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **116** | 2750 |
 | [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
+| [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **150** | 5000 |
+| [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
+| [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **62** | 997 |
+| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **189** | 1001 |
+| [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **224** | 1001 |
+| [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **226** | 1001 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
