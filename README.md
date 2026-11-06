@@ -248,6 +248,7 @@ sequence for the code and how it works.
 | [A000238](seq/A000xxx/A000238/) | Number of oriented trees with n nodes. | **119** | 1000 |
 | [A000240](seq/A000xxx/A000240/) | Rencontres numbers: number of permutations of [n] with exactly one… | **36** | 100 |
 | [A000242](seq/A000xxx/A000242/) | 3rd power of rooted tree enumerator; number of linear forests of 3… | **107** | 198 |
+| [A000243](seq/A000xxx/A000243/) | Number of trees with n nodes, 2 of which are labeled. | **124** | 199 |
 | [A000244](seq/A000xxx/A000244/) | Powers of 3: a(n) = 3^n. | **24** | 201 |
 | [A000245](seq/A000xxx/A000245/) | a(n) = 3\*(2\*n)!/((n+2)!\*(n-1)!). | **45** | 101 |
 | [A000246](seq/A000xxx/A000246/) | Number of permutations in the symmetric group S\_n that have odd order. | **35** | 451 |
