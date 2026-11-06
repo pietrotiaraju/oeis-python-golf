@@ -1,0 +1,6 @@
+{
+  "name": "Primes p == 7, 19, 23 (mod 40) such that (p-1)/2 is also prime.",
+  "offset": 1,
+  "min_terms": 230,
+  "timeout": 60
+}
