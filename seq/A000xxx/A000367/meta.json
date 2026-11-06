@@ -1,0 +1,6 @@
+{
+  "name": "Numerators of Bernoulli numbers B_2n.",
+  "offset": 0,
+  "min_terms": 250,
+  "timeout": 60
+}
