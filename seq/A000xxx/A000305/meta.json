@@ -1,0 +1,6 @@
+{
+  "name": "Number of certain rooted planar maps.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
