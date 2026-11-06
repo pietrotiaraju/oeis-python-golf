@@ -6,14 +6,14 @@
 
 Offset 1: 1, 2, 5, 10, 20, 24, 26, 41, 53, 130, 149, 205, 234, 287, 340, …
 
-### Python 3 — 177 bytes
+### Python 3 — 176 bytes
 
 ```python
 from math import*
 n=a=m=0
 while S:=9**isqrt(n:=n+1):
  x=p=2*S;i=A=1
- while x:x=x*i//(i-~i);p+=x;A+=i*i<=n and 4+4*isqrt(n-i*i);i+=1
+ while x:=x*i//(i-~i):p+=x;A+=i*i<=n and 4+4*isqrt(n-i*i);i+=1
  if abs(A*S-p*n)>abs(a*S-p*m):a=A;print(m:=n)
 ```
 
@@ -30,10 +30,14 @@ while S:=9**isqrt(n:=n+1):
   of that quarter plus the origin make the whole disc. Past √n,
   `i*i<=n and` adds `False` (0) and keeps `isqrt` away from negative
   numbers.
-- The scale S = 9^⌊√n⌋ makes the series long enough to reach every
-  column. The loop runs while x > 0, and x_i > t_i − 2 where
-  t_i = 2S·i!/(2i+1)!! ≥ 2S/(2^i·√(2i+1)); that is above 3 for every
-  i < ⌊√n⌋, so i gets to ⌊√n⌋ before x hits 0.
+- Put d=⌊√n⌋, so S=9^d. The term ratio i/(2i+1) is at
+  least 1/3 for every i≥1. Starting from x₀=2S, induction gives
+  x_i≥floor(2S/3^i), hence x_d≥2·3^d>0. The first zero term
+  therefore occurs strictly after the last lattice column i=d.
+- The walrus in the loop condition computes that next term before
+  the body. When it first becomes zero, its contribution to p is
+  zero and its column contribution is also zero, since i>d.
+  Skipping that final body execution leaves both p and A unchanged.
 - The record is kept as the pair (a, m) = (A(m), m), and |P(n)| > |P(m)|
   is tested as |A·S − p·n| > |a·S − p·m|, so the old record is measured
   again with the new p. a = m = 0 makes n = 1 a record against 0.
@@ -75,6 +79,7 @@ while S:=9**isqrt(n:=n+1):
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 178 | first entry |
 | 2026-11-05 | Python 3 | 177 | value named in the while condition |
+| 2026-11-06 | Python 3 | 176 | skip the zero term after proving all lattice columns are already counted |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
