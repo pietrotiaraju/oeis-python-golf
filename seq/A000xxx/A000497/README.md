@@ -14,16 +14,36 @@ while[print(a)]:n+=1;a=a*(n+1)*(2*n+1)**2//((2*n-1)*(n-1))
 
 **How it works**
 
-Use the OEIS first-order recurrence
-(2n-1)(n-1)a(n)=(n+1)(2n+1)²a(n-1), starting at a(1)=1.
-The counter is increased before the update, so n is at least 2
-and the denominator is nonzero. The recurrence guarantees exact division.
+- These associated Stirling numbers count partitions of 2n+2 labeled
+  elements into n blocks, all of size at least two. There are two
+  extra elements beyond pairs: either one block has size 4, or two
+  blocks have size 3; all other blocks have size 2.
+- Counting those two cases gives, for n≥2,
+  (2n+2)!/(4!·2^(n−1)(n−1)!)
+  +(2n+2)!/(3!²·2^(n−2)·2!·(n−2)!).
+  Simplifying gives n(n+1)(2n+1)(2n+1)!!/18, also valid at n=1.
+- Taking the ratio of this expression at n and n−1 gives the
+  recurrence listed on the OEIS page:
+
+  **(2n−1)(n−1)a(n)=(n+1)(2n+1)²a(n−1).**
+
+- Initialize a=n=1. Increment n before the update so its denominator
+  is nonzero, and multiply the full numerator before dividing. At
+  n=2 this gives 1·3·25/(3·1)=25, the next term.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 100 terms in 60 s; the official b-file contains 100 terms.
-
+- For n=2 the two cases are block sizes 4+2 (15 partitions) and
+  3+3 (10 partitions), giving a(2)=25 directly.
+- Exact division follows from the partition count, not just a match
+  to the b-file. The rational ratio need not itself be an integer;
+  it is the complete updated product that is divisible.
+- Only the current term and index are retained; there is no full
+  associated Stirling triangle or factorial recomputation. Python
+  3.11+ eventually meets its default 4300-digit output conversion
+  limit, an interpreter limit.
+- The b-file has 100 terms (indices 1 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

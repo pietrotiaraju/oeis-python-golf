@@ -14,16 +14,33 @@ while[print(b)]:n+=1;a,b=b,n*((2*n-1)*b+2*(n-1)*a)-2*n+1
 
 **How it works**
 
-Use the OEIS recurrence a(n)=n(2n-1)a(n-1)+2n(n-1)a(n-2)-(2n-1),
-with a(0)=1 and a(1)=0. The state stores consecutive values.
-The arbitrary preceding seed is multiplied by zero at n=1,
-so a=b=1 generates the correct first update and then every term.
+- Use the recurrence on the OEIS page,
+
+  a(n)=n(2n−1)a(n−1)+2n(n−1)a(n−2)−(2n−1),
+  with a(0)=1 and a(1)=0.
+
+- At each print b is a(n), and a holds the preceding value once
+  n≥1. Increase n, then assign `a,b=b,...` simultaneously, so
+  both terms on the right still come from the old state.
+- The expression `n*((2*n-1)*b+2*(n-1)*a)-2*n+1`
+  groups the two recurrence terms sharing the factor n.
+- Initially a=b=1. The first update multiplies the arbitrary
+  preceding a by n−1=0, so b becomes 1−2+1=0 as required.
+  The next update gives 2·(3·0+2·1)−4+1=1.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 101 terms in 60 s; the official b-file contains 101 terms.
-
+- A fixed position is defined relative to the reference arrangement
+  1,1,2,2,…,n,n. Exchanging the two indistinguishable copies of
+  a label does not create a new multiset permutation.
+- The recurrence supplies exact integer values at every index using
+  only two consecutive terms and a counter. Enumerating distinct
+  permutations would instead require (2n)!/2ⁿ candidates before
+  testing the fixed positions.
+- Counts grow at factorial scale. Python 3.11+ eventually reaches
+  its default 4300-digit output conversion limit, an interpreter limit.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

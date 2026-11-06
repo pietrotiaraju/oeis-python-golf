@@ -19,17 +19,35 @@ while 1:
 
 **How it works**
 
-Whenever a new square n=k² appears, pair it with every square
-0<=x<=n and increment the counter for n+x. Each unordered pair
-of nonnegative squares is counted exactly once, when its largest
-square appears. At candidate n, all representations of n have
-already been counted. Print precisely when that counter is three.
+- Representations use **nonnegative** roots, ignoring their order and
+  signs: a pair is counted once as x²+y² with 0≤x≤y. Zero is
+  allowed here, unlike in [A000404](../A000404/).
+- `n` scans candidate integers and k tracks the next square root.
+  At `n==k*k`, append the new largest square n to the increasing
+  list s, then pair it with every x in s. Each unordered pair is
+  encountered exactly once, when its larger square becomes available.
+- `d[n+x]=d.get(n+x,0)+1` increments its sum's representation
+  count. Inserting n into s first includes the equal pair n+n;
+  the initial n=k=0 includes the zero square as well.
+- At the final test for n, every possible summand of a representation
+  of n is at most n and has been inserted. The counter is complete,
+  even though d also contains partial counts for larger integers.
+  Print exactly when `d.get(n,0)==3`.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
-
+- For the first term, 325=1²+18²=6²+17²=10²+15².
+  The later term 625 also counts 0²+25², alongside 7²+24² and
+  15²+20²: omitting zero would change the sequence.
+- Exact integer counting. The scan prints a value once, independently
+  of the three pairs that caused its counter to reach 3.
+- Through candidate N there are O(N) unordered pairs of square roots
+  to insert. Their sums are at most 2N, so the dictionary uses O(N)
+  entries; the square list has only O(√N) entries.
+- [A000437](../A000437/) extends this largest-square construction
+  to triples and asks for the smallest value at each exact count.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

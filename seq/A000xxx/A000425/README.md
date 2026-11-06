@@ -14,19 +14,39 @@ while[print(2*n*b)]:a,b,c=-b,c,n*(b+c)-a;n+=1
 
 **How it works**
 
-Let W_m be the straight-table ménage number [A000271](../A000271/).
-Taking the coefficient of t in the ménage hit polynomial
-U_n(t)=sum(2n/(2n-k)*C(2n-k,k)*(n-k)!*(t-1)^k,k=0..n)
-gives 2n*sum((-1)^j*C(2n-j-2,j)*(n-j-1)!,j=0..n-1),
-which is exactly 2n*W_(n-1). This proves the shifted identity
-used here. The recurrence and state are those of A000271;
-its counter n already corresponds to W_(n-1).
+- Let W_m be the straight-table ménage number
+  [A000271](../A000271/). The circular ménage hit polynomial is
+  U_n(t)=Σₖ₌₀ⁿ 2n/(2n−k)·C(2n−k,k)(n−k)!(t−1)ᵏ.
+  This sequence is its coefficient of t.
+- Taking that coefficient gives a factor (−1)^(k−1)k.
+  Put j=k−1 and simplify the factorials; the result is
+
+  a(n)=2n·Σⱼ₌₀ⁿ⁻¹ (−1)ʲ C(2n−j−2,j)(n−j−1)!
+  =2n·W_(n−1).
+
+- At a print the state is
+  (a,b,c)=(−W_(n−2),W_(n−1),W_n). The recurrence
+  W_(n+1)=n(W_n+W_(n−1))+W_(n−2) therefore becomes
+  `a,b,c=-b,c,n*(b+c)-a`, followed by the counter increment.
+- Initially n=1, b=W_0=1 and c=W_1=0. The auxiliary a=1
+  makes the first update produce W_2=0; later updates use the
+  ordinary recurrence. The output `2*n*b` starts at 2,0,0,8.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 22 terms in 60 s; the official b-file contains 22 terms.
-- The unshifted identity proposed in the OEIS entry is off by one: the identity proved and used here is a(n)=2n*A000271(n-1).
+- **Index correction.** The unshifted conjecture a(n)=2n·W_n
+  on the OEIS page is off by one. Extracting the coefficient proves
+  the shifted identity above; for n=1 it gives 2W_0=2.
+- The state and recurrence proof are explained in
+  [A000271](../A000271/). Storing the oldest term with a minus
+  sign permits the shorter initialization `a=b=n=1`.
+- Exact integer arithmetic and three stored recurrence values.
+  Changing A000271's `print(b)` to `print(2*n*b)` accounts
+  for the 4-byte increase from its 53-byte program.
+- Factorial growth eventually reaches Python 3.11+'s default
+  4300-digit integer-to-string limit, an interpreter limit.
+- The b-file has 22 terms (indices 1 through 22). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

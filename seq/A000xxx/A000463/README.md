@@ -14,16 +14,27 @@ while[print(n),print(n*n)]:n+=1
 
 **How it works**
 
-The sequence interleaves n and n² for n=1,2,3,….
-Both print calls run while constructing the loop-condition list,
-which is always nonempty. Thus each pass prints n and then n²,
-one integer per line, before incrementing n.
+- For n=1,2,3,…, emit the pair n,n². Thus at sequence positions
+  2n−1 and 2n the terms are n and n² respectively; the initial
+  pair is 1,1 rather than just one occurrence of 1.
+- Python evaluates list entries from left to right. Both print calls
+  in `[print(n),print(n*n)]` therefore run in the specified order,
+  each writing one integer and one newline.
+- The resulting list is `[None,None]`, which is nonempty and true.
+  Its entries' false values do not matter. The body increments n
+  only after both members of the current pair have printed.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
-
+- Exact integer multiplication and a single counter; no stored list
+  of sequence values or parity test on the output index is needed.
+- A single `print(n,n*n)` would put the pair on one line by default,
+  violating the one-term-per-line rule. The two print calls also
+  provide the loop's always-true condition.
+- This interleaves entire integers. It does not split their digits:
+  at n=10 the two emitted terms are 10 and 100.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

@@ -19,17 +19,34 @@ while 1:
 
 **How it works**
 
-Perform greedy division by the triangular place values k(k+1)/2
-in descending order. The initial loop finds the largest place
-value not exceeding n. Each divmod yields one digit and the
-remainder for the lower places. Quotients never exceed 2,
-so concatenating their decimal digits gives the required notation.
+- The place values are T_k=k(k+1)/2, the positive triangular
+  numbers 1,3,6,10,… . The notation uses greedy quotients in
+  these places, rather than powers of a fixed base.
+- The first loop advances k until T_k>n. The second decreases k
+  before each `divmod`, extracting the digit at T_k and leaving
+  the remainder to represent in the lower triangular places.
+- Before a place T_k, the remainder is less than T_(k+1).
+  Since T_(k+1)−1<3T_k for k≥1, each digit is at most 2.
+  Concatenating the quotient strings therefore produces single
+  digits with no need for separators.
+- For n=9, the places 6,3,1 give digits 1,1,0, hence 110.
+  For n=10, the extra leading place produces 1000. Keeping the
+  zero digits records which lower places have been skipped.
+- The counter begins at 1, matching the OEIS offset. The largest
+  chosen place has a nonzero digit, so no leading zero is printed.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
-
+- Exact integer arithmetic, including each triangular value's division
+  by 2. Greedy division specifies a unique output even when other
+  unrestricted sums of triangular places could represent the same n.
+- The two loops each visit O(√n) place indices per term. The number
+  is encoded as text rather than parsed as a new decimal integer,
+  keeping the entire place sequence intact.
+- [A000433](../A000433/) uses the same construction for cube
+  places, where digits can reach 7 and zero needs an explicit case.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

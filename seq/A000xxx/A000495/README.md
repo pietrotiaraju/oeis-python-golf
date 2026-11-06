@@ -17,24 +17,48 @@ while 1:
 
 **How it works**
 
-Sum sinh(n)=sum(n^d/d!,d positive odd) over a common factorial
-denominator: N/F is the partial sum through odd degree d.
-The loop extends by two degrees using the multiplier d(d-1).
-For d<=2n-1 the last term n^d/d! is at least 1, so the test
-cannot stop prematurely. For larger d the remaining tail is
-strictly smaller than the last term, since successive term ratios
-are less than 1/4. Stop only when the gap to the next rounding
-boundary is at least that upper bound for the tail.
-For n>0, sinh(n) is transcendental: an algebraic value would make
-exp(n) a root of a quadratic with algebraic coefficients. Thus
-no boundary equality persists, and the loop terminates for every n.
-At n=0 it immediately prints 0.
+- Sum the positive series sinh(n)=Σ_(d positive odd) nᵈ/d!.
+  The state N/F is its partial sum through odd degree d, with
+  F=d!. Initially N=n, F=d=1 includes the first term.
+- To add the next term, increase d by 2, multiply N and F by
+  d(d−1), and add nᵈ to N. Both the old sum and new term
+  then have the same factorial denominator.
+- The last term t=nᵈ/d! bounds the unsummed tail once d≥2n+1:
+  subsequent term ratios are less than 1/4, so the tail is
+  less than t·(1/4+1/16+…)=t/3<t.
+- Stopping cannot happen earlier for positive integer n. For
+  d≤2n−1, AM–GM gives d!≤((d+1)/2)ᵈ≤nᵈ, so t≥1.
+  The distance to the next rounding boundary is always less
+  than 1 and therefore fails the stopping test in this range.
+
+- Nearest-integer rounding is floor(sinh(n)+1/2). For the
+  partial value, use (2N+F)/(2F). The numerator
+  `-(2*N+F)%(2*F)` is its distance to the next integer
+  boundary, scaled by 2F; compare it with `2*n**d`.
+  Stop when the gap is at least the tail bound, then print
+  `(2*N+F)//(2*F)`.
+
+- At an exact partial-sum boundary the modular gap is zero,
+  which conservatively forces another term. At n=0 the tail
+  bound is zero and the loop immediately prints 0.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 251 terms in 60 s; the official b-file contains 251 terms.
-
+- **Termination.** For n>0, exp(n) is transcendental by
+  [Hermite–Lindemann](https://mathworld.wolfram.com/Hermite-LindemannTheorem.html).
+  If sinh(n)=s were algebraic, exp(n) would solve
+  z²−2sz−1=0 and be algebraic too. Thus sinh(n) is not
+  an integer or half-integer; convergence of the series and
+  decay of the tail bound eventually resolve every output.
+- Exact integer arithmetic with an adaptive number of terms,
+  rather than a fixed precision approximation to sinh.
+  [A000471](../A000471/) uses the same series with
+  integer rounding boundaries.
+- The factorial denominator and powers grow during each evaluation,
+  which restarts at the next n. The outputs eventually meet Python
+  3.11+'s default 4300-digit conversion limit, an interpreter limit.
+- The b-file has 251 terms (indices 0 through 250). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

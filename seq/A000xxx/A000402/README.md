@@ -18,20 +18,41 @@ while 1:
 
 **How it works**
 
-For a maximum increasing-run length r, the e.g.f. is the reciprocal
-of sum(x^((r+1)j)/((r+1)j)! - x^((r+1)j+1)/((r+1)j+1)!), j >= 0.
-This is the bounded-run cluster formula; see the Alekseyev reference
-linked by the OEIS. Equating coefficients gives the binomial recurrence
-used in the comprehension: add the terms with k congruent to 1 modulo
-r+1 and subtract those with k congruent to 0. The lists track maximum
-run lengths 2 and 3. Their difference counts maximum length exactly 3.
-Both start with the empty-permutation count 1; printing starts at n=1.
+- A run is a block of **consecutive positions** whose entries increase;
+  it need not be a longest increasing subsequence. Let B_r(n) count
+  permutations whose runs all have length at most r. The answer is
+  B_3(n) − B_2(n).
+- The bounded-run formula (Alekseyev, linked on the OEIS page) gives
+  B_r(x) = 1/D_q(x), with q = r + 1 and
+  D_q(x) = Σⱼ (x^(qj)/(qj)! − x^(qj+1)/(qj+1)!).
+  Multiplying D_q(x)·B_r(x) = 1 and comparing exponential coefficients
+  gives, for n ≥ 1,
+
+  B_r(n) = Σₖ C(n,k)·([k ≡ 1 mod q] − [k ≡ 0 mod q])·B_r(n−k),
+  where 1 ≤ k ≤ n and brackets are 1 or 0 according to the condition.
+
+- `enumerate(L,3)` supplies q = 3, 4: the first list counts
+  maximum run length at most 2, the second at most 3. Both start
+  with B_r(0) = 1, the empty permutation. The lists are separate:
+  `[[1]]*2` would alias them and give the wrong answer.
+- Before appending, each list has length n, so `a[-k]` is its entry
+  B_r(n−k). Boolean subtraction supplies the two signs without a
+  conditional expression; the residue classes are disjoint.
+- The last line subtracts the new entries. For n < 3 it prints 0;
+  for n = 3 only the increasing permutation qualifies, giving 1.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 452 terms in 60 s; the official b-file contains 452 terms.
-
+- Exact integer arithmetic; the reciprocal-series recurrence determines
+  every coefficient, rather than fitting the initial terms.
+- This is the [A000434](../A000434/) construction with different
+  bounds. It stores two lists of n+1 integers and evaluates two n-term
+  sums per output, avoiding enumeration of n! permutations.
+- Counts grow at factorial scale. Python 3.11+ eventually stops when a
+  printed integer exceeds its default 4300-digit conversion limit;
+  this interpreter limit is not a correctness failure.
+- The b-file has 452 terms (indices 1 through 452). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

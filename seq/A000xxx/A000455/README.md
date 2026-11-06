@@ -14,15 +14,34 @@ while[print(d)for d in str(n)]:n*=2
 
 **How it works**
 
-The integer n successively takes the values 2⁰, 2¹, 2², ….
-The comprehension prints each decimal digit on its own line.
-Its resulting list is nonempty, so the loop continues.
+- n holds 1,2,4,8,16,…, the powers 2ᵏ starting at k=0.
+  `str(n)` gives their digits in the required left-to-right order.
+- The comprehension calls `print(d)` once for every character d,
+  so a power with several digits contributes several consecutive
+  sequence terms, one per line. In particular 16 contributes 1,6,
+  followed by 3,2 from 32.
+- Each call returns `None`, and the comprehension makes a list of
+  these results. Every decimal representation has at least one digit,
+  so that list is nonempty and the `while` condition stays true.
+- Only after all the current power's digits have printed does the
+  body multiply n by 2. No separator or marker is inserted between
+  the powers.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
-- Python 3.11+ eventually reaches its default 4300-digit integer-to-string limit; that interpreter limit is not counted as a correctness failure.
+- Exact integer multiplication and decimal conversion. Printing the
+  digit characters is equivalent to printing the integers 0 through 9,
+  including any zero occurring inside a power.
+- The offset counts emitted digits, not exponents. The first four
+  powers each contribute one term, while 2⁴ contributes two.
+- Each round holds the power, its decimal text and a temporary list
+  proportional to its number of digits; there is no accumulated
+  string containing all previous powers.
+- Python 3.11+'s default conversion limit first rejects 2^14285,
+  which has 4301 decimal digits. This is an interpreter limit rather
+  than a wrong digit in the sequence.
+- The b-file has 10000 terms (indices 0 through 9999). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
