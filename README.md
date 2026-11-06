@@ -257,6 +257,7 @@ sequence for the code and how it works.
 | [A000248](seq/A000xxx/A000248/) | Expansion of e.g.f. exp(x\*exp(x)). | **73** | 125 |
 | [A000249](seq/A000xxx/A000249/) | Nearest integer to modified Bessel function K\_n(5). | **239** | 300 |
 | [A000250](seq/A000xxx/A000250/) | Number of symmetric reflexive relations on n nodes: (1/2)\*A000666. | **137** | 18 |
+| [A000254](seq/A000xxx/A000254/) | Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) =… | **43** | 450 |
 | [A000255](seq/A000xxx/A000255/) | a(n) = n\*a(n-1) + (n-1)\*a(n-2), a(0) = 1, a(1) = 1. | **39** | 101 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
