@@ -384,7 +384,7 @@ sequence for the code and how it works.
 | [A000371](seq/A000xxx/A000371/) | a(n) = Sum\_{k=0..n} (-1)^(n-k)\*binomial(n,k)\*2^(2^k). | **59** | 9 |
 | [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **74** | 7 |
 | [A000373](seq/A000xxx/A000373/) | Conjectured dimension of a module associated with the free… | **182** | 200 |
-| [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **77** | 480 |
+| [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **75** | 480 |
 | [A000375](seq/A000xxx/A000375/) | Topswops (1): start by shuffling n cards labeled 1..n. If top card is… | **125** | 10 |
 | [A000376](seq/A000xxx/A000376/) | Topswops (2): start by shuffling n cards labeled 1..n. If the top… | **102** | 12 |
 | [A000377](seq/A000xxx/A000377/) | Expansion of f(-q^3) \* f(-q^8) \* chi(-q^12) / chi(-q) in powers of q… | **73** | 10001 |
