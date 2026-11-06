@@ -26,7 +26,11 @@ while 1:
   of that expression. Terms beyond that degree cannot affect the result.
 - As in the tree records, substitution x=B and inversion modulo B^(n+1)
   turn formal coefficient extraction into exact integer arithmetic.
-  The base is chosen above the coefficients needed in the extraction.
+  For k=n−4, each coefficient of S is at most 8^k: binary plane
+  expression trees with two operation labels cover all series-parallel
+  networks. Hence the requested coefficient is below
+  240(k+7)^7·16^k < 2^((k+6)^2)=B. This prevents carries between
+  base-B digits and makes the extraction exact for every order.
 
 **Notes**
 
