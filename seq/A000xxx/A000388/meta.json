@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of an n-sequence discordant with three given permutations (see reference) in n-2 places.",
+  "offset": 4,
+  "min_terms": 5,
+  "timeout": 60
+}
