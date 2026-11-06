@@ -1,0 +1,6 @@
+{
+  "name": "3rd power of rooted tree enumerator; number of linear forests of 3 rooted trees.",
+  "offset": 3,
+  "min_terms": 198,
+  "timeout": 60
+}

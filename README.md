@@ -247,6 +247,7 @@ sequence for the code and how it works.
 | [A000237](seq/A000xxx/A000237/) | Number of mixed Husimi trees with n nodes; or rooted polygonal cacti… | **169** | 501 |
 | [A000238](seq/A000xxx/A000238/) | Number of oriented trees with n nodes. | **119** | 1000 |
 | [A000240](seq/A000xxx/A000240/) | Rencontres numbers: number of permutations of [n] with exactly one… | **36** | 100 |
+| [A000242](seq/A000xxx/A000242/) | 3rd power of rooted tree enumerator; number of linear forests of 3… | **107** | 198 |
 | [A000244](seq/A000xxx/A000244/) | Powers of 3: a(n) = 3^n. | **24** | 201 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
