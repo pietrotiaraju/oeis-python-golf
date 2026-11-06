@@ -319,6 +319,7 @@ sequence for the code and how it works.
 | [A000307](seq/A000xxx/A000307/) | Number of 4-level labeled rooted trees with n leaves. | **85** | 441 |
 | [A000310](seq/A000xxx/A000310/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000312](seq/A000xxx/A000312/) | a(n) = n^n; number of labeled mappings from n points to themselves… | **27** | 386 |
+| [A000317](seq/A000xxx/A000317/) | a(n+1) = a(n)^2 - a(n)\*a(n-1) + a(n-1)^2. | **41** | 14 |
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
 | [A000320](seq/A000xxx/A000320/) | Generalized tangent numbers d(5,n). | **89** | 189 |
 | [A000328](seq/A000xxx/A000328/) | Number of points of norm <= n^2 in square lattice. | **77** | 400 |
