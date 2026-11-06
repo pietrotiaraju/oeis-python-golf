@@ -178,7 +178,7 @@ sequence for the code and how it works.
 | [A000168](seq/A000xxx/A000168/) | a(n) = 2\*3^n\*(2\*n)!/(n!\*(n+2)!). | **43** | 926 |
 | [A000169](seq/A000xxx/A000169/) | Number of labeled rooted trees with n nodes: n^(n-1). | **29** | 100 |
 | [A000170](seq/A000xxx/A000170/) | Number of ways of placing n nonattacking queens on an n X n board. | **122** | 13 |
-| [A000171](seq/A000xxx/A000171/) | Number of self-complementary graphs with n nodes. | **147** | 65 |
+| [A000171](seq/A000xxx/A000171/) | Number of self-complementary graphs with n nodes. | **146** | 65 |
 | [A000172](seq/A000xxx/A000172/) | The Franel number a(n) = Sum\_{k = 0..n} binomial(n,k)^3. | **68** | 1001 |
 | [A000173](seq/A000xxx/A000173/) | Unitary-sociable numbers (smallest member of each cycle). | **135** | 3 |
 | [A000174](seq/A000xxx/A000174/) | Number of partitions of n into 5 squares. | **89** | 1000 |
@@ -297,7 +297,7 @@ sequence for the code and how it works.
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | 100 |
-| [A300002](seq/A300xxx/A300002/) | Lexicographically earliest sequence of positive integers such that no… | **209** | 10 |
+| [A300002](seq/A300xxx/A300002/) | Lexicographically earliest sequence of positive integers such that no… | **208** | 10 |
 | [A334244](seq/A334xxx/A334244/) | Decimal representation of n-th iteration of the one-dimensional… | **46** | 1000 |
 | [A335332](seq/A335xxx/A335332/) | Decimal representation of n-th iteration of the one-dimensional… | **42** | 22 |
 | [A384128](seq/A384xxx/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | 106 |
