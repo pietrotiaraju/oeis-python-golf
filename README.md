@@ -394,7 +394,7 @@ sequence for the code and how it works.
 | [A000382](seq/A000xxx/A000382/) | Restricted permutations. | **49** | 997 |
 | [A000383](seq/A000xxx/A000383/) | Hexanacci numbers with a(0) = ... = a(5) = 1. | **39** | 3359 |
 | [A000384](seq/A000xxx/A000384/) | Hexagonal numbers: a(n) = n\*(2\*n-1). | **29** | 10001 |
-| [A000385](seq/A000xxx/A000385/) | Convolution of A000203 with itself. | **76** | 10000 |
+| [A000385](seq/A000xxx/A000385/) | Convolution of A000203 with itself. | **75** | 10000 |
 | [A000386](seq/A000xxx/A000386/) | a(n) = A058057(n,n-3). | **107** | 451 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000388](seq/A000xxx/A000388/) | Number of permutations of an n-sequence discordant with three given… | **116** | 5 |

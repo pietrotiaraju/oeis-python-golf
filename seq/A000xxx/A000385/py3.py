@@ -1,2 +1,2 @@
-m=2
-while[print(sum(5*d**3-6*m*d+d for d in range(1,m+1)if m%d<1)//12)]:m+=1
+r=[1]
+for n in r:r+=n+1,;print(sum(d*(5*d*d-6*n-5)for d in r if~n%d<1)//12)
