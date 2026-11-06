@@ -1,0 +1,6 @@
+{
+  "name": "Number of simple triangulations of the plane with n nodes.",
+  "offset": 3,
+  "min_terms": 198,
+  "timeout": 60
+}
