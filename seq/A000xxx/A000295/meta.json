@@ -1,0 +1,6 @@
+{
+  "name": "Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018).",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
