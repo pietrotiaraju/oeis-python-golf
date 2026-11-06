@@ -5,11 +5,11 @@
 
 Offset 0: 1, 0, 1, 2, 9, 44, 265, 1854, 14833, 133496, …
 
-### Python 3 — 34 bytes
+### Python 3 — 33 bytes
 
 ```python
-a=n=1
-while[print(a)]:a=a*n^1;n+=1
+a=n=0
+while[print(a:=a*n^1)]:n+=1
 ```
 
 **How it works**
@@ -21,6 +21,10 @@ while[print(a)]:a=a*n^1;n+=1
   and for odd n we subtract 1 from an odd one, and both are `^1`, which
   flips the last bit: a(n) = n·a(n−1) xor 1, with no `(-1)**n`.
 - `*` binds tighter than `^`, so `a*n^1` needs no parentheses.
+- The loop starts one step early: with `a=n=0`, the first update gives
+  0·0 xor 1 = 1 = a(0) whatever `a` held, so the update can sit inside
+  `print` as a walrus and the body only counts. That is a byte under
+  `a=n=1` / `while[print(a)]:a=a*n^1;n+=1` (34 bytes).
 
 **Notes**
 
@@ -34,6 +38,7 @@ while[print(a)]:a=a*n^1;n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 34 | first entry |
+| 2026-11-06 | Python 3 | 33 | start one step early, update inside print (A000180 trick) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
