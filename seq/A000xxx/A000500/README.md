@@ -5,13 +5,13 @@
 
 Offset 7: 31, 304, 4230, 43880, 547338, 6924960, 94714620, 1375878816, 21273204330, 348919244768, …
 
-### Python 3 — 240 bytes
+### Python 3 — 236 bytes
 
 ```python
 from math import*
 n=7
 while 1:
- B=(4*n)**n;z=B*B;w=z*z;a=b=c=0;d=1
+ B=4**n;z=B*B;w=z*z;a=b=c=0;d=1
  for v in([0,-2*z,-2*z*(1+B),3*w]+[0]*n)[:n]:a,b,c,d=b,c,d,(1+3*B)*d-2*z*c-z*(1+B)*b+w*a+v
  print(sum((-1)**(k-7)*comb(k,7)*perm(n-k)*(d//B**k%B)for k in range(7,n+1)));n+=1
 ```
@@ -39,11 +39,13 @@ while 1:
 - The list of v values supplies the four numerator corrections,
   followed by zeros; slicing to n entries performs exactly n
   updates. Thus d=R_n(B) when the final print is evaluated.
-- For the current n≥7, every rook coefficient obeys
-  0≤σ_(n,k)≤C(n,k)²k!≤4ⁿn!<(4n)ⁿ=B.
-  The first bound chooses rows, columns and a bijection between
-  them, before restricting to the allowed board. Hence the
-  base-B digits of d are the coefficients with no carries:
+- The board is the union of the three specified permutations,
+  so every row has at most three allowed cells. Choose the k
+  occupied rows, then one cell in each: even before excluding
+  column collisions this gives σ_(n,k)≤C(n,k)3ᵏ<4ⁿ=B.
+  The strict inequality follows from summing C(n,j)3ʲ over
+  j=0,…,n: it is 4ⁿ and contains other positive summands.
+  Hence the base-B digits of d are the coefficients with no carries:
   `d//B**k%B` retrieves σ_(n,k) exactly.
 - The coefficient of y^7 in (y−1)ᵏ is
   (−1)^(k−7)C(k,7), zero for k<7. The final
@@ -67,7 +69,7 @@ while 1:
   with a different hit coefficient.
   The coefficient index is 7, with the offset shown above.
 - Each output uses n recurrence steps and at most n hit summands,
-  but the packed integer has O(n² log n) bits. Those large
+  but the packed integer has O(n²) bits. Those large
   integer products, powers and divisions dominate at larger n.
   Output eventually meets Python 3.11+'s default 4300-digit
   integer conversion limit, an interpreter limit.
@@ -79,6 +81,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 240 | first entry |
+| 2026-11-06 | Python 3 | 236 | use the three-cells-per-row bound for the packing base |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

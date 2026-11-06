@@ -5,43 +5,58 @@
 
 Offset 4: 24, 300, 3360, 38850, 475776, 6231960, 87530400, 1316954430, 21173760960, 362670636900, …
 
-### Python 3 — 179 bytes
+### Python 3 — 135 bytes
 
 ```python
 from math import*
-A=[[1]*3];n=0
-while 1:
- n+=1;B=[1]+[sum(comb(n-1,k-1)*k*A[k-1][j-1]*A[n-k][j]for k in range(1,n+1))for j in range(1,3)];A+=B,
- if n>=3:print((n+1)*(B[-1]-B[-2]))
+f=lambda n,p,h:sum(comb(n,k)*p**k*f(n-k,k,h-1)for k in range(1,n+1))if h else n<1
+n=4
+while[print(n*f(n-1,1,3))]:n+=1
 ```
 
 **How it works**
 
-- Let T_j(x) count labeled rooted trees of height at most j:
-  T₀=x and T_j=x·exp(T_(j−1)). Write E_j=exp(T_j).
-- `A[m][j]` stores the m-th exponential coefficient of E_j. E₀=exp(x),
-  so column 0 is always 1, and every series has constant coefficient 1.
-- Differentiating E_j and comparing coefficients gives
-  E_j(n)=Σₖ₌₁ⁿ C(n−1,k−1)·k·E_(j−1)(k−1)·E_j(n−k).
-  The list comprehension uses only earlier size rows, so all dependencies
-  are already known and every operation is integral.
-- Rooting on n+1 labels multiplies E_(2)(n) by n+1. Subtracting
-  E_(1)(n) selects height exactly 3, instead of height at most 3.
-  The first printed size is 4, the OEIS offset.
+- Choose the root in n ways and group the remaining labeled
+  vertices by their distance from it. Height exactly 3 means
+  there are 3 nonempty layers after the root.
+- Let f(m,p,h) count ways to place m remaining labels in h
+  nonempty layers, given p possible parents in the preceding layer.
+  Choose k labels for the next layer in C(m,k) ways; each of
+  those vertices chooses one of the p parents independently,
+  giving p^k choices.
+- The remaining labels form h−1 layers whose first parent set
+  has size k. Thus
+
+  **f(m,p,h)=Σₖ₌₁ᵐ C(m,k)pᵏf(m−k,k,h−1)**.
+
+- With no layers left, there is one completion exactly when no
+  labels remain: `m<1` supplies that boolean base case. Choosing
+  k≥1 at every other step enforces nonempty layers and therefore
+  the requested exact height.
+- Every nonroot vertex has one parent in the preceding layer,
+  so the construction is connected and cannot contain a cycle.
+  Conversely, every rooted tree determines its unique distance
+  layers and all these parent choices, preventing overcounting.
+- Print `n*f(n-1,1,3)`: the initial parent set is the single
+  chosen root. Starting at n=4 gives the OEIS offset and the
+  first value (4)!, the labeled path rooted at its end.
 
 **Notes**
 
-- The nested exponential series are handled by finite exact binomial
-  convolutions; no real-valued exponential is evaluated.
+- Exact finite sums and integer powers. The recursion has fixed
+  depth 3; it enumerates positive layer sizes and keeps no
+  table of earlier tree counts. For fixed height, the number of
+  layer-size choices grows polynomially with n.
 - Large outputs eventually meet Python's integer conversion limit.
-- The reference file contains 16 terms from the published OEIS entry; the verification
-  bar is 16 terms in 60 s.
+- The reference file has 16 terms. Its unchanged
+  verification bar is the complete file in 60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 179 | first entry |
+| 2026-11-06 | Python 3 | 135 | count nonempty distance layers directly |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
