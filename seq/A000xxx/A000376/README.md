@@ -5,11 +5,11 @@
 
 Offset 1: 0, 1, 2, 4, 7, 10, 16, 22, 30, 38, 51, 63, 80, 101, 112, 130, 159, 191, 207, 231, …
 
-### Python 3 — 102 bytes
+### Python 3 — 101 bytes
 
 ```python
 g=lambda d:max([-~g(d[k::-1]+d[k+1:])for k in d if d[k]==k>0]+[0])
-d=[0]
+d=0,
 while[print(g(d))]:d+=len(d),
 ```
 
@@ -35,7 +35,7 @@ while[print(g(d))]:d+=len(d),
 - `for k in d` runs over the card values, which are exactly 0 … n−1, so it
   needs no `range(len(d))`; `d[k]==k>0` keeps the positions k ≥ 1 that
   hold card k.
-- `d` grows from `[0]` by one card at a time (`d+=len(d),`), so it is the
+- `d` grows from the tuple `(0,)` by one card at a time (`d+=len(d),`), so it is the
   sorted deck of every size in turn.
 
 **Notes**
@@ -56,6 +56,7 @@ while[print(g(d))]:d+=len(d),
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 102 | first entry |
+| 2026-11-06 | Python 3 | 101 | use a tuple for the initial d state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

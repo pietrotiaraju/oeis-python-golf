@@ -5,10 +5,10 @@
 
 Offset 0: 1, 1, 1, 2, 1, 2, 2, 1, 3, 2, 2, 3, 1, 3, 3, 2, 4, 2, 3, 3, 1, 4, 3, 3, 5, …
 
-### Python 3 — 77 bytes
+### Python 3 — 75 bytes
 
 ```python
-M=[0,1];a=b=m=1
+M=0,1;a=b=m=1
 while[print(M[m])]:
  m+=1
  if m>b:a,b=b,a+b
@@ -37,19 +37,19 @@ So a(n) = a(n − F) + a(G − 2 − n), and both arguments are below n.
   is true), then the body appends `M[m]`.
 - `a`, `b` are F and G for n = m − 1, that is a < m ≤ b. When `m` passes
   `b` the pair moves up one step: `a,b=b,a+b`.
-- With the shift, the recurrence becomes `M[m]=M[m-a]+M[b-m]`. The list
+- With the shift, the recurrence becomes `M[m]=M[m-a]+M[b-m]`. The tuple
   has exactly `m` items when the new one is computed, so `M[m-a]` is
   `M[-a]`.
 - Starting from `a=b=1` (1 and 1 are two consecutive Fibonacci numbers)
   is 2 bytes shorter than `a=m=1;b=2`: the first step has m = 2 > b, so it
   moves the pair to 1, 2 before computing anything.
-- `M+=x,` appends a one-item tuple.
+- `M+=x,` concatenates a one-item tuple.
 
 **Notes**
 
 - One addition per term: the whole b-file (n ≤ 6765) takes well under a
   second, and the bar is all 6766 terms in 60 s. The terms stay small,
-  since a(n) ≤ √(n + 1) (Stockmeyer), and the list holds one int per term.
+  since a(n) ≤ √(n + 1) (Stockmeyer), and the tuple holds one int per term.
 - A consequence of the recurrence: a(n) = 1 exactly when n + 1 is a
   Fibonacci number ([A000071](https://oeis.org/A000071)). Shifting on
   `M[m]<2` instead of `m>b` is longer, because the list index still needs
@@ -70,6 +70,7 @@ So a(n) = a(n − F) + a(G − 2 − n), and both arguments are below n.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 77 | first entry |
+| 2026-11-06 | Python 3 | 75 | use a tuple for the initial M state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

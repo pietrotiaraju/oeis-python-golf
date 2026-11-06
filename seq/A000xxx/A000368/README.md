@@ -11,10 +11,10 @@ symmetries of the square. With t(x) the g.f. of rooted trees
 ([A000081](../A000081/)), the OEIS g.f. is the cycle index of the dihedral
 group D₄: (t(x)⁴ + 2·t(x)²·t(x²) + 3·t(x²)² + 2·t(x⁴))/8.
 
-### Python 3 — 170 bytes
+### Python 3 — 169 bytes
 
 ```python
-r=[n:=0,1];P=[0]
+r=[n:=0,1];P=0,
 Q=lambda L:sum(L[-i]*(L[i-n]+(i+i==n))for i in range(n,1))//2
 while[n>-4or print(Q(P))]:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,;P+=Q(r),
 ```
@@ -35,7 +35,7 @@ while[n>-4or print(Q(P))]:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//
   adds the diagonal term.
 - `r` is t(0), t(1), … with t(0) = 0: the [A000081](../A000081/) record's
   loop, which keeps r one term ahead (r has t(0)…t(N + 1) at size N).
-  After each new tree count, `P+=Q(r),` appends P(N), and the loop
+  After each new tree count, `P+=Q(r),` concatenates P(N) to the tuple, and the loop
   condition evaluates `Q(P)` = a(N) from P(0)…P(N).
 - a(N) = 0 for N < 4, and `n>-4or` skips those sizes, so printing starts
   at a(4) = 1 (the bare square).
@@ -59,6 +59,7 @@ while[n>-4or print(Q(P))]:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 170 | first entry |
+| 2026-11-06 | Python 3 | 169 | use a tuple for the initial P state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

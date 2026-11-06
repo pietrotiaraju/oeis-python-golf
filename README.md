@@ -31,7 +31,7 @@ sequence for the code and how it works.
 | [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **110** | 3336 |
 | [A000012](seq/A000xxx/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | 10001 |
 | [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **96** | 3335 |
-| [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **167** | 1001 |
+| [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **165** | 1001 |
 | [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **82** | 10000 |
 | [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **96** | 3335 |
 | [A000018](seq/A000xxx/A000018/) | Number of positive integers <= 2^n of form x^2 + 16\*y^2. | **92** | 24 |
@@ -62,16 +62,16 @@ sequence for the code and how it works.
 | [A000043](seq/A000xxx/A000043/) | Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1… | **65** | 15 |
 | [A000044](seq/A000xxx/A000044/) | Dying rabbits: a(0) = 1; for 1 <= n <= 12, a(n) = Fibonacci(n); for n… | **42** | 1001 |
 | [A000045](seq/A000xxx/A000045/) | Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. | **31** | 2001 |
-| [A000046](seq/A000xxx/A000046/) | Number of primitive n-bead necklaces (turning over is allowed) where… | **133** | 1001 |
+| [A000046](seq/A000xxx/A000046/) | Number of primitive n-bead necklaces (turning over is allowed) where… | **132** | 1001 |
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | 25 |
-| [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **93** | 3321 |
+| [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **92** | 3321 |
 | [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3\*x^2 + 4\*y^2. | **93** | 24 |
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **87** | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | 101 |
 | [A000052](seq/A000xxx/A000052/) | 1-digit numbers arranged in alphabetical order, then the 2-digit… | **389** | 10000 |
 | [A000053](seq/A000xxx/A000053/) | Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway. | **62** | 29 |
 | [A000054](seq/A000xxx/A000054/) | Local stops on New York City A line subway. | **58** | 25 |
-| [A000055](seq/A000xxx/A000055/) | Number of trees with n unlabeled nodes. | **138** | 1001 |
+| [A000055](seq/A000xxx/A000055/) | Number of trees with n unlabeled nodes. | **137** | 1001 |
 | [A000056](seq/A000xxx/A000056/) | Order of the group SL(2,Z\_n). | **81** | 1000 |
 | [A000057](seq/A000xxx/A000057/) | Primes that divide at least one term in every Fibonacci sequence. | **54** | 100 |
 | [A000058](seq/A000xxx/A000058/) | Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(0) = 2. | **28** | 13 |
@@ -99,7 +99,7 @@ sequence for the code and how it works.
 | [A000080](seq/A000xxx/A000080/) | Number of nonisomorphic minimal triangle graphs. | **339** | 6 |
 | [A000081](seq/A000xxx/A000081/) | Number of unlabeled rooted trees with n nodes (or connected functions… | **87** | 1001 |
 | [A000082](seq/A000xxx/A000082/) | a(n) = n^2\*Product\_{p\|n} (1 + 1/p). | **75** | 1000 |
-| [A000083](seq/A000xxx/A000083/) | Number of mixed Husimi trees with n nodes; or polygonal cacti with… | **262** | 501 |
+| [A000083](seq/A000xxx/A000083/) | Number of mixed Husimi trees with n nodes; or polygonal cacti with… | **260** | 501 |
 | [A000084](seq/A000xxx/A000084/) | Number of series-parallel networks with n unlabeled edges. Also… | **91** | 1001 |
 | [A000085](seq/A000xxx/A000085/) | Number of self-inverse permutations on n letters, also known as… | **40** | 801 |
 | [A000086](seq/A000xxx/A000086/) | Number of solutions to x^2 - x + 1 == 0 (mod n). | **56** | 2000 |
@@ -122,8 +122,8 @@ sequence for the code and how it works.
 | [A000103](seq/A000xxx/A000103/) | Number of n-node triangulations of sphere in which every node has… | **425** | 7 |
 | [A000104](seq/A000xxx/A000104/) | Number of n-celled free polyominoes without holes. | **285** | 12 |
 | [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **209** | 13 |
-| [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **112** | 999 |
-| [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **121** | 1001 |
+| [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **111** | 999 |
+| [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **120** | 1001 |
 | [A000108](seq/A000xxx/A000108/) | Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!). | **39** | 1001 |
 | [A000109](seq/A000xxx/A000109/) | Number of simplicial polyhedra with n vertices; simple planar graphs… | **415** | 8 |
 | [A000110](seq/A000xxx/A000110/) | Bell or exponential numbers: number of ways to partition a set of n… | **48** | 501 |
@@ -135,7 +135,7 @@ sequence for the code and how it works.
 | [A000116](seq/A000xxx/A000116/) | Number of even sequences with period 2n (bisection of A000013). | **92** | 1001 |
 | [A000117](seq/A000xxx/A000117/) | Number of even sequences with period 2n (bisection of A000011). | **107** | 501 |
 | [A000118](seq/A000xxx/A000118/) | Number of ways of writing n as a sum of 4 squares; also theta series… | **67** | 10000 |
-| [A000119](seq/A000xxx/A000119/) | Number of representations of n as a sum of distinct Fibonacci numbers. | **77** | 6766 |
+| [A000119](seq/A000xxx/A000119/) | Number of representations of n as a sum of distinct Fibonacci numbers. | **75** | 6766 |
 | [A000120](seq/A000xxx/A000120/) | Ones-counting sequence: number of 1's in binary expansion of n (or… | **36** | 10001 |
 | [A000121](seq/A000xxx/A000121/) | Number of representations of n as a sum of Fibonacci numbers (1 is… | **74** | 6766 |
 | [A000122](seq/A000xxx/A000122/) | Expansion of Jacobi theta function theta\_3(x) = Sum\_{m =-oo..oo}… | **40** | 10001 |
@@ -153,7 +153,7 @@ sequence for the code and how it works.
 | [A000134](seq/A000xxx/A000134/) | Positive zeros of Bessel function of order 0 rounded to nearest… | **92** | 200 |
 | [A000135](seq/A000xxx/A000135/) | Number of partitions into non-integral powers. | **211** | 38 |
 | [A000136](seq/A000xxx/A000136/) | Number of ways of folding a strip of n labeled stamps. | **145** | 10 |
-| [A000137](seq/A000xxx/A000137/) | Series-parallel numbers. | **133** | 1000 |
+| [A000137](seq/A000xxx/A000137/) | Series-parallel numbers. | **132** | 1000 |
 | [A000138](seq/A000xxx/A000138/) | Expansion of e.g.f. exp(-x^4/4)/(1-x). | **54** | 101 |
 | [A000139](seq/A000xxx/A000139/) | a(n) = 2\*(3\*n)! / ((2\*n+1)!\*(n+1)!). | **55** | 201 |
 | [A000140](seq/A000xxx/A000140/) | Kendall-Mann numbers: the most common number of inversions in a… | **78** | 400 |
@@ -252,7 +252,7 @@ sequence for the code and how it works.
 | [A000234](seq/A000xxx/A000234/) | Partitions into non-integral powers (see Comments for precise… | **157** | 26 |
 | [A000235](seq/A000xxx/A000235/) | Number of n-node rooted trees of height 3. | **113** | 200 |
 | [A000236](seq/A000xxx/A000236/) | Maximum m such that there are no two adjacent elements belonging to… | **216** | 4 |
-| [A000237](seq/A000xxx/A000237/) | Number of mixed Husimi trees with n nodes; or rooted polygonal cacti… | **169** | 501 |
+| [A000237](seq/A000xxx/A000237/) | Number of mixed Husimi trees with n nodes; or rooted polygonal cacti… | **165** | 501 |
 | [A000238](seq/A000xxx/A000238/) | Number of oriented trees with n nodes. | **119** | 1000 |
 | [A000239](seq/A000xxx/A000239/) | One-half of number of permutations of [n] with exactly one run of… | **100** | 40 |
 | [A000240](seq/A000xxx/A000240/) | Rencontres numbers: number of permutations of [n] with exactly one… | **36** | 100 |
@@ -297,7 +297,7 @@ sequence for the code and how it works.
 | [A000279](seq/A000xxx/A000279/) | Card matching: coefficients B[n,1] of t in the reduced hit polynomial… | **74** | 300 |
 | [A000280](seq/A000xxx/A000280/) | a(n) = a(n-1) + a(n-2)^3. | **36** | 18 |
 | [A000281](seq/A000xxx/A000281/) | Expansion of cos(x)/cos(2x). | **75** | 216 |
-| [A000282](seq/A000xxx/A000282/) | Finite automata. | **274** | 16 |
+| [A000282](seq/A000xxx/A000282/) | Finite automata. | **272** | 16 |
 | [A000283](seq/A000xxx/A000283/) | a(n) = a(n-1)^2 + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 15 |
 | [A000284](seq/A000xxx/A000284/) | a(n) = a(n-1)^3 + a(n-2) with a(0)=0, a(1)=1. | **36** | 11 |
 | [A000285](seq/A000xxx/A000285/) | a(0) = 1, a(1) = 4, and a(n) = a(n-1) + a(n-2) for n >= 2. | **33** | 501 |
@@ -318,7 +318,7 @@ sequence for the code and how it works.
 | [A000300](seq/A000xxx/A000300/) | 4th power of rooted tree enumerator: linear forests of 4 rooted trees. | **107** | 497 |
 | [A000301](seq/A000xxx/A000301/) | a(n) = a(n-1)\*a(n-2) with a(0) = 1, a(1) = 2; also a(n) =… | **32** | 19 |
 | [A000302](seq/A000xxx/A000302/) | Powers of 4: a(n) = 4^n. | **24** | 101 |
-| [A000303](seq/A000xxx/A000303/) | Number of permutations of [n] in which the longest increasing run has… | **83** | 464 |
+| [A000303](seq/A000xxx/A000303/) | Number of permutations of [n] in which the longest increasing run has… | **81** | 464 |
 | [A000304](seq/A000xxx/A000304/) | a(n) = a(n-1)\*a(n-2). | **33** | 17 |
 | [A000305](seq/A000xxx/A000305/) | Number of certain rooted planar maps. | **91** | 200 |
 | [A000306](seq/A000xxx/A000306/) | Number of trees of diameter 8. | **178** | 2500 |
@@ -383,15 +383,15 @@ sequence for the code and how it works.
 | [A000365](seq/A000xxx/A000365/) | Number of genus 0 rooted planar maps with 4 faces and n vertices. | **78** | 198 |
 | [A000366](seq/A000xxx/A000366/) | Genocchi numbers of second kind (A005439) divided by 2^(n-1). | **81** | 100 |
 | [A000367](seq/A000xxx/A000367/) | Numerators of Bernoulli numbers B\_2n. | **138** | 250 |
-| [A000368](seq/A000xxx/A000368/) | Number of connected graphs with one cycle of length 4. | **170** | 1997 |
+| [A000368](seq/A000xxx/A000368/) | Number of connected graphs with one cycle of length 4. | **169** | 1997 |
 | [A000369](seq/A000xxx/A000369/) | Triangle of numbers related to triangle A049213; generalization of… | **76** | 1275 |
 | [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **235** | 7 |
 | [A000371](seq/A000xxx/A000371/) | a(n) = Sum\_{k=0..n} (-1)^(n-k)\*binomial(n,k)\*2^(2^k). | **59** | 9 |
-| [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **74** | 7 |
+| [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **72** | 7 |
 | [A000373](seq/A000xxx/A000373/) | Conjectured dimension of a module associated with the free… | **182** | 200 |
 | [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **75** | 480 |
 | [A000375](seq/A000xxx/A000375/) | Topswops (1): start by shuffling n cards labeled 1..n. If top card is… | **125** | 10 |
-| [A000376](seq/A000xxx/A000376/) | Topswops (2): start by shuffling n cards labeled 1..n. If the top… | **102** | 12 |
+| [A000376](seq/A000xxx/A000376/) | Topswops (2): start by shuffling n cards labeled 1..n. If the top… | **101** | 12 |
 | [A000377](seq/A000xxx/A000377/) | Expansion of f(-q^3) \* f(-q^8) \* chi(-q^12) / chi(-q) in powers of q… | **73** | 10001 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |

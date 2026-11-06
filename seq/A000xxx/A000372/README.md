@@ -5,10 +5,10 @@
 
 Offset 0: 2, 3, 6, 20, 168, 7581, 7828354, 2414682040998, 56130437228687557907788, …
 
-### Python 3 — 74 bytes
+### Python 3 — 72 bytes
 
 ```python
-M=[0,1]
+M=0,1
 while[print(len(M))]:M=[a-b*~M[-1]for b in M for a in M if a&~b<1]
 ```
 
@@ -22,7 +22,7 @@ while[print(len(M))]:M=[a-b*~M[-1]for b in M for a in M if a&~b<1]
   and b are monotone and a ≤ b pointwise, that is `a&~b<1`. Its truth
   table is a + b·2^(2ⁿ), because the last variable is the top bit of the
   point index.
-- So the list M of monotone functions of n variables gives the list for
+- So the initial tuple M of monotone functions of n variables gives the list for
   n + 1 as all such pairs, and `len(M)` is a(n). M = [0, 1] is n = 0: the
   two constants.
 - `M[-1]` is the all-ones table 2^(2ⁿ) − 1, the constant 1. It is last for
@@ -63,6 +63,7 @@ while[print(len(M))]:M=[a-b*~M[-1]for b in M for a in M if a&~b<1]
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 74 | first entry |
+| 2026-11-06 | Python 3 | 72 | use a tuple for the initial M state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
