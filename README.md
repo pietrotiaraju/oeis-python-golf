@@ -52,7 +52,7 @@ sequence for the code and how it works.
 | [A000033](seq/A000xxx/A000033/) | a(n) = A058087(n,n-2). | **83** | 100 |
 | [A000034](seq/A000xxx/A000034/) | Period 2: repeat [1, 2]; a(n) = 1 + (n mod 2). | **21** | 10000 |
 | [A000035](seq/A000xxx/A000035/) | Period 2: repeat [0, 1]; a(n) = n mod 2; parity of n. | **21** | 1001 |
-| [A000036](seq/A000xxx/A000036/) | Let A(n) = #{(i,j): i^2 + j^2 <= n}, V(n) = Pi\*n, P(n) = A(n) - V(n);… | **205** | 50 |
+| [A000036](seq/A000xxx/A000036/) | Let A(n) = #{(i,j): i^2 + j^2 <= n}, V(n) = Pi\*n, P(n) = A(n) - V(n);… | **204** | 50 |
 | [A000037](seq/A000xxx/A000037/) | Numbers that are not squares (or, the nonsquares). | **39** | 10000 |
 | [A000038](seq/A000xxx/A000038/) | Twice A000007. | **23** | 10001 |
 | [A000039](seq/A000xxx/A000039/) | Coefficient of q^(2n) in the series expansion of Ramanujan's mock… | **96** | 200 |
