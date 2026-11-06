@@ -5,25 +5,29 @@
 
 Offset 0: 0, 1, 2, 7, 32, 181, 1214, 9403, 82508, 808393, 8743994, …
 
-### Python 3 — 48 bytes
+### Python 3 — 46 bytes
 
 ```python
-n=a=0;b=1
-while[print(a)]:a,b=b,n*(a+b)+b+b;n+=1
+n=a=0;s=1
+while[print(a)]:a=s-a;s=n*s+3*a;n+=1
 ```
 
 **How it works**
 
-- At step n the pair (a, b) holds (a(n), a(n+1)). The recurrence for the
-  next term is a(n+2) = (n+2)·a(n+1) + n·a(n), which regroups as
-  n·(a+b) + 2b: one product instead of two.
-- `b+b` is the same length as `2*b`; shifting the counter instead gives
-  n·(a+b) + b − a (counter from 1) or n·(a+b) − 2a (counter from 2),
-  both the same length again.
+- At step n the recurrence for the next term is
+  a(n+2) = (n+2)·a(n+1) + n·a(n). Keeping the pair (a(n), a(n+1)) gives
+  `a,b=b,n*(a+b)+b+b` (48 bytes, the first entry).
+- Here the second variable is the sum s = a(n) + a(n+1) instead. The next
+  sum is (n+3)·s − 3·a, where the n·a terms cancel, and that is
+  n·s + 3·(s − a). Since s − a is exactly the next term, the update splits
+  into two short statements: `a=s-a` first, then `s=n*s+3*a` with the new a.
+  No tuple assignment and no parentheses: two bytes saved.
+- The start (a, s) = (0, 1) is (a(0), a(0) + a(1)); at n = 0 the old s is
+  multiplied by 0, so only a = 1 − 0 = 1 matters for the next step.
 - `while[print(a)]:` is a byte under `while 1:print(a);`: the one-element
   list `[None]` is truthy.
-- Folding the counter into the update (`a,b,n=b,…,n+1`) or into the loop
-  test (`[print(a),n:=n+1]`) each costs one byte more than `;n+=1`.
+- Folding the counter into the update with `(n:=n+1)` costs two bytes more
+  than `;n+=1`, since n would have to start at −1.
 
 **Notes**
 
@@ -37,6 +41,7 @@ while[print(a)]:a,b=b,n*(a+b)+b+b;n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 48 | first entry |
+| 2026-11-06 | Python 3 | 46 | track the sum a(n)+a(n+1) instead of a(n+1) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
