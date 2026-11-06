@@ -1,0 +1,6 @@
+{
+  "name": "Number of labeled trees of diameter 4 with n nodes.",
+  "offset": 5,
+  "min_terms": 24,
+  "timeout": 60
+}

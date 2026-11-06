@@ -549,6 +549,16 @@ sequence for the code and how it works.
 | [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **179** | 16 |
 | [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **179** | 15 |
 | [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **44** | 997 |
+| [A000555](seq/A000xxx/A000555/) | Number of labeled trees of diameter 4 with n nodes. | **111** | 24 |
+| [A000556](seq/A000xxx/A000556/) | Expansion of exp(-x) / (1 - exp(x) + exp(-x)). | **103** | 20 |
+| [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **103** | 201 |
+| [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **94** | 557 |
+| [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **104** | 20 |
+| [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **43** | 998 |
+| [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **65** | 36 |
+| [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
+| [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **94** | 25 |
+| [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
