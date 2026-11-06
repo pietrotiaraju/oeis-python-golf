@@ -1,0 +1,6 @@
+{
+  "name": "Number of reduced Latin squares of order n; also number of labeled loops (quasigroups with an identity element) with a fixed identity element.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
