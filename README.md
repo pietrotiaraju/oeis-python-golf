@@ -260,6 +260,7 @@ sequence for the code and how it works.
 | [A000250](seq/A000xxx/A000250/) | Number of symmetric reflexive relations on n nodes: (1/2)\*A000666. | **137** | 18 |
 | [A000251](seq/A000xxx/A000251/) | Number of trees of diameter 6. | **127** | 70 |
 | [A000252](seq/A000xxx/A000252/) | Number of invertible 2 X 2 matrices mod n. | **95** | 1000 |
+| [A000253](seq/A000xxx/A000253/) | a(n) = 2\*a(n-1) - a(n-2) + a(n-3) + 2^(n-1). | **49** | 1001 |
 | [A000254](seq/A000xxx/A000254/) | Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) =… | **43** | 450 |
 | [A000255](seq/A000xxx/A000255/) | a(n) = n\*a(n-1) + (n-1)\*a(n-2), a(0) = 1, a(1) = 1. | **39** | 101 |
 | [A000256](seq/A000xxx/A000256/) | Number of simple triangulations of the plane with n nodes. | **92** | 198 |
