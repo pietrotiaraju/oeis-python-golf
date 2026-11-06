@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = n^n; number of labeled mappings from n points to themselves (endofunctions).",
+  "offset": 0,
+  "min_terms": 386,
+  "timeout": 60
+}
