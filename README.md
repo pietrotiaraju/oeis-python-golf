@@ -522,6 +522,9 @@ sequence for the code and how it works.
 | [A000506](seq/A000xxx/A000506/) | One half of the number of permutations of [n] such that the… | **116** | 18 |
 | [A000507](seq/A000xxx/A000507/) | Number of permutations of [n] with exactly 3 increasing runs of… | **91** | 18 |
 | [A000508](seq/A000xxx/A000508/) | Generalized class numbers c\_(n,3). | **143** | 21 |
+| [A000509](seq/A000xxx/A000509/) | Size of second largest n-arc in PG(2,q), where q runs through the… | **1387** | 2 |
+| [A000510](seq/A000xxx/A000510/) | Maximal number of points in PG(2,q) with at most 3 on a line (next… | **1314** | 3 |
+| [A000511](seq/A000xxx/A000511/) | Number of n-step spiral self-avoiding walks on hexagonal lattice,… | **249** | 20 |
 | [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
 | [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
 | [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **93** | 995 |
@@ -538,6 +541,7 @@ sequence for the code and how it works.
 | [A000525](seq/A000xxx/A000525/) | Number of partially labeled rooted trees with n nodes (4 of which are… | **214** | 21 |
 | [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **218** | 30 |
 | [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **218** | 15 |
+| [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **449** | 5 |
 | [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **108** | 50 |
 | [A000530](seq/A000xxx/A000530/) | Let p(n, s, x) be predicate that number of occurrences of s's in x >=… | **240** | 8 |
 | [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **71** | 100 |
@@ -555,6 +559,8 @@ sequence for the code and how it works.
 | [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **47** | 25 |
 | [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **218** | 447 |
 | [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
+| [A000546](seq/A000xxx/A000546/) | First occurrence of n consecutive numbers that take same number of… | **190** | 20 |
+| [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **190** | 20 |
 | [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **103** | 300 |
 | [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **186** | 30 |
 | [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **315** | 50 |
@@ -567,6 +573,7 @@ sequence for the code and how it works.
 | [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **103** | 201 |
 | [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **94** | 557 |
 | [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **104** | 20 |
+| [A000560](seq/A000xxx/A000560/) | Number of symmetric ways of folding a strip of n labeled stamps. | **172** | 8 |
 | [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **43** | 998 |
 | [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **65** | 36 |
 | [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
@@ -583,6 +590,7 @@ sequence for the code and how it works.
 | [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
 | [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
 | [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **302** | 3 |
+| [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **538** | 10 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
 | [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **50** | 994 |
@@ -596,6 +604,7 @@ sequence for the code and how it works.
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
 | [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
+| [A000591](seq/A000xxx/A000591/) | Number of n-state 2-input 1-output automata with one initial and one… | **378** | 13 |
 | [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **116** | 2750 |
 | [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
 | [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **150** | 5000 |

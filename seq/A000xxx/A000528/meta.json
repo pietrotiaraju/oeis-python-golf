@@ -1,0 +1,6 @@
+{
+  "name": "Number of types of Latin squares of order n. Equivalently, number of nonisomorphic 1-factorizations of K_{n,n}.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Maximal number of points in PG(2,q) with at most 3 on a line (next term is 21 or 22).",
+  "offset": 2,
+  "min_terms": 3,
+  "timeout": 60
+}

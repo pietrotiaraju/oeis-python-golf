@@ -1,0 +1,6 @@
+{
+  "name": "First occurrence of n consecutive numbers that take same number of steps to reach 1 in 3x+1 problem.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}
