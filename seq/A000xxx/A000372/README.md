@@ -49,8 +49,9 @@ while[print(len(M))]:M=[a-b*~M[-1]for b in M for a in M if a&~b<1]
   b-file has 10 (n = 0 to 9, a(9) from 2023).
 - A version that never builds the 7.8-million list uses
   a(n + 2) = Σ_{a,b} |[a, b]|², the sum over pairs of monotone functions of
-  n variables of the squared number of h with a ≤ h ≤ b (a pair of
-  intervals [a, b] ∋ h, g is a monotone function of n + 2 variables). It
+  n variables of the squared number of h with a ≤ h ≤ b (split by the
+  last two variables, a monotone function of n + 2 variables is
+  a ≤ h, g ≤ b with h and g free in between). It
   prints a(6) in 4 s with a few MB, but with `print('2\n3')` in front it is
   139 bytes.
 - `a&~b<1`, `a|b==b` and `a&b==a` are the same length; `a|b*-~M[-1]` is 1
