@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = (n+1)*(n+3)*(n+8)/6.",
+  "offset": -1,
+  "min_terms": 1002,
+  "timeout": 60
+}
