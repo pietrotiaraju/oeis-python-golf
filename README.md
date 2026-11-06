@@ -296,6 +296,12 @@ sequence for the code and how it works.
 | [A000282](seq/A000xxx/A000282/) | Finite automata. | **274** | 16 |
 | [A000283](seq/A000xxx/A000283/) | a(n) = a(n-1)^2 + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 15 |
 | [A000284](seq/A000xxx/A000284/) | a(n) = a(n-1)^3 + a(n-2) with a(0)=0, a(1)=1. | **36** | 11 |
+| [A000285](seq/A000xxx/A000285/) | a(0) = 1, a(1) = 4, and a(n) = a(n-1) + a(n-2) for n >= 2. | **33** | 501 |
+| [A000286](seq/A000xxx/A000286/) | Number of positive integers <= 2^n of form 2 x^2 + 5 y^2. | **81** | 12 |
+| [A000287](seq/A000xxx/A000287/) | Number of rooted polyhedral graphs with n edges. | **77** | 995 |
+| [A000288](seq/A000xxx/A000288/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) with… | **39** | 3504 |
+| [A000289](seq/A000xxx/A000289/) | A nonlinear recurrence: a(n) = a(n-1)^2 - 3\*a(n-1) + 3 (for n>1). | **32** | 13 |
+| [A000290](seq/A000xxx/A000290/) | The squares: a(n) = n^2. | **26** | 10001 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
