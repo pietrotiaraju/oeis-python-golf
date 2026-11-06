@@ -356,6 +356,7 @@ sequence for the code and how it works.
 | [A000350](seq/A000xxx/A000350/) | Numbers m such that Fibonacci(m) ends with m. | **62** | 370 |
 | [A000351](seq/A000xxx/A000351/) | Powers of 5: a(n) = 5^n. | **24** | 101 |
 | [A000352](seq/A000xxx/A000352/) | One half of the number of permutations of [n] such that the… | **42** | 397 |
+| [A000353](seq/A000xxx/A000353/) | Primes p == 7, 19, 23 (mod 40) such that (p-1)/2 is also prime. | **74** | 230 |
 | [A000354](seq/A000xxx/A000354/) | Expansion of e.g.f. exp(-x)/(1-2\*x). | **36** | 101 |
 | [A000356](seq/A000xxx/A000356/) | Number of rooted cubic maps with 2n nodes and a distinguished… | **53** | 800 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
