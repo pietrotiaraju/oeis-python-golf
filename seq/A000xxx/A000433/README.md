@@ -19,17 +19,36 @@ while 1:
 
 **How it works**
 
-Use greedy division by the cube place values in descending order.
-First locate the largest cube at most n, then divmod supplies each
-digit and the remainder for the lower places. The largest possible
-digit is 7, at the units place, so ordinary decimal digit strings
-encode every quotient. The empty representation of zero prints as 0.
+- The place values are 1³, 2³, 3³, … . A representation is chosen
+  greedily from the largest available cube downward; this is not
+  ordinary positional notation with powers of a fixed base.
+- The first loop leaves k one above the largest cube root needed.
+  The second decrements k before use and computes
+  `d,r=divmod(r,k**3)`: d is the next digit and r the remainder
+  to represent using the smaller cubes.
+- Immediately before the k³ place, r<(k+1)³. Its digit is at
+  most ⌊((k+1)³−1)/k³⌋, which is at most 7 for k≥1.
+  Thus each quotient is a single decimal digit, and `s+=str(d)`
+  records the intended notation without separators.
+- For n=9, the 8 and 1 places give digits 1 and 1, hence 11;
+  for n=27, the 27, 8 and 1 places give 100. Intermediate zero
+  digits must be retained.
+- At n=0 no place is visited and s stays empty. `s or 0` prints
+  the required zero while avoiding a leading empty output line.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10001 terms in 60 s; the official b-file contains 10001 terms.
-
+- Exact integer divisions; no approximate cube root is needed. The
+  representation is deterministic because the page uses the greedy
+  convention, even though unrestricted cube-place expansions need
+  not be unique.
+- Both loops visit O(n^(1/3)) place indices per output. The printed
+  representation is held as a string, so the digit sequence is never
+  parsed as a potentially huge decimal integer.
+- Compare [A000462](../A000462/), the same descending-division
+  method with triangular numbers as place values.
+- The b-file has 10001 terms (indices 0 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

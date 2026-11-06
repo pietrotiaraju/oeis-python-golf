@@ -16,16 +16,36 @@ while[print(a[-1])]:
 
 **How it works**
 
-The e.g.f. is sec(4x). Multiply by cos(4x) and equate the
-2n-th derivatives: a(0)=1 and
-a(n)=-sum(C(2n,2k)*(-16)^k*a(n-k),k=1..n).
-The list stores the preceding derivatives, so `a[-k]` is a(n-k).
+- Let F(x)=sec(4x)=Σₙ≥₀ a(n)x^(2n)/(2n)!. Since F is even, only
+  the even derivatives are stored; the sequence index n corresponds to
+  derivative order 2n, rather than n.
+- The identity cos(4x)·F(x)=1 and the product rule give a(0)=1 and,
+  for n≥1,
+
+  **a(n)=−Σₖ₌₁ⁿ C(2n,2k)·(−16)ᵏ·a(n−k).**
+
+  Here (−16)ᵏ is the 2k-th derivative of cos(4x) at zero. Its
+  constant derivative is 1, so the k=0 term is precisely a(n).
+- `a=[1]` seeds that constant coefficient. The loop prints the most
+  recent entry first, then `n=len(a)` selects the next index and
+  `a[-k]` supplies the coefficient n−k in the convolution.
+- For example, a(1)=−(−16)=16, and
+  a(2)=−(6·(−16)·16+256)=1280.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 195 terms in 60 s; the official b-file contains 195 terms.
-
+- Exact integers throughout: `sec` is a formal generating function,
+  not a floating-point function evaluated by the program.
+- Equivalently a(n)=16ⁿ·E(2n), where E(2n) are the positive secant
+  numbers. Combining the scale into the convolution avoids computing
+  the unscaled sequence and then multiplying each output separately.
+- One list holds n+1 terms; computing the next one uses n+1 summands.
+  [A000436](../A000436/) and [A000464](../A000464/) use the same
+  denominator-convolution method with nonconstant numerators.
+- Factorial growth eventually reaches Python 3.11+'s default
+  4300-digit integer-to-string limit, which is an interpreter limit.
+- The b-file has 195 terms (indices 0 through 194). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

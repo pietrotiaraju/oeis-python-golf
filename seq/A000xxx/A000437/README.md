@@ -21,19 +21,40 @@ while 1:
 
 **How it works**
 
-On encountering a new largest square n, enumerate pairs of
-nonnegative squares y<=x<=n. Each triple is counted once, when
-its largest square appears. At each candidate integer n its
-representation counter is therefore complete. `setdefault` records
-the first integer having each number of representations. The next
-requested count t is printed only after it has been found; this
-permits the nonmonotone output values in the definition.
+- Count representations x²+y²+z² with 0≤x≤y≤z: zero is
+  allowed, and permutations or choices of signs do not create
+  extra representations. The increasing list s contains squares.
+- When `n==k*k`, append the new largest square n. For each
+  `i,x` in s, `s[:i+1]` supplies y≤x. Thus every triple is
+  inserted once, with n as its largest square, including triples
+  having repeated or zero squares.
+- The dictionary d counts triples by their sum. At candidate n
+  all triples summing to n have already been inserted, because
+  no summand can exceed n. `d.get(n,0)` is therefore its final
+  count; dictionary entries for larger values can still grow.
+
+- `a.setdefault(d.get(n,0),n)` saves the first candidate seen
+  for each exact representation count, never overwriting it.
+  This makes each stored answer a minimum by construction.
+- t is the next required count. Print `a[t]` only once it has
+  been discovered, then drain any consecutive counts already in a.
+  A minimum for a larger count can be discovered before a smaller
+  count's minimum, so discovery order is not output order.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 43 terms in 60 s; the official b-file contains 43 terms.
+- Initially (0,0,0) is the unique representation of 0, giving
+  a(1)=0. At 9 the two triples (0,0,3) and (1,2,2) give a(2)=9.
+- The dictionary a is indexed by counts, not candidate integers.
+  Recording just successive count records would instead give
+  the “at least” sequence [A000451](../A000451/).
 
+- Exact integer counting, with no cutoff on the number of roots.
+  Through candidate N the construction inserts O(N^(3/2)) triples;
+  their sums are at most 3N, so d has O(N) possible keys. The
+  temporary slices also contribute to the running time.
+- The b-file has 43 terms (indices 1 through 43). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

@@ -14,15 +14,29 @@ while[print('%o'%n)]:n*=10
 
 **How it works**
 
-The integer state visits 1, 10, 100, …, the powers of ten.
-The `%o` format specifier writes each exact integer in octal
-without a prefix, giving the decimal-digit representation required.
+- n starts at 1=10⁰ and is multiplied by 10 after every output,
+  so its exact integer values are the powers of ten.
+- `'%o'%n` formats n in base 8 without an `0o` prefix. The
+  resulting octal digits are printed as text; the sequence treats
+  that digit string as its displayed integer representation.
+- For example 10=1·8+2 prints 12, while
+  100=1·8²+4·8+4 prints 144. Formatting handles carries
+  across octal places automatically.
+- `[print(...)]` is a nonempty list after the print returns
+  `None`, so it supplies the always-true condition as well as output.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 101 terms in 60 s; the official b-file contains 101 terms.
-
+- The program changes the notation, not the integer arithmetic used
+  to generate powers of ten. Parsing the formatted text back into
+  an integer would add work without changing what must be printed.
+- Octal conversion is exact and, as a power-of-two base, is exempt
+  from Python 3.11+'s default 4300-digit decimal conversion limit.
+  Memory and printing time still grow with the output length.
+- The n-th output has ⌊n·log₈(10)⌋+1 octal digits. Only the
+  current power and its formatted text are needed.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

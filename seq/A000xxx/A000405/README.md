@@ -14,18 +14,41 @@ while[print(t)]:t=1;Q=[[t]+[t:=t+len(L)*L.pop(0)for x in L*1]for L in Q]
 
 **How it works**
 
-This is the exact Stirling-transform antidiagonal algorithm of
-[A000307](../A000307/), with two additional transform levels.
-The innermost e.g.f. is exp(x); applying five second-kind Stirling
-transforms gives the six nested exponentials listed by the OEIS.
-Each level obeys T(i+1,k) = k*T(i,k) + T(i,k+1).
-The carried value `t` feeds the output of each level into the next.
+- Start with B₀(x)=exp(x) and put B_(j+1)(x)=B_j(exp(x)−1).
+  Substituting exp(x)−1 takes the second-kind Stirling transform:
+  if B_j has coefficients b_j(n), then
+  b_(j+1)(n)=Σₖ S(n,k)·b_j(k). Five transforms give the six
+  nested exponentials in the OEIS generating function.
+- One transform can be advanced without storing Stirling numbers.
+  For its input c, define T(0,k)=c(k) and
+  T(i+1,k)=k·T(i,k)+T(i,k+1). Expanding this recurrence gives
+  T(n,0)=Σⱼ S(n,j)·c(j), the desired Stirling transform.
+- Each list L holds an antidiagonal, ordered from T(0,n) through
+  T(n,0). The next starts with the new input `t`. Its remaining entries
+  use the preceding new entry plus the old entry times the descending
+  column weight. `len(L)*L.pop(0)` supplies that weight and entry:
+  `len(L)` is evaluated before the pop.
+- `L*1` is a copy used solely to fix the number of iterations while
+  the original L is consumed. The final value of t from one level
+  supplies the new input to the next; five lists chain the transforms.
+- The innermost exp(x) has every coefficient 1, so the body resets
+  `t=1` each round. Printing before the update supplies a(0)=1.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 151 terms in 60 s; the official b-file contains 151 terms.
-- Python 3.11+ eventually reaches its default 4300-digit integer-to-string limit; this interpreter limit is not counted as a correctness failure.
+- This is [A000307](../A000307/) with five transform lists instead
+  of three. See also [A000406](../A000406/) for the analogous
+  first-kind transform, whose triangle has a different weight.
+- `Q=[[]]*5` initially shares one empty list. The first pass pops no
+  entries and creates five separate `[1]` lists, so later mutations
+  do not interfere with each other.
+- Exact integer arithmetic; only five antidiagonals are kept. Their
+  lengths grow by one per term. The front pops also move list entries,
+  so their cost is additional to the integer arithmetic.
+- Python 3.11+ eventually reaches its default 4300-digit output
+  conversion limit; this interpreter limit is not a correctness failure.
+- The b-file has 151 terms (indices 0 through 150). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

@@ -16,18 +16,37 @@ while 1:
 
 **How it works**
 
-Multiply the exponential generating function by its denominator:
-cos(3x)*F(x)=cos(x). Equating derivatives gives the binomial
-convolution in the program. The denominator has constant term 1,
-so the new derivative is its numerator derivative minus the
-contributions of all earlier derivatives. Odd or even indices
-are selected by the 2*n+offset expression, matching the OEIS e.g.f.
+- Write F(x)=cos(x)/cos(3x) as
+  Σₙ≥₀ a(n)x^(2n)/(2n)!.
+  Only even derivatives occur, since F is even.
+  Multiplying by cos(3x) gives cos(x).
+- The 2k-th derivative of cos(3x) at zero is
+  (−1)ᵏ·3^(2k)=(-9)ᵏ; the 2n-th derivative
+  of cos(x) is (−1)ⁿ. The product rule therefore gives
+
+  a(n) = (−1)ⁿ − Σₖ₌₁ⁿ C(2n,2k)·(-9)ᵏ·a(n−k).
+
+- `n=len(a)` is the next sequence index, and before appending,
+  `a[-k]` selects a(n−k). The k=0 term of the product is the unknown
+  a(n), because cos(0)=1; moving the other terms to the right gives
+  the subtraction in the code.
+- At n=0 the sum is empty, so the initial value is 1. At n=1,
+  −1−(−9)·1=8, the next
+  term. Appending before `print(a[-1])` keeps these indices aligned.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 101 terms in 60 s; the official b-file contains 101 terms.
-
+- The sine and cosine are used only to derive a formal power-series
+  identity. The program evaluates no trigonometric functions and
+  uses exact integers, with no factorial divisions or rounding.
+- It stores all preceding coefficients: n+1 entries after term n,
+  and n binomial-convolution summands for that term. Only derivatives
+  of the relevant parity are kept.
+- Compare [A000490](../A000490/), which uses a constant numerator
+  instead. Python 3.11+ eventually stops when the output exceeds its
+  default 4300-digit conversion limit; that is an interpreter limit.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

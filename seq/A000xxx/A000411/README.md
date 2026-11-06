@@ -16,18 +16,35 @@ while 1:
 
 **How it works**
 
-Multiply the exponential generating function by its denominator:
-(2*cos(4x)-1)*F(x)=2*sin(3x). Equating derivatives gives the binomial
-convolution in the program. The denominator has constant term 1,
-so the new derivative is its numerator derivative minus the
-contributions of all earlier derivatives. Odd or even indices
-are selected by the 2*n+offset expression, matching the OEIS e.g.f.
+- Write F(x)=2sin(3x)/(2cos(4x)−1)=
+  Σₘ≥₀ a(m+1)x^(2m+1)/(2m+1)!. Only odd derivatives occur;
+  the sequence starts at a(1)=F′(0)=6.
+- Multiplying by the denominator gives (2cos(4x)−1)F(x)=2sin(3x).
+  Its constant coefficient is 1, while its 2k-th derivative is
+  2·(−16)ᵏ for k≥1. The numerator's (2m+1)-th derivative is
+  6·(−9)ᵐ. The product rule therefore yields
+
+  a(m+1)=6·(−9)ᵐ−2Σₖ₌₁ᵐ C(2m+1,2k)·(−16)ᵏ·a(m−k+1).
+
+- In the code `n=len(a)` is m, the number of derivatives already
+  stored. Before the append, `a[-k]` is a(m−k+1); afterwards
+  `a[-1]` is the new a(m+1). The list index is one below the OEIS index.
+- The empty sum gives 6 on the first pass. On the next,
+  6·(−9)−2·C(3,2)·(−16)·6=522, matching a(2).
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 184 terms in 60 s; the official b-file contains 184 terms.
-
+- Exact integer arithmetic from a formal generating-function identity.
+  The program never evaluates sine, cosine or a quotient numerically.
+  The denominator's constant term 1 is why no division is needed.
+- As in [A000464](../A000464/), only derivatives of one parity are
+  stored. Computing term m+1 uses m preceding values and m binomial
+  summands; the list grows by one per term.
+- Generalized tangent numbers grow rapidly. Python 3.11+ eventually
+  stops when a printed integer passes its default 4300-digit limit;
+  this is an interpreter limit rather than a failure of the recurrence.
+- The b-file has 184 terms (indices 1 through 184). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

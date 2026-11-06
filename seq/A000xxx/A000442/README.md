@@ -14,15 +14,28 @@ while[print(a)]:n+=1;a*=n**3
 
 **How it works**
 
-Start with (0!)³ = 1. At each step, (n!)³ = n³*((n-1)!)³,
-so multiplying the state by the cube of the new counter proves
-the invariant for every n.
+- Start with a=(0!)³=1 and n=0. After printing, increase n and
+  multiply a by n³. Since (n!)³=n³·((n−1)!)³, the invariant
+  a=(n!)³ holds at every subsequent print.
+- Incrementing before multiplication matters: using the old initial
+  n=0 would set a to zero permanently. The actual first update
+  multiplies by 1 and supplies the second 1 in the sequence.
+- `while[print(a)]` prints in the condition; the one-element list
+  remains true after `print` returns `None`.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 101 terms in 60 s; the official b-file contains 101 terms.
-
+- Exact integer multiplication, with no factorial recomputation or
+  division. Only the current term and its index are stored.
+- The first distinct multipliers are 1³, 2³, 3³, …; for example,
+  the update from 8 to 216 multiplies by 27.
+- Cubing a running factorial would need a separate output expression;
+  accumulating the cubed factors directly keeps the stored value
+  equal to the term being printed.
+- Factorial growth eventually reaches Python 3.11+'s default
+  4300-digit integer-to-string limit, an interpreter limit.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

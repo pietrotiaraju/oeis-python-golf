@@ -20,17 +20,40 @@ while 1:
 
 **How it works**
 
-Count unordered triples of nonnegative squares exactly as in
-[A000437](../A000437/). Scan candidate integers in increasing order.
-If the current integer has c representations, it is the smallest
-qualifying value for every not-yet-output threshold t<=c; print it
-for each such threshold before continuing.
+- Count representations x²+y²+z² with 0≤x≤y≤z: zero is
+  allowed, and permutations or choices of signs do not create
+  extra representations. The increasing list s contains squares.
+- When `n==k*k`, append the new largest square n. For each
+  `i,x` in s, `s[:i+1]` supplies y≤x. Thus every triple is
+  inserted once, with n as its largest square, including triples
+  having repeated or zero squares.
+- The dictionary d counts triples by their sum. At candidate n
+  all triples summing to n have already been inserted, because
+  no summand can exceed n. `d.get(n,0)` is therefore its final
+  count; dictionary entries for larger values can still grow.
+
+- t is the next requested minimum number of representations.
+  If the current n has c≥t representations, n is the smallest
+  qualifying value for every as-yet-unprinted threshold through c.
+  `while t<=d.get(n,0)` prints n for all those thresholds.
+- If a new count record jumps over several thresholds, repeating n
+  is necessary. Once printed, a threshold needs no stored answer:
+  the scan will never find a smaller candidate later.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 200 terms in 60 s; the official b-file contains 200 terms.
+- This is the “at least” counterpart of [A000437](../A000437/).
+  Its outputs are nondecreasing; requiring exactly t ways can have
+  a different minimum and does not have that monotonicity guarantee.
+- The initial triple (0,0,0) gives a(1)=0. The next threshold
+  is reached at 9=0²+0²+3²=1²+2²+2², giving a(2)=9.
 
+- Exact integer counting, with no cutoff on the number of roots.
+  Through candidate N the construction inserts O(N^(3/2)) triples;
+  their sums are at most 3N, so d has O(N) possible keys. The
+  temporary slices also contribute to the running time.
+- The b-file has 200 terms (indices 1 through 200). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

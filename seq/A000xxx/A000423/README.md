@@ -15,18 +15,35 @@ while s:
 
 **How it works**
 
-The set s contains all not-yet-output products of two distinct
-previous sequence positions, together with the initial seeds 2 and 3.
-Choose the smallest candidate, remove it, and add its products with
-every earlier term before appending it to a. All factors are at least
-2, so newly added candidates exceed the term just printed. Sets merge
-duplicate products, implementing the defining greedy rule exactly.
+- a holds the terms already printed. The frontier s contains the seeds
+  2 and 3 until used, together with all distinct products of two
+  different earlier positions that have not yet been printed.
+- Choose `n=min(s)`, remove it, and print it. Every newly available
+  product uses this n and one old term, so `s|={n*x for x in a}`
+  adds exactly the new possibilities.
+- Append n to a only after forming those products. This enforces i<j:
+  the program cannot form n·n using the same position twice. A square
+  can still be allowed if two different sequence values multiply to it.
+- Every factor is at least 2. New products therefore exceed n and
+  cannot disturb the increasing order. A set merges products reached
+  in different ways, so no value is printed twice.
+- The seeds print first, then 6=2·3, 12=2·6 and 18=3·6.
+  Neither 4=2² nor 9=3² is initially available under the distinct-index
+  rule.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 49 terms in 60 s; the official b-file contains 49 terms.
-
+- The frontier remains nonempty: after the seeds, the old term 2
+  always supplies a future product 2n. Each pass therefore implements
+  the defining least-available-product rule indefinitely.
+- Exact integer products, without a cutoff on candidate size. Through
+  N outputs, N(N−1)/2 pairs have been formed before deduplication;
+  the frontier and repeated `min` scans are the main storage and time
+  costs.
+- Keeping the frontier avoids repeatedly scanning every integer and
+  testing whether it factors into two previous terms.
+- The b-file has 49 terms (indices 1 through 49). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

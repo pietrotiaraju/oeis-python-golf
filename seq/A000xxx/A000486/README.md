@@ -14,18 +14,41 @@ while[print(a[0])]:a=a[1:]+[sum(x*y for x,y in zip(a,(-48,172,-244,175,-67,13)))
 
 **How it works**
 
-Multiplying the rational generating function by its denominator
-gives the order-six recurrence with coefficients
-(-48,172,-244,175,-67,13) on consecutive preceding terms.
-The six seeds are a(5) through a(10), obtained from the stated
-generating function. Shift the window and append the recurrence
-value after each output.
+- The sign sequence consists of successive differences of a permutation.
+  A sign run is a maximal block of consecutive differences having
+  the same sign. Four such runs first fit when n=5.
+- The ordinary generating function on the OEIS page is
+  2x⁵(24x²−29x+8)/Q(x), where
+  Q(x)=(1−x)²(1−2x)²(1−3x)(1−4x).
+  Expanding gives
+  Q(x)=1−13x+67x²−175x³+244x⁴−172x⁵+48x⁶.
+- Beyond the numerator's degree, multiplying by Q gives
+
+  a(n)=13a(n−1)−67a(n−2)+175a(n−3)−244a(n−4)
+  +172a(n−5)−48a(n−6).
+
+- The list initially holds a(5) through a(10), obtained by expanding
+  that rational function. Its entries are in oldest-to-newest order,
+  so `zip` uses the reversed coefficient order
+  (−48,172,−244,175,−67,13).
+- Print the oldest entry, drop it with `a[1:]`, and append the new
+  recurrence value. Each list remains a six-term consecutive window;
+  the recurrence applies to every appended term, starting at n=11.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 996 terms in 60 s; the official b-file contains 996 terms.
-
+- Exact integer arithmetic. The six seeds are the initial conditions
+  of a proved generating-function recurrence, rather than an embedded
+  reference file; they determine all later coefficients.
+- Reversing a permutation exchanges its initial direction while
+  preserving the number of sign runs, explaining the factor one half
+  in the definition. At n=5 the full alternating count is 32,
+  and this sequence prints 16.
+- Six stored terms and six products per update suffice. Exponential
+  growth eventually reaches Python 3.11+'s default 4300-digit output
+  conversion limit, an interpreter limit.
+- The b-file has 996 terms (indices 5 through 1000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

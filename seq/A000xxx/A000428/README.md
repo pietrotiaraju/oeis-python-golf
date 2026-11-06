@@ -5,6 +5,10 @@
 
 Offset 1: 1, 8, 36, 148, 554, 2094, 7624, 27428, 96231, 332159, …
 
+The input weights are A000579, c(k) = C(k+5,6). The
+program computes their Euler transform by a divisor sum followed by a
+convolution; it never expands the infinite product directly.
+
 ### Python 3 — 161 bytes
 
 ```python
@@ -17,19 +21,35 @@ while 1:
 
 **How it works**
 
-The generating function is product((1-x^k)^(-C(k+5,6)),k>=1).
-Its logarithmic derivative has coefficient
-b(n)=sum(d*C(d+5,6),d dividing n).
-Thus n*a(n)=sum(b(k)*a(n-k),k=1..n), with a(0)=1.
-The program stores both coefficient lists and prints from n=1.
-This Euler product is the specified Euler transform; it is not
-the actual high-dimensional partition sequence.
+- Put c(k) = C(k+5,6). The Euler transform has ordinary
+  generating function A(x) = ∏ₖ≥₁ (1−xᵏ)^(−c(k)), with a(0) = 1.
+  A factor chooses a multiset of parts of size k, in c(k) colors.
+- Taking a formal logarithmic derivative gives
+  xA′(x)/A(x) = Σₘ≥₁ b(m)xᵐ, where
+  b(m) = Σ_(d divides m) d·c(d). Multiplying back by A yields
+  **m·a(m) = Σₖ₌₁ᵐ b(k)·a(m−k)**.
+- `n=len(a)` is the next index. The first comprehension computes b(n):
+  `n%k<1` selects divisors and `k*comb(k+5,6)` is k·c(k).
+  `b=[0]` keeps list positions aligned with those positive indices.
+- Append b(n) before computing a(n), since the convolution includes
+  b(n)·a(0). Append a(n) before printing `a[-1]`; the auxiliary a(0)=1
+  is retained for the recurrence but the OEIS output starts at n=1.
+- At n=2, b(1)=1 and b(2)=15, so
+  a(2)=(1+15)/2=8, matching the second term.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 1000 terms in 60 s; the official b-file contains 1000 terms.
-
+- Every division by n is exact: A is an integer-coefficient Euler
+  product. The calculation uses integers throughout, with no numeric
+  approximation to an infinite product.
+- Two lists hold n+1 coefficients. Finding b(n) tries n candidate
+  divisors, and the second sum has n terms, so producing N terms takes
+  O(N²) summands, apart from the cost of large-integer arithmetic.
+- Compare [A000417](../A000417/): only the binomial weights
+  change. The product here is the specified Euler transform; it does
+  not enumerate actual partitions in that many dimensions.
+- The b-file has 1000 terms (indices 1 through 1000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
