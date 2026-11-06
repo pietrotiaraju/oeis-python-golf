@@ -355,6 +355,7 @@ sequence for the code and how it works.
 | [A000356](seq/A000xxx/A000356/) | Number of rooted cubic maps with 2n nodes and a distinguished… | **53** | 800 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000359](seq/A000xxx/A000359/) | Coefficients of iterated exponentials. | **85** | 100 |
+| [A000360](seq/A000xxx/A000360/) | Distribution of nonempty triangles inside a fractal rep-4-tile. | **47** | 10001 |
 | [A000363](seq/A000xxx/A000363/) | Number of permutations of [n] with exactly 2 increasing runs of… | **49** | 997 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
 | [A000366](seq/A000xxx/A000366/) | Genocchi numbers of second kind (A005439) divided by 2^(n-1). | **81** | 100 |
