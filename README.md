@@ -423,10 +423,10 @@ sequence for the code and how it works.
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **144** | 14 |
-| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **128** | 184 |
+| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **127** | 184 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
 | [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
-| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **161** | 1000 |
+| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **160** | 1000 |
 | [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
@@ -435,14 +435,14 @@ sequence for the code and how it works.
 | [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **86** | 16 |
 | [A000425](seq/A000xxx/A000425/) | Coefficients of ménage hit polynomials. | **57** | 22 |
 | [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **81** | 100 |
-| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **161** | 1000 |
+| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **160** | 1000 |
 | [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **129** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
 | [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
-| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **123** | 101 |
+| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **122** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
@@ -463,11 +463,11 @@ sequence for the code and how it works.
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
 | [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **121** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
-| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **123** | 216 |
+| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **122** | 216 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
-| [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
+| [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
-| [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **129** | 10000 |
+| [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **128** | 10000 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
@@ -476,12 +476,12 @@ sequence for the code and how it works.
 | [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **225** | 80 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
 | [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **79** | 96 |
-| [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **142** | 195 |
+| [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **120** | 195 |
 | [A000484](seq/A000xxx/A000484/) | a(n) = round(cos(n)). | **224** | 1001 |
 | [A000486](seq/A000xxx/A000486/) | One half of the number of permutations of [n] such that the… | **114** | 996 |
 | [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **66** | 196 |
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
-| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **115** | 195 |
+| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **210** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **239** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
