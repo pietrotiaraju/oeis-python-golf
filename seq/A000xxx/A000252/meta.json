@@ -1,0 +1,6 @@
+{
+  "name": "Number of invertible 2 X 2 matrices mod n.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
