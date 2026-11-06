@@ -9,13 +9,13 @@ The input weights are A000579, c(k) = C(k+5,6). The
 program computes their Euler transform by a divisor sum followed by a
 convolution; it never expands the infinite product directly.
 
-### Python 3 — 161 bytes
+### Python 3 — 160 bytes
 
 ```python
-from math import*
+import math
 a=[1];b=[0]
 while 1:
- n=len(a);b+=[sum(k*comb(k+5,6)for k in range(1,n+1)if n%k<1)]
+ n=len(a);b+=[sum(k*math.comb(k+5,6)for k in range(1,n+1)if n%k<1)]
  a+=[sum(b[k]*a[n-k]for k in range(1,n+1))//n];print(a[-1])
 ```
 
@@ -56,6 +56,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 161 | first entry |
+| 2026-11-06 | Python 3 | 160 | use a shorter math import |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
