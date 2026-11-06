@@ -338,6 +338,7 @@ sequence for the code and how it works.
 | [A000322](seq/A000xxx/A000322/) | Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5)… | **39** | 3403 |
 | [A000324](seq/A000xxx/A000324/) | A nonlinear recurrence: a(0) = 1, a(1) = 5, a(n) = a(n-1)^2 -… | **32** | 13 |
 | [A000325](seq/A000xxx/A000325/) | a(n) = 2^n - n. | **29** | 201 |
+| [A000326](seq/A000xxx/A000326/) | Pentagonal numbers: a(n) = n\*(3\*n-1)/2. | **30** | 10001 |
 | [A000328](seq/A000xxx/A000328/) | Number of points of norm <= n^2 in square lattice. | **77** | 400 |
 | [A000330](seq/A000xxx/A000330/) | Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 =… | **33** | 10001 |
 | [A000332](seq/A000xxx/A000332/) | Binomial coefficient binomial(n,4) = n\*(n-1)\*(n-2)\*(n-3)/24. | **38** | 1003 |
