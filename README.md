@@ -417,25 +417,43 @@ sequence for the code and how it works.
 | [A000400](seq/A000xxx/A000400/) | Powers of 6: a(n) = 6^n. | **24** | 101 |
 | [A000401](seq/A000xxx/A000401/) | Numbers of form x^2 + y^2 + 2\*z^2. | **61** | 1000 |
 | [A000402](seq/A000xxx/A000402/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 452 |
+| [A000404](seq/A000xxx/A000404/) | Numbers that are the sum of 2 nonzero squares. | **91** | 10000 |
 | [A000405](seq/A000xxx/A000405/) | Number of 6-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A000406](seq/A000xxx/A000406/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
+| [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **147** | 14 |
+| [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
+| [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
+| [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
 | [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **40** | 150 |
+| [A000423](seq/A000xxx/A000423/) | a(n) is smallest number > a(n-1) of form a(i)\*a(j), i < j < n. | **79** | 49 |
+| [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
+| [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
+| [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
+| [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
+| [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
+| [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **59** | 98 |
 | [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **114** | 447 |
 | [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **50** | 197 |
 | [A000454](seq/A000xxx/A000454/) | Unsigned Stirling numbers of first kind s(n,4). | **68** | 97 |
+| [A000455](seq/A000xxx/A000455/) | Digits of powers of 2. | **39** | 10000 |
+| [A000456](seq/A000xxx/A000456/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
+| [A000459](seq/A000xxx/A000459/) | Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no… | **66** | 101 |
 | [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **50** | 998 |
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
+| [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **70** | 97 |
+| [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
+| [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
