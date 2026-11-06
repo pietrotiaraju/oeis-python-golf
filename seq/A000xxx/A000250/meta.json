@@ -1,0 +1,6 @@
+{
+  "name": "Number of symmetric reflexive relations on n nodes: (1/2)*A000666.",
+  "offset": 1,
+  "min_terms": 18,
+  "timeout": 60
+}
