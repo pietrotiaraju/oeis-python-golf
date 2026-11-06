@@ -82,6 +82,7 @@ sequence for the code and how it works.
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | 996 |
 | [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **69** | 1001 |
 | [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | **81** | 1001 |
+| [A000066](seq/A000xxx/A000066/) | Smallest number of vertices in trivalent graph with girth (shortest… | **225** | 6 |
 | [A000067](seq/A000xxx/A000067/) | Number of positive integers <= 2^n of form x^2 + 2 y^2. | **89** | 24 |
 | [A000068](seq/A000xxx/A000068/) | Numbers k such that k^4 + 1 is prime. | **60** | 120 |
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | 10001 |

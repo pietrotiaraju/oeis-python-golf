@@ -1,0 +1,6 @@
+{
+  "name": "Smallest number of vertices in trivalent graph with girth (shortest cycle) = n.",
+  "offset": 3,
+  "min_terms": 6,
+  "timeout": 60
+}
