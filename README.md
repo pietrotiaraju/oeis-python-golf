@@ -359,6 +359,7 @@ sequence for the code and how it works.
 | [A000344](seq/A000xxx/A000344/) | a(n) = 5\*binomial(2n, n-2)/(n+3). | **52** | 299 |
 | [A000345](seq/A000xxx/A000345/) | Number of partitions into non-integral powers. | **141** | 15 |
 | [A000346](seq/A000xxx/A000346/) | a(n) = 2^(2\*n+1) - binomial(2\*n+1, n+1). | **49** | 501 |
+| [A000347](seq/A000xxx/A000347/) | Number of partitions into non-integral powers. | **166** | 17 |
 | [A000348](seq/A000xxx/A000348/) | Number of ways to pair up {1^2, 2^2, ..., (2n)^2 } so sum of each… | **157** | 12 |
 | [A000349](seq/A000xxx/A000349/) | One-half the number of permutations of length n with exactly 2 rising… | **129** | 201 |
 | [A000350](seq/A000xxx/A000350/) | Numbers m such that Fibonacci(m) ends with m. | **62** | 370 |
