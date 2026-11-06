@@ -634,7 +634,7 @@ sequence for the code and how it works.
 
 - Print the sequence from its OEIS offset, one term per line, forever.
 - CPython 3.12, no flags, no input. Size = file bytes, trailing newline free.
-- Plain Python 3 and each "Python 3 + library" are separate categories.
+- Plain Python 3, standard library only; one program per sequence.
 - Correct for every n, with exact arithmetic; hard-coding only with a proof on
   the page.
 
@@ -643,7 +643,6 @@ Full rules and how to send a record: [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Verify locally
 
 ```bash
-pip install -r requirements.txt
 python tools/verify.py
 ```
 

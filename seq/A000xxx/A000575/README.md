@@ -15,7 +15,7 @@ while[print(comb(n+11,9)-(n+3)*comb(n+6,4))]:n+=1
 
 **How it works**
 
-- The sequence is [x⁹](1+x+x²+x³+x⁴)^(n+3). Rewriting the inner
+- The sequence is `[x⁹](1+x+x²+x³+x⁴)^(n+3)`. Rewriting the inner
   polynomial as (1−x⁵)/(1−x) gives
   (1−x⁵)^(n+3)·(1−x)^(−n−3).
 - Only the constant and x⁵ terms of the first factor can contribute
