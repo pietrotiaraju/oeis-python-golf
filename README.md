@@ -374,6 +374,7 @@ sequence for the code and how it works.
 | [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **77** | 480 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |
+| [A000380](seq/A000xxx/A000380/) | Number of permutations of an n-sequence discordant with three given… | **116** | 6 |
 | [A000383](seq/A000xxx/A000383/) | Hexanacci numbers with a(0) = ... = a(5) = 1. | **39** | 3359 |
 | [A000384](seq/A000xxx/A000384/) | Hexagonal numbers: a(n) = n\*(2\*n-1). | **29** | 10001 |
 | [A000385](seq/A000xxx/A000385/) | Convolution of A000203 with itself. | **76** | 10000 |
