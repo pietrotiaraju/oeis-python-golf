@@ -1,0 +1,6 @@
+{
+  "name": "Number of tournaments on n nodes determined by their score vectors.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
