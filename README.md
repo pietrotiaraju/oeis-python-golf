@@ -327,6 +327,7 @@ sequence for the code and how it works.
 | [A000336](seq/A000xxx/A000336/) | a(n) = a(n-1)\*a(n-2)\*a(n-3)\*a(n-4); for n < 5, a(n) = n. | **53** | 15 |
 | [A000337](seq/A000xxx/A000337/) | a(n) = (n-1)\*2^n + 1. | **33** | 1001 |
 | [A000338](seq/A000xxx/A000338/) | Expansion of x^3\*(5-2\*x)\*(1-x^3)/(1-x)^4. | **38** | 998 |
+| [A000340](seq/A000xxx/A000340/) | a(0)=1, a(n) = 3\*a(n-1) + n + 1. | **34** | 1001 |
 | [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
