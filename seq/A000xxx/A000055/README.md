@@ -5,10 +5,10 @@
 
 Offset 0: 1, 1, 1, 1, 2, 3, 6, 11, 23, 47, 106, 235, 551, 1301, 3159, 7741, …
 
-### Python 3 — 138 bytes
+### Python 3 — 137 bytes
 
 ```python
-F=[1];n=-1
+F=1,;n=-1
 while[print(F[n]+sum(F[i]*((i-~i==n)-F[n+~i])for i in range(n))//2)]:n+=1;F+=sum(d*F[~d]*sum(F[d::d])for d in range(~n,0))//~n,
 ```
 
@@ -26,13 +26,13 @@ while[print(F[n]+sum(F[i]*((i-~i==n)-F[n+~i])for i in range(n))//2)]:n+=1;F+=sum
   `i-~i` is 2i+1 and `n+~i` is n−1−i.
 - Forests satisfy the Euler-transform recurrence
   **k·F(k) = Σ_d d·F(d−1)·Σ_{j≥1} F(k−jd)**, summed over 1 ≤ d ≤ k
-  (the A000081 recurrence with its two sums swapped). After `n+=1` the list
+  (the A000081 recurrence with its two sums swapped). After `n+=1` the tuple
   holds F(0) … F(n), so with d running over −(n+1) … −1, `F[~d]` is
   F(|d|−1), the slice `F[d::d]` walks back from F(n+1−|d|) in steps of |d|,
   and dividing the negative sum by `~n` = −(n+1) gives F(n+1).
 - `n=-1` prints a(0) first: `F[-1]` is F(0) = 1 and the sum over `range(-1)`
   is empty. Python's negative indexing does the special case for free.
-- `F+=…,` appends a one-tuple; `while[print(…)]` prints and loops forever
+- `F+=…,` concatenates a one-item tuple; `while[print(…)]` prints and loops forever
   because `[None]` is a non-empty list.
 
 **Notes**
@@ -57,6 +57,7 @@ while[print(F[n]+sum(F[i]*((i-~i==n)-F[n+~i])for i in range(n))//2)]:n+=1;F+=sum
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 138 | first entry |
+| 2026-11-06 | Python 3 | 137 | use a tuple for the initial F state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

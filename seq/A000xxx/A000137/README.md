@@ -8,10 +8,10 @@ Offset 1: 1, 2, 6, 18, 58, 186, 614, 2034, 6818, 22970, 77858, 264970, …
 The g.f. is x(1+S)/(1−S), where S is the g.f. of
 [A000084](https://oeis.org/A000084) (series-parallel networks with n edges).
 
-### Python 3 — 133 bytes
+### Python 3 — 132 bytes
 
 ```python
-R=[n:=1];v=[2]
+R=[n:=1];v=2,
 while[print(v[-1]-1//n)]:v+=sum(map(int.__mul__,R:=[sum(R+[j*R[~j]*sum(R[j-1::j])for j in range(1,n)])//n]+R,v)),;n+=1
 ```
 
@@ -34,7 +34,7 @@ while[print(v[-1]-1//n)]:v+=sum(map(int.__mul__,R:=[sum(R+[j*R[~j]*sum(R[j-1::j]
   Since x(1+S)/(1−S) = x(v − 1), a(1) = v₀ − 1 = 1 and a(n+1) = vₙ.
 - With `R` = [eₙ, …, e₀] and `v` = [v₀, …, v_{n−1}],
   `map(int.__mul__,R,v)` pairs eₙ·v₀, …, e₁·v_{n−1} (it stops at the shorter
-  list), so its sum is vₙ. `print(v[-1]-1//n)` subtracts 1 only for the first
+  sequence), so its sum is vₙ. `print(v[-1]-1//n)` subtracts 1 only for the first
   term.
 
 **Notes**
@@ -52,6 +52,7 @@ while[print(v[-1]-1//n)]:v+=sum(map(int.__mul__,R:=[sum(R+[j*R[~j]*sum(R[j-1::j]
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 133 | first entry |
+| 2026-11-06 | Python 3 | 132 | use a tuple for the initial v state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

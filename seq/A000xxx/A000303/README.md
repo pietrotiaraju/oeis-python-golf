@@ -5,10 +5,10 @@
 
 Offset 1: 0, 1, 4, 16, 69, 348, 2016, 13357, 99376, 822040, …
 
-### Python 3 — 83 bytes
+### Python 3 — 81 bytes
 
 ```python
-v=[1,1]
+v=1,1
 while[print(v[0]-1)]:v=[i*v[i-1]+-~i*sum(v[i:i+2])for i in range(len(v)+1)]
 ```
 
@@ -33,15 +33,15 @@ while[print(v[0]-1)]:v=[i*v[i-1]+-~i*sum(v[i:i+2])for i in range(len(v)+1)]
 - `v[i]` is the weighted number of paths of the current length that end
   at height i, and the update is (Mv)ᵢ = i·v[i−1] + (i+1)·(v[i] + v[i+1]).
   At i = 0 the factor i kills `v[-1]`, and the slice `v[i:i+2]` gives 0
-  past the end, so the list needs no padding and grows by one entry per
+  past the end, so the state needs no padding and grows by one entry per
   step.
-- The start `v=[1,1]` is M applied to (1), so the first print is
+- The start `v=1,1` is M applied to (1), so the first print is
   A049774(1) − 1 = a(1) = 0.
 
 **Notes**
 
 - Exact integer arithmetic, correct for every n by the bijection above.
-  Each term costs one pass over a list of length n. The b-file has
+  Each term costs one pass over a state of length n. The b-file has
   464 terms (n = 1 to 464) and all of them print in about a second; the
   program stops after about 1600 terms, at the 4300-digit int-to-str
   limit of Python 3.11+. The bar is the whole b-file in 60 s.
@@ -56,6 +56,7 @@ while[print(v[0]-1)]:v=[i*v[i-1]+-~i*sum(v[i:i+2])for i in range(len(v)+1)]
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 83 | first entry |
+| 2026-11-06 | Python 3 | 81 | use a tuple for the initial v state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,11 +5,11 @@
 
 Offset 0: 0, 1, 2, 5, 13, 35, 95, 262, 727, 2033, 5714, 16136, 45733, …
 
-### Python 3 — 121 bytes
+### Python 3 — 120 bytes
 
 ```python
-v=n=0;r=s=[1]
-while[print(v)]:s=[v:=sum(map(int.__mul__,r,s))]+s;n-=1;r+=sum(d*r[~d]*sum(r[d::d])for d in range(n,0))//n,
+v=n=0;r=s=1,
+while[print(v)]:v=sum(map(int.__mul__,r,s));s=v,*s;n-=1;r+=sum(d*r[~d]*sum(r[d::d])for d in range(n,0))//n,
 ```
 
 **How it works**
@@ -24,7 +24,7 @@ while[print(v)]:s=[v:=sum(map(int.__mul__,r,s))]+s;n-=1;r+=sum(d*r[~d]*sum(r[d::
   with c(0) = 1 and a(k) = c(k) for k ≥ 1.
 - `r` holds f(0), f(1), …, f(k) in order and `s` holds c(k), …, c(1), c(0)
   backwards, so the convolution is the dot product
-  `sum(map(int.__mul__,r,s))`: the two lists always have the same length.
+  `sum(map(int.__mul__,r,s))`: the two tuples always have the same length.
   The new term goes to the front of `s`.
 - `r` grows by the recurrence of the [A000081](../A000081/) program,
   m·f(m) = Σ_{d=1..m} d·f(d−1)·Σ_{j≥1} f(m−jd), with d running over
@@ -34,8 +34,8 @@ while[print(v)]:s=[v:=sum(map(int.__mul__,r,s))]+s;n-=1;r+=sum(d*r[~d]*sum(r[d::
 - `v` is the term being printed. It starts at a(0) = 0, which is the one
   place where a(k) and c(k) differ, so the 0 costs no `print(0)`. After
   that `v` is each new c(k+1) as it is put on `s`.
-- `r=s=[1]` makes both lists the same object at first; the first update
-  rebinds `s` to a new list before `r` is extended, so they part at once.
+- `r=s=1,` starts both states as the same one-item tuple. Each update
+  rebinds `s` and `r` independently; `s=v,*s` prepends the new term.
 
 **Notes**
 
@@ -58,6 +58,7 @@ while[print(v)]:s=[v:=sum(map(int.__mul__,r,s))]+s;n-=1;r+=sum(d*r[~d]*sum(r[d::
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 121 | first entry |
+| 2026-11-06 | Python 3 | 120 | keep r and s as tuples; prepend without a list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

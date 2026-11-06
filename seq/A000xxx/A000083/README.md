@@ -8,12 +8,12 @@ Offset 0: 1, 1, 1, 2, 4, 9, 23, 63, 188, 596, 1979, 6804, 24118, 87379, …
 A cactus here is a connected graph in which every block is a bridge or a
 polygon (a cycle of length at least 3).
 
-### Python 3 — 262 bytes
+### Python 3 — 260 bytes
 
 ```python
 from math import*
-p=sumprod;S=[1];R=S*2;t=K=[-1];print(n:=1)
-while S:=[s:=p(R[1:],S[::2]),0]+S:P=p(R,S[n:]);K=[s+P>>1]+K;t+=~-n*s-p(t,S[:-1:2]),;print(sum(t[gcd(i,n)]for i in range(n))//n+P-p(R,K)>>1);n+=1;R+=sum(d*K[~d]*sum(R[-d:0:-d])for d in range(1,n))//~-n,
+p=sumprod;S=[1];R=S*2;t=K=-1,;print(n:=1)
+while S:=[s:=p(R[1:],S[::2]),0]+S:P=p(R,S[n:]);K=s+P>>1,*K;t+=~-n*s-p(t,S[:-1:2]),;print(sum(t[gcd(i,n)]for i in range(n))//n+P-p(R,K)>>1);n+=1;R+=sum(d*K[~d]*sum(R[-d:0:-d])for d in range(1,n))//~-n,
 ```
 
 **How it works**
@@ -47,7 +47,7 @@ series below is truncated at the current n.
   for 0 ≤ i < n. The program gets t from n·S(n) = Σ t(k)·S(n−k) rather than
   from its definition.
 
-**The lists**
+**The state**
 
 - `S` holds S(n), 0, S(n−1), 0, …, 0, S(0): S reversed, with zeros
   in between. `S[::2]` is S reversed, and `S[n:]` is S(x²) reversed, so
@@ -57,10 +57,10 @@ series below is truncated at the current n.
 - `K` holds BIK(n), …, BIK(1) and then −1 in place of BIK(0) = 1. Then
   `p(R,K)` is R · BIK minus 2R(n), and the leading R in the formula
   disappears: the program prints (C + P − `p(R,K)`)/2.
-- `t` holds t(0), t(1), …, and starts as the same list `[-1]` as `K`. The
+- `t` holds t(0), t(1), …, and starts as the same tuple `(-1,)` as `K`. The
   sentinel t(0) = −1 puts −S(n) into the `sumprod`, which starting from
-  `~-n*s` = (n − 1)·S(n) makes up for. The sharing is harmless: `t` grows
-  in place, while `K=[…]+K` builds a new list before `t` first changes.
+  `~-n*s` = (n − 1)·S(n) makes up for. The initial sharing is harmless: tuple concatenation rebinds `K` and `t`
+  independently, and `K=s+P>>1,*K` prepends without a list.
 - `R` gets the next rooted count from the Euler-transform recurrence with
   the two sums swapped, as in [A000055](../A000055/):
   (n−1)·r(n) = Σ d·BIK(d) · Σ_{j≥1} r(n − jd), for 1 ≤ d < n. `K[~d]` is
@@ -88,6 +88,7 @@ series below is truncated at the current n.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 262 | first entry |
+| 2026-11-06 | Python 3 | 260 | keep K and t as tuples; prepend without a list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

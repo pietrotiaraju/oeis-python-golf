@@ -5,13 +5,13 @@
 
 Offset 1: 3, 70, 3783, 338475, 40565585, 6061961733, 1083852977811, 225615988054171, …
 
-### Python 3 — 274 bytes
+### Python 3 — 272 bytes
 
 ```python
 from math import*
 f=lambda m,r,*P:~-m*f(m-1,r+1,*P)+f(m-1,1,r,*P)if m else sum(prod(sum(d*(r*-~(x:=e&r)%d<1)for d in P+P)**(2-x)for r in P)for e in(0,1))
-R=[1];E=[n:=0];F=2
-while 1:n+=1;F*=n;R=[f(n,1)//F]+R;E+=n*R[0]-sum(E[d]*sum(R[d::d])for d in range(1,n)),;print(E[n]//n)
+R=1,;E=[n:=0];F=2
+while 1:n+=1;F*=n;R=f(n,1)//F,*R;E+=n*R[0]-sum(E[d]*sum(R[d::d])for d in range(1,n)),;print(E[n]//n)
 ```
 
 **How it works**
@@ -39,7 +39,7 @@ while 1:n+=1;F*=n;R=[f(n,1)//F]+R;E+=n*R[0]-sum(E[d]*sum(R[d::d])for d in range(
   base case.
 - Inverse Euler transform: with E(d) = d·a(d) and A = A054747,
   n·A(n) = Σ_{d=1..n} E(d)·Σ_{j≥1} A(n−dj). This is the log-derivative of
-  A(x) = Π(1−x^d)^(−a(d)). `R` holds A(n), A(n−1), …, A(0) = 1, so the inner
+  A(x) = Π(1−x^d)^(−a(d)). `R` is a tuple holding A(n), A(n−1), …, A(0) = 1, so the inner
   sum is `sum(R[d::d])`. The term d = n is E(n)·A(0), so E(n) is
   n·A(n) minus the rest, and a(n) = E(n)/n.
 
@@ -67,6 +67,7 @@ while 1:n+=1;F*=n;R=[f(n,1)//F]+R;E+=n*R[0]-sum(E[d]*sum(R[d::d])for d in range(
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 274 | first entry |
+| 2026-11-06 | Python 3 | 272 | keep R as a tuple; prepend without a list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
