@@ -449,9 +449,11 @@ sequence for the code and how it works.
 | [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **123** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
+| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **240** | 19 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
+| [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **1350** | 2 |
 | [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **410** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **366** | 10000 |
@@ -476,10 +478,12 @@ sequence for the code and how it works.
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **167** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **129** | 10000 |
+| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **240** | 19 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
+| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **232** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **225** | 80 |
@@ -493,6 +497,7 @@ sequence for the code and how it works.
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
 | [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **115** | 195 |
 | [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **296** | 1001 |
+| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **240** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **210** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **239** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
@@ -500,6 +505,7 @@ sequence for the code and how it works.
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **73** | 197 |
 | [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
+| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **240** | 18 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

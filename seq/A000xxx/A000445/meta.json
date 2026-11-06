@@ -1,0 +1,6 @@
+{
+  "name": "Latest possible occurrence of the first consecutive pair of n-th power residues, modulo any prime.",
+  "offset": 2,
+  "min_terms": 2,
+  "timeout": 10
+}
