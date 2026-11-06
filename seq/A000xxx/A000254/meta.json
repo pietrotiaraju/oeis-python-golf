@@ -1,0 +1,6 @@
+{
+  "name": "Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.",
+  "offset": 0,
+  "min_terms": 450,
+  "timeout": 60
+}
