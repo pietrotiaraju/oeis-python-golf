@@ -321,6 +321,7 @@ sequence for the code and how it works.
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **40** | 201 |
+| [A000395](seq/A000xxx/A000395/) | 6th power of rooted tree enumerator; number of linear forests of 6… | **107** | 995 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |

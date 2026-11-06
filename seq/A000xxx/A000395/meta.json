@@ -1,0 +1,6 @@
+{
+  "name": "6th power of rooted tree enumerator; number of linear forests of 6 rooted trees.",
+  "offset": 6,
+  "min_terms": 995,
+  "timeout": 60
+}
