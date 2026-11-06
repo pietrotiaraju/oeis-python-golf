@@ -1,0 +1,6 @@
+{
+  "name": "Finite automata.",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}
