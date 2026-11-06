@@ -1,0 +1,6 @@
+{
+  "name": "Hexanacci numbers with a(0) = ... = a(5) = 1.",
+  "offset": 0,
+  "min_terms": 3359,
+  "timeout": 60
+}
