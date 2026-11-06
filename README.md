@@ -342,6 +342,7 @@ sequence for the code and how it works.
 | [A000346](seq/A000xxx/A000346/) | a(n) = 2^(2\*n+1) - binomial(2\*n+1, n+1). | **49** | 501 |
 | [A000349](seq/A000xxx/A000349/) | One-half the number of permutations of length n with exactly 2 rising… | **129** | 201 |
 | [A000351](seq/A000xxx/A000351/) | Powers of 5: a(n) = 5^n. | **24** | 101 |
+| [A000352](seq/A000xxx/A000352/) | One half of the number of permutations of [n] such that the… | **42** | 397 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000359](seq/A000xxx/A000359/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
