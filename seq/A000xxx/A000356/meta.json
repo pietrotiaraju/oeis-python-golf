@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted cubic maps with 2n nodes and a distinguished Hamiltonian cycle: (2n)!(2n+1)! / (n!^2*(n+1)!(n+2)!).",
+  "offset": 1,
+  "min_terms": 800,
+  "timeout": 60
+}
