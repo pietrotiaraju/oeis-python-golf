@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of [n] with exactly 2 increasing runs of length at least 2.",
+  "offset": 4,
+  "min_terms": 997,
+  "timeout": 60
+}
