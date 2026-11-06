@@ -1,0 +1,6 @@
+{
+  "name": "Sums of three squares: numbers of the form x^2 + y^2 + z^2.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
