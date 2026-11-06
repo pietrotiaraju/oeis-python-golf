@@ -5,16 +5,16 @@
 
 Offset 0: 1, 0, 1, 1, 0, 2, 0, 2, 1, 1, …
 
-### Python 3 — 188 bytes
+### Python 3 — 146 bytes
 
 ```python
-from math import*
 n=1
 while 1:
- A=[1]+[0]*(n-1)
+ A=[t:=1]+[0]*~-n
  for p in range(2,n):
-  if all(p%d for d in range(2,isqrt(p)+1)):
+  if t%p:
    for j in range(n-1,p-1,-1):A[j]+=A[j-p]
+  t*=p*p
  print(*A[n//2:],sep='\n');n*=2
 ```
 
@@ -28,8 +28,11 @@ while 1:
 - The truncation length doubles each round. Coefficients below n/2
   were already printed, so only the new half is emitted. At n=1 that
   half contains the initial a(0)=1.
-- Trial division through isqrt(p) is an exact primality test; primes
-  at least n cannot affect coefficients of degree below n.
+- Before testing p, t=((p−1)!)². For prime p, Wilson's theorem
+  gives t%p=1. For composite p>4, (p−1)! is divisible by p,
+  and for p=4 its square is divisible by 4. Thus `t%p` selects
+  exactly the primes. Multiply by p² to prepare the next test;
+  primes at least n cannot affect the truncated coefficients.
 
 **Notes**
 
@@ -44,6 +47,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 188 | first entry |
+| 2026-11-06 | Python 3 | 146 | use squared-factorial Wilson tests and combine the initial state |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

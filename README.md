@@ -451,19 +451,19 @@ sequence for the code and how it works.
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
 | [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **122** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
-| [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **278** | 4 |
+| [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **262** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
-| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **240** | 19 |
+| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **236** | 19 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
-| [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **975** | 2 |
-| [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **405** | 1458 |
+| [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **934** | 2 |
+| [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **370** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
-| [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **361** | 10000 |
+| [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **319** | 10000 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **59** | 98 |
-| [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **114** | 447 |
+| [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **109** | 447 |
 | [A000451](seq/A000xxx/A000451/) | Smallest number that is the sum of 3 squares in at least n ways. | **168** | 200 |
 | [A000452](seq/A000xxx/A000452/) | The greedy sequence of integers which avoids 3-term geometric… | **156** | 10000 |
 | [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **50** | 197 |
@@ -483,20 +483,20 @@ sequence for the code and how it works.
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **128** | 10000 |
-| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **240** | 19 |
+| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **236** | 19 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
-| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **621** | 4 |
+| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **579** | 4 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
-| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **232** | 19 |
+| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **228** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **231** | 6 |
 | [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **211** | 80 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
 | [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **79** | 96 |
-| [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **120** | 195 |
+| [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **101** | 195 |
 | [A000484](seq/A000xxx/A000484/) | a(n) = round(cos(n)). | **213** | 1001 |
 | [A000485](seq/A000xxx/A000485/) | Number of partially labeled trees with n nodes (4 of which are… | **205** | 100 |
 | [A000486](seq/A000xxx/A000486/) | One half of the number of permutations of [n] such that the… | **114** | 996 |
@@ -505,7 +505,7 @@ sequence for the code and how it works.
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
 | [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
 | [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **284** | 1001 |
-| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **240** | 18 |
+| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **236** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **195** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **215** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
@@ -513,7 +513,7 @@ sequence for the code and how it works.
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **73** | 197 |
 | [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
-| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **240** | 18 |
+| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **236** | 18 |
 | [A000501](seq/A000xxx/A000501/) | a(n) = floor(cosh(n)). | **100** | 30 |
 | [A000502](seq/A000xxx/A000502/) | Number of genus 0 rooted maps with 6 faces and n vertices. | **109** | 496 |
 | [A000503](seq/A000xxx/A000503/) | a(n) = floor(tan(n)). | **239** | 100 |
@@ -557,22 +557,22 @@ sequence for the code and how it works.
 | [A000541](seq/A000xxx/A000541/) | Sum of 7th powers: 1^7 + 2^7 + ... + n^7. | **34** | 1001 |
 | [A000542](seq/A000xxx/A000542/) | Sum of 8th powers: 1^8 + 2^8 + ... + n^8. | **34** | 24 |
 | [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **47** | 25 |
-| [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **218** | 447 |
+| [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **204** | 447 |
 | [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
 | [A000546](seq/A000xxx/A000546/) | First occurrence of n consecutive numbers that take same number of… | **190** | 20 |
 | [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **190** | 20 |
-| [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **103** | 300 |
-| [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **186** | 30 |
+| [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **99** | 300 |
+| [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **173** | 30 |
 | [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **315** | 50 |
 | [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **99** | 198 |
-| [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **179** | 16 |
-| [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **179** | 15 |
+| [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **135** | 16 |
+| [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **135** | 15 |
 | [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **44** | 997 |
 | [A000555](seq/A000xxx/A000555/) | Number of labeled trees of diameter 4 with n nodes. | **111** | 24 |
 | [A000556](seq/A000xxx/A000556/) | Expansion of exp(-x) / (1 - exp(x) + exp(-x)). | **103** | 20 |
 | [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **103** | 201 |
-| [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **94** | 557 |
-| [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **104** | 20 |
+| [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **86** | 557 |
+| [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **98** | 20 |
 | [A000560](seq/A000xxx/A000560/) | Number of symmetric ways of folding a strip of n labeled stamps. | **172** | 8 |
 | [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **43** | 998 |
 | [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **65** | 36 |
@@ -599,7 +599,7 @@ sequence for the code and how it works.
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
 | [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **258** | 4 |
-| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **188** | 10001 |
+| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **146** | 10001 |
 | [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **98** | 596 |
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
@@ -611,9 +611,9 @@ sequence for the code and how it works.
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **294** | 25 |
 | [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
 | [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **62** | 997 |
-| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **189** | 1001 |
-| [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **224** | 1001 |
-| [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **226** | 1001 |
+| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
+| [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **193** | 1001 |
+| [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **195** | 1001 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

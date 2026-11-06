@@ -1,10 +1,5 @@
 from functools import*
-def M(V):
- if V:
-  a,*W=V
-  for b in W:
-   for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
- else:yield 0
+M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
 n=2
 while 1:
  L=list(M(range(n)))

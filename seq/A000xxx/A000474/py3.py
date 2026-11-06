@@ -1,16 +1,6 @@
 from itertools import*
-def M(V):
- if V:
-  a,*W=V
-  for b in W:
-   for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
- else:yield 0
-def H(E):
- if not E:yield()
- else:
-  for x in L:
-   if x&E&-E and x&E==x:
-    for t in H(E^x):yield(x,*t)
+M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
+H=lambda E:((x,*t)for x in L if x&E&-E and x&E==x for t in H(E^x))if E else[()]
 n=2
 while 1:
  L=list(M(range(n)));A=[(i,j)for j in range(n)for i in range(j)];S=set();c=0

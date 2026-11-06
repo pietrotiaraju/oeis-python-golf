@@ -5,13 +5,13 @@
 
 Offset 2: 1, 6, 32, 175, 1012, 6230, 40819, 283944, 2090424, 16235417, …
 
-### Python 3 — 94 bytes
+### Python 3 — 86 bytes
 
 ```python
-L=[];n=1
+*L,n=0,2
 while 1:
  t=2**~-n-1;L=[t]+[t:=t+len(L)*L.pop(0)for _ in L*1]
- if n>=2:print(t)
+ print(t)
  n+=1
 ```
 
@@ -28,6 +28,11 @@ while 1:
 - `len(L)` is evaluated before `pop(0)`, and `L*1` fixes the iteration
   count while the old list is consumed. Printing begins at n=2.
 
+- The input coefficients S(1,2), …, S(1,2) vanish.
+  Their first 1 antidiagonal entries are therefore all zero.
+  Seed L with those zeros and start at n=2, avoiding both the
+  zero-only updates and a repeated output-offset test.
+
 **Notes**
 
 - The transform uses exact integers and O(n) storage. The input formula
@@ -40,6 +45,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 94 | first entry |
+| 2026-11-06 | Python 3 | 86 | seed the zero antidiagonal and begin at the output offset |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
