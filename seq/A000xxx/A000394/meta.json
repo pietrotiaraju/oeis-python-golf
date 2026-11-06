@@ -1,0 +1,6 @@
+{
+  "name": "Numbers of form x^2 + y^2 + 7z^2.",
+  "offset": 0,
+  "min_terms": 60,
+  "timeout": 60
+}
