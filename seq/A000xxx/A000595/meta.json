@@ -1,0 +1,6 @@
+{
+  "name": "Number of binary relations on n unlabeled points.",
+  "offset": 0,
+  "min_terms": 25,
+  "timeout": 60
+}
