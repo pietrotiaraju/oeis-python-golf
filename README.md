@@ -271,6 +271,7 @@ sequence for the code and how it works.
 | [A000261](seq/A000xxx/A000261/) | a(n) = n\*a(n-1) + (n-3)\*a(n-2), with a(1) = 0, a(2) = 1. | **46** | 102 |
 | [A000262](seq/A000xxx/A000262/) | Number of "sets of lists": number of partitions of {1,...,n} into any… | **46** | 445 |
 | [A000263](seq/A000xxx/A000263/) | Number of partitions into non-integral powers. | **60** | 36 |
+| [A000264](seq/A000xxx/A000264/) | Number of 3-edge-connected rooted cubic maps with 2n nodes and a… | **132** | 120 |
 | [A000265](seq/A000xxx/A000265/) | Remove all factors of 2 from n; or largest odd divisor of n; or odd… | **32** | 100000 |
 | [A000266](seq/A000xxx/A000266/) | Expansion of e.g.f. exp(-x^2/2) / (1-x). | **48** | 451 |
 | [A000267](seq/A000xxx/A000267/) | Integer part of square root of 4n+1. | **37** | 10001 |
