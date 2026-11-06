@@ -1,0 +1,6 @@
+{
+  "name": "Numbers m such that Fibonacci(m) ends with m.",
+  "offset": 1,
+  "min_terms": 370,
+  "timeout": 60
+}
