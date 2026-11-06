@@ -351,6 +351,7 @@ sequence for the code and how it works.
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |
 | [A000383](seq/A000xxx/A000383/) | Hexanacci numbers with a(0) = ... = a(5) = 1. | **39** | 3359 |
+| [A000385](seq/A000xxx/A000385/) | Convolution of A000203 with itself. | **76** | 10000 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000389](seq/A000xxx/A000389/) | Binomial coefficients C(n,5). | **44** | 1001 |
 | [A000391](seq/A000xxx/A000391/) | Euler transform of A000332. | **103** | 500 |
