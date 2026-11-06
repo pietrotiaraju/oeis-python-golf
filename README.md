@@ -356,6 +356,7 @@ sequence for the code and how it works.
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000344](seq/A000xxx/A000344/) | a(n) = 5\*binomial(2n, n-2)/(n+3). | **52** | 299 |
 | [A000346](seq/A000xxx/A000346/) | a(n) = 2^(2\*n+1) - binomial(2\*n+1, n+1). | **49** | 501 |
+| [A000348](seq/A000xxx/A000348/) | Number of ways to pair up {1^2, 2^2, ..., (2n)^2 } so sum of each… | **157** | 12 |
 | [A000349](seq/A000xxx/A000349/) | One-half the number of permutations of length n with exactly 2 rising… | **129** | 201 |
 | [A000350](seq/A000xxx/A000350/) | Numbers m such that Fibonacci(m) ends with m. | **62** | 370 |
 | [A000351](seq/A000xxx/A000351/) | Powers of 5: a(n) = 5^n. | **24** | 101 |
