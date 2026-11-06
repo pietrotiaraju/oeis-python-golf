@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n with exactly three valleys.",
+  "offset": 7,
+  "min_terms": 194,
+  "timeout": 60
+}
