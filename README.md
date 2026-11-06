@@ -261,6 +261,7 @@ sequence for the code and how it works.
 | [A000252](seq/A000xxx/A000252/) | Number of invertible 2 X 2 matrices mod n. | **95** | 1000 |
 | [A000254](seq/A000xxx/A000254/) | Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) =… | **43** | 450 |
 | [A000255](seq/A000xxx/A000255/) | a(n) = n\*a(n-1) + (n-1)\*a(n-2), a(0) = 1, a(1) = 1. | **39** | 101 |
+| [A000256](seq/A000xxx/A000256/) | Number of simple triangulations of the plane with n nodes. | **92** | 198 |
 | [A000257](seq/A000xxx/A000257/) | Number of rooted bicubic maps: a(n) = (8\*n-4)\*a(n-1)/(n+2) for n >=… | **41** | 201 |
 | [A000260](seq/A000xxx/A000260/) | Number of rooted simplicial 3-polytopes with n+3 nodes; or rooted… | **62** | 201 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
