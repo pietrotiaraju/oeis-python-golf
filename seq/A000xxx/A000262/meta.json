@@ -1,0 +1,6 @@
+{
+  "name": "Number of \"sets of lists\": number of partitions of {1,...,n} into any number of lists, where a list means an ordered subset.",
+  "offset": 0,
+  "min_terms": 445,
+  "timeout": 60
+}
