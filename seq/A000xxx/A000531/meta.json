@@ -1,0 +1,6 @@
+{
+  "name": "From area of cyclic polygon of 2n + 1 sides.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

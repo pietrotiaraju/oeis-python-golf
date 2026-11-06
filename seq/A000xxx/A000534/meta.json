@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are not the sum of 4 nonzero squares.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sum of first n cubes; or n-th triangular number squared.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
