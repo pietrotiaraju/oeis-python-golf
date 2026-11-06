@@ -1,0 +1,6 @@
+{
+  "name": "Dedekind numbers or Dedekind's problem: number of monotone Boolean functions of n variables, number of antichains of subsets of an n-set, number of elements in a free distributive lattice on n generators, number of Sperner families.",
+  "offset": 0,
+  "min_terms": 7,
+  "timeout": 60
+}
