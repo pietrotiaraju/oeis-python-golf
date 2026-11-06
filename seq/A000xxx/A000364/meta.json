@@ -1,0 +1,6 @@
+{
+  "name": "Euler (or secant or \"Zig\") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).",
+  "offset": 0,
+  "min_terms": 243,
+  "timeout": 60
+}
