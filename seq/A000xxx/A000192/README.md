@@ -5,12 +5,12 @@
 
 Offset 0: 2, 46, 7970, 3487246, 2849229890, 3741386059246, 7205584123783010, …
 
-### Python 3 — 89 bytes
+### Python 3 — 88 bytes
 
 ```python
 r=[s:=2];p=1
 while[print(s)]:
- for s in 0,(p:=p*-25)-1|2:r=[s:=s+6*x for x in[0]+r[::-1]]
+ for s in 0,(p:=p*-25)-1|2:r=[s:=s+x*6for x in[0]+r[::-1]]
 ```
 
 **How it works**
@@ -41,12 +41,16 @@ while[print(s)]:
   whole b-file in 60 s.
 - Python's 4300-digit limit for printing ints stops the program after
   a(657).
+- `x*6for` instead of `6*x for`: a digit followed by a keyword needs no
+  space (`6for` tokenizes as `6` and `for`, with only a SyntaxWarning on
+  stderr), 1 byte less.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 89 | first entry |
+| 2026-11-06 | Python 3 | 88 | `x*6for` drops a space (found while golfing A000318) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
