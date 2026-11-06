@@ -5,22 +5,21 @@
 
 Offset 1: 1, 1, 1, 6, 396, 526915620, 1132835421602062347, …
 
-### Python 3 — 631 bytes
+### Python 3 — 621 bytes
 
 ```python
 from itertools import*
 def M(V):
- if not V:yield 0
- else:
+ if V:
   a,*W=V
   for b in W:
    for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
+ else:yield 0
 def H(E):
  if not E:yield()
  else:
-  p=E&-E
   for x in L:
-   if x&p and x&E==x:
+   if x&E&-E and x&E==x:
     for t in H(E^x):yield(x,*t)
 n=2
 while 1:
@@ -59,6 +58,10 @@ while 1:
   next factorization is considered. Every isomorphism class is
   encountered and counted exactly once.
 
+- In the exact-cover generator, `x&E&-E` tests whether matching
+  x contains the least remaining edge. This is the same pivot-edge
+  choice without storing a separate p at each recursion level.
+
 **Notes**
 
 - Vertex relabeling preserves adjacency and factor membership.
@@ -82,6 +85,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 639 | first entry |
 | 2026-11-06 | Python 3 | 631 | simplify equivalent expressions |
+| 2026-11-06 | Python 3 | 621 | inline the least-edge test and shorten the matching base case |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

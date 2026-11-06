@@ -1,16 +1,15 @@
 from itertools import*
 def M(V):
- if not V:yield 0
- else:
+ if V:
   a,*W=V
   for b in W:
    for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
+ else:yield 0
 def H(E):
  if not E:yield()
  else:
-  p=E&-E
   for x in L:
-   if x&p and x&E==x:
+   if x&E&-E and x&E==x:
     for t in H(E^x):yield(x,*t)
 n=2
 while 1:

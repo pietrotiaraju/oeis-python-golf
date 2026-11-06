@@ -5,44 +5,38 @@
 
 Offset 1: 0, 0, 6, 425, 65625, 27894671, 35716401889, 144866174953833, 1923407307449265675, …
 
-### Python 3 — 357 bytes
+### Python 3 — 275 bytes
 
 ```python
 from itertools import*
+s=lambda A:bool(A)and(not(p:=next((r for r in A if r[0]),[]))or s([[p[0]*x-r[0]*y for x,y in zip(r[1:],p[1:])]for r in A if r is not p]))
 n=1
-def s(V):
- A=[[(x>>i)&1 for i in R]for x in V]
- for i in R:
-  p=next((j for j in range(i,n)if A[j][i]),-1)
-  if p<0:return 1
-  A[i],A[p]=A[p],A[i]
-  for j in range(i+1,n):
-   b=A[j][i]
-   if b:A[j]=[x*A[i][i]-y*b for x,y in zip(A[j],A[i])]
- return 0
 while 1:
- R=range(n);print(sum(s(V)for V in combinations(range(1,1<<n),n)));n+=1
+ R=range(n);print(sum(s([[x>>i&1 for i in R]for x in V])for V in combinations(range(1,1<<n),n)));n+=1
 ```
 
 **How it works**
 
-- The OEIS count identifies row permutations and requires distinct,
-  nonzero rows. Encode each binary row by an integer from 1 through
-  2ⁿ−1. `combinations(...,n)` then chooses every permitted row
-  set once, with no additional division by n!.
-- s(V) expands the selected integers into an n×n matrix using
-  their bits. It tests rank over the rationals, not over the
-  two-element field; integer arithmetic keeps that distinction exact.
-- In column i, search rows i through n−1 for a nonzero pivot.
-  If none exists, the matrix is singular and the function returns 1.
-  Otherwise swap that row into position i.
-- For each lower row j with entry b in the pivot column, replace
-  row_j by A[i][i]·row_j−b·row_i. Its pivot-column entry
-  becomes zero. Multiplication by a nonzero pivot and subtraction
-  preserve rational rank, without introducing fractions.
-- Successful pivots in all n columns establish full rank, returning
-  0. The outer sum therefore counts precisely the singular row
-  sets. The size starts at n=1 and advances after each output.
+- The row convention identifies row permutations and requires
+  distinct, nonzero rows. The combinations of n integers from
+  1 through 2ⁿ−1 choose each permitted row set exactly once.
+  Their bits form an n×n integer matrix A.
+- The function s tests singularity over the rationals. An empty
+  matrix is nonsingular for this recursion. In a nonempty matrix,
+  choose the first row p with nonzero first entry; if none exists,
+  the first column vanishes and the matrix is singular.
+- For every other row r, eliminate its first entry by replacing
+  the row with p[0]·r−r[0]·p. This uses a nonzero multiplier,
+  so it preserves rank over the rationals without introducing
+  fractions. Remove the pivot row and the now-zero first column;
+  the original matrix is singular exactly when this smaller
+  matrix is singular.
+- The expression `r is not p` removes only the chosen row object.
+  Other rows with equal values must remain: duplicates reveal a
+  rational dependence rather than disappearing from the problem.
+- Recurse until a pivot is missing or the matrix is empty. The
+  outer sum converts the resulting booleans to integer counts.
+  Every count therefore includes all rational dependencies.
 
 **Notes**
 
@@ -57,7 +51,8 @@ while 1:
   C(31,5)=169911 matrices, and each elimination takes O(n³)
   arithmetic operations. The division-free updates can also grow
   intermediate integers, so larger sizes become expensive quickly.
-- Only one row set and its matrix are needed at a time. The program
+- Only one row set and its elimination path are retained at a time.
+  The program
   is a complete finite enumeration at each size, with no stored
   sequence values or floating-point rank tolerance.
 - The b-file has 9 terms (indices 1 through 9). The bar is the
@@ -68,6 +63,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 357 | first entry |
+| 2026-11-06 | Python 3 | 275 | recurse on the fraction-free Schur complement |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

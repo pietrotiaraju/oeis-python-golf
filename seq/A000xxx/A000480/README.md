@@ -5,15 +5,15 @@
 
 Offset 0: 1, 0, -1, -1, -1, 0, 0, 0, -1, -1, …
 
-### Python 3 — 225 bytes
+### Python 3 — 211 bytes
 
 ```python
 n=S=1
 print(1)
 while 1:
- S*=2;K=S.bit_length();E=20*K+20
- p=sum((-1)**k*S*16//((2*k+1)*5**(2*k+1))-(-1)**k*S*4//((2*k+1)*239**(2*k+1))for k in range(K))
- while p>E and(q:=2*n*S//(p+E))==2*n*S//(p-E):print(-(q%4 in(1,2)));n+=1
+ S*=2;K=S.bit_length();E=20*-~K
+ p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
+ while p>E and(q:=2*n*S//(p+E))==2*n*S//(p-E):print(-(q+1>>1&1));n+=1
 ```
 
 **How it works**
@@ -24,12 +24,13 @@ while 1:
 - [Machin's identity](https://mathworld.wolfram.com/Machin-LikeFormulas.html)
   is π=16atan(1/5)−4atan(1/239). With
   atan(1/b)=Σₖ≥₀ (−1)ᵏ/((2k+1)b^(2k+1)), take K terms
-  at the integer scale S. The comprehension rounds each of
-  the two scaled contributions down before subtracting them.
+  at the integer scale S. The comprehension uses the pairs
+  `(16,5)` and `(-4,239)` and rounds every signed scaled
+  contribution down before adding the two series.
 - Those divisions contribute less than 2K total error. Since
   K=S.bit_length() and S≥2, the two scaled alternating-series
   tails together are less than 1. The generous error allowance
-  E=20K+20 therefore proves **p−E<Sπ<p+E**.
+  E=20(K+1) therefore proves **p−E<Sπ<p+E**.
 - Once `p>E`, both denominators are positive. The two quotients
   ⌊2nS/(p+E)⌋ and ⌊2nS/(p−E)⌋ bracket
   q=⌊2n/π⌋. Print only if they agree, using the first
@@ -41,7 +42,8 @@ while 1:
 - For positive integer n, cos(n) is strictly between −1 and 1
   and never zero. Its floor is therefore −1 precisely in the
   two negative-cosine quadrants. With q=⌊2n/π⌋, their
-  residues are 1 and 2 modulo 4, giving `-(q%4 in(1,2))`.
+  residues are 1 and 2 modulo 4, giving `-(q+1>>1&1)`: the second bit of q+1 is set
+  precisely for those two quadrant residues.
 - The exceptional cos(0)=1 is printed before the loop; all
   later outputs are 0 or −1. This is why n begins at 1.
 
@@ -71,6 +73,7 @@ The sector-to-output mapping is:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 225 | first entry |
+| 2026-11-06 | Python 3 | 211 | share the Machin summand and shorten the quadrant test |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

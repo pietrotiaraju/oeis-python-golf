@@ -5,7 +5,7 @@
 
 Offset 1: 1, 2, 6, 20, 91, 509, 3608, 31856, 340416, 4269971, …
 
-### Python 3 — 596 bytes
+### Python 3 — 573 bytes
 
 ```python
 from itertools import*
@@ -18,9 +18,9 @@ def G(i,D):
   for U in combinations_with_replacement(range(i+1,n),D[i]):
    C=D*1
    for j in U:C[j]-=1
-   if min(C[i+1:],default=0)<0:continue
+   if min(C)<0:continue
    for j in range(i+1,n):A[i][j]=A[j][i]=U.count(j)
-   C[i]=0;yield from G(i+1,C)
+   yield from G(i+1,C)
 n=2
 while 1:
  R=range(n);A=[[0]*n for _ in R];S=set();c=0
@@ -46,8 +46,10 @@ while 1:
   avoids choosing an edge twice.
 - Copy D to C and subtract those incidences from C[j]. A negative
   remaining degree rejects the choice. Set A[i][j]=A[j][i]
-  to U's multiplicity of j, clear C[i], and recurse. These
-  choices generate every labeled loopless cubic multigraph once.
+  to U's multiplicity of j and recurse. Processed entries of C
+  stay nonnegative and are never read again for degree choices,
+  so `min(C)<0` tests the whole vector and no entry needs clearing.
+  These choices generate every labeled loopless cubic multigraph once.
 - At a completed matrix, grow the set V of vertices reachable
   from 0. Repeating at most n times reaches every vertex in its
   component; yield the matrix only if `len(V)==n`.
@@ -83,6 +85,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 597 | first entry |
 | 2026-11-06 | Python 3 | 596 | simplify equivalent expressions |
+| 2026-11-06 | Python 3 | 573 | keep processed degree entries and check the whole degree vector |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

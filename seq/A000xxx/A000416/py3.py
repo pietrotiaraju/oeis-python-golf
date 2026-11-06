@@ -1,8 +1,3 @@
-d=7
-S={frozenset()}
-while S:
- T=set()
- for s in S:
-  for v in {(0,)*d}|{tuple(x+(j==i)for j,x in enumerate(u))for u in s for i in range(d)}:
-   if v not in s and all(tuple(x-(j==i)for j,x in enumerate(v))in s for i in range(d)if v[i]):T.add(s|{v})
- S=T;print(len(S))
+P=2,3,5,7,11,13,17;n=1
+f=lambda S:n<=len(S)or sum(f(S|{c})for c in{s*p for s in S for p in P}if c>max(S)and{c//p for p in P if c%p<1}<=S)
+while[print(+f({1}))]:n+=1

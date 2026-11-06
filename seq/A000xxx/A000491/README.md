@@ -10,15 +10,15 @@ identical black ones. A fixed black total reduces the two-variable
 product to the ordinary partition series followed by 5 short
 recurrence filters and one polynomial convolution.
 
-### Python 3 — 296 bytes
+### Python 3 — 284 bytes
 
 ```python
 from math import*
-a=[1];n=0;F=[];Q=[[0]*k for k in range(1,6)]
+a=[1];n=0;F=[0]*15;Q=[[0]*k for k in range(1,6)]
 while 1:
  t=a[-1]
- for L in Q:t+=L.pop(0);L+=[t]
- F+=[t];print(sum(x*y for x,y in zip([7,5,2,-2,-7,-9,-6,1,4,6,3,1,-3,-2,1],F[::-1])))
+ for L in Q:L+=[t:=t+L.pop(0)]
+ F=[t]+F;print(sumprod([7,5,2,-2,-7,-9,-6,1,4,6,3,1,-3,-2,1],F[:15]))
  n+=1;a+=[sum((k%2*2-1)*a[-k*(3*k-1)//2]for k in range(-isqrt(n),isqrt(n)+1)if 0<k*(3*k-1)//2<=n)]
 ```
 
@@ -50,13 +50,15 @@ while 1:
   so `a[-g]` is p(n−g).
 - Each queue L of length k applies division by 1−xᵏ to the
   current coefficient stream: z(n)=input(n)+z(n−k).
-  `L.pop(0)` retrieves z(n−k), and `L+=[t]` saves z(n).
+  `L.pop(0)` retrieves z(n−k); the assignment expression adds
+  it to t and `L+=[t:=t+L.pop(0)]` saves the new z(n).
   The queues start with zeros for negative indices, and are built
   separately so their mutations do not alias one another.
-- After the 5 filters, F holds coefficients of P/D_5.
-  `zip(N,F[::-1])` takes their short convolution with N; zip
-  stops at the available coefficients when n is small, implicitly
-  treating negative-index terms as zero.
+- After the 5 filters, t is the current coefficient of P/D_5.
+  `F=[t]+F` puts it at the front of the history. The initial
+  15 zeros supply coefficients at negative indices, so `F[:15]`
+  always has exactly as many entries as the numerator polynomial.
+  `sumprod` takes their exact integer dot product.
 
 - At n=0 no white objects occur, leaving exactly the ordinary
   partitions of 5: 7. This is N(0),
@@ -70,7 +72,7 @@ while 1:
   from storing initial terms of the answer.
 - The queue lengths total 15; a and F grow by
   one entry per term. The pentagonal sum has O(√n) summands,
-  while `F[::-1]` also copies the whole accumulated F each round.
+  while prepending to F also copies its accumulated history each round.
   These operations, plus large-integer arithmetic, set the runtime.
 - [A000412](../A000412/) uses the same partition stream
   with a different black total, filter count and numerator.
@@ -84,6 +86,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 296 | first entry |
+| 2026-11-06 | Python 3 | 284 | use sumprod on padded coefficient history and combine queue updates |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,14 +5,14 @@
 
 Offset 0: 0, 1, 1, 0, -1, -1, 0, 1, 1, 0, …
 
-### Python 3 — 239 bytes
+### Python 3 — 215 bytes
 
 ```python
 n=0;S=1
 while 1:
- S*=2;K=S.bit_length();E=20*K+20
- p=sum((-1)**k*S*16//((2*k+1)*5**(2*k+1))-(-1)**k*S*4//((2*k+1)*239**(2*k+1))for k in range(K))
- while p>E and(q:=6*n*S//(p+E))==6*n*S//(p-E):print((0,1,1,1,1,0,0,-1,-1,-1,-1,0)[q%12]);n+=1
+ S*=2;K=S.bit_length();E=20*-~K
+ p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
+ while p>E and(q:=6*n*S//(p+E))==6*n*S//(p-E):print((0<q%6<5)*(1-q//6%2*2));n+=1
 ```
 
 **How it works**
@@ -23,12 +23,13 @@ while 1:
 - [Machin's identity](https://mathworld.wolfram.com/Machin-LikeFormulas.html)
   is π=16atan(1/5)−4atan(1/239). With
   atan(1/b)=Σₖ≥₀ (−1)ᵏ/((2k+1)b^(2k+1)), take K terms
-  at the integer scale S. The comprehension rounds each of
-  the two scaled contributions down before subtracting them.
+  at the integer scale S. The comprehension uses the pairs
+  `(16,5)` and `(-4,239)` and rounds every signed scaled
+  contribution down before adding the two series.
 - Those divisions contribute less than 2K total error. Since
   K=S.bit_length() and S≥2, the two scaled alternating-series
   tails together are less than 1. The generous error allowance
-  E=20K+20 therefore proves **p−E<Sπ<p+E**.
+  E=20(K+1) therefore proves **p−E<Sπ<p+E**.
 - Once `p>E`, both denominators are positive. The two quotients
   ⌊6nS/(p+E)⌋ and ⌊6nS/(p−E)⌋ bracket
   q=⌊6n/π⌋. Print only if they agree, using the first
@@ -40,7 +41,9 @@ while 1:
 - Sine rounds to 1 above 1/2, −1 below −1/2, and 0
   between. These thresholds are multiples of π/6, so
   q=⌊6n/π⌋ identifies one of twelve sectors per period.
-  The tuple returns 1 for residues 1 through 4, −1 for
+  `0<q%6<5` selects the four nonzero sectors in each
+  half-period, while `1-q//6%2*2` supplies their alternating
+  sign. The result is 1 for residues 1 through 4, −1 for
   residues 7 through 10, and zero for the others.
 - The n=0 quotient is exactly zero and prints 0. No positive
   integer n lies at a tie sin(n)=±1/2, since such an n
@@ -72,6 +75,7 @@ The sector-to-output mapping is:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 239 | first entry |
+| 2026-11-06 | Python 3 | 215 | share the Machin summand and compute the sector sign arithmetically |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -8,9 +8,9 @@ def G(i,D):
   for U in combinations_with_replacement(range(i+1,n),D[i]):
    C=D*1
    for j in U:C[j]-=1
-   if min(C[i+1:],default=0)<0:continue
+   if min(C)<0:continue
    for j in range(i+1,n):A[i][j]=A[j][i]=U.count(j)
-   C[i]=0;yield from G(i+1,C)
+   yield from G(i+1,C)
 n=2
 while 1:
  R=range(n);A=[[0]*n for _ in R];S=set();c=0
