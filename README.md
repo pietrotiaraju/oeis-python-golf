@@ -288,6 +288,7 @@ sequence for the code and how it works.
 | [A000278](seq/A000xxx/A000278/) | a(n) = a(n-1) + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 26 |
 | [A000279](seq/A000xxx/A000279/) | Card matching: coefficients B[n,1] of t in the reduced hit polynomial… | **74** | 300 |
 | [A000280](seq/A000xxx/A000280/) | a(n) = a(n-1) + a(n-2)^3. | **36** | 18 |
+| [A000281](seq/A000xxx/A000281/) | Expansion of cos(x)/cos(2x). | **75** | 216 |
 | [A000283](seq/A000xxx/A000283/) | a(n) = a(n-1)^2 + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 15 |
 | [A000284](seq/A000xxx/A000284/) | a(n) = a(n-1)^3 + a(n-2) with a(0)=0, a(1)=1. | **36** | 11 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
