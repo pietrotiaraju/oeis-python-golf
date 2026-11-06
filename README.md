@@ -4,6 +4,10 @@ Shortest known Python programs that generate sequences from the
 [OEIS](https://oeis.org/). Every record is run and checked against the
 sequence's OEIS b-file, locally and in CI.
 
+New to golfing these? The [golf tricks](TRICKS.md) page collects the
+techniques that come up again and again across the sequence pages, each with a
+short example and links to the sequences that use it.
+
 ## Records
 
 Size in bytes, shortest in bold. The last column is how many terms every
