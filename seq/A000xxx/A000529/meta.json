@@ -1,0 +1,6 @@
+{
+  "name": "Powers of rooted tree enumerator.",
+  "offset": 1,
+  "min_terms": 50,
+  "timeout": 60
+}

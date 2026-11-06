@@ -522,13 +522,23 @@ sequence for the code and how it works.
 | [A000506](seq/A000xxx/A000506/) | One half of the number of permutations of [n] such that the… | **116** | 18 |
 | [A000507](seq/A000xxx/A000507/) | Number of permutations of [n] with exactly 3 increasing runs of… | **91** | 18 |
 | [A000508](seq/A000xxx/A000508/) | Generalized class numbers c\_(n,3). | **143** | 21 |
+| [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
+| [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
 | [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **93** | 995 |
 | [A000515](seq/A000xxx/A000515/) | a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)\*binomial(2n,n)^2. | **51** | 101 |
+| [A000516](seq/A000xxx/A000516/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
 | [A000517](seq/A000xxx/A000517/) | Number of permutations of length n with exactly three valleys. | **100** | 194 |
 | [A000518](seq/A000xxx/A000518/) | Generalized tangent numbers d\_(n,4). | **155** | 1000 |
+| [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **802** | 7 |
 | [A000520](seq/A000xxx/A000520/) | Nearest integer to log\_10(n). | **39** | 1000 |
+| [A000521](seq/A000xxx/A000521/) | Coefficients of modular function j as power series in q = e^(2 Pi i… | **156** | 150 |
 | [A000522](seq/A000xxx/A000522/) | Total number of ordered k-tuples (k=0..n) of distinct elements from… | **36** | 451 |
 | [A000523](seq/A000xxx/A000523/) | a(n) = floor(log\_2(n)). | **36** | 105 |
+| [A000524](seq/A000xxx/A000524/) | Number of rooted trees with n nodes, 2 of which are labeled. | **195** | 30 |
+| [A000525](seq/A000xxx/A000525/) | Number of partially labeled rooted trees with n nodes (4 of which are… | **214** | 21 |
+| [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **218** | 30 |
+| [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **218** | 15 |
+| [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **108** | 50 |
 | [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **71** | 100 |
 | [A000533](seq/A000xxx/A000533/) | a(0)=1; a(n) = 10^n + 1, n >= 1. | **33** | 101 |
 | [A000534](seq/A000xxx/A000534/) | Numbers that are not the sum of 4 nonzero squares. | **102** | 100 |
