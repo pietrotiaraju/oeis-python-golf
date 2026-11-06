@@ -1,0 +1,6 @@
+{
+  "name": "H_n(-1/2), where H_n(x) is Hermite polynomial of degree n.",
+  "offset": 0,
+  "min_terms": 733,
+  "timeout": 60
+}
