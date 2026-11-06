@@ -321,6 +321,7 @@ sequence for the code and how it works.
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
 | [A000320](seq/A000xxx/A000320/) | Generalized tangent numbers d(5,n). | **89** | 189 |
 | [A000328](seq/A000xxx/A000328/) | Number of points of norm <= n^2 in square lattice. | **77** | 400 |
+| [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000359](seq/A000xxx/A000359/) | Coefficients of iterated exponentials. | **85** | 100 |
