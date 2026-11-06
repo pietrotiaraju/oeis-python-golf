@@ -320,6 +320,7 @@ sequence for the code and how it works.
 | [A000303](seq/A000xxx/A000303/) | Number of permutations of [n] in which the longest increasing run has… | **83** | 464 |
 | [A000304](seq/A000xxx/A000304/) | a(n) = a(n-1)\*a(n-2). | **33** | 17 |
 | [A000307](seq/A000xxx/A000307/) | Number of 4-level labeled rooted trees with n leaves. | **85** | 441 |
+| [A000308](seq/A000xxx/A000308/) | a(n) = a(n-1)\*a(n-2)\*a(n-3) with a(1)=1, a(2)=2 and a(3)=3. | **43** | 15 |
 | [A000310](seq/A000xxx/A000310/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000311](seq/A000xxx/A000311/) | Schroeder's fourth problem; also series-reduced rooted trees with n… | **81** | 376 |
 | [A000312](seq/A000xxx/A000312/) | a(n) = n^n; number of labeled mappings from n points to themselves… | **27** | 386 |
