@@ -407,6 +407,7 @@ sequence for the code and how it works.
 | [A000394](seq/A000xxx/A000394/) | Numbers of form x^2 + y^2 + 7z^2. | **75** | 60 |
 | [A000395](seq/A000xxx/A000395/) | 6th power of rooted tree enumerator; number of linear forests of 6… | **107** | 995 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
+| [A000397](seq/A000xxx/A000397/) | Number of partitions into non-integral powers. | **137** | 13 |
 | [A000398](seq/A000xxx/A000398/) | Numbers of form x^2 + 2y^2 + 2yz + 4z^2. | **79** | 450 |
 | [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000400](seq/A000xxx/A000400/) | Powers of 6: a(n) = 6^n. | **24** | 101 |
