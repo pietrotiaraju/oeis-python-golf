@@ -5,11 +5,11 @@
 
 Offset 0: 1, −1, 0, 1, 2, 13, 80, 579, 4738, 43387, 439792, …
 
-### Python 3 — 62 bytes
+### Python 3 — 60 bytes
 
 ```python
-a=n=0;b=-1;c=1
-while[print(c-b-0**n)]:a,b,c=b,c,n*(b+c)+a;n+=1
+a=b=n=1;c=0
+while[print(a+b-1//n)]:a,b,c=-b,c,n*(b+c)-a;n+=1
 ```
 
 **How it works**
@@ -26,14 +26,21 @@ while[print(c-b-0**n)]:a,b,c=b,c,n*(b+c)+a;n+=1
   x²(1+x)W′ = (1−x²−x³)W − (1−x²) for W(x) = f(t)/(1+x). Comparing the
   coefficients of xⁿ gives the recurrence plus corrections at n = 0 and
   n = 2 only.
-- The state is (a,b,c) = (W_{n−2}, W_{n−1}, W_n) and the update computes
-  W_{n+1} = n(W_n + W_{n−1}) + W_{n−2}. The seeds W_{−2} = 0, W_{−1} = −1
-  come from Somos's symmetry W(−1−n) = −W(n), and they make the
-  recurrence hold at every step, including the n = 2 correction (the
-  steps n = 0 and 1 produce W_1 = 0 and W_2 = 0).
+- At counter n the state is (a,b,c) = (−W_{n−2}, W_{n−1}, W_n), the
+  update computes W_{n+1} = n(W_n + W_{n−1}) + W_{n−2} = `n*(b+c)-a`, and
+  the program prints the middle difference W_{n−1} − W_{n−2} = `a+b`.
+  This is the [A000271](../A000271/) program with a different print.
+- The start n = 1 needs W_{−1} = −1 (Somos's symmetry W(−1−n) = −W(n)),
+  so the seeds are a = 1, b = W_0 = 1, c = W_1 = 0; storing a negated
+  makes three of them 1, one chained assignment. The only step outside
+  the proved range is n = 1, which gives 1·(0 + 1) − 1 = 0 = W_2.
 - With W_{−1} = −1 the first difference is W_0 − W_{−1} = 2, the value
-  a(0) = 2 that the D-finite recurrences of A000179 use; `-0**n`
-  subtracts 1 at n = 0 only, giving the conventional a(0) = 1.
+  a(0) = 2 that the D-finite recurrences of A000179 use; `-1//n`
+  subtracts 1 at n = 1 only (the pass that prints a(0)), giving the
+  conventional a(0) = 1.
+- Printing the newest difference instead, from the state
+  (W_{n−2}, W_{n−1}, W_n) with seeds `a=n=0;b=-1;c=1` and `-0**n`, was
+  62 bytes.
 
 **Notes**
 
@@ -48,6 +55,7 @@ while[print(c-b-0**n)]:a,b,c=b,c,n*(b+c)+a;n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 62 | first entry |
+| 2026-11-06 | Python 3 | 60 | print the middle state (seeds `a=b=n=1;c=0`), as in A000271 |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

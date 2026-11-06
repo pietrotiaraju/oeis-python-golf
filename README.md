@@ -186,7 +186,7 @@ sequence for the code and how it works.
 | [A000176](seq/A000xxx/A000176/) | Generalized tangent numbers d\_(n,2). | **126** | 4500 |
 | [A000177](seq/A000xxx/A000177/) | Number of partitions of n into 6 squares. | **94** | 200 |
 | [A000178](seq/A000xxx/A000178/) | Superfactorials: product of first n factorials. | **38** | 47 |
-| [A000179](seq/A000xxx/A000179/) | Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of… | **62** | 451 |
+| [A000179](seq/A000xxx/A000179/) | Ménage numbers: a(0) = 1, a(1) = -1, and for n >= 2, a(n) = number of… | **60** | 451 |
 | [A000180](seq/A000xxx/A000180/) | Expansion of E.g.f. exp(-x)/(1-3x). | **33** | 101 |
 | [A000181](seq/A000xxx/A000181/) | a(n) = A058087(n,n-4). | **89** | 247 |
 | [A000182](seq/A000xxx/A000182/) | Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f.… | **66** | 243 |
