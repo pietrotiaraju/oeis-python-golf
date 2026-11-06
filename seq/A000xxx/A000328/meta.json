@@ -1,0 +1,6 @@
+{
+  "name": "Number of points of norm <= n^2 in square lattice.",
+  "offset": 0,
+  "min_terms": 400,
+  "timeout": 60
+}
