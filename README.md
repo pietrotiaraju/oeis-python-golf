@@ -319,6 +319,7 @@ sequence for the code and how it works.
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **40** | 201 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
+| [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
