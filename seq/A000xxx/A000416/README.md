@@ -20,22 +20,51 @@ while S:
 
 **How it works**
 
-A 6-dimensional partition is a finite order ideal of N^7
-with the coordinatewise order. Start with the empty ideal.
-An element can be added exactly when all its immediate lower
-neighbors already belong to the ideal. Every nonempty ideal
-has a maximal element whose removal gives an earlier ideal,
-so this construction reaches every ideal of the next size.
-Frozensets remove duplicate constructions without identifying
-coordinate permutations. Print the number of ideals after
-each size increase; this is the actual partition count rather
-than the different MacMahon Euler-product prediction.
+- A 6-dimensional partition is a weakly decreasing
+  6-dimensional array of nonnegative integers. Replace
+  each entry by a stack of that many cells: the result is a finite
+  **order ideal in ℕ^7**, a set containing every cell below
+  each of its cells in the coordinatewise order.
+- S contains all ideals of the current size. It starts with the
+  single empty ideal, `S={frozenset()}`. An ideal s is itself
+  immutable so it can be stored as an element of the outer set.
+- A new cell is either the origin `(0,)*d` or one step above
+  an existing cell along one of the d=7 axes. The nested
+  comprehension increments coordinate i using `x+(j==i)`;
+  the candidate set merges cells generated from several neighbors.
+- Accept v only if it is new and every immediate lower neighbor
+  is present. The generator checks axis i only when `v[i]` is
+  positive, avoiding negative coordinates. Since s is already an
+  ideal, having these immediate neighbors also supplies every
+  more distant lower cell.
+- `T.add(s|{v})` stores an ideal with one extra cell. Different
+  choices of the removed maximal cell can lead to the same ideal;
+  T deduplicates those constructions by exact equality of the cell
+  sets. Coordinate permutations remain distinct.
+- After all extensions, `S=T;print(len(S))` advances the size
+  and prints its count. The origin is the only one-cell ideal,
+  giving a(1)=1; extending it in any of 7 axes gives
+  a(2)=7.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 7 terms in 10 s; the official b-file contains 21 terms.
-- This exhaustive construction grows quickly in time and memory. The bar is the first seven terms; later sizes remain mathematically exact but require more resources.
+- Completeness follows by removing a maximal cell from any nonempty
+  ideal. The remainder is a smaller ideal, and the removed cell
+  is one of its allowed extensions. Induction therefore reaches
+  every ideal of every size, with exact integer counts.
+- The axes are fixed. Identifying configurations under rotations
+  would instead count a different sequence; frozenset equality
+  here only removes duplicate paths to the same configuration.
+- Every ideal in a layer is stored, and each can produce several
+  copied cell sets. The rapidly growing layer sizes dominate both
+  time and memory. A chain exists at every size, so S never empties
+  mathematically; resource limits stop practical runs.
+- [A000427](../A000427/) changes only d by one.
+  [A000417](../A000417/) is the corresponding
+  MacMahon Euler-product prediction, which already differs at
+  n=6; it cannot replace this exhaustive count.
+- The b-file has 21 terms (indices 1 through 21). The bar is the
+  first 7 terms in 10 s.
 
 ## History
 

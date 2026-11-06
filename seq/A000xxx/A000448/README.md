@@ -31,26 +31,51 @@ while 1:
 
 **How it works**
 
-As explained on [A000446](../A000446/), a positive minimum
-uses only primes 1 mod 4 with decreasing exponents. If their
-exponents are e_i, the number of unordered two-square
-representations is ceil(product(e_i+1)/2). Thus the threshold
-for at least n representations is product(e_i+1)>=2n-1.
-G(d,i,b) minimizes the remaining prime-power product, requiring
-a divisor-count product at least d, starting at prime P[i],
-with the next exponent at most b. After choosing e>=1, the
-remaining threshold is ceil(d/(e+1)) and later exponents
-are bounded by e. Exponent 1 provides an initial valid
-upper bound. Stop increasing e once P[i]^e reaches that
-bound, since every remaining factor is at least 1. No
-optimal candidate is discarded. Memoization makes the exact
-search practical. The first term is separately 0=0²+0².
+- By the two-square count and exchange argument on
+  [A000446](../A000446/), a positive minimum uses increasing
+  primes p_i≡1 mod 4 with nonincreasing positive exponents e_i.
+  It has ⌈∏(e_i+1)/2⌉ unordered nonnegative-square
+  representations, so the target here is **∏(e_i+1)≥2n−1**.
+- `G(d,i,b)` finds the least remaining product using primes from
+  P[i] onward, requiring an exponent-factor product at least d,
+  with the next exponent at most b. If d<2, no further prime is
+  needed and the answer is the multiplicative identity 1.
+- Choosing exponent e leaves threshold ⌈d/(e+1)⌉. The integer
+  expression `(d+e)//(e+1)` computes it exactly, and passing e
+  as the next bound enforces nonincreasing exponents.
+- The exponent-1 choice gives an initial valid candidate
+  `p*G((d+1)//2,i+1,1)`. The loop then tries exponents 2
+  through min(b,d−1), maintaining t=pᵉ. Larger exponents need
+  not be tried: e=d−1 already satisfies the entire remaining
+  threshold with this prime alone.
+- Once t≥v, even multiplying t by the smallest possible remaining
+  factor 1 cannot improve the current valid answer v. Breaking there
+  is a rigorous pruning bound, not an arbitrary search cutoff.
+- Every positive exponent multiplies the factor count by at least
+  2, so only logarithmically many prime positions are needed. Trial
+  division extends P to `(2*n).bit_length()` primes 1 mod 4;
+  it retains the same prime prefix between outputs.
+- Print 0 first for n=1, then call `G(2*n-1,0,2*n-2)`.
+  The initial exponent bound d−1 is sufficient by the same argument
+  used inside the recursion.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
-
+- Every admissible exponent pattern is either evaluated or excluded
+  by a lower bound already no smaller than a valid answer. Thus the
+  memoized search returns the global minimum using exact integers.
+- For n=7, 27625=5³·13·17 has factor product 4·2·2=16,
+  giving eight representations. It qualifies both here and for n=8,
+  explaining the repeated output 27625.
+- Unlike the exact-count sequence [A000446](../A000446/), these
+  minima are nondecreasing: increasing the threshold only removes
+  candidates. Enforcing exact equality would incorrectly reject
+  useful candidates that overshoot the threshold.
+- `@cache` reuses `(d,i,b)` states across calls and output indices.
+  Cache storage and large-integer products are the main resource
+  costs; no bound on the numerical size of the minimum is imposed.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
