@@ -5,12 +5,12 @@
 
 Offset 4: 1, 0, 15, 70, 630, 5544, 55650, 611820, 7342335, 95449640, …
 
-### Python 3 — 70 bytes
+### Python 3 — 69 bytes
 
 ```python
-from math import*
+import math
 a=1;n=4
-while[print(a)]:n+=1;a=n*a+(-1)**n*comb(n,4)
+while[print(a)]:n+=1;a=n*a+(-1)**n*math.comb(n,4)
 ```
 
 **How it works**
@@ -30,6 +30,7 @@ starting with a(4)=1; every operation is an integer operation.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 70 | first entry |
+| 2026-11-06 | Python 3 | 69 | import math for a single comb call |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
