@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is smallest number > a(n-1) of form a(i)*a(j), i < j < n.",
+  "offset": 1,
+  "min_terms": 49,
+  "timeout": 60
+}
