@@ -357,6 +357,7 @@ sequence for the code and how it works.
 | [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000344](seq/A000xxx/A000344/) | a(n) = 5\*binomial(2n, n-2)/(n+3). | **52** | 299 |
+| [A000345](seq/A000xxx/A000345/) | Number of partitions into non-integral powers. | **141** | 15 |
 | [A000346](seq/A000xxx/A000346/) | a(n) = 2^(2\*n+1) - binomial(2\*n+1, n+1). | **49** | 501 |
 | [A000348](seq/A000xxx/A000348/) | Number of ways to pair up {1^2, 2^2, ..., (2n)^2 } so sum of each… | **157** | 12 |
 | [A000349](seq/A000xxx/A000349/) | One-half the number of permutations of length n with exactly 2 rising… | **129** | 201 |
