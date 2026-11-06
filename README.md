@@ -559,6 +559,16 @@ sequence for the code and how it works.
 | [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
 | [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **94** | 25 |
 | [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
+| [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **35** | 10001 |
+| [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **32** | 1001 |
+| [A000570](seq/A000xxx/A000570/) | Number of tournaments on n nodes determined by their score vectors. | **54** | 500 |
+| [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **81** | 59 |
+| [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
+| [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
+| [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
+| [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
+| [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **50** | 994 |
+| [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **50** | 993 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

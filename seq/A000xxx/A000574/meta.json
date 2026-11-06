@@ -1,0 +1,6 @@
+{
+  "name": "Coefficient of x^5 in expansion of (1 + x + x^2)^n.",
+  "offset": 3,
+  "min_terms": 998,
+  "timeout": 60
+}
