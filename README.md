@@ -99,6 +99,7 @@ sequence for the code and how it works.
 | [A000083](seq/A000xxx/A000083/) | Number of mixed Husimi trees with n nodes; or polygonal cacti with… | **262** | 501 |
 | [A000084](seq/A000xxx/A000084/) | Number of series-parallel networks with n unlabeled edges. Also… | **91** | 1001 |
 | [A000085](seq/A000xxx/A000085/) | Number of self-inverse permutations on n letters, also known as… | **40** | 801 |
+| [A000086](seq/A000xxx/A000086/) | Number of solutions to x^2 - x + 1 == 0 (mod n). | **56** | 2000 |
 | [A000087](seq/A000xxx/A000087/) | Number of unrooted nonseparable planar maps with n edges and a… | **160** | 200 |
 | [A000088](seq/A000xxx/A000088/) | Number of simple graphs on n unlabeled nodes. | **169** | 40 |
 | [A000089](seq/A000xxx/A000089/) | Number of solutions to x^2 + 1 == 0 (mod n). | **54** | 10000 |
