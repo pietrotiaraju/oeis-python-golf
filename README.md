@@ -18,7 +18,7 @@ sequence for the code and how it works.
 
 | Sequence | Name | Python 3 | Terms checked |
 |---|---|---|---|
-| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **255** | 6 |
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **217** | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | 10502 |
 | [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **146** | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | 1001 |
