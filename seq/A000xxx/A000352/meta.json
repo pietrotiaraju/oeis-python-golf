@@ -1,0 +1,6 @@
+{
+  "name": "One half of the number of permutations of [n] such that the differences have three runs with the same signs.",
+  "offset": 4,
+  "min_terms": 397,
+  "timeout": 60
+}
