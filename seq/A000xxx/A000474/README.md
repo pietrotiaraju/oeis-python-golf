@@ -5,21 +5,23 @@
 
 Offset 1: 1, 1, 1, 6, 396, 526915620, 1132835421602062347, …
 
-### Python 3 — 550 bytes
+### Python 3 — 512 bytes
 
 ```python
 from itertools import*
-M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
+F=frozenset
+E=lambda a,b:1<<((c:=max(a,b))*~-c//2+a+b-c)
+M=lambda V:(e|E(a,b)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
 H=lambda E:((x,*t)for x in L if x&E&-E and x&E==x for t in H(E^x))if E else[()]
 n=2
 while 1:
- L=list(M(range(n)));A=[(i,j)for j in range(n)for i in range(j)];S=set();c=0
- for t in H((1<<len(A))-1):
-  if frozenset(t)in S:continue
+ R=range(n);L=[*M(R)];S=set();c=0
+ for t in H((1<<n*~-n//2)-1):
+  if F(t)in S:continue
   c+=1
-  for p in permutations(range(n)):
-   B=[1<<((b:=max(p[i],p[j]))*(b-1)//2+min(p[i],p[j]))for i,j in A]
-   S.add(frozenset(sum(B[k]for k in range(len(A))if x>>k&1)for x in t))
+  for p in permutations(R):
+   B=[E(p[i],p[j])for j in R for i in range(j)]
+   S.add(F(sum(b*(x>>k&1)for k,b in enumerate(B))for x in t))
  print(c);n+=2
 ```
 
@@ -36,15 +38,14 @@ while 1:
   once. For isomorphism testing, `frozenset(t)` explicitly removes
   factor order from its representation.
 - If this frozenset is not already in S, increment the class count.
-  A is the fixed list of edges (i,j), i<j; the program
-  reads a matching's set bits directly when relabeling it.
-- For every vertex permutation p, B maps an old edge position to
-  the bit of its relabeled edge {p[i],p[j]}. Taking its smaller
-  and larger endpoints restores the triangular bit encoding.
-- `sum(B[k]for k in range(len(A))if x>>k&1)` makes
-  the relabeled mask of matching x, selecting exactly its set bits.
-  Distinct edges have distinct image bits, so their sum equals
-  their bitwise union. Store the frozenset of those masks in S.
+  `E(a,b)` supplies the triangular edge bit shared by matching generation
+  and relabeling. Its larger endpoint c gives index c(c−1)/2+a+b−c.
+- For every vertex permutation p, B lists the image bits of all edges,
+  generated in triangular order by j and then i<j.
+- `sum(b*(x>>k&1)for k,b in enumerate(B))` makes the relabeled mask
+  of matching x. The multiplier selects precisely its occupied edge bits.
+  Distinct edges have distinct image bits, so the sum is their bitwise
+  union. Store the frozenset of those masks in S.
 - Thus the whole vertex-permutation orbit is marked before the
   next factorization is considered. Every isomorphism class is
   encountered and counted exactly once.
@@ -88,6 +89,7 @@ while 1:
 | 2026-11-06 | Python 3 | 621 | inline the least-edge test and shorten the matching base case |
 | 2026-11-06 | Python 3 | 579 | use lazy lambdas for matchings and exact covers |
 | 2026-11-06 | Python 3 | 550 | read each matching bit directly while relabeling |
+| 2026-11-06 | Python 3 | 512 | share the edge encoder and generate relabeling indices directly |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

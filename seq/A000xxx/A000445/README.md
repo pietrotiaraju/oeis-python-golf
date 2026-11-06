@@ -5,34 +5,20 @@
 
 Offset 2: 9, 77, 1224, 7888, 202124, 1649375, …
 
-### Python 3 — 934 bytes
+### Python 3 — 874 bytes
 
 ```python
 from math import*
 from functools import*
-def J(a,n):
- t=1;a%=n
- while a:
-  while a%2<1:a//=2;t*=1-2*(n%8 in(3,5))
-  a,n=n,a;t*=1-2*(a%4==n%4==3);a%=n
- return t*(n==1)
+J=lambda a,n:1if n<2 else J(n%a,a)*(-1)**(a//2*(n//2))if a%2 else a and J(a//2,n)*(-1)**((n*n-1)//8)
 P=cache(lambda n:next((p for p in range(2,isqrt(n)+1)if n%p<1),n))
-def Q(n):
- for r in range(2,n+1):
-  if n%(r<<2*(r%4!=1)):continue
-  x=r;u=()
-  while x>1:
-   p=P(x);x//=p
-   if x%p<1:break
-   u+=p,
-  else:yield r,u
 def S(d,C):
  def f(F):
   x=len(F);p=P(x)
-  return max([x-1 if c==F[-1]==0 else f(V)for c in(range(d)if p==x else[(F[p]+F[x//p])%d])if x!=2 or d%(c or d)<1 for V in[F+[c]]if all(max(u)!=x or sum(V[p]for p in u)%2==e for u,e in C)]+[0])
+  return max([x-1 if c==F[-1]==0 else f(V)for c in(range(d)if p==x else[(F[p]+F[x//p])%d])if x>2 or d%(c or d)<1 for V in[F+[c]]if all(sum(V[p]for p in u)%2==e for u,e in C if u[-1]==x)]+[0])
  return f([0,0])
 def V(n):
- L=[*Q(n)]
+ L=[(r,u)for r in range(2,n+1)if n%(r<<2*(r%4!=1))<1 for u in[tuple(p for p in range(2,r+1)if r%p<1 and P(p)==p)]if prod(u)==r]
  T={(d:=gcd(a-1,n),tuple((u,(1-J(r,a))//2)for r,u in L)if d%2<1 else())for a in range(1,n)if gcd(a,n)<2}
  return max([S(d,E)for d,E in T]+[min(R&{x-1for x in R}or{0})for p in range(2,n+1)if n%p<1 and P(p)==p for R in[{x**n%p for x in range(1,p)}]])
 n=2
@@ -52,18 +38,16 @@ while 1:print(V(n));n+=1
   restrictions; a set comprehension searches each distinct pair once.
   Primes dividing n are checked directly at the end as ramified
   exceptions.
-- `Q(n)` generates squarefree r whose positive
-  fundamental discriminant divides n, together with their prime
-  factors ps. Its output is materialized once as L so all unit
-  classes can reuse it; `r<<2*(r%4!=1)` supplies the same
-  fundamental discriminant by multiplying r by 1 or 4.
-  A repeated factor rejects r. J computes the Jacobi
-  symbol by removing powers of two and quadratic reciprocity;
-  it supplies the required parity of the colors in ps.
-- J updates its sign by multiplying by `1-2*condition`,
-  which is −1 exactly when reciprocity or the power-of-two
-  rule requires a sign change. Q stores factor tuples directly,
-  keeping every Frobenius type hashable.
+- `L` lists squarefree r whose positive fundamental discriminant divides
+  n, together with their prime factors in increasing order. It is built
+  once so all unit classes can reuse it. `r<<2*(r%4!=1)` supplies the
+  fundamental discriminant by multiplying r by 1 or 4. The product of
+  the distinct prime divisors equals r exactly when r is squarefree.
+- J computes the Jacobi symbol recursively. Removing a factor 2 uses
+  the sign (−1)^((n²−1)/8); swapping odd arguments uses
+  (−1)^(⌊a/2⌋⌊n/2⌋), the quadratic-reciprocity sign. Modulus 1 returns 1,
+  and numerator 0 at a larger modulus returns 0. This gives the required
+  parity of the colors in each factor tuple.
 - Inside search, F[x] is the color assigned to x. Start with
   `[0,0]`, using position 0 as a placeholder and f(1)=0.
   At x=len(F), `P(x)` is the least prime factor: at a
@@ -73,7 +57,7 @@ while 1:print(V(n));n+=1
   Multiplying every color by a unit modulo d preserves its zero
   set and parity conditions; these choices represent all possible
   greatest common divisors of the original color with d.
-- After appending c, check each relation whose largest prime
+- After appending c, check each relation whose last (largest) prime
   has just been assigned. All its referenced F entries then
   exist. Reject the branch if the sum of those colors has the
   wrong parity.
@@ -161,6 +145,7 @@ and the OEIS references on consecutive power residues.
 | 2026-11-06 | Python 3 | 1146 | shorten identifiers and equivalent expressions |
 | 2026-11-06 | Python 3 | 975 | compress Jacobi signs, color search and Frobenius-type deduplication |
 | 2026-11-06 | Python 3 | 934 | generate quadratic relations lazily and combine finite maxima |
+| 2026-11-06 | Python 3 | 874 | recursive Jacobi symbol, squarefree-divisor comprehension and ordered parity checks |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
