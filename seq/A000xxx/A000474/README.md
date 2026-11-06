@@ -5,7 +5,7 @@
 
 Offset 1: 1, 1, 1, 6, 396, 526915620, 1132835421602062347, …
 
-### Python 3 — 639 bytes
+### Python 3 — 631 bytes
 
 ```python
 from itertools import*
@@ -29,7 +29,7 @@ while 1:
   if frozenset(t)in S:continue
   c+=1;Q=[[k for k in range(len(A))if x>>k&1]for x in t]
   for p in permutations(range(n)):
-   B=[1<<(max(p[i],p[j])*(max(p[i],p[j])-1)//2+min(p[i],p[j]))for i,j in A]
+   B=[1<<((b:=max(p[i],p[j]))*(b-1)//2+min(p[i],p[j]))for i,j in A]
    S.add(frozenset(sum(B[k]for k in q)for q in Q))
  print(c);n+=2
 ```
@@ -57,6 +57,7 @@ each n, with no precomputed sequence values.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 639 | first entry |
+| 2026-11-06 | Python 3 | 631 | simplify equivalent expressions |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

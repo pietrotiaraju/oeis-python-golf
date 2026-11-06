@@ -19,6 +19,6 @@ while 1:
   if frozenset(t)in S:continue
   c+=1;Q=[[k for k in range(len(A))if x>>k&1]for x in t]
   for p in permutations(range(n)):
-   B=[1<<(max(p[i],p[j])*(max(p[i],p[j])-1)//2+min(p[i],p[j]))for i,j in A]
+   B=[1<<((b:=max(p[i],p[j]))*(b-1)//2+min(p[i],p[j]))for i,j in A]
    S.add(frozenset(sum(B[k]for k in q)for q in Q))
  print(c);n+=2

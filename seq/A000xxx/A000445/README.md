@@ -5,7 +5,7 @@
 
 Offset 2: 9, 77, 1224, 7888, 202124, 1649375, …
 
-### Python 3 — 1350 bytes
+### Python 3 — 1146 bytes
 
 ```python
 from math import gcd,isqrt
@@ -13,56 +13,56 @@ from functools import cache
 def J(a,n):
  t=1;a%=n
  while a:
-  while a%2==0:
+  while a%2<1:
    a//=2
-   if n%8 in (3,5):t=-t
+   if n%8 in(3,5):t=-t
   a,n=n,a
   if a%4==n%4==3:t=-t
   a%=n
- return t if n==1 else 0
+ return t*(n==1)
 @cache
-def factor(n):
- return next((p for p in range(2,isqrt(n)+1)if n%p==0),n)
-def quadratic_relations(n):
- out=[]
+def P(n):
+ return next((p for p in range(2,isqrt(n)+1)if n%p<1),n)
+def Q(n):
+ O=[]
  for r in range(2,n+1):
   D=r if r%4==1 else 4*r
   if n%D:continue
-  x=r;ps=[]
+  x=r;u=[]
   while x>1:
-   p=factor(x);x//=p
-   if x%p==0:break
-   ps.append(p)
-  else:out.append((r,ps))
- return out
-def search(d,conditions):
- def rec(F):
-  x=len(F);p=factor(x)
-  cs=range(d)if p==x else [(F[p]+F[x//p])%d]
-  if x==2:cs=[c for c in cs if c==0 or d%c==0]
-  best=0
-  for c in cs:
+   p=P(x);x//=p
+   if x%p<1:break
+   u.append(p)
+  else:O.append((r,u))
+ return O
+def S(d,C):
+ def f(F):
+  x=len(F);p=P(x)
+  U=range(d)if p==x else [(F[p]+F[x//p])%d]
+  if x==2:U=[c for c in U if c==0 or d%c==0]
+  B=0
+  for c in U:
    V=F+[c]
-   if any(max(ps)==x and sum(V[p]for p in ps)%2!=e for ps,e in conditions):continue
-   v=x-1 if c==F[-1]==0 else rec(V)
-   best=max(best,v)
-  return best
- return rec([0,0])
-def value(n):
- rel=quadratic_relations(n);types=set();answer=0
+   if any(max(u)==x and sum(V[p]for p in u)%2!=e for u,e in C):continue
+   v=x-1 if c==F[-1]==0 else f(V)
+   B=max(B,v)
+  return B
+ return f([0,0])
+def V(n):
+ L=Q(n);T=set();b=0
  for a in range(1,n):
   if gcd(a,n)>1:continue
   d=gcd(a-1,n)
-  cond=tuple((tuple(ps),(1-J(r,a))//2)for r,ps in rel)if d%2==0 else ()
-  if (d,cond)in types:continue
-  types.add((d,cond));answer=max(answer,search(d,cond))
+  E=tuple((tuple(u),(1-J(r,a))//2)for r,u in L)if d%2==0 else ()
+  if (d,E)in T:continue
+  T.add((d,E));b=max(b,S(d,E))
  for p in range(2,n+1):
-  if n%p==0 and factor(p)==p:
+  if n%p<1 and P(p)==p:
    R={pow(x,n,p)for x in range(1,p)}
-   answer=max(answer,min((x for x in R if x+1 in R),default=0))
- return answer
+   b=max(b,min([x for x in R if x+1 in R]or[0]))
+ return b
 n=2
-while 1:print(value(n));n+=1
+while 1:print(V(n));n+=1
 ```
 
 **How it works**
@@ -126,6 +126,7 @@ and the OEIS references on consecutive power residues.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 1350 | first entry |
+| 2026-11-06 | Python 3 | 1146 | shorten identifiers and equivalent expressions |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

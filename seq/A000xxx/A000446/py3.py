@@ -3,7 +3,7 @@ from functools import*
 @cache
 def D(d):return{d}|{z for x in range(2,isqrt(d)+1)if d%x<1 for z in(x,d//x)}
 @cache
-def F(d,i,b):return 1 if d<2 else min((P[i]**(j-1)*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))),default=0)
+def F(d,i,b):return 1 if d<2 else min([P[i]**(j-1)*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))]or[0])
 P=[];p=5;n=1
 print(0)
 while 1:

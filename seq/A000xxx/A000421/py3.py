@@ -6,7 +6,7 @@ def G(i,D):
   if len(V)==n:yield tuple(A[i][j]for j in R for i in range(j))
  else:
   for U in combinations_with_replacement(range(i+1,n),D[i]):
-   C=D[:]
+   C=D*1
    for j in U:C[j]-=1
    if min(C[i+1:],default=0)<0:continue
    for j in range(i+1,n):A[i][j]=A[j][i]=U.count(j)

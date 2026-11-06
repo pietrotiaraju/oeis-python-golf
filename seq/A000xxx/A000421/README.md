@@ -5,7 +5,7 @@
 
 Offset 1: 1, 2, 6, 20, 91, 509, 3608, 31856, 340416, 4269971, …
 
-### Python 3 — 597 bytes
+### Python 3 — 596 bytes
 
 ```python
 from itertools import*
@@ -16,7 +16,7 @@ def G(i,D):
   if len(V)==n:yield tuple(A[i][j]for j in R for i in range(j))
  else:
   for U in combinations_with_replacement(range(i+1,n),D[i]):
-   C=D[:]
+   C=D*1
    for j in U:C[j]-=1
    if min(C[i+1:],default=0)<0:continue
    for j in range(i+1,n):A[i][j]=A[j][i]=U.count(j)
@@ -55,6 +55,7 @@ The vertex count starts at two and advances by two.
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 597 | first entry |
+| 2026-11-06 | Python 3 | 596 | simplify equivalent expressions |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

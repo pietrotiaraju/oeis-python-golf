@@ -5,7 +5,7 @@
 
 Offset 1: 0, 25, 325, 1105, 4225, 5525, 203125, 27625, 71825, 138125, …
 
-### Python 3 — 410 bytes
+### Python 3 — 405 bytes
 
 ```python
 from math import*
@@ -13,7 +13,7 @@ from functools import*
 @cache
 def D(d):return{d}|{z for x in range(2,isqrt(d)+1)if d%x<1 for z in(x,d//x)}
 @cache
-def F(d,i,b):return 1 if d<2 else min((P[i]**(j-1)*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))),default=0)
+def F(d,i,b):return 1 if d<2 else min([P[i]**(j-1)*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))]or[0])
 P=[];p=5;n=1
 print(0)
 while 1:
@@ -81,6 +81,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 410 | first entry |
+| 2026-11-06 | Python 3 | 405 | simplify the minimum expression |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
