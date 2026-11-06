@@ -1,0 +1,6 @@
+{
+  "name": "Number of isomorphism classes of connected 3-regular (trivalent, cubic) loopless multigraphs of order 2n.",
+  "offset": 1,
+  "min_terms": 3,
+  "timeout": 10
+}

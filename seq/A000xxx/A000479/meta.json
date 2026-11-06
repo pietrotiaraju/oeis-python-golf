@@ -1,0 +1,6 @@
+{
+  "name": "Number of 1-factorizations of K_{n,n}.",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 10
+}
