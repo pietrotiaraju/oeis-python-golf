@@ -1,0 +1,6 @@
+{
+  "name": "Number of 5-dimensional partitions of n.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}
