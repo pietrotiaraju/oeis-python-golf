@@ -5,22 +5,26 @@
 
 Offset 7: 1, 8, 36, 120, 330, 792, 1716, 3432, 6435, 11440, …
 
-### Python 3 — 50 bytes
+### Python 3 — 41 bytes
 
 ```python
-from math import*
-n=7
-while[print(comb(n,7))]:n+=1
+n=7;a=1
+while[print(a)]:n+=1;a=a*n//(n-7)
 ```
 
 **How it works**
 
-- The sequence is the 7-th binomial column C(n,7). `comb` computes
-  the coefficient exactly, returning zero when n<7.
-- Starting at the OEIS offset n=7 prints C(7,7)=1 first, followed
-  by the coefficients for all larger n.
-- A direct binomial call avoids special cases in the multiplicative
-  recurrence at the beginning of a column.
+- Start with C(7,7)=1 at the OEIS offset n=7.
+  Consecutive entries of the binomial column obey
+
+  **C(n,7)=n·C(n−1,7)/(n−7)**, for n>7.
+
+- Print the stored coefficient, increment n, then multiply and
+  divide by that ratio. The first division has denominator 1;
+  every later division is exact by the binomial identity.
+- The program needs only the counter and one coefficient. No
+  imports or separate handling of the column's earlier zeros are
+  needed, since output starts at n=7.
 
 **Notes**
 
@@ -34,6 +38,7 @@ while[print(comb(n,7))]:n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 50 | first entry |
+| 2026-11-06 | Python 3 | 41 | advance the binomial column by its exact ratio |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

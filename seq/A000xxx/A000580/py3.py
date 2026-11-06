@@ -1,3 +1,2 @@
-from math import*
-n=7
-while[print(comb(n,7))]:n+=1
+n=7;a=1
+while[print(a)]:n+=1;a=a*n//(n-7)

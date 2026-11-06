@@ -5,15 +5,15 @@
 
 Offset 4: 9, 30, 180, 980, 8326, 70272, 695690, 7518720, 89193276, 1148241458, …
 
-### Python 3 — 236 bytes
+### Python 3 — 228 bytes
 
 ```python
 from math import*
 n=4
 while 1:
  B=4**n;z=B*B;w=z*z;a=b=c=0;d=1
- for v in([0,-2*z,-2*z*(1+B),3*w]+[0]*n)[:n]:a,b,c,d=b,c,d,(1+3*B)*d-2*z*c-z*(1+B)*b+w*a+v
- print(sum((-1)**(k-4)*comb(k,4)*perm(n-k)*(d//B**k%B)for k in range(4,n+1)));n+=1
+ for v in[0,-2*z,-2*z*(1+B),3*w]+[0]*(n-4):a,b,c,d=b,c,d,(1+3*B)*d-2*z*c-z*(1+B)*b+w*a+v
+ print(sum((-1)**k*comb(k,4)*perm(n-k)*(d//B**k%B)for k in range(n+1)));n+=1
 ```
 
 **How it works**
@@ -36,9 +36,9 @@ while 1:
   initially R_(−3),R_(−2),R_(−1),R_0. Each simultaneous
   assignment shifts them and appends R_q(B), preserving all old
   values for the recurrence.
-- The list of v values supplies the four numerator corrections,
-  followed by zeros; slicing to n entries performs exactly n
-  updates. Thus d=R_n(B) when the final print is evaluated.
+- The list supplies the four numerator corrections followed by
+  n−4 zeros. Every output has n≥4, so it performs exactly n
+  updates and leaves d=R_n(B) when the final print is evaluated.
 - The board is the union of the three specified permutations,
   so every row has at most three allowed cells. Choose the k
   occupied rows, then one cell in each: even before excluding
@@ -55,6 +55,11 @@ while 1:
   after each output. A new base and a fresh polynomial evaluation
   are used each time, so no previously packed digits need to be
   reinterpreted when the required base grows.
+
+- The fixed hit index is 4. Its parity separates the sign
+  (−1)^(k−4) into (−1)^k and the constant (−1)^4; the latter
+  is applied outside the sum when negative. The summation can
+  begin at k=0 because C(k,4)=0 for k<4.
 
 **Notes**
 
@@ -82,6 +87,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 240 | first entry |
 | 2026-11-06 | Python 3 | 236 | use the three-cells-per-row bound for the packing base |
+| 2026-11-06 | Python 3 | 228 | shorten numerator padding and pull out the fixed parity sign |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
