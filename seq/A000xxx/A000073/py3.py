@@ -1,2 +1,2 @@
-a=b=0;c=1
-while[print(a)]:a,b,c=b,c,a+b+c
+l=0,0,1
+while 1:a,*l=*l,sum(l);print(a)
