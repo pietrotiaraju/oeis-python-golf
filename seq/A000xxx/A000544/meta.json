@@ -1,0 +1,6 @@
+{
+  "name": "One-half of the number of permutations p of [n] having exactly two runs of adjacent entries differing by 1.",
+  "offset": 4,
+  "min_terms": 447,
+  "timeout": 60
+}

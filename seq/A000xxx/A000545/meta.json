@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of n-coloring a dodecahedron.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

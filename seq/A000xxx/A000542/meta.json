@@ -1,0 +1,6 @@
+{
+  "name": "Sum of 8th powers: 1^8 + 2^8 + ... + n^8.",
+  "offset": 0,
+  "min_terms": 24,
+  "timeout": 60
+}
