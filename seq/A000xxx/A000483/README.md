@@ -5,11 +5,10 @@
 
 Offset 6: 15, 210, 2380, 26432, 303660, 3678840, 47324376, 647536032, 9418945536, 145410580224, …
 
-### Python 3 — 142 bytes
+### Python 3 — 120 bytes
 
 ```python
-from math import*
-A=[[1,0,0,0],[0,0,0,0]];n=1
+A=[[1]+[0]*3,[0]*4];n=1
 while 1:
  n+=1;A+=[[0]+[(n-1)*(A[-1][k]+A[-2][k-1])for k in range(1,4)]]
  if n>5:print(A[-1][3])
@@ -53,6 +52,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 142 | first entry |
+| 2026-11-06 | Python 3 | 120 | remove unused import and compress the seed rows |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
