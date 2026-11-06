@@ -381,6 +381,7 @@ sequence for the code and how it works.
 | [A000374](seq/A000xxx/A000374/) | Number of cycles (mod n) under doubling map. | **77** | 480 |
 | [A000375](seq/A000xxx/A000375/) | Topswops (1): start by shuffling n cards labeled 1..n. If top card is… | **125** | 10 |
 | [A000376](seq/A000xxx/A000376/) | Topswops (2): start by shuffling n cards labeled 1..n. If the top… | **102** | 12 |
+| [A000377](seq/A000xxx/A000377/) | Expansion of f(-q^3) \* f(-q^8) \* chi(-q^12) / chi(-q) in powers of q… | **73** | 10001 |
 | [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000379](seq/A000xxx/A000379/) | Numbers where total number of 1-bits in the exponents of their prime… | **88** | 8000 |
 | [A000380](seq/A000xxx/A000380/) | Number of permutations of an n-sequence discordant with three given… | **116** | 6 |
