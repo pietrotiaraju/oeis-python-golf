@@ -351,6 +351,7 @@ sequence for the code and how it works.
 | [A000337](seq/A000xxx/A000337/) | a(n) = (n-1)\*2^n + 1. | **33** | 1001 |
 | [A000338](seq/A000xxx/A000338/) | Expansion of x^3\*(5-2\*x)\*(1-x^3)/(1-x)^4. | **38** | 998 |
 | [A000340](seq/A000xxx/A000340/) | a(0)=1, a(n) = 3\*a(n-1) + n + 1. | **34** | 1001 |
+| [A000341](seq/A000xxx/A000341/) | Number of ways to pair up {1..2n} so sum of each pair is prime. | **144** | 11 |
 | [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000344](seq/A000xxx/A000344/) | a(n) = 5\*binomial(2n, n-2)/(n+3). | **52** | 299 |
