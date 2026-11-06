@@ -37,7 +37,7 @@ v_j = (((j·p − 1) mod q) + 1 − p) mod 2,  a(n) = Σ_j v_j·2^(q−1−j).
 **Notes**
 
 - Integers only, exact for every n. The b-file has 10000 terms (n = 0 to
-  9999, the longest about 400 digits) and they all print in about a second;
+  9999, the longest 157 digits) and they all print in about a second;
   the bar is the whole b-file.
 - The formula is checked against the recursive construction on the OEIS
   page (each column word is a lift of one or two earlier words, the PARI
