@@ -275,6 +275,7 @@ sequence for the code and how it works.
 | [A000266](seq/A000xxx/A000266/) | Expansion of e.g.f. exp(-x^2/2) / (1-x). | **48** | 451 |
 | [A000267](seq/A000xxx/A000267/) | Integer part of square root of 4n+1. | **37** | 10001 |
 | [A000268](seq/A000xxx/A000268/) | E.g.f.: -log(1+log(1+log(1-x))). | **85** | 400 |
+| [A000271](seq/A000xxx/A000271/) | Sums of ménage numbers. | **53** | 451 |
 | [A000272](seq/A000xxx/A000272/) | Number of trees on n labeled nodes: n^(n-2) with a(0)=1. | **36** | 389 |
 | [A000274](seq/A000xxx/A000274/) | Number of permutations of length n with 2 consecutive ascending pairs. | **40** | 150 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
