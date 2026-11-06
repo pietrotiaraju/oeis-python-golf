@@ -313,6 +313,7 @@ sequence for the code and how it works.
 | [A000299](seq/A000xxx/A000299/) | Number of n-node rooted trees of height 4. | **121** | 1000 |
 | [A000300](seq/A000xxx/A000300/) | 4th power of rooted tree enumerator: linear forests of 4 rooted trees. | **107** | 497 |
 | [A000307](seq/A000xxx/A000307/) | Number of 4-level labeled rooted trees with n leaves. | **85** | 441 |
+| [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
