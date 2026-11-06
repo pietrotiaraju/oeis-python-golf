@@ -569,6 +569,16 @@ sequence for the code and how it works.
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
 | [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **50** | 994 |
 | [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **50** | 993 |
+| [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **50** | 992 |
+| [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
+| [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
+| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **188** | 10001 |
+| [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **98** | 596 |
+| [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
+| [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
+| [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
+| [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **116** | 2750 |
+| [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

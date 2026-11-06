@@ -1,0 +1,6 @@
+{
+  "name": "Fifth powers: a(n) = n^5.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}

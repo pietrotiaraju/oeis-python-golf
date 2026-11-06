@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonnegative solutions of x^2 + y^2 = z in first n shells.",
+  "offset": 0,
+  "min_terms": 2750,
+  "timeout": 60
+}

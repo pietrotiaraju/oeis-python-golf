@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 13*binomial(2n,n-6)/(n+7).",
+  "offset": 6,
+  "min_terms": 195,
+  "timeout": 60
+}
