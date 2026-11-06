@@ -1,0 +1,6 @@
+{
+  "name": "One-half the number of permutations of length n with exactly 2 rising or falling successions.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
