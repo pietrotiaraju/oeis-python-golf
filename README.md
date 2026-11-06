@@ -279,6 +279,7 @@ sequence for the code and how it works.
 | [A000270](seq/A000xxx/A000270/) | For n >= 2, a(n) = b(n+1)+b(n)+b(n-1), where the b(i) are the ménage… | **58** | 176 |
 | [A000271](seq/A000xxx/A000271/) | Sums of ménage numbers. | **53** | 451 |
 | [A000272](seq/A000xxx/A000272/) | Number of trees on n labeled nodes: n^(n-2) with a(0)=1. | **36** | 389 |
+| [A000273](seq/A000xxx/A000273/) | Number of unlabeled simple digraphs with n nodes. | **133** | 20 |
 | [A000274](seq/A000xxx/A000274/) | Number of permutations of length n with 2 consecutive ascending pairs. | **40** | 150 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
