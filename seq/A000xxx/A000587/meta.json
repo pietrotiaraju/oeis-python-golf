@@ -1,0 +1,6 @@
+{
+  "name": "Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).",
+  "offset": 0,
+  "min_terms": 596,
+  "timeout": 60
+}
