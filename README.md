@@ -363,6 +363,7 @@ sequence for the code and how it works.
 | [A000362](seq/A000xxx/A000362/) | Generalized class numbers c\_(n,2). | **129** | 4700 |
 | [A000363](seq/A000xxx/A000363/) | Number of permutations of [n] with exactly 2 increasing runs of… | **49** | 997 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
+| [A000365](seq/A000xxx/A000365/) | Number of genus 0 rooted planar maps with 4 faces and n vertices. | **78** | 198 |
 | [A000366](seq/A000xxx/A000366/) | Genocchi numbers of second kind (A005439) divided by 2^(n-1). | **81** | 100 |
 | [A000367](seq/A000xxx/A000367/) | Numerators of Bernoulli numbers B\_2n. | **138** | 250 |
 | [A000368](seq/A000xxx/A000368/) | Number of connected graphs with one cycle of length 4. | **170** | 1997 |
