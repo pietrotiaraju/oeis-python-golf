@@ -5,13 +5,13 @@
 
 Offset 1: 0, 25, 325, 1105, 4225, 5525, 203125, 27625, 71825, 138125, …
 
-### Python 3 — 370 bytes
+### Python 3 — 361 bytes
 
 ```python
 from math import*
 from functools import*
 D=cache(lambda d:{d}|{z for x in range(2,isqrt(d)+1)if d%x<1 for z in(x,d//x)})
-F=cache(lambda d,i,b: 1 if d<2 else min([P[i]**~-j*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))]or[0]))
+F=cache(lambda d,i,b:d<2or min([P[i]**~-j*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))]or[0]))
 P=[];p=t=n=1
 print(0)
 while n:=n+1:
@@ -43,7 +43,9 @@ while n:=n+1:
   P[i]^(j−1) times `F(d//j,i+1,j)`.
 - Passing j as the new bound lists the factors in nonincreasing
   order, so every exponent pattern is reached without permuting it.
-  `d<2` means the target product has been exhausted and returns 1.
+  `d<2` means the target product has been exhausted. The short-circuit
+  result `True` acts as 1 in each prime-power multiplication. Top-level
+  targets are greater than 1, so the printed minima are integers.
   An impossible branch returns 0; the walrus condition discards it
   before it could incorrectly win the minimum.
 - P contains successive primes 1 mod 4. Immediately before
@@ -87,6 +89,7 @@ while n:=n+1:
 | 2026-11-06 | Python 3 | 410 | first entry |
 | 2026-11-06 | Python 3 | 405 | simplify the minimum expression |
 | 2026-11-06 | Python 3 | 370 | use Wilson prime generation, cached lambdas and a shared target |
+| 2026-11-06 | Python 3 | 361 | short-circuit the exhausted-factor base case |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

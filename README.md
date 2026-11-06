@@ -459,7 +459,7 @@ sequence for the code and how it works.
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
 | [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **934** | 2 |
-| [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **370** | 1458 |
+| [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **361** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **319** | 10000 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **59** | 98 |
@@ -541,7 +541,7 @@ sequence for the code and how it works.
 | [A000525](seq/A000xxx/A000525/) | Number of partially labeled rooted trees with n nodes (4 of which are… | **214** | 21 |
 | [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **218** | 30 |
 | [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **218** | 15 |
-| [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **449** | 5 |
+| [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **366** | 5 |
 | [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **108** | 50 |
 | [A000530](seq/A000xxx/A000530/) | Let p(n, s, x) be predicate that number of occurrences of s's in x >=… | **240** | 8 |
 | [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **71** | 100 |

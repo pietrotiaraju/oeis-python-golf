@@ -1,18 +1,11 @@
 from itertools import*
 n=1
 while 1:
- Q=list(permutations(range(n)));C=set()
+ Q=[*permutations(range(n))];C=set()
  def f(L):
   r=len(L)
-  if r==n:
-   H=[]
-   for T in(L,list(zip(*L))):
-    for q in Q:
-     for a in T:
-      z=[a[q[i]]for i in range(n)]
-      H+=[tuple(sorted(tuple(z.index(b[q[i]])for i in range(n))for b in T))]
-   C.add(min(H))
+  if r==n:C.add(min(tuple(sorted(tuple(z.index(b[i])for i in q)for b in T))for T in(L,[*zip(*L)])for q in Q for a in T if(z:=[a[i]for i in q])))
   else:
    for p in Q:
-    if p[0]==r and all(p[j]not in[b[j]for b in L]for j in range(n)):f(L+[p])
- f([tuple(range(n))]);print(len(C));n+=1
+    if p[0]==r and all(x not in c for x,c in zip(p,zip(*L))):f(L+[p])
+ f([range(n)]);print(len(C));n+=1
