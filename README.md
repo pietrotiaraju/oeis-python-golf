@@ -309,6 +309,7 @@ sequence for the code and how it works.
 | [A000295](seq/A000xxx/A000295/) | Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1… | **30** | 501 |
 | [A000296](seq/A000xxx/A000296/) | Set partitions without singletons: number of partitions of an n-set… | **56** | 576 |
 | [A000297](seq/A000xxx/A000297/) | a(n) = (n+1)\*(n+3)\*(n+8)/6. | **39** | 1002 |
+| [A000298](seq/A000xxx/A000298/) | Number of partitions into non-integral powers. | **177** | 22 |
 | [A000299](seq/A000xxx/A000299/) | Number of n-node rooted trees of height 4. | **121** | 1000 |
 | [A000300](seq/A000xxx/A000300/) | 4th power of rooted tree enumerator: linear forests of 4 rooted trees. | **107** | 497 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
