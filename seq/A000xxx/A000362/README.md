@@ -47,7 +47,7 @@ while 1:b+=2;D+=0,sum((v:=y*y%(2*b)-b)**3*(2*b-abs(v))-b**3*v-D[b//y*(y%2>b%y)]f
   the program also reproduces the b-file terms it reaches.
 - `(v:=…)*(v*v*(2*b-abs(v))-b**3)` is 1 byte longer, and the factored
   forms v·u·(b² − u(u + b)) with u = |v| − b, or F3·(b² + |F3|) with
-  F3 = v(|v| − b), the A000233 term, are 4 and 6 bytes longer. Looping
+  F3 = v(|v| − b), the A000233 term, are 5 and 6 bytes longer. Looping
   over 4n (the A000233 variant) saves 2 bytes in the term but costs more in
   the padding and the final shift.
 - Each term takes O(n) steps. Here it printed 6173 terms in 60 s (term
