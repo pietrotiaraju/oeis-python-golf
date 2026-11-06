@@ -25,9 +25,10 @@ while[s&{n-j-7*k for j in s for k in s}and print(n)]:n+=1;s|={n*n}
 
 **Notes**
 
-- Exact integers, a direct test of the definition. The form is not regular
-  (3, 6, 14, 19, 21, 22, 31, … are missing in no simple pattern), so there
-  is no congruence test to replace the search.
+- Exact integers, a direct test of the definition. The missing numbers
+  (3, 6, 14, 19, 21, 22, 31, 35, …, A097633) show no simple pattern by
+  powers of 2 and 7 and residues mod 8 and 7 up to 3000, so the program
+  uses no congruence shortcut.
 - `any(n-j-7*k in s for j in s for k in s)` with a list `s` is 5 bytes
   longer, and a list with `{…}&{*s}` 2 bytes longer.
 - Term n looks at (n + 1)² pairs, so the program prints about 450 terms in
