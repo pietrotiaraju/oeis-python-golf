@@ -267,6 +267,7 @@ sequence for the code and how it works.
 | [A000257](seq/A000xxx/A000257/) | Number of rooted bicubic maps: a(n) = (8\*n-4)\*a(n-1)/(n+2) for n >=… | **41** | 201 |
 | [A000258](seq/A000xxx/A000258/) | Expansion of e.g.f. exp(exp(exp(x)-1)-1). | **84** | 476 |
 | [A000260](seq/A000xxx/A000260/) | Number of rooted simplicial 3-polytopes with n+3 nodes; or rooted… | **62** | 201 |
+| [A000265](seq/A000xxx/A000265/) | Remove all factors of 2 from n; or largest odd divisor of n; or odd… | **32** | 100000 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
