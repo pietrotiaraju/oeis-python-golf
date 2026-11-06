@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of a Bessel function (reciprocal of J_0(z)); also pairs of permutations with rise/rise forbidden.",
+  "offset": 0,
+  "min_terms": 262,
+  "timeout": 60
+}
