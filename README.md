@@ -358,6 +358,7 @@ sequence for the code and how it works.
 | [A000359](seq/A000xxx/A000359/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000360](seq/A000xxx/A000360/) | Distribution of nonempty triangles inside a fractal rep-4-tile. | **47** | 10001 |
 | [A000361](seq/A000xxx/A000361/) | Binary encodings of the successive columns of the Gosper-Lafitte… | **81** | 10000 |
+| [A000362](seq/A000xxx/A000362/) | Generalized class numbers c\_(n,2). | **129** | 4700 |
 | [A000363](seq/A000xxx/A000363/) | Number of permutations of [n] with exactly 2 increasing runs of… | **49** | 997 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
 | [A000366](seq/A000xxx/A000366/) | Genocchi numbers of second kind (A005439) divided by 2^(n-1). | **81** | 100 |
