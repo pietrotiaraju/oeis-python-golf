@@ -5,16 +5,11 @@
 
 Offset 1: 1, 1, 6, 6240, 1225566720, 252282619805368320, 98758655816833727741338583040, …
 
-### Python 3 — 278 bytes
+### Python 3 — 262 bytes
 
 ```python
 from functools import*
-def M(V):
- if V:
-  a,*W=V
-  for b in W:
-   for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
- else:yield 0
+M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
 n=2
 while 1:
  L=list(M(range(n)))
@@ -47,6 +42,11 @@ while 1:
   chosen least edge. Repeating this rule gives it a unique order
   of removal, so factor permutations are not overcounted.
 
+- M is a lazy generator expression when vertices remain, with
+  `[0]` as its empty-matching iterable. The single unpacking
+  `for a,*W in[V]` keeps the least-vertex choice and remaining
+  order of the recursive generator, without an explicit function body.
+
 **Notes**
 
 - `cache` shares repeated remaining-edge subproblems. F is
@@ -70,6 +70,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 311 | first entry |
 | 2026-11-06 | Python 3 | 278 | cache the exact-cover lambda and inline the least-edge test |
+| 2026-11-06 | Python 3 | 262 | express the lazy matching generator as a lambda |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,14 +5,13 @@
 
 Offset 1: 1, 4, 9, 16, 36, 49, 64, 81, 121, 144, …
 
-### Python 3 — 103 bytes
+### Python 3 — 99 bytes
 
 ```python
 from math import*
 n=0
-while 1:
- n+=1
- if all(isqrt(n*n-k*k)**2!=n*n-k*k for k in range(1,n)):print(n*n)
+while n:=n+1:
+ if all(isqrt(t:=n*n-k*k)**2!=t for k in range(1,n)):print(n*n)
 ```
 
 **How it works**
@@ -24,6 +23,10 @@ while 1:
   the candidate only when every positive first coordinate fails.
 - This excludes axis representations such as n²=n²+0² by construction.
   Each square is considered once, so the output is increasing.
+
+- The assignment `t:=n*n-k*k` reuses the same exact residual
+  on both sides of the square test. Incrementing n in the while
+  condition visits precisely 1,2,3,… before testing each square.
 
 **Notes**
 
@@ -38,6 +41,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 103 | first entry |
+| 2026-11-06 | Python 3 | 99 | reuse the square residual and increment in the loop condition |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

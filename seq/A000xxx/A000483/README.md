@@ -5,13 +5,13 @@
 
 Offset 6: 15, 210, 2380, 26432, 303660, 3678840, 47324376, 647536032, 9418945536, 145410580224, …
 
-### Python 3 — 120 bytes
+### Python 3 — 101 bytes
 
 ```python
-A=[[1]+[0]*3,[0]*4];n=1
+A=[1]+[0]*7;n=1
 while 1:
- n+=1;A+=[[0]+[(n-1)*(A[-1][k]+A[-2][k-1])for k in range(1,4)]]
- if n>5:print(A[-1][3])
+ n+=1;A+=[0]+[(n-1)*(A[k-4]+A[k-9])for k in range(1,4)]
+ if n>5:print(A[-1])
 ```
 
 **How it works**
@@ -26,11 +26,13 @@ while 1:
 - The empty permutation gives b(0,0)=1. There are no permitted
   permutations on one element, so the first two rows are
   `[1,0,0,0]` and `[0,0,0,0]`, columns k=0 through 3.
-- At each pass increment n, then compute its row from `A[-1]`
-  and `A[-2]`. The prefixed zero is b(n,0); the comprehension
-  constructs columns k=1,2,3 using only the two preceding rows.
+- A flattens the rows into blocks of four. After incrementing n,
+  `A[k-4]` is b(n−1,k), and `A[k-9]` is b(n−2,k−1).
+  Append zero for b(n,0), followed by the three
+  new entries. The right-hand list is built before A is extended,
+  so all indices refer to the two completed preceding rows.
 - Three nontrivial cycles need at least six elements. `if n>5`
-  skips the earlier zeros, and `A[-1][3]` prints the desired column.
+  skips the earlier zeros, and `A[-1]` prints the desired column.
   At n=6 every cycle is a pair, so a(6)=6!/(2³3!)=15.
 
 **Notes**
@@ -53,6 +55,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 142 | first entry |
 | 2026-11-06 | Python 3 | 120 | remove unused import and compress the seed rows |
+| 2026-11-06 | Python 3 | 101 | flatten the four-column recurrence into one list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

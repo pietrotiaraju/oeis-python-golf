@@ -5,13 +5,14 @@
 
 Offset 0: 1, 1, 1, 2, 4, 8, 17, 39, 89, 211, …
 
-### Python 3 — 189 bytes
+### Python 3 — 158 bytes
 
 ```python
-A=[1];C=[];n=0
+from math import*
+A=1,;*C,n=0,
 while 1:
- C+=sum(A[j]*A[n-j]for j in range(n+1)),
- A+=(sum(C[j]*A[n-j]for j in range(n+1))+3*sum(A[j]*A[n-2*j]for j in range(n//2+1))+2*(n%3<1)*A[n//3])//6,
+ C+=sumprod(A,A[::-1]),
+ A+=(sumprod(C,A[::-1])+3*sumprod(A[:n//2+1],A[::-2])+2*(n%3<1)*A[n//3])//6,
  print(A[n]);n+=1
 ```
 
@@ -30,6 +31,17 @@ while 1:
   Aₙ₊₁−[x^n]H₂(A). Removing the empty branch enforces secondary
   and tertiary alcohols rather than primary ones.
 
+- The coefficient lists in the first two convolutions have length
+  n+1. `sumprod(A,A[::-1])` gives [x^n]A(x)² and
+  `sumprod(C,A[::-1])` gives [x^n]A(x)³ after the square
+  coefficient is appended.
+- For A(x)A(x²), pair A₀,…,A_⌊n/2⌋ with
+  Aₙ,Aₙ₋₂,… . Before appending Aₙ₊₁, these are exactly
+  `A[:n//2+1]` and `A[::-2]`, whose lengths agree.
+  All inputs are integers, so all three dot products are exact.
+- A is a tuple of the radical coefficients; the starred assignment
+  initializes an empty square-coefficient list C and counter n=0.
+
 **Notes**
 
 - Cycle-index divisions are exact orbit counts. There is no
@@ -44,6 +56,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 189 | first entry |
+| 2026-11-06 | Python 3 | 158 | use exact sumprod convolutions and compact coefficient initialization |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
