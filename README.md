@@ -283,6 +283,7 @@ sequence for the code and how it works.
 | [A000273](seq/A000xxx/A000273/) | Number of unlabeled simple digraphs with n nodes. | **133** | 20 |
 | [A000274](seq/A000xxx/A000274/) | Number of permutations of length n with 2 consecutive ascending pairs. | **40** | 150 |
 | [A000275](seq/A000xxx/A000275/) | Coefficients of a Bessel function (reciprocal of J\_0(z)); also pairs… | **94** | 262 |
+| [A000277](seq/A000xxx/A000277/) | 3\*n - 2\*floor(sqrt(4\*n+5)) + 5. | **46** | 1001 |
 | [A000278](seq/A000xxx/A000278/) | a(n) = a(n-1) + a(n-2)^2 for n >= 2 with a(0) = 0 and a(1) = 1. | **35** | 26 |
 | [A000280](seq/A000xxx/A000280/) | a(n) = a(n-1) + a(n-2)^3. | **36** | 18 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
