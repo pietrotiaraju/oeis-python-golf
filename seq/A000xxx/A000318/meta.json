@@ -1,0 +1,6 @@
+{
+  "name": "Generalized tangent numbers d(4,n).",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
