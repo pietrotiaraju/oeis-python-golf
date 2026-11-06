@@ -25,8 +25,8 @@ while(a:=f(M*n,n*n))<f(M*n+4,n*n)or[print(a),n:=n+1]:M*=2
   `b+~c` the budget left, and `k<1or` counts a finished quadruple).
 - L = f(Mn, n²) ≤ a(n) ≤ U = f(Mn + 4, n²) for every M, since four costs
   exceed M·Σ√x by less than 4. When L = U the program prints it, otherwise
-  it doubles M. That always ends: a quadruple with Σ√x ≠ n is decided once
-  M·|Σ√x − n| ≥ 4, and one with Σ√x = n has only perfect squares as parts
+  it doubles M. That always ends: a quadruple with Σ√x < n enters L once
+  M(n − Σ√x) ≥ 4, one with Σ√x > n leaves U once M(Σ√x − n) > 4, and one with Σ√x = n has only perfect squares as parts
   (square roots of distinct squarefree numbers are linearly independent
   over ℚ, Besicovitch 1940), whose costs are exact.
 
