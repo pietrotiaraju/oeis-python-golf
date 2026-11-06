@@ -69,6 +69,7 @@ sequence for the code and how it works.
 | [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **87** | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | 101 |
 | [A000052](seq/A000xxx/A000052/) | 1-digit numbers arranged in alphabetical order, then the 2-digit… | **389** | 10000 |
+| [A000053](seq/A000xxx/A000053/) | Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway. | **62** | 29 |
 | [A000054](seq/A000xxx/A000054/) | Local stops on New York City A line subway. | **58** | 25 |
 | [A000055](seq/A000xxx/A000055/) | Number of trees with n unlabeled nodes. | **138** | 1001 |
 | [A000056](seq/A000xxx/A000056/) | Order of the group SL(2,Z\_n). | **81** | 1000 |
