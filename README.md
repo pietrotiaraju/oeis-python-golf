@@ -271,6 +271,7 @@ sequence for the code and how it works.
 | [A000261](seq/A000xxx/A000261/) | a(n) = n\*a(n-1) + (n-3)\*a(n-2), with a(1) = 0, a(2) = 1. | **46** | 102 |
 | [A000262](seq/A000xxx/A000262/) | Number of "sets of lists": number of partitions of {1,...,n} into any… | **46** | 445 |
 | [A000265](seq/A000xxx/A000265/) | Remove all factors of 2 from n; or largest odd divisor of n; or odd… | **32** | 100000 |
+| [A000266](seq/A000xxx/A000266/) | Expansion of e.g.f. exp(-x^2/2) / (1-x). | **48** | 451 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
