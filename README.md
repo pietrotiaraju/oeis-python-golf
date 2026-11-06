@@ -327,6 +327,7 @@ sequence for the code and how it works.
 | [A000317](seq/A000xxx/A000317/) | a(n+1) = a(n)^2 - a(n)\*a(n-1) + a(n-1)^2. | **41** | 14 |
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
 | [A000320](seq/A000xxx/A000320/) | Generalized tangent numbers d(5,n). | **89** | 189 |
+| [A000321](seq/A000xxx/A000321/) | H\_n(-1/2), where H\_n(x) is Hermite polynomial of degree n. | **43** | 733 |
 | [A000322](seq/A000xxx/A000322/) | Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5)… | **39** | 3403 |
 | [A000324](seq/A000xxx/A000324/) | A nonlinear recurrence: a(0) = 1, a(1) = 5, a(n) = a(n-1)^2 -… | **32** | 13 |
 | [A000325](seq/A000xxx/A000325/) | a(n) = 2^n - n. | **29** | 201 |
