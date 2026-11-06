@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of x^3*(5-2*x)*(1-x^3)/(1-x)^4.",
+  "offset": 3,
+  "min_terms": 998,
+  "timeout": 60
+}
