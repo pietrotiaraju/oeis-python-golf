@@ -21,17 +21,43 @@ while[print(a)]:a,b=b,s(a)+s(b)
 
 **How it works**
 
-Trial division factors n. For each prime power p^e, the nested
-update a=a*p+1 builds 1+p+...+p^e; multiplying these factors
-gives sigma(n). If a prime factor remains after p²>n, its
-contribution is n+1. Start with a(0)=a(1)=1 and simultaneously
-advance the two states using the defining sigma recurrence.
+- σ(m) is the sum of all positive divisors of m, including 1
+  and m itself. If m=∏pᵉ, unique prime factorization gives
+  σ(m)=∏(1+p+…+pᵉ); the function s computes this product.
+- Trial division removes every copy of the current p. Starting
+  with a=1, `a=a*p+1` gives 1+p after one copy, 1+p+p²
+  after two, and so on. Multiply that factor into t only after
+  all copies of p have been removed.
+- The bound `p*p<=n` uses the remaining cofactor n, which shrinks
+  during factorization. Once the bound fails, the cofactor is either
+  1 or a prime of exponent 1, whose divisor sum is n+1.
+  This explains the conditional final multiplication.
+- For m=1 the loop is empty and s returns 1, the correct σ(1).
+  Composite trial values of p extract nothing after all their
+  smaller prime factors have already been removed.
+- At the print, a and b are consecutive sequence values, initially
+  a(0)=a(1)=1. The simultaneous assignment
+  `a,b=b,s(a)+s(b)` advances to the next pair while both
+  function calls still read the old values.
+- For example a(2)=1+1=2, a(3)=σ(1)+σ(2)=1+3=4,
+  and a(4)=σ(2)+σ(4)=3+7=10. Both initial ones are printed.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 40 terms in 10 s; the official b-file contains 101 terms.
-- Exact trial division prints the first 40 terms quickly; later large terms need substantially more time. The bar is 40 terms in 10 s.
+- Exact integer factorization and the multiplicative divisor-sum
+  identity prove every recurrence update. No approximate prime
+  test, fixed-width arithmetic or precomputed answer table is used.
+- The variable a inside s is local to that function; it does not
+  overwrite the outer sequence state with the same name.
+- Only the consecutive pair and temporary factorization state are
+  stored. Trial division can require O(√m) steps on a large prime
+  input m, so later terms become expensive even while their decimal
+  representations remain manageable.
+- The next iteration recomputes the divisor sum of the value just
+  shifted into a. Caching it could save work, at the cost of more
+  state and code; the present program favors the shorter recurrence.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  first 40 terms in 10 s.
 
 ## History
 

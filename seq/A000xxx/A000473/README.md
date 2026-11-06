@@ -15,20 +15,46 @@ while 1:print(comb(n,3)*((4*n*n+14*n+3)*comb(2*n,n)-15*(8*n+3)*4**(n-2))//60);n+
 
 **How it works**
 
-Put s=sqrt(1-4x). Expanding the OEIS generating function gives
-x³*((27-20x-16x²)*(1-4x)^(-11/2)
--(27+20x)*(1-4x)^(-5)). Extract the binomial coefficients
-and simplify to
-a(n)=C(n,3)*((4n²+14n+3)*C(2n,n)-15*(8n+3)*4^(n-2))/60.
-The loop evaluates this closed form starting at n=4.
-All divisions are exact because the expression is the coefficient
-of the specified integer generating series.
+- Put s=√(1−4x). The generating function on the OEIS page is
+  x³(1−s)(17+16x−(10+4x)s)/(1−4x)^(11/2).
+  Use s²=1−4x to expand its numerator into
+  27−20x−16x²−(27+20x)s.
+- The series therefore becomes
+
+  x³·((27−20x−16x²)(1−4x)^(−11/2)
+  −(27+20x)(1−4x)^(−5)).
+
+- For the integer power, the coefficient of xᵐ in (1−4x)⁻⁵
+  is 4ᵐ·C(m+4,4), by the binomial theorem. The half-integer power
+  follows by differentiating (1−4x)^(−1/2) five times:
+  its m-th coefficient is
+  ((m+5)!/m!)·C(2m+10,m+5)/30240.
+- Take the shifted coefficients at m=n−3, n−4 and n−5,
+  with negative indices interpreted as zero. Combining and
+  simplifying them gives
+
+  **a(n)=C(n,3)·((4n²+14n+3)C(2n,n)
+  −15(8n+3)4^(n−2))/60.**
+
+- The code evaluates that integer expression directly. Its index
+  starts at n=4, where the generating function has its first
+  nonzero coefficient: C(4,3)·(123·70−15·35·16)/60
+  =4·210/60=14.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 497 terms in 60 s; the official b-file contains 497 terms.
-
+- Exact binomial coefficients, powers and a final exact division.
+  The square root and fractional power are used to derive the
+  coefficient formula; the program evaluates neither numerically.
+- Cancellation between the central-binomial and power-of-four
+  contributions occurs before dividing by 60. Dividing those pieces
+  separately would needlessly introduce fractional intermediates.
+- The loop retains only an index and integer temporaries. It avoids
+  building maps or expanding a power series anew for each term.
+  The exponentially growing output eventually reaches Python 3.11+'s
+  default 4300-digit conversion limit, an interpreter limit.
+- The b-file has 497 terms (indices 4 through 500). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
