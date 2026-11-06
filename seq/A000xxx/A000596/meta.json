@@ -1,0 +1,6 @@
+{
+  "name": "Central factorial numbers: A008955(n,2).",
+  "offset": 3,
+  "min_terms": 9998,
+  "timeout": 60
+}

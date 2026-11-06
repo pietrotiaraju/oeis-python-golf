@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted ternary trees with n nodes; number of n-carbon alkyl radicals C(n)H(2n+1) ignoring stereoisomers.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

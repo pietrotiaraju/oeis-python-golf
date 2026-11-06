@@ -1,0 +1,6 @@
+{
+  "name": "Ramanujan's tau function (or Ramanujan numbers, or tau numbers).",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}
