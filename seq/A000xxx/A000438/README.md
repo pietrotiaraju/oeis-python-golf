@@ -5,24 +5,20 @@
 
 Offset 1: 1, 1, 6, 6240, 1225566720, 252282619805368320, 98758655816833727741338583040, …
 
-### Python 3 — 311 bytes
+### Python 3 — 278 bytes
 
 ```python
 from functools import*
 def M(V):
- if not V:yield 0
- else:
+ if V:
   a,*W=V
   for b in W:
    for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
+ else:yield 0
 n=2
 while 1:
  L=list(M(range(n)))
- @cache
- def F(E):
-  if not E:return 1
-  p=E&-E
-  return sum(F(E^x)for x in L if x&p and x&E==x)
+ F=cache(lambda E:E<1or sum(F(E^x)for x in L if x&E&-E and x&E==x))
  print(F((1<<(n*(n-1)//2))-1));n+=2
 ```
 
@@ -41,8 +37,8 @@ while 1:
   for successive larger endpoints fill positions 0 through
   C(n,2)−1, so `(1<<(n*(n-1)//2))-1` is the complete edge mask.
 - F(E) counts factorizations of the remaining edge set. The empty
-  set has one empty factorization. Otherwise `p=E&-E` isolates
-  its least edge; consider only matching masks x containing p
+  set has one empty factorization. Otherwise `E&-E` isolates
+  its least edge; `x&E&-E` selects matching masks containing it
   and lying wholly in E.
 - `x&E==x` is the subset test. Under that condition `E^x`
   removes exactly x's edges, and the recursive count covers the
@@ -53,7 +49,7 @@ while 1:
 
 **Notes**
 
-- `@cache` shares repeated remaining-edge subproblems. F is
+- `cache` shares repeated remaining-edge subproblems. F is
   redefined for each graph size, so cached values never mix two
   different edge encodings or matching lists.
 - This is an exact-cover count with exact integer masks and sums.
@@ -73,6 +69,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 311 | first entry |
+| 2026-11-06 | Python 3 | 278 | cache the exact-cover lambda and inline the least-edge test |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

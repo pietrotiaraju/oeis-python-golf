@@ -5,13 +5,13 @@
 
 Offset 0: 1, 1, 0, -1, -1, 0, 1, 1, 0, -1, …
 
-### Python 3 — 224 bytes
+### Python 3 — 213 bytes
 
 ```python
 n=0;S=1
 while 1:
- S*=2;K=S.bit_length();E=20*K+20
- p=sum((-1)**k*S*16//((2*k+1)*5**(2*k+1))-(-1)**k*S*4//((2*k+1)*239**(2*k+1))for k in range(K))
+ S*=2;K=S.bit_length();E=20*-~K
+ p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
  while p>E and(q:=3*n*S//(p+E))==3*n*S//(p-E):print((1,0,-1,-1,0,1)[q%6]);n+=1
 ```
 
@@ -23,12 +23,13 @@ while 1:
 - [Machin's identity](https://mathworld.wolfram.com/Machin-LikeFormulas.html)
   is π=16atan(1/5)−4atan(1/239). With
   atan(1/b)=Σₖ≥₀ (−1)ᵏ/((2k+1)b^(2k+1)), take K terms
-  at the integer scale S. The comprehension rounds each of
-  the two scaled contributions down before subtracting them.
+  at the integer scale S. The comprehension uses the pairs
+  `(16,5)` and `(-4,239)` and rounds every signed scaled
+  contribution down before adding the two series.
 - Those divisions contribute less than 2K total error. Since
   K=S.bit_length() and S≥2, the two scaled alternating-series
   tails together are less than 1. The generous error allowance
-  E=20K+20 therefore proves **p−E<Sπ<p+E**.
+  E=20(K+1) therefore proves **p−E<Sπ<p+E**.
 - Once `p>E`, both denominators are positive. The two quotients
   ⌊3nS/(p+E)⌋ and ⌊3nS/(p−E)⌋ bracket
   q=⌊3n/π⌋. Print only if they agree, using the first
@@ -71,6 +72,7 @@ The sector-to-output mapping is:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 224 | first entry |
+| 2026-11-06 | Python 3 | 213 | share the two Machin summands |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

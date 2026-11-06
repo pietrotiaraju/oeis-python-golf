@@ -5,72 +5,54 @@
 
 Offset 1: 1, 8, 36, 148, 554, 2024, 7134, 24796, 84625, 285784, …
 
-### Python 3 — 266 bytes
+### Python 3 — 167 bytes
 
 ```python
-d=8
-S={frozenset()}
-while S:
- T=set()
- for s in S:
-  for v in {(0,)*d}|{tuple(x+(j==i)for j,x in enumerate(u))for u in s for i in range(d)}:
-   if v not in s and all(tuple(x-(j==i)for j,x in enumerate(v))in s for i in range(d)if v[i]):T.add(s|{v})
- S=T;print(len(S))
+P=2,3,5,7,11,13,17,19;n=1
+f=lambda S:n<=len(S)or sum(f(S|{c})for c in{s*p for s in S for p in P}if c>max(S)and{c//p for p in P if c%p<1}<=S)
+while[print(+f({1}))]:n+=1
 ```
 
 **How it works**
 
-- A 7-dimensional partition is a weakly decreasing
-  7-dimensional array of nonnegative integers. Replace
-  each entry by a stack of that many cells: the result is a finite
-  **order ideal in ℕ^8**, a set containing every cell below
-  each of its cells in the coordinatewise order.
-- S contains all ideals of the current size. It starts with the
-  single empty ideal, `S={frozenset()}`. An ideal s is itself
-  immutable so it can be stored as an element of the outer set.
-- A new cell is either the origin `(0,)*d` or one step above
-  an existing cell along one of the d=8 axes. The nested
-  comprehension increments coordinate i using `x+(j==i)`;
-  the candidate set merges cells generated from several neighbors.
-- Accept v only if it is new and every immediate lower neighbor
-  is present. The generator checks axis i only when `v[i]` is
-  positive, avoiding negative coordinates. Since s is already an
-  ideal, having these immediate neighbors also supplies every
-  more distant lower cell.
-- `T.add(s|{v})` stores an ideal with one extra cell. Different
-  choices of the removed maximal cell can lead to the same ideal;
-  T deduplicates those constructions by exact equality of the cell
-  sets. Coordinate permutations remain distinct.
-- After all extensions, `S=T;print(len(S))` advances the size
-  and prints its count. The origin is the only one-cell ideal,
-  giving a(1)=1; extending it in any of 8 axes gives
-  a(2)=8.
+- A 7-dimensional partition is a weakly decreasing array of
+  nonnegative heights. Replace each height by a stack of cells:
+  its cells form a finite down-set of ℕ^8. Thus a(n) counts
+  n-cell sets closed under decreasing any coordinate.
+- Encode a cell (x₀, …, x_7) by the product of the powers of
+  the 8 primes 2, 3, 5, 7, 11, 13, 17, 19. Unique factorization makes this
+  an exact, unbounded coordinate encoding. A cell's immediate
+  predecessors are c/p for the primes p dividing its encoding c.
+- Start from {1}, the corner cell. Candidate cells are the
+  products s*p one step above cells already present. The condition
+  `{c//p for p in P if c%p<1}<=S` checks that every immediate
+  predecessor is already in S, which preserves the down-set property.
+- Integer order extends divisibility. Every down-set therefore
+  has a unique increasing construction order. Requiring `c>max(S)`
+  visits it exactly once, so no set of completed partitions or
+  duplicate removal is needed.
+- f(S) sums the ways to complete S to n cells. Its base case is
+  True, the single completion when n cells have been placed;
+  `+f({1})` converts that boolean to the integer 1 at n=1.
 
 **Notes**
 
-- Completeness follows by removing a maximal cell from any nonempty
-  ideal. The remainder is a smaller ideal, and the removed cell
-  is one of its allowed extensions. Induction therefore reaches
-  every ideal of every size, with exact integer counts.
-- The axes are fixed. Identifying configurations under rotations
-  would instead count a different sequence; frozenset equality
-  here only removes duplicate paths to the same configuration.
-- Every ideal in a layer is stored, and each can produce several
-  copied cell sets. The rapidly growing layer sizes dominate both
-  time and memory. A chain exists at every size, so S never empties
-  mathematically; resource limits stop practical runs.
-- [A000416](../A000416/) changes only d by one.
-  [A000428](../A000428/) is the corresponding
-  MacMahon Euler-product prediction, which already differs at
-  n=6; it cannot replace this exhaustive count.
-- The b-file has 20 terms (indices 1 through 20). The bar is the
-  first 7 terms in 10 s.
+- This directly enumerates partitions in every size. No conjectured
+  product formula or stored sequence terms are used. The same
+  prime encoding is used by [A000334](../A000334/) and
+  [A000390](../A000390/) in lower dimensions.
+- Only the active construction path is retained, with recursion
+  depth n. Running time still grows rapidly with the number of
+  down-sets; CPython's recursion limit eventually applies.
+- The b-file has 20 terms. The unchanged verification bar is
+  the first 7 terms in 10 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 266 | first entry |
+| 2026-11-06 | Python 3 | 167 | encode cells by prime exponents and enumerate each down-set once |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
