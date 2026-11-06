@@ -5,7 +5,7 @@
 
 Offset 2: 7, 9, 9, 11, 15, 15, 17, …
 
-### Python 3 — 794 bytes
+### Python 3 — 781 bytes
 
 ```python
 def P(q):
@@ -30,10 +30,8 @@ while 1:
    global B
    n=S.bit_count();B=max(B,n)
    while n+V.bit_count()>B:
-    b=V&-V;V-=b;T=S|b;D=0
-    for l in H[b.bit_length()-1]:
-     if(T&l).bit_count()==3:D|=l
-    f(T,V&~D)
+    b=V&-V;V-=b;T=S|b
+    f(T,V&~sum(l^b for l in H[b.bit_length()-1]if(T&l).bit_count()==3))
   f(0,U);print(B)
 ```
 
@@ -65,6 +63,11 @@ while 1:
 - The initial plane is the Fano plane q=2: every line has three points,
   so all seven points are admissible and the first output is 7.
 
+Distinct lines through the inserted point `b` meet only at that point.
+Thus `l^b` removes their sole shared bit and leaves disjoint masks, whose
+sum equals their bitwise union. `V` already excludes `b`, so this excludes
+exactly the same future candidates as the union of the full lines.
+
 **Notes**
 
 - Both field construction and maximization are exhaustive algorithms,
@@ -82,6 +85,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 1314 | first entry |
 | 2026-11-06 | Python 3 | 794 | primitive-polynomial field arithmetic and direct affine line masks |
+| 2026-11-06 | Python 3 | 781 | sum disjoint incident-line masks after removing the shared point |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

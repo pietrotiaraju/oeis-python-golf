@@ -5,37 +5,33 @@
 
 Offset 1: 1, 1, 1, 3, 4, 12, 24, 66, 160, 448, …
 
-### Python 3 — 393 bytes
+### Python 3 — 331 bytes
 
 ```python
-def c(S):
- H=[]
- for k in range(6):
-  for b in(0,1):
-   T=[(y,x)if b else(x,y)for x,y in S];a=min(x for x,y in T)//3*3;d=min(y for x,y in T)//3*3
-   H+=[tuple(sorted((x-a,y-d)for x,y in T))]
-  S=[(-y,x+y)for x,y in S]
- return min(H)
-L={((1,1),)}
-while 1:
- print(len(L));L={c([*S,u])for S in L for x,y in S for a,b in[(1,1),(-2,1),(1,-2)]for d in[3-2*(x%3)]for u in[(x+a*d,y+b*d)]if u not in S}
+def c(S,k=5):
+ a,b,t=map(min,zip(*S));T=tuple(sorted((x-a,y-b,t)for x,y,t in S))
+ return min(T,tuple(sorted((y,x,t)for x,y,t in T)),k and c([(-y-1,x+y+t,1-t)for x,y,t in S],k-1)or T)
+L={((0,0,0),)}
+while[print(len(L))]:L={c((*S,u))for S in L for x,y,t in S for a,b in((0,0),(1,0),(0,1))if(u:=(x+a*(2*t-1),y+b*(2*t-1),1-t))not in S}
 ```
 
 **How it works**
 
-- Represent each triangle by three times its center in axial triangular-
-  lattice coordinates. Its coordinates are both 1 modulo 3 for an upward
-  cell and both 2 modulo 3 for a downward cell. The first cell is (1,1).
-- An upward cell has neighbors offset by (1,1), (−2,1), and (1,−2).
-  A downward cell uses their negatives. `3-2*(x%3)` selects the sign.
-  Adjoining each missing neighbor generates every edge-connected shape,
-  by the spanning-tree argument for its cell adjacency graph.
-- Canonicalization tries six rotations (x,y)→(−y,x+y), together with
-  reflection (x,y)→(y,x). Subtracting the coordinate minima rounded down
-  to multiples of 3 removes translations while preserving the two cell
-  orientations. Sorting the centers gives one key per free shape.
-- The set removes duplicate growth histories and all rotations and
-  reflections. No hole test is applied, so holes are allowed as required.
+- Encode a cell by `(x,y,t)` in triangular-lattice coordinates. For t=0
+  its vertices are (x,y), (x+1,y), (x,y+1); for t=1 they are
+  (x+1,y+1), (x+1,y), (x,y+1). This stores one triple per cell.
+- Its three edge-neighbors have orientation 1−t and positions
+  (x,y), (x+2t−1,y), (x,y+2t−1). Starting from one cell, adjoin
+  every missing neighbor. Every edge-connected polyiamond is reachable
+  by adding cells along a spanning tree of its adjacency graph.
+- A 60-degree rotation sends a cell to `(-y-1,x+y+t,1-t)`;
+  reflection swaps x and y and preserves t. `c` recursively tries six
+  rotations, with and without reflection at each step. Subtracting the minima
+  of x and y and sorting the cell triples removes translations and order.
+  The third minimum unpacked into `t` is unused.
+- Choosing the least of these twelve exact keys identifies precisely
+  rotations, reflections and translations. A set removes duplicate
+  growth histories. No hole test is applied, so holes remain allowed.
 
 **Notes**
 
@@ -52,6 +48,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 538 | first entry |
 | 2026-11-06 | Python 3 | 393 | encode cells by their centers and grow neighbors directly |
+| 2026-11-06 | Python 3 | 331 | one coordinate triple per cell and recursive dihedral canonicalization |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

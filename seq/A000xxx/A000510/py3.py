@@ -20,8 +20,6 @@ while 1:
    global B
    n=S.bit_count();B=max(B,n)
    while n+V.bit_count()>B:
-    b=V&-V;V-=b;T=S|b;D=0
-    for l in H[b.bit_length()-1]:
-     if(T&l).bit_count()==3:D|=l
-    f(T,V&~D)
+    b=V&-V;V-=b;T=S|b
+    f(T,V&~sum(l^b for l in H[b.bit_length()-1]if(T&l).bit_count()==3))
   f(0,U);print(B)

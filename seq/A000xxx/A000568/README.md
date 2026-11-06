@@ -5,16 +5,15 @@
 
 Offset 0: 1, 1, 1, 2, 4, 12, 56, 456, 6880, 191536, …
 
-### Python 3 — 308 bytes
+### Python 3 — 291 bytes
 
 ```python
 from math import*
 from functools import*
-@cache
-def P(n,m=1):return[()]if n==0 else[(j,)+p for j in range(m,n+1,2)for p in P(n-j,j)]
+P=cache(lambda n,m=1:[()]if n<1else[(j,)+p for j in range(m,n+1,2)for p in P(n-j,j)])
 n=0
 while 1:
- H=factorial(n);print(sum((H//prod(j**p.count(j)*factorial(p.count(j))for j in set(p)))*2**((sum(gcd(i,j)for i in p for j in p)-len(p))//2)for p in P(n))//H);n+=1
+ H=factorial(n);print(sum(H//prod(j*(i+1-p.index(j))for i,j in enumerate(p))*2**((sum(gcd(i,j)for i in p for j in p)-len(p))//2)for p in P(n))//H);n+=1
 ```
 
 **How it works**
@@ -31,6 +30,10 @@ while 1:
 - Weighting and dividing by n! gives the required unlabeled count.
   The empty partition correctly supplies a(0)=1.
 
+For sorted `p`, the occurrence indices of a repeated length j give
+`j*(i+1-p.index(j))` = j, 2j, …, mⱼj. Their product is exactly
+∏ⱼ j^mⱼmⱼ!, including the empty product for n=0.
+
 **Notes**
 
 - This enumerates permutation cycle types, rather than all labeled
@@ -45,6 +48,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 308 | first entry |
+| 2026-11-06 | Python 3 | 291 | cached partition expression and occurrence-index class factors |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
