@@ -5,14 +5,14 @@
 
 Offset 1: 1, 2, 4, 5, 8, 10, 13, 16, 20, 25, …
 
-### Python 3 — 186 bytes
+### Python 3 — 173 bytes
 
 ```python
 from math import*
 n=0
 while 1:
  n+=1;r=range(1,isqrt(n)+1)
- if any(isqrt(n-x*x)**2==n-x*x for x in r)and all(isqrt(n-x*x-y*y)**2!=n-x*x-y*y for x in r for y in r if 0<n-x*x-y*y):print(n)
+ if any(isqrt(t:=n-x*x)**2==t for x in r)and all(isqrt(t)**2!=t for x in r for y in r if(t:=n-x*x-y*y)>0):print(n)
 ```
 
 **How it works**
@@ -25,6 +25,10 @@ while 1:
   enforces all three nonzero coordinates.
 - Every coordinate lies in 1,…,floor(√n), so the loops cover every
   possible representation. `isqrt` makes the square tests exact.
+
+- The square tests reuse their residual t. In the two-coordinate
+  loop, the comprehension's `if` assigns t before evaluating the
+  square-test expression, so `isqrt(t)` only receives positive values.
 
 **Notes**
 
@@ -39,6 +43,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 186 | first entry |
+| 2026-11-06 | Python 3 | 173 | reuse exact residuals in the two square tests |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

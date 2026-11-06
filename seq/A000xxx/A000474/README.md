@@ -5,22 +5,12 @@
 
 Offset 1: 1, 1, 1, 6, 396, 526915620, 1132835421602062347, …
 
-### Python 3 — 621 bytes
+### Python 3 — 579 bytes
 
 ```python
 from itertools import*
-def M(V):
- if V:
-  a,*W=V
-  for b in W:
-   for e in M([x for x in W if x!=b]):yield e|1<<(b*(b-1)//2+a)
- else:yield 0
-def H(E):
- if not E:yield()
- else:
-  for x in L:
-   if x&E&-E and x&E==x:
-    for t in H(E^x):yield(x,*t)
+M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
+H=lambda E:((x,*t)for x in L if x&E&-E and x&E==x for t in H(E^x))if E else[()]
 n=2
 while 1:
  L=list(M(range(n)));A=[(i,j)for j in range(n)for i in range(j)];S=set();c=0
@@ -62,6 +52,15 @@ while 1:
   x contains the least remaining edge. This is the same pivot-edge
   choice without storing a separate p at each recursion level.
 
+- M is a lazy generator expression when vertices remain, with
+  `[0]` as its empty-matching iterable. The single unpacking
+  `for a,*W in[V]` keeps the least-vertex choice and remaining
+  order of the recursive generator, without an explicit function body.
+
+- H is likewise lazy: for nonempty E it yields `(x,*t)` for each
+  valid first matching and recursively generated remainder. At E=0,
+  `[()]` supplies the single empty factorization.
+
 **Notes**
 
 - Vertex relabeling preserves adjacency and factor membership.
@@ -86,6 +85,7 @@ while 1:
 | 2026-11-06 | Python 3 | 639 | first entry |
 | 2026-11-06 | Python 3 | 631 | simplify equivalent expressions |
 | 2026-11-06 | Python 3 | 621 | inline the least-edge test and shorten the matching base case |
+| 2026-11-06 | Python 3 | 579 | use lazy lambdas for matchings and exact covers |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

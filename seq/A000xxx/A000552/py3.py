@@ -1,5 +1,4 @@
 from math import*
-A=[[1]*3];n=0
-while 1:
- n+=1;B=[1]+[sum(comb(n-1,k-1)*k*A[k-1][j-1]*A[n-k][j]for k in range(1,n+1))for j in range(1,3)];A+=B,
- if n>=3:print((n+1)*(B[-1]-B[-2]))
+f=lambda n,p,h:sum(comb(n,k)*p**k*f(n-k,k,h-1)for k in range(1,n+1))if h else n<1
+n=4
+while[print(n*f(n-1,1,3))]:n+=1

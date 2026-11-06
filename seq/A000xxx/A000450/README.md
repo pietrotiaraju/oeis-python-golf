@@ -5,12 +5,12 @@
 
 Offset 4: 1, 10, 50, 385, 3130, 28764, 291900, 3249210, 39367395, 515874470, …
 
-### Python 3 — 114 bytes
+### Python 3 — 109 bytes
 
 ```python
 from math import*
 n=4
-while 1:print(sum((-1)**k*factorial(n-k)*comb(k,4)*comb(2*n-k,k)for k in range(4,n+1)));n+=1
+while 1:print(sum((-1)**k*perm(n-k)*comb(k,4)*comb(2*n-k,k)for k in range(4,n+1)));n+=1
 ```
 
 **How it works**
@@ -27,6 +27,9 @@ while 1:print(sum((-1)**k*factorial(n-k)*comb(k,4)*comb(2*n-k,k)for k in range(4
   coefficients are defined throughout the sum.
 - At n=4 only k=4 contributes, giving 1. At n=5 the two
   contributions are C(6,4)−C(5,4)=15−5=10.
+
+- `perm(n-k)` with a single argument is (n−k)!, shortening
+  the factorial call without changing the integer inclusion-exclusion.
 
 **Notes**
 
@@ -48,6 +51,7 @@ while 1:print(sum((-1)**k*factorial(n-k)*comb(k,4)*comb(2*n-k,k)for k in range(4
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 114 | first entry |
+| 2026-11-06 | Python 3 | 109 | use one-argument perm for the factorial |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
