@@ -1,0 +1,6 @@
+{
+  "name": "5th power of rooted tree enumerator; number of linear forests of 5 rooted trees.",
+  "offset": 5,
+  "min_terms": 746,
+  "timeout": 60
+}
