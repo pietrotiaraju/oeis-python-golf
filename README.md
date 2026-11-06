@@ -334,6 +334,7 @@ sequence for the code and how it works.
 | [A000316](seq/A000xxx/A000316/) | Two decks each have n kinds of cards, 2 of each kind. The first deck… | **56** | 101 |
 | [A000317](seq/A000xxx/A000317/) | a(n+1) = a(n)^2 - a(n)\*a(n-1) + a(n-1)^2. | **41** | 14 |
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
+| [A000319](seq/A000xxx/A000319/) | a(n) = floor(b(n)), where b(n) = tan(b(n-1)), b(0)=1. | **254** | 10001 |
 | [A000320](seq/A000xxx/A000320/) | Generalized tangent numbers d(5,n). | **89** | 189 |
 | [A000321](seq/A000xxx/A000321/) | H\_n(-1/2), where H\_n(x) is Hermite polynomial of degree n. | **43** | 733 |
 | [A000322](seq/A000xxx/A000322/) | Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5)… | **39** | 3403 |
