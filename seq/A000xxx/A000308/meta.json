@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = a(n-1)*a(n-2)*a(n-3) with a(1)=1, a(2)=2 and a(3)=3.",
+  "offset": 1,
+  "min_terms": 15,
+  "timeout": 60
+}
