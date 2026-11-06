@@ -304,6 +304,7 @@ sequence for the code and how it works.
 | [A000290](seq/A000xxx/A000290/) | The squares: a(n) = n^2. | **26** | 10001 |
 | [A000292](seq/A000xxx/A000292/) | Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) =… | **34** | 10001 |
 | [A000295](seq/A000xxx/A000295/) | Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1… | **30** | 501 |
+| [A000296](seq/A000xxx/A000296/) | Set partitions without singletons: number of partitions of an n-set… | **56** | 576 |
 | [A000297](seq/A000xxx/A000297/) | a(n) = (n+1)\*(n+3)\*(n+8)/6. | **39** | 1002 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |

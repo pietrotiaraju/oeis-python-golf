@@ -1,0 +1,6 @@
+{
+  "name": "Set partitions without singletons: number of partitions of an n-set into blocks of size > 1. Also number of cyclically spaced (or feasible) partitions.",
+  "offset": 0,
+  "min_terms": 576,
+  "timeout": 60
+}
