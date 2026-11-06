@@ -1,0 +1,6 @@
+{
+  "name": "Card matching: Coefficients B[n,3] of t^3 in the reduced hit polynomial A[n,n,n](t).",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

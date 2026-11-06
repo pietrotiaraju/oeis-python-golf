@@ -1,0 +1,6 @@
+{
+  "name": "One half of the number of permutations of [n] such that the differences have 4 runs with the same signs.",
+  "offset": 5,
+  "min_terms": 996,
+  "timeout": 60
+}
