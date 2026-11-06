@@ -423,6 +423,7 @@ sequence for the code and how it works.
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **144** | 14 |
+| [A000410](seq/A000xxx/A000410/) | Number of singular n X n rational (0,1)-matrices. | **357** | 5 |
 | [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **128** | 184 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **275** | 10001 |
 | [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
@@ -433,6 +434,7 @@ sequence for the code and how it works.
 | [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
+| [A000421](seq/A000xxx/A000421/) | Number of isomorphism classes of connected 3-regular (trivalent,… | **597** | 3 |
 | [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **40** | 150 |
 | [A000423](seq/A000xxx/A000423/) | a(n) is smallest number > a(n-1) of form a(i)\*a(j), i < j < n. | **79** | 49 |
 | [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **86** | 16 |
@@ -443,16 +445,19 @@ sequence for the code and how it works.
 | [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **129** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
+| [A000432](seq/A000xxx/A000432/) | Series-parallel numbers. | **184** | 38 |
 | [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
 | [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **123** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
+| [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **311** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
 | [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **240** | 19 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
+| [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
 | [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **1350** | 2 |
 | [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **410** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
@@ -482,15 +487,18 @@ sequence for the code and how it works.
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
+| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **639** | 4 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
 | [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **232** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
+| [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **259** | 6 |
 | [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **225** | 80 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
 | [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **79** | 96 |
 | [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **142** | 195 |
 | [A000484](seq/A000xxx/A000484/) | a(n) = round(cos(n)). | **224** | 1001 |
+| [A000485](seq/A000xxx/A000485/) | Number of partially labeled trees with n nodes (4 of which are… | **205** | 100 |
 | [A000486](seq/A000xxx/A000486/) | One half of the number of permutations of [n] such that the… | **114** | 996 |
 | [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **66** | 196 |
 | [A000488](seq/A000xxx/A000488/) | Generalized tangent numbers d\_(n,3). | **129** | 1000 |

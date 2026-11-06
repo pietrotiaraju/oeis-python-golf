@@ -1,0 +1,6 @@
+{
+  "name": "Number of singular n X n rational (0,1)-matrices.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 10
+}
