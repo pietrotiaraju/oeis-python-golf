@@ -320,6 +320,7 @@ sequence for the code and how it works.
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000357](seq/A000xxx/A000357/) | Number of 5-level labeled rooted trees with n leaves. | **85** | 401 |
 | [A000364](seq/A000xxx/A000364/) | Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x)… | **65** | 243 |
+| [A000378](seq/A000xxx/A000378/) | Sums of three squares: numbers of the form x^2 + y^2 + z^2. | **52** | 10000 |
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **40** | 201 |
 | [A000395](seq/A000xxx/A000395/) | 6th power of rooted tree enumerator; number of linear forests of 6… | **107** | 995 |
