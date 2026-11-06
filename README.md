@@ -173,7 +173,7 @@ sequence for the code and how it works.
 | [A000163](seq/A000xxx/A000163/) | Series-parallel numbers. | **160** | 160 |
 | [A000164](seq/A000xxx/A000164/) | Number of partitions of n into 3 squares (allowing part zero). | **79** | 800 |
 | [A000165](seq/A000xxx/A000165/) | Double factorial of even numbers: (2n)!! = 2^n\*n!. | **33** | 404 |
-| [A000166](seq/A000xxx/A000166/) | Subfactorial or rencontres numbers, or derangements: number of… | **34** | 451 |
+| [A000166](seq/A000xxx/A000166/) | Subfactorial or rencontres numbers, or derangements: number of… | **33** | 451 |
 | [A000167](seq/A000xxx/A000167/) | Nearest integer to modified Bessel function K\_n(2). | **69** | 201 |
 | [A000168](seq/A000xxx/A000168/) | a(n) = 2\*3^n\*(2\*n)!/(n!\*(n+2)!). | **43** | 926 |
 | [A000169](seq/A000xxx/A000169/) | Number of labeled rooted trees with n nodes: n^(n-1). | **29** | 100 |
@@ -276,6 +276,7 @@ sequence for the code and how it works.
 | [A000267](seq/A000xxx/A000267/) | Integer part of square root of 4n+1. | **37** | 10001 |
 | [A000268](seq/A000xxx/A000268/) | E.g.f.: -log(1+log(1+log(1-x))). | **85** | 400 |
 | [A000272](seq/A000xxx/A000272/) | Number of trees on n labeled nodes: n^(n-2) with a(0)=1. | **36** | 389 |
+| [A000274](seq/A000xxx/A000274/) | Number of permutations of length n with 2 consecutive ascending pairs. | **40** | 150 |
 | [A000396](seq/A000xxx/A000396/) | Perfect numbers k: k is equal to the sum of the proper divisors of k. | **62** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
