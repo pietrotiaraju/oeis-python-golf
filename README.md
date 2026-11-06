@@ -161,7 +161,7 @@ sequence for the code and how it works.
 | [A000150](seq/A000xxx/A000150/) | Number of dissections of an n-gon, rooted at an exterior edge,… | **61** | 201 |
 | [A000151](seq/A000xxx/A000151/) | Number of oriented rooted trees with n nodes. Also rooted trees with… | **88** | 1300 |
 | [A000152](seq/A000xxx/A000152/) | Number of ways of writing n as a sum of 16 squares. | **76** | 60 |
-| [A000153](seq/A000xxx/A000153/) | a(n) = n\*a(n-1) + (n-2)\*a(n-2), with a(0) = 0, a(1) = 1. | **48** | 251 |
+| [A000153](seq/A000xxx/A000153/) | a(n) = n\*a(n-1) + (n-2)\*a(n-2), with a(0) = 0, a(1) = 1. | **46** | 251 |
 | [A000155](seq/A000xxx/A000155/) | Nearest integer to modified Bessel function K\_n(1). | **50** | 201 |
 | [A000156](seq/A000xxx/A000156/) | Number of ways of writing n as a sum of 24 squares. | **76** | 45 |
 | [A000157](seq/A000xxx/A000157/) | Number of Boolean functions of n variables. | **239** | 6 |
