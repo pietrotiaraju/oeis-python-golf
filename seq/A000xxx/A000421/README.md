@@ -33,22 +33,49 @@ while 1:
 
 **How it works**
 
-Fill a symmetric zero-diagonal adjacency matrix one row at a
-time. The multiset U assigns the remaining degree of vertex i
-to later vertices; subtract those incidences from their remaining
-degrees. Negative residual degrees are rejected. This generates
-every labeled cubic loopless multigraph once. At completion,
-reachability rejects disconnected graphs. For each not-yet-seen
-matrix, count one class and mark every vertex permutation
-from its orbit. The matrix remains fixed while that orbit is
-processed, so subsequent isomorphic matrices are skipped.
-The vertex count starts at two and advances by two.
+- In the code n is the vertex count, twice the OEIS index.
+  A cubic graph has total degree 3n=2|E|, so n must be even;
+  the outer loop uses 2,4,6,… vertices.
+- A is a symmetric adjacency matrix with zero diagonal. Its
+  entries count parallel edges. `G(i,D)` has fixed all edges
+  incident with earlier vertices; D records the degrees still
+  needed from the unprocessed vertices.
+- Choose a multiset U of D[i] later vertices to receive vertex
+  i's remaining incidences. Repetitions in U permit parallel
+  edges; using only vertices greater than i excludes loops and
+  avoids choosing an edge twice.
+- Copy D to C and subtract those incidences from C[j]. A negative
+  remaining degree rejects the choice. Set A[i][j]=A[j][i]
+  to U's multiplicity of j, clear C[i], and recurse. These
+  choices generate every labeled loopless cubic multigraph once.
+- At a completed matrix, grow the set V of vertices reachable
+  from 0. Repeating at most n times reaches every vertex in its
+  component; yield the matrix only if `len(V)==n`.
+- The yielded tuple lists the strict upper triangle in fixed
+  column order. If it is absent from S, count a new isomorphism
+  class and insert every vertex relabeling into S.
+- The generator stays suspended during those relabelings, so its
+  current A still represents the yielded tuple. Resuming G only
+  afterwards allows later isomorphic matrices to be skipped.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 3 terms in 10 s; the official b-file contains 20 terms.
-- The bar includes the connected loopless cubic multigraphs on 2, 4 and 6 vertices. Degree enumeration and isomorphism orbits have high cost at larger orders.
+- Parallel edges are not individually labeled. Their multiplicity
+  is one matrix entry, so permuting copies of an edge creates no
+  extra graph. Vertex relabeling is handled by the complete orbit.
+- On two vertices there is just the graph with three parallel
+  edges. On four vertices the two classes are K₄ and a 4-cycle
+  with a pair of opposite edges doubled.
+- Connectivity, degree constraints and orbit equality are all exact
+  finite checks. Dividing the labeled count by n! would fail
+  because automorphism group sizes vary; explicitly marking the
+  orbits avoids that assumption.
+- Degree assignments, n! vertex permutations for each new class,
+  and the stored orbit tuples all grow rapidly. This exhaustive
+  method is mathematically valid for every order, with runtime
+  and memory limiting the orders reached in practice.
+- The b-file has 20 terms (indices 1 through 20). The bar is the
+  first 3 terms in 10 s.
 
 ## History
 

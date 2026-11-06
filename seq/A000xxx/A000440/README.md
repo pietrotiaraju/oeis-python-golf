@@ -18,26 +18,61 @@ while 1:
 
 **How it works**
 
-Let R_n(t)=sum(sigma_(n,k)*t^k,k>=0) be the rook polynomial
-from Margolius's bivariate generating function in the OEIS.
-Multiplying its denominator gives
-R_n=(1+3t)R_(n-1)-2t²R_(n-2)-(t²+t³)R_(n-3)+t⁴R_(n-4),
-with numerator corrections -2t² at n=2, -2t²(1+t) at n=3,
-and 3t⁴ at n=4; R_0=1 and negative-index terms are zero.
-The four scalar states evaluate these polynomials at t=B.
-For n>=3, a rook coefficient is at most C(n,k)²*k!
-<=4^n*n!<(4n)^n=B, so base-B digits recover every
-coefficient without carries. Finally extract y^4 from
-sum(sigma_(n,k)*(n-k)!*(y-1)^k,k=0..n): its coefficient
-is (-1)^(k-4)*C(k,4). The factorial is `perm(n-k)`.
-All arithmetic is exact; polynomial constants come from the
-generating function rather than from sequence terms.
+- Let R_q(t)=Σₖ σ_(q,k)tᵏ be the rook polynomials in
+  Margolius's bivariate generating function on the OEIS page.
+  The requested answer is the coefficient of y^4 in
+  Σₖ σ_(n,k)(n−k)!(y−1)ᵏ, converting rook placements into
+  the hit count for the three specified permutations.
+- Multiplying the generating function's denominator gives
+
+  R_q=(1+3t)R_(q−1)−2t²R_(q−2)
+  −(t²+t³)R_(q−3)+t⁴R_(q−4)+v_q,
+
+  with R_0=1 and earlier values zero. Its numerator supplies
+  v_1=0, v_2=−2t², v_3=−2t²(1+t), v_4=3t⁴,
+  and v_q=0 afterwards.
+- Evaluate the polynomials at t=B, using z=B² and w=B⁴.
+  The scalar states a,b,c,d hold four consecutive evaluations,
+  initially R_(−3),R_(−2),R_(−1),R_0. Each simultaneous
+  assignment shifts them and appends R_q(B), preserving all old
+  values for the recurrence.
+- The list of v values supplies the four numerator corrections,
+  followed by zeros; slicing to n entries performs exactly n
+  updates. Thus d=R_n(B) when the final print is evaluated.
+- For the current n≥4, every rook coefficient obeys
+  0≤σ_(n,k)≤C(n,k)²k!≤4ⁿn!<(4n)ⁿ=B.
+  The first bound chooses rows, columns and a bijection between
+  them, before restricting to the allowed board. Hence the
+  base-B digits of d are the coefficients with no carries:
+  `d//B**k%B` retrieves σ_(n,k) exactly.
+- The coefficient of y^4 in (y−1)ᵏ is
+  (−1)^(k−4)C(k,4), zero for k<4. The final
+  sum multiplies this by σ_(n,k) and (n−k)!;
+  `perm(n-k)` is that factorial with one argument.
+- The counter starts at n=4, the OEIS offset, and increases
+  after each output. A new base and a fresh polynomial evaluation
+  are used each time, so no previously packed digits need to be
+  reinterpreted when the required base grows.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 19 terms in 60 s; the official b-file contains 19 terms.
-
+- Exact integer polynomial evaluation and coefficient extraction.
+  Negative terms in the hit sum implement inclusion-exclusion;
+  they cancel before printing the nonnegative count.
+- The only stored constants are the generating function's recurrence
+  and numerator coefficients. The program computes each rook
+  polynomial and does not store an answer table.
+- This is the same construction as
+  [A000470](../A000470/),
+  with a different hit coefficient.
+  The coefficient index is 4, with the offset shown above.
+- Each output uses n recurrence steps and at most n hit summands,
+  but the packed integer has O(n² log n) bits. Those large
+  integer products, powers and divisions dominate at larger n.
+  Output eventually meets Python 3.11+'s default 4300-digit
+  integer conversion limit, an interpreter limit.
+- The b-file has 19 terms (indices 4 through 22). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
