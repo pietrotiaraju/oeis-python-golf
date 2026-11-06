@@ -5,14 +5,14 @@
 
 Offset 1: 0, 0, 0, 0, 0, 1, 12, 137, 1602, 19710, …
 
-### Python 3 — 167 bytes
+### Python 3 — 166 bytes
 
 ```python
-from math import*
+import math
 L=[[1],[1]];n=0
 while 1:
  n+=1
- for q,a in enumerate(L,6):a+=[sum(comb(n,k)*((k%q==1)-(k%q<1))*a[-k]for k in range(1,n+1))]
+ for q,a in enumerate(L,6):a+=[sum(math.comb(n,k)*((k%q==1)-(k%q<1))*a[-k]for k in range(1,n+1))]
  print(L[1][-1]-L[0][-1])
 ```
 
@@ -59,6 +59,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 167 | first entry |
+| 2026-11-06 | Python 3 | 166 | use a shorter math import |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

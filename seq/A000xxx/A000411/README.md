@@ -5,13 +5,13 @@
 
 Offset 1: 6, 522, 152166, 93241002, 97949265606, 157201459863882, 357802951084619046, 1096291279711115037162, 4350684698032741048452486, 21709332137467778453687752842, …
 
-### Python 3 — 128 bytes
+### Python 3 — 127 bytes
 
 ```python
-from math import*
+import math
 a=[]
 while 1:
- n=len(a);a+=[6*(-9)**n-2*sum(comb(2*n+1,2*k)*(-16)**k*a[-k]for k in range(1,n+1))];print(a[-1])
+ n=len(a);a+=[6*(-9)**n-2*sum(math.comb(2*n+1,2*k)*(-16)**k*a[-k]for k in range(1,n+1))];print(a[-1])
 ```
 
 **How it works**
@@ -51,6 +51,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 128 | first entry |
+| 2026-11-06 | Python 3 | 127 | use a shorter math import |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
