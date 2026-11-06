@@ -1,0 +1,6 @@
+{
+  "name": "Binary encodings of the successive columns of the Gosper-Lafitte triangle.",
+  "offset": 0,
+  "min_terms": 10000,
+  "timeout": 60
+}
