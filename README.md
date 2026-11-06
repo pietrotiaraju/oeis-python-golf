@@ -539,6 +539,16 @@ sequence for the code and how it works.
 | [A000539](seq/A000xxx/A000539/) | Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5. | **34** | 1001 |
 | [A000540](seq/A000xxx/A000540/) | Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6. | **34** | 1001 |
 | [A000541](seq/A000xxx/A000541/) | Sum of 7th powers: 1^7 + 2^7 + ... + n^7. | **34** | 1001 |
+| [A000542](seq/A000xxx/A000542/) | Sum of 8th powers: 1^8 + 2^8 + ... + n^8. | **34** | 24 |
+| [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **47** | 25 |
+| [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **218** | 447 |
+| [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
+| [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **103** | 300 |
+| [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **186** | 30 |
+| [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **99** | 198 |
+| [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **179** | 16 |
+| [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **179** | 15 |
+| [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **44** | 997 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

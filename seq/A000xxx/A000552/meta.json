@@ -1,0 +1,6 @@
+{
+  "name": "Number of labeled rooted trees of height 3 with n nodes.",
+  "offset": 4,
+  "min_terms": 16,
+  "timeout": 60
+}
