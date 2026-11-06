@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n with 3 consecutive ascending pairs.",
+  "offset": 1,
+  "min_terms": 450,
+  "timeout": 60
+}
