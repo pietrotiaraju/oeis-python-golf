@@ -5,13 +5,13 @@
 
 Offset 1: 1, 6, 10, 14, 15, 21, 22, 26, 30, 33, …
 
-### Python 3 — 129 bytes
+### Python 3 — 128 bytes
 
 ```python
-from math import*
+import math
 n=1
 while 1:
- r=range(2,isqrt(n)+1)
+ r=range(2,math.isqrt(n)+1)
  if all(n%(k*k)for k in r)and(n==1 or any(n%k<1 for k in r)):print(n)
  n+=1
 ```
@@ -53,6 +53,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 129 | first entry |
+| 2026-11-06 | Python 3 | 128 | use a shorter math import |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
