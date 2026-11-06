@@ -5,12 +5,12 @@
 
 Offset 0: 2, 30, 3522, 1066590, 604935042, 551609685150, 737740947722562, …
 
-### Python 3 — 88 bytes
+### Python 3 — 87 bytes
 
 ```python
 r=[s:=2];p=1
 while[print(s)]:
- for s in 0,(p:=p*-4)*p^p:r=[s:=s+5*x for x in[0]+r[::-1]]
+ for s in 0,(p:=p*-4)*p^p:r=[s:=s+x*5for x in[0]+r[::-1]]
 ```
 
 **How it works**
@@ -49,6 +49,9 @@ while[print(s)]:
   whole b-file in 60 s.
 - Python's 4300-digit limit for printing ints stops the program after
   a(672) (4299 digits); a(673) has 4307.
+- `x*5for` instead of `5*x for`: a digit followed by a keyword needs no
+  space (`5for` tokenizes as `5` and `for`, with only a SyntaxWarning on
+  stderr), 1 byte less.
 
 ## History
 
@@ -56,6 +59,7 @@ while[print(s)]:
 |---|---|---|---|
 | 2026-11-05 | Python 3 | 93 | first entry |
 | 2026-11-05 | Python 3 | 88 | u = p·p ^ p instead of p + p·abs(p) |
+| 2026-11-06 | Python 3 | 87 | `x*5for` drops a space (found while golfing A000318) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
