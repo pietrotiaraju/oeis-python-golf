@@ -5,22 +5,26 @@
 
 Offset 9: 1, 10, 55, 220, 715, 2002, 5005, 11440, 24310, 48620, …
 
-### Python 3 — 50 bytes
+### Python 3 — 41 bytes
 
 ```python
-from math import*
-n=9
-while[print(comb(n,9))]:n+=1
+n=9;a=1
+while[print(a)]:n+=1;a=a*n//(n-9)
 ```
 
 **How it works**
 
-- The sequence is the 9-th binomial column C(n,9). `comb` computes
-  the coefficient exactly, returning zero when n<9.
-- Starting at the OEIS offset n=9 prints C(9,9)=1 first, followed
-  by the binomial coefficients for every larger n.
-- A direct binomial call avoids special cases in the multiplicative
-  recurrence at the beginning of a column.
+- Start with C(9,9)=1 at the OEIS offset n=9.
+  Consecutive entries of the binomial column obey
+
+  **C(n,9)=n·C(n−1,9)/(n−9)**, for n>9.
+
+- Print the stored coefficient, increment n, then multiply and
+  divide by that ratio. The first division has denominator 1;
+  every later division is exact by the binomial identity.
+- The program needs only the counter and one coefficient. No
+  imports or separate handling of the column's earlier zeros are
+  needed, since output starts at n=9.
 
 **Notes**
 
@@ -34,6 +38,7 @@ while[print(comb(n,9))]:n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 50 | first entry |
+| 2026-11-06 | Python 3 | 41 | advance the binomial column by its exact ratio |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,7 +5,7 @@
 
 Offset 0: 1, 1, 2, 4, 10, 25, 49, 88, 237, 500, …
 
-### Python 3 — 146 bytes
+### Python 3 — 137 bytes
 
 ```python
 def s(n):
@@ -14,7 +14,7 @@ def s(n):
   a=1
   while n%p<1:n//=p;a=a*p+1
   t*=a;p+=1
- return t*(n+1)if n>1 else t
+ return t*(n+(n>1))
 a=b=1
 while[print(a)]:a,b=b,s(a)+s(b)
 ```
@@ -42,6 +42,10 @@ while[print(a)]:a,b=b,s(a)+s(b)
 - For example a(2)=1+1=2, a(3)=σ(1)+σ(2)=1+3=4,
   and a(4)=σ(2)+σ(4)=3+7=10. Both initial ones are printed.
 
+- After trial division, the remaining n is 1 or a prime. The
+  factor `n+(n>1)` is respectively 1 or n+1, combining the
+  exhausted-factor case and the final prime's divisor sum.
+
 **Notes**
 
 - Exact integer factorization and the multiplicative divisor-sum
@@ -64,6 +68,7 @@ while[print(a)]:a,b=b,s(a)+s(b)
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 146 | first entry |
+| 2026-11-06 | Python 3 | 137 | combine the remaining-prime and exhausted-factor cases |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

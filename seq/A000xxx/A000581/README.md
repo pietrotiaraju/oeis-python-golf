@@ -5,22 +5,26 @@
 
 Offset 8: 1, 9, 45, 165, 495, 1287, 3003, 6435, 12870, 24310, …
 
-### Python 3 — 50 bytes
+### Python 3 — 41 bytes
 
 ```python
-from math import*
-n=8
-while[print(comb(n,8))]:n+=1
+n=8;a=1
+while[print(a)]:n+=1;a=a*n//(n-8)
 ```
 
 **How it works**
 
-- The sequence is the 8-th binomial column C(n,8). `comb` computes
-  the coefficient exactly, returning zero when n<8.
-- Starting at the OEIS offset n=8 prints C(8,8)=1 first, followed
-  by the coefficients for all larger n.
-- A direct binomial call avoids special cases in the multiplicative
-  recurrence at the beginning of a column.
+- Start with C(8,8)=1 at the OEIS offset n=8.
+  Consecutive entries of the binomial column obey
+
+  **C(n,8)=n·C(n−1,8)/(n−8)**, for n>8.
+
+- Print the stored coefficient, increment n, then multiply and
+  divide by that ratio. The first division has denominator 1;
+  every later division is exact by the binomial identity.
+- The program needs only the counter and one coefficient. No
+  imports or separate handling of the column's earlier zeros are
+  needed, since output starts at n=8.
 
 **Notes**
 
@@ -34,6 +38,7 @@ while[print(comb(n,8))]:n+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 50 | first entry |
+| 2026-11-06 | Python 3 | 41 | advance the binomial column by its exact ratio |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

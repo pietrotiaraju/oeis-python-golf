@@ -425,7 +425,7 @@ sequence for the code and how it works.
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **144** | 14 |
 | [A000410](seq/A000xxx/A000410/) | Number of singular n X n rational (0,1)-matrices. | **275** | 5 |
 | [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **127** | 184 |
-| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **261** | 10001 |
+| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **152** | 10001 |
 | [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
 | [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
@@ -434,7 +434,7 @@ sequence for the code and how it works.
 | [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
-| [A000421](seq/A000xxx/A000421/) | Number of isomorphism classes of connected 3-regular (trivalent,… | **573** | 3 |
+| [A000421](seq/A000xxx/A000421/) | Number of isomorphism classes of connected 3-regular (trivalent,… | **369** | 3 |
 | [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **40** | 150 |
 | [A000423](seq/A000xxx/A000423/) | a(n) is smallest number > a(n-1) of form a(i)\*a(j), i < j < n. | **79** | 49 |
 | [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **86** | 16 |
@@ -449,12 +449,12 @@ sequence for the code and how it works.
 | [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
-| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **122** | 101 |
+| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **120** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **262** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
-| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **236** | 19 |
-| [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **82** | 1000 |
+| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **228** | 19 |
+| [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **79** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
@@ -471,25 +471,25 @@ sequence for the code and how it works.
 | [A000455](seq/A000xxx/A000455/) | Digits of powers of 2. | **39** | 10000 |
 | [A000456](seq/A000xxx/A000456/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000457](seq/A000xxx/A000457/) | Exponential generating function: (1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
-| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **146** | 40 |
+| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **137** | 40 |
 | [A000459](seq/A000xxx/A000459/) | Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no… | **66** | 101 |
 | [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **50** | 998 |
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
-| [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **121** | 10000 |
+| [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **115** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
 | [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **122** | 216 |
-| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **272** | 5001 |
+| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **187** | 5001 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **128** | 10000 |
-| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **236** | 19 |
+| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **229** | 19 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
-| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **579** | 4 |
+| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **550** | 4 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
-| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **228** | 19 |
+| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **221** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **231** | 6 |
@@ -504,8 +504,8 @@ sequence for the code and how it works.
 | [A000488](seq/A000xxx/A000488/) | Generalized tangent numbers d\_(n,3). | **129** | 1000 |
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
 | [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
-| [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **284** | 1001 |
-| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **236** | 18 |
+| [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **193** | 1001 |
+| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **228** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **195** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **215** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
@@ -513,7 +513,7 @@ sequence for the code and how it works.
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **64** | 100 |
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **73** | 197 |
 | [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
-| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **236** | 18 |
+| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **229** | 18 |
 | [A000501](seq/A000xxx/A000501/) | a(n) = floor(cosh(n)). | **100** | 30 |
 | [A000502](seq/A000xxx/A000502/) | Number of genus 0 rooted maps with 6 faces and n vertices. | **109** | 496 |
 | [A000503](seq/A000xxx/A000503/) | a(n) = floor(tan(n)). | **239** | 100 |
@@ -593,22 +593,19 @@ sequence for the code and how it works.
 | [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **538** | 10 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
-| [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **50** | 994 |
-| [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **50** | 993 |
-| [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **50** | 992 |
+| [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **41** | 994 |
+| [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **41** | 993 |
+| [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **41** | 992 |
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
-| [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **258** | 4 |
 | [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **146** | 10001 |
-| [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **98** | 596 |
+| [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **72** | 596 |
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
 | [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
-| [A000591](seq/A000xxx/A000591/) | Number of n-state 2-input 1-output automata with one initial and one… | **378** | 13 |
-| [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **116** | 2750 |
+| [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **100** | 2750 |
 | [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
-| [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **150** | 5000 |
-| [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **294** | 25 |
+| [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **83** | 5000 |
 | [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
 | [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **62** | 997 |
 | [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |

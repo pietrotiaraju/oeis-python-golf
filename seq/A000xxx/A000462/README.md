@@ -5,15 +5,15 @@
 
 Offset 1: 1, 2, 10, 11, 12, 100, 101, 102, 110, 1000, …
 
-### Python 3 — 121 bytes
+### Python 3 — 115 bytes
 
 ```python
 n=1
 while 1:
- r=n;s='';k=1
- while k*(k+1)//2<=n:k+=1
+ r=n;s='';t=k=1
+ while t<=n:k+=1;t+=k
  while k>1:
-  k-=1;d,r=divmod(r,k*(k+1)//2);s+=str(d)
+  t-=k;k-=1;d,r=divmod(r,t);s+=str(d)
  print(s);n+=1
 ```
 
@@ -22,9 +22,10 @@ while 1:
 - The place values are T_k=k(k+1)/2, the positive triangular
   numbers 1,3,6,10,… . The notation uses greedy quotients in
   these places, rather than powers of a fixed base.
-- The first loop advances k until T_k>n. The second decreases k
-  before each `divmod`, extracting the digit at T_k and leaving
-  the remainder to represent in the lower triangular places.
+- The first loop keeps t=T_k and advances it by T_(k+1)−T_k=k+1
+  until t>n. The second subtracts k from t before decrementing k,
+  keeping t=T_k for the next lower place. Each `divmod` extracts
+  that place digit and leaves the remaining value.
 - Before a place T_k, the remainder is less than T_(k+1).
   Since T_(k+1)−1<3T_k for k≥1, each digit is at most 2.
   Concatenating the quotient strings therefore produces single
@@ -37,8 +38,8 @@ while 1:
 
 **Notes**
 
-- Exact integer arithmetic, including each triangular value's division
-  by 2. Greedy division specifies a unique output even when other
+- Exact integer arithmetic. Consecutive differences generate the
+  triangular values without recomputing k(k+1)/2. Greedy division specifies a unique output even when other
   unrestricted sums of triangular places could represent the same n.
 - The two loops each visit O(√n) place indices per term. The number
   is encoded as text rather than parsed as a new decimal integer,
@@ -53,6 +54,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 121 | first entry |
+| 2026-11-06 | Python 3 | 115 | advance triangular place values by consecutive differences |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

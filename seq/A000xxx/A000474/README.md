@@ -5,7 +5,7 @@
 
 Offset 1: 1, 1, 1, 6, 396, 526915620, 1132835421602062347, …
 
-### Python 3 — 579 bytes
+### Python 3 — 550 bytes
 
 ```python
 from itertools import*
@@ -16,10 +16,10 @@ while 1:
  L=list(M(range(n)));A=[(i,j)for j in range(n)for i in range(j)];S=set();c=0
  for t in H((1<<len(A))-1):
   if frozenset(t)in S:continue
-  c+=1;Q=[[k for k in range(len(A))if x>>k&1]for x in t]
+  c+=1
   for p in permutations(range(n)):
    B=[1<<((b:=max(p[i],p[j]))*(b-1)//2+min(p[i],p[j]))for i,j in A]
-   S.add(frozenset(sum(B[k]for k in q)for q in Q))
+   S.add(frozenset(sum(B[k]for k in range(len(A))if x>>k&1)for x in t))
  print(c);n+=2
 ```
 
@@ -36,12 +36,13 @@ while 1:
   once. For isomorphism testing, `frozenset(t)` explicitly removes
   factor order from its representation.
 - If this frozenset is not already in S, increment the class count.
-  Q then records each matching as a list of bit positions, using
-  A's fixed list of edges (i,j), i<j.
+  A is the fixed list of edges (i,j), i<j; the program
+  reads a matching's set bits directly when relabeling it.
 - For every vertex permutation p, B maps an old edge position to
   the bit of its relabeled edge {p[i],p[j]}. Taking its smaller
   and larger endpoints restores the triangular bit encoding.
-- `sum(B[k]for k in q)` makes a relabeled matching mask.
+- `sum(B[k]for k in range(len(A))if x>>k&1)` makes
+  the relabeled mask of matching x, selecting exactly its set bits.
   Distinct edges have distinct image bits, so their sum equals
   their bitwise union. Store the frozenset of those masks in S.
 - Thus the whole vertex-permutation orbit is marked before the
@@ -86,6 +87,7 @@ while 1:
 | 2026-11-06 | Python 3 | 631 | simplify equivalent expressions |
 | 2026-11-06 | Python 3 | 621 | inline the least-edge test and shorten the matching base case |
 | 2026-11-06 | Python 3 | 579 | use lazy lambdas for matchings and exact covers |
+| 2026-11-06 | Python 3 | 550 | read each matching bit directly while relabeling |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

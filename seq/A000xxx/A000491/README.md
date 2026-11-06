@@ -7,79 +7,67 @@ Offset 0: 7, 19, 47, 97, 189, 339, 589, 975, 1576, 2472, …
 
 This is a multiset partition of n identical white objects and 5
 identical black ones. A fixed black total reduces the two-variable
-product to the ordinary partition series followed by 5 short
-recurrence filters and one polynomial convolution.
+product to the ordinary partition series and a fixed collection of
+rational filters, combined directly without a polynomial convolution.
 
-### Python 3 — 284 bytes
+### Python 3 — 193 bytes
 
 ```python
-from math import*
-a=[1];n=0;F=[0]*15;Q=[[0]*k for k in range(1,6)]
-while 1:
- t=a[-1]
- for L in Q:L+=[t:=t+L.pop(0)]
- F=[t]+F;print(sumprod([7,5,2,-2,-7,-9,-6,1,4,6,3,1,-3,-2,1],F[:15]))
- n+=1;a+=[sum((k%2*2-1)*a[-k*(3*k-1)//2]for k in range(-isqrt(n),isqrt(n)+1)if 0<k*(3*k-1)//2<=n)]
+a=[1];n=c=0;Q=[[0]*k for k in range(1,6)]
+while t:=a[-1]:
+ T=[L.append(t:=t+L.pop(0))or t for L in Q]
+ print(T[0]+(c:=c+2*sum(T[:2])+T[2])+t)
+ n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
 ```
 
 **How it works**
 
-- A part is a pair (i,j) of nonnegative counts, not both zero:
-  i white objects and j black objects. Parts are unordered and may
-  repeat. The bivariate generating function is therefore
-  ∏_((i,j)≠(0,0)) (1−xⁱyʲ)⁻¹.
-- Parts with j=0 give the ordinary partition series
-  P(x)=∏ᵢ≥₁(1−xⁱ)⁻¹. For a fixed positive black count j,
-  Euler's q-binomial identity gives
-  ∏ᵢ≥₀(1−yʲxⁱ)⁻¹=Σₘ≥₀ y^(jm)/D_m(x), with
-  D_m(x)=∏ₖ₌₁ᵐ(1−xᵏ) and D_0(x)=1.
-- A partition λ of the fixed black total 5 specifies m_j
-  parts having j black objects. Thus the required series is
-  P(x)·Σ_(λ partitions 5) 1/∏ⱼ D_(m_j)(x).
-  Bringing that finite sum over the common denominator D_5
-  gives P(x)N(x)/D_5(x), where N's coefficients are
-  [7, 5, 2, −2, −7, −9, −6, 1, 4, 6, 3, 1, −3, −2, 1] in ascending degree order.
-- `a` stores ordinary partition numbers p(0), …, p(n), beginning
-  with p(0)=1. The final line appends p(n+1) by Euler's pentagonal
-  recurrence. The signed index k supplies the generalized
-  pentagonal numbers k(3k−1)/2, and `k%2*2-1` supplies their
-  alternating signs for positive and negative k alike.
-- After `n+=1`, the range −⌊√n⌋≤k≤⌊√n⌋ contains every
-  needed pentagonal index; the `if` removes k=0 and indices
-  greater than n. Before the append the list has length n,
-  so `a[-g]` is p(n−g).
-- Each queue L of length k applies division by 1−xᵏ to the
-  current coefficient stream: z(n)=input(n)+z(n−k).
-  `L.pop(0)` retrieves z(n−k); the assignment expression adds
-  it to t and `L+=[t:=t+L.pop(0)]` saves the new z(n).
-  The queues start with zeros for negative indices, and are built
-  separately so their mutations do not alias one another.
-- After the 5 filters, t is the current coefficient of P/D_5.
-  `F=[t]+F` puts it at the front of the history. The initial
-  15 zeros supply coefficients at negative indices, so `F[:15]`
-  always has exactly as many entries as the numerator polynomial.
-  `sumprod` takes their exact integer dot product.
+- A part is a pair (i,j) of nonnegative white and black counts,
+  not both zero. Since parts form a multiset, their bivariate
+  generating function is ∏_((i,j)≠(0,0))(1−xⁱyʲ)⁻¹.
+- Let P(x)=∏ᵢ≥₁(1−xⁱ)⁻¹ and D_r(x)=∏ᵢ₌₁ʳ(1−xⁱ).
+  Euler's q-binomial identity shows that a partition of the fixed
+  black total with m_j parts of size j contributes
+  P(x)/∏ⱼD_(m_j)(x). Write H_r=P/D_r.
+- The seven black partitions are 5, 4+1, 3+2, 3+1+1,
+  2+2+1, 2+1+1+1 and 1+1+1+1+1. They give
+  **P(x)(1/D₁+2/D₁²+2/(D₁D₂)+1/(D₁D₃)+1/D₅)**,
+  equivalently
+  **H₁+H₅+(2H₁+2H₂+H₃)/(1−x)**.
+- The five queues produce T=[h₁,h₂,h₃,h₄,h₅], with t=h₅.
+  Accumulate c+=2h₁+2h₂+h₃, which divides that stream by
+  1−x. The output h₁+c+h₅ is therefore the required count.
+- Each queue L of length r implements division by 1−xʳ:
+  the current output is the input plus the output r steps earlier.
+  `pop(0)` retrieves that earlier value, and the updated value is
+  appended to the queue. All queues start with zeros.
+- The ordinary partition numbers in a use the logarithmic derivative
+  of P:
 
-- At n=0 no white objects occur, leaving exactly the ordinary
-  partitions of 5: 7. This is N(0),
-  so the initial coefficient is produced by the same filters and
-  convolution as every later one.
+  **m·p(m)=Σₖ₌₁ᵐ k·Σⱼ₌₁^⌊m/k⌋ p(m−jk)**.
+
+  Before the append, n=−m and d=−k; `a[d::d]` contains
+  p(m−k),p(m−2k),… . The two minus signs cancel in the quotient.
+  Starting from p(0)=1 generates the exact partition stream.
+
+- The assignment expression in the while condition loads the next
+  partition number into t. Partition numbers are positive, so this
+  condition keeps running. `L.append(...)` returns None; `or t`
+  records the queue's new integer output in T after saving it in L.
 
 **Notes**
 
-- Exact integer recurrences throughout. The numerator coefficients
-  come from a finite generating-function identity, rather than
-  from storing initial terms of the answer.
-- The queue lengths total 15; a and F grow by
-  one entry per term. The pentagonal sum has O(√n) summands,
-  while prepending to F also copies its accumulated history each round.
-  These operations, plus large-integer arithmetic, set the runtime.
-- [A000412](../A000412/) uses the same partition stream
-  with a different black total, filter count and numerator.
-  Python 3.11+ eventually reaches its default 4300-digit output
-  conversion limit; that interpreter limit is not a wrong term.
-- The b-file has 1001 terms (indices 0 through 1000). The bar is the
-  whole b-file in 60 s.
+- Every step is an exact formal-series identity. The finite black
+  cases above explain all constants and coefficients in the code.
+- One growing list stores ordinary partition numbers; the rational
+  filters need only queues of fixed lengths and cumulative totals.
+  No history of the final filtered stream is stored.
+- The divisor recurrence uses O(m log m) entries for coefficient m,
+  plus large-integer arithmetic. The source is shorter, with more
+  arithmetic per partition coefficient than the pentagonal recurrence.
+- Python's integer-to-string conversion limit can eventually apply.
+- The b-file has 1001 terms. The unchanged verification bar is
+  the complete reference file in 60 s.
 
 ## History
 
@@ -87,6 +75,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 296 | first entry |
 | 2026-11-06 | Python 3 | 284 | use sumprod on padded coefficient history and combine queue updates |
+| 2026-11-06 | Python 3 | 193 | accumulate the five black-partition filters directly |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
