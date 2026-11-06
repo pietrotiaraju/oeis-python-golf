@@ -17,17 +17,36 @@ while 1:
 
 **How it works**
 
-The OEIS gives a(n)=(n-1)!*sum(n^k/k!,k=0..n-2).
-Evaluate it by Horner's rule, as in Luschny's integer algorithm
-on that page: while k descends from n-1 to 1, f becomes
-(n-1)!/(k-1)! and a becomes n*a+f. For n=1 the sum is empty
-and the program prints 0. No rational intermediate values are needed.
+- The OEIS formula is a(n)=(n−1)!·Σₖ₌₀ⁿ⁻² nᵏ/k!.
+  Expanding the factorial ratio makes every summand an integer,
+  but computing each factorial separately would repeat work.
+- Horner's rule evaluates the polynomial in n from its highest
+  power down. With k descending from n−1 to 1, the update `f*=k`
+  makes f=(n−1)!/(k−1)!, and `a=a*n+f` incorporates the
+  coefficient of n^(k−1).
+- For n=4, the successive pairs (f,a) are (3,3), (6,18),
+  (6,78). This is 3!·(1+4+4²/2!)=78, with no rational
+  intermediate values.
+- At n=1 the loop is empty and the accumulator stays 0, the correct
+  normalized total height of a one-node tree. For each larger n,
+  `a=0;f=1` starts a fresh Horner evaluation.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 1000 terms in 60 s; the official b-file contains 1000 terms.
-- The downloaded OEIS b-file omits leading digits at indices 841, 846, 857, 858, 859, 929, 936, 938, 939, 940, 941. This new reference restores those digits. Each affected term was independently checked against the factorial sum as well as the integer Horner algorithm. All other source values are unchanged.
+- This is Luschny's integer Horner algorithm, linked on the OEIS
+  page. It uses n−1 inner iterations and constant-size accumulator
+  state, apart from the growing integers themselves.
+- The exact factorial sum proves correctness beyond the reference
+  values. Python 3.11+ eventually stops when output exceeds its
+  default 4300-digit conversion limit, an interpreter limit.
+- **Reference-file correction.** The repository's b-file restores
+  leading digits missing from the downloaded OEIS values at indices
+  841, 846, 857, 858, 859, 929, 936, 938, 939, 940 and 941.
+  As recorded when the sequence was added, the repaired values were
+  checked against both the factorial sum and this integer algorithm;
+  the other reference values are unchanged.
+- The b-file has 1000 terms (indices 1 through 1000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

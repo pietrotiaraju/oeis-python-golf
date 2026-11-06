@@ -18,7 +18,7 @@ sequence for the code and how it works.
 
 | Sequence | Name | Python 3 | Terms checked |
 |---|---|---|---|
-| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **255** | 6 |
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **217** | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | 10502 |
 | [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **146** | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | 1001 |
@@ -31,7 +31,7 @@ sequence for the code and how it works.
 | [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **110** | 3336 |
 | [A000012](seq/A000xxx/A000012/) | The simplest sequence of positive numbers: the all 1's sequence. | **16** | 10001 |
 | [A000013](seq/A000xxx/A000013/) | Definition (1): Number of n-bead binary necklaces with beads of 2… | **96** | 3335 |
-| [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **165** | 1001 |
+| [A000014](seq/A000xxx/A000014/) | Number of series-reduced trees with n nodes. | **163** | 1001 |
 | [A000015](seq/A000xxx/A000015/) | Smallest prime power >= n. | **82** | 10000 |
 | [A000016](seq/A000xxx/A000016/) | a(n) is the number of distinct (infinite) output sequences from… | **96** | 3335 |
 | [A000018](seq/A000xxx/A000018/) | Number of positive integers <= 2^n of form x^2 + 16\*y^2. | **92** | 24 |

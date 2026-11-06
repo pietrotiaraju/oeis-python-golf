@@ -14,16 +14,28 @@ while[print(a)]:a*=k;k+=4
 
 **How it works**
 
-The factorial ratio a(n) = (2n+1)!/n! satisfies a(0) = 1 and
-a(n+1) = (4n+6)a(n). The state `k` visits 6, 10, 14, … and
-`a` is multiplied by the next factor after each print.
-`[print(a)]` is a nonempty list, so the loop continues indefinitely.
+- The ratio of consecutive terms cancels almost completely:
+  a(n+1)/a(n)=(2n+3)(2n+2)/(n+1)=4n+6.
+  With a(0)=1, the sequence is obtained by multiplying successively
+  by 6, 10, 14, … .
+- At each print, a is the current term and k is the multiplier for
+  the next term. `a*=k;k+=4` advances both values without computing
+  a factorial or keeping a separate sequence index.
+- `print(a)` returns `None`, but `[None]` is nonempty, so the list
+  in the condition keeps the loop going. The initial value is printed
+  before any multiplication, giving the required offset zero.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 101 terms in 60 s; the official b-file contains 101 terms.
-- Python 3.11+ eventually stops at its default 4300-digit integer-to-string limit; this interpreter limit is not counted as a correctness failure.
+- Exact integer multiplication proves the invariant at every step.
+  The factorial expression needs no division in this form.
+- Equivalently a(n)=2ⁿ(2n+1)!!, so the ratio loop combines the
+  powers of two and odd-factor product into a single state.
+- Only a and the next multiplier are stored; their integer sizes grow
+  with n. Python 3.11+ eventually stops at the default 4300-digit
+  output conversion limit, an interpreter limit rather than a wrong term.
+- The b-file has 101 terms (indices 0 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

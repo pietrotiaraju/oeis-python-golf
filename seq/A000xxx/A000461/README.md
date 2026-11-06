@@ -14,15 +14,29 @@ while 1:n+=1;print(str(n)*n)
 
 **How it works**
 
-Multiplying the decimal string of n by n concatenates exactly n
-copies. Start at n=1; strings preserve every digit without requiring
-conversion of the growing output to a Python integer.
+- Increase n before printing, so the first block is “1”.
+  `str(n)*n` repeats the entire decimal text of n exactly n times.
+  Multiplying a string means concatenation, not numeric multiplication.
+- At n=3 the result is “333”; at n=10 it is ten copies of “10”,
+  namely “10101010101010101010”. The code needs no change when
+  the block length increases.
+- A block starts with a nonzero digit, so the repeated text has no
+  leading zero. Printing that text gives exactly the required decimal
+  integer representation without constructing the integer itself.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 333 terms in 60 s; the official b-file contains 333 terms.
-
+- If d=digits(n), the equivalent numeric formula is
+  n·(10^(dn)−1)/(10ᵈ−1). String repetition avoids both these
+  powers and their division.
+- Each output has exactly n·digits(n) characters. Allocation and
+  printing therefore take time proportional to that length, with
+  the output string as the main temporary storage.
+- The complete output string is never parsed as an integer, so its
+  length is not subject to Python's 4300-digit integer conversion
+  limit. Compare [A000422](../A000422/) for descending blocks.
+- The b-file has 333 terms (indices 1 through 333). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

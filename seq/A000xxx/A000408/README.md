@@ -17,18 +17,36 @@ while 1:
 
 **How it works**
 
-The sets s and t contain positive squares and sums of two positive
-squares. On encountering a new square n, add n+x for every x in s.
-This generates each possible unordered pair when its largest square
-first becomes available. The final test searches n=x+y with x in s
-and y in t. Every representation needed for the current candidate
-uses squares at most n, so the test is exact for every candidate.
+- `n` scans positive integers, `k` is the next square root to add,
+  and s contains exactly {1², 2², …, ⌊√n⌋²} at the membership
+  test. When `n==k*k`, insert n and increment k. Signs of square
+  roots do not matter, and zero is deliberately absent.
+
+- t contains all sums of two members of s, initially {2}={1+1}.
+  When a new largest square n appears, every new pair contains n,
+  so add `{n+x for x in s}`. Add n to s first: this includes n+n,
+  as required when the same square is used twice.
+
+- `any(n-x in t for x in s)` appends one square to a two-square
+  sum. Every square in a representation of n is at most n, so
+  this finite test is complete for the current candidate.
+
+- Scanning n in increasing order prints each accepted integer once.
+  The sets discard duplicate sums: this counts represented values,
+  not the number of representations.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
+- There are ⌊√n⌋ single squares. All stored pair sums are at most
+  2n, so their number is O(n); a membership test still tries only
+  the ⌊√n⌋ single-square complements.
 
+- Exact integer arithmetic and a complete search over the available
+  squares, so the construction remains correct beyond the b-file.
+  Time and storage grow with the scanned candidate values.
+- Compare [A000419](../A000419/), which excludes one- and two-square cases.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

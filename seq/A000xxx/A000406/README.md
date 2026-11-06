@@ -14,18 +14,41 @@ while Q:=[[t]+[t:=t+i*x for i,x in enumerate(L)]for L in Q]:print(t);t=0
 
 **How it works**
 
-This is the exact Stirling-transform antidiagonal algorithm of
-[A000310](../A000310/), with two additional transform levels.
-Apply the first-kind Stirling transform six times to the series x.
-Each level obeys T(i+1,k) = i*T(i,k) + T(i,k+1).
-The carried value `t` starts at 1 and is 0 after the first pass,
-providing the coefficients of x to the innermost level.
+- Put H(x)=−log(1−x). The e.g.f. is the sixfold composition
+  H(H(H(H(H(H(x)))))). Substituting H(x) in a series takes its
+  unsigned first-kind Stirling transform:
+  b(n)=Σⱼ |s(n,j)|·c(j). Start with the coefficients of x,
+  c(0)=0, c(1)=1, and c(n)=0 for n>1.
+- For one transform, T(i,k)=Σⱼ |s(i,j)|·c(j+k) satisfies
+  T(i+1,k)=i·T(i,k)+T(i,k+1), with T(0,k)=c(k).
+  Its left edge T(n,0) is the transformed sequence. Unlike the
+  second-kind triangle of [A000405](../A000405/), the weight is i.
+- A list L holds [T(0,n), T(1,n−1), …, T(n,0)]. The next
+  antidiagonal starts with the new input t; each following entry is
+  the preceding new entry plus i·L[i]. That is the walrus update
+  `t:=t+i*x` inside `enumerate(L)`.
+- The last t of one level becomes the first entry needed by the next
+  level. Six lists therefore apply six transforms without building
+  the full Stirling triangle.
+- Initially `t=1` supplies c(1). After each output `t=0` supplies
+  the later zero coefficients of x. Assigning Q in the condition
+  computes the next row before printing, so output starts at n=1.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 100 terms in 60 s; the official b-file contains 100 terms.
-- Python 3.11+ eventually reaches its default 4300-digit integer-to-string limit; this interpreter limit is not counted as a correctness failure.
+- `Q=[[t:=1]]*6` shares its initial list safely: this algorithm only
+  reads old lists and creates new ones. Its initial first entry would
+  normally be c(0)=0, but it is multiplied by i=0 and never contributes,
+  so using `[1]` saves a separate initialization.
+- The outer list is always nonempty; using it as the `while` condition
+  both stores the new antidiagonals and keeps the loop running.
+- This is [A000310](../A000310/) with six levels instead of four.
+  Each round handles six lists whose lengths grow by one, using exact
+  integer arithmetic and linear storage in the number of terms.
+- The rapidly growing coefficients eventually meet Python 3.11+'s
+  default 4300-digit integer-to-string limit, an interpreter limit.
+- The b-file has 100 terms (indices 1 through 100). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

@@ -14,16 +14,39 @@ while 1:print(4**n-(n+1)*3**n+n*(n+1)*2**(n-1)-(n-1)*n*(n+1)//6);n+=1
 
 **How it works**
 
-Eulerian inclusion-exclusion for exactly three descents gives
-4^n-C(n+1,1)*3^n+C(n+1,2)*2^n-C(n+1,3).
-Expand the binomial coefficients and evaluate in integers,
-starting at the minimum size n=4.
+- With the zero-based descent convention, an Eulerian number
+  A(n,r) counts permutations with exactly r positions i such that
+  p_i>p_(i+1). This page uses r=3; column numbering in
+  other Eulerian triangles can be shifted by one.
+- Eulerian inclusion-exclusion gives
+  A(n,r)=Σⱼ₌₀ʳ⁺¹ (−1)ʲ C(n+1,j)(r+1−j)ⁿ.
+  At n≥4 the last term is zero, leaving
+
+  **a(n)=4ⁿ−(n+1)3ⁿ+C(n+1,2)2ⁿ−C(n+1,3).**
+
+- Expand the small binomial coefficients directly in integers.
+
+  `n*(n+1)*2**(n-1)` is C(n+1,2)2ⁿ, with the factor
+  2 in the denominator absorbed into the power. The final
+  `(n-1)*n*(n+1)//6` is C(n+1,3).
+
+- The smallest possible size is n=4, when only the
+  decreasing permutation has 3 descents. The initial
+  output is therefore 1, with no earlier zeros printed.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 197 terms in 60 s; the official b-file contains 197 terms.
-
+- Exact integer powers and products; divisibility of the binomial
+  products makes the floor divisions exact, including after
+  applying the expression's subtraction signs.
+- [A000460](../A000460/) is the adjacent Eulerian
+  column. The direct formula avoids storing an expanding row
+  of the full Eulerian triangle.
+- There is a constant number of integer temporaries. The terms
+  grow exponentially and eventually reach Python 3.11+'s default
+  4300-digit output conversion limit, an interpreter limit.
+- The b-file has 197 terms (indices 4 through 200). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

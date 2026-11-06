@@ -14,16 +14,32 @@ while[print(a)]:a,d=a*a+d,d*(a+1)
 
 **How it works**
 
-Let d=a(n+1)-a(n)². The defining recurrence says that the next
-difference is (a(n)+1)*d. Initially a(1)=2 and d=5-2²=1.
-A simultaneous assignment therefore advances both a and d using
-only the old state, avoiding a separate copy of the preceding term.
+- Write A_n for a sequence term and put d_n=A_(n+1)−A_n².
+  The defining recurrence says
+  d_n=(A_(n−1)+1)·d_(n−1), or equivalently
+  d_(n+1)=(A_n+1)·d_n.
+- At a print, a=A_n and d=d_n. The simultaneous update
+  `a,d=a*a+d,d*(a+1)` therefore supplies A_(n+1) and d_(n+1)
+  using only the two old values.
+- The seeds A_1=2 and A_2=5 give d_1=5−2²=1. The first
+  states are (2,1), (5,3), (28,18), (802,522), explaining
+  the first four outputs without storing two preceding terms.
+- `[print(a)]` stays true after printing, so the update runs
+  indefinitely as long as the interpreter can handle the integers.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 14 terms in 60 s; the official b-file contains 14 terms.
-- Python 3.11+ eventually reaches its default 4300-digit integer-to-string limit; that interpreter limit is not counted as a correctness failure.
+- Exact integer arithmetic. The difference state is always positive:
+  it starts at 1 and is multiplied by a+1>0. Consequently every
+  later term exceeds the square of the preceding one.
+- Storing the difference reduces the longer defining expression to
+  one squaring, one addition and one product, without a separate
+  counter or a copy of the previous term.
+- Digit counts roughly double each step. The first 14 terms fit
+  the default 4300-digit conversion limit of Python 3.11+; the next
+  term exceeds it. That interpreter limit is not a correctness failure.
+- The b-file has 14 terms (indices 1 through 14). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

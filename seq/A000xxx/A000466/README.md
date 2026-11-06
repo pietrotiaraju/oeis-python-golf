@@ -14,13 +14,29 @@ while 1:print(4*n*n-1);n+=1
 
 **How it works**
 
-Evaluate the defining polynomial 4n²-1 directly for n=0,1,2,….
+- The loop substitutes n=0,1,2,… directly into 4n²−1.
+  Starting at zero supplies the exceptional negative first value −1;
+  incrementing afterwards gives 3,15,35,… .
+- Factoring gives (2n−1)(2n+1), the product of two consecutive odd
+  integers. Expanding it as `4*n*n-1` avoids storing both factors
+  or adding parentheses around them.
+- The first difference is a(n+1)−a(n)=8n+4, and the second
+  difference is 8. These identities explain the quadratic growth,
+  but the program needs only the defining polynomial and its counter.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 901 terms in 60 s; the official b-file contains 901 terms.
-
+- Exact integer arithmetic at every index. Python integers grow as
+  needed, so there is no fixed-width overflow or square-root test.
+- Apart from the initial −1, every term is positive and odd.
+  For example a(3)=4·9−1=35=5·7.
+- A finite-difference loop would need both a running value and a
+  running increment. Direct evaluation retains just n and keeps
+  the implementation short.
+- [A000447](../A000447/) uses n(4n²−1)/3 for partial sums of
+  odd squares, a related polynomial with different output values.
+- The b-file has 901 terms (indices 0 through 900). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

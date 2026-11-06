@@ -17,17 +17,31 @@ while 1:
 
 **How it works**
 
-The set s contains exactly the positive squares at most n.
-When n reaches the next square, add it and advance k.
-The membership test asks whether n=x+y for two members of s.
-Zero is absent, so both squares are nonzero. Scanning n in increasing
-order prints every represented integer once, regardless of multiplicity.
+- `n` scans positive integers, `k` is the next square root to add,
+  and s contains exactly {1², 2², …, ⌊√n⌋²} at the membership
+  test. When `n==k*k`, insert n and increment k. Signs of square
+  roots do not matter, and zero is deliberately absent.
+
+- `any(n-x in s for x in s)` asks whether n is the sum of two
+  positive squares. Every square in a representation is at most n,
+  so the current s contains every square needed for the test.
+
+- Scanning n in increasing order prints each accepted integer once.
+  The sets discard duplicate sums: this counts represented values,
+  not the number of representations.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 10000 terms in 60 s; the official b-file contains 10000 terms.
+- The set has ⌊√n⌋ entries and a test tries at most that many
+  complements. Maintaining the next square avoids recomputing
+  integer square roots for each candidate.
 
+- Exact integer arithmetic and a complete search over the available
+  squares, so the construction remains correct beyond the b-file.
+  Time and storage grow with the scanned candidate values.
+- Compare [A000415](../A000415/), which also excludes single squares.
+- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

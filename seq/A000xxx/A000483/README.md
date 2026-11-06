@@ -17,20 +17,36 @@ while 1:
 
 **How it works**
 
-For permutations with no fixed points and exactly k cycles,
-the associated first-kind Stirling recurrence is
-b(n,k)=(n-1)*(b(n-1,k)+b(n-2,k-1)).
-Either insert the new element into a cycle of a permutation
-of n-1 elements, or pair it with one of n-1 other elements
-as a new 2-cycle. The seed b(0,0)=1 supplies the empty
-permutation; all other entries at n=0,1 are zero.
-Keep columns 0..3 and print the third column from n=6.
+- Let b(n,k) count permutations of n elements with k cycles,
+  every cycle having length at least 2. To include the new element,
+  either insert it into an existing cycle in n−1 possible places,
+  or pair it with one of n−1 elements as a new 2-cycle. Hence
+
+  **b(n,k)=(n−1)(b(n−1,k)+b(n−2,k−1)).**
+
+- The empty permutation gives b(0,0)=1. There are no permitted
+  permutations on one element, so the first two rows are
+  `[1,0,0,0]` and `[0,0,0,0]`, columns k=0 through 3.
+- At each pass increment n, then compute its row from `A[-1]`
+  and `A[-2]`. The prefixed zero is b(n,0); the comprehension
+  constructs columns k=1,2,3 using only the two preceding rows.
+- Three nontrivial cycles need at least six elements. `if n>5`
+  skips the earlier zeros, and `A[-1][3]` prints the desired column.
+  At n=6 every cycle is a pair, so a(6)=6!/(2³3!)=15.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 195 terms in 60 s; the official b-file contains 195 terms.
-
+- This counts cycles of permutations, with their cyclic ordering,
+  rather than just set-partition blocks. The minimum cycle length
+  rules out fixed points entirely; compare [A000454](../A000454/)
+  and [A000482](../A000482/) for ordinary first-kind columns.
+- Exact integer recurrence. A stores four entries per generated row,
+  although the update reads only the last two rows. Thus storage grows
+  linearly with n and each row uses three recurrence evaluations.
+- Factorial growth eventually reaches Python 3.11+'s default
+  4300-digit output conversion limit, an interpreter limit.
+- The b-file has 195 terms (indices 6 through 200). The bar is the
+  whole b-file in 60 s.
 
 ## History
 

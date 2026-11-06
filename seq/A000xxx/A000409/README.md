@@ -16,19 +16,39 @@ while[print(-sum(s[k+1]*math.comb(2**k-1,n)for k in range(n)))]:
 
 **How it works**
 
-The OEIS gives a(n) = -sum(s(n+1,k+1)*C(2^k-1,n), k=0..n-1),
-where s is the signed Stirling number of the first kind. The state
-`s` starts as a tuple of coefficients and then becomes a list; it stores coefficients of x(x-1)...(x-n), initially x(x-1)(x-2).
-Multiplying by x-(n+1) after each output updates those coefficients.
-All binomial arguments are nonnegative; math.comb returns zero when
-there are fewer than n available rows. This counts the column
-degeneracies in the sequence definition, rather than all singular matrices.
+- The formula on the OEIS page is
+  a(n)=−Σₖ₌₀ⁿ⁻¹ s(n+1,k+1)·C(2ᵏ−1,n), with signed
+  first-kind Stirling numbers. These are the coefficients of
+  x(x−1)…(x−n), stored in increasing powers in `s`.
+- At n=2 that polynomial is x³−3x²+2x, so
+  `s=0,2,-3,1`. The comprehension takes `s[k+1]`, multiplies it
+  by the indicated binomial coefficient and negates the complete sum.
+- A binary vector of length k has 2ᵏ−1 nonzero possibilities; the
+  binomial term chooses n distinct such vectors. The Stirling coefficients
+  perform the inversion that singles out the column degeneracies in
+  the definition.
+- After printing, increment n. Multiplication of the old polynomial
+  by x−n replaces coefficient s[k] by s[k−1]−n·s[k]. The leading
+  zero and final 1 in the new list handle the two endpoint powers.
+- `math.comb(2**k-1,n)` is zero if there are fewer than n available
+  patterns. All its arguments are nonnegative, even for k=0, so
+  the low-index zero contributions need no special case.
 
 **Notes**
 
-- The program uses exact integer arithmetic and the standard library only.
-- The verification bar is 14 terms in 60 s; the official b-file contains 14 terms.
-
+- This sequence counts matrices with a zero column or repeated columns
+  subject to the specified row condition. Linear dependence without
+  either of those column defects does not suffice for this count.
+- For n=3, the nonzero contribution is −s(4,3)·C(3,3)=6.
+  It is an inclusion-exclusion count, so intermediate signed terms
+  are expected even though the result is nonnegative.
+- Exact integers; the polynomial multiplication constructs the needed
+  Stirling row at every size. One growing coefficient list is retained.
+- The initial tuple is shorter than a list literal; the first update
+  creates a list. `import math` also saves bytes here because only
+  `comb` is used, once in the source.
+- The b-file has 14 terms (indices 2 through 15). The bar is the
+  whole b-file in 60 s.
 
 ## History
 
