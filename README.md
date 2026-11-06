@@ -327,6 +327,7 @@ sequence for the code and how it works.
 | [A000312](seq/A000xxx/A000312/) | a(n) = n^n; number of labeled mappings from n points to themselves… | **27** | 386 |
 | [A000313](seq/A000xxx/A000313/) | Number of permutations of length n with 3 consecutive ascending pairs. | **43** | 450 |
 | [A000314](seq/A000xxx/A000314/) | Number of mixed Husimi trees with n nodes; or labeled polygonal cacti… | **107** | 101 |
+| [A000316](seq/A000xxx/A000316/) | Two decks each have n kinds of cards, 2 of each kind. The first deck… | **56** | 101 |
 | [A000317](seq/A000xxx/A000317/) | a(n+1) = a(n)^2 - a(n)\*a(n-1) + a(n-1)^2. | **41** | 14 |
 | [A000318](seq/A000xxx/A000318/) | Generalized tangent numbers d(4,n). | **73** | 100 |
 | [A000320](seq/A000xxx/A000320/) | Generalized tangent numbers d(5,n). | **89** | 189 |
