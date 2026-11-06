@@ -5,7 +5,7 @@
 
 Offset 3: 1, 3, 46, 6552, 11270400, 335390189568, 224382967916691456, 4292039421591854273003520, 2905990310033882693113989027594240, …
 
-### Python 3 — 302 bytes
+### Python 3 — 279 bytes
 
 ```python
 from functools import*
@@ -13,11 +13,8 @@ from itertools import*
 n=2
 while 1:
  n+=1;Q=list(permutations(range(n)))
- @cache
- def f(r,C):
-  if r==n-2:return 1
-  return sum(f(r+1,tuple(C[j]|1<<p[j]for j in range(n)))for p in Q if p[0]==r and all(C[j]>>p[j]&1==0 for j in range(n)))
- print(f(1,tuple(1<<j for j in range(n))))
+ f=cache(lambda r,C:r>n-3or sum(f(r+1,tuple(C[j]|1<<p[j]for j in range(n)))for p in Q if p[0]==r and all(~C[j]>>p[j]&1 for j in range(n))))
+ print(+f(1,tuple(1<<j for j in range(n))))
 ```
 
 **How it works**
@@ -28,6 +25,10 @@ while 1:
   Column bit masks forbid any symbol already used in that column.
 - `f` counts all completions, memoized by row count and column masks.
   A000573 stops after four rows; A000576 stops after n−2 rows.
+  The terminal Boolean counts as one in sums; complementing a column
+  mask before shifting tests whether the proposed symbol is still unused.
+- Unary `+` also converts the terminal Boolean to the integer 1 for the
+  first case, which already consists of the normalized first row.
 - The initial n is chosen so the first output has the OEIS offset.
   No quotient by row permutations is applied: row positions are fixed.
 
@@ -43,6 +44,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 302 | first entry |
+| 2026-11-06 | Python 3 | 279 | cached completion expression and complemented column masks |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

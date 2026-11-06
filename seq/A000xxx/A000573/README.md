@@ -5,7 +5,7 @@
 
 Offset 4: 4, 56, 6552, 1293216, 420909504, 207624560256, 147174521059584, 143968880078466048, 188237563987982390784, 320510030393570671051776, …
 
-### Python 3 — 300 bytes
+### Python 3 — 276 bytes
 
 ```python
 from functools import*
@@ -13,10 +13,7 @@ from itertools import*
 n=3
 while 1:
  n+=1;Q=list(permutations(range(n)))
- @cache
- def f(r,C):
-  if r==4:return 1
-  return sum(f(r+1,tuple(C[j]|1<<p[j]for j in range(n)))for p in Q if p[0]==r and all(C[j]>>p[j]&1==0 for j in range(n)))
+ f=cache(lambda r,C:r>3or sum(f(r+1,tuple(C[j]|1<<p[j]for j in range(n)))for p in Q if p[0]==r and all(~C[j]>>p[j]&1 for j in range(n))))
  print(f(1,tuple(1<<j for j in range(n))))
 ```
 
@@ -28,6 +25,8 @@ while 1:
   Column bit masks forbid any symbol already used in that column.
 - `f` counts all completions, memoized by row count and column masks.
   A000573 stops after four rows; A000576 stops after n−2 rows.
+  The terminal Boolean counts as one in sums; complementing a column
+  mask before shifting tests whether the proposed symbol is still unused.
 - The initial n is chosen so the first output has the OEIS offset.
   No quotient by row permutations is applied: row positions are fixed.
 
@@ -43,6 +42,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 300 | first entry |
+| 2026-11-06 | Python 3 | 276 | cached completion expression and complemented column masks |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

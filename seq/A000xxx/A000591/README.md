@@ -5,18 +5,18 @@
 
 Offset 1: 10, 378, 16576, 819470, 45660051, 2846339383, 196946930215, 15006717613499, 1250005718758059, 113076157328915784, …
 
-### Python 3 — 378 bytes
+### Python 3 — 353 bytes
 
 ```python
 from math import*
-def P(n,m=1):return[()]if n==0 else[(j,)+p for j in range(m,n+1)for p in P(n-j,j)]
-def f(p):return prod(sum(d for d in p if j%d<1)for j in p)
+P=lambda n,m=1:[()]if n<1else[(j,)+p for j in range(m,n+1)for p in P(n-j,j)]
+f=lambda p:prod(sum(d for d in p if j%d<1)for j in p)
 n=0
 while 1:
  H=factorial(n);T=0
  for p in P(n):
-  q=p+(1,1);r=tuple(j//gcd(j,2)for j in q for _ in range(gcd(j,2)))
-  T+=H//prod(j**p.count(j)*factorial(p.count(j))for j in set(p))*(f(q)**2+f(r))
+  q=p+(1,1);r=[j//gcd(j,2)for j in q for _ in range(gcd(j,2))]
+  T+=H//prod(j*(i+1-p.index(j))for i,j in enumerate(p))*(f(q)**2+f(r))
  print(T//(2*H));n+=1
 ```
 
@@ -38,6 +38,10 @@ while 1:
   With no unmarked states the count is (4²+4)/2=10. The published
   sequence indexes this two-marked-state case at 1, so its index is n+1.
 
+For sorted `p`, the occurrence indices of a repeated length j give
+`j*(i+1-p.index(j))` = j, 2j, …, mⱼj. Their product is exactly
+∏ⱼ j^mⱼmⱼ!, including the empty product for n=0.
+
 **Notes**
 
 - The calculation follows the automaton orbit model of Harary and Palmer,
@@ -54,6 +58,7 @@ while 1:
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 378 | first entry |
+| 2026-11-06 | Python 3 | 353 | occurrence-index class factors and compact cycle lists |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

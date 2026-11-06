@@ -1,7 +1,5 @@
-L=[[]for _ in range(4)];n=0
-while 1:
- n+=1
- for h in range(4):L[h]+=[1 if n==1 else sum(sum(L[h][n-d*j-1]for j in range(1,(n-1)//d+1))*d*L[h-1][d-1]for d in range(1,n))//(n-1)if h else 0]
- if n>=8:
-  R=[a-b for a,b in zip(L[3],L[2])]
-  print((sum(R[j-1]*R[n-j-1]for j in range(1,n))+(R[n//2-1]if n%2==0 else 0))//2)
+*L,n=1,1,0;R=0,0
+while[n>-14or print((sum(map(int.__mul__,R,R[::-1]))+n//2%2*R[-n//4+1])//2)]:
+ n-=2
+ for h in 1,0:L+=sum(d*L[~d*h]*sum(L[d::d])for d in range(n,0,2))//n,
+ R+=L[-2]-L[-1],
