@@ -423,16 +423,12 @@ sequence for the code and how it works.
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **144** | 14 |
-| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **128** | 184 |
+| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **127** | 184 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **275** | 10001 |
 | [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
 | [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
 | [A000416](seq/A000xxx/A000416/) | Number of 6-dimensional partitions of n. | **266** | 7 |
-| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **161** | 1000 |
-| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **127** | 184 |
-| [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
-| [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
 | [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **160** | 1000 |
 | [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **147** | 10000 |
@@ -443,7 +439,6 @@ sequence for the code and how it works.
 | [A000425](seq/A000xxx/A000425/) | Coefficients of ménage hit polynomials. | **57** | 22 |
 | [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **81** | 100 |
 | [A000427](seq/A000xxx/A000427/) | Number of 7-dimensional partitions of n. | **266** | 7 |
-| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **161** | 1000 |
 | [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **160** | 1000 |
 | [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **129** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
@@ -475,9 +470,8 @@ sequence for the code and how it works.
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **32** | 333 |
 | [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **121** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
-| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **123** | 216 |
-| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **284** | 5001 |
 | [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **122** | 216 |
+| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **284** | 5001 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
@@ -497,9 +491,8 @@ sequence for the code and how it works.
 | [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **66** | 196 |
 | [A000488](seq/A000xxx/A000488/) | Generalized tangent numbers d\_(n,3). | **129** | 1000 |
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
-| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **115** | 195 |
-| [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **296** | 1001 |
 | [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
+| [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **296** | 1001 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **210** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **239** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
