@@ -1,0 +1,6 @@
+{
+  "name": "Associated Stirling numbers: second-order reciprocal Stirling numbers (Fekete) a(n) = [[n, 3]]. The number of 3-orbit permutations of an n-set with at least 2 elements in each orbit.",
+  "offset": 6,
+  "min_terms": 195,
+  "timeout": 60
+}
