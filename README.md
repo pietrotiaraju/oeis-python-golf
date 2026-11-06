@@ -598,14 +598,17 @@ sequence for the code and how it works.
 | [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **41** | 992 |
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
+| [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **258** | 4 |
 | [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **146** | 10001 |
 | [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **72** | 596 |
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
 | [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
+| [A000591](seq/A000xxx/A000591/) | Number of n-state 2-input 1-output automata with one initial and one… | **378** | 13 |
 | [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **100** | 2750 |
 | [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
 | [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **83** | 5000 |
+| [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **294** | 25 |
 | [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
 | [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **62** | 997 |
 | [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
