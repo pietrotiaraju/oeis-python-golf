@@ -458,7 +458,7 @@ sequence for the code and how it works.
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
 | [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
-| [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **934** | 2 |
+| [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **874** | 2 |
 | [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **370** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **35** | 1001 |
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **319** | 10000 |
@@ -487,7 +487,7 @@ sequence for the code and how it works.
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
-| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **550** | 4 |
+| [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **512** | 4 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
 | [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **221** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
@@ -522,17 +522,17 @@ sequence for the code and how it works.
 | [A000506](seq/A000xxx/A000506/) | One half of the number of permutations of [n] such that the… | **116** | 18 |
 | [A000507](seq/A000xxx/A000507/) | Number of permutations of [n] with exactly 3 increasing runs of… | **91** | 18 |
 | [A000508](seq/A000xxx/A000508/) | Generalized class numbers c\_(n,3). | **143** | 21 |
-| [A000509](seq/A000xxx/A000509/) | Size of second largest n-arc in PG(2,q), where q runs through the… | **1387** | 2 |
-| [A000510](seq/A000xxx/A000510/) | Maximal number of points in PG(2,q) with at most 3 on a line (next… | **1314** | 3 |
+| [A000509](seq/A000xxx/A000509/) | Size of second largest n-arc in PG(2,q), where q runs through the… | **867** | 2 |
+| [A000510](seq/A000xxx/A000510/) | Maximal number of points in PG(2,q) with at most 3 on a line (next… | **794** | 3 |
 | [A000511](seq/A000xxx/A000511/) | Number of n-step spiral self-avoiding walks on hexagonal lattice,… | **249** | 20 |
-| [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
-| [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
+| [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **607** | 8 |
+| [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **607** | 8 |
 | [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **93** | 995 |
 | [A000515](seq/A000xxx/A000515/) | a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)\*binomial(2n,n)^2. | **51** | 101 |
-| [A000516](seq/A000xxx/A000516/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **776** | 8 |
+| [A000516](seq/A000xxx/A000516/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **607** | 8 |
 | [A000517](seq/A000xxx/A000517/) | Number of permutations of length n with exactly three valleys. | **100** | 194 |
 | [A000518](seq/A000xxx/A000518/) | Generalized tangent numbers d\_(n,4). | **155** | 1000 |
-| [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **802** | 7 |
+| [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **633** | 7 |
 | [A000520](seq/A000xxx/A000520/) | Nearest integer to log\_10(n). | **39** | 1000 |
 | [A000521](seq/A000xxx/A000521/) | Coefficients of modular function j as power series in q = e^(2 Pi i… | **156** | 150 |
 | [A000522](seq/A000xxx/A000522/) | Total number of ordered k-tuples (k=0..n) of distinct elements from… | **36** | 451 |
@@ -590,7 +590,7 @@ sequence for the code and how it works.
 | [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
 | [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
 | [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **302** | 3 |
-| [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **538** | 10 |
+| [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **393** | 10 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
 | [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **41** | 994 |

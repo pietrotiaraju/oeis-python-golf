@@ -5,32 +5,26 @@
 
 Offset 1: 1, 2, 3, 5, 7, 18, 43, 313, 7525, 846992, …
 
-### Python 3 — 802 bytes
+### Python 3 — 633 bytes
 
 ```python
 from math import*
 from functools import*
-@cache
-def P(n,m=1):return[()]if n==0 else[(j,)+p for j in range(m,n+1)for p in P(n-j,j)]
+P=cache(lambda n,m=1:[((j,*p),-z*j*~p.count(j))for j in range(m,n+1)for p,z in P(n-j,j)]if n else[((),1)])
 def a(n,k):
- if k<0 or k>n:return 0
  k=min(k,n-k)
- if k==0:return 1
- T=0;H=factorial(n)
- for R in P(n):
-  w=H//prod(j**R.count(j)*factorial(R.count(j))for j in set(R))
-  for S in P(n):
+ if k<1:return+(k==0)
+ T=0;H=factorial(n)**2
+ for R,r in P(n):
+  for S,s in P(n):
    @cache
-   def f(i,D):
-    if i==len(R):return int(not any(D))
-    r=R[i]
-    def g(j,k,E):
-     if j==len(S):return f(i+1,tuple(v for s,v in sorted(zip(S,E))))if k==0 else 0
-     s=S[j];d=gcd(r,s);u=s//d;v=r//d
-     return sum(comb(d,t)*g(j+1,k-t*u,E+(D[j]-t*v,))for t in range(min(d,k//u,D[j]//v)+1))
-    return g(0,k,())
-   T+=w*(H//prod(j**S.count(j)*factorial(S.count(j))for j in set(S)))*f(0,(k,)*len(S))
- return T//(H*H)
+   def f(i,j,h,D):
+    if i==len(R):return 1
+    if j==len(S):return h==0 and f(i+1,0,k,tuple(v for s,v in sorted(zip(S,D))))
+    d=gcd(R[i],S[j]);u=S[j]//d;v=R[i]//d
+    return sum(comb(d,t)*f(i,j+1,h-t*u,D[1:]+(D[0]-t*v,))for t in range(min(d,h//u,D[0]//v)+1))
+   T+=H//r//s*f(0,0,k,(k,)*len(S))
+ return T//H
 n=0
 while 1:n+=1;print(sum(a(n,k)for k in range(n+1))-1)
 ```
@@ -38,18 +32,25 @@ while 1:n+=1;print(sum(a(n,k)for k in range(n+1))-1)
 **How it works**
 
 - Apply Burnside's lemma to the independent row and column permutation
-  groups S_n×S_n. `P` generates integer partitions, hence one representative
-  per permutation cycle type. A type R occurs n!/∏ᵣ r^mᵣmᵣ! times.
+  groups S_n×S_n. `P` generates each cycle type R together with its
+  denominator z(R)=∏ⱼ j^mⱼmⱼ!, so its conjugacy class has n!/z(R) elements.
+  Adding a part j multiplies the denominator by j times its new multiplicity;
+  `-~p.count(j)` is exactly that multiplicity.
 - For a row cycle of length r and a column cycle of length s, the cell
-  action has d=gcd(r,s) orbits. Selecting t of those orbits has weight
-  C(d,t), adds t·s/d ones to each row, and t·r/d ones to each column.
-- `g` chooses these orbit counts across one row cycle, enforcing its
-  required degree. `f` advances through row cycles and tracks the remaining
-  column degrees. Equal-length column cycles are interchangeable, so their
-  remaining degrees are sorted before memoization.
-- Weight the fixed-matrix counts by the two conjugacy-class sizes and
-  divide by (n!)². Complementation gives a(n,k)=a(n,n−k); degree 0 has
-  one class. A000519 sums all degrees and removes the all-zero matrix.
+  action has d=gcd(r,s) orbits. Selecting t of them has weight C(d,t),
+  adds t·s/d ones to each row, and t·r/d ones to each column.
+- The cached recurrence `f(i,j,h,D)` visits these cycle pairs. `h` is the
+  remaining degree in row cycle i. `D[0]` is the current column-cycle
+  deficit; rotating D after each choice brings the next column to the front.
+  The bound on t keeps both deficits nonnegative.
+- At the end of a row cycle, require h=0 and sort the deficits within
+  equal-length column cycles before memoization. Once all rows are filled,
+  their total is n·k. The column total is the same and no deficit is negative,
+  so every remaining column deficit is zero; the terminal count is 1.
+- Put H=(n!)². Each fixed-matrix count has integer weight H/z(R)/z(S);
+  sum these weighted counts and divide by H. Complementation gives
+  a(n,k)=a(n,n−k); degree 0 has one class and negative degree has none.
+  A000519 sums all degrees and removes the all-zero matrix.
 
 **Notes**
 
@@ -68,6 +69,7 @@ while 1:n+=1;print(sum(a(n,k)for k in range(n+1))-1)
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 802 | first entry |
+| 2026-11-06 | Python 3 | 633 | carry cycle-type denominators and merge the orbit recurrences |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
