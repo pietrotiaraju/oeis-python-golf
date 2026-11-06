@@ -539,7 +539,9 @@ sequence for the code and how it works.
 | [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **218** | 30 |
 | [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **218** | 15 |
 | [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **108** | 50 |
+| [A000530](seq/A000xxx/A000530/) | Let p(n, s, x) be predicate that number of occurrences of s's in x >=… | **240** | 8 |
 | [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **71** | 100 |
+| [A000532](seq/A000xxx/A000532/) | Number of Hamiltonian paths from NW to SW corners in an n X n grid. | **232** | 5 |
 | [A000533](seq/A000xxx/A000533/) | a(0)=1; a(n) = 10^n + 1, n >= 1. | **33** | 101 |
 | [A000534](seq/A000xxx/A000534/) | Numbers that are not the sum of 4 nonzero squares. | **102** | 100 |
 | [A000535](seq/A000xxx/A000535/) | Card matching: coefficients B[n,2] of t^2 in the reduced hit… | **141** | 20 |
@@ -555,6 +557,7 @@ sequence for the code and how it works.
 | [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
 | [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **99** | 300 |
 | [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **173** | 30 |
+| [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **315** | 50 |
 | [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **99** | 198 |
 | [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **135** | 16 |
 | [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **135** | 15 |
@@ -571,10 +574,15 @@ sequence for the code and how it works.
 | [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
 | [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **35** | 10001 |
 | [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **32** | 1001 |
+| [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **308** | 35 |
+| [A000569](seq/A000xxx/A000569/) | Number of graphical partitions of 2n. | **249** | 12 |
 | [A000570](seq/A000xxx/A000570/) | Number of tournaments on n nodes determined by their score vectors. | **54** | 500 |
+| [A000571](seq/A000xxx/A000571/) | Number of different score sequences that are possible in an n-team… | **220** | 1000 |
 | [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **81** | 59 |
+| [A000573](seq/A000xxx/A000573/) | Number of 4 X n normalized Latin rectangles. | **300** | 3 |
 | [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
 | [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
+| [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **302** | 3 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
 | [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **41** | 994 |
