@@ -1,2 +1,2 @@
-n=4
-while 1:print((4**n-4*3**n+6*2**n-4)//24);n+=1
+a=b=c=1
+while[print(a)]:c-=~c;b=3*b+c;a=4*a+b
