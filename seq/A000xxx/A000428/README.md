@@ -5,51 +5,50 @@
 
 Offset 1: 1, 8, 36, 148, 554, 2094, 7624, 27428, 96231, 332159, …
 
-The input weights are A000579, c(k) = C(k+5,6). The
-program rearranges the Euler-transform divisor sums into a single
-coefficient recurrence; it never expands the infinite product directly.
+a(n) is the coefficient of xⁿ in Π_{k≥1} (1 − x^k)^(−C(k+5, 6)): the number of
+multisets of parts with sum n when a part k comes in C(k+5, 6) kinds
+(A000579 shifted to start at C(6, 6) = 1). This is MacMahon's guess for the
+7-dimensional partitions [A000427](../A000427/), which first differs at n = 6
+(2094 against 2024).
 
-### Python 3 — 111 bytes
+### Python 3 — 109 bytes
 
 ```python
-from math import*
+import math
 a=[1];n=0
-while 1:n-=1;a+=sum(d*comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n,;print(a[-1])
+while 1:n-=1;print(x:=sum(d*math.comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n);a+=x,
 ```
 
 **How it works**
 
-- The input weights are c(k)=C(k+5,6). The Euler transform
-  has generating function A(x)=∏ₖ≥₁(1−xᵏ)^(−c(k)), with a(0)=1.
-- Logarithmic differentiation gives
-  m·a(m)=Σᵣ₌₁ᵐ b(r)a(m−r), where
-  b(r)=Σ_(k divides r) k·c(k). Interchanging the finite sums gives
+- Write c(k) = C(k+5, 6) and A(x) = Σ a(m)xᵐ with a(0) = 1. Logarithmic
+  differentiation of the product gives m·a(m) = Σ_{r=1}^{m} b(r)·a(m−r) with
+  b(r) = Σ_{k|r} k·c(k); grouping by k instead of r,
 
-  **m·a(m)=Σₖ₌₁ᵐ k·c(k)·Σⱼ₌₁^⌊m/k⌋ a(m−jk)**.
+  m·a(m) = Σ_{k=1}^{m} k·c(k)·Σ_{j≥1} a(m − jk).
 
-- Before computing a(m), the list a contains a(0), …, a(m−1),
-  and the code's n is −m. For d=−k, the slice `a[d::d]` is
-  a(m−k), a(m−2k), …, stopping before the index becomes negative.
-- `comb(5-d,6)` is c(k). Both d and n carry a minus sign,
-  so their signs cancel in the exact division. Append the next
-  coefficient and print it; no separate divisor-sum list is needed.
-- The auxiliary a(0)=1 supplies the recurrence, while output starts
-  at a(1), as required by the OEIS offset.
+- Before a(m) is computed the list holds a(0), …, a(m−1) and n = −m. With
+  d = −k, the slice `a[d::d]` runs backwards from the end in steps of k:
+  a(m−k), a(m−2k), …, and stops at the start of the list. So no divisor sums
+  and no bound on j are needed.
+- `math.comb(5-d,6)` is C(k+5, 6) = c(k). d and n are both negative, so the
+  signs cancel in `d*…//n`, and the division is exact because m·a(m) is that
+  sum.
+- `print(x:=…)` prints the new term and `a+=x,` appends it; the auxiliary
+  a(0) = 1 is never printed.
 
 **Notes**
 
-- Exact integer arithmetic follows from the formal Euler product.
-  The sum rearrangement is finite at each coefficient and imposes
-  no approximation or conjecture.
-- One growing coefficient list is stored. The nested slice sums
-  use O(m log m) entries for coefficient m, plus the cost of
-  binomial coefficients and large-integer arithmetic.
-- [A000417](../A000417/)
-  uses the same method with a different binomial weight. This is
-  the specified Euler transform, rather than a formula for actual
-  partitions in that many dimensions.
-- The b-file has 1000 terms. The unchanged bar is the whole
-  reference file in 60 s.
+- `from math import*` with `comb`: 1 byte more; appending first and printing
+  `a[-1]`: also 1 more. The same program with `comb(4-d,5)` is
+  [A000417](../A000417/).
+- Exact integer arithmetic, so the program is right for every n.
+- Term m costs about m·log m slice entries: about 4800 terms in 60 s here.
+- The b-file has 1000 terms (up to a(1000)); the bar is the whole b-file in
+  60 s.
+- log a(n) grows like 8·ζ(8)^(1/8)·(n/7)^(7/8), so the 4300-digit
+  int-to-str limit only comes near n ≈ 24000, far beyond what prints in
+  practice.
 
 ## History
 
@@ -58,6 +57,7 @@ while 1:n-=1;a+=sum(d*comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n,;print(a[-
 | 2026-11-06 | Python 3 | 161 | first entry |
 | 2026-11-06 | Python 3 | 160 | use a shorter math import |
 | 2026-11-06 | Python 3 | 111 | reorder the Euler-transform sum and use one coefficient list |
+| 2026-11-07 | Python 3 | 109 | `import math`, print the new term through a walrus |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

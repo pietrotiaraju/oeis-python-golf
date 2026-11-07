@@ -1,2 +1,2 @@
-m=b=c=d=1;a=0
-while[print(a)]:m+=1;a,b,c,d=b,c,d,m*(b+c+d)+(m*c+d-b)//2+a+(-1)**m
+a=b=n=1;c=0
+while[print(c+(2-n)*b-a)]:a,b,c=-b,c,n*(b+c)-a;n+=1
