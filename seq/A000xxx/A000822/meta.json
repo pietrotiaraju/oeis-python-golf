@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of (sin^2 x + sin x) /cos 2x.",
+  "offset": 0,
+  "min_terms": 178,
+  "timeout": 60
+}
