@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that (1,k) is \"good\".",
+  "offset": 1,
+  "min_terms": 17,
+  "timeout": 60
+}

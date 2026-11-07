@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways to represent n using the binary operator a * b = 2^a + b.",
+  "offset": 0,
+  "min_terms": 36,
+  "timeout": 60
+}

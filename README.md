@@ -641,6 +641,7 @@ sequence for the code and how it works.
 | [A000627](seq/A000xxx/A000627/) | Number of non-stereoisomeric paraffins with n carbon atoms. | **102** | 42 |
 | [A000628](seq/A000xxx/A000628/) | Number of n-node unrooted steric quartic trees; number of n-carbon… | **160** | 39 |
 | [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
+| [A000630](seq/A000xxx/A000630/) | Number of ways to represent n using the binary operator a \* b = 2^a +… | **76** | 36 |
 | [A000631](seq/A000xxx/A000631/) | Number of ethylene derivatives with n carbon atoms. | **167** | 499 |
 | [A000632](seq/A000xxx/A000632/) | Number of esters with n carbon atoms up to structural isomerism. | **138** | 98 |
 | [A000633](seq/A000xxx/A000633/) | Number of acyclic quaternary ammonium ions with n carbon atoms. | **194** | 31 |
@@ -658,6 +659,7 @@ sequence for the code and how it works.
 | [A000648](seq/A000xxx/A000648/) | Number of alkyls C\_{n+15} H\_{2n+10} (Anthr.) with n carbon atoms. | **173** | 26 |
 | [A000649](seq/A000xxx/A000649/) | Number of alkyls C\_{n+15} H\_{2n+10} (Phenan) with n carbon atoms. | **158** | 26 |
 | [A000650](seq/A000xxx/A000650/) | Number of alkyls S C\_{n+4} H\_{2n+4} with n carbon atoms. | **157** | 40 |
+| [A000651](seq/A000xxx/A000651/) | Running time of Takeuchi function. | **124** | 571 |
 | [A000655](seq/A000xxx/A000655/) | a(n) = number of letters in a(n-1), a(1) = 1 (in English). | **28** | 80 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
 | [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
@@ -665,6 +667,7 @@ sequence for the code and how it works.
 | [A000660](seq/A000xxx/A000660/) | Boustrophedon transform of 1,1,2,3,4,5,... | **62** | 401 |
 | [A000661](seq/A000xxx/A000661/) | Shifts 2 places left under boustrophedon transform. | **63** | 481 |
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
+| [A000668](seq/A000xxx/A000668/) | Mersenne primes (primes of the form 2^n - 1). | **66** | 15 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
 | [A000671](seq/A000xxx/A000671/) | Number of boron trees with n nodes, i.e. n-node rooted trees with… | **154** | 50 |
 | [A000672](seq/A000xxx/A000672/) | Number of 3-valent trees (= boron trees or binary trees) with n nodes. | **151** | 52 |
@@ -680,6 +683,12 @@ sequence for the code and how it works.
 | [A000686](seq/A000xxx/A000686/) | Number of 4-colored labeled graphs on n nodes, divided by 4. | **109** | 9 |
 | [A000687](seq/A000xxx/A000687/) | Boustrophedon transform (first version) of Fibonacci numbers… | **71** | 483 |
 | [A000689](seq/A000xxx/A000689/) | Final decimal digit of 2^n. | **27** | 81 |
+| [A000690](seq/A000xxx/A000690/) | Landau's approximation to population of x^2 + y^2 <= 2^n. | **294** | 400 |
+| [A000691](seq/A000xxx/A000691/) | Ramanujan's approximation to population of x^2 + y^2 <= 2^n. | **375** | 34 |
+| [A000693](seq/A000xxx/A000693/) | Related to population of numbers of form x^2 + y^2. | **93** | 21 |
+| [A000694](seq/A000xxx/A000694/) | Related to population of numbers of form x^2 + y^2. | **370** | 33 |
+| [A000695](seq/A000xxx/A000695/) | Moser-de Bruijn sequence: sums of distinct powers of 4. | **38** | 1024 |
+| [A000696](seq/A000xxx/A000696/) | Numbers k such that (1,k) is "good". | **79** | 17 |
 | [A000697](seq/A000xxx/A000697/) | Boustrophedon transform of 1, 1, 4, 9, 16, ... | **65** | 401 |
 | [A000698](seq/A000xxx/A000698/) | A problem of configurations: a(0) = 1; for n>0, a(n) = (2n-1)!! -… | **78** | 201 |
 | [A000699](seq/A000xxx/A000699/) | Number of irreducible chord diagrams with 2n nodes. | **75** | 405 |
