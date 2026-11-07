@@ -1,11 +1,4 @@
-from itertools import*
+from math import*
+f=lambda r,*L:r and sum(f(r-abs(k),*L,k)for k in range(-r,r+1)if k)//r>>1or(m:=2*lcm(*L))and 1<<sum(prod((t//(g:=gcd(t,l))%2*l<1)<<g for l in L)for t in range(m))//m+(sum(L)>-n)
 n=0
-while 1:
- t=k=0
- for*m,p in product(range(2**n),permutations(range(n))):
-  r=b=1
-  for w in p:m+=[y^1<<w for y in m]
-  for x in m:
-   while~x:b&=m[x]!=x;m[x],x=-1,m[x];r<<=x<0
-  t+=r<<b;k+=2
- print(t//k);n+=1
+while[print(f(n)//2)]:n+=1

@@ -5,20 +5,13 @@
 
 Offset 0: 1, 2, 4, 14, 222, 616126, 200253952527184, 263735716028826576482466871188128, …
 
-### Python 3 — 235 bytes
+### Python 3 — 226 bytes
 
 ```python
-from itertools import*
+from math import*
+f=lambda r,*L:r and sum(f(r-abs(k),*L,k)for k in range(-r,r+1)if k)//r>>1or(m:=2*lcm(*L))and 1<<sum(prod((t//(g:=gcd(t,l))%2*l<1)<<g for l in L)for t in range(m))//m+(sum(L)>-n)
 n=0
-while 1:
- t=k=0
- for*m,p in product(range(2**n),permutations(range(n))):
-  r=b=1
-  for w in p:m+=[y^1<<w for y in m]
-  for x in m:
-   while~x:b&=m[x]!=x;m[x],x=-1,m[x];r<<=x<0
-  t+=r<<b;k+=2
- print(t//k);n+=1
+while[print(f(n)//2)]:n+=1
 ```
 
 **What is counted**
@@ -42,53 +35,61 @@ while 1:
 
 **Odd cycle ⟺ fixed point**
 
-The program never measures cycle lengths. For g in B_n, some cycle has odd
-length exactly when g has a fixed point. A fixed point is a cycle of length
-1. Conversely, if x lies on a cycle of odd length L, let
+The weight (2 or 1) only needs to know whether g has a fixed point. For g
+in B_n, some cycle has odd length exactly when g has a fixed point. A fixed
+point is a cycle of length 1. Conversely, if x lies on a cycle of odd length L, let
 u = x ⊕ g(x) ⊕ … ⊕ g^(L−1)(x). An affine map over GF(2) commutes with sums of
 an odd number of terms, so g(u) = g(x) ⊕ … ⊕ g^L(x) = u, and u is a fixed
 point.
 
+**Signed cycle types**
+
+- An element of B_n is a signed permutation of the coordinates: each cycle
+  has a length l and a sign, the parity of the negations along it. A
+  positive cycle fixes 2 patterns of its coordinates and a negative one
+  none, so g has a fixed point exactly when all its cycles are positive.
+- gᵗ splits a cycle of length l into gcd(t,l) cycles, each with sign
+  (−1)^(t/gcd(t,l)) if the cycle was negative. So gᵗ fixes Π 2^gcd(t,l)
+  points, with the factor of a negative cycle 0 when t/gcd(t,l) is odd. The
+  order of g divides m = 2·lcm(lengths), and Burnside's lemma for ⟨g⟩ gives
+  c(g) = (1/m) Σ_{t<m} fix(gᵗ).
+
 **How it works**
 
-- `for*m,p in product(…)` runs over every mask s and permutation p; the
-  starred target makes `m` the one-element list `[s]`.
-- `for w in p:m+=[y^1<<w for y in m]` doubles the list once per coordinate,
-  so that `m[x]` = s ⊕ (bit i of x moved to bit p[i]): `m` is g as a
-  permutation of `range(2**n)`. For n = 0 the loop is empty and `m = [0]` is
-  the identity on the single point.
-- `for x in m` reads each position in turn. If it was already visited it
-  reads −1 and skips; otherwise it reads a point of an unvisited cycle and
-  walks it, marking every point −1. The step that lands on a marked point
-  sets x to −1, ends the walk and doubles `r`, so `r` ends at 2^c(g). On the
-  way `b&=m[x]!=x` clears `b` at a fixed point, and `r<<b` is
-  2^c(g)·(2 or 1).
-- `k` grows by 2 per group element, so `t//k` = Σ_g 2^c(g)·(2 or 1) / (2·|B_n|).
-- n = 0 needs no special case: the one map has one cycle, a fixed point, and
-  weight 2, so the first line is 2//2 = 1.
+- `f(r,*L)` averages the weight 2^c(g)·(2 or 1) over the signed permutations
+  of r further coordinates, given the signed cycles `L` chosen so far
+  (positive cycles as negative numbers, negative cycles as positive ones).
+  The cycle through one chosen coordinate has length k with probability 1/r
+  and either sign with probability 1/2, so f(r,L) = Σ_{k,±} f(r−k, L+[±k]) /
+  (2r): `k` runs over ±1…±r, `r-abs(k)` coordinates are left, and `//r>>1`
+  divides by 2r. There is no |B_n| anywhere.
+- At r = 0, `prod(…)` is fix(gᵗ): `(t//g%2*l<1)<<g` is 2^gcd(t,l) unless l > 0
+  (a negative cycle) and t/gcd(t,l) is odd. The lengths add up to −n exactly
+  when every cycle is positive, so `sum(L)>-n` is 1 when g has no fixed
+  point, and the leaf `1<<c+(sum(L)>-n)` is 2^c(g)·(2 or 1).
+- The floors are exact. With H = B_r and τ the signed permutation already
+  chosen, f(r,L) = (1/|H|) Σ_{h∈H} (fix(hτ) + fix(hτ·¬)). By de Bruijn's
+  lemma (for H normal in G and σ in G, (1/|H|) Σ_{h∈H} fix(hσ) is the number
+  of H-orbits that σ maps to themselves) both halves are integers.
+- `f(n)` is Σ_g 2^c(g)·(2 or 1) / |B_n|, so `f(n)//2` is a(n).
 
 **Notes**
 
-- The program walks all 2ⁿ·n! elements on 2ⁿ points: it prints 7 terms
-  (n = 0 to 6) in about 5 s, and the eighth, 645 120 elements on 128 points,
-  takes well over a minute. The bar is 7 terms in 60 s; the b-file has 12
-  (n = 0 to 11).
-- It is the [A000157](../A000157/) frame with the cycle walk of
-  [A000214](../A000214/): testing x itself, which becomes −1 exactly when
-  the cycle closes, instead of `~m[x]` and `m[x]<0`.
-- `r=b=1` has its own line because for n = 0 the doubling loop never runs:
-  resetting it there, as A000157 does, would need `r=b=1;` before the main
-  loop as well (4 bytes more).
-- Reading s and the coordinate images off the digits of one integer, as
-  A000214 does (`for i in range((N:=2**n)*n**n)`, keeping only the
-  bijections), is 230 bytes without the import, but it visits all n^n
-  digit strings: n = 6 alone takes minutes, so it does not reach the bar.
+- The recursion visits 2·3^(n−1) signed compositions of n instead of the
+  2ⁿ·n! group elements: all 12 b-file terms (n = 0 to 11)
+  take about 7 s here. The bar stays at 7 terms in 60 s.
+- It is the recursion of [A000616](../A000616/) (NP classes) and
+  [A000610](../A000610/) (self-complementary classes) with both weights at
+  once; this sequence is their average.
+- Terms past n = 13 exceed Python's 4300-digit limit for printing integers,
+  long after the timeout.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 235 | first entry |
+| 2026-11-07 | Python 3 | 226 | signed cycle-type recursion with //(2r) at every level |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
