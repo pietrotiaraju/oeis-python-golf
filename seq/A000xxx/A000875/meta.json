@@ -1,0 +1,6 @@
+{
+  "name": "Number of switching networks with S(n) and C(2,2) acting on the domain and GL(3,2) acting on the range.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
