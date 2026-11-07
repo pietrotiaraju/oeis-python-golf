@@ -14,28 +14,23 @@ while[print(a)]:a*=k;k+=4
 
 **How it works**
 
-- The ratio of consecutive terms cancels almost completely:
-  a(n+1)/a(n)=(2n+3)(2n+2)/(n+1)=4n+6.
-  With a(0)=1, the sequence is obtained by multiplying successively
-  by 6, 10, 14, … .
-- At each print, a is the current term and k is the multiplier for
-  the next term. `a*=k;k+=4` advances both values without computing
-  a factorial or keeping a separate sequence index.
-- `print(a)` returns `None`, but `[None]` is nonempty, so the list
-  in the condition keeps the loop going. The initial value is printed
-  before any multiplication, giving the required offset zero.
+- a(n+1)/a(n) = (2n+3)(2n+2)/(n+1) = 4n + 6, so from a(0) = 1 the terms
+  are the running products of 6, 10, 14, … . `k` is the next factor:
+  `a*=k;k+=4`.
+- `print(a)` sits in the loop condition: `[None]` is a non-empty list, so
+  the loop never ends, and a(0) is printed before the first update.
 
 **Notes**
 
-- Exact integer multiplication proves the invariant at every step.
-  The factorial expression needs no division in this form.
-- Equivalently a(n)=2ⁿ(2n+1)!!, so the ratio loop combines the
-  powers of two and odd-factor product into a single state.
-- Only a and the next multiplier are stored; their integer sizes grow
-  with n. Python 3.11+ eventually stops at the default 4300-digit
-  output conversion limit, an interpreter limit rather than a wrong term.
-- The b-file has 101 terms (indices 0 through 100). The bar is the
-  whole b-file in 60 s.
+- Same length: `a=k=1` with `a*=k+5;k+=4`, and `a=1;k=2` with
+  `k+=4;a*=k`. Moving the update into the print would need a start value
+  a(−1) = 1/2.
+- Exact integer arithmetic, so the program is right for every n. a(n) is
+  also 2ⁿ·(2n+1)!!.
+- The b-file has 101 terms (up to a(100)); the bar is the whole b-file in
+  60 s. Every printable term appears in about 0.3 s here.
+- a(1309) is the first term with more than 4300 digits, so printing stops
+  there.
 
 ## History
 

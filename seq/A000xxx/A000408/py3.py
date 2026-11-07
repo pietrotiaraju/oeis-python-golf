@@ -1,5 +1,2 @@
-n=1;s={1};t={2};k=2
-while 1:
- if n==k*k:s.add(n);t|={n+x for x in s};k+=1
- if any(n-x in t for x in s):print(n)
- n+=1
+n=k=1;s={1}
+while n:=n+1:s|={k*k};k+=k*k<=n;{n-a-b for a in s for b in s}&s and print(n)
