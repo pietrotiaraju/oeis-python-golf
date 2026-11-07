@@ -752,7 +752,15 @@ sequence for the code and how it works.
 | [A000753](seq/A000xxx/A000753/) | Boustrophedon transform of Catalan numbers. | **78** | 401 |
 | [A000754](seq/A000xxx/A000754/) | Boustrophedon transform of odd numbers. | **62** | 401 |
 | [A000756](seq/A000xxx/A000756/) | Boustrophedon transform of sequence 1,1,0,0,0,0,... | **60** | 401 |
+| [A000759](seq/A000xxx/A000759/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **119** | 11 |
+| [A000760](seq/A000xxx/A000760/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 10 |
+| [A000761](seq/A000xxx/A000761/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 9 |
+| [A000762](seq/A000xxx/A000762/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 8 |
 | [A000764](seq/A000xxx/A000764/) | Boustrophedon transform of Bell numbers. | **83** | 483 |
+| [A000765](seq/A000xxx/A000765/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **133** | 7 |
+| [A000766](seq/A000xxx/A000766/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 6 |
+| [A000767](seq/A000xxx/A000767/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 5 |
+| [A000768](seq/A000xxx/A000768/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 4 |
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
 | [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
 | [A000772](seq/A000xxx/A000772/) | E.g.f. exp(tan(x) + sec(x) - 1). | **83** | 479 |
