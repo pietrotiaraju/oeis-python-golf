@@ -910,6 +910,12 @@ sequence for the code and how it works.
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
 | [A000899](seq/A000xxx/A000899/) | Number of solutions to the rook problem on an n X n board having a… | **97** | 200 |
 | [A000900](seq/A000xxx/A000900/) | Number of solutions to the rook problem on an n X n board having a… | **77** | 201 |
+| [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
+| [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
+| [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
+| [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
+| [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
+| [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

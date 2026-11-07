@@ -1,0 +1,6 @@
+{
+  "name": "Fermat coefficients.",
+  "offset": 5,
+  "min_terms": 996,
+  "timeout": 60
+}
