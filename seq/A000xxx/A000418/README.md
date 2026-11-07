@@ -5,63 +5,60 @@
 
 Offset 1: 0, 0, 0, 0, 0, 0, 0, 1, 7, 34, …
 
-### Python 3 — 129 bytes
+### Python 3 — 116 bytes
 
 ```python
-L=[1]*6;n=0
-while[print(L[-6]-L[-5])]:
- n-=6
- for h in range(6):L+=sum(d*L[(-d-5+h)*(h<5)]*sum(L[d::d])for d in range(n,0,6))//n,
+L=[1]*8;n=0
+while[print(L[-2]-L[-3])]:n-=7;exec('L+=sum(d*L[n-d-8]*sum(L[d::d])for d in range(n,0,7))//n,;'*6);L+=1,
 ```
+
+Height is counted in edges, so a(n) counts rooted unlabeled trees with n
+nodes whose longest root-to-leaf path has 7 edges.
 
 **How it works**
 
-- Let b_h(m) count rooted, unlabeled trees with m+1 nodes and height at
-  most h, measured in edges. Removing the root leaves a multiset of
-  subtrees of height at most h−1. Its generating function is
-  ∏ₖ≥₁ (1−xᵏ)^(−b_(h−1)(k−1)), so
-
-  m·b_h(m) = Σₖ₌₁ᵐ k·b_(h−1)(k−1)·Σⱼ≥₁ b_h(m−jk),
-  with terms having negative indices omitted.
-
-- One list interleaves the layers in rows:
-  [b_7(0), b_6(0), …, b_2(0),
-  b_7(1), b_6(1), …, b_2(1), …].
-  Each initial entry is 1, the one-node tree. The missing bottom layer
-  is b_1(m)=1, since there is exactly one star of each size.
-- On computing row m, the variable `n` is −6m and the generator
-  variable `d` is −6k. During pass h (a zero-based list column),
-  `L[d::d]` selects b_(7−h)(m−k), b_(7−h)(m−2k), … .
-  Already appended entries of the row shift the end of the list to
-  the correct column for that pass.
-- `-d-5+h` is the positive index 6(k−1)+h+1, which
-  holds the weight from the next layer. At the last column,
-  `(h<5)` makes that index 0 instead, selecting the constant
-  1 of b_1. The factors −6 in d and n cancel in the quotient.
-- `L[-6]-L[-5]` subtracts height at most 6
-  from height at most 7, giving height exactly 7.
-  Row m is printed as a(m+1), including the initial zeros.
+- Let b_h(m) count rooted trees with m + 1 nodes and height at most h.
+  Removing the root leaves a multiset of subtrees of height at most
+  h − 1, so Σ_m b_h(m)xᵐ = Π_{k≥1} (1 − xᵏ)^(−b_(h−1)(k−1)), and by
+  logarithmic differentiation (as in [A000041](../A000041/))
+  m·b_h(m) = Σ_{k=1}^{m} k·b_(h−1)(k−1)·Σ_{j≥1} b_h(m − jk).
+  b_1(m) = 1 (the star), and a(n) = b_7(n−1) − b_6(n−1).
+- One list holds everything: a leading 1, then for each m the seven
+  entries b_2(m), …, b_7(m), b_1(m) = 1. The string run six times by
+  `exec` appends b_2(m), …, b_7(m) in turn, and `L+=1,` adds the
+  constant b_1(m).
+- With n = −7m and d = −7k, while b_h(m) is being computed the list ends
+  just before its slot, so `L[d::d]` steps back 7k entries at a time
+  through b_h(m−k), b_h(m−2k), … (the leading 1 is never on that path).
+  The weight b_(h−1)(k−1) sits one slot earlier in row k − 1, which is
+  the same offset `n-d-8` from the end in every pass. For h = 2 that slot
+  is the constant b_1(k−1) = 1 of the row before, and for k = 1 it is the
+  leading 1, which is why the list starts with it.
+- The factors 7 in d and n cancel in the exact division `//n`.
+  `L[-2]-L[-3]` is b_7(m) − b_6(m) = a(m+1); the start `L=[1]*8` is the
+  leading 1 and row 0, so the first print is a(1) = 0.
 
 **Notes**
 
-- Exact integer arithmetic and exact divisions, from the multiset
-  generating functions. A chain needs 8 nodes to have height
-  7, explaining the first nonzero term a(8)=1.
-- The list stores 6 entries per tree size. A negative-step
-  slice ends at the start of the list, so no explicit bound on j is
-  needed in the inner sum.
-- [A000429](../A000429/) uses the same interleaving with one
-  more layer. Keeping a separate list
-  for each height would make the weight selection easier to read,
-  but require more indexing code.
-- The b-file has 200 terms (indices 1 through 200). The bar is the
-  whole b-file in 60 s.
+- The previous record (129 bytes) used six slots per row and an index
+  `(-d-5+h)*(h<5)` that sends the bottom layer to the constant `L[0]`.
+  The constant slot makes the weight index uniform, and then `exec`
+  replaces `for h in range(6):` and its line break. The same loop with
+  `for h in[1]*6:` on its own line is 123 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 200 terms (up to a(200)) and prints in about 0.4 s; the
+  bar is 200 terms in 60 s. Here about 2400 terms print in 60 s.
+- a(n) has about 560 digits at n = 1500, so the 4300-digit limit is far
+  beyond the terms the program reaches in practice.
+- [A000235](../A000235/) and [A000299](../A000299/) interleave two and
+  three height layers in the same way.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 129 | first entry |
+| 2026-11-07 | Python 3 | 116 | constant slot for the stars, six passes by `exec` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
