@@ -1,7 +1,3 @@
-from functools import*
-M=lambda V:(e|1<<(b*~-b//2+a)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
-n=2
-while 1:
- L=list(M(range(n)))
- F=cache(lambda E:E<1or sum(F(E^x)for x in L if x&E&-E and x&E==x))
- print(F((1<<(n*(n-1)//2))-1));n+=2
+f=lambda c,e=0,*E:e<1or sum(f(c|e<<k,*E)for k in range(m)if c&e<<k<1)
+m=1
+while[print(+f(int(('0'*m+'1')*m,2),*[1<<a*m|1<<b*m for b in range(m)for a in range(b)]))]:m+=2

@@ -5,81 +5,66 @@
 
 Offset 3: 9, 64, 326, 1433, 5799, 22224, 81987, 293987, 1031298, 3555085, …
 
-### Python 3 — 203 bytes
+A partially labeled rooted tree has n nodes, 3 of which carry the labels
+1, 2, 3 while the rest are unlabeled; trees are counted up to isomorphisms
+that keep the labels.
+
+### Python 3 — 174 bytes
 
 ```python
-r=[n:=0,1]
-while 1:
- m=-n
- if m>2:
-  B=1<<(5*m+8);S=sum(r[k]*B**k for k in range(1,m+1))
-  print(S**3*(9-8*S+2*S*S)*pow(1-S,-5,B**(m+1))//B**m%B)
- n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,
+R=[2,1,1];n=3
+while 1:S=B=9**n;[S:=S*B+c for c in R];U=pow(1-S*B,-1,B**-~n)-1;print(U**3*(3*U*U+10*U+9)//B**n%B);R=[sum(d*R[d]*sum(R[~d::-d])for d in range(-n,0))//-n]+R;n+=1
 ```
 
 **How it works**
 
-- Let T(x)=Σₖ≥₁ t(k)xᵏ count ordinary unlabeled rooted
-  trees, [A000081](../A000081/). The generating function on
-  the OEIS page is F(x)=T^3(9−8T+2T²)/(1−T)⁵.
-  Since T has leading term x, the first output index is 3.
-- r[k] stores t(k), starting with t(0)=0, t(1)=1.
-  The rooted-tree Euler-transform recurrence is
-
-  (N−1)t(N)=Σₖ₌₁ᴺ⁻¹ k·t(k)·Σⱼ≥₁ t(N−jk),
-
-  where negative indices contribute zero. In the last line
-  of the code, n=−(N−1) and d=−k: `r[-d]` selects
-  t(k), `r[d::d]` gives the inner backward slice, and the
-  negative signs in the numerator and divisor cancel.
-- At the loop's start m=−n is the degree to extract. The
-  tree list already includes t(m+1); only entries through m
-  are packed as `S=sum(r[k]*B**k for k in range(1,m+1))`.
-  The extra tree entry belongs to the recurrence, not the output.
-- Substitute this packed T(B) into the numerator. Since S is
-  divisible by B, 1−S has a modular inverse modulo B^(m+1).
-  `pow(1-S,-5,B**(m+1))` computes the inverse fifth power,
-  and `//B**m%B` reads its m-th base-B digit after multiplication.
-- `if m>2` skips the degrees below the first possible
-  labeled term. At m=3, the leading term
-  9T^3 gives the initial 9.
-  Later coefficients include both the tree-series substitutions
-  and the denominator expansion.
-
-**Why carries cannot change the answer**
-
-- A rooted tree with k vertices has a plane ordering, so its
-  count is at most the number of plane rooted trees, less than
-  4ᵏ. Therefore T(1/32)≤Σₖ≥₁(1/8)ᵏ=1/7<1/3.
-- Replace the numerator's negative coefficients by their absolute
-  values to obtain a coefficientwise majorant. Evaluated at
-  T=1/3 it is 107/32, less than 128. Hence each
-  final coefficient f_j is less than 128·32ʲ.
-- For j≤m this is smaller than B=256·32ᵐ, the chosen
-  `1<<(5*m+8)`. The coefficients are nonnegative counts,
-  so no lower base-B digits can carry into the answer digit.
-  Degrees above m vanish modulo B^(m+1).
+- Let T(x) = Σ t(k)xᵏ = x + x² + 2x³ + 4x⁴ + … count unlabeled rooted
+  trees ([A000081](../A000081/)). The generating function on the OEIS
+  page is T³(9 − 8T + 2T²)/(1 − T)⁵. With U = T/(1 − T), so that
+  T = U/(1 + U) and 1/(1 − T) = 1 + U, it is
+  U³(9 − 8T + 2T²)(1 + U)² = U³(9(1 + U)² − 8U(1 + U) + 2U²)
+  = U³(3U² + 10U + 9), the polynomial in the program.
+- R lists t(n), t(n−1), …, t(1), newest first. The Euler-transform
+  recurrence n·t(n+1) = Σ_{e=1..n} e·t(e)·Σ_{j≥1} t(n+1−je) gives the
+  next one: for d = −e, `R[d]` is t(e) and `R[~d::-d]`, which is
+  `R[e-1::e]`, is t(n+1−e), t(n+1−2e), …; the minus signs of `d` and
+  `//-n` cancel, and the division is exact. The new value goes in front.
+- Packing: x ↦ B = 9ⁿ is a ring map from power series modulo x^(n+1) to
+  the integers modulo B^(n+1). The Horner walrus over R, started at
+  S = B, leaves S = B^(n+1) + Σ t(k)B^(k−1), so S·B ≡ T(B). Since
+  1 − S·B ≡ 1 (mod B) it is invertible, `pow(1-S*B,-1,B**-~n)` is
+  1/(1 − T) at B, and U is that minus 1. Then U³(3U² + 10U + 9) ≡
+  Σ_{j≤n} a(j)Bʲ modulo B^(n+1), and `//B**n%B` reads digit n, as long as
+  no coefficient up to xⁿ reaches B.
+- No carries: rooted trees are at most plane rooted trees, so
+  t(k) ≤ C_{k−1} < 4^(k−1), and at x = 1/9 the series give
+  T ≤ (1/9)/(1 − 4/9) = 1/5, U ≤ 1/4 and U³(3U² + 10U + 9) ≤ 187/1024
+  < 1. All the coefficients are nonnegative, so a(j) < 9ʲ ≤ B for j ≤ n.
+- Starting S at B (`S=B=9**n`) costs no more than `n=S=3`, which would
+  let S carry over from the previous term: that leftover also vanishes
+  modulo B^(n+1), but it grows by n digits of B every term.
 
 **Notes**
 
-- Exact integer arithmetic: modular inversion implements formal
-  series division, rather than a numerical approximation at x=B.
-  A new base is chosen at each output degree.
-- The tree list uses O(m) entries, while the packed integer
-  and modulus have O(m²) bits. Increasing these integer sizes
-  makes higher coefficients expensive even though the tree
-  recurrence itself is comparatively short.
-- [A000485](../A000485/) changes the labeling expression;
-  [A000432](../A000432/) applies the same packing method to
-  a series-parallel network series.
-- The b-file has 648 terms (indices 3 through 650). The bar is the
-  first 100 terms in 10 s.
+- Measured alternatives: the carried-over S (`n=S=3`), also 174 bytes but
+  about twice as slow (around 10 s for 100 terms here, too close to the
+  bar); `S=0;` in the loop, 176; the list oldest first with a separate
+  modulus M, 181. In V = 1/(1 − T) the polynomial is
+  (V − 1)³(3V² + 4V + 2), which drops the `-1` but ties. The previous
+  program (203 bytes) used the base 2^(5n+8) and `pow(1-S,-5,…)`.
+- Exact integer arithmetic, so the program is right for every n.
+- 100 terms in about 5 s here, 176 terms in 60 s. The b-file has 648
+  terms (up to a(650)); the bar is 100 terms in 10 s.
+- a(n) has about 0.477n digits (a(650) has 310), so the 4300-digit
+  int-to-str limit comes only near n = 9000, far beyond the program's
+  reach.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 203 | first entry |
+| 2026-11-07 | Python 3 | 174 | U = T/(1-T), base 9^n, Horner walrus over a newest-first tree list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

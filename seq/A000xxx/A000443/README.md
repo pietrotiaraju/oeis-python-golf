@@ -5,55 +5,58 @@
 
 Offset 1: 325, 425, 625, 650, 725, 845, 850, 925, 1025, 1250, …
 
-### Python 3 — 118 bytes
+The ways are unordered and may use 0: m = x² + y² with x ≥ y ≥ 0. The first
+term is 325 = 18² + 1² = 17² + 6² = 15² + 10², and 625 = 25² + 0² = 24² + 7²
+= 20² + 15² shows that 0 counts.
+
+### Python 3 — 99 bytes
 
 ```python
-n=k=0;s=[];d={}
+c=[k:=0]
 while 1:
- if n==k*k:
-  s+=[n];k+=1
-  for x in s:d[n+x]=d.get(n+x,0)+1
- if d.get(n,0)==3:print(n)
- n+=1
+ for x in range(k-~k):c[x*x+k*k]+=x<=k;c[m:=k*k+x]==3==print(m)
+ k+=1;c+=[0]*10*k
 ```
 
 **How it works**
 
-- Representations use **nonnegative** roots, ignoring their order and
-  signs: a pair is counted once as x²+y² with 0≤x≤y. Zero is
-  allowed here, unlike in [A000404](../A000404/).
-- `n` scans candidate integers and k tracks the next square root.
-  At `n==k*k`, append the new largest square n to the increasing
-  list s, then pair it with every x in s. Each unordered pair is
-  encountered exactly once, when its larger square becomes available.
-- `d[n+x]=d.get(n+x,0)+1` increments its sum's representation
-  count. Inserting n into s first includes the equal pair n+n;
-  the initial n=k=0 includes the zero square as well.
-- At the final test for n, every possible summand of a representation
-  of n is at most n and has been inserted. The counter is complete,
-  even though d also contains partial counts for larger integers.
-  Print exactly when `d.get(n,0)==3`.
+- `c[s]` counts the ways s = k² + x² with k ≥ x ≥ 0, added in rounds
+  k = 0, 1, 2, …: round k adds the ways whose larger square is k².
+- The same round tests the numbers m = k² + x for x = 0, …, 2k
+  (`range(k-~k)` is range(2k + 1)), that is every m with
+  k² ≤ m < (k + 1)². Their ways have larger part at most k. Those with a
+  smaller larger part came in earlier rounds, and the way m = k² + a² is
+  added in iteration x = a, before m is tested in iteration x = a² ≥ a
+  (for a = 0 and 1 that is the same iteration, and the write comes
+  first). So each m is tested once, with its final count, in increasing
+  order.
+- `c[x*x+k*k]+=x<=k` adds 1 for x ≤ k and False = 0 for the x > k that
+  the loop also visits. `c[m:=k*k+x]==3==print(m)` is
+  `c[m]==3 and 3==print(m)`: m is printed exactly when its count is 3.
+- Room: the largest index is (2k)² + k² = 5k², from a write of 0. c
+  starts as [0] and gains 10k zeros when the counter becomes k, so in
+  round k it has 1 + 5k(k + 1) entries. `c=[k:=0]` sets k inside the list.
 
 **Notes**
 
-- For the first term, 325=1²+18²=6²+17²=10²+15².
-  The later term 625 also counts 0²+25², alongside 7²+24² and
-  15²+20²: omitting zero would change the sequence.
-- Exact integer counting. The scan prints a value once, independently
-  of the three pairs that caused its counter to reach 3.
-- Through candidate N there are O(N) unordered pairs of square roots
-  to insert. Their sums are at most 2N, so the dictionary uses O(N)
-  entries; the square list has only O(√N) entries.
-- [A000437](../A000437/) extends this largest-square construction
-  to triples and asks for the smallest value at each exact count.
-- The b-file has 10000 terms (indices 1 through 10000). The bar is the
+- `c=[0];k=0` costs one byte more (100). The previous dictionary scan,
+  which added the pairs when it reached their larger square, was 118.
+- Counting is exact, so the program is right for every term.
+- The whole b-file prints in about 1.6 s here (3.2 s with the PC busy),
+  and about 46700 terms (up to about 7.9 million) in 10 s. The list holds
+  about 5k² entries while scanning up to k², roughly 40 bytes per number
+  scanned: about 0.3 GB after 10 s, and on the order of 2 GB in a minute.
+- [A000437](../A000437/) counts sums of three squares in the same rounds.
+- The b-file has 10000 terms (up to a(10000) = 1253682); the bar is the
   whole b-file in 60 s.
+- The terms grow about linearly, far from the 4300-digit int-to-str limit.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 118 | first entry |
+| 2026-11-07 | Python 3 | 99 | one pass per largest square: count and test in the same loop |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
