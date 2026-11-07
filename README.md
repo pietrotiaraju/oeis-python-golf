@@ -172,7 +172,7 @@ sequence for the code and how it works.
 | [A000153](seq/A000xxx/A000153/) | a(n) = n\*a(n-1) + (n-2)\*a(n-2), with a(0) = 0, a(1) = 1. | **46** | 251 |
 | [A000155](seq/A000xxx/A000155/) | Nearest integer to modified Bessel function K\_n(1). | **50** | 201 |
 | [A000156](seq/A000xxx/A000156/) | Number of ways of writing n as a sum of 24 squares. | **76** | 45 |
-| [A000157](seq/A000xxx/A000157/) | Number of Boolean functions of n variables. | **239** | 6 |
+| [A000157](seq/A000xxx/A000157/) | Number of Boolean functions of n variables. | **226** | 6 |
 | [A000158](seq/A000xxx/A000158/) | Number of partitions into non-integral powers. | **172** | 35 |
 | [A000159](seq/A000xxx/A000159/) | a(n) = A058087(n,n-3). | **77** | 248 |
 | [A000160](seq/A000xxx/A000160/) | Number of partitions into non-integral powers. | **188** | 38 |
@@ -385,7 +385,7 @@ sequence for the code and how it works.
 | [A000367](seq/A000xxx/A000367/) | Numerators of Bernoulli numbers B\_2n. | **138** | 250 |
 | [A000368](seq/A000xxx/A000368/) | Number of connected graphs with one cycle of length 4. | **169** | 1997 |
 | [A000369](seq/A000xxx/A000369/) | Triangle of numbers related to triangle A049213; generalization of… | **76** | 1275 |
-| [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **235** | 7 |
+| [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **226** | 7 |
 | [A000371](seq/A000xxx/A000371/) | a(n) = Sum\_{k=0..n} (-1)^(n-k)\*binomial(n,k)\*2^(2^k). | **59** | 9 |
 | [A000372](seq/A000xxx/A000372/) | Dedekind numbers or Dedekind's problem: number of monotone Boolean… | **72** | 7 |
 | [A000373](seq/A000xxx/A000373/) | Conjectured dimension of a module associated with the free… | **182** | 200 |
