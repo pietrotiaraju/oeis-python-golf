@@ -1,0 +1,6 @@
+{
+  "name": "pi(n), the number of primes <= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...",
+  "offset": 1,
+  "min_terms": 70000,
+  "timeout": 60
+}

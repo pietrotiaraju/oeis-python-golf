@@ -1,0 +1,6 @@
+{
+  "name": "Number of compositions of n into 4 ordered relatively prime parts.",
+  "offset": 4,
+  "min_terms": 9997,
+  "timeout": 60
+}

@@ -728,6 +728,7 @@ sequence for the code and how it works.
 | [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **214** | 13 |
 | [A000718](seq/A000xxx/A000718/) | Boustrophedon transform of triangular numbers 1,1,3,6,10,... | **70** | 401 |
 | [A000719](seq/A000xxx/A000719/) | Number of disconnected graphs with n nodes. | **213** | 18 |
+| [A000720](seq/A000xxx/A000720/) | pi(n), the number of primes <= n. Sometimes called PrimePi(n) to… | **44** | 70000 |
 | [A000721](seq/A000xxx/A000721/) | Number of NP-equivalence classes of balanced Boolean functions of n… | **263** | 6 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
@@ -748,6 +749,9 @@ sequence for the code and how it works.
 | [A000738](seq/A000xxx/A000738/) | Boustrophedon transform (first version) of Fibonacci numbers… | **70** | 401 |
 | [A000739](seq/A000xxx/A000739/) | Expansion of Product\_{k>=1} (1 - x^k)^16. | **83** | 7000 |
 | [A000740](seq/A000xxx/A000740/) | Number of 2n-bead balanced binary necklaces of fundamental period 2n,… | **82** | 3322 |
+| [A000741](seq/A000xxx/A000741/) | Number of compositions of n into 3 ordered relatively prime parts. | **84** | 10000 |
+| [A000742](seq/A000xxx/A000742/) | Number of compositions of n into 4 ordered relatively prime parts. | **93** | 9997 |
+| [A000743](seq/A000xxx/A000743/) | Number of compositions of n into 5 ordered relatively prime parts. | **100** | 9996 |
 | [A000744](seq/A000xxx/A000744/) | Boustrophedon transform (second version) of Fibonacci numbers… | **68** | 401 |
 | [A000745](seq/A000xxx/A000745/) | Boustrophedon transform of squares. | **67** | 401 |
 | [A000746](seq/A000xxx/A000746/) | Boustrophedon transform of triangular numbers. | **68** | 401 |
@@ -776,10 +780,12 @@ sequence for the code and how it works.
 | [A000785](seq/A000xxx/A000785/) | Number of asymmetrical planar partitions of n: planar partitions… | **297** | 150 |
 | [A000786](seq/A000xxx/A000786/) | Number of inequivalent planar partitions of n, when considering them… | **153** | 151 |
 | [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
+| [A000790](seq/A000xxx/A000790/) | Primary pretenders: least composite c such that n^c == n (mod c). | **66** | 10001 |
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
+| [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
