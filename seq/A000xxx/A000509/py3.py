@@ -1,29 +1,11 @@
-def P(q):
- p=next(p for p in range(2,q+1)if q%p<1);e=0;r=q
- while r%p<1:e+=1;r//=p
- if r>1:return
- R=range(q)
- A=lambda a,b,c=-1:sum((a//p**i-c*(b//p**i))%p*p**i for i in range(e))
- for h in R:
-  G=[];t=1
-  for _ in R[1:]:
-   G+=[t];t=A(t*p,h,t*p//q)
-  if t==1 and len(set(G))==q-1:break
- M=lambda a,b:a*b and G[(G.index(a)+G.index(b))%(q-1)]
- return[sum(1<<(x*q+A(M(a,x),b))for x in R)|1<<(q*q+a)for a in R for b in R]+[((1<<q)-1)<<(b*q)|1<<(q*q+q)for b in R]+[((1<<q+1)-1)<<q*q]
+def f(S,C,V,k=0):
+ if C+1>>N:B.add(k)
+ while V:b=V&-V;V-=b;f(S|b,T:=C|b|sum(l^b for l in L if l&b>0<l&S),V&~T,k+1);V*=k>3
 q=6
 while 1:
- q+=1;L=P(q)
- if L:
-  N=len(L);U=(1<<N)-1;B=set();A=(0,1,q,q+1)
-  H=[[next(l for l in L if l>>i&l>>j&1)if i!=j else 0 for j in range(N)]for i in range(N)]
-  C=0
-  for i in A:
-   for j in A:C|=H[i][j]
-  def f(S,C,V):
-   if C==U:B.add(len(S))
-   while V:
-    b=V&-V;V-=b;j=b.bit_length()-1;D=C
-    for i in S:D|=H[i][j]
-    f(S+(j,),D,V&~D)
-  f(A,C,U&~C);print(sorted(B)[-2])
+ q+=1;p=h=2
+ while q%p:p+=1
+ if p**q%q<1:
+  Q=q**3;R=range(N:=q*q+q+1);A=lambda a,b,c=1:a+b and(a+c*b)%p+p*A(a//p,b//p,c)
+  while len({*(G:=[t:=1]+[t:=A(t*p%Q,h,t*p//Q)for _ in[0]*Q*Q])})<Q-1:h+=1
+  L=[sum(1<<(i+j)%N for i in R if A(A(G[i],G[i*q]),G[i*q*q])<1)for j in R];B={0};f(0,0,2**N-1);print(sorted(B)[-2])

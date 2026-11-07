@@ -5,79 +5,53 @@
 
 Offset 2: 7, 9, 9, 11, 15, 15, 17, …
 
-### Python 3 — 781 bytes
+a(i) is the largest size of a (k,3)-arc, a set of points of the projective
+plane PG(2,q) with at most 3 on any line, where q runs through the prime
+powers 2, 3, 4, 5, 7, 8, 9, … (a(2) is q = 2).
+
+### Python 3 — 367 bytes
 
 ```python
-def P(q):
- p=next(p for p in range(2,q+1)if q%p<1);e=0;r=q
- while r%p<1:e+=1;r//=p
- if r>1:return
- R=range(q)
- A=lambda a,b,c=-1:sum((a//p**i-c*(b//p**i))%p*p**i for i in range(e))
- for h in R:
-  G=[];t=1
-  for _ in R[1:]:
-   G+=[t];t=A(t*p,h,t*p//q)
-  if t==1 and len(set(G))==q-1:break
- M=lambda a,b:a*b and G[(G.index(a)+G.index(b))%(q-1)]
- return[sum(1<<(x*q+A(M(a,x),b))for x in R)|1<<(q*q+a)for a in R for b in R]+[((1<<q)-1)<<(b*q)|1<<(q*q+q)for b in R]+[((1<<q+1)-1)<<q*q]
 q=1
 while 1:
- q+=1;L=P(q)
- if L:
-  N=len(L);U=(1<<N)-1;B=0;H=[[l for l in L if l>>j&1]for j in range(N)]
-  def f(S,V):
-   global B
-   n=S.bit_count();B=max(B,n)
-   while n+V.bit_count()>B:
-    b=V&-V;V-=b;T=S|b
-    f(T,V&~sum(l^b for l in H[b.bit_length()-1]if(T&l).bit_count()==3))
-  f(0,U);print(B)
+ q+=1;p=h=2
+ while q%p:p+=1
+ if p**q%q<1:
+  Q=q**3;R=range(N:=q*q+q+1);A=lambda a,b,c=1:a+b and(a+c*b)%p+p*A(a//p,b//p,c)
+  while len({*(G:=[t:=1]+[t:=A(t*p%Q,h,t*p//Q)for _ in[0]*Q*Q])})<Q-1:h+=1
+  L=[sum(1<<(i+j)%N for i in R if A(A(G[i],G[i*q]),G[i*q*q])<1)for j in R]
+  print(max(S.bit_count()*all((S&l).bit_count()<4for l in L)for S in range(1<<N)))
 ```
 
 **How it works**
 
-- Enumerate q in increasing order and retain exactly the prime powers
-  q=p^e. Encode degree-below-e polynomials over GF(p) by base-p integers.
-  `A(a,b,c)` subtracts c times each coefficient of b from that of a;
-  its default c=−1 gives field addition without integer carries.
-- Try the monic polynomials X^e+h. The update `A(t*p,h,t*p//q)`
-  multiplies t by X and reduces its leading coefficient modulo X^e+h.
-  Keep the first h for which the successive powers of X contain all q−1
-  nonzero encodings and return to 1. Every nonzero residue is then a unit,
-  so this quotient is a field. A primitive element of GF(q) has a degree-e
-  minimal polynomial, which guarantees that one of these candidates works.
-- `G` lists the nonzero powers of that primitive element. Multiplication
-  adds their positions modulo q−1; multiplication by zero returns zero.
-- Point x·q+y is the affine point (x,y). Build each line y=a·x+b directly,
-  adding its point at infinity q²+a. Vertical lines x=b use q consecutive
-  affine bits and the common infinity point q²+q. The last mask is the
-  line at infinity. These are exactly the q²+q+1 lines of PG(2,q).
-- Search all point subsets, keeping at most three chosen points on each
-  line. After inserting a point, every incident line that now has three
-  selected points excludes all its other points from future candidates.
-- `B` is the largest valid subset found. A branch is stopped only when
-  its selected size plus all remaining candidates cannot exceed `B`.
-  Ascending candidate indices cover every subset once, so this bound
-  cannot discard a better solution.
-- The initial plane is the Fano plane q=2: every line has three points,
-  so all seven points are admissible and the first output is 7.
-
-Distinct lines through the inserted point `b` meet only at that point.
-Thus `l^b` removes their sole shared bit and leaves disjoint masks, whose
-sum equals their bitwise union. `V` already excludes `b`, so this excludes
-exactly the same future candidates as the union of the full lines.
+- The plane is built as in [A000509](../A000509/), which has the proofs.
+  `p**q%q<1` keeps the prime powers q = pᵉ (p the smallest prime factor).
+  GF(q³) is GF(p)[X]/(X^(3e) − h) for the first h ≥ 2 whose powers of X
+  take Q − 1 = q³ − 1 distinct values, which makes X =: γ primitive;
+  elements are integers read as base-p digit vectors, and `A(a,b,c)` adds
+  c·b to a digit by digit mod p.
+- `G[i]` is γ^i. The point classes γ^i·GF(q)*, 0 ≤ i < N = q² + q + 1, are
+  the points of PG(2,q), D = {i : γ^i + γ^(iq) + γ^(iq²) = 0} (trace zero)
+  is a line, and its N translates mod N are all the lines (Singer's cyclic
+  model). `L` holds them as N-bit masks.
+- The answer is a plain maximum over all 2^N point sets S: a set counts with
+  its size `S.bit_count()` when every line meets it in at most 3 points,
+  and with 0 otherwise (`*all(…)`).
+- q = 2 is the Fano plane, whose lines all have 3 points, so all 7 points
+  qualify and the first term is 7.
 
 **Notes**
 
-- Both field construction and maximization are exhaustive algorithms,
-  with no stored maxima or unproved formula for later planes.
-- Prime-power enumeration follows the q convention of the OEIS entry;
-  the sequence index is not used as a composite field order.
-- Running time is exponential in the number of points. The bar checks
-  the first three planes, including the extension field GF(4).
-- The reference file contains 7 published OEIS terms; the verification
-  bar is 3 terms in 60 s.
+- The previous 781-byte version built GF(q) with affine coordinates and
+  ran a branch-and-bound search that drops the points of every line that
+  already holds three chosen points; it printed 4 terms (up to q = 5) in
+  about 4 s here.
+- Exhaustive and exact for every q; it rests only on Singer's construction
+  of PG(2,q) and stores no values.
+- The search has 2^N steps: 3 terms in about 10 s here (q = 4, N = 21,
+  takes 9 s), but q = 5 needs 2³¹ sets and does not finish in practice.
+- The b-file has 7 terms (up to a(8), q = 9); the bar is 3 terms in 60 s.
 
 ## History
 
@@ -86,6 +60,7 @@ exactly the same future candidates as the union of the full lines.
 | 2026-11-06 | Python 3 | 1314 | first entry |
 | 2026-11-06 | Python 3 | 794 | primitive-polynomial field arithmetic and direct affine line masks |
 | 2026-11-06 | Python 3 | 781 | sum disjoint incident-line masks after removing the shared point |
+| 2026-11-07 | Python 3 | 367 | Singer cyclic plane from GF(q³), brute force over all point sets |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -522,8 +522,8 @@ sequence for the code and how it works.
 | [A000506](seq/A000xxx/A000506/) | One half of the number of permutations of [n] such that the… | **94** | 18 |
 | [A000507](seq/A000xxx/A000507/) | Number of permutations of [n] with exactly 3 increasing runs of… | **71** | 18 |
 | [A000508](seq/A000xxx/A000508/) | Generalized class numbers c\_(n,3). | **135** | 21 |
-| [A000509](seq/A000xxx/A000509/) | Size of second largest n-arc in PG(2,q), where q runs through the… | **867** | 2 |
-| [A000510](seq/A000xxx/A000510/) | Maximal number of points in PG(2,q) with at most 3 on a line (next… | **781** | 3 |
+| [A000509](seq/A000xxx/A000509/) | Size of second largest n-arc in PG(2,q), where q runs through the… | **447** | 2 |
+| [A000510](seq/A000xxx/A000510/) | Maximal number of points in PG(2,q) with at most 3 on a line (next… | **367** | 3 |
 | [A000511](seq/A000xxx/A000511/) | Number of n-step spiral self-avoiding walks on hexagonal lattice,… | **125** | 20 |
 | [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **596** | 8 |
 | [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **596** | 8 |
