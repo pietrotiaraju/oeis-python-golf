@@ -5,51 +5,49 @@
 
 Offset 5: 120, 2520, 43680, 757680, 13747104, 264181680, 5395040640, 117080049240, 2696387899920, 65774992411128, …
 
-### Python 3 — 135 bytes
+### Python 3 — 128 bytes
 
 ```python
-from math import*
-f=lambda n,p,h:sum(comb(n,k)*p**k*f(n-k,k,h-1)for k in range(1,n+1))if h else n<1
+f=lambda n,p,h:n|h<1or sum(((2**n+1)**n>>n*k)%2**n*p**k*f(n-k,k,h-1)for k in range(1,n*h+1))
 n=5
 while[print(n*f(n-1,1,4))]:n+=1
 ```
 
 **How it works**
 
-- Choose the root in n ways and group the remaining labeled
-  vertices by their distance from it. Height exactly 4 means
-  there are 4 nonempty layers after the root.
-- Let f(m,p,h) count ways to place m remaining labels in h
-  nonempty layers, given p possible parents in the preceding layer.
-  Choose k labels for the next layer in C(m,k) ways; each of
-  those vertices chooses one of the p parents independently,
-  giving p^k choices.
-- The remaining labels form h−1 layers whose first parent set
-  has size k. Thus
+- **Layers.** Pick the root (n ways) and sort the other n − 1 labels by their
+  distance from it. Height exactly 4 means four non-empty layers, and the
+  tree is the same as a parent in the previous layer for every node. Let
+  f(n, p, h) count the ways to fill h more non-empty layers with n labels
+  when the layer above has p nodes: choose the k labels of the next layer
+  and a parent for each of them, then go on with k parents, so
 
-  **f(m,p,h)=Σₖ₌₁ᵐ C(m,k)pᵏf(m−k,k,h−1)**.
+  f(n, p, h) = Σ_{k=1}^{n} C(n, k)·p^k·f(n − k, k, h − 1),
 
-- With no layers left, there is one completion exactly when no
-  labels remain: `m<1` supplies that boolean base case. Choosing
-  k≥1 at every other step enforces nonempty layers and therefore
-  the requested exact height.
-- Every nonroot vertex has one parent in the preceding layer,
-  so the construction is connected and cannot contain a cycle.
-  Conversely, every rooted tree determines its unique distance
-  layers and all these parent choices, preventing overcounting.
-- Print `n*f(n-1,1,4)`: the initial parent set is the single
-  chosen root. Starting at n=5 gives the OEIS offset and the
-  first value (5)!, the labeled path rooted at its end.
+  with f(0, p, 0) = 1, f(n, p, 0) = 0 for n > 0 and f(0, p, h) = 0 for h > 0.
+  Then a(n) = n·f(n − 1, 1, 4), the root being the single node of layer 0.
+- **Base cases.** For n, h ≥ 0, `n|h<1` holds only at n = h = 0, where `True`
+  is returned. `range(1,n*h+1)` is empty when h = 0 or n = 0, so the sum is 0
+  in the other base cases. For h ≥ 2 the range runs past k = n; those terms
+  have C(n, k) = 0, and their calls f(n − k, …) return at once, because
+  n − k < 0 makes `n|h` negative.
+- **Binomials.** `((2**n+1)**n>>n*k)%2**n` is C(n, k): the base-2^n digits of
+  (2^n + 1)^n are the binomials C(n, j), all below 2^n (see
+  [A000551](../A000551/)), and for k > n the shift by nk ≥ n(n + 1) bits
+  leaves 0, since (2^n + 1)^n < 2^(n²+1). This is 3 bytes under
+  `import math` plus `math.comb(n,k)`.
 
 **Notes**
 
-- Exact finite sums and integer powers. The recursion has fixed
-  depth 4; it enumerates positive layer sizes and keeps no
-  table of earlier tree counts. For fixed height, the number of
-  layer-size choices grows polynomially with n.
-- Large outputs eventually meet Python's integer conversion limit.
-- The reference file has 15 terms. Its unchanged
-  verification bar is the complete file in 60 s.
+- Other versions: with `import math` and `math.comb` it is 131 bytes; the
+  same recursion with `if h else n<1`, `range(1,n+1)` and
+  `from math import*` was 135. [A000552](../A000552/) (height 3) is the
+  same program with `n=4` and `f(n-1,1,3)`.
+- Exact integer arithmetic, so the program is right for every n.
+- The recursion visits every composition of n − 1 into four parts (plus the
+  cut-off calls), so a term costs O(n⁴) big-number steps: the whole b-file
+  prints in about 0.15 s here, and about 60 terms in 60 s. The b-file has
+  15 terms (up to a(19)); the bar is the whole b-file in 60 s.
 
 ## History
 
@@ -57,6 +55,7 @@ while[print(n*f(n-1,1,4))]:n+=1
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 179 | first entry |
 | 2026-11-06 | Python 3 | 135 | count nonempty distance layers directly |
+| 2026-11-07 | Python 3 | 128 | one base-case test n or h, range cut by h, binomials from (2^n + 1)^n |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
