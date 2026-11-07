@@ -1,0 +1,6 @@
+{
+  "name": "n! never ends in this many 0's.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

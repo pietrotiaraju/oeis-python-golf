@@ -1,0 +1,6 @@
+{
+  "name": "Period of 1/n! in base 10.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Euler's \"numerus idoneus\" (or \"numeri idonei\", or idoneal, or suitable, or convenient numbers).",
+  "offset": 1,
+  "min_terms": 65,
+  "timeout": 60
+}
