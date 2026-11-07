@@ -920,6 +920,14 @@ sequence for the code and how it works.
 | [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
 | [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
+| [A000915](seq/A000xxx/A000915/) | Stirling numbers of first kind s(n+4, n). | **63** | 1000 |
+| [A000917](seq/A000xxx/A000917/) | a(n) = (2n+3)!/(n!\*(n+2)!). | **44** | 201 |
+| [A000918](seq/A000xxx/A000918/) | a(n) = 2^n - 2. | **26** | 1001 |
+| [A000919](seq/A000xxx/A000919/) | a(n) = 4^n - C(4,3)\*3^n + C(4,2)\*2^n - C(4,1). | **42** | 201 |
+| [A000920](seq/A000xxx/A000920/) | Differences of 0: 6!\*Stirling2(n,6). | **58** | 1000 |
+| [A000930](seq/A000xxx/A000930/) | Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) =… | **37** | 5001 |
+| [A000931](seq/A000xxx/A000931/) | Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with… | **39** | 8181 |
+| [A000932](seq/A000xxx/A000932/) | a(n) = a(n-1) + n\*a(n-2); a(0) = a(1) = 1. | **40** | 800 |
 | [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
 | [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
@@ -931,6 +939,8 @@ sequence for the code and how it works.
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
+| [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
+| [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |
 | [A000996](seq/A000xxx/A000996/) | Shifts 3 places left under binomial transform. | **64** | 301 |
