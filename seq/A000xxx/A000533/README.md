@@ -5,34 +5,39 @@
 
 Offset 0: 1, 11, 101, 1001, 10001, 100001, 1000001, 10000001, 100000001, 1000000001, …
 
-### Python 3 — 33 bytes
+### Python 3 — 27 bytes
 
 ```python
-n=0
-while[print(n+1)]:n=n*10or 10
+n=1
+while[print(n|1)]:n*=10
 ```
 
 **How it works**
 
-- The accumulator takes the values 0, 10, 100, 1000, … . Adding 1 gives
-  the exceptional a(0)=1 followed by a(n)=10^n+1.
-- On the first iteration `n*10` is zero, so `or 10` supplies the first
-  power of ten. Every later product is positive and keeps multiplying
-  by ten.
-- Printing in the always-true list condition saves a separate statement.
+- `n` runs through 10⁰, 10¹, 10², … For k ≥ 1, 10^k is even, so
+  10^k | 1 = 10^k + 1; for k = 0, 1 | 1 = 1. The bitwise OR gives the
+  exceptional a(0) = 1 and the general term with no test.
+- `print` sits in the loop condition: it returns `None`, and `[None]` is a
+  non-empty list, so the loop never ends (the [A000007](../A000007/) loop).
 
 **Notes**
 
-- All operations are on integers, and every stated division is exact.
-- Python 3.11+ can eventually reach its integer-to-string conversion limit.
-- The reference file contains 101 terms from the OEIS b-file; the verification
-  bar is 101 terms in 60 s.
+- Other versions that print the same terms: `n+(n>1)` in place of `n|1`:
+  31 bytes; `n=0` / `while[print(n+1)]:n=n*10or 10`: 33 bytes; the same
+  terms as strings, `s='1'` / `while[print(s[:-1]+'1')]:s+='0'`: 37 bytes,
+  with no 4300-digit limit.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 101 terms (up to a(100)); the bar is the whole b-file in
+  60 s, and it prints at once.
+- a(4300) = 10^4300 + 1 has 4301 digits, more than Python's int-to-str
+  limit, so printing stops after a(4299), about 1 s in here.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 33 | first entry |
+| 2026-11-07 | Python 3 | 27 | OR with 1 over the powers of ten |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
