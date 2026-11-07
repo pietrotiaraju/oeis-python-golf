@@ -14,20 +14,21 @@ while[print(n)]:n*=6
 
 **How it works**
 
-- `print(n)` runs in the loop condition. It returns `None`, and `[None]` is a
-  non-empty list, so the condition is always true.
-- The body multiplies `n` by 6, so the loop prints 1, 6, 36, 216, … forever.
-  It is the [A000079](../A000079/) and [A000244](../A000244/) loop with
-  `n*=6`.
+- `n` holds 6ⁿ: it starts at 6⁰ = 1 and the loop body multiplies it by 6.
+- `print(n)` sits in the loop condition. It returns `None`, and `[None]` is
+  a non-empty list, so the condition is always true and the loop never
+  ends. It is the [A000079](../A000079/) and [A000244](../A000244/) loop
+  with `n*=6`.
 
 **Notes**
 
-- `n=1` + `while 1:print(n);n*=6` is 25 bytes.
-- Exact integer arithmetic, so the program is right for every n. a(5526) is
-  the first term with more than 4300 digits, so Python 3.11+ stops there with
-  a `ValueError` from the int-to-str limit, which is not counted as a failure.
-- The b-file has 101 terms (n = 0 to 100) and prints at once; the bar is the
-  whole b-file in 60 s.
+- `n=1` with `while 1:print(n);n*=6` is 25 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 101 terms (up to a(100)); the bar is the whole b-file in
+  60 s. Here the program prints every term it can in about 1.5 s.
+- a(n) has ⌊n·log₁₀ 6⌋ + 1 digits, so a(5526) is the first term with more
+  than 4300 digits and printing stops there with Python's int-to-str
+  `ValueError`.
 
 ## History
 

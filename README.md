@@ -415,9 +415,9 @@ sequence for the code and how it works.
 | [A000398](seq/A000xxx/A000398/) | Numbers of form x^2 + 2y^2 + 2yz + 4z^2. | **79** | 450 |
 | [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000400](seq/A000xxx/A000400/) | Powers of 6: a(n) = 6^n. | **24** | 101 |
-| [A000401](seq/A000xxx/A000401/) | Numbers of form x^2 + y^2 + 2\*z^2. | **61** | 1000 |
-| [A000402](seq/A000xxx/A000402/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 452 |
-| [A000404](seq/A000xxx/A000404/) | Numbers that are the sum of 2 nonzero squares. | **91** | 10000 |
+| [A000401](seq/A000xxx/A000401/) | Numbers of form x^2 + y^2 + 2\*z^2. | **48** | 1000 |
+| [A000402](seq/A000xxx/A000402/) | Number of permutations of [n] in which the longest increasing run has… | **129** | 452 |
+| [A000404](seq/A000xxx/A000404/) | Numbers that are the sum of 2 nonzero squares. | **73** | 10000 |
 | [A000405](seq/A000xxx/A000405/) | Number of 6-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A000406](seq/A000xxx/A000406/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |

@@ -5,53 +5,51 @@
 
 Offset 1: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, …
 
-### Python 3 — 61 bytes
+### Python 3 — 48 bytes
 
 ```python
 n=0
-while[print(n)]:
- m=n=n+1
- while m%4<1:m//=4
- n+=m%16==14
+while[print(n)]:n+=1;n+=n//(l:=n&-n)%8+l%3>8
 ```
 
 **How it works**
 
-- Dickson's characterization, cited by the OEIS, says that a nonnegative
-  integer is represented by x²+y²+2z² exactly when it is not of the
-  form 4ᵏ(16m+14), for nonnegative integers k and m.
-- Start by printing 0. `[print(n)]` is always a nonempty list, so the
-  outer loop keeps going even though `print` returns `None`.
-- `m=n=n+1` advances to the next candidate and copies it into `m`.
-  The candidate is positive, so `while m%4<1:m//=4` terminates, leaving
-  that candidate with every factor of 4 removed. Testing zero here
-  would loop forever; printing it before the first increment avoids
-  needing a separate guard.
-- `m%16==14` identifies an excluded candidate. Adding that boolean
-  skips it; otherwise n remains unchanged. Every excluded number is
-  even, so the immediately following odd number is represented. A
-  single increment suffices, and the increasing output misses no term.
+- Dickson (1927), quoted in the OEIS entry: x² + y² + 2z² represents
+  exactly the nonnegative integers that are not of the form 4ᵏ(16m + 14).
+  Since 4ᵏ(16m + 14) = 2^(2k+1)·(8m + 7), writing n = 2ᵉ·u with u odd,
+  n is left out exactly when e is odd and u ≡ 7 (mod 8).
+- `l:=n&-n` is the lowest set bit 2ᵉ of n, so `n//l` is u. Then u mod 8 is
+  1, 3, 5 or 7, and 2ᵉ mod 3 is 2 for odd e and 1 for even e. The sum
+  `n//l%8+l%3` is therefore at most 9, and it is 9 only for u ≡ 7 (mod 8)
+  with e odd (the next largest values are 7 + 1 and 5 + 2), so `…>8` is
+  exactly the exclusion test.
+- After printing n, the body moves to n + 1 and adds one more step if that
+  number is excluded. Excluded numbers are even, so the odd number after
+  one is always represented: a single extra step never skips a term.
+- `print(n)` sits in the loop condition: `[None]` is a non-empty list, so
+  the loop never ends. Printing a(1) = 0 before the first test also keeps
+  n = 0 (where `n&-n` is 0) away from the division.
 
 **Notes**
 
-- Exact integer arithmetic, correct for every candidate by Dickson's
-  theorem. No search bound on x, y or z is needed.
-- The first exclusions are 14, 30, 46, 56, 62, 78, 94, 110, 120,
-  126, … . For 56, the inner loop leaves 14; for 224=16·14 it also
-  leaves 14. Thus both are skipped for the same reason as 14.
-- The theorem saves enumerating three coordinates or storing a growing
-  set of represented integers. Only n and a temporary reduced copy are
-  retained; testing a candidate uses at most O(log n) divisions by 4.
-- The indexing starts at 1, but a(1)=0: the OEIS offset is an output
-  position, not the smallest represented positive integer.
-- The b-file has 1000 terms (indices 1 through 1000). The bar is the
-  whole b-file in 60 s.
+- Also 48 bytes: `n=1` and `while[print(n-1)]:n-=~(n//(l:=n&-n)%8+l%3>8)`
+  (`n-=~b` adds 1 + b). The test `(n+l)%(8*l)<l%3>1` is 53 bytes, and
+  stripping factors of 4 with `m=n=n+1` / `while m%4<1:m//=4` /
+  `n+=m%16==14` is 61.
+- Integer arithmetic; correctness for every n rests on Dickson's theorem
+  (also Exercise 4 on p. 395 of Sierpiński's *Elementary Theory of
+  Numbers*). The output matches a direct search over x, y, z for every
+  n < 300 000.
+- The program is output-bound: about 100 000 terms in 3 s here. The b-file
+  has 1000 terms (up to a(1000) = 1089); the bar is the whole b-file in
+  60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 61 | first entry |
+| 2026-11-07 | Python 3 | 48 | lowest set bit: `n//l%8+l%3>8` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

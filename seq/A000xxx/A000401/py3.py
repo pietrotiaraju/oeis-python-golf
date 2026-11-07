@@ -1,5 +1,2 @@
 n=0
-while[print(n)]:
- m=n=n+1
- while m%4<1:m//=4
- n+=m%16==14
+while[print(n)]:n+=1;n+=n//(l:=n&-n)%8+l%3>8
