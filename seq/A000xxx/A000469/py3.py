@@ -1,6 +1,2 @@
-import math
-n=1
-while 1:
- r=range(2,math.isqrt(n)+1)
- if all(n%(k*k)for k in r)and(n==1 or any(n%k<1 for k in r)):print(n)
- n+=1
+Q=n=1
+while[Q%n or print(n)]:Q*=n**(pow(Q,n,n)>0);n+=1

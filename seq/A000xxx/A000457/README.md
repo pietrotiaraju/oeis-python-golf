@@ -5,6 +5,8 @@
 
 Offset 0: 1, 10, 105, 1260, 17325, 270270, 4729725, 91891800, 1964187225, 45831035250, …
 
+a(n) = (n+1)·5·7·…·(2n+3) = (n+1)·(2n+3)!!/3.
+
 ### Python 3 — 37 bytes
 
 ```python
@@ -14,29 +16,26 @@ while[print(n*a)]:n+=1;a*=2*n+1
 
 **How it works**
 
-- Let G(x)=(1−2x)^(−5/2). Its n-th exponential coefficient is
-  g(n)=(2n+3)!!/3, where the double factorial multiplies the odd
-  integers through 2n+3.
-- G(x)+xG′(x)=(1+3x)/(1−2x)^(7/2), the required e.g.f.
-  Multiplication by x and differentiation multiply its n-th
-  coefficient by n, so a(n)=(n+1)·g(n).
-- The program uses a shifted counter: at a print, the variable
-  n=m+1 and the variable a=(2n+1)!!/3=g(m). Thus `n*a`
-  is the sequence term a(m), starting at m=0 with n=a=1.
-- After incrementing n, `a*=2*n+1` adjoins the next odd factor.
-  For example n=2, a=5 prints 10; n=3, a=35 prints 105.
+- **The formula.** Let G(x) = (1−2x)^(−5/2). Its n-th e.g.f. coefficient
+  is 2ⁿ·(5/2)(7/2)…(5/2 + n − 1) = 5·7·…·(2n+3) = g(n). Then
+  G + x·G′ = (1−2x)^(−7/2)·((1−2x) + 5x) = (1+3x)/(1−2x)^(7/2), and x·G′
+  has coefficients n·g(n), so a(n) = (n+1)·g(n).
+- **The loop.** At a print, the variable n is m + 1 and a = g(m), so
+  `n*a` is a(m), starting with n = a = 1 at m = 0. Then n goes up and
+  `a*=2*n+1` multiplies in the next odd factor 2(m+1) + 3.
+- `print` sits in the loop condition: it returns `None`, and `[None]` is a
+  non-empty list, so the loop never ends (the [A000007](../A000007/) loop).
 
 **Notes**
 
-- Exact integers. The division by 3 is absorbed in the initial
-  state a=1=3!!/3; all subsequent updates are multiplications.
-- The e.g.f. uses a fractional power, but the program needs neither
-  fractional arithmetic nor a series expansion at runtime.
-- One product and one shifted counter suffice. Python 3.11+
-  eventually stops at its default 4300-digit integer-to-string
-  limit as the double factorial grows; this is an interpreter limit.
-- The b-file has 201 terms (indices 0 through 200). The bar is the
-  whole b-file in 60 s.
+- Other versions that print the same terms: `a*=n-~n` ties; with the odd
+  factor as the counter, `m=3;a=1` / `while[print(m//2*a)]:m+=2;a*=m`: 38
+  bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file's 201 terms print in 0.07 s here. The b-file has 201 terms
+  (up to a(200)); the bar is the whole b-file in 60 s.
+- a(n) grows like a double factorial; the first term with more than 4300
+  digits is a(1421), where printing stops.
 
 ## History
 

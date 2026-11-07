@@ -5,49 +5,57 @@
 
 Offset 1: 1, 2, 10, 11, 12, 100, 101, 102, 110, 1000, …
 
-### Python 3 — 115 bytes
+a(n) writes n greedily with the place values 1, 3, 6, 10, 15, … (the
+triangular numbers T_k = k(k+1)/2, lowest place on the right): 20 =
+1·15 + 0·10 + 0·6 + 1·3 + 2·1 gives a(20) = 10012.
+
+### Python 3 — 65 bytes
 
 ```python
-n=1
-while 1:
- r=n;s='';t=k=1
- while t<=n:k+=1;t+=k
- while k>1:
-  t-=k;k-=1;d,r=divmod(r,t);s+=str(d)
- print(s);n+=1
+L=[i:=0];K=1
+while[print(x:=10**~-K+L[i])]:L+=x,;i=-~i%-~K;K+=i<1
 ```
 
 **How it works**
 
-- The place values are T_k=k(k+1)/2, the positive triangular
-  numbers 1,3,6,10,… . The notation uses greedy quotients in
-  these places, rather than powers of a fixed base.
-- The first loop keeps t=T_k and advances it by T_(k+1)−T_k=k+1
-  until t>n. The second subtracts k from t before decrementing k,
-  keeping t=T_k for the next lower place. Each `divmod` extracts
-  that place digit and leaves the remaining value.
-- Before a place T_k, the remainder is less than T_(k+1).
-  Since T_(k+1)−1<3T_k for k≥1, each digit is at most 2.
-  Concatenating the quotient strings therefore produces single
-  digits with no need for separators.
-- For n=9, the places 6,3,1 give digits 1,1,0, hence 110.
-  For n=10, the extra leading place produces 1000. Keeping the
-  zero digits records which lower places have been skipped.
-- The counter begins at 1, matching the OEIS offset. The largest
-  chosen place has a nonzero digit, so no leading zero is printed.
+- **Blocks.** Let T_K ≤ n < T_{K+1}, so n = T_K + j with 0 ≤ j ≤ K (the
+  gap T_{K+1} − T_K is K + 1). For K ≥ 2 the top digit is 1, because
+  T_{K+1} ≤ 2T_K, and the rest j is below T_K, so the lower places hold
+  the greedy representation of j itself (greedy on n continues exactly as
+  greedy on j would). For K = 1 the same reading works with
+  a(2) = 1 + a(1) = 2. Hence, with a(0) = 0,
+
+  a(T_K + j) = 10^(K−1) + a(j),  0 ≤ j ≤ K,
+
+  and block K (K + 1 terms) is 10^(K−1) added to a(0), a(1), …, a(K).
+  The digits are 0, 1 and 2, so the result is the decimal integer of the
+  digit string.
+- **The loop.** `L` holds a(0), a(1), … and grows by each new term; `i` is
+  the offset j inside block K. `i=-~i%-~K` steps i through 0, …, K and
+  wraps to 0, and `K+=i<1` then opens the next block. In block 1 the
+  entry L[1] = a(1) is appended just before it is read, so the list is
+  always long enough.
+- `L=[i:=0]` makes the list [a(0)] and sets i = 0 in one statement.
 
 **Notes**
 
-- Exact integer arithmetic. Consecutive differences generate the
-  triangular values without recomputing k(k+1)/2. Greedy division specifies a unique output even when other
-  unrestricted sums of triangular places could represent the same n.
-- The two loops each visit O(√n) place indices per term. The number
-  is encoded as text rather than parsed as a new decimal integer,
-  keeping the entire place sequence intact.
-- [A000433](../A000433/) uses the same construction for cube
-  places, where digits can reach 7 and zero needs an explicit case.
-- The b-file has 10000 terms (indices 1 through 10000). The bar is the
-  whole b-file in 60 s.
+- Other versions that print the same terms: greedy division per n,
+  scanning all places k = n, …, 1 from the top (leading zeros vanish
+  in `s=s*10+r//t`):
+  `n=0` / `while n:=n+1:` / ` r=k=n;s=0;t=n*-~n//2` /
+  ` while k:s=s*10+r//t;r%=t;t-=k;k-=1` / ` print(s)`: 85 bytes and
+  O(n) per term (7849 terms in 30 s); finding
+  the top place first and building a string, the first version: 115
+  bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file's 10000 terms print in 0.4 s here, about 390000 terms in
+  20 s. The list keeps every term, but at 10000 terms it is small. The
+  b-file has 10000 terms (up to a(10000)); the bar is the whole b-file in
+  60 s.
+- a(n) has K digits for T_K ≤ n < T_{K+1}, so the first term with more
+  than 4300 digits is a(T₄₃₀₁) = a(9251451), where printing stops.
+- [A000433](../A000433/) is the same construction with the cubes as
+  place values.
 
 ## History
 
@@ -55,6 +63,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 121 | first entry |
 | 2026-11-06 | Python 3 | 115 | advance triangular place values by consecutive differences |
+| 2026-11-07 | Python 3 | 65 | a(T_K + j) = 10^(K−1) + a(j) from a list |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

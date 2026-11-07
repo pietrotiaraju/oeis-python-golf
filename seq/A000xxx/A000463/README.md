@@ -14,27 +14,22 @@ while[print(n),print(n*n)]:n+=1
 
 **How it works**
 
-- For n=1,2,3,…, emit the pair n,n². Thus at sequence positions
-  2n−1 and 2n the terms are n and n² respectively; the initial
-  pair is 1,1 rather than just one occurrence of 1.
-- Python evaluates list entries from left to right. Both print calls
-  in `[print(n),print(n*n)]` therefore run in the specified order,
-  each writing one integer and one newline.
-- The resulting list is `[None,None]`, which is nonempty and true.
-  Its entries' false values do not matter. The body increments n
-  only after both members of the current pair have printed.
+- Each pass prints n and then n², so a(2n−1) = n and a(2n) = n².
+- Both prints sit in the loop condition: they return `None`, and
+  `[None, None]` is a non-empty list, so the loop never ends (the
+  [A000007](../A000007/) loop).
 
 **Notes**
 
-- Exact integer multiplication and a single counter; no stored list
-  of sequence values or parity test on the output index is needed.
-- A single `print(n,n*n)` would put the pair on one line by default,
-  violating the one-term-per-line rule. The two print calls also
-  provide the loop's always-true condition.
-- This interleaves entire integers. It does not split their digits:
-  at n=10 the two emitted terms are 10 and 100.
-- The b-file has 10000 terms (indices 1 through 10000). The bar is the
-  whole b-file in 60 s.
+- Other versions that print the same terms: `[*map(print,(n,n*n))]` in
+  the condition ties; one f-string, `print(f'{n}\n{n*n}')`, is 1 byte
+  longer; an exponent that alternates between 1 and 2,
+  `n=e=1` / `while[print(n**e)]:n+=e>1;e^=3`: 36 bytes; putting the
+  increment in the condition, `n=0` / `while[print(n:=n+1),print(n*n)]:0`:
+  37 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file's 10000 terms print in about 0.1 s here. The b-file has 10000
+  terms (up to a(10000)); the bar is the whole b-file in 60 s.
 
 ## History
 

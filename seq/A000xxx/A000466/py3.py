@@ -1,2 +1,2 @@
-n=0
-while 1:print(4*n*n-1);n+=1
+m=0
+while[print(m*m-1)]:m+=2
