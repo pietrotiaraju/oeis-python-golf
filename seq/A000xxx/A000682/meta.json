@@ -1,0 +1,6 @@
+{
+  "name": "Semi-meanders: number of ways a semi-infinite directed curve can cross a straight line n times.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 60
+}

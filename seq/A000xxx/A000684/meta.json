@@ -1,0 +1,6 @@
+{
+  "name": "Number of colored labeled n-node graphs with 2 interchangeable colors.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

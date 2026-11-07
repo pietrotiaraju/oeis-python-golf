@@ -1,0 +1,6 @@
+{
+  "name": "Number of irreducible chord diagrams with 2n nodes.",
+  "offset": 0,
+  "min_terms": 405,
+  "timeout": 60
+}
