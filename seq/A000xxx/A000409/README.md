@@ -5,50 +5,54 @@
 
 Offset 2: 0, 6, 350, 43260, 14591171, 14657461469, 46173502811223, 474928141312623525, 16489412944755088235117, 1985178211854071817861662307, …
 
-### Python 3 — 144 bytes
+"Ordered" means the rows are taken up to order: a(n) counts sets of n
+distinct nonzero vectors in {0,1}ⁿ whose matrix has a zero column or two
+equal columns (a lower bound for [A000410](../A000410/)).
+
+### Python 3 — 129 bytes
 
 ```python
 import math
-s=0,2,-3,1;n=2
-while[print(-sum(s[k+1]*math.comb(2**k-1,n)for k in range(n)))]:
- n+=1;s=[0]+[s[k-1]-n*s[k]for k in range(1,n+1)]+[1]
+s=[1,-1];n=1
+while 1:n+=1;s=[a-n*b for a,b in zip([0]+s,s+[0])];print(sum(s[k]*math.comb(2**k-1,n)for k in range(n)))
 ```
 
 **How it works**
 
-- The formula on the OEIS page is
-  a(n)=−Σₖ₌₀ⁿ⁻¹ s(n+1,k+1)·C(2ᵏ−1,n), with signed
-  first-kind Stirling numbers. These are the coefficients of
-  x(x−1)…(x−n), stored in increasing powers in `s`.
-- At n=2 that polynomial is x³−3x²+2x, so
-  `s=0,2,-3,1`. The comprehension takes `s[k+1]`, multiplies it
-  by the indicated binomial coefficient and negates the complete sum.
-- A binary vector of length k has 2ᵏ−1 nonzero possibilities; the
-  binomial term chooses n distinct such vectors. The Stirling coefficients
-  perform the inversion that singles out the column degeneracies in
-  the definition.
-- After printing, increment n. Multiplication of the old polynomial
-  by x−n replaces coefficient s[k] by s[k−1]−n·s[k]. The leading
-  zero and final 1 in the new list handle the two endpoint powers.
-- `math.comb(2**k-1,n)` is zero if there are fewer than n available
-  patterns. All its arguments are nonnegative, even for k=0, so
-  the low-index zero contributions need no special case.
+- The formula is the entry's a(n) = −Σ_{k=0}^{n−1} s(n+1, k+1)·C(2ᵏ − 1, n),
+  s the signed Stirling numbers of the first kind. Derivation: add a
+  phantom zero column to the n columns. The pattern of equal columns
+  among these n + 1 is a set partition of them, and the row sets whose
+  columns are equal at least within the blocks of a partition σ with
+  k + 1 blocks number C(2ᵏ − 1, n) (the phantom's block is 0, the other k
+  blocks are free coordinates, and the n rows are distinct and nonzero).
+  Möbius inversion on the partition lattice, where the Möbius values of
+  the partitions with k + 1 blocks add up to s(n+1, k+1), counts the row
+  sets with all columns distinct and nonzero:
+  Σ_{k=0}^{n} s(n+1, k+1)·C(2ᵏ − 1, n). The k = n term is C(2ⁿ − 1, n), all
+  row sets, and a(n) is the rest with the sign flipped.
+- `s` holds the row negated: s[k] = −s(n+1, k+1), so the printed sum needs
+  no minus sign. s(n+1, j) = s(n, j−1) − n·s(n, j) becomes
+  `s=[a-n*b for a,b in zip([0]+s,s+[0])]`, the two zero pads standing for
+  s(n, 0) = 0 and the entry past the end. The start `s=[1,-1]` is
+  −(s(2, 1), s(2, 2)) for n = 1, and the first pass prints a(2).
+- `math.comb(2**k-1,n)` is 0 while 2ᵏ − 1 < n, so small k need no special
+  case; `import math` plus `math.comb` once is a byte under
+  `from math import*`.
 
 **Notes**
 
-- This sequence counts matrices with a zero column or repeated columns
-  subject to the specified row condition. Linear dependence without
-  either of those column defects does not suffice for this count.
-- For n=3, the nonzero contribution is −s(4,3)·C(3,3)=6.
-  It is an inclusion-exclusion count, so intermediate signed terms
-  are expected even though the result is nonnegative.
-- Exact integers; the polynomial multiplication constructs the needed
-  Stirling row at every size. One growing coefficient list is retained.
-- The initial tuple is shorter than a list literal; the first update
-  creates a list. `import math` also saves bytes here because only
-  `comb` is used, once in the source.
-- The b-file has 14 terms (indices 2 through 15). The bar is the
-  whole b-file in 60 s.
+- Printing in the header (`while[print(…)]:`, start `s=[2,-3,1];n=2`)
+  costs 2 bytes more, and the row update
+  `[0]+[s[k-1]-n*s[k]for k in range(1,n+1)]+[1]` is 8 bytes longer than
+  the `zip`.
+- Exact integer arithmetic; correctness for every n rests on the
+  inversion above. A brute-force count over all row sets agrees for
+  n ≤ 4.
+- The b-file has 14 terms (up to a(15)) and prints in about 0.1 s; the
+  bar is the whole b-file in 60 s.
+- a(123) is the first term with more than 4300 digits, so printing stops
+  there, after about 0.7 s here.
 
 ## History
 
@@ -56,6 +60,7 @@ while[print(-sum(s[k+1]*math.comb(2**k-1,n)for k in range(n)))]:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 147 | first entry |
 | 2026-11-06 | Python 3 | 144 | import math and start the coefficients as a tuple |
+| 2026-11-07 | Python 3 | 129 | negated Stirling row by zip, print after the update |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

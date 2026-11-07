@@ -421,10 +421,10 @@ sequence for the code and how it works.
 | [A000405](seq/A000xxx/A000405/) | Number of 6-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A000406](seq/A000xxx/A000406/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
-| [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **117** | 10000 |
-| [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **144** | 14 |
+| [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **88** | 10000 |
+| [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **129** | 14 |
 | [A000410](seq/A000xxx/A000410/) | Number of singular n X n rational (0,1)-matrices. | **275** | 5 |
-| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **127** | 184 |
+| [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **90** | 184 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **152** | 10001 |
 | [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
