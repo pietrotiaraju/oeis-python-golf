@@ -611,9 +611,9 @@ sequence for the code and how it works.
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **171** | 25 |
 | [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
 | [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **61** | 997 |
-| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
-| [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **193** | 1001 |
-| [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **195** | 1001 |
+| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **129** | 1001 |
+| [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **149** | 1001 |
+| [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **145** | 1001 |
 | [A000601](seq/A000xxx/A000601/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^3)). | **42** | 10001 |
 | [A000602](seq/A000xxx/A000602/) | Number of n-node unrooted quartic trees; number of n-carbon alkanes… | **185** | 35 |
 | [A000603](seq/A000xxx/A000603/) | Number of nonnegative solutions to x^2 + y^2 <= n^2. | **75** | 540 |
