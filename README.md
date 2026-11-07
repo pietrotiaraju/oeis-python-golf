@@ -484,14 +484,14 @@ sequence for the code and how it works.
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **54** | 10000 |
 | [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **150** | 19 |
-| [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
-| [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
+| [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **86** | 201 |
+| [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **39** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
 | [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **512** | 4 |
-| [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
+| [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **51** | 97 |
 | [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **147** | 19 |
-| [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
-| [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
+| [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **79** | 10000 |
+| [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **47** | 195 |
 | [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **231** | 6 |
 | [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **211** | 80 |
 | [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
