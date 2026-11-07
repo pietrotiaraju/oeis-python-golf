@@ -45,8 +45,8 @@ while 1:
 **Notes**
 
 - Exact integer arithmetic; correctness rests on the Carlitz–Olson
-  theorem. The matrix has (p−1)/2 rows, so a term costs about p³/24
-  big-integer products: about 98 terms in 60 s.
+  theorem. The matrix has (p−1)/2 rows, so a term costs about p³/12
+  big-integer products: about 95 terms in 60 s.
 - The b-file has 100 terms; the bar is 75 terms in 60 s.
 - A formula of Max Alekseyev in the OEIS entry, the determinant of
   [⌊ij/p⌋ − ⌊(i−1)j/p⌋] over 3 ≤ i, j ≤ g, matches the data but is not
