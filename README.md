@@ -502,8 +502,8 @@ sequence for the code and how it works.
 | [A000486](seq/A000xxx/A000486/) | One half of the number of permutations of [n] such that the… | **114** | 996 |
 | [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **51** | 196 |
 | [A000488](seq/A000xxx/A000488/) | Generalized tangent numbers d\_(n,3). | **129** | 1000 |
-| [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
-| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
+| [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **132** | 100 |
+| [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **71** | 195 |
 | [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **193** | 1001 |
 | [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **150** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **195** | 10001 |
@@ -512,7 +512,7 @@ sequence for the code and how it works.
 | [A000496](seq/A000xxx/A000496/) | Restricted permutations. | **57** | 1001 |
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **44** | 100 |
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **57** | 197 |
-| [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
+| [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **79** | 10000 |
 | [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **150** | 18 |
 | [A000501](seq/A000xxx/A000501/) | a(n) = floor(cosh(n)). | **100** | 30 |
 | [A000502](seq/A000xxx/A000502/) | Number of genus 0 rooted maps with 6 faces and n vertices. | **103** | 496 |

@@ -1,4 +1,5 @@
-a=b=n=1
+n=r=q=p=0
 while 1:
- print(n*n*((27*n**3+54*n*n-57*n+8)*(n+2)*b-(189*n**3+189*n*n-30*n+16)*(n-1)*a)//96)
- n+=1;a,b=b,((7*n*n+7*n-2)*b+8*(n-1)*(n-2)*a)//((n+2)*(n+3))
+ n+=1;s=0;w=1
+ for j in range(n+4):s+=w*j*(~-j*(j-2)*(r*w+6*q*p)//2+j*j*w*w);r,q,p,w=q,p,w,w*(n-j)//-~j
+ print(s)

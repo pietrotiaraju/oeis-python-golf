@@ -5,6 +5,11 @@
 
 Offset 1: 16, 361, 3362, 16384, 55744, 152166, 355688, 739328, 1415232, 2529614, …
 
+Shanks's d-numbers: for n ≥ 2, a(n) = 5!·(2n/π)⁶·L/√n with
+L = Σ_{k odd} (n|k)/k⁶ and (n|k) the Jacobi symbol (the formula in the
+entry's Mathematica program); a(1) = 16 is the tangent number
+T₅ = 2·5!·(2/π)⁶·Σ_{k odd} 1/k⁶, twice the general formula at n = 1.
+
 ### Python 3 — 129 bytes
 
 ```python
@@ -14,54 +19,35 @@ while 1:a+=1;D+=sum((u:=abs(y*y%(4*a)-2*a)-a)*(5*a*a-u*u)**2-D[a//y]*(y%2>a%y)fo
 
 **How it works**
 
-- Let L_n=Σ_(k positive odd) (n|k)/k⁶, with (n|k) the Jacobi
-  symbol, and δ(n)=5!·(2n/π)⁶·L_n/√n. This is the
-  Dirichlet-series normalization of the generalized tangent number.
-  For n>1 it is the desired a(n), but
-  δ(1)=8 while the tangent-number convention requires a(1)=16.
-  As in [A000176](../A000176/), keep this normalization distinction
-  inside the divisor calculation and fix it only when printing.
-- The odd-frequency Fourier identity
-  Σ_(k positive odd) cos(πkx)/k⁶=−π⁶E_5(x)/480 on [0,1]
-  is [DLMF 24.8.5](https://dlmf.nist.gov/24.8.E5).
-  Combining it with the quadratic Gauss-sum calculation of A000176
-  replaces the infinite character sum by a finite polynomial sum.
-- For each residue y mod 2n, put
-  u=|y² mod 4n−2n|−n, so −n≤u≤n. Folding the Fourier
-  argument into [0,1] gives x=(n−u)/(2n), and
-  **−32n⁵E_5(x)=u(5n²−u²)²**. This is the integer polynomial
-  in the comprehension; π and the square roots have canceled.
-- The Gauss sum also includes odd frequencies sharing factors with n.
-  If g_n(u)=u(5n²−u²)² and U(n)=½Σ_y g_n(u), the resulting
-  identity is U(n)=Σ_(e odd, e divides n) δ(n/e).
-  Subtract the contributions for e>1 to isolate δ(n).
-- D stores 2δ(n), beginning with D[0]=0. Thus the new entry is
-  Σ_y g_n(u)−Σ_(e>1 odd, e divides n) D[n/e], with no
-  division inside either sum. The variable a in the program is n.
-- `range(2,2*a+2)` supplies exactly 2n consecutive residues,
-  starting beyond the troublesome y=0 and y=1. The test
-  `y%2>a%y` is true exactly for odd divisors y of n. For y>n,
-  `D[a//y]` is D[0]=0, so the extra residues are harmless.
-- `%` binds before `>>`, so `D[a]>>1%a` means D[n] shifted
-  by 1%n bits. It halves the stored value for n>1, but leaves
-  D[1]=16 intact, giving the exceptional first tangent number.
+- This is the [A000176](../A000176/) program (d_(n,2), fourth powers) with
+  sixth powers. Write δ(n) = 5!·(2n/π)⁶·L/√n for every n ≥ 1, so
+  δ(n) = a(n) for n ≥ 2 and δ(1) = 8.
+- Gauss sums turn the character into cosines: for odd k prime to n,
+  Σ_{y mod 2n} cos(πky²/2n) = √n·(n|k). The odd-k Fourier series
+  Σ_{k odd} cos(πkx)/k⁶ = −π⁶E₅(x)/480 on [0, 1] (DLMF 24.8.5) then sums
+  over k in closed form. Folding x = y²/2n mod 2 into [0, 1] gives
+  x = (n − u)/2n with u = |y² mod 4n − 2n| − n, and
+  −32n⁵·E₅((n − u)/2n) = u(5n² − u²)² =: g(u), an integer: π and √n cancel.
+- The odd k with gcd(k, n) = e > 1 add the values for n/e, so
+  ½·Σ_y g(u) = Σ_{odd e | n} δ(n/e). The program peels them off:
+  `D` holds 2δ(n), and each pass appends Σ_y g(u) − Σ_{odd e | n, e > 1} D[n/e].
+- `range(2,2*a+2)` is a full set of 2n residues (g depends only on y² mod 4n,
+  and (y + 2n)² ≡ y² mod 4n); starting at 2 avoids y = 0 (division by zero)
+  and y = 1 (D[n] is not there yet). `y%2>a%y` is "y odd and y | n", and for
+  y > n the index `a//y` is 0, where D[0] = 0.
+- `D[a]>>1%a` halves 2δ(n) for n ≥ 2 and leaves D[1] = 2δ(1) = 16 = a(1)
+  alone, since 1%1 = 0 (`%` binds tighter than `>>`).
 
 **Notes**
 
-- At n=1 the two residues give polynomial values 16 and 0,
-  hence D[1]=16. At n=2 their sum is 722 and there are no
-  proper odd-divisor contributions, so the output is 722/2=361.
-- The divisor correction must use δ(1)=8, not the doubled first
-  output a(1)=16. Keeping D[1]=2δ(1) makes the recurrence and
-  printing conventions agree without another special-case state.
-- Exact integer residues, polynomial evaluations and divisor inversion,
-  with no numerical Fourier truncation. Each term uses 2n iterations,
-  so N outputs require O(N²) summands and a list of N+1 integers.
-- [A000176](../A000176/) uses the cubic polynomial
-  u(3n²−u²) for the fourth-power Dirichlet series; this page
-  uses the fifth-degree polynomial for the sixth-power series.
-- The b-file has 1000 terms (indices 1 through 1000). The bar is the
-  whole b-file in 60 s.
+- At n = 1 the two residues give g = 16 and 0, so D[1] = 16; at n = 2 they
+  give −512, 361, 512, 361, so a(2) = 722/2 = 361.
+- Exact integer arithmetic, so the program is right for every n by the
+  Gauss-sum and Fourier identities above. Moving the divisor test into the
+  index, `D[a//y*(y%2>a%y)]`, is the same length.
+- Each term takes 2n steps: about 5060 terms in 60 s here. The b-file has
+  1000 terms (up to a(1000)); the bar is the whole b-file in 60 s.
+- a(n) grows like n^5.5, so the 4300-digit int-to-str limit is out of reach.
 
 ## History
 

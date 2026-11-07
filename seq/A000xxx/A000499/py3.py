@@ -1,2 +1,2 @@
-n=1
-while 1:print(n**3*sum(k*(2*k*k+1-3*n)for k in range(1,n+1)if n%k<1)//24);n+=1
+r=[1]
+for n in r:r+=n+1,;print(n**3*sum(2*k**3+k-n*k*3for k in r if n%k<1)//24)
