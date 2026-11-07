@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent planar partitions of n, when considering them as 3D objects.",
+  "offset": 0,
+  "min_terms": 151,
+  "timeout": 60
+}
