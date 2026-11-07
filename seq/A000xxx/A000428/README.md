@@ -11,11 +11,11 @@ multisets of parts with sum n when a part k comes in C(k+5, 6) kinds
 7-dimensional partitions [A000427](../A000427/), which first differs at n = 6
 (2094 against 2024).
 
-### Python 3 — 109 bytes
+### Python 3 — 108 bytes
 
 ```python
 import math
-a=[1];n=0
+*a,n=1,0
 while 1:n-=1;print(x:=sum(d*math.comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n);a+=x,
 ```
 
@@ -34,8 +34,9 @@ while 1:n-=1;print(x:=sum(d*math.comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n
 - `math.comb(5-d,6)` is C(k+5, 6) = c(k). d and n are both negative, so the
   signs cancel in `d*…//n`, and the division is exact because m·a(m) is that
   sum.
-- `print(x:=…)` prints the new term and `a+=x,` appends it; the auxiliary
-  a(0) = 1 is never printed.
+- `*a,n=1,0` sets a = [1] and n = 0 in one assignment, 1 byte under
+  `a=[1];n=0`. `print(x:=…)` prints the new term and `a+=x,` appends it;
+  the auxiliary a(0) = 1 is never printed.
 
 **Notes**
 
@@ -58,6 +59,7 @@ while 1:n-=1;print(x:=sum(d*math.comb(5-d,6)*sum(a[d::d])for d in range(n,0))//n
 | 2026-11-06 | Python 3 | 160 | use a shorter math import |
 | 2026-11-06 | Python 3 | 111 | reorder the Euler-transform sum and use one coefficient list |
 | 2026-11-07 | Python 3 | 109 | `import math`, print the new term through a walrus |
+| 2026-11-07 | Python 3 | 108 | starred assignment `*a,n=1,0` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
