@@ -598,9 +598,9 @@ sequence for the code and how it works.
 | [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **41** | 992 |
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
-| [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **258** | 4 |
-| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **146** | 10001 |
-| [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **72** | 596 |
+| [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **193** | 4 |
+| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **122** | 10001 |
+| [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **55** | 596 |
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
 | [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
