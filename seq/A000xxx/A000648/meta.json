@@ -1,0 +1,6 @@
+{
+  "name": "Number of alkyls C_{n+15} H_{2n+10} (Anthr.) with n carbon atoms.",
+  "offset": 0,
+  "min_terms": 26,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of boron trees with n nodes, i.e. n-node rooted trees with degree <= 3 at root and out-degree <= 2 elsewhere.",
+  "offset": 0,
+  "min_terms": 50,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of bicentered 3-valent (or boron, or binary) trees with n nodes.",
+  "offset": 0,
+  "min_terms": 36,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of carbon (rooted) trees with n carbon atoms = unordered 4-tuples of ternary trees.",
+  "offset": 0,
+  "min_terms": 44,
+  "timeout": 60
+}
