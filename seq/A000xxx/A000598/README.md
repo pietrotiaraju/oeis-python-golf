@@ -34,13 +34,13 @@ while[print(L[-1])]:L+=sumprod(L,L[::-1])+3*L[3*n],;L+=*[0]*4,(sumprod(L,L[::-1]
 
 - Exact integer arithmetic: the division by 12 returns the integer
   Bₙ₊₁ = [xⁿ]S₃(B). There is no stereochemical distinction, matching the
-  OEIS definitions.
+  OEIS definitions. So the program is right for every n.
 - Storing K unhalved saves 2 bytes over the 129-byte K = (B² + 3B(x²))/2
   form (`>>1` and `+2*…)//6`): the 2 in front of [xⁿ]B(x³) becomes a 4.
 - O(n) operations per term; a(9580) is the first term over 4300 digits, so
   Python's int-to-str limit stops the program there.
-- The reference file contains 1001 terms from the OEIS b-file; the verification
-  bar is 1001 terms in 60 s (the program needs about 2 s here).
+- About 2900 terms in 60 s here. The b-file has 1001 terms (up to a(1000));
+  the bar is the whole b-file in 60 s, which takes about 1.2 s.
 
 ## History
 
