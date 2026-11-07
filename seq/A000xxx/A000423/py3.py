@@ -1,3 +1,2 @@
-a=[];s={2,3}
-while s:
- n=min(s);s.remove(n);print(n);s|={n*x for x in a};a+=[n]
+n=1
+while 1:n+=1;6**n%n|n%6*(n>3)or print(n)

@@ -14,27 +14,20 @@ while[print(n)]:n*=7
 
 **How it works**
 
-- Initially n=1=7⁰. If the current print is 7ᵏ, the body replaces
-  n by 7·7ᵏ=7^(k+1), establishing every subsequent term by induction.
-- `print(n)` runs while evaluating the condition and returns `None`.
-  The one-element list `[None]` is true, so printing also supplies
-  the infinite-loop condition.
-- The value itself is the whole state: no exponent counter or call
-  to `pow` is needed. This is [A000400](../A000400/) with multiplier
-  7 instead of 6.
+- n starts at 7⁰ = 1 and is multiplied by 7 after every print, so the k-th
+  print is 7^k. The value is the whole state: no exponent counter.
+- `while[print(n)]:` prints in the loop condition: `print` returns `None`
+  and the one-element list `[None]` is true. This is
+  [A000400](../A000400/) with 7 in place of 6.
 
 **Notes**
 
-- `n=1` followed by `while 1:print(n);n*=7` is 25 bytes; placing
-  the print in a list condition saves one byte.
-- Exact integer arithmetic, correct at every index. a(5089)=7^5089
-  is the first term with more than 4300 decimal digits, where the
-  default integer-to-string limit of Python 3.11+ stops printing.
-  This interpreter limit is not counted as a correctness failure.
-- There is one multiplication per term and only one stored value,
-  although the value's number of digits grows linearly with its index.
-- The b-file has 101 terms (indices 0 through 100). The bar is the
-  whole b-file in 60 s.
+- `while 1:print(n);n*=7`: 25 bytes. A counter with `print(7**n)`: 27.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 101 terms (up to a(100)); the bar is the whole b-file in
+  60 s.
+- a(5089) is the first term with more than 4300 digits (4301), so Python's
+  int-to-str limit stops the printing there; a(5088) has 4300.
 
 ## History
 
