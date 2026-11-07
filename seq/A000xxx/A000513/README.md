@@ -5,72 +5,88 @@
 
 Offset 1: 0, 0, 0, 1, 1, 4, 16, 194, 3529, 121790, …
 
-### Python 3 — 596 bytes
+a(n) counts n×n 0-1 matrices with four ones in every row and every column,
+two of them being the same when one becomes the other by permuting the rows
+and permuting the columns (not by transposing). Equivalently: 4-regular
+bipartite graphs on n + n vertices, up to isomorphisms that keep each side
+in place.
+
+### Python 3 — 436 bytes
 
 ```python
 from math import*
 from functools import*
-P=cache(lambda n,m=1:[((j,*p),-z*j*~p.count(j))for j in range(m,n+1)for p,z in P(n-j,j)]if n else[((),1)])
-def a(n,k):
- k=min(k,n-k)
- if k<1:return 1>>-k
- T=0;H=factorial(n)**2
- for R,r in P(n):
-  for S,s in P(n):
-   @cache
-   def f(i,j,h,D):
-    if i==len(R):return 1
-    if j==len(S):return h<1and f(i+1,0,k,[*zip(*sorted(zip(S,D)))][1])
-    d=gcd(R[i],S[j]);u=S[j]//d;v=R[i]//d
-    return sum(comb(d,t)*f(i,j+1,h-t*u,D[1:]+(D[0]-t*v,))for t in range(min(d,h//u,D[0]//v)+1))
-   T+=H//r//s*f(0,0,k,(k,)*len(S))
- return T//H
-n=0
-while 1:n+=1;print(a(n,4))
+P=lambda n,m=1:[((j,*p),-z*j*~p.count(j))for j in range(m,n+1)for p,z in P(n-j,j)]if n else[((),1)]
+n=H=1
+while[print(sum(H//r//s*(f:=cache(lambda R,C,h:R==()or C[-1]>(0,)and(sum(comb(g:=gcd(r:=R[0],s),t)*f(R,C[1:]+((C[0][0]-t*r//g,s),),h-t*s//g)for t in range(h+1))if(s:=C[0][1])else h==0and f(R[1:],(*sorted(C),),4))))(R,(*zip([4]*n,S),(9,0)),4)for R,r in P(n)for S,s in P(n))//H)]:n+=1;H*=n*n
 ```
 
 **How it works**
 
-- Apply Burnside's lemma to the independent row and column permutation
-  groups S_n×S_n. `P` generates each cycle type R together with its
-  denominator z(R)=∏ⱼ j^mⱼmⱼ!, so its conjugacy class has n!/z(R) elements.
-  Adding a part j multiplies the denominator by j times its new multiplicity;
-  `-~p.count(j)` is exactly that multiplicity.
-- For a row cycle of length r and a column cycle of length s, the cell
-  action has d=gcd(r,s) orbits. Selecting t of them has weight C(d,t),
-  adds t·s/d ones to each row, and t·r/d ones to each column.
-- The cached recurrence `f(i,j,h,D)` visits these cycle pairs. `h` is the
-  remaining degree in row cycle i. `D[0]` is the current column-cycle
-  deficit; rotating D after each choice brings the next column to the front.
-  The bound on t keeps both deficits nonnegative.
-- At the end of a row cycle, require h=0 and sort the deficits within
-  equal-length column cycles before memoization. Once all rows are filled,
-  their total is n·k. The column total is the same and no deficit is negative,
-  so every remaining column deficit is zero; the terminal count is 1.
-- Put H=(n!)². Each fixed-matrix count has integer weight H/z(R)/z(S);
-  sum these weighted counts and divide by H. Complementation gives
-  a(n,k)=a(n,n−k); degree 0 has one class and negative degree has none.
-  A000519 sums all degrees and removes the all-zero matrix.
+- Burnside's lemma over the group S_n×S_n of row and column permutations:
+  the number of classes is the average number of matrices fixed by a pair
+  (ρ, σ). That number F(R, S) depends only on the cycle types R and S, and
+  the cycle type with m_j cycles of length j has n!/z elements, where
+  z = ∏ j^(m_j)·m_j!. With H = n!²,
 
-The transition bounds keep `h` nonnegative, so `h<1` tests exactly zero.
-Sorting `(cycle length, residual degree)` pairs and transposing them
-extracts the same tuple of residual degrees. Every partition here is
-nonempty (n≥1), so the second transposed component always exists.
+  classes = (1/H)·Σ_{R,S} (H/z_R/z_S)·F(R, S),
 
-In the early case k≤0, `1>>-k` is 1 for k=0 and 0 for every
-negative k, exactly the required counts without a Boolean output.
+  and each weight H/z_R/z_S is an integer (a product of class sizes).
+  `n=H=1` and `H*=n*n` keep H = n!².
+- `P(n)` lists the partitions of n, parts in increasing order, each with
+  its z: a part j put in front of a partition whose parts are all ≥ j
+  multiplies z by j times the new multiplicity of j, which is
+  `-z*j*~p.count(j)`.
+- A fixed matrix is constant on the orbits of ⟨(ρ, σ)⟩ on the cells. A row
+  cycle of length r and a column cycle of length s hold r·s cells in
+  g = gcd(r, s) orbits of length lcm(r, s); filling one orbit puts s/g
+  ones in every row of the row cycle and r/g ones in every column of the
+  column cycle, and t of the g orbits can be picked in C(g, t) ways. So
+  F(R, S) is the sum, over the choices of t for every (row cycle, column
+  cycle) pair that give every row and every column the right number of
+  ones, of the products of the C(g, t).
+- `f(R,C,h)` takes the row cycles one at a time (r = R[0]) and, for the
+  current one, walks through the column slots in C. A slot is
+  (deficit e, cycle length s), e being the ones still missing in each
+  column of that cycle. The first slot is used: t orbits are chosen, h
+  (the ones still missing in each row of the current cycle) drops by
+  t·s/g, the slot's deficit by t·r/g, and the updated slot goes to the
+  back. After the n column slots comes a sentinel (9, 0): its length 0 makes
+  `if(s:=C[0][1])` false, so the row cycle ends there, which needs h = 0.
+  The slots are then sorted, which brings the sentinel back to the end
+  (every deficit is at most 4 < 9) and puts the state in a canonical
+  form: the later rows treat the column slots alike, so only their
+  multiset matters.
+  The next row cycle starts again with h = 4.
+- `C[-1]>(0,)` tests the deficit of the slot just updated: a pair (e, s)
+  is above the one-tuple (0,) exactly when e ≥ 0. So an overfilled column
+  is cut at once, and a negative h leaves `range(h+1)` empty. When R is
+  empty every row has its ones, 4n in all; the column deficits
+  started at 4n in total and none is negative, so all of them are 0
+  and `R==()` returns True, a count of 1.
+- Each (R, S) pair gets a fresh cache, made inside the sum with a walrus,
+  `(f:=cache(lambda …))(…)`; the lambda looks f up when it runs, so it
+  calls the current one. Peak memory stays near 100 MB.
+- For n < 4 no row can hold four ones, so the sum is 0 without a
+  special case.
 
 **Notes**
 
-- This is an exact orbit count for every n, including disconnected
-  graphs. No color swapping or matrix transposition is included in the
-  equivalence relation.
-- The zero terms for n below the prescribed degree follow from the
-  impossibility of placing more than n ones in a row.
-- The state space grows quickly; the verification bar covers the first
-  few orders and the program continues with the same exhaustive recurrence.
-- The reference file contains 22 terms from the OEIS b-file; the verification
-  bar is 8 terms in 60 s.
+- One shared cache, `f=cache(…)` on its own line (the key (R, C, h)
+  already tells the pairs apart): 435 bytes, but it keeps every state of
+  every pair, and an earlier form of it passed 1.2 GB within a minute on
+  the degree-4 case here. H = n!² as `(H:=factorial(n)**2)` inside the
+  sum: 446 bytes.
+  The previous program (a `def a(n,k)` with a nested `@cache def
+  f(i,j,h,D)` that indexed R and S and transposed sorted (length, deficit)
+  pairs at every row end): 596 bytes.
+- Exact integer arithmetic, so the program is right for every n. Only row
+  and column permutations are used, as in the OEIS definition:
+  no transposition and no complementation in the equivalence.
+- 9 terms in 60 s here: a(8) after 8–11 s, a(9) after about 27 s.
+- a(22) has 30 digits, so the 4300-digit int-to-str limit is
+  far out of reach.
+- The b-file has 22 terms (up to a(22)); the bar is 8 terms in 60 s.
 
 ## History
 
@@ -79,6 +95,7 @@ negative k, exactly the required counts without a Boolean output.
 | 2026-11-06 | Python 3 | 776 | first entry |
 | 2026-11-06 | Python 3 | 607 | carry cycle-type denominators and merge the orbit recurrences |
 | 2026-11-06 | Python 3 | 596 | transpose sorted residual pairs and short-circuit the zero-degree test |
+| 2026-11-07 | Python 3 | 436 | slot list with a sentinel, one cache per cycle-type pair |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
