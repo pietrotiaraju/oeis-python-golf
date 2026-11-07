@@ -1,4 +1,3 @@
-import math
-a=[1]
-while[print(a[-1])]:
- n=len(a);a+=[-sum(math.comb(2*n,2*k)*(-16)**k*a[-k]for k in range(1,n+1))]
+r=[t:=1]
+while[print(t)]:
+ for t in 0,0:r=[t:=t+x*4for x in[0]+r[::-1]]
