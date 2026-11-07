@@ -1,2 +1,2 @@
-a,b,n=1,2,4
-while[print(n*(n-1)*((n-3)*b+(n-2)*a)//2)]:a,b=b,(n-1)*(a+b);n+=1
+d=2;n=4
+while[print(n*(-~-n*d+(n-2)*(d:=d*n^1))//2)]:n+=1
