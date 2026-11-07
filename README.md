@@ -715,6 +715,7 @@ sequence for the code and how it works.
 | [A000700](seq/A000xxx/A000700/) | Expansion of Product\_{k>=0} (1 + x^(2k+1)); number of partitions of n… | **71** | 600 |
 | [A000701](seq/A000xxx/A000701/) | One half of number of non-self-conjugate partitions; also half of… | **79** | 1900 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
+| [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
