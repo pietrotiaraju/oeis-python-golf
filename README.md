@@ -599,7 +599,7 @@ sequence for the code and how it works.
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
 | [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **193** | 4 |
-| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **122** | 10001 |
+| [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **119** | 10001 |
 | [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **55** | 596 |
 | [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **59** | 201 |
 | [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **54** | 196 |
@@ -611,7 +611,7 @@ sequence for the code and how it works.
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **171** | 25 |
 | [A000596](seq/A000xxx/A000596/) | Central factorial numbers: A008955(n,2). | **47** | 9998 |
 | [A000597](seq/A000xxx/A000597/) | Central factorial numbers: A008955(n,3). | **61** | 997 |
-| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **129** | 1001 |
+| [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **127** | 1001 |
 | [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **149** | 1001 |
 | [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **145** | 1001 |
 | [A000601](seq/A000xxx/A000601/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^3)). | **42** | 10001 |

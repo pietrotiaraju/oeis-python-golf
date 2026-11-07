@@ -39,8 +39,8 @@ while[print(L[-1]-g)]:L+=(g:=sumprod(L,L[::-1])+L[3*n]>>1)+L[3*n],;L+=*[0]*4,(su
 - Exact integer arithmetic: B² ≡ B(x²) (mod 2) makes the halving exact,
   and the division by 6 returns the integer Bₙ₊₁ = [xⁿ]S₃(B). There is no
   stereochemical distinction, matching the OEIS definitions.
-- O(n) operations per term; Python's 4300-digit limit for printing
-  integers would stop it near n ≈ 9500.
+- O(n) operations per term; a(9581) is the first term over 4300 digits, so
+  Python's int-to-str limit stops the program there.
 - The reference file contains 1001 terms from the OEIS b-file; the verification
   bar is 1001 terms in 60 s (the program needs about 2 s here).
 
