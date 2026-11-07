@@ -1,2 +1,2 @@
-A=[1,1,2,4,7]
-while[print(A[0])]:A=A[1:]+[sum(A)-A[3]]
+A=1,1,2,4,7
+while 1:x,*A=*A,sum(A)-A[3];print(x)

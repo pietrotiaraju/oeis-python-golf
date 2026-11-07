@@ -5,44 +5,46 @@
 
 Offset 1: 3, 7, 11, 14, 18, 22, 26, 29, 33, 37, …
 
-### Python 3 — 81 bytes
+### Python 3 — 46 bytes
 
 ```python
-n=1
-while 1:
- N=F=1;k=0
- while -n*N%F<2*n:k+=1;N=N*k+1;F*=k
- print(n+n*N//F);n+=1
+n=F=1;M=3
+while[print(M//F)]:F*=n;n+=1;M=M*n+1
 ```
 
 **How it works**
 
-- `N/F` is the Taylor sum Σⱼ₌₀ᵏ 1/j!, with F=k!. Advancing k
-  multiplies the old numerator by k and adds 1, so every partial sum
-  is represented exactly.
-- For k≥1 the remaining tail is smaller than 2/F: after multiplication
-  by F it is bounded by Σᵣ₌₁∞(k+1)^(−r)=1/k≤1. Thus n·e lies in
-  [nN/F,(nN+2n)/F).
-- `-n*N%F` is the distance to the next integer in units of 1/F when
-  the lower bound is nonintegral. The loop stops only when that
-  distance is at least 2n, proving that the interval has one floor.
-  A zero remainder forces further refinement. Since F=1 at k=0 and
-  k=1, the loop always reaches the range where the tail bound applies.
-- Irrationality of e ensures that refinement eventually succeeds for
-  every positive n. Adding n then gives floor(n(e+1)).
+- **Truncating the series is exact.** Let S_n = 1/0! + 1/1! + … + 1/n!.
+  Then n!·e = N + r with N = n!·S_n an integer and 0 < r = 1/(n+1) +
+  1/((n+1)(n+2)) + … < 1/n ≤ 1. So n·e = (N + r)/(n−1)!, and since N < N + r
+  < N + 1, ⌊n·e⌋ = ⌊N/(n−1)!⌋ = ⌊n·S_n⌋. (This is the argument behind the
+  irrationality of e; no approximation bound is needed.)
+- **The numerator.** Hence a(n) = ⌊n·(S_n + 1)⌋ = ⌊M/F⌋ with
+  M = n!·(S_n + 1) and F = (n−1)!. Both satisfy one-line recurrences:
+  M(n) = n·M(n−1) + 1 (the new term n!/n! = 1), with M(1) = 1!·(2 + 1) = 3,
+  and F(n) = (n−1)·F(n−1).
+- **The loop.** `F*=n` runs with the old n, then `n+=1`, then `M=M*n+1`
+  with the new one. This is the [A000210](../A000210/) program
+  (⌊n(e − 1)⌋) with the start value M = 3 instead of 1: changing the constant
+  term of S_n + c only changes M(1).
 
 **Notes**
 
-- All precision decisions use exact integers and a proven Taylor tail
-  bound. No fixed decimal approximation to e is embedded.
-- The reference file contains 59 terms from the published OEIS entry; the verification
-  bar is 59 terms in 60 s.
+- Other versions that print the same terms: the A000210 loop with the
+  difference added at the end, `n=M=F=1` / `while[print(M//F+2*n)]:…`:
+  48 bytes.
+- Integers only, no floats, so the program is right for every n.
+- M and F grow like n!, so a term costs time proportional to log n!. The
+  b-file has 59 terms (up to a(59), the entry's data); the bar is the whole
+  b-file in 60 s, and the program prints it at once.
+- a(n) < 4n, so the 4300-digit int-to-str limit is out of reach.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 81 | first entry |
+| 2026-11-07 | Python 3 | 46 | exact truncation ⌊n·e⌋ = ⌊n·S_n⌋, the A000210 loop with M(1) = 3 |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -579,13 +579,13 @@ sequence for the code and how it works.
 | [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
 | [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **94** | 25 |
 | [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
-| [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **35** | 10001 |
-| [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **32** | 1001 |
+| [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **31** | 10001 |
+| [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **29** | 1001 |
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **291** | 35 |
 | [A000569](seq/A000xxx/A000569/) | Number of graphical partitions of 2n. | **249** | 12 |
-| [A000570](seq/A000xxx/A000570/) | Number of tournaments on n nodes determined by their score vectors. | **54** | 500 |
-| [A000571](seq/A000xxx/A000571/) | Number of different score sequences that are possible in an n-team… | **220** | 1000 |
-| [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **81** | 59 |
+| [A000570](seq/A000xxx/A000570/) | Number of tournaments on n nodes determined by their score vectors. | **48** | 500 |
+| [A000571](seq/A000xxx/A000571/) | Number of different score sequences that are possible in an n-team… | **144** | 1000 |
+| [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **46** | 59 |
 | [A000573](seq/A000xxx/A000573/) | Number of 4 X n normalized Latin rectangles. | **276** | 3 |
 | [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
 | [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
