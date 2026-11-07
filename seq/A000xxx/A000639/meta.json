@@ -1,0 +1,6 @@
+{
+  "name": "Number of alkyl benzenes with n carbon atoms: C(n)H(2n-6).",
+  "offset": 1,
+  "min_terms": 40,
+  "timeout": 60
+}

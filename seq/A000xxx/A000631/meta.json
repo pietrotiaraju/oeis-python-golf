@@ -1,0 +1,6 @@
+{
+  "name": "Number of ethylene derivatives with n carbon atoms.",
+  "offset": 2,
+  "min_terms": 499,
+  "timeout": 60
+}

@@ -631,6 +631,16 @@ sequence for the code and how it works.
 | [A000627](seq/A000xxx/A000627/) | Number of non-stereoisomeric paraffins with n carbon atoms. | **102** | 42 |
 | [A000628](seq/A000xxx/A000628/) | Number of n-node unrooted steric quartic trees; number of n-carbon… | **160** | 39 |
 | [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
+| [A000631](seq/A000xxx/A000631/) | Number of ethylene derivatives with n carbon atoms. | **167** | 499 |
+| [A000632](seq/A000xxx/A000632/) | Number of esters with n carbon atoms up to structural isomerism. | **138** | 98 |
+| [A000633](seq/A000xxx/A000633/) | Number of acyclic quaternary ammonium ions with n carbon atoms. | **194** | 31 |
+| [A000634](seq/A000xxx/A000634/) | Number of glycols with n carbon atoms. | **215** | 29 |
+| [A000635](seq/A000xxx/A000635/) | Number of paraffins C\_n H\_{2n} X Y with n carbon atoms. | **172** | 40 |
+| [A000636](seq/A000xxx/A000636/) | Number of paraffins C\_n H\_{2n} X\_2 with n carbon atoms. | **213** | 30 |
+| [A000639](seq/A000xxx/A000639/) | Number of alkyl benzenes with n carbon atoms: C(n)H(2n-6). | **197** | 40 |
+| [A000640](seq/A000xxx/A000640/) | Number of paraffins C\_n H\_{2n-1} XYZ with n carbon atoms. | **175** | 40 |
+| [A000641](seq/A000xxx/A000641/) | Number of paraffins C\_n H\_{2n-1} X\_3 with n carbon atoms. | **223** | 28 |
+| [A000642](seq/A000xxx/A000642/) | a(n) = number of isomeric hydrocarbons of the acetylene series with… | **137** | 201 |
 | [A000643](seq/A000xxx/A000643/) | a(n) = a(n-1) + 2^a(n-2). | **34** | 10 |
 | [A000655](seq/A000xxx/A000655/) | a(n) = number of letters in a(n-1), a(1) = 1 (in English). | **28** | 80 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |

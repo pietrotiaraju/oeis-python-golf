@@ -1,0 +1,6 @@
+{
+  "name": "Number of glycols with n carbon atoms.",
+  "offset": 2,
+  "min_terms": 29,
+  "timeout": 60
+}
