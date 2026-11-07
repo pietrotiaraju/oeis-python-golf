@@ -816,6 +816,8 @@ sequence for the code and how it works.
 | [A000807](seq/A000xxx/A000807/) | Quadratic invariants. | **69** | 289 |
 | [A000808](seq/A000xxx/A000808/) | Number of switching networks (see Harrison reference for precise… | **39** | 12 |
 | [A000809](seq/A000xxx/A000809/) | Number of switching networks (see Harrison reference for precise… | **42** | 9 |
+| [A000811](seq/A000xxx/A000811/) | Number of switching networks (see Harrison reference for precise… | **160** | 7 |
+| [A000812](seq/A000xxx/A000812/) | Number of switching networks (see Harrison reference for precise… | **160** | 6 |
 | [A000814](seq/A000xxx/A000814/) | Number of switching networks (see Harrison reference for precise… | **213** | 7 |
 | [A000815](seq/A000xxx/A000815/) | Number of switching networks (see Harrison reference for precise… | **213** | 6 |
 | [A000823](seq/A000xxx/A000823/) | Number of switching networks (see Harrison reference for precise… | **42** | 7 |
@@ -824,6 +826,8 @@ sequence for the code and how it works.
 | [A000830](seq/A000xxx/A000830/) | Number of switching networks (see Harrison reference for precise… | **251** | 6 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
+| [A000841](seq/A000xxx/A000841/) | Number of n-input 2-output switching networks under action of… | **162** | 7 |
+| [A000842](seq/A000xxx/A000842/) | Number of n-input 3-output switching networks under action of… | **162** | 6 |
 | [A000844](seq/A000xxx/A000844/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000845](seq/A000xxx/A000845/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000846](seq/A000xxx/A000846/) | a(n) = C(3n,n) - C(2n,n). | **64** | 201 |
