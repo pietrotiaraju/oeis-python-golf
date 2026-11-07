@@ -14,29 +14,20 @@ while[print('%o'%n)]:n*=10
 
 **How it works**
 
-- n starts at 1=10⁰ and is multiplied by 10 after every output,
-  so its exact integer values are the powers of ten.
-- `'%o'%n` formats n in base 8 without an `0o` prefix. The
-  resulting octal digits are printed as text; the sequence treats
-  that digit string as its displayed integer representation.
-- For example 10=1·8+2 prints 12, while
-  100=1·8²+4·8+4 prints 144. Formatting handles carries
-  across octal places automatically.
-- `[print(...)]` is a nonempty list after the print returns
-  `None`, so it supplies the always-true condition as well as output.
+- n runs through 10⁰, 10¹, 10², …, and `'%o'%n` formats it in octal with
+  no `0o` prefix.
+- `print` sits in the loop condition: it returns `None`, and `[None]` is a
+  non-empty list, so the loop never ends (the [A000007](../A000007/) loop).
 
 **Notes**
 
-- The program changes the notation, not the integer arithmetic used
-  to generate powers of ten. Parsing the formatted text back into
-  an integer would add work without changing what must be printed.
-- Octal conversion is exact and, as a power-of-two base, is exempt
-  from Python 3.11+'s default 4300-digit decimal conversion limit.
-  Memory and printing time still grow with the output length.
-- The n-th output has ⌊n·log₈(10)⌋+1 octal digits. Only the
-  current power and its formatted text are needed.
-- The b-file has 101 terms (indices 0 through 100). The bar is the
-  whole b-file in 60 s.
+- Other versions that print the same terms: `f'{n:o}'` is 2 bytes longer
+  and `oct(n)[2:]` 4 bytes longer than `'%o'%n`.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file's 101 terms print in 0.07 s here. The b-file has 101 terms
+  (up to a(100)); the bar is the whole b-file in 60 s.
+- The output is made by `%o` formatting, which is not limited to 4300
+  digits (only decimal int-to-str conversion is), so printing never stops.
 
 ## History
 

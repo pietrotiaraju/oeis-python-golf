@@ -475,14 +475,14 @@ sequence for the code and how it works.
 | [A000459](seq/A000xxx/A000459/) | Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no… | **55** | 101 |
 | [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **44** | 998 |
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **31** | 333 |
-| [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **115** | 10000 |
+| [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **65** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
 | [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **122** | 216 |
 | [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **187** | 5001 |
-| [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **31** | 901 |
+| [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **28** | 901 |
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
-| [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **128** | 10000 |
+| [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **54** | 10000 |
 | [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **229** | 19 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |

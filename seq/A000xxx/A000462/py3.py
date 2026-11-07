@@ -1,7 +1,2 @@
-n=1
-while 1:
- r=n;s='';t=k=1
- while t<=n:k+=1;t+=k
- while k>1:
-  t-=k;k-=1;d,r=divmod(r,t);s+=str(d)
- print(s);n+=1
+L=[i:=0];K=1
+while[print(x:=10**~-K+L[i])]:L+=x,;i=-~i%-~K;K+=i<1
