@@ -427,11 +427,11 @@ sequence for the code and how it works.
 | [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **90** | 184 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **152** | 10001 |
 | [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
-| [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **143** | 10000 |
-| [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **106** | 10000 |
-| [A000416](seq/A000xxx/A000416/) | Number of 6-dimensional partitions of n. | **164** | 7 |
-| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **111** | 1000 |
-| [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **129** | 200 |
+| [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **71** | 10000 |
+| [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **82** | 10000 |
+| [A000416](seq/A000xxx/A000416/) | Number of 6-dimensional partitions of n. | **143** | 7 |
+| [A000417](seq/A000xxx/A000417/) | Euler transform of A000389. | **108** | 1000 |
+| [A000418](seq/A000xxx/A000418/) | Number of n-node rooted trees of height 7. | **116** | 200 |
 | [A000419](seq/A000xxx/A000419/) | Numbers that are the sum of 3 but no fewer nonzero squares. | **110** | 10000 |
 | [A000420](seq/A000xxx/A000420/) | Powers of 7: a(n) = 7^n. | **24** | 101 |
 | [A000421](seq/A000xxx/A000421/) | Number of isomorphism classes of connected 3-regular (trivalent,… | **247** | 3 |

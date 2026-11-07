@@ -1,5 +1,2 @@
-n=1;s={1};k=2
-while 1:
- if n==k*k:s.add(n);k+=1
- if n not in s and any(n-x in s for x in s):print(n)
- n+=1
+n=0;s={0}
+while n:=n+1:s|={n}&{len(s)**2};n in s or{n-x for x in s}&s and print(n)
