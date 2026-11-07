@@ -920,6 +920,8 @@ sequence for the code and how it works.
 | [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
 | [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
+| [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
+| [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
