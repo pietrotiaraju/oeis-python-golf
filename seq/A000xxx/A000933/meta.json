@@ -1,0 +1,6 @@
+{
+  "name": "Genus of complete graph on n nodes.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
