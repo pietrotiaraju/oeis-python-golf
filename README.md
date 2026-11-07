@@ -910,6 +910,16 @@ sequence for the code and how it works.
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
 | [A000899](seq/A000xxx/A000899/) | Number of solutions to the rook problem on an n X n board having a… | **97** | 200 |
 | [A000900](seq/A000xxx/A000900/) | Number of solutions to the rook problem on an n X n board having a… | **77** | 201 |
+| [A000902](seq/A000xxx/A000902/) | Expansion of e.g.f. (1/2)\*(exp(2\*x + x^2) + 1). | **49** | 201 |
+| [A000904](seq/A000xxx/A000904/) | a(n) = (n+1)\*a(n-1) + (n+2)\*a(n-2) + a(n-3); a(1)=0, a(2)=3, a(3)=13. | **52** | 100 |
+| [A000905](seq/A000xxx/A000905/) | Hamilton numbers. | **92** | 14 |
+| [A000906](seq/A000xxx/A000906/) | Exponential generating function: 2\*(1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
+| [A000907](seq/A000xxx/A000907/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+2, n]].… | **51** | 16 |
+| [A000909](seq/A000xxx/A000909/) | a(n) = (2\*n)!\*(2\*n+1)! / n!^2. | **37** | 101 |
+| [A000910](seq/A000xxx/A000910/) | a(n) = 5\*binomial(n, 6). | **49** | 900 |
+| [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
+| [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
+| [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
