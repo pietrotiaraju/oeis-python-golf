@@ -575,10 +575,10 @@ sequence for the code and how it works.
 | [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **98** | 20 |
 | [A000560](seq/A000xxx/A000560/) | Number of symmetric ways of folding a strip of n labeled stamps. | **172** | 8 |
 | [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **43** | 998 |
-| [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **65** | 36 |
-| [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
-| [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **94** | 25 |
-| [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
+| [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **55** | 36 |
+| [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **62** | 29 |
+| [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **81** | 25 |
+| [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **88** | 24 |
 | [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **31** | 10001 |
 | [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **29** | 1001 |
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **171** | 35 |
