@@ -35,7 +35,7 @@ while 1:Q+=c(Y,Y),;Y=Y+[(4*(n+3)*c(Q,Y)-3*(n+2)*Q[n])//6];A+=c(Q,A),;n+=1;print(
 
 - Exact integer arithmetic, no fractions; the division by 6 is exact
   because Y has integer coefficients (y = φ(z) with φ the e.g.f. of
-  [A000670](https://oeis.org/A000670) and z the reversion of z(2 − e^z)).
+  [A000670](../A000670/) and z the reversion of z(2 − e^z)).
 - Three convolutions per term; the whole b-file (100 terms) prints in a
   fraction of a second, and it is the bar.
 - Lagrange inversion also gives log E directly: its e.g.f. coefficients
