@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 3*Catalan(n) - Catalan(n-1) - 1.",
+  "offset": 1,
+  "min_terms": 1657,
+  "timeout": 60
+}
