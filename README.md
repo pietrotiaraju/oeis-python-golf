@@ -560,11 +560,11 @@ sequence for the code and how it works.
 | [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **204** | 447 |
 | [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
 | [A000546](seq/A000xxx/A000546/) | First occurrence of n consecutive numbers that take same number of… | **190** | 20 |
-| [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **190** | 20 |
-| [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **99** | 300 |
-| [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **173** | 30 |
-| [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **187** | 50 |
-| [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **99** | 198 |
+| [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **132** | 20 |
+| [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **63** | 300 |
+| [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **99** | 30 |
+| [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **177** | 50 |
+| [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **81** | 198 |
 | [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **135** | 16 |
 | [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **135** | 15 |
 | [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **44** | 997 |
