@@ -1,3 +1,2 @@
-from math import*
-n=3
-while[print(n*(n-1)*sum(comb(n-2,k-1)*k**(n-2-k)for k in range(1,n-1)))]:n+=1
+m=2
+while[print(-~m*sum(((2**m+1)**m>>m*k)%2**m*k**(m-k)for k in range(m)))]:m+=1

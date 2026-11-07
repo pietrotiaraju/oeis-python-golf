@@ -1,5 +1,2 @@
-from math import*
-n=0
-while 1:
- n+=1;r=range(1,isqrt(n)+1)
- if any(isqrt(t:=n-x*x)**2==t for x in r)and all(isqrt(t)**2!=t for x in r for y in r if(t:=n-x*x-y*y)>0):print(n)
+S={n:=1}
+while[{n-a-b for a in S for b in S}&S or S&{n-a for a in S|{0}}and print(n)]:n+=1;S|={n*n}
