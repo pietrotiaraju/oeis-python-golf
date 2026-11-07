@@ -721,6 +721,11 @@ sequence for the code and how it works.
 | [A000740](seq/A000xxx/A000740/) | Number of 2n-bead balanced binary necklaces of fundamental period 2n,… | **82** | 3322 |
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
 | [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
+| [A000774](seq/A000xxx/A000774/) | a(n) = n!\*(1 + Sum\_{i=1..n} 1/i). | **41** | 251 |
+| [A000775](seq/A000xxx/A000775/) | a(n) = n! \* (n + 1 + 2\*Sum\_{k=1...n} 1/k). | **46** | 101 |
+| [A000776](seq/A000xxx/A000776/) | a(n) = n! \* (1 + 2\*Sum\_{k=1..n} 1/k). | **43** | 251 |
+| [A000779](seq/A000xxx/A000779/) | a(n) = 2\*(2n-1)!!-(n-1)!\*2^(n-1), where (2n-1)!! is A001147(n). | **43** | 250 |
+| [A000780](seq/A000xxx/A000780/) | a(n) = (n+1)!/2 + (n-1)(n-1)!. | **41** | 200 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |

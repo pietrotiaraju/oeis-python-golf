@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 2*(2n-1)!!-(n-1)!*2^(n-1), where (2n-1)!! is A001147(n).",
+  "offset": 1,
+  "min_terms": 250,
+  "timeout": 60
+}
