@@ -1,2 +1,2 @@
 L=[[0]],
-while[print(len(L))]:L=[(x+[-len(q)],*q)for q in L for x in([],*q)if all((x<c)^(x<d)==(q[0]<c)^(q[0]<d)for c,d in zip(q[1::2],q[2::2]))]
+while[print(n:=len(L))]:L=[(x+[-n],p,*r)for p,*r in L for x in([],p,*r)if all((x<c)^(x<d)==(p<c)^(p<d)for c,d in zip(*[iter(r)]*2))]

@@ -49,7 +49,7 @@ sequence for the code and how it works.
 | [A000030](seq/A000xxx/A000030/) | Initial digit of n. | **31** | 10001 |
 | [A000031](seq/A000xxx/A000031/) | Number of n-bead necklaces with 2 colors when turning over is not… | **84** | 3334 |
 | [A000032](seq/A000xxx/A000032/) | Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1)… | **33** | 4776 |
-| [A000033](seq/A000xxx/A000033/) | a(n) = A058087(n,n-2). | **83** | 100 |
+| [A000033](seq/A000xxx/A000033/) | a(n) = A058087(n,n-2). | **67** | 100 |
 | [A000034](seq/A000xxx/A000034/) | Period 2: repeat [1, 2]; a(n) = 1 + (n mod 2). | **21** | 10000 |
 | [A000035](seq/A000xxx/A000035/) | Period 2: repeat [0, 1]; a(n) = n mod 2; parity of n. | **21** | 1001 |
 | [A000036](seq/A000xxx/A000036/) | Let A(n) = #{(i,j): i^2 + j^2 <= n}, V(n) = Pi\*n, P(n) = A(n) - V(n);… | **204** | 50 |
@@ -108,7 +108,7 @@ sequence for the code and how it works.
 | [A000089](seq/A000xxx/A000089/) | Number of solutions to x^2 + 1 == 0 (mod n). | **54** | 10000 |
 | [A000090](seq/A000xxx/A000090/) | Expansion of e.g.f. exp((-x^3)/3)/(1-x). | **58** | 101 |
 | [A000091](seq/A000xxx/A000091/) | Multiplicative with a(2^e) = 2 for k >= 1; a(3) = 2, a(3^e) = 0 for k… | **88** | 2000 |
-| [A000092](seq/A000xxx/A000092/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **271** | 30 |
+| [A000092](seq/A000xxx/A000092/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **270** | 30 |
 | [A000093](seq/A000xxx/A000093/) | a(n) = floor(n^(3/2)). | **41** | 501 |
 | [A000094](seq/A000xxx/A000094/) | Number of trees of diameter 4. | **86** | 500 |
 | [A000095](seq/A000xxx/A000095/) | Number of fixed points of Gamma\_0 (n) of type i. | **57** | 10000 |
@@ -152,7 +152,7 @@ sequence for the code and how it works.
 | [A000133](seq/A000xxx/A000133/) | Number of Boolean functions of n variables. | **41** | 11 |
 | [A000134](seq/A000xxx/A000134/) | Positive zeros of Bessel function of order 0 rounded to nearest… | **92** | 200 |
 | [A000135](seq/A000xxx/A000135/) | Number of partitions into non-integral powers. | **211** | 38 |
-| [A000136](seq/A000xxx/A000136/) | Number of ways of folding a strip of n labeled stamps. | **145** | 10 |
+| [A000136](seq/A000xxx/A000136/) | Number of ways of folding a strip of n labeled stamps. | **141** | 10 |
 | [A000137](seq/A000xxx/A000137/) | Series-parallel numbers. | **132** | 1000 |
 | [A000138](seq/A000xxx/A000138/) | Expansion of e.g.f. exp(-x^4/4)/(1-x). | **54** | 101 |
 | [A000139](seq/A000xxx/A000139/) | a(n) = 2\*(3\*n)! / ((2\*n+1)!\*(n+1)!). | **55** | 201 |
@@ -308,7 +308,7 @@ sequence for the code and how it works.
 | [A000290](seq/A000xxx/A000290/) | The squares: a(n) = n^2. | **26** | 10001 |
 | [A000291](seq/A000xxx/A000291/) | Number of bipartite partitions of n white objects and 2 black ones. | **99** | 5000 |
 | [A000292](seq/A000xxx/A000292/) | Tetrahedral (or triangular pyramidal) numbers: a(n) = C(n+2,3) =… | **34** | 10001 |
-| [A000293](seq/A000xxx/A000293/) | a(n) = number of solid (i.e., three-dimensional) partitions of n. | **145** | 16 |
+| [A000293](seq/A000xxx/A000293/) | a(n) = number of solid (i.e., three-dimensional) partitions of n. | **135** | 16 |
 | [A000294](seq/A000xxx/A000294/) | Expansion of g.f. Product\_{k >= 1} (1 - x^k)^(-k\*(k+1)/2). | **85** | 1001 |
 | [A000295](seq/A000xxx/A000295/) | Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1… | **30** | 501 |
 | [A000296](seq/A000xxx/A000296/) | Set partitions without singletons: number of partitions of an n-set… | **56** | 576 |
@@ -349,7 +349,7 @@ sequence for the code and how it works.
 | [A000331](seq/A000xxx/A000331/) | Related to zeros of Bessel function. | **151** | 192 |
 | [A000332](seq/A000xxx/A000332/) | Binomial coefficient binomial(n,4) = n\*(n-1)\*(n-2)\*(n-3)/24. | **38** | 1003 |
 | [A000333](seq/A000xxx/A000333/) | Number of partitions into non-integral powers. | **154** | 15 |
-| [A000334](seq/A000xxx/A000334/) | Number of 4-dimensional partitions of n. | **158** | 11 |
+| [A000334](seq/A000xxx/A000334/) | Number of 4-dimensional partitions of n. | **137** | 11 |
 | [A000335](seq/A000xxx/A000335/) | Euler transform of A000292. | **96** | 500 |
 | [A000336](seq/A000xxx/A000336/) | a(n) = a(n-1)\*a(n-2)\*a(n-3)\*a(n-4); for n < 5, a(n) = n. | **53** | 15 |
 | [A000337](seq/A000xxx/A000337/) | a(n) = (n-1)\*2^n + 1. | **33** | 1001 |
@@ -357,7 +357,7 @@ sequence for the code and how it works.
 | [A000339](seq/A000xxx/A000339/) | Number of partitions into non-integral powers. | **62** | 560 |
 | [A000340](seq/A000xxx/A000340/) | a(0)=1, a(n) = 3\*a(n-1) + n + 1. | **34** | 1001 |
 | [A000341](seq/A000xxx/A000341/) | Number of ways to pair up {1..2n} so sum of each pair is prime. | **144** | 11 |
-| [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **122** | 200 |
+| [A000342](seq/A000xxx/A000342/) | Number of n-node rooted trees of height 5. | **116** | 200 |
 | [A000343](seq/A000xxx/A000343/) | 5th power of rooted tree enumerator; number of linear forests of 5… | **107** | 746 |
 | [A000344](seq/A000xxx/A000344/) | a(n) = 5\*binomial(2n, n-2)/(n+3). | **52** | 299 |
 | [A000345](seq/A000xxx/A000345/) | Number of partitions into non-integral powers. | **141** | 15 |
@@ -404,9 +404,9 @@ sequence for the code and how it works.
 | [A000387](seq/A000xxx/A000387/) | Rencontres numbers: number of permutations of [n] with exactly two… | **41** | 201 |
 | [A000388](seq/A000xxx/A000388/) | Number of permutations of an n-sequence discordant with three given… | **116** | 5 |
 | [A000389](seq/A000xxx/A000389/) | Binomial coefficients C(n,5). | **44** | 1001 |
-| [A000390](seq/A000xxx/A000390/) | Number of 5-dimensional partitions of n. | **161** | 10 |
+| [A000390](seq/A000xxx/A000390/) | Number of 5-dimensional partitions of n. | **137** | 10 |
 | [A000391](seq/A000xxx/A000391/) | Euler transform of A000332. | **103** | 500 |
-| [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **40** | 201 |
+| [A000392](seq/A000xxx/A000392/) | Stirling numbers of second kind S(n,3). | **38** | 201 |
 | [A000393](seq/A000xxx/A000393/) | Number of n-node rooted trees of height 6. | **124** | 200 |
 | [A000394](seq/A000xxx/A000394/) | Numbers of form x^2 + y^2 + 7z^2. | **75** | 60 |
 | [A000395](seq/A000xxx/A000395/) | 6th power of rooted tree enumerator; number of linear forests of 6… | **107** | 995 |
