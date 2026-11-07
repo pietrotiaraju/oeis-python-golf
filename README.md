@@ -838,6 +838,7 @@ sequence for the code and how it works.
 | [A000830](seq/A000xxx/A000830/) | Number of switching networks (see Harrison reference for precise… | **251** | 6 |
 | [A000831](seq/A000xxx/A000831/) | Expansion of e.g.f. (1 + tan(x))/(1 - tan(x)). | **60** | 433 |
 | [A000834](seq/A000xxx/A000834/) | Expansion of e.g.f. exp(x)\*(1 + tan(x))/(1 - tan(x)). | **61** | 162 |
+| [A000837](seq/A000xxx/A000837/) | Number of partitions of n into relatively prime parts. Also aperiodic… | **131** | 6500 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
 | [A000841](seq/A000xxx/A000841/) | Number of n-input 2-output switching networks under action of… | **162** | 7 |
@@ -845,20 +846,25 @@ sequence for the code and how it works.
 | [A000844](seq/A000xxx/A000844/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000845](seq/A000xxx/A000845/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000846](seq/A000xxx/A000846/) | a(n) = C(3n,n) - C(2n,n). | **64** | 201 |
+| [A000849](seq/A000xxx/A000849/) | Number of primes <= product of first n primes, A002110(n). | **75** | 7 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
 | [A000856](seq/A000xxx/A000856/) | Number of n-input 2-output switching networks under the action of… | **189** | 7 |
 | [A000857](seq/A000xxx/A000857/) | Number of n-input 3-output switching networks under the action of… | **210** | 6 |
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
+| [A000864](seq/A000xxx/A000864/) | Deceptive nonprimes: composite numbers k that divide the repunit… | **55** | 58 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
 | [A000871](seq/A000xxx/A000871/) | Number of switching networks with S(n) acting on the domain and… | **214** | 7 |
 | [A000872](seq/A000xxx/A000872/) | Number of switching networks with S(n) acting on the domain and… | **263** | 6 |
 | [A000874](seq/A000xxx/A000874/) | Number of switching networks with S(n) and C(2,2) acting on the… | **252** | 7 |
 | [A000875](seq/A000xxx/A000875/) | Number of switching networks with S(n) and C(2,2) acting on the… | **295** | 6 |
+| [A000879](seq/A000xxx/A000879/) | Number of primes < prime(n)^2. | **68** | 48 |
+| [A000882](seq/A000xxx/A000882/) | Number of twin prime pairs <= product of first n primes. | **91** | 6 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
 | [A000884](seq/A000xxx/A000884/) | Number of switching networks with C(2,n) acting on the domain and… | **87** | 10 |
+| [A000885](seq/A000xxx/A000885/) | Number of twin prime pairs < square of n-th prime. | **86** | 44 |
 | [A000886](seq/A000xxx/A000886/) | Number of switching networks with S(n,2) acting on the domain and… | **216** | 7 |
 | [A000887](seq/A000xxx/A000887/) | Number of switching networks with S(n,2) acting on the domain and… | **265** | 6 |
 | [A000888](seq/A000xxx/A000888/) | a(n) = (2\*n)!^2 / ((n+1)!\*n!^3). | **44** | 101 |
