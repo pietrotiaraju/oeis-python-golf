@@ -1,0 +1,6 @@
+{
+  "name": "Number of switching networks (see Harrison reference for precise definition).",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 60
+}
