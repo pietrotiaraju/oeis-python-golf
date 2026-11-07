@@ -449,7 +449,7 @@ sequence for the code and how it works.
 | [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **69** | 10001 |
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **126** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **72** | 1000 |
-| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **110** | 101 |
+| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **75** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **135** | 43 |
 | [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **169** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **45** | 43 |
