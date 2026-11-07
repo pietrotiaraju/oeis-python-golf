@@ -853,13 +853,13 @@ sequence for the code and how it works.
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
-| [A000871](seq/A000xxx/A000871/) | Number of switching networks with S(n) acting on the domain and… | **214** | 7 |
+| [A000871](seq/A000xxx/A000871/) | Number of switching networks with S(n) acting on the domain and… | **211** | 7 |
 | [A000872](seq/A000xxx/A000872/) | Number of switching networks with S(n) acting on the domain and… | **263** | 6 |
 | [A000874](seq/A000xxx/A000874/) | Number of switching networks with S(n) and C(2,2) acting on the… | **252** | 7 |
 | [A000875](seq/A000xxx/A000875/) | Number of switching networks with S(n) and C(2,2) acting on the… | **295** | 6 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
 | [A000884](seq/A000xxx/A000884/) | Number of switching networks with C(2,n) acting on the domain and… | **87** | 10 |
-| [A000886](seq/A000xxx/A000886/) | Number of switching networks with S(n,2) acting on the domain and… | **216** | 7 |
+| [A000886](seq/A000xxx/A000886/) | Number of switching networks with S(n,2) acting on the domain and… | **215** | 7 |
 | [A000887](seq/A000xxx/A000887/) | Number of switching networks with S(n,2) acting on the domain and… | **265** | 6 |
 | [A000888](seq/A000xxx/A000888/) | a(n) = (2\*n)!^2 / ((n+1)!\*n!^3). | **44** | 101 |
 | [A000889](seq/A000xxx/A000889/) | Number of switching networks with S(n) and C(2,2) acting on the… | **266** | 7 |
