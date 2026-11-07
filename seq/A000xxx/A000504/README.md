@@ -18,11 +18,11 @@ while[print(f*~-j*j*(10*j*j-5*j-3)//108)]:j+=1;f*=j-~j
 **How it works**
 
 - n blocks of size ≥ 2 on 2n + 3 elements leave three elements beyond n
-  pairs, so the block sizes are 5 + 2^(n−1), 4 + 3 + 2^(n−2) or
-  3 + 3 + 3 + 2^(n−3). These types give (2n+3)!/(5!·2^(n−1)·(n−1)!),
-  (2n+3)!/(4!·3!·2^(n−2)·(n−2)!) and (2n+3)!/(3!⁴·2^(n−3)·(n−3)!)
-  partitions (the extra 3! orders the three equal blocks of size 3). Their
-  sum is
+  pairs, so there is one block of 5 and n − 1 pairs, or blocks of 4 and 3
+  and n − 2 pairs, or three blocks of 3 and n − 3 pairs. These types give
+  (2n+3)!/(5!·2^(n−1)·(n−1)!), (2n+3)!/(4!·3!·2^(n−2)·(n−2)!) and
+  (2n+3)!/(3!⁴·2^(n−3)·(n−3)!) partitions (the fourth 3! is the number of
+  orders of the three blocks of size 3). Their sum is
 
   a(n) = (2n+3)!/(2ⁿ·n!) · n·(1/60 + (n−1)/36 + (n−1)(n−2)/162)
        = (2n+3)!/(2ⁿ·n!) · n(10n² + 15n + 2)/1620.
