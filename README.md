@@ -714,6 +714,17 @@ sequence for the code and how it works.
 | [A000699](seq/A000xxx/A000699/) | Number of irreducible chord diagrams with 2n nodes. | **75** | 405 |
 | [A000700](seq/A000xxx/A000700/) | Expansion of Product\_{k>=0} (1 + x^(2k+1)); number of partitions of n… | **71** | 600 |
 | [A000701](seq/A000xxx/A000701/) | One half of number of non-self-conjugate partitions; also half of… | **79** | 1900 |
+| [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
+| [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
+| [A000774](seq/A000xxx/A000774/) | a(n) = n!\*(1 + Sum\_{i=1..n} 1/i). | **41** | 251 |
+| [A000775](seq/A000xxx/A000775/) | a(n) = n! \* (n + 1 + 2\*Sum\_{k=1...n} 1/k). | **46** | 101 |
+| [A000776](seq/A000xxx/A000776/) | a(n) = n! \* (1 + 2\*Sum\_{k=1..n} 1/k). | **43** | 251 |
+| [A000777](seq/A000xxx/A000777/) | a(n) = (n+2)\*Catalan(n) - 1. | **44** | 201 |
+| [A000778](seq/A000xxx/A000778/) | a(n) = Catalan(n) + Catalan(n+1) - 1. | **45** | 201 |
+| [A000779](seq/A000xxx/A000779/) | a(n) = 2\*(2n-1)!!-(n-1)!\*2^(n-1), where (2n-1)!! is A001147(n). | **43** | 250 |
+| [A000780](seq/A000xxx/A000780/) | a(n) = (n+1)!/2 + (n-1)(n-1)!. | **41** | 200 |
+| [A000781](seq/A000xxx/A000781/) | a(n) = 3\*Catalan(n) - Catalan(n-1) - 1. | **46** | 1657 |
+| [A000782](seq/A000xxx/A000782/) | a(n) = 2\*Catalan(n) - Catalan(n-1). | **46** | 1000 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
