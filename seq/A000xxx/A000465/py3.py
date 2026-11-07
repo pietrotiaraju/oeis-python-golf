@@ -1,5 +1,2 @@
-a=[1];n=c=0;Q=[[0]*k for k in range(1,5)]
-while t:=a[-1]:
- T=[L.append(t:=t+L.pop(0))or t for L in Q]
- print((c:=c+(b:=T[0]+T[1]))+b+t)
- n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
+a=[1];n=0
+while[print(sum(map(int.__mul__,(5,2,0,-3,-5,-1,0,3,1,-1),a[::-1])))]:n-=1;a+=sum(sum(a[d::d])*d<<(d>-5)for d in range(n,0))//n,

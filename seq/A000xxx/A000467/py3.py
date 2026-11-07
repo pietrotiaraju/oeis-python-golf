@@ -1,6 +1,4 @@
-import math
-L=[[1],[1]];n=0
-while 1:
- n+=1
- for q,a in enumerate(L,6):a+=[sum(math.comb(n,k)*((k%q==1)-(k%q<1))*a[-k]for k in range(1,n+1))]
- print(L[1][-1]-L[0][-1])
+A=[1];B=[1];n=0
+while n:=n+1:
+ for a,q in(A,6),(B,7):c=1;a+=[sum((c:=c*(n-k+1)//k)*(k%q<2)*(k%q*2-1)*a[-k]for k in range(1,n+1))]
+ print(B[-1]-A[-1])

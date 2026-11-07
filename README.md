@@ -464,23 +464,23 @@ sequence for the code and how it works.
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **319** | 10000 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **54** | 98 |
 | [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **109** | 447 |
-| [A000451](seq/A000xxx/A000451/) | Smallest number that is the sum of 3 squares in at least n ways. | **168** | 200 |
-| [A000452](seq/A000xxx/A000452/) | The greedy sequence of integers which avoids 3-term geometric… | **156** | 10000 |
+| [A000451](seq/A000xxx/A000451/) | Smallest number that is the sum of 3 squares in at least n ways. | **145** | 200 |
+| [A000452](seq/A000xxx/A000452/) | The greedy sequence of integers which avoids 3-term geometric… | **83** | 10000 |
 | [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **45** | 197 |
 | [A000454](seq/A000xxx/A000454/) | Unsigned Stirling numbers of first kind s(n,4). | **66** | 97 |
 | [A000455](seq/A000xxx/A000455/) | Digits of powers of 2. | **34** | 10000 |
-| [A000456](seq/A000xxx/A000456/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
+| [A000456](seq/A000xxx/A000456/) | Number of permutations of [n] in which the longest increasing run has… | **149** | 450 |
 | [A000457](seq/A000xxx/A000457/) | Exponential generating function: (1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
-| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **137** | 40 |
+| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **134** | 40 |
 | [A000459](seq/A000xxx/A000459/) | Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no… | **55** | 101 |
 | [A000460](seq/A000xxx/A000460/) | Eulerian numbers (Euler's triangle: column k=3 of A008292, column k=2… | **44** | 998 |
 | [A000461](seq/A000xxx/A000461/) | Concatenate n n times. | **31** | 333 |
 | [A000462](seq/A000xxx/A000462/) | Numbers written in base of triangular numbers. | **65** | 10000 |
 | [A000463](seq/A000xxx/A000463/) | n followed by n^2. | **35** | 10000 |
-| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **122** | 216 |
-| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **187** | 5001 |
+| [A000464](seq/A000xxx/A000464/) | Expansion of e.g.f. sin(x)/cos(2\*x). | **77** | 216 |
+| [A000465](seq/A000xxx/A000465/) | Number of bipartite partitions of n white objects and 4 black ones. | **138** | 5001 |
 | [A000466](seq/A000xxx/A000466/) | a(n) = 4\*n^2 - 1. | **28** | 901 |
-| [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
+| [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **149** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **54** | 10000 |
 | [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **150** | 19 |
