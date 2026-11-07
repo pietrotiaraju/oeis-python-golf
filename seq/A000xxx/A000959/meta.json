@@ -1,0 +1,6 @@
+{
+  "name": "Lucky numbers.",
+  "offset": 1,
+  "min_terms": 14000,
+  "timeout": 60
+}
