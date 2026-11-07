@@ -1,0 +1,6 @@
+{
+  "name": "Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor of 1 + Product_{k=1..n} a(k).",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 60
+}

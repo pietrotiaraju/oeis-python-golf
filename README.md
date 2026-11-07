@@ -935,6 +935,9 @@ sequence for the code and how it works.
 | [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
 | [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
+| [A000945](seq/A000xxx/A000945/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of… | **60** | 14 |
+| [A000946](seq/A000xxx/A000946/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor… | **75** | 8 |
+| [A000959](seq/A000xxx/A000959/) | Lucky numbers. | **83** | 14000 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
@@ -944,6 +947,8 @@ sequence for the code and how it works.
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
+| [A000978](seq/A000xxx/A000978/) | Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime. | **66** | 10 |
+| [A000979](seq/A000xxx/A000979/) | Wagstaff primes: primes of form (2^p + 1)/3. | **68** | 10 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
