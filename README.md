@@ -813,6 +813,8 @@ sequence for the code and how it works.
 | [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
 | [A000800](seq/A000xxx/A000800/) | Sum of upward diagonals of Eulerian triangle. | **84** | 601 |
 | [A000802](seq/A000xxx/A000802/) | Maximal number of states in the minimal deterministic finite… | **74** | 3301 |
+| [A000804](seq/A000xxx/A000804/) | Permanent of a certain cyclic n X n (0,1) matrix. | **142** | 1001 |
+| [A000805](seq/A000xxx/A000805/) | Permanent of a certain cyclic n X n (0,1) matrix. | **146** | 1002 |
 | [A000807](seq/A000xxx/A000807/) | Quadratic invariants. | **69** | 289 |
 | [A000808](seq/A000xxx/A000808/) | Number of switching networks (see Harrison reference for precise… | **39** | 12 |
 | [A000809](seq/A000xxx/A000809/) | Number of switching networks (see Harrison reference for precise… | **42** | 9 |
