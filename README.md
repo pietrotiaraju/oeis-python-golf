@@ -818,12 +818,18 @@ sequence for the code and how it works.
 | [A000824](seq/A000xxx/A000824/) | Number of switching networks (see Harrison reference for precise… | **67** | 6 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
+| [A000846](seq/A000xxx/A000846/) | a(n) = C(3n,n) - C(2n,n). | **64** | 201 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
 | [A000884](seq/A000xxx/A000884/) | Number of switching networks with C(2,n) acting on the domain and… | **87** | 10 |
+| [A000888](seq/A000xxx/A000888/) | a(n) = (2\*n)!^2 / ((n+1)!\*n!^3). | **44** | 101 |
+| [A000891](seq/A000xxx/A000891/) | a(n) = (2\*n)!\*(2\*n+1)! / (n! \* (n+1)!)^2. | **45** | 101 |
+| [A000894](seq/A000xxx/A000894/) | a(n) = (2\*n)!\*(2\*n+1)! / ((n+1)! \* n!^3). | **45** | 181 |
+| [A000897](seq/A000xxx/A000897/) | a(n) = (4\*n)! / ((2\*n)!\*n!^2). | **51** | 201 |
+| [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
