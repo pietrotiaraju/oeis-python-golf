@@ -1,7 +1,4 @@
-n=k=0;s=[];d={}
+c=[k:=0]
 while 1:
- if n==k*k:
-  s+=[n];k+=1
-  for x in s:d[n+x]=d.get(n+x,0)+1
- if d.get(n,0)==3:print(n)
- n+=1
+ for x in range(k-~k):c[x*x+k*k]+=x<=k;c[m:=k*k+x]==3==print(m)
+ k+=1;c+=[0]*10*k

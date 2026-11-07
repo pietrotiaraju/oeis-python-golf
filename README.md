@@ -450,20 +450,20 @@ sequence for the code and how it works.
 | [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **126** | 450 |
 | [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **72** | 1000 |
 | [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **110** | 101 |
-| [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
-| [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **262** | 4 |
+| [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **135** | 43 |
+| [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **169** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **45** | 43 |
 | [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **150** | 19 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **77** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **34** | 101 |
-| [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
-| [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **203** | 100 |
+| [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **99** | 10000 |
+| [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **174** | 100 |
 | [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **874** | 2 |
 | [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **361** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **34** | 1001 |
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **319** | 10000 |
 | [A000449](seq/A000xxx/A000449/) | Rencontres numbers: number of permutations of [n] with exactly 3… | **54** | 98 |
-| [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **109** | 447 |
+| [A000450](seq/A000xxx/A000450/) | a(n) = A058057(n,n-4). | **86** | 447 |
 | [A000451](seq/A000xxx/A000451/) | Smallest number that is the sum of 3 squares in at least n ways. | **145** | 200 |
 | [A000452](seq/A000xxx/A000452/) | The greedy sequence of integers which avoids 3-term geometric… | **83** | 10000 |
 | [A000453](seq/A000xxx/A000453/) | Stirling numbers of the second kind, S(n,4). | **45** | 197 |

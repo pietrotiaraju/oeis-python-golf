@@ -5,62 +5,68 @@
 
 Offset 1: 0, 9, 41, 81, 146, 194, 306, 369, 425, 594, …
 
-### Python 3 — 197 bytes
+The ways are unordered and may use 0: m = x² + y² + z² with x ≥ y ≥ z ≥ 0.
+So 0 = 0² + 0² + 0² has one way, and 9 = 3² + 0² + 0² = 2² + 2² + 1² is the
+first number with two.
+
+### Python 3 — 135 bytes
 
 ```python
-n=k=0;s=[];d={};a={};t=1
+n=1;c=[k:=0]
 while 1:
- if n==k*k:
-  s+=[n];k+=1
-  for i,x in enumerate(s):
-   for y in s[:i+1]:d[n+x+y]=d.get(n+x+y,0)+1
- a.setdefault(d.get(n,0),n)
- while t in a:print(a[t]);t+=1
- n+=1
+ for x in range(k+1):
+  for y in range(x+1):c[x*x+y*y+k*k]+=1
+ k+=1;c+=[0]*6*k;n+=n in c[:k*k]!=print(c.index(n))
 ```
 
 **How it works**
 
-- Count representations x²+y²+z² with 0≤x≤y≤z: zero is
-  allowed, and permutations or choices of signs do not create
-  extra representations. The increasing list s contains squares.
-- When `n==k*k`, append the new largest square n. For each
-  `i,x` in s, `s[:i+1]` supplies y≤x. Thus every triple is
-  inserted once, with n as its largest square, including triples
-  having repeated or zero squares.
-- The dictionary d counts triples by their sum. At candidate n
-  all triples summing to n have already been inserted, because
-  no summand can exceed n. `d.get(n,0)` is therefore its final
-  count; dictionary entries for larger values can still grow.
-
-- `a.setdefault(d.get(n,0),n)` saves the first candidate seen
-  for each exact representation count, never overwriting it.
-  This makes each stored answer a minimum by construction.
-- t is the next required count. Print `a[t]` only once it has
-  been discovered, then drain any consecutive counts already in a.
-  A minimum for a larger count can be discovered before a smaller
-  count's minimum, so discovery order is not output order.
+- `c[m]` counts the ways m = k² + x² + y² with k ≥ x ≥ y ≥ 0, filled in
+  rounds k = 0, 1, 2, …: round k adds the ways whose largest square is k²
+  (the two loops run over x ≤ k and y ≤ x).
+- After round k − 1, when `k+=1` has made the counter k, every m < k² is
+  final: the largest square in a way of writing m is at most m < k², so it
+  is one of 0², …, (k−1)², and all of those rounds are done. So `c[:k*k]`
+  holds true counts.
+- If n occurs in that prefix, its first occurrence in c lies there and
+  every earlier entry is a final count other than n, so `c.index(n)` is
+  a(n). The chain `n in c[:k*k]!=print(c.index(n))` means
+  `n in c[:k*k] and c[:k*k]!=print(…)`: print runs only when the test
+  holds, its `None` makes the second comparison true, and `n+=` adds
+  True = 1 (on to the next n) or False = 0.
+- At most one term is printed per round, so the output can lag behind
+  what is already known; but once a(n) < k² it stays in the final prefix
+  and comes out in a later round, so the terms appear in order.
+- Room: c starts as [0] and gains 6k zeros when the counter becomes k, so
+  in round k it has 1 + 3k(k+1) entries, more than the largest index 3k²
+  written there. `c=[k:=0]` sets k inside the list.
 
 **Notes**
 
-- Initially (0,0,0) is the unique representation of 0, giving
-  a(1)=0. At 9 the two triples (0,0,3) and (1,2,2) give a(2)=9.
-- The dictionary a is indexed by counts, not candidate integers.
-  Recording just successive count records would instead give
-  the “at least” sequence [A000451](../A000451/).
-
-- Exact integer counting, with no cutoff on the number of roots.
-  Through candidate N the construction inserts O(N^(3/2)) triples;
-  their sums are at most 3N, so d has O(N) possible keys. The
-  temporary slices also contribute to the running time.
-- The b-file has 43 terms (indices 1 through 43). The bar is the
-  whole b-file in 60 s.
+- Measured alternatives: growing c by `c+=0,0;` in the inner loop instead
+  of `c+=[0]*6*k`, 131 bytes, but that ties the room to the number of
+  triples, about k³/3 entries by round k, and needs several GB within a
+  minute; a separate line `while n in c[:k*k]:print(c.index(n));n+=1`
+  that prints every ready term at once, 147. The previous dictionary
+  sieve was 197.
+- Counting is exact, so the program is right for every n. If no number
+  had exactly n ways, a(n) would not exist and the program would wait
+  there forever.
+- Recording the first m with at least n ways instead gives
+  [A000451](../A000451/); [A000443](../A000443/) counts sums of two
+  squares in the same rounds.
+- The whole b-file prints in about 0.3 s here, and about 327 terms in
+  60 s. The b-file has 43 terms (up to a(43)); the bar is the whole
+  b-file in 60 s.
+- The values are small (a(43) = 8774), far from the 4300-digit
+  int-to-str limit.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 197 | first entry |
+| 2026-11-07 | Python 3 | 135 | count rounds by largest square in a list, print the first final index |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

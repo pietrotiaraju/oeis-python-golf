@@ -1,3 +1,2 @@
-from math import*
-n=4
-while 1:print(sum((-1)**k*perm(n-k)*comb(k,4)*comb(2*n-k,k)for k in range(4,n+1)));n+=1
+a=b=0;c=1;n=3
+while[print(abs(8*n*(c-a)+8*a+~b*6-n*n+n)//12)]:a,b,c=b,c,n*(b-c)-a;n+=1
