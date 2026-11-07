@@ -1,10 +1,3 @@
-def f(n):
- t=0
- while n>1:t+=1;n=3*n+1 if n%2 else n//2
- return t
-D={};n=k=r=1;t=0
-while 1:
- n+=1;s=f(n)
- if s==t:r+=1
- else:D.setdefault(r,(n-r,t));r=1;t=s
- while k in D:print(D[k][0]);k+=1
+f=lambda n:n>1and-~f(n%2*(5*n+2)+n>>1)
+D={};n=p=k=1
+while n:=n+1:f(n)==f(n-1)or[D:={n-p:p}|D,p:=n];k+=k in D!=print(D[k])
