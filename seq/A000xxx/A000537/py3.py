@@ -1,2 +1,2 @@
-n=a=0
-while[print(a)]:n+=1;a+=n**3
+t=n=0
+while[print(t*t)]:n+=1;t+=n
