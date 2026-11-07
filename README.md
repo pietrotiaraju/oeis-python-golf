@@ -734,12 +734,19 @@ sequence for the code and how it works.
 | [A000724](seq/A000xxx/A000724/) | Invertible Boolean functions of n variables. | **139** | 6 |
 | [A000725](seq/A000xxx/A000725/) | Invertible Boolean functions of n variables. | **320** | 6 |
 | [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
+| [A000727](seq/A000xxx/A000727/) | Expansion of Product\_{k >= 1} (1 - x^k)^4. | **82** | 8500 |
+| [A000728](seq/A000xxx/A000728/) | Expansion of Product\_{n>=1} (1-x^n)^5. | **82** | 8500 |
+| [A000729](seq/A000xxx/A000729/) | Expansion of Product\_{k >= 1} (1 - x^k)^6. | **82** | 8500 |
+| [A000730](seq/A000xxx/A000730/) | Expansion of Product\_{n>=1} (1 - x^n)^7. | **82** | 8500 |
+| [A000731](seq/A000xxx/A000731/) | Expansion of Product (1 - x^k)^8 in powers of x. | **82** | 8500 |
 | [A000732](seq/A000xxx/A000732/) | Boustrophedon transform of 1 & primes: 1,2,3,5,7,... | **80** | 401 |
 | [A000733](seq/A000xxx/A000733/) | Boustrophedon transform of partition numbers 1, 1, 1, 2, 3, 5, 7, ... | **118** | 483 |
 | [A000734](seq/A000xxx/A000734/) | Boustrophedon transform of 1,1,2,4,8,16,32,... | **65** | 401 |
+| [A000735](seq/A000xxx/A000735/) | Expansion of Product\_{k>=1} (1 - x^k)^12. | **83** | 7000 |
 | [A000736](seq/A000xxx/A000736/) | Boustrophedon transform of Catalan numbers 1, 1, 1, 2, 5, 14, ... | **78** | 401 |
 | [A000737](seq/A000xxx/A000737/) | Boustrophedon transform of natural numbers, cf. A000027. | **62** | 401 |
 | [A000738](seq/A000xxx/A000738/) | Boustrophedon transform (first version) of Fibonacci numbers… | **70** | 401 |
+| [A000739](seq/A000xxx/A000739/) | Expansion of Product\_{k>=1} (1 - x^k)^16. | **83** | 7000 |
 | [A000740](seq/A000xxx/A000740/) | Number of 2n-bead balanced binary necklaces of fundamental period 2n,… | **82** | 3322 |
 | [A000744](seq/A000xxx/A000744/) | Boustrophedon transform (second version) of Fibonacci numbers… | **68** | 401 |
 | [A000745](seq/A000xxx/A000745/) | Boustrophedon transform of squares. | **67** | 401 |
