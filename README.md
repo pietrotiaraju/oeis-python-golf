@@ -641,9 +641,19 @@ sequence for the code and how it works.
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
 | [A000674](seq/A000xxx/A000674/) | Boustrophedon transform of 1, 2, 2, 2, 2, ... | **57** | 401 |
+| [A000680](seq/A000xxx/A000680/) | a(n) = (2n)!/2^n. | **37** | 101 |
+| [A000681](seq/A000xxx/A000681/) | Number of n X n matrices with nonnegative entries and every row and… | **50** | 251 |
+| [A000682](seq/A000xxx/A000682/) | Semi-meanders: number of ways a semi-infinite directed curve can… | **140** | 12 |
+| [A000683](seq/A000xxx/A000683/) | Number of colorings of labeled graphs on n nodes using exactly 2… | **78** | 20 |
+| [A000684](seq/A000xxx/A000684/) | Number of colored labeled n-node graphs with 2 interchangeable colors. | **77** | 20 |
+| [A000685](seq/A000xxx/A000685/) | Number of 3-colored labeled graphs on n nodes, divided by 3. | **109** | 12 |
+| [A000686](seq/A000xxx/A000686/) | Number of 4-colored labeled graphs on n nodes, divided by 4. | **109** | 9 |
 | [A000687](seq/A000xxx/A000687/) | Boustrophedon transform (first version) of Fibonacci numbers… | **71** | 483 |
 | [A000689](seq/A000xxx/A000689/) | Final decimal digit of 2^n. | **27** | 81 |
 | [A000697](seq/A000xxx/A000697/) | Boustrophedon transform of 1, 1, 4, 9, 16, ... | **65** | 401 |
+| [A000698](seq/A000xxx/A000698/) | A problem of configurations: a(0) = 1; for n>0, a(n) = (2n-1)!! -… | **78** | 201 |
+| [A000699](seq/A000xxx/A000699/) | Number of irreducible chord diagrams with 2n nodes. | **75** | 405 |
+| [A000700](seq/A000xxx/A000700/) | Expansion of Product\_{k>=0} (1 + x^(2k+1)); number of partitions of n… | **71** | 600 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

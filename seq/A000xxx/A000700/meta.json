@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of Product_{k>=0} (1 + x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.",
+  "offset": 0,
+  "min_terms": 600,
+  "timeout": 60
+}

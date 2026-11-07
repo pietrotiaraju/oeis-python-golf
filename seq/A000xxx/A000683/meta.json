@@ -1,0 +1,6 @@
+{
+  "name": "Number of colorings of labeled graphs on n nodes using exactly 2 colors, divided by 4.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

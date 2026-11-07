@@ -1,0 +1,6 @@
+{
+  "name": "Number of 3-colored labeled graphs on n nodes, divided by 3.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 60
+}

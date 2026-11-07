@@ -1,0 +1,6 @@
+{
+  "name": "Number of 4-colored labeled graphs on n nodes, divided by 4.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}
