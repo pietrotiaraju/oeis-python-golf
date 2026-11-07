@@ -846,6 +846,8 @@ sequence for the code and how it works.
 | [A000832](seq/A000xxx/A000832/) | Number of switching networks (see Harrison reference for precise… | **217** | 4 |
 | [A000833](seq/A000xxx/A000833/) | Number of switching networks (see Harrison reference for precise… | **243** | 4 |
 | [A000834](seq/A000xxx/A000834/) | Expansion of e.g.f. exp(x)\*(1 + tan(x))/(1 - tan(x)). | **61** | 162 |
+| [A000835](seq/A000xxx/A000835/) | Number of switching networks (see Harrison reference for precise… | **236** | 4 |
+| [A000836](seq/A000xxx/A000836/) | Number of switching networks (see Harrison reference for precise… | **270** | 4 |
 | [A000837](seq/A000xxx/A000837/) | Number of partitions of n into relatively prime parts. Also aperiodic… | **131** | 6500 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
@@ -870,6 +872,8 @@ sequence for the code and how it works.
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
 | [A000861](seq/A000xxx/A000861/) | Numbers ending with a vowel in American English. | **63** | 1000 |
+| [A000862](seq/A000xxx/A000862/) | Number of n-input 2-output switching networks under action of AG(n,2)… | **268** | 4 |
+| [A000863](seq/A000xxx/A000863/) | Number of n-input 3-output switching networks under action of AG(n,2)… | **295** | 4 |
 | [A000864](seq/A000xxx/A000864/) | Deceptive nonprimes: composite numbers k that divide the repunit… | **55** | 58 |
 | [A000865](seq/A000xxx/A000865/) | Numbers beginning with letter 'o' in English. | **46** | 10000 |
 | [A000866](seq/A000xxx/A000866/) | 2^n written in base 5. | **59** | 301 |
@@ -885,6 +889,8 @@ sequence for the code and how it works.
 | [A000877](seq/A000xxx/A000877/) | Number of switching networks with GL(n,2) acting on the domain and… | **239** | 4 |
 | [A000878](seq/A000xxx/A000878/) | Number of switching networks with GL(n,2) acting on the domain and… | **287** | 4 |
 | [A000879](seq/A000xxx/A000879/) | Number of primes < prime(n)^2. | **68** | 48 |
+| [A000880](seq/A000xxx/A000880/) | Number of switching networks with AG(n,2) acting on the domain and… | **266** | 4 |
+| [A000881](seq/A000xxx/A000881/) | Number of switching networks with AG(n,2) acting on the domain and… | **294** | 4 |
 | [A000882](seq/A000xxx/A000882/) | Number of twin prime pairs <= product of first n primes. | **91** | 6 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
 | [A000884](seq/A000xxx/A000884/) | Number of switching networks with C(2,n) acting on the domain and… | **87** | 10 |
@@ -898,6 +904,8 @@ sequence for the code and how it works.
 | [A000892](seq/A000xxx/A000892/) | Number of switching networks with GL(n,2) acting on the domain and… | **240** | 4 |
 | [A000893](seq/A000xxx/A000893/) | Number of switching networks with GL(n,2) acting on the domain and… | **290** | 4 |
 | [A000894](seq/A000xxx/A000894/) | a(n) = (2\*n)!\*(2\*n+1)! / ((n+1)! \* n!^3). | **45** | 181 |
+| [A000895](seq/A000xxx/A000895/) | Number of switching networks with AG(n,2) acting on the domain and… | **290** | 4 |
+| [A000896](seq/A000xxx/A000896/) | Number of switching networks with AG(n,2) acting on the domain and… | **323** | 4 |
 | [A000897](seq/A000xxx/A000897/) | a(n) = (4\*n)! / ((2\*n)!\*n!^2). | **51** | 201 |
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
 | [A000899](seq/A000xxx/A000899/) | Number of solutions to the rook problem on an n X n board having a… | **97** | 200 |
