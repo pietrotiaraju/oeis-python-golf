@@ -1,0 +1,6 @@
+{
+  "name": "Number of asymmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have no symmetry.",
+  "offset": 1,
+  "min_terms": 150,
+  "timeout": 60
+}
