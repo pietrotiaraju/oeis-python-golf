@@ -5,11 +5,11 @@
 
 Offset 0: 1, 3, 8, 22, 66, 222, 862, 3838, 19542, 111894, 712282, 4987672, 38102844, 315339898, 2810523166, …
 
-### Python 3 — 80 bytes
+### Python 3 — 79 bytes
 
 ```python
-t=k=P=1;r=[1]
-while-P%k^1or(r:=[t:=t+x for x in[k-t]+r[:print(t):-1]]):P*=k;k+=1
+t=k=P=1;r=[]
+while~P%k or[r:=[t:=t+x for x in[k-t]+r[::-1]],print(t)]:P*=k;k+=1
 ```
 
 **How it works**
@@ -19,28 +19,27 @@ while-P%k^1or(r:=[t:=t+x for x in[k-t]+r[:print(t):-1]]):P*=k;k+=1
   Young). Row n is the running sums of u(n) followed by row n−1 read
   backwards, exactly the triangle of [A000111](../A000111/), which is the
   transform of 1, 0, 0, 0, …
-- Wilson's theorem: with P = (k−1)!, −P mod k is 1 exactly when k is prime
-  (k = 1 gives 0). So `-P%k^1` is 0 only at primes, and only then does the
-  `or` build a new row, with first entry k. At every other k the header is
-  already true and the body just moves on, `P*=k;k+=1`. Row 0, `r=[1]`, is
-  the leading 1.
-- The new row is a non-empty list, so the header stays true after the
-  walrus `(r:=…)` too.
-- The print hides in the slice: `r[:print(t):-1]` is `r[None:None:-1]`, the
-  old row reversed, and the call prints the old row's last entry, the
-  current term, just before the new row is built. That saves the
-  `print(t);` an `if` version needs.
+- Wilson's theorem: with P = (k−1)!, ~P mod k = (−1−P) mod k is 0 exactly when
+  k is prime, and also at k = 1 (everything is 0 mod 1). So `~P%k` is 0 at
+  k = 1 and at the primes, which are exactly the inputs 1, 2, 3, 5, 7, …,
+  and only then does the `or` build a new row, with first entry k. At every
+  other k the header is already true and the body just moves on,
+  `P*=k;k+=1`. The program starts from the empty row `r=[]`, so k = 1 builds
+  row 0, `[1]`.
+- The new row and the print sit in one list display,
+  `[r:=…,print(t)]`: it is non-empty, so the header stays true, and the
+  print runs right after the row is built, when `t` is its last entry, the
+  current term.
 - `t` runs along the new row as a walrus sum. At the start of a pass it
   still holds the last entry of the old row, so the first element
   `k-t` brings it to the new row's first entry u; then it adds the old row
-  reversed. When the comprehension ends, `t` is the new row's last entry,
-  the next term, printed by the next prime's slice.
+  reversed. When the comprehension ends, `t` is the new row's last entry.
 
 **Notes**
 
-- `P*=k*k` with `P%k<1` (Wilson squared) is 2 bytes longer; a two-line
-  `if P%k:` version is longer still. `1or` raises a `SyntaxWarning` on
-  stderr, which the rules allow.
+- The 80-byte first entry printed inside the slice, `r[:print(t):-1]`, with
+  `-P%k^1or` (k = 1 excluded) and `r=[1]`. `P*=k*k` with `P%k<1` (Wilson
+  squared) is 2 bytes longer; a two-line `if P%k:` version is longer still.
 - The values were checked for every printed term against
   b(n) = Σₖ C(n,k)·E(n−k)·u(k), the e.g.f. product (sec x + tan x)·U(x), with
   E = [A000111](../A000111/) computed from 2E(n+1) = Σₖ C(n,k)E(k)E(n−k).
@@ -54,6 +53,7 @@ while-P%k^1or(r:=[t:=t+x for x in[k-t]+r[:print(t):-1]]):P*=k;k+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 80 | first entry |
+| 2026-11-07 | Python 3 | 79 | `~P%k` also accepts k = 1, print in a list display after the row |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

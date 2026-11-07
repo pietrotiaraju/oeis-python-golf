@@ -739,7 +739,7 @@ sequence for the code and how it works.
 | [A000729](seq/A000xxx/A000729/) | Expansion of Product\_{k >= 1} (1 - x^k)^6. | **82** | 8500 |
 | [A000730](seq/A000xxx/A000730/) | Expansion of Product\_{n>=1} (1 - x^n)^7. | **82** | 8500 |
 | [A000731](seq/A000xxx/A000731/) | Expansion of Product (1 - x^k)^8 in powers of x. | **82** | 8500 |
-| [A000732](seq/A000xxx/A000732/) | Boustrophedon transform of 1 & primes: 1,2,3,5,7,... | **80** | 401 |
+| [A000732](seq/A000xxx/A000732/) | Boustrophedon transform of 1 & primes: 1,2,3,5,7,... | **79** | 401 |
 | [A000733](seq/A000xxx/A000733/) | Boustrophedon transform of partition numbers 1, 1, 1, 2, 3, 5, 7, ... | **118** | 483 |
 | [A000734](seq/A000xxx/A000734/) | Boustrophedon transform of 1,1,2,4,8,16,32,... | **65** | 401 |
 | [A000735](seq/A000xxx/A000735/) | Expansion of Product\_{k>=1} (1 - x^k)^12. | **83** | 7000 |
