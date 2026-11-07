@@ -718,6 +718,7 @@ sequence for the code and how it works.
 | [A000704](seq/A000xxx/A000704/) | Number of degree-n even permutations of order dividing 2. | **58** | 201 |
 | [A000706](seq/A000xxx/A000706/) | Expansion of modular function 1/E\_3 (cf. A013973). | **81** | 361 |
 | [A000708](seq/A000xxx/A000708/) | a(n) = E(n+1) - 2\*E(n), where E(i) is the Euler number A000111(i). | **65** | 483 |
+| [A000709](seq/A000xxx/A000709/) | Related to population of numbers of form x^2 + y^2. | **197** | 500 |
 | [A000710](seq/A000xxx/A000710/) | Number of partitions of n, with two kinds of 1, 2, 3 and 4. | **87** | 1001 |
 | [A000711](seq/A000xxx/A000711/) | Number of partitions of n, with three kinds of 1,2,3 and 4 and two… | **90** | 1001 |
 | [A000712](seq/A000xxx/A000712/) | a(n) = number of partitions of n into parts of 2 kinds. | **81** | 7000 |
