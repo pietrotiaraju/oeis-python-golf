@@ -5,66 +5,53 @@
 
 Offset 0: 0, 1, 4, 10, 27, 74, 202, 548, 1490, 4052, …
 
-### Python 3 — 113 bytes
+### Python 3 — 88 bytes
 
 ```python
 n=0
 while 1:
- N=n;F=d=1
- while -(2*N+F)%(2*F)<2*n**d:d+=2;N=N*d*(d-1)+n**d;F*=d*(d-1)
- print((2*N+F)//(2*F));n+=1
+ M=d=1;G=2
+ while-M%G<2*n**d:M=M*d+2*n**d*(d&1);G*=d;d+=1
+ print(M//G);n+=1
 ```
 
 **How it works**
 
-- Sum the positive series sinh(n)=Σ_(d positive odd) nᵈ/d!.
-  The state N/F is its partial sum through odd degree d, with
-  F=d!. Initially N=n, F=d=1 includes the first term.
-- To add the next term, increase d by 2, multiply N and F by
-  d(d−1), and add nᵈ to N. Both the old sum and new term
-  then have the same factorial denominator.
-- The last term t=nᵈ/d! bounds the unsummed tail once d≥2n+1:
-  subsequent term ratios are less than 1/4, so the tail is
-  less than t·(1/4+1/16+…)=t/3<t.
-- Stopping cannot happen earlier for positive integer n. For
-  d≤2n−1, AM–GM gives d!≤((d+1)/2)ᵈ≤nᵈ, so t≥1.
-  The distance to the next rounding boundary is always less
-  than 1 and therefore fails the stopping test in this range.
-
-- Nearest-integer rounding is floor(sinh(n)+1/2). For the
-  partial value, use (2N+F)/(2F). The numerator
-  `-(2*N+F)%(2*F)` is its distance to the next integer
-  boundary, scaled by 2F; compare it with `2*n**d`.
-  Stop when the gap is at least the tail bound, then print
-  `(2*N+F)//(2*F)`.
-
-- At an exact partial-sum boundary the modular gap is zero,
-  which conservatively forces another term. At n=0 the tail
-  bound is zero and the loop immediately prints 0.
+- The inner loop sums sinh n = Σ_{k odd} nᵏ/k! over a common denominator, as
+  the [A000149](../A000149/) program does for eⁿ. With m = d − 1, F = m! and
+  N/F the partial sum up to k = m, it keeps M = 2N + F and G = 2F, so
+  M/G = N/F + ½ and the rounding is ⌊M/G⌋ = `M//G`. The next term
+  multiplies N and F by d and adds nᵈ to N when d is odd, so M becomes
+  M·d + 2nᵈ·(d mod 2) and G becomes G·d. `M=d=1;G=2` is m = 0 (N = 0, F = 1).
+- `-M%G` over G is the gap from M/G up to the next integer, and 2nᵈ over G
+  is n·L with L = nᵐ/m!. The loop stops when the gap is at least n·L.
+- That is enough once m ≥ 2n − 1: the omitted terms sum to less than
+  Σ_{k>m} nᵏ/k! < L·n/(m + 1 − n) ≤ L. Before that, L ≥ 1 (pair the factors
+  of (2n−2)! as i·(2n−1−i) < n²), so n·L ≥ 1 exceeds every gap and the loop
+  cannot stop early. So `M//G` is ⌊sinh n + ½⌋.
+- The loop always ends: sinh n + ½ is never an integer for n ≥ 1 (otherwise
+  eⁿ would be a root of x² − (2k+1)x − 1, against Hermite–Lindemann), so the
+  gap tends to a positive limit while n·L tends to 0. For n = 0, 0ᵈ = 0 and
+  the test fails at once: 1//2 = 0.
 
 **Notes**
 
-- **Termination.** For n>0, exp(n) is transcendental by
-  [Hermite–Lindemann](https://mathworld.wolfram.com/Hermite-LindemannTheorem.html).
-  If sinh(n)=s were algebraic, exp(n) would solve
-  z²−2sz−1=0 and be algebraic too. Thus sinh(n) is not
-  an integer or half-integer; convergence of the series and
-  decay of the tail bound eventually resolve every output.
-- Exact integer arithmetic with an adaptive number of terms,
-  rather than a fixed precision approximation to sinh.
-  [A000471](../A000471/) uses the same series with
-  integer rounding boundaries.
-- The factorial denominator and powers grow during each evaluation,
-  which restarts at the next n. The outputs eventually meet Python
-  3.11+'s default 4300-digit conversion limit, an interpreter limit.
-- The b-file has 251 terms (indices 0 through 250). The bar is the
-  whole b-file in 60 s.
+- Other versions: `n**d-(-n)**d` for the new term, also 88 bytes; tracking
+  p = 2nᵈ with `p*=n`, 89 bytes; stepping d by 2 with `M=n-~n;G=2;d=1` and
+  `d*~-d`, 95 bytes; the earlier N/F form, 113 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The loop runs to m ≈ 2.7n for each n: about 790 terms in 60 s here. The
+  b-file has 251 terms (up to a(250)); the bar is the whole b-file in 60 s,
+  which takes about 1.3 s.
+- a(n) has about 0.43n digits, so the 4300-digit int-to-str limit (near
+  n = 9900) is far beyond what a minute reaches.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 113 | first entry |
+| 2026-11-07 | Python 3 | 88 | A000149 loop with an odd-term filter and the ½ in M/G |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

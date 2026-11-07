@@ -5,66 +5,50 @@
 
 Offset 0: 0, 0, 0, 0, -1, -1, -1, 0, 0, 0, …
 
-### Python 3 — 195 bytes
+### Python 3 — 126 bytes
 
 ```python
-n=0;S=1
+s=lambda t,d=1:t and t+s(t*d//(d-~d),d+1)
+n=j=0
 while 1:
- S*=2;K=S.bit_length();E=20*-~K
- p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
- while p>E and(q:=n*S//(p+E))==n*S//(p-E):print(-(q%2));n+=1
+ j+=1;p=2*s(S:=2**j)
+ while(q:=n*S//(p+8*j))==n*S//p:print(q%-2);n+=1
 ```
 
 **How it works**
 
-- All angles are in **radians**. The program determines the sector
-  containing n using certified bounds on π, then reads off floor(sin(n)).
-  It never evaluates a floating-point sine or cosine.
-- [Machin's identity](https://mathworld.wolfram.com/Machin-LikeFormulas.html)
-  is π=16atan(1/5)−4atan(1/239). With
-  atan(1/b)=Σₖ≥₀ (−1)ᵏ/((2k+1)b^(2k+1)), take K terms
-  at the integer scale S. The comprehension uses the pairs
-  `(16,5)` and `(-4,239)` and rounds every signed scaled
-  contribution down before adding the two series.
-- Those divisions contribute less than 2K total error. Since
-  K=S.bit_length() and S≥2, the two scaled alternating-series
-  tails together are less than 1. The generous error allowance
-  E=20(K+1) therefore proves **p−E<Sπ<p+E**.
-- Once `p>E`, both denominators are positive. The two quotients
-  ⌊1nS/(p+E)⌋ and ⌊1nS/(p−E)⌋ bracket
-  q=⌊1n/π⌋. Print only if they agree, using the first
-  quotient stored by the walrus in q.
-- If they disagree, double S and recompute tighter bounds.
-  Otherwise advance n and reuse the current bounds for as many
-  consecutive inputs as they certify. For n>0, 1n/π is
-  not an integer, so increasing precision eventually resolves it.
-- For positive integer n, sin(n) lies strictly between −1 and
-  1 and is never zero. Its floor is 0 on the positive half-cycle
-  and −1 on the negative half-cycle. With q=⌊n/π⌋,
-  `-(q%2)` selects precisely those two possibilities.
-- At n=0 both quotient bounds are zero, so the same expression
-  prints sin(0)=0 without an initial special-case print.
-
-The sector-to-output mapping is:
-
-| q mod 2 | 0 | 1 |
-|---|---|---|
-| floor(sin(n)) | 0 | −1 |
+- For n ≥ 1, sin n is strictly between −1 and 1 and never 0, so its floor
+  is 0 when sin n > 0 and −1 when sin n < 0, that is, when ⌊n/π⌋ is even or
+  odd. So a(n) = −(⌊n/π⌋ mod 2), and `q%-2` is exactly that: Python's `%`
+  takes the sign of the divisor, so q % −2 is 0 or −1.
+- π comes from Euler's series π/2 = Σ_{k≥0} k!/(2k+1)!! =
+  1 + 1/3 + 1·2/(3·5) + …, whose terms satisfy T_k = T_{k−1}·k/(2k+1).
+  `s(t)` adds t, then calls itself on ⌊t·d/(2d+1)⌋ (`d-~d` is 2d + 1)
+  until the term is 0.
+- **Error bound.** Let S = 2^j and t_k the floored terms. Since
+  k/(2k+1) < ½, induction gives 0 ≤ T_k − t_k < 2, and since T_k < S/2^k,
+  the first zero term t_K has K ≤ j. The loss is then below 2(K − 1) for the
+  terms kept (t₀ = S is exact) plus 2T_K < 4 for the tail, so
+  s(S) ≤ Sπ/2 < s(S) + 2j + 2. With p = 2s(S) this gives
+  p ≤ Sπ < p + 4j + 4 ≤ p + 8j.
+- Hence ⌊nS/(p + 8j)⌋ ≤ ⌊n/π⌋ ≤ ⌊nS/p⌋, and when the two floors agree the
+  value is certain. The inner loop prints as many n as the current bounds
+  settle; otherwise j grows by one, so the bounds get one bit sharper each
+  pass.
+- n/π is never an integer for n ≥ 1 (π is irrational), so every n is
+  settled once S is large enough; n = 0 gives 0 on both sides.
 
 **Notes**
 
-- Exact integer arithmetic and a rigorous error interval at every
-  precision. Irrationality of π rules out the positive-index
-  sector boundaries; the separate handling of n=0 is described above.
-- The output uses only −1, 0 and 1, so its conversion never
-  reaches Python's 4300-digit integer limit. Time and temporary
-  integer sizes grow when a closer approach to a sector boundary
-  requires a more accurate π interval.
-- [A000494](../A000494/) uses the same π bounds with
-  a different sector scale or rounding rule. The lookup is part
-  of the mathematical rounding test, not a table of sequence terms.
-- The b-file has 10001 terms (indices 0 through 10000). The bar is the
-  whole b-file in 60 s.
+- Same program with the exact bound `4*j+4`: 128 bytes. `print(-(q%2))`
+  costs 4 bytes more than `q%-2`. Machin's formula
+  π = 16·atan(1/5) − 4·atan(1/239) with an error allowance: 195 bytes.
+- Exact integer arithmetic, so the program is right for every n. `s`
+  recurses j levels deep; Python's default recursion limit (1000) would
+  only bite for an n whose n/π lies within about 2^−990·n of an integer.
+- About 3.3 million terms in 60 s here. The b-file has 10001 terms (up to
+  a(10000)); the bar is the whole b-file in 60 s, which takes 0.2 s.
+- The terms are 0 and −1, so the 4300-digit int-to-str limit never applies.
 
 ## History
 
@@ -72,6 +56,7 @@ The sector-to-output mapping is:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 210 | first entry |
 | 2026-11-06 | Python 3 | 195 | share the Machin summand and remove multiplication by one |
+| 2026-11-07 | Python 3 | 126 | Euler's series k!/(2k+1)!! for π, `q%-2` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
