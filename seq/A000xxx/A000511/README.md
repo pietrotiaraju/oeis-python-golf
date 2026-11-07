@@ -5,48 +5,58 @@
 
 Offset 0: 1, 1, 2, 3, 5, 8, 11, 17, 25, 33, …
 
-### Python 3 — 249 bytes
+The walks live on the triangular lattice (6 neighbours per point) and are
+counted with the first step fixed, so a(1) = 1.
+
+### Python 3 — 125 bytes
 
 ```python
-V=[(1,0),(-1,1),(0,-1)]
-def f(x,y,d,n,S):
- if n==0:return 1
- t=0
- for j in(d,(d+1)%3):
-  a=x+V[j][0];b=y+V[j][1]
-  if(a,b)not in S:S.add((a,b));t+=f(a,b,j,n-1,S);S.remove((a,b))
- return t
+f=lambda z,d,t,S:n<len(S)or sum(f(w,a,b,S|{w})for a,b in((d,t),(t,-d-t))if{w:=z+a}-S)
 n=0
-while 1:print(f(1,0,0,n-1,{(0,0),(1,0)})if n else 1);n+=1
+while[print(+f(1,1,1j,{0,1}))]:n+=1
 ```
 
 **How it works**
 
-- Use axial coordinates on the triangular lattice. The three directions
-  (1,0), (−1,1), (0,−1) differ by 120-degree counterclockwise turns.
-- Fix the first step to (1,0), removing the arbitrary absolute direction.
-  Every subsequent step either keeps its direction or advances to the
-  next of these three directions, exactly as in the definition.
-- `S` contains the visited vertices. A step is accepted only when its
-  endpoint is new; backtracking removes it again after counting all
-  continuations. Thus every allowed self-avoiding walk is counted once.
-- The zero-step walk is counted separately. Positive lengths begin with
-  the fixed first step and use the same search for their remaining steps.
+- Lattice points x + yω are stored as the complex numbers x + yi, so the
+  three step directions 120° apart are 1, i and −1 − i (= ω²), and the six
+  neighbours of a point are ±1, ±i, ±(1 + i) away. Only additions of
+  small integers happen, so the arithmetic is exact.
+- A walk heading in direction d may go on in d or turn to the next
+  direction t. The three directions sum to 0, so after the turn the next
+  one is −d − t: the state (d, t) becomes (d, t) going straight and
+  (t, −d − t) after a turn, `for a,b in((d,t),(t,-d-t))`.
+- `f(z,d,t,S)` counts the ways to finish a walk that stands at z with state
+  (d, t) and has visited the set S. A walk of n steps has n + 1 points, so
+  `n<len(S)or` returns `True` (counted as 1) once it is complete; n is the
+  global loop counter.
+- `{w:=z+a}-S` is non-empty exactly when the next point w is new, and the
+  walrus (allowed bare in a set display since Python 3.10) hands w to the
+  call, which is evaluated after the test.
+- The count starts after the fixed first step from 0 to 1, with state
+  (1, i). For n = 0 and 1 the set {0, 1} already has more than n points, so
+  f returns `True` and `+` prints it as 1.
 
 **Notes**
 
-- The search uses integer coordinates and constant work per search node.
-  It stores one walk at a time, rather than a table of known counts.
-- Running time grows with the number of walks. Python's recursion limit
-  can eventually be reached, as allowed by the repository rules.
-- The reference file contains 96 published OEIS terms; the verification
-  bar is 20 terms in 60 s.
+- Passing n down as a parameter (`n<1or`, `f(n-1,…)`) is 130 bytes, and
+  counting both first steps from 0 and halving
+  (`print(-~f(0,1,1j,{0})>>1)`, by the 120° symmetry) is 127. The previous
+  version with coordinate pairs and an explicit set update was 249 bytes.
+- The search visits every spiral walk of length ≤ n, so it is correct for
+  every n; complex numbers with integer parts stay exact while coordinates
+  are below 2⁵³, far beyond reach.
+- The time grows with a(n): 51 terms (up to a(50)) in 60 s here. The
+  recursion is about 2n frames deep, so Python's default limit of 1000
+  would only matter near n = 500.
+- The b-file has 96 terms (up to a(95)); the bar is 20 terms in 60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 249 | first entry |
+| 2026-11-07 | Python 3 | 125 | state (d, t) → (t, −d−t), Gaussian-integer points, length test on the set |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
