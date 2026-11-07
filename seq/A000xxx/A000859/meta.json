@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-input 2-output switching networks under action of S(n) and complementing group C(2,2) on inputs and outputs.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
