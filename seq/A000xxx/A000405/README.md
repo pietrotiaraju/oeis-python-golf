@@ -14,41 +14,40 @@ while[print(t)]:t=1;Q=[[t]+[t:=t+len(L)*L.pop(0)for x in L*1]for L in Q]
 
 **How it works**
 
-- Start with B₀(x)=exp(x) and put B_(j+1)(x)=B_j(exp(x)−1).
-  Substituting exp(x)−1 takes the second-kind Stirling transform:
-  if B_j has coefficients b_j(n), then
-  b_(j+1)(n)=Σₖ S(n,k)·b_j(k). Five transforms give the six
-  nested exponentials in the OEIS generating function.
-- One transform can be advanced without storing Stirling numbers.
-  For its input c, define T(0,k)=c(k) and
-  T(i+1,k)=k·T(i,k)+T(i,k+1). Expanding this recurrence gives
-  T(n,0)=Σⱼ S(n,j)·c(j), the desired Stirling transform.
-- Each list L holds an antidiagonal, ordered from T(0,n) through
-  T(n,0). The next starts with the new input `t`. Its remaining entries
-  use the preceding new entry plus the old entry times the descending
-  column weight. `len(L)*L.pop(0)` supplies that weight and entry:
-  `len(L)` is evaluated before the pop.
-- `L*1` is a copy used solely to fix the number of iterations while
-  the original L is consumed. The final value of t from one level
-  supplies the new input to the next; five lists chain the transforms.
-- The innermost exp(x) has every coefficient 1, so the body resets
-  `t=1` each round. Printing before the update supplies a(0)=1.
+- The e.g.f. in the entry is exp(exp(exp(exp(exp(exp(x)−1)−1)−1)−1)−1):
+  start from B₀ = eˣ and substitute eˣ − 1 five times. Substituting
+  eˣ − 1 into an e.g.f. with coefficients c(k) is the Stirling transform
+  b(n) = Σ_k S(n, k)·c(k), S the Stirling numbers of the second kind.
+- One transform runs on a table with T(0, k) = c(k) and
+  T(i+1, k) = k·T(i, k) + T(i, k+1); then T(n, 0) = Σ_k S(n, k)·c(k)
+  (induction on i: T(i, k) = Σ_j A(i, k, j)·c(j) where A obeys the same
+  recurrence, and A(n, 0, j) = S(n, j); checked numerically for n < 10).
+- Each list `L` of `Q` is an antidiagonal T(0, n), T(1, n−1), …,
+  T(n−1, 1). Its last entry is also T(n, 0) = T(n−1, 1) (the weight is 0
+  at k = 0), the level's output b(n). The next antidiagonal starts with
+  the new input T(0, n+1) = `t` and adds (n − i)·T(i, n−i) to the
+  previous new entry, for i = 0, …, n−1.
+- `len(L)*L.pop(0)` supplies that weight and entry together: `len(L)` is
+  evaluated before the pop, so the weights run n, n−1, …, 1 while `L` is
+  consumed. `L*1` is a copy that only fixes the number of steps.
+- `t` carries the last entry of one level into the next as its new input,
+  so the five lists chain the five transforms. The innermost e.g.f. eˣ has
+  every coefficient 1, hence `t=1` before each round; printing before the
+  update gives a(0) = 1.
+- `Q=[[]]*5` is five references to one empty list, but the first round
+  pops nothing from it and builds five separate lists `[1]`.
 
 **Notes**
 
-- This is [A000307](../A000307/) with five transform lists instead
-  of three. See also [A000406](../A000406/) for the analogous
-  first-kind transform, whose triangle has a different weight.
-- `Q=[[]]*5` initially shares one empty list. The first pass pops no
-  entries and creates five separate `[1]` lists, so later mutations
-  do not interfere with each other.
-- Exact integer arithmetic; only five antidiagonals are kept. Their
-  lengths grow by one per term. The front pops also move list entries,
-  so their cost is additional to the integer arithmetic.
-- Python 3.11+ eventually reaches its default 4300-digit output
-  conversion limit; this interpreter limit is not a correctness failure.
-- The b-file has 151 terms (indices 0 through 150). The bar is the
-  whole b-file in 60 s.
+- Same program as [A000307](../A000307/) (three lists) and
+  [A000357](../A000357/) (four). Weighting with
+  `(len(L)-i)*x for i,x in enumerate(L)` instead of popping is 9 bytes
+  longer. [A000406](../A000406/) does the first-kind (logarithm) version.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 151 terms (up to a(150)) and prints in about 0.1 s; the
+  bar is the whole b-file in 60 s.
+- a(1423) is the first term with more than 4300 digits, so printing stops
+  there, after about 12 s here.
 
 ## History
 

@@ -5,54 +5,54 @@
 
 Offset 1: 0, 0, 1, 6, 41, 293, 2309, 19975, 189524, 1960041, …
 
-### Python 3 — 166 bytes
+### Python 3 — 129 bytes
 
 ```python
-import math
-L=[[1],[1]];n=0
-while 1:
- n+=1
- for q,a in enumerate(L,3):a+=[sum(math.comb(n,k)*((k%q==1)-(k%q<1))*a[-k]for k in range(1,n+1))]
- print(L[1][-1]-L[0][-1])
+L=[c:=1]*4;m=2
+while[print(L[-1]-L[-2])]:
+ m+=1
+ for q in 3,4:L+=sum((c:=c*(m-k)//k)*(-1,1,0,0)[k%q]*L[-2*k]for k in range(1,m)),
 ```
+
+A run is a maximal block of consecutive positions whose entries increase.
 
 **How it works**
 
-- A run is a block of **consecutive positions** whose entries increase;
-  it need not be a longest increasing subsequence. Let B_r(n) count
-  permutations whose runs all have length at most r. The answer is
-  B_3(n) − B_2(n).
-- The bounded-run formula (Alekseyev, linked on the OEIS page) gives
-  B_r(x) = 1/D_q(x), with q = r + 1 and
-  D_q(x) = Σⱼ (x^(qj)/(qj)! − x^(qj+1)/(qj+1)!).
-  Multiplying D_q(x)·B_r(x) = 1 and comparing exponential coefficients
-  gives, for n ≥ 1,
+- Let B_r(n) count the permutations of [n] whose runs all have length at
+  most r; then a(n) = B_3(n) − B_2(n). With q = r + 1 their e.g.f. is
+  1/D_q(x), D_q(x) = Σ_{j≥0} (x^(qj)/(qj)! − x^(qj+1)/(qj+1)!) (David and
+  Barton; Alekseyev, arXiv:1205.4581, linked from the entry). Comparing
+  coefficients in D_q·B_r = 1 gives, for n ≥ 1,
 
-  B_r(n) = Σₖ C(n,k)·([k ≡ 1 mod q] − [k ≡ 0 mod q])·B_r(n−k),
-  where 1 ≤ k ≤ n and brackets are 1 or 0 according to the condition.
+  B_r(n) = Σ_{k=1}^{n} C(n, k)·f_q(k)·B_r(n − k),
 
-- `enumerate(L,3)` supplies q = 3, 4: the first list counts
-  maximum run length at most 2, the second at most 3. Both start
-  with B_r(0) = 1, the empty permutation. The lists are separate:
-  `[[1]]*2` would alias them and give the wrong answer.
-- Before appending, each list has length n, so `a[-k]` is its entry
-  B_r(n−k). Boolean subtraction supplies the two signs without a
-  conditional expression; the residue classes are disjoint.
-- The last line subtracts the new entries. For n < 3 it prints 0;
-  for n = 3 only the increasing permutation qualifies, giving 1.
+  with f_q(k) = 1 for k ≡ 1, −1 for k ≡ 0 and 0 otherwise (mod q).
+- Both sequences live in one list, interleaved:
+  `L` = B_2(0), B_3(0), B_2(1), B_3(1), … . When B_2(n) is appended `L`
+  has 2n entries, so `L[-2*k]` is B_2(n − k); right after, it has 2n + 1
+  entries and the same `L[-2*k]` is B_3(n − k). One expression serves
+  both passes of `for q in 3,4`, and the newest pair gives
+  `L[-1]-L[-2]` = a(n).
+- `(-1,1,0,0)[k%q]` is f_q(k): k mod q is at most 3 for q = 3, 4.
+- `c` walks the binomials C(n, 1), …, C(n, n) with m = n + 1:
+  C(n, k) = C(n, k − 1)·(n − k + 1)/k, and the `//` is exact because
+  C(n, k − 1)·(n − k + 1) = k·C(n, k). Each walk ends at C(n, n) = 1,
+  which is exactly the start value the next walk needs, so `c` is set
+  only once (`L=[c:=1]*4`).
+- The list starts with B_2(0), B_3(0), B_2(1), B_3(1) = 1, 1, 1, 1 and
+  m = 2, so the header prints a(1) = 0 before the first pass computes n = 2.
 
 **Notes**
 
-- Exact integer arithmetic; the reciprocal-series recurrence determines
-  every coefficient, rather than fitting the initial terms.
-- This is the [A000434](../A000434/) construction with different
-  bounds. It stores two lists of n+1 integers and evaluates two n-term
-  sums per output, avoiding enumeration of n! permutations.
-- Counts grow at factorial scale. Python 3.11+ eventually stops when a
-  printed integer exceeds its default 4300-digit conversion limit;
-  this interpreter limit is not a correctness failure.
-- The b-file has 452 terms (indices 1 through 452). The bar is the
-  whole b-file in 60 s.
+- `math.comb(n,k)` with a separate list per q (the [A000434](../A000434/)
+  layout) is 166 bytes; with the interleaved list it is 139, and the
+  self-resetting binomial walk brings it to 129.
+- Exact integer arithmetic; correctness for every n rests on the e.g.f.
+  above. A brute-force count over all permutations agrees for n ≤ 8.
+- The b-file has 452 terms (up to a(452)); the bar is the whole b-file in
+  60 s, which takes under half a second here.
+- a(n) grows like n!, and a(1567) is the first term with more than 4300
+  digits: printing stops there, after about 18 s here.
 
 ## History
 
@@ -60,6 +60,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 167 | first entry |
 | 2026-11-06 | Python 3 | 166 | import math for a single comb call |
+| 2026-11-07 | Python 3 | 129 | interleaved list, self-resetting binomial walk |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
