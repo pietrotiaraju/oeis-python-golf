@@ -1,0 +1,6 @@
+{
+  "name": "Number of ordered rooted trees with n edges having root of odd degree.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
