@@ -581,16 +581,16 @@ sequence for the code and how it works.
 | [A000565](seq/A000xxx/A000565/) | Number of discordant permutations. | **94** | 24 |
 | [A000566](seq/A000xxx/A000566/) | Heptagonal numbers (or 7-gonal numbers): n\*(5\*n-3)/2. | **31** | 10001 |
 | [A000567](seq/A000xxx/A000567/) | Octagonal numbers: n\*(3\*n-2). Also called star numbers. | **29** | 1001 |
-| [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **291** | 35 |
-| [A000569](seq/A000xxx/A000569/) | Number of graphical partitions of 2n. | **249** | 12 |
+| [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **171** | 35 |
+| [A000569](seq/A000xxx/A000569/) | Number of graphical partitions of 2n. | **166** | 12 |
 | [A000570](seq/A000xxx/A000570/) | Number of tournaments on n nodes determined by their score vectors. | **48** | 500 |
 | [A000571](seq/A000xxx/A000571/) | Number of different score sequences that are possible in an n-team… | **144** | 1000 |
 | [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **46** | 59 |
-| [A000573](seq/A000xxx/A000573/) | Number of 4 X n normalized Latin rectangles. | **276** | 3 |
+| [A000573](seq/A000xxx/A000573/) | Number of 4 X n normalized Latin rectangles. | **157** | 3 |
 | [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **48** | 998 |
 | [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **66** | 1001 |
-| [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **279** | 3 |
-| [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **331** | 10 |
+| [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **163** | 3 |
+| [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **246** | 10 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
 | [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **46** | 1001 |
 | [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **36** | 994 |
