@@ -1,0 +1,6 @@
+{
+  "name": "Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].",
+  "offset": 0,
+  "min_terms": 425,
+  "timeout": 60
+}

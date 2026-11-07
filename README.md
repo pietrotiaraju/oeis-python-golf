@@ -614,6 +614,16 @@ sequence for the code and how it works.
 | [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
 | [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **193** | 1001 |
 | [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **195** | 1001 |
+| [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
+| [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
+| [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
+| [A000660](seq/A000xxx/A000660/) | Boustrophedon transform of 1,1,2,3,4,5,... | **62** | 401 |
+| [A000661](seq/A000xxx/A000661/) | Shifts 2 places left under boustrophedon transform. | **63** | 481 |
+| [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
+| [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
+| [A000674](seq/A000xxx/A000674/) | Boustrophedon transform of 1, 2, 2, 2, 2, ... | **57** | 401 |
+| [A000687](seq/A000xxx/A000687/) | Boustrophedon transform (first version) of Fibonacci numbers… | **71** | 483 |
+| [A000697](seq/A000xxx/A000697/) | Boustrophedon transform of 1, 1, 4, 9, 16, ... | **65** | 401 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

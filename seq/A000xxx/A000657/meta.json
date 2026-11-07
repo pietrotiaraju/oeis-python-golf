@@ -1,0 +1,6 @@
+{
+  "name": "Median Euler numbers (the middle numbers of Arnold's shuttle triangle).",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform of all-1's sequence.",
+  "offset": 0,
+  "min_terms": 486,
+  "timeout": 60
+}
