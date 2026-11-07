@@ -5,52 +5,47 @@
 
 Offset 1: 0, 1, 15, 76, 275, 720, 1666, 3440, 6129, 11250, …
 
-### Python 3 — 82 bytes
+### Python 3 — 79 bytes
 
 ```python
-n=1
-while 1:print(n**2*sum(k*(3*k*k+1-4*n)for k in range(1,n+1)if n%k<1)//24);n+=1
+r=[1]
+for n in r:r+=n+1,;print(n*n*sum(k*(3*k*k+1-4*n)for k in r if n%k<1)//24)
 ```
 
 **How it works**
 
-- Write σ_j(n) = Σ_(d divides n) dʲ; σ(n) in the definition is σ_1(n).
-  The weighted convolution identity on the OEIS page is
-
-  **24a(n) = n^2·((1−4n)σ_1(n) + 3σ_3(n)).**
-
-- Both divisor sums use the same divisors. Combine their summands:
-  (1−4n)k + 3k³ = k·(3k²+1−4n).
-  This is exactly the expression in the comprehension; `n%k<1`
-  selects k dividing n, including k=1 and k=n.
-- The factor `n**2` is applied to the complete sum before `//24`.
-  The identity guarantees that this numerator is divisible by 24;
-  individual divisor contributions need not be divisible by 24.
-- At n=1 the sole contribution is 3+1−4=0, so the loop
-  prints the required leading zero. No empty-convolution case needs
-  a separate branch.
+- The convolution has a closed form (Ridouane Oudra, 2020, on the OEIS
+  page): 24·a(n) = n²·(3σ₃(n) + (1 − 4n)·σ(n)), where σ₃ is the sum of
+  the cubes of the divisors. Summing per divisor k, 3k³ + (1 − 4n)k is
+  `k*(3*k*k+1-4*n)`; the identity makes the total divisible by 24.
+- Why the identity holds: with S = Σσ(k)qᵏ = (1 − P)/24 and D = q·d/dq,
+  the left side is the coefficient of qⁿ in D²S·S, and the right side
+  combines D²S, D³S and D²Q. Ramanujan's equations DP = (P² − Q)/12,
+  DQ = (PQ − R)/3, DR = (PR − Q²)/2 for the Eisenstein series
+  P = E₂, Q = E₄, R = E₆ turn both sides into polynomials in P, Q and R,
+  and the two polynomials are equal.
+- The loop is the divisor-sum loop of [A000203](../A000203/): `r` is the
+  list being iterated, and each pass appends n + 1, so the `for` never
+  ends and `r` holds 1, …, n + 1 when the sum runs. The extra n + 1 never
+  divides n, so `for k in r if n%k<1` runs over the divisors of n.
+- At n = 1 the only term is 3 + 1 − 4 = 0, the leading 0 of the sequence.
 
 **Notes**
 
-- Exact integers, with no table of precomputed σ values or third-party
-  number-theory package. Some summands are negative; cancellation in
-  the full sum produces the nonnegative convolution count.
-- Testing all k from 1 through n costs O(n) remainder tests per term
-  and O(N²) through n=N, with a constant number of accumulator values.
-  It avoids computing two divisor sums for each of n−1 convolution
-  positions separately.
-- [A000441](../A000441/) and
-  [A000499](../A000499/) are the other weighted
-  convolutions in this family; the outer power and the two
-  coefficients are the only changes to the expression.
-- The b-file has 10000 terms (indices 1 through 10000). The bar is the
-  whole b-file in 60 s.
+- The `while` form `n=1` / `while[print(…for k in range(1,n+1)if
+  n%k<1)//24)]:n+=1` is 80 bytes; with `while 1:` and `n**2` it was 82.
+- Exact integer arithmetic, so the program is right for every n.
+- O(n) per term: the whole b-file (10000 terms) takes about 10 s here; the
+  bar is the whole b-file in 60 s.
+- [A000441](../A000441/) (weight k) and [A000499](../A000499/) (weight k³)
+  are the same convolution with other weights.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 82 | first entry |
+| 2026-11-07 | Python 3 | 79 | self-extending list as loop and divisor range |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

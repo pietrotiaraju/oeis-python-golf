@@ -5,65 +5,55 @@
 
 Offset 0: 0, 1, 3, 10, 27, 74, 201, 548, 1490, 4051, …
 
-### Python 3 — 91 bytes
+### Python 3 — 86 bytes
 
 ```python
 n=0
 while 1:
  N=n;F=d=1
- while -N%F<n**d:d+=2;N=N*d*(d-1)+n**d;F*=d*(d-1)
+ while-N%F<n**d:d+=2;N=N*d*~-d+n**d;F*=d*~-d
  print(N//F);n+=1
 ```
 
 **How it works**
 
-- Sum the positive series sinh(n)=Σ_(d positive odd) nᵈ/d!.
-  The state N/F is its partial sum through odd degree d, with
-  F=d!. Initially N=n, F=d=1 includes the first term.
-- To add the next term, increase d by 2, multiply N and F by
-  d(d−1), and add nᵈ to N. Both the old sum and new term
-  then have the same factorial denominator.
-- The last term t=nᵈ/d! bounds the unsummed tail once d≥2n+1:
-  subsequent term ratios are less than 1/4, so the tail is
-  less than t·(1/4+1/16+…)=t/3<t.
-- Stopping cannot happen earlier for positive integer n. For
-  d≤2n−1, AM–GM gives d!≤((d+1)/2)ᵈ≤nᵈ, so t≥1.
-  The distance to the next rounding boundary is always less
-  than 1 and therefore fails the stopping test in this range.
-
-- `-N%F` is the distance from the partial sum to the next
-  integer boundary, scaled by F (zero at an exact boundary).
-  Continue while that gap is less than `n**d`, the scaled
-  tail bound. At termination the remaining positive tail cannot
-  change `N//F`, so that quotient is floor(sinh(n)).
-
-- At an exact partial-sum boundary the modular gap is zero,
-  which conservatively forces another term. At n=0 the tail
-  bound is zero and the loop immediately prints 0.
+- sinh n = Σ_{d odd} nᵈ/d!. The inner loop keeps the partial sum up to
+  degree d as N/F with F = d!: start at N = n, F = d = 1, and each step
+  raises d by 2, multiplies N and F by d(d−1) (`d*~-d`) and adds nᵈ to N.
+- `-N%F` is F times the distance from N/F up to the next integer (0 when
+  N/F is an integer). The loop stops once that distance is at least the
+  last term t = nᵈ/d!, and then ⌊sinh n⌋ = ⌊N/F⌋, because the rest of the
+  series is positive and smaller than t.
+- Why the rest is smaller than t when the loop stops: the distance is
+  below 1, so the stop needs t < 1. For odd d ≤ 2n − 1, AM–GM gives
+  d! ≤ ((d+1)/2)ᵈ ≤ nᵈ, so t ≥ 1 there; hence d ≥ 2n + 1 at the stop.
+  From there each further term is at most n²/((d+1)(d+2)) < 1/4 times the
+  one before, so the tail is below t·(1/4 + 1/16 + …) = t/3.
+- At n = 0 the bound `n**d` is 0 and the loop stops at once with N = 0.
+- The loop ends for every n ≥ 1: sinh n is not an integer, since then
+  eⁿ would be a root of z² − 2sz − 1 and so algebraic, against
+  Hermite–Lindemann. The distance up therefore tends to a positive limit
+  while t tends to 0.
 
 **Notes**
 
-- **Termination.** For n>0, exp(n) is transcendental by
-  [Hermite–Lindemann](https://mathworld.wolfram.com/Hermite-LindemannTheorem.html).
-  If sinh(n)=s were algebraic, exp(n) would solve
-  z²−2sz−1=0 and be algebraic too. Thus sinh(n) is not
-  an integer or half-integer; convergence of the series and
-  decay of the tail bound eventually resolve every output.
-- Exact integer arithmetic with an adaptive number of terms,
-  rather than a fixed precision approximation to sinh.
-  [A000495](../A000495/) uses the same series with
-  half-integer rounding boundaries.
-- The factorial denominator and powers grow during each evaluation,
-  which restarts at the next n. The outputs eventually meet Python
-  3.11+'s default 4300-digit conversion limit, an interpreter limit.
-- The b-file has 201 terms (indices 0 through 200). The bar is the
-  whole b-file in 60 s.
+- Same template as ⌊eⁿ⌋ in [A000149](../A000149/). Keeping nᵈ in a
+  variable (`N=p=n;F=d=1`, `p*=n*n`) is 89 bytes; the form with
+  `while -N%F` and `(d-1)` written out was 91.
+- Exact integer arithmetic, so the program is right for every n.
+- The whole b-file prints in under a second here; about 880 terms in
+  60 s.
+- The b-file has 201 terms (up to a(200)); the bar is the whole b-file in
+  60 s.
+- a(n) first has more than 4300 digits at n = 9902, far beyond what the
+  program reaches in practice.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 91 | first entry |
+| 2026-11-07 | Python 3 | 86 | `d*~-d`, no space after `while` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
