@@ -831,6 +831,8 @@ sequence for the code and how it works.
 | [A000817](seq/A000xxx/A000817/) | Number of switching networks under action of GL\_n(Z\_2) acting on 2… | **192** | 4 |
 | [A000818](seq/A000xxx/A000818/) | Number of switching networks under action of GL\_n(Z\_2) acting on 3… | **193** | 4 |
 | [A000819](seq/A000xxx/A000819/) | E.g.f.: cos(x)^2 / cos(2x) = Sum\_{n >= 0} a(n) \* x^(2n) / (2n)!. | **70** | 201 |
+| [A000820](seq/A000xxx/A000820/) | Number of switching networks under action of AG\_n(Z\_2) acting on 2… | **199** | 4 |
+| [A000821](seq/A000xxx/A000821/) | Number of switching networks under action of AG\_n(Z\_2) acting on 3… | **200** | 4 |
 | [A000822](seq/A000xxx/A000822/) | Expansion of (sin^2 x + sin x) /cos 2x. | **85** | 178 |
 | [A000823](seq/A000xxx/A000823/) | Number of switching networks (see Harrison reference for precise… | **42** | 7 |
 | [A000824](seq/A000xxx/A000824/) | Number of switching networks (see Harrison reference for precise… | **67** | 6 |
@@ -857,6 +859,8 @@ sequence for the code and how it works.
 | [A000847](seq/A000xxx/A000847/) | Number of n-input 2-output switching networks under action of GL(n,2)… | **194** | 4 |
 | [A000848](seq/A000xxx/A000848/) | Number of n-input 3-output switching networks under action of GL(n,2)… | **195** | 4 |
 | [A000849](seq/A000xxx/A000849/) | Number of primes <= product of first n primes, A002110(n). | **75** | 7 |
+| [A000850](seq/A000xxx/A000850/) | Number of n-input 2-output switching networks under action of AG(n,2)… | **224** | 4 |
+| [A000851](seq/A000xxx/A000851/) | Number of n-input 3-output switching networks under action of AG(n,2)… | **225** | 4 |
 | [A000852](seq/A000xxx/A000852/) | Numbers beginning with a vowel in English. | **61** | 10000 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
