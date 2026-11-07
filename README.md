@@ -632,6 +632,12 @@ sequence for the code and how it works.
 | [A000628](seq/A000xxx/A000628/) | Number of n-node unrooted steric quartic trees; number of n-carbon… | **160** | 39 |
 | [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
 | [A000643](seq/A000xxx/A000643/) | a(n) = a(n-1) + 2^a(n-2). | **34** | 10 |
+| [A000645](seq/A000xxx/A000645/) | Number of alkyls X^{II} C\_n H\_{2n+1} Y with n carbon atoms. | **175** | 28 |
+| [A000646](seq/A000xxx/A000646/) | Number of alkyls Y^{II} C\_n H\_{2n+2} with n carbon atoms. | **144** | 30 |
+| [A000647](seq/A000xxx/A000647/) | Alkyl naphthalenes C\_{n+10} H\_{2n+8} with n+10 carbon atoms. | **159** | 27 |
+| [A000648](seq/A000xxx/A000648/) | Number of alkyls C\_{n+15} H\_{2n+10} (Anthr.) with n carbon atoms. | **173** | 26 |
+| [A000649](seq/A000xxx/A000649/) | Number of alkyls C\_{n+15} H\_{2n+10} (Phenan) with n carbon atoms. | **158** | 26 |
+| [A000650](seq/A000xxx/A000650/) | Number of alkyls S C\_{n+4} H\_{2n+4} with n carbon atoms. | **157** | 40 |
 | [A000655](seq/A000xxx/A000655/) | a(n) = number of letters in a(n-1), a(1) = 1 (in English). | **28** | 80 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
 | [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
@@ -640,7 +646,11 @@ sequence for the code and how it works.
 | [A000661](seq/A000xxx/A000661/) | Shifts 2 places left under boustrophedon transform. | **63** | 481 |
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
+| [A000671](seq/A000xxx/A000671/) | Number of boron trees with n nodes, i.e. n-node rooted trees with… | **154** | 50 |
+| [A000672](seq/A000xxx/A000672/) | Number of 3-valent trees (= boron trees or binary trees) with n nodes. | **151** | 52 |
+| [A000673](seq/A000xxx/A000673/) | Number of bicentered 3-valent (or boron, or binary) trees with n… | **147** | 36 |
 | [A000674](seq/A000xxx/A000674/) | Boustrophedon transform of 1, 2, 2, 2, 2, ... | **57** | 401 |
+| [A000678](seq/A000xxx/A000678/) | Number of carbon (rooted) trees with n carbon atoms = unordered… | **185** | 44 |
 | [A000680](seq/A000xxx/A000680/) | a(n) = (2n)!/2^n. | **37** | 101 |
 | [A000681](seq/A000xxx/A000681/) | Number of n X n matrices with nonnegative entries and every row and… | **50** | 251 |
 | [A000682](seq/A000xxx/A000682/) | Semi-meanders: number of ways a semi-infinite directed curve can… | **140** | 12 |
