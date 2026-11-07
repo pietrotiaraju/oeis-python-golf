@@ -43,6 +43,11 @@ while 1:
 - Same program with the exact bound `4*j+4`: 128 bytes. `print(-(q%2))`
   costs 4 bytes more than `q%-2`. Machin's formula
   π = 16·atan(1/5) − 4·atan(1/239) with an error allowance: 195 bytes.
+- Summing the Taylor series of sin n directly, with the sign-flipping
+  denominator of [A000494](../A000494/) and floor instead of rounding
+  (`N=p=n;F=1;d=0` / `while N%F<p:d+=2;p*=n*n;N=p+N*~d*d;F*=~d*d`), is
+  89 bytes, but each term costs about 1.4n big-number steps: only about
+  1400 terms in 60 s here, far short of the bar.
 - Exact integer arithmetic, so the program is right for every n. `s`
   recurses j levels deep; Python's default recursion limit (1000) would
   only bite for an n whose n/π lies within about 2^−990·n of an integer.
