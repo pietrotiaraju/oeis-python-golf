@@ -853,6 +853,7 @@ sequence for the code and how it works.
 | [A000847](seq/A000xxx/A000847/) | Number of n-input 2-output switching networks under action of GL(n,2)… | **194** | 4 |
 | [A000848](seq/A000xxx/A000848/) | Number of n-input 3-output switching networks under action of GL(n,2)… | **195** | 4 |
 | [A000849](seq/A000xxx/A000849/) | Number of primes <= product of first n primes, A002110(n). | **75** | 7 |
+| [A000852](seq/A000xxx/A000852/) | Numbers beginning with a vowel in English. | **61** | 10000 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
 | [A000855](seq/A000xxx/A000855/) | Final two digits of 2^n. | **28** | 1001 |
@@ -860,12 +861,17 @@ sequence for the code and how it works.
 | [A000857](seq/A000xxx/A000857/) | Number of n-input 3-output switching networks under the action of… | **210** | 6 |
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
+| [A000861](seq/A000xxx/A000861/) | Numbers ending with a vowel in American English. | **63** | 1000 |
 | [A000864](seq/A000xxx/A000864/) | Deceptive nonprimes: composite numbers k that divide the repunit… | **55** | 58 |
+| [A000865](seq/A000xxx/A000865/) | Numbers beginning with letter 'o' in English. | **46** | 10000 |
 | [A000866](seq/A000xxx/A000866/) | 2^n written in base 5. | **59** | 301 |
+| [A000867](seq/A000xxx/A000867/) | Numbers beginning with letter 'f' in English. | **61** | 10000 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
+| [A000870](seq/A000xxx/A000870/) | Numbers beginning with letter 's' in English. | **61** | 10000 |
 | [A000871](seq/A000xxx/A000871/) | Number of switching networks with S(n) acting on the domain and… | **211** | 7 |
 | [A000872](seq/A000xxx/A000872/) | Number of switching networks with S(n) acting on the domain and… | **263** | 6 |
+| [A000873](seq/A000xxx/A000873/) | Numbers beginning with letter 'e' in English. | **67** | 10000 |
 | [A000874](seq/A000xxx/A000874/) | Number of switching networks with S(n) and C(2,2) acting on the… | **252** | 7 |
 | [A000875](seq/A000xxx/A000875/) | Number of switching networks with S(n) and C(2,2) acting on the… | **295** | 6 |
 | [A000879](seq/A000xxx/A000879/) | Number of primes < prime(n)^2. | **68** | 48 |

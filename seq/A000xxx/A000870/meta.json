@@ -1,0 +1,6 @@
+{
+  "name": "Numbers beginning with letter 's' in English.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
