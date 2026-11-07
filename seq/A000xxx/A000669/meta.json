@@ -1,0 +1,6 @@
+{
+  "name": "Number of series-reduced planted trees with n leaves. Also the number of essentially series series-parallel networks with n edges; also the number of essentially parallel series-parallel networks with n edges.",
+  "offset": 1,
+  "min_terms": 1001,
+  "timeout": 60
+}

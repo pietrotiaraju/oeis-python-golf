@@ -621,6 +621,7 @@ sequence for the code and how it works.
 | [A000605](seq/A000xxx/A000605/) | Number of points of norm <= n in cubic lattice. | **92** | 64 |
 | [A000606](seq/A000xxx/A000606/) | Number of nonnegative solutions to x^2 + y^2 + z^2 <= n. | **89** | 110 |
 | [A000607](seq/A000xxx/A000607/) | Number of partitions of n into prime parts. | **97** | 13000 |
+| [A000608](seq/A000xxx/A000608/) | Number of connected partially ordered sets with n unlabeled elements. | **285** | 7 |
 | [A000609](seq/A000xxx/A000609/) | Number of threshold functions of n or fewer variables. | **247** | 6 |
 | [A000610](seq/A000xxx/A000610/) | Number of self-complementary Boolean functions of n variables: see… | **224** | 10 |
 | [A000611](seq/A000xxx/A000611/) | Number of normalized Latin squares of order n containing no 2 X 2… | **192** | 7 |
@@ -649,11 +650,14 @@ sequence for the code and how it works.
 | [A000634](seq/A000xxx/A000634/) | Number of glycols with n carbon atoms. | **215** | 29 |
 | [A000635](seq/A000xxx/A000635/) | Number of paraffins C\_n H\_{2n} X Y with n carbon atoms. | **172** | 40 |
 | [A000636](seq/A000xxx/A000636/) | Number of paraffins C\_n H\_{2n} X\_2 with n carbon atoms. | **213** | 30 |
+| [A000637](seq/A000xxx/A000637/) | Number of fixed-point-free permutation groups of degree n. | **292** | 6 |
+| [A000638](seq/A000xxx/A000638/) | Number of permutation groups of degree n; also number of conjugacy… | **282** | 6 |
 | [A000639](seq/A000xxx/A000639/) | Number of alkyl benzenes with n carbon atoms: C(n)H(2n-6). | **197** | 40 |
 | [A000640](seq/A000xxx/A000640/) | Number of paraffins C\_n H\_{2n-1} XYZ with n carbon atoms. | **175** | 40 |
 | [A000641](seq/A000xxx/A000641/) | Number of paraffins C\_n H\_{2n-1} X\_3 with n carbon atoms. | **223** | 28 |
 | [A000642](seq/A000xxx/A000642/) | a(n) = number of isomeric hydrocarbons of the acetylene series with… | **137** | 201 |
 | [A000643](seq/A000xxx/A000643/) | a(n) = a(n-1) + 2^a(n-2). | **34** | 10 |
+| [A000644](seq/A000xxx/A000644/) | Number of loops of length 4n on square grid that turn at each step… | **202** | 5 |
 | [A000645](seq/A000xxx/A000645/) | Number of alkyls X^{II} C\_n H\_{2n+1} Y with n carbon atoms. | **175** | 28 |
 | [A000646](seq/A000xxx/A000646/) | Number of alkyls Y^{II} C\_n H\_{2n+2} with n carbon atoms. | **144** | 30 |
 | [A000647](seq/A000xxx/A000647/) | Alkyl naphthalenes C\_{n+10} H\_{2n+8} with n+10 carbon atoms. | **159** | 27 |
@@ -678,12 +682,17 @@ sequence for the code and how it works.
 | [A000666](seq/A000xxx/A000666/) | Number of symmetric relations on n nodes. | **135** | 18 |
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
 | [A000668](seq/A000xxx/A000668/) | Mersenne primes (primes of the form 2^n - 1). | **66** | 15 |
+| [A000669](seq/A000xxx/A000669/) | Number of series-reduced planted trees with n leaves. Also the number… | **96** | 1001 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
 | [A000671](seq/A000xxx/A000671/) | Number of boron trees with n nodes, i.e. n-node rooted trees with… | **154** | 50 |
 | [A000672](seq/A000xxx/A000672/) | Number of 3-valent trees (= boron trees or binary trees) with n nodes. | **151** | 52 |
 | [A000673](seq/A000xxx/A000673/) | Number of bicentered 3-valent (or boron, or binary) trees with n… | **147** | 36 |
 | [A000674](seq/A000xxx/A000674/) | Boustrophedon transform of 1, 2, 2, 2, 2, ... | **57** | 401 |
+| [A000675](seq/A000xxx/A000675/) | Number of centered 3-valent (or boron, or binary) trees with n nodes. | **165** | 36 |
+| [A000676](seq/A000xxx/A000676/) | Number of centered trees with n nodes. | **155** | 38 |
+| [A000677](seq/A000xxx/A000677/) | Number of bicentered trees with n nodes. | **172** | 38 |
 | [A000678](seq/A000xxx/A000678/) | Number of carbon (rooted) trees with n carbon atoms = unordered… | **185** | 44 |
+| [A000679](seq/A000xxx/A000679/) | Number of groups of order 2^n. | **473** | 5 |
 | [A000680](seq/A000xxx/A000680/) | a(n) = (2n)!/2^n. | **37** | 101 |
 | [A000681](seq/A000xxx/A000681/) | Number of n X n matrices with nonnegative entries and every row and… | **50** | 251 |
 | [A000682](seq/A000xxx/A000682/) | Semi-meanders: number of ways a semi-infinite directed curve can… | **140** | 12 |
@@ -692,6 +701,7 @@ sequence for the code and how it works.
 | [A000685](seq/A000xxx/A000685/) | Number of 3-colored labeled graphs on n nodes, divided by 3. | **109** | 12 |
 | [A000686](seq/A000xxx/A000686/) | Number of 4-colored labeled graphs on n nodes, divided by 4. | **109** | 9 |
 | [A000687](seq/A000xxx/A000687/) | Boustrophedon transform (first version) of Fibonacci numbers… | **71** | 483 |
+| [A000688](seq/A000xxx/A000688/) | Number of Abelian groups of order n; number of factorizations of n… | **97** | 10000 |
 | [A000689](seq/A000xxx/A000689/) | Final decimal digit of 2^n. | **27** | 81 |
 | [A000690](seq/A000xxx/A000690/) | Landau's approximation to population of x^2 + y^2 <= 2^n. | **294** | 400 |
 | [A000691](seq/A000xxx/A000691/) | Ramanujan's approximation to population of x^2 + y^2 <= 2^n. | **375** | 34 |

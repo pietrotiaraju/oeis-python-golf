@@ -1,0 +1,6 @@
+{
+  "name": "Number of loops of length 4n on square grid that turn at each step and return to start in original direction.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 60
+}

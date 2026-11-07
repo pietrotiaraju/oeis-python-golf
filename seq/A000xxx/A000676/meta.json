@@ -1,0 +1,6 @@
+{
+  "name": "Number of centered trees with n nodes.",
+  "offset": 0,
+  "min_terms": 38,
+  "timeout": 60
+}
