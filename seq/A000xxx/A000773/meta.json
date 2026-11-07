@@ -1,0 +1,6 @@
+{
+  "name": "Number of numbers == 0 (mod 3) in range 2^n to 2^(n+1) with odd number of 1's in binary expansion.",
+  "offset": 1,
+  "min_terms": 501,
+  "timeout": 60
+}

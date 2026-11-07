@@ -715,6 +715,7 @@ sequence for the code and how it works.
 | [A000700](seq/A000xxx/A000700/) | Expansion of Product\_{k>=0} (1 + x^(2k+1)); number of partitions of n… | **71** | 600 |
 | [A000701](seq/A000xxx/A000701/) | One half of number of non-self-conjugate partitions; also half of… | **79** | 1900 |
 | [A000702](seq/A000xxx/A000702/) | a(n) is the number of conjugacy classes in the alternating group A\_n. | **92** | 1000 |
+| [A000703](seq/A000xxx/A000703/) | Chromatic number (or Heawood number) of nonorientable surface with n… | **55** | 1001 |
 | [A000704](seq/A000xxx/A000704/) | Number of degree-n even permutations of order dividing 2. | **58** | 201 |
 | [A000706](seq/A000xxx/A000706/) | Expansion of modular function 1/E\_3 (cf. A013973). | **81** | 361 |
 | [A000708](seq/A000xxx/A000708/) | a(n) = E(n+1) - 2\*E(n), where E(i) is the Euler number A000111(i). | **65** | 483 |
@@ -758,12 +759,14 @@ sequence for the code and how it works.
 | [A000746](seq/A000xxx/A000746/) | Boustrophedon transform of triangular numbers. | **68** | 401 |
 | [A000747](seq/A000xxx/A000747/) | Boustrophedon transform of primes. | **80** | 401 |
 | [A000748](seq/A000xxx/A000748/) | Expansion of bracket function. | **35** | 1001 |
+| [A000749](seq/A000xxx/A000749/) | a(n) = 4\*a(n-1) - 6\*a(n-2) + 4\*a(n-3), n > 3, with a(0)=a(1)=a(2)=0,… | **44** | 201 |
 | [A000750](seq/A000xxx/A000750/) | Expansion of bracket function. | **55** | 3001 |
 | [A000751](seq/A000xxx/A000751/) | Boustrophedon transform of partition numbers. | **117** | 483 |
 | [A000752](seq/A000xxx/A000752/) | Boustrophedon transform of powers of 2. | **62** | 401 |
 | [A000753](seq/A000xxx/A000753/) | Boustrophedon transform of Catalan numbers. | **78** | 401 |
 | [A000754](seq/A000xxx/A000754/) | Boustrophedon transform of odd numbers. | **62** | 401 |
 | [A000756](seq/A000xxx/A000756/) | Boustrophedon transform of sequence 1,1,0,0,0,0,... | **60** | 401 |
+| [A000757](seq/A000xxx/A000757/) | Number of cyclic permutations of [n] with no i -> i+1 (mod n). | **43** | 201 |
 | [A000759](seq/A000xxx/A000759/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **119** | 11 |
 | [A000760](seq/A000xxx/A000760/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 10 |
 | [A000761](seq/A000xxx/A000761/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 9 |
@@ -776,6 +779,7 @@ sequence for the code and how it works.
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
 | [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
 | [A000772](seq/A000xxx/A000772/) | E.g.f. exp(tan(x) + sec(x) - 1). | **83** | 479 |
+| [A000773](seq/A000xxx/A000773/) | Number of numbers == 0 (mod 3) in range 2^n to 2^(n+1) with odd… | **46** | 501 |
 | [A000774](seq/A000xxx/A000774/) | a(n) = n!\*(1 + Sum\_{i=1..n} 1/i). | **41** | 251 |
 | [A000775](seq/A000xxx/A000775/) | a(n) = n! \* (n + 1 + 2\*Sum\_{k=1...n} 1/k). | **46** | 101 |
 | [A000776](seq/A000xxx/A000776/) | a(n) = n! \* (1 + 2\*Sum\_{k=1..n} 1/k). | **43** | 251 |
@@ -788,9 +792,11 @@ sequence for the code and how it works.
 | [A000784](seq/A000xxx/A000784/) | Number of symmetrical planar partitions of n (planar partitions… | **230** | 150 |
 | [A000785](seq/A000xxx/A000785/) | Number of asymmetrical planar partitions of n: planar partitions… | **297** | 150 |
 | [A000786](seq/A000xxx/A000786/) | Number of inequivalent planar partitions of n, when considering them… | **153** | 151 |
+| [A000788](seq/A000xxx/A000788/) | Total number of 1's in binary expansions of 0, ..., n. | **43** | 10001 |
 | [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
 | [A000790](seq/A000xxx/A000790/) | Primary pretenders: least composite c such that n^c == n (mod c). | **66** | 10001 |
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
+| [A000792](seq/A000xxx/A000792/) | a(n) = max{(n - i)\*a(i) : i < n}; a(0) = 1. | **47** | 6288 |
 | [A000793](seq/A000xxx/A000793/) | Landau's function g(n): largest order of permutation of n elements.… | **116** | 80 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
