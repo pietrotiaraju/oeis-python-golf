@@ -542,23 +542,23 @@ sequence for the code and how it works.
 | [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **186** | 30 |
 | [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **169** | 15 |
 | [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **366** | 5 |
-| [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **108** | 50 |
+| [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **56** | 50 |
 | [A000530](seq/A000xxx/A000530/) | Let p(n, s, x) be predicate that number of occurrences of s's in x >=… | **240** | 8 |
-| [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **71** | 100 |
+| [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **48** | 100 |
 | [A000532](seq/A000xxx/A000532/) | Number of Hamiltonian paths from NW to SW corners in an n X n grid. | **232** | 5 |
 | [A000533](seq/A000xxx/A000533/) | a(0)=1; a(n) = 10^n + 1, n >= 1. | **27** | 101 |
 | [A000534](seq/A000xxx/A000534/) | Numbers that are not the sum of 4 nonzero squares. | **102** | 100 |
 | [A000535](seq/A000xxx/A000535/) | Card matching: coefficients B[n,2] of t^2 in the reduced hit… | **141** | 20 |
-| [A000536](seq/A000xxx/A000536/) | Number of 3-line Latin rectangles. | **77** | 15 |
+| [A000536](seq/A000xxx/A000536/) | Number of 3-line Latin rectangles. | **57** | 15 |
 | [A000537](seq/A000xxx/A000537/) | Sum of first n cubes; or n-th triangular number squared. | **33** | 1001 |
 | [A000538](seq/A000xxx/A000538/) | Sum of fourth powers: 0^4 + 1^4 + ... + n^4. | **34** | 1001 |
 | [A000539](seq/A000xxx/A000539/) | Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5. | **34** | 1001 |
 | [A000540](seq/A000xxx/A000540/) | Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6. | **34** | 1001 |
 | [A000541](seq/A000xxx/A000541/) | Sum of 7th powers: 1^7 + 2^7 + ... + n^7. | **34** | 1001 |
 | [A000542](seq/A000xxx/A000542/) | Sum of 8th powers: 1^8 + 2^8 + ... + n^8. | **34** | 24 |
-| [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **47** | 25 |
+| [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **46** | 25 |
 | [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **204** | 447 |
-| [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **51** | 1000 |
+| [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **48** | 1000 |
 | [A000546](seq/A000xxx/A000546/) | First occurrence of n consecutive numbers that take same number of… | **190** | 20 |
 | [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **190** | 20 |
 | [A000548](seq/A000xxx/A000548/) | Squares that are not the sum of 2 nonzero squares. | **99** | 300 |
