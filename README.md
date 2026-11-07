@@ -842,6 +842,7 @@ sequence for the code and how it works.
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
 | [A000884](seq/A000xxx/A000884/) | Number of switching networks with C(2,n) acting on the domain and… | **87** | 10 |
 | [A000888](seq/A000xxx/A000888/) | a(n) = (2\*n)!^2 / ((n+1)!\*n!^3). | **44** | 101 |
+| [A000889](seq/A000xxx/A000889/) | Number of switching networks with S(n) and C(2,2) acting on the… | **266** | 7 |
 | [A000891](seq/A000xxx/A000891/) | a(n) = (2\*n)!\*(2\*n+1)! / (n! \* (n+1)!)^2. | **45** | 101 |
 | [A000894](seq/A000xxx/A000894/) | a(n) = (2\*n)!\*(2\*n+1)! / ((n+1)! \* n!^3). | **45** | 181 |
 | [A000897](seq/A000xxx/A000897/) | a(n) = (4\*n)! / ((2\*n)!\*n!^2). | **51** | 201 |
