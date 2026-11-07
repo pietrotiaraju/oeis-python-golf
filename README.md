@@ -716,9 +716,17 @@ sequence for the code and how it works.
 | [A000701](seq/A000xxx/A000701/) | One half of number of non-self-conjugate partitions; also half of… | **79** | 1900 |
 | [A000702](seq/A000xxx/A000702/) | a(n) is the number of conjugacy classes in the alternating group A\_n. | **92** | 1000 |
 | [A000704](seq/A000xxx/A000704/) | Number of degree-n even permutations of order dividing 2. | **58** | 201 |
+| [A000706](seq/A000xxx/A000706/) | Expansion of modular function 1/E\_3 (cf. A013973). | **81** | 361 |
+| [A000710](seq/A000xxx/A000710/) | Number of partitions of n, with two kinds of 1, 2, 3 and 4. | **87** | 1001 |
+| [A000711](seq/A000xxx/A000711/) | Number of partitions of n, with three kinds of 1,2,3 and 4 and two… | **90** | 1001 |
+| [A000712](seq/A000xxx/A000712/) | a(n) = number of partitions of n into parts of 2 kinds. | **81** | 7000 |
+| [A000713](seq/A000xxx/A000713/) | EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ... | **82** | 1001 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
+| [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
 | [A000740](seq/A000xxx/A000740/) | Number of 2n-bead balanced binary necklaces of fundamental period 2n,… | **82** | 3322 |
+| [A000748](seq/A000xxx/A000748/) | Expansion of bracket function. | **35** | 1001 |
+| [A000750](seq/A000xxx/A000750/) | Expansion of bracket function. | **55** | 3001 |
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
 | [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
 | [A000774](seq/A000xxx/A000774/) | a(n) = n!\*(1 + Sum\_{i=1..n} 1/i). | **41** | 251 |

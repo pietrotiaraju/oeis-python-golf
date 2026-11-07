@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of modular function 1/E_3 (cf. A013973).",
+  "offset": 0,
+  "min_terms": 361,
+  "timeout": 60
+}
