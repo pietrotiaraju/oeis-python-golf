@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step self-avoiding walks on cubic lattice ending at point with x=2.",
+  "offset": 2,
+  "min_terms": 9,
+  "timeout": 120
+}
