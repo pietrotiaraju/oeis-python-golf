@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform of powers of 2.",
+  "offset": 0,
+  "min_terms": 401,
+  "timeout": 60
+}

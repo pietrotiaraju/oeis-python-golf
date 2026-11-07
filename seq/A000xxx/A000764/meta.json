@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform of Bell numbers.",
+  "offset": 0,
+  "min_terms": 483,
+  "timeout": 60
+}
