@@ -813,6 +813,7 @@ sequence for the code and how it works.
 | [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
 | [A000800](seq/A000xxx/A000800/) | Sum of upward diagonals of Eulerian triangle. | **84** | 601 |
 | [A000802](seq/A000xxx/A000802/) | Maximal number of states in the minimal deterministic finite… | **74** | 3301 |
+| [A000807](seq/A000xxx/A000807/) | Quadratic invariants. | **69** | 289 |
 | [A000808](seq/A000xxx/A000808/) | Number of switching networks (see Harrison reference for precise… | **39** | 12 |
 | [A000809](seq/A000xxx/A000809/) | Number of switching networks (see Harrison reference for precise… | **42** | 9 |
 | [A000814](seq/A000xxx/A000814/) | Number of switching networks (see Harrison reference for precise… | **213** | 7 |
@@ -836,6 +837,8 @@ sequence for the code and how it works.
 | [A000894](seq/A000xxx/A000894/) | a(n) = (2\*n)!\*(2\*n+1)! / ((n+1)! \* n!^3). | **45** | 181 |
 | [A000897](seq/A000xxx/A000897/) | a(n) = (4\*n)! / ((2\*n)!\*n!^2). | **51** | 201 |
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
+| [A000899](seq/A000xxx/A000899/) | Number of solutions to the rook problem on an n X n board having a… | **97** | 200 |
+| [A000900](seq/A000xxx/A000900/) | Number of solutions to the rook problem on an n X n board having a… | **77** | 201 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
