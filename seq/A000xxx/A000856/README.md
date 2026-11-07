@@ -43,7 +43,7 @@ while[print(f(n,[2]*P))]:n+=1;P*=n
   `~k` is −(k+1), so `r+~k` = r−k−1 and `math.gcd(t,~k)` = gcd(t,k+1).
 - `V` is a list over t < P; a new cycle of length l shifts entry t left by
   gcd(t,l), so at a leaf V[t] = 2·F(t), and the main loop keeps P = 2·n!
-  with `P*=n`.
+  with `P*=n` (starting from P = 2).
 - The program is A000826's with the exponent `+d-4` instead of `-1`:
   `sum(V[::d])//P` is 2c₁ or c₂, so the leaf is 2^(2c₁−3) + 2^(c₂−2), the
   sum above over |H| = 8.
