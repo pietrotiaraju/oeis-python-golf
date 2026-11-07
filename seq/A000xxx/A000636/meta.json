@@ -1,0 +1,6 @@
+{
+  "name": "Number of paraffins C_n H_{2n} X_2 with n carbon atoms.",
+  "offset": 1,
+  "min_terms": 30,
+  "timeout": 60
+}

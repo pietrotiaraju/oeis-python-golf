@@ -1,0 +1,6 @@
+{
+  "name": "Number of esters with n carbon atoms up to structural isomerism.",
+  "offset": 2,
+  "min_terms": 98,
+  "timeout": 60
+}

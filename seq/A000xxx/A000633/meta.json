@@ -1,0 +1,6 @@
+{
+  "name": "Number of acyclic quaternary ammonium ions with n carbon atoms.",
+  "offset": 4,
+  "min_terms": 31,
+  "timeout": 60
+}

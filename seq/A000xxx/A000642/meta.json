@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = number of isomeric hydrocarbons of the acetylene series with carbon content n.",
+  "offset": 1,
+  "min_terms": 201,
+  "timeout": 60
+}
