@@ -14,17 +14,19 @@ while[print(n**5)]:n+=1
 
 **How it works**
 
-- Raise each nonnegative integer n to the defining power 5.
-  The initial value at n=0 is included.
-- `print` returns `None`, but the containing list is nonempty, so the
-  loop continues after every output and advances n by one.
+- The [A000027](../A000027/) counter, printing n⁵ instead of n.
+- `print(n**5)` runs in the loop condition. It returns `None`, and `[None]` is
+  a non-empty list, so the condition is always true and the body `n+=1`
+  moves to the next n.
 
 **Notes**
 
-- Every term is computed with exact integer arithmetic.
-- Python 3.11+ can eventually reach its integer-to-string conversion limit.
-- The reference file contains 501 terms from the OEIS b-file; the verification
-  bar is 501 terms in 60 s.
+- `while 1:print(n**5);n+=1` is 28 bytes, and `n*n*n*n*n` is 5 bytes longer
+  than `n**5`.
+- Exact integers, so every term is right; the 4300-digit int-to-str limit
+  would only be reached near n = 10^860.
+- The b-file has 501 terms (n = 0 to 500) and all of them print at once; the
+  bar is the whole b-file in 60 s.
 
 ## History
 

@@ -1,8 +1,2 @@
-n=1
-while 1:
- A=[t:=1]+[0]*~-n
- for p in range(2,n):
-  if t%p:
-   for j in range(n-1,p-1,-1):A[j]+=A[j-p]
-  t*=p*p
- print(*A[n//2:],sep='\n');n*=2
+*a,n=1,0;t=1;P=[]
+while[print(a[-1])]:n+=1;P+=[-n][:t%n];t*=n*n;a+=sum(p*(sum(a[p::2*p])-sum(a[2*p::2*p]))for p in P)//-n,

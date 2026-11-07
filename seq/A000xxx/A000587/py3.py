@@ -1,2 +1,2 @@
-L=[];t=-1
-while[print(-t)]:t=1;L=[t]+[t:=len(L)*L.pop(0)-t for _ in L*1]
+r=[];t=1
+while[print(t)]:r=[t]+[t:=t+x for x in r];t=-t
