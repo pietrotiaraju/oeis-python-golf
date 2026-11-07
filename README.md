@@ -453,7 +453,7 @@ sequence for the code and how it works.
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **262** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **51** | 43 |
-| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **228** | 19 |
+| [A000440](seq/A000xxx/A000440/) | Number of permutations of an n-sequence discordant with three given… | **150** | 19 |
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **79** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **36** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **118** | 10000 |
@@ -483,13 +483,13 @@ sequence for the code and how it works.
 | [A000467](seq/A000xxx/A000467/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
 | [A000468](seq/A000xxx/A000468/) | Powers of ten written in base 8. | **30** | 101 |
 | [A000469](seq/A000xxx/A000469/) | 1 together with products of 2 or more distinct primes. | **54** | 10000 |
-| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **229** | 19 |
+| [A000470](seq/A000xxx/A000470/) | Number of permutations of an n-sequence discordant with three given… | **150** | 19 |
 | [A000471](seq/A000xxx/A000471/) | a(n) = floor(sinh(n)). | **91** | 201 |
 | [A000472](seq/A000xxx/A000472/) | a(n) = a(n-1)^2 + (a(n-2) + 1)\*(a(n-1) - a(n-2)^2). | **41** | 14 |
 | [A000473](seq/A000xxx/A000473/) | Number of genus 0 rooted maps with 5 faces and n vertices. | **104** | 497 |
 | [A000474](seq/A000xxx/A000474/) | Number of nonisomorphic 1-factorizations of complete graph K\_{2n}. | **512** | 4 |
 | [A000475](seq/A000xxx/A000475/) | Rencontres numbers: number of permutations of [n] with exactly 4… | **69** | 97 |
-| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **221** | 19 |
+| [A000476](seq/A000xxx/A000476/) | Number of permutations of an n-sequence discordant with three given… | **147** | 19 |
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **82** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **61** | 195 |
 | [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **231** | 6 |
@@ -505,7 +505,7 @@ sequence for the code and how it works.
 | [A000489](seq/A000xxx/A000489/) | Card matching: Coefficients B[n,3] of t^3 in the reduced hit… | **162** | 100 |
 | [A000490](seq/A000xxx/A000490/) | Generalized Euler numbers c(4,n). | **114** | 195 |
 | [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **193** | 1001 |
-| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **228** | 18 |
+| [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **150** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **195** | 10001 |
 | [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **215** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
@@ -513,7 +513,7 @@ sequence for the code and how it works.
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **44** | 100 |
 | [A000498](seq/A000xxx/A000498/) | Eulerian numbers (Euler's triangle: column k=4 of A008292, column k=3… | **57** | 197 |
 | [A000499](seq/A000xxx/A000499/) | a(n) = Sum\_{k=1..n-1} k^3\*sigma(k)\*sigma(n-k). | **82** | 10000 |
-| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **229** | 18 |
+| [A000500](seq/A000xxx/A000500/) | Number of permutations of an n-sequence discordant with three given… | **150** | 18 |
 | [A000501](seq/A000xxx/A000501/) | a(n) = floor(cosh(n)). | **100** | 30 |
 | [A000502](seq/A000xxx/A000502/) | Number of genus 0 rooted maps with 6 faces and n vertices. | **103** | 496 |
 | [A000503](seq/A000xxx/A000503/) | a(n) = floor(tan(n)). | **239** | 100 |

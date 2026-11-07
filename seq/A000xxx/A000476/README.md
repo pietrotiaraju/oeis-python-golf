@@ -5,81 +5,52 @@
 
 Offset 5: 15, 72, 609, 4960, 46188, 471660, 5275941, 64146768, 842803767, 11902900380, …
 
-### Python 3 — 221 bytes
+The three permutations are the identity, the cyclic shift s and s² (Riordan's
+discordant permutations). Call i a hit of p when p(i) − i ∈ {0, 1, 2}
+(mod n); a(n) counts the permutations of Z_n with exactly one hit.
+[A000183](../A000183/) is the case of no hit.
+
+### Python 3 — 147 bytes
 
 ```python
-from math import*
-n=5
-while 1:
- B=4**n;z=B*B;w=z*z;a=b=c=0;d=1
- for v in[0,-2*z,-2*z*(1+B),3*w]+[0]*(n-4):a,b,c,d=b,c,d,(1+3*B)*d-2*z*c-z*(1+B)*b+w*a+v
- print(-sum((-1)**k*k*perm(n-k)*(d//B**k%B)for k in range(n+1)));n+=1
+n=f=4
+while n:=n+1:a=B=n**n;b=3;c=B+2;exec("a,b,c=b,c,(B+2)*c+B*b-a;"*n);print(sum(-~b//B**j%B*(f:=f*j or 1)*(B-1)**(n-j)for j in range(n+1))//B%B)
 ```
 
 **How it works**
 
-- Let R_q(t)=Σₖ σ_(q,k)tᵏ be the rook polynomials in
-  Margolius's bivariate generating function on the OEIS page.
-  The requested answer is the coefficient of y^1 in
-  Σₖ σ_(n,k)(n−k)!(y−1)ᵏ, converting rook placements into
-  the hit count for the three specified permutations.
-- Multiplying the generating function's denominator gives
-
-  R_q=(1+3t)R_(q−1)−2t²R_(q−2)
-  −(t²+t³)R_(q−3)+t⁴R_(q−4)+v_q,
-
-  with R_0=1 and earlier values zero. Its numerator supplies
-  v_1=0, v_2=−2t², v_3=−2t²(1+t), v_4=3t⁴,
-  and v_q=0 afterwards.
-- Evaluate the polynomials at t=B, using z=B² and w=B⁴.
-  The scalar states a,b,c,d hold four consecutive evaluations,
-  initially R_(−3),R_(−2),R_(−1),R_0. Each simultaneous
-  assignment shifts them and appends R_q(B), preserving all old
-  values for the recurrence.
-- The list supplies the four numerator corrections followed by
-  n−4 zeros. Every output has n≥4, so it performs exactly n
-  updates and leaves d=R_n(B) when the final print is evaluated.
-- The board is the union of the three specified permutations,
-  so every row has at most three allowed cells. Choose the k
-  occupied rows, then one cell in each: even before excluding
-  column collisions this gives σ_(n,k)≤C(n,k)3ᵏ<4ⁿ=B.
-  The strict inequality follows from summing C(n,j)3ʲ over
-  j=0,…,n: it is 4ⁿ and contains other positive summands.
-  Hence the base-B digits of d are the coefficients with no carries:
-  `d//B**k%B` retrieves σ_(n,k) exactly.
-- The coefficient of y^1 in (y−1)ᵏ is
-  (−1)^(k−1)C(k,1), zero for k<1. The final
-  sum multiplies this by σ_(n,k) and (n−k)!;
-  `perm(n-k)` is that factorial with one argument.
-- The counter starts at n=5, the OEIS offset, and increases
-  after each output. A new base and a fresh polynomial evaluation
-  are used each time, so no previously packed digits need to be
-  reinterpreted when the required base grows.
-
-- The fixed hit index is 1. Its parity separates the sign
-  (−1)^(k−1) into (−1)^k and the constant (−1)^1; the latter
-  is applied outside the sum when negative. The summation can
-  begin at k=0 because the factor k vanishes there.
+- The program is the one of [A000440](../A000440/) (4 hits) with another
+  digit and start; the proofs are on that page. Inclusion–exclusion over
+  the board of cells (i, i + d mod n), d = 0, 1, 2, with rook numbers r_K
+  gives the hit polynomial H(y) = Σ_K r_K·(n−K)!·(y−1)^K, and a(n) is its
+  y coefficient (Margolius's formula on the OEIS page).
+- A 4×4 transfer matrix over the columns i, i+1 already taken shows that
+  the reversed rook polynomial Σ_K r_K t^(n−K) is 1 + P_n, where P_q is the
+  q-th power sum of the roots of ν³ − (t+2)ν² − tν + 1. So
+  P_q = (t+2)P_{q−1} + tP_{q−2} − P_{q−3} with P_{−1} = t, P_0 = 3,
+  P_1 = t+2: `a=B=n**n;b=3;c=B+2`, then n steps of
+  `a,b,c=b,c,(B+2)*c+B*b-a` in `exec`, and `-~b` is the reversed rook
+  polynomial at t = B.
+- B = nⁿ is a safe base twice: each r_K ≤ C(n,K)·3^K < 4ⁿ ≤ B, so
+  `-~b//B**j%B` is r_{n−j}; and the coefficients of H count permutations,
+  so each is below n! ≤ B and H(B) = Σ_j r_{n−j}·j!·(B−1)^(n−j) has them
+  as base-B digits. `//B%B` is the one for one hit.
+- `(f:=f*j or 1)` is the running factorial j!, restarted at 1 by
+  `f*0 or 1` for every n; `n=f=4` with `while n:=n+1:` starts at the
+  offset n = 5.
 
 **Notes**
 
-- Exact integer polynomial evaluation and coefficient extraction.
-  Negative terms in the hit sum implement inclusion-exclusion;
-  they cancel before printing the nonnegative count.
-- The only stored constants are the generating function's recurrence
-  and numerator coefficients. The program computes each rook
-  polynomial and does not store an answer table.
-- This is the same construction as
-  [A000440](../A000440/),
-  with a different hit coefficient.
-  For one hit, C(k,1)=k accounts for the shorter final sum.
-- Each output uses n recurrence steps and at most n hit summands,
-  but the packed integer has O(n²) bits. Those large
-  integer products, powers and divisions dominate at larger n.
-  Output eventually meets Python 3.11+'s default 4300-digit
-  integer conversion limit, an interpreter limit.
-- The b-file has 19 terms (indices 5 through 23). The bar is the
-  whole b-file in 60 s.
+- Siblings with the same program: [A000440](../A000440/) (4 hits),
+  [A000470](../A000470/) (5 hits), [A000492](../A000492/) (6 hits),
+  [A000500](../A000500/) (7 hits). The alternatives measured there (a `for`
+  line, `math.perm`, the binomial-sign form, the forward polynomial) are
+  about 6 to 46 bytes longer here too.
+- Exact integer arithmetic, so the program is right for every n ≥ 5.
+- About 144 terms in 60 s here. The b-file has 19 terms (up to a(23));
+  the bar is the whole b-file in 60 s.
+- a(n) < n!, which reaches 4300 digits only near n = 1750, far beyond what
+  the program prints in practice, so the int-to-str limit does not matter.
 
 ## History
 
@@ -88,6 +59,7 @@ while 1:
 | 2026-11-06 | Python 3 | 232 | first entry |
 | 2026-11-06 | Python 3 | 228 | use the three-cells-per-row bound for the packing base |
 | 2026-11-06 | Python 3 | 221 | shorten numerator padding and pull out the fixed parity sign |
+| 2026-11-07 | Python 3 | 147 | reversed rook polynomial by power sums, hit polynomial evaluated at B = nⁿ |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
