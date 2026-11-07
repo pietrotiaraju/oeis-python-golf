@@ -3,59 +3,48 @@
 > Associated Stirling numbers: second-order reciprocal Stirling numbers (Fekete) a(n) = [[n, 3]]. The number of 3-orbit permutations of an n-set with at least 2 elements in each orbit.
 > — [OEIS A000483](https://oeis.org/A000483)
 
-Offset 6: 15, 210, 2380, 26432, 303660, 3678840, 47324376, 647536032, 9418945536, 145410580224, …
+Offset 6: 15, 210, 2380, 26432, 303660, 3678840, 47324376, 647536032, 9418945536, …
 
-### Python 3 — 101 bytes
+### Python 3 — 73 bytes
 
 ```python
-A=[1]+[0]*7;n=1
-while 1:
- n+=1;A+=[0]+[(n-1)*(A[k-4]+A[k-9])for k in range(1,4)]
- if n>5:print(A[-1])
+z=y=Y=0;f=1;n=3
+while[z>0==print(z)]:z,y,Y,f=n*(z+Y),n*(y+f),y,f*~-n;n+=1
 ```
 
 **How it works**
 
-- Let b(n,k) count permutations of n elements with k cycles,
-  every cycle having length at least 2. To include the new element,
-  either insert it into an existing cycle in n−1 possible places,
-  or pair it with one of n−1 elements as a new 2-cycle. Hence
-
-  **b(n,k)=(n−1)(b(n−1,k)+b(n−2,k−1)).**
-
-- The empty permutation gives b(0,0)=1. There are no permitted
-  permutations on one element, so the first two rows are
-  `[1,0,0,0]` and `[0,0,0,0]`, columns k=0 through 3.
-- A flattens the rows into blocks of four. After incrementing n,
-  `A[k-4]` is b(n−1,k), and `A[k-9]` is b(n−2,k−1).
-  Append zero for b(n,0), followed by the three
-  new entries. The right-hand list is built before A is extended,
-  so all indices refer to the two completed preceding rows.
-- Three nontrivial cycles need at least six elements. `if n>5`
-  skips the earlier zeros, and `A[-1]` prints the desired column.
-  At n=6 every cycle is a pair, so a(6)=6!/(2³3!)=15.
+- Let [[n,k]] count the permutations of [n] with k cycles, all of
+  length ≥ 2. The element n either goes into a cycle of a permutation of
+  [n−1] (after one of n − 1 elements) or forms a 2-cycle with one of the
+  n − 1 others, so [[n,k]] = (n−1)·([[n−1,k]] + [[n−2,k−1]]).
+- Column 1 is [[n,1]] = (n−1)! for n ≥ 2. At the top of the loop the state
+  is z = [[n,3]], y = [[n,2]], Y = [[n−1,2]] and f = [[n−1,1]] = (n−2)!,
+  and the tuple assignment moves it to n + 1:
+  z ← n(z + Y), y ← n(y + f), Y ← y, f ← (n−1)·f (`f*~-n`).
+- The start n = 3 has z = y = Y = 0 and f = 1! = 1. Three cycles of
+  length ≥ 2 need n ≥ 6, so z stays 0 until then, and `z>0==print(z)`
+  prints only from a(6) = 15 on: the chained comparison evaluates
+  `0==print(z)` only when z > 0.
 
 **Notes**
 
-- This counts cycles of permutations, with their cyclic ordering,
-  rather than just set-partition blocks. The minimum cycle length
-  rules out fixed points entirely; compare [A000454](../A000454/)
-  and [A000482](../A000482/) for ordinary first-kind columns.
-- Exact integer recurrence. A stores four entries per generated row,
-  although the update reads only the last two rows. Thus storage grows
-  linearly with n and each row uses three recurrence evaluations.
-- Factorial growth eventually reaches Python 3.11+'s default
-  4300-digit output conversion limit, an interpreter limit.
-- The b-file has 195 terms (indices 6 through 200). The bar is the
-  whole b-file in 60 s.
+- The previous record, 101 bytes, kept all rows in a flat list.
+  The e.g.f. −(x + log(1−x))³/6 gives
+  a(n) = (n!/6)·Σ 1/(ijk) over i + j + k = n with i, j, k ≥ 2, and the
+  double sum `sum(F//i//j//(n-i-j)…)//6` with F = n! is 100 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 195 terms (up to a(200)); the bar is the whole b-file in
+  60 s. It prints in a fraction of a second.
+- a(n) first has more than 4300 digits at n = 1559, so printing stops
+  there with a ValueError.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
-| 2026-11-06 | Python 3 | 142 | first entry |
-| 2026-11-06 | Python 3 | 120 | remove unused import and compress the seed rows |
-| 2026-11-06 | Python 3 | 101 | flatten the four-column recurrence into one list |
+| 2026-11-06 | Python 3 | 101 | first entry |
+| 2026-11-07 | Python 3 | 73 | three columns with a one-row lag in a tuple update |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
