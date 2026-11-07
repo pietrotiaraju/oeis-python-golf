@@ -541,7 +541,7 @@ sequence for the code and how it works.
 | [A000525](seq/A000xxx/A000525/) | Number of partially labeled rooted trees with n nodes (4 of which are… | **185** | 21 |
 | [A000526](seq/A000xxx/A000526/) | Number of partially labeled trees with n nodes (5 of which are… | **186** | 30 |
 | [A000527](seq/A000xxx/A000527/) | Series-parallel numbers. | **169** | 15 |
-| [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **366** | 5 |
+| [A000528](seq/A000xxx/A000528/) | Number of types of Latin squares of order n. Equivalently, number of… | **270** | 5 |
 | [A000529](seq/A000xxx/A000529/) | Powers of rooted tree enumerator. | **56** | 50 |
 | [A000530](seq/A000xxx/A000530/) | Let p(n, s, x) be predicate that number of occurrences of s's in x >=… | **103** | 8 |
 | [A000531](seq/A000xxx/A000531/) | From area of cyclic polygon of 2n + 1 sides. | **48** | 100 |
@@ -557,7 +557,7 @@ sequence for the code and how it works.
 | [A000541](seq/A000xxx/A000541/) | Sum of 7th powers: 1^7 + 2^7 + ... + n^7. | **34** | 1001 |
 | [A000542](seq/A000xxx/A000542/) | Sum of 8th powers: 1^8 + 2^8 + ... + n^8. | **34** | 24 |
 | [A000543](seq/A000xxx/A000543/) | Number of inequivalent ways to color vertices of a cube using at most… | **46** | 25 |
-| [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **204** | 447 |
+| [A000544](seq/A000xxx/A000544/) | One-half of the number of permutations p of [n] having exactly two… | **165** | 447 |
 | [A000545](seq/A000xxx/A000545/) | Number of ways of n-coloring a dodecahedron. | **48** | 1000 |
 | [A000546](seq/A000xxx/A000546/) | First occurrence of n consecutive numbers that take same number of… | **121** | 20 |
 | [A000547](seq/A000xxx/A000547/) | Number of steps to reach 1 in sequence A000546. | **132** | 20 |
