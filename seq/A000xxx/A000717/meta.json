@@ -1,0 +1,6 @@
+{
+  "name": "Number of graphs with n nodes and floor(n(n-1)/4) edges.",
+  "offset": 1,
+  "min_terms": 13,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of disconnected graphs with n nodes.",
+  "offset": 0,
+  "min_terms": 18,
+  "timeout": 60
+}

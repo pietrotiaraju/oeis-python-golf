@@ -725,7 +725,9 @@ sequence for the code and how it works.
 | [A000714](seq/A000xxx/A000714/) | Number of partitions of n, with three kinds of 1 and 2 and two kinds… | **90** | 7000 |
 | [A000715](seq/A000xxx/A000715/) | Number of partitions of n, with three kinds of 1,2 and 3 and two… | **90** | 6500 |
 | [A000716](seq/A000xxx/A000716/) | Number of partitions of n into parts of 3 kinds. | **81** | 6500 |
+| [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **214** | 13 |
 | [A000718](seq/A000xxx/A000718/) | Boustrophedon transform of triangular numbers 1,1,3,6,10,... | **70** | 401 |
+| [A000719](seq/A000xxx/A000719/) | Number of disconnected graphs with n nodes. | **213** | 18 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
 | [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
