@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f. cos(x)/(cos(x) - sin(x)).",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

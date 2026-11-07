@@ -815,19 +815,29 @@ sequence for the code and how it works.
 | [A000802](seq/A000xxx/A000802/) | Maximal number of states in the minimal deterministic finite… | **74** | 3301 |
 | [A000804](seq/A000xxx/A000804/) | Permanent of a certain cyclic n X n (0,1) matrix. | **142** | 1001 |
 | [A000805](seq/A000xxx/A000805/) | Permanent of a certain cyclic n X n (0,1) matrix. | **146** | 1002 |
+| [A000806](seq/A000xxx/A000806/) | Bessel polynomial y\_n(-1). | **40** | 405 |
 | [A000807](seq/A000xxx/A000807/) | Quadratic invariants. | **69** | 289 |
 | [A000808](seq/A000xxx/A000808/) | Number of switching networks (see Harrison reference for precise… | **39** | 12 |
 | [A000809](seq/A000xxx/A000809/) | Number of switching networks (see Harrison reference for precise… | **42** | 9 |
+| [A000810](seq/A000xxx/A000810/) | Expansion of e.g.f. (sin x + cos x)/cos 3x. | **71** | 201 |
 | [A000811](seq/A000xxx/A000811/) | Number of switching networks (see Harrison reference for precise… | **160** | 7 |
 | [A000812](seq/A000xxx/A000812/) | Number of switching networks (see Harrison reference for precise… | **160** | 6 |
+| [A000813](seq/A000xxx/A000813/) | Expansion of (sin x + cos x)/cos 4x. | **71** | 201 |
 | [A000814](seq/A000xxx/A000814/) | Number of switching networks (see Harrison reference for precise… | **213** | 7 |
 | [A000815](seq/A000xxx/A000815/) | Number of switching networks (see Harrison reference for precise… | **213** | 6 |
+| [A000816](seq/A000xxx/A000816/) | E.g.f.: Sum\_{n >= 0} a(n) \* x^(2\*n) / (2\*n)! = sin(x)^2 / cos(2\*x). | **71** | 201 |
+| [A000819](seq/A000xxx/A000819/) | E.g.f.: cos(x)^2 / cos(2x) = Sum\_{n >= 0} a(n) \* x^(2n) / (2n)!. | **70** | 201 |
+| [A000822](seq/A000xxx/A000822/) | Expansion of (sin^2 x + sin x) /cos 2x. | **85** | 178 |
 | [A000823](seq/A000xxx/A000823/) | Number of switching networks (see Harrison reference for precise… | **42** | 7 |
 | [A000824](seq/A000xxx/A000824/) | Number of switching networks (see Harrison reference for precise… | **67** | 6 |
+| [A000825](seq/A000xxx/A000825/) | Expansion of cos x (1 + sin x ) /cos 2x. | **83** | 201 |
 | [A000826](seq/A000xxx/A000826/) | Number of switching networks (see Harrison reference for precise… | **187** | 8 |
 | [A000827](seq/A000xxx/A000827/) | Number of switching networks (see Harrison reference for precise… | **206** | 6 |
+| [A000828](seq/A000xxx/A000828/) | E.g.f. cos(x)/(cos(x) - sin(x)). | **59** | 201 |
 | [A000829](seq/A000xxx/A000829/) | Number of switching networks (see Harrison reference for precise… | **224** | 7 |
 | [A000830](seq/A000xxx/A000830/) | Number of switching networks (see Harrison reference for precise… | **251** | 6 |
+| [A000831](seq/A000xxx/A000831/) | Expansion of e.g.f. (1 + tan(x))/(1 - tan(x)). | **60** | 433 |
+| [A000834](seq/A000xxx/A000834/) | Expansion of e.g.f. exp(x)\*(1 + tan(x))/(1 - tan(x)). | **61** | 162 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
 | [A000841](seq/A000xxx/A000841/) | Number of n-input 2-output switching networks under action of… | **162** | 7 |

@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of e.g.f. (1 + tan(x))/(1 - tan(x)).",
+  "offset": 0,
+  "min_terms": 433,
+  "timeout": 60
+}
