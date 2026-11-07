@@ -5,46 +5,42 @@
 
 Offset 1: 0, 1, 9, 34, 95, 210, 406, 740, 1161, 1920, …
 
-### Python 3 — 79 bytes
+### Python 3 — 77 bytes
 
 ```python
-n=1
-while 1:print(n*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
+r=[1]
+for n in r:r+=n+1,;print(n*sum(5*k**3+k-6*n*k for k in r if n%k<1)//24)
 ```
 
 **How it works**
 
-- Write σ_j(n) = Σ_(d divides n) dʲ; σ(n) in the definition is σ_1(n).
-  The weighted convolution identity on the OEIS page is
-
-  **24a(n) = n^1·((1−6n)σ_1(n) + 5σ_3(n)).**
-
-- Both divisor sums use the same divisors. Combine their summands:
-  (1−6n)k + 5k³ = k·(5k²+1−6n).
-  This is exactly the expression in the comprehension; `n%k<1`
-  selects k dividing n, including k=1 and k=n.
-- The factor `n**1` is applied to the complete sum before `//24`.
-  The identity guarantees that this numerator is divisible by 24;
-  individual divisor contributions need not be divisible by 24.
-- At n=1 the sole contribution is 5+1−6=0, so the loop
-  prints the required leading zero. No empty-convolution case needs
-  a separate branch.
+- Write σ_j(n) = Σ_{d|n} d^j. Ramanujan's identity q·dE₂/dq = (E₂² − E₄)/12
+  for E₂ = 1 − 24Σσ(n)qⁿ and E₄ = 1 + 240Σσ₃(n)qⁿ gives, on comparing the
+  qⁿ coefficients, the classical convolution
+  Σ_{k=1}^{n−1} σ(k)σ(n−k) = (5σ₃(n) + (1 − 6n)σ(n))/12.
+- Swapping k and n − k shows Σ k·σ(k)σ(n−k) = Σ (n−k)·σ(k)σ(n−k), so the
+  weighted sum is n/2 times the plain one:
+  24a(n) = n·(5σ₃(n) + (1 − 6n)σ(n)) (the formula on the OEIS page).
+- Both divisor sums run over the same divisors, so the program sums
+  5k³ + k − 6nk over the k dividing n and multiplies by n. The right side
+  is 24 times an integer, so `//24` is exact.
+- The list `r` is the loop and the divisor range at once: `for n in r`
+  sees the items appended while it runs, and `r+=n+1,` makes r = [1, …,
+  n+1] at the time of the sum. The extra n+1 never divides n, so
+  `for k in r if n%k<1` is exactly the divisors of n (the
+  [A000203](../A000203/) trick).
+- At n = 1 the only divisor gives 5 + 1 − 6 = 0, the empty sum a(1) = 0.
 
 **Notes**
 
-- Exact integers, with no table of precomputed σ values or third-party
-  number-theory package. Some summands are negative; cancellation in
-  the full sum produces the nonnegative convolution count.
-- Testing all k from 1 through n costs O(n) remainder tests per term
-  and O(N²) through n=N, with a constant number of accumulator values.
-  It avoids computing two divisor sums for each of n−1 convolution
-  positions separately.
-- [A000477](../A000477/) and
-  [A000499](../A000499/) are the other weighted
-  convolutions in this family; the outer power and the two
-  coefficients are the only changes to the expression.
-- The b-file has 1000 terms (indices 1 through 1000). The bar is the
-  whole b-file in 60 s.
+- `n=1` / `while[print(n*sum(…for k in range(1,n+1)if n%k<1)//24)]:n+=1`
+  is 78 bytes. The summand as `k*(5*k*k+1-6*n)` ties at 77 (no space is
+  needed before the `for`). Negative divisors do not work here: `n%k` is
+  never positive for k < 0.
+- Exact integer arithmetic, so the program is right for every n.
+- The whole b-file prints in about 0.3 s here. The b-file has 1000 terms
+  (up to a(1000)); the bar is the whole b-file in 60 s.
+- a(n) grows like n⁴, so the 4300-digit int-to-str limit is out of reach.
 
 ## History
 
@@ -52,6 +48,7 @@ while 1:print(n*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 82 | first entry |
 | 2026-11-06 | Python 3 | 79 | remove the identity exponent on n |
+| 2026-11-07 | Python 3 | 77 | growing list r as loop and divisor range |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

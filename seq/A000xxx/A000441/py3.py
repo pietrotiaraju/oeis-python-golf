@@ -1,2 +1,2 @@
-n=1
-while 1:print(n*sum(k*(5*k*k+1-6*n)for k in range(1,n+1)if n%k<1)//24);n+=1
+r=[1]
+for n in r:r+=n+1,;print(n*sum(5*k**3+k-6*n*k for k in r if n%k<1)//24)

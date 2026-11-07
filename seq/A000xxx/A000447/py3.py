@@ -1,2 +1,2 @@
-s=0;n=1
-while[print(s)]:s+=n*n;n+=2
+m=0
+while[print((m**3-m)//6)]:m+=2
