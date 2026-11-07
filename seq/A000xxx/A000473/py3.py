@@ -1,3 +1,3 @@
 from math import*
 n=4
-while 1:print(comb(n,3)*((4*n*n+14*n+3)*comb(2*n,n)-15*(8*n+3)*4**(n-2))//60);n+=1
+while[print(comb(n,3)*(comb(t:=2*n,n)*(t*t+7*t+3)-(60*t+45<<t-4))//60)]:n+=1

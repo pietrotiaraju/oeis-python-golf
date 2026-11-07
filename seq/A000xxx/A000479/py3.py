@@ -1,7 +1,4 @@
-from functools import*
 from itertools import*
+f=lambda Q,k:k<1or sum(f([q for q in Q if all(map(int.__ne__,p,q))>(q<p)],k-1)for p in Q)
 n=0
-while 1:
- L=[sum(1<<(i*n+j)for i,j in enumerate(p))for p in permutations(range(n))]
- F=cache(lambda E:E<1or sum(F(E^x)for x in L if x&E&-E and x&E==x))
- print(+F((1<<(n*n))-1));n+=1
+while[print(+f([*permutations(range(n))],n))]:n+=1
