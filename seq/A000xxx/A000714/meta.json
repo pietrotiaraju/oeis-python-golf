@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n, with three kinds of 1 and 2 and two kinds of 3,4,5,....",
+  "offset": 0,
+  "min_terms": 7000,
+  "timeout": 60
+}
