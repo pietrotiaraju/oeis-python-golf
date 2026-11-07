@@ -7,12 +7,12 @@ Offset 1: 0, 0, 0, 0, 0, 1, 12, 137, 1602, 19710, …
 
 A run is a maximal block of consecutive positions whose entries increase.
 
-### Python 3 — 149 bytes
+### Python 3 — 144 bytes
 
 ```python
 A=[1];B=[1];n=0
 while n:=n+1:
- for a,q in(A,6),(B,7):c=1;a+=[sum((c:=c*(n-k+1)//k)*(k%q<2)*(k%q*2-1)*a[-k]for k in range(1,n+1))]
+ for a,q in(A,6),(B,7):c=1;a+=[sum(1//(k%q*2-1)*(c:=c*(n-k+1)//k)*a[-k]for k in range(1,n+1))]
  print(B[-1]-A[-1])
 ```
 
@@ -32,19 +32,21 @@ while n:=n+1:
   starting with R(0) = 1 (two lists: `A=B=[1]` would alias them).
   `a[-k]` is R(n−k). `(c:=c*(n-k+1)//k)` turns C(n, k−1) into C(n, k),
   exact because C(n, k) = C(n, k−1)·(n−k+1)/k is an integer; `c=1`
-  resets it for each list. `(k%q<2)*(k%q*2-1)` is w_k: −1 at residue 0,
-  1 at residue 1, 0 otherwise. For n < 6 it prints 0, and for n = 6
-  only the increasing permutation qualifies, so the first nonzero term
-  is 1.
+  resets it for each list. `1//(k%q*2-1)` is w_k: 1//(−1) = −1 at
+  residue 0, 1//1 = 1 at residue 1, and 0 for residue r ≥ 2, where
+  2r − 1 ≥ 3. It stands first in the product, so it needs no
+  parentheses, and the walrus still runs for every k. For n < 6 it
+  prints 0, and for n = 6 only the increasing permutation qualifies, so
+  the first nonzero term is 1.
 - `while n:=n+1:` steps n and is never false.
 
 **Notes**
 
 - Other versions that print the same terms: `math.comb(n,k)` with
   `import math` instead of the running binomial: 5 bytes longer;
-  `((k%q==1)-(k%q<1))` for w_k: 1 byte longer; looping
-  `for q,a in enumerate(L,6):` over `L=[[1],[1]]` and printing
-  `L[1][-1]-L[0][-1]`, the first version: 166 bytes.
+  `(k%q<2)*(k%q*2-1)` for w_k: 149 bytes, and `((k%q==1)-(k%q<1))`:
+  150 bytes; looping `for q,a in enumerate(L,6):` over `L=[[1],[1]]`
+  and printing `L[1][-1]-L[0][-1]`, the first version: 166 bytes.
 - Exact integer arithmetic, so the program is right for every n.
 - The b-file's 450 terms print in about 0.6 s here; each term costs
   2n big products. The b-file has 450 terms (up to a(450)); the bar is
@@ -61,6 +63,7 @@ while n:=n+1:
 | 2026-11-06 | Python 3 | 167 | first entry |
 | 2026-11-06 | Python 3 | 166 | use a shorter math import |
 | 2026-11-07 | Python 3 | 149 | running binomial, two named lists |
+| 2026-11-07 | Python 3 | 144 | sign as `1//(k%q*2-1)` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

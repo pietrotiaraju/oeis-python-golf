@@ -1,10 +1,5 @@
-from math import*
-from functools import*
-D=cache(lambda d:{d}|{z for x in range(2,isqrt(d)+1)if d%x<1 for z in(x,d//x)})
-F=cache(lambda d,i,b:d<2or min([P[i]**~-j*v for j in D(d)if j<=b and(v:=F(d//j,i+1,j))]or[0]))
-P=[];p=t=n=1
-print(0)
-while n:=n+1:
- while len(P)<(2*n).bit_length():
-  t*=p*p;p+=1;P+=[p]*(t%p>0<p%4==1)
- print(min(F(k:=n+n,0,k),F(k-1,0,k-1)))
+F=lambda d,i:d<2or min(P[i]**~-k*F(d//k,i+1)for k in range(2,d+1)if d%k<1)
+c=0;P=[];p=t=1
+while 1:
+ while 2**len(P)<=c:t*=p*p;p+=1;P+=[p]*(t%p>0<p%4<2)
+ print(c and min(F(c+1,0),F(c+2,0)));c+=2
