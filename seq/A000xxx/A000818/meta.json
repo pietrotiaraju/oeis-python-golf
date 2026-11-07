@@ -1,0 +1,6 @@
+{
+  "name": "Number of switching networks under action of GL_n(Z_2) acting on 3 variables.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}
