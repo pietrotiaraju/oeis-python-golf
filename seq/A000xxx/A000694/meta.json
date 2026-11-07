@@ -1,0 +1,6 @@
+{
+  "name": "Related to population of numbers of form x^2 + y^2.",
+  "offset": 1,
+  "min_terms": 33,
+  "timeout": 60
+}

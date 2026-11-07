@@ -1,0 +1,6 @@
+{
+  "name": "Landau's approximation to population of x^2 + y^2 <= 2^n.",
+  "offset": 0,
+  "min_terms": 400,
+  "timeout": 60
+}
