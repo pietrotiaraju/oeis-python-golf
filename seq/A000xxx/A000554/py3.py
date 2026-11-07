@@ -1,2 +1,2 @@
 n=4
-while 1:print(n*(n-1)*(2**(n-3)-1));n+=1
+while[print(~-2**n//8*n*~-n)]:n+=1

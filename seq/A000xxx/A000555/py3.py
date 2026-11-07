@@ -1,3 +1,2 @@
-from math import*
-n=5
-while 1:print(n*(sum(comb(n-1,k)*k**(n-1-k)for k in range(n))-(n-1)*(2**(n-2)-1)-1));n+=1
+m=4
+while[print(-~m*sum(((2**m+1)**m>>m*k)%2**m*(k**(m-k)-k)for k in range(m)))]:m+=1

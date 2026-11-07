@@ -1,3 +1,2 @@
-from math import*
-A=[1]
-while[print(A[-1])]:n=len(A);A+=1+2*sum(comb(n,k)*A[n-k]for k in range(1,n,2)),
+M=[];a=b=1
+while 1:M=[s:=a]+[s:=s+(s+M.pop(0))*len(M)for _ in M*1];a,b=b,a+b;print(s)

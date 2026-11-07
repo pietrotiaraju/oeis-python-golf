@@ -565,11 +565,11 @@ sequence for the code and how it works.
 | [A000549](seq/A000xxx/A000549/) | Numbers that are the sum of 2 squares but not sum of 3 nonzero… | **99** | 30 |
 | [A000550](seq/A000xxx/A000550/) | Number of trees of diameter 7. | **177** | 50 |
 | [A000551](seq/A000xxx/A000551/) | Number of labeled rooted trees of height 2 with n nodes. | **81** | 198 |
-| [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **135** | 16 |
-| [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **135** | 15 |
-| [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **44** | 997 |
-| [A000555](seq/A000xxx/A000555/) | Number of labeled trees of diameter 4 with n nodes. | **111** | 24 |
-| [A000556](seq/A000xxx/A000556/) | Expansion of exp(-x) / (1 - exp(x) + exp(-x)). | **103** | 20 |
+| [A000552](seq/A000xxx/A000552/) | Number of labeled rooted trees of height 3 with n nodes. | **128** | 16 |
+| [A000553](seq/A000xxx/A000553/) | Number of labeled rooted trees of height 4 with n nodes. | **128** | 15 |
+| [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **38** | 997 |
+| [A000555](seq/A000xxx/A000555/) | Number of labeled trees of diameter 4 with n nodes. | **85** | 24 |
+| [A000556](seq/A000xxx/A000556/) | Expansion of exp(-x) / (1 - exp(x) + exp(-x)). | **85** | 20 |
 | [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **103** | 201 |
 | [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **86** | 557 |
 | [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **98** | 20 |
