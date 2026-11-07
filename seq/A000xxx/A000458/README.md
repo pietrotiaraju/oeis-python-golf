@@ -5,15 +5,15 @@
 
 Offset 0: 1, 1, 2, 4, 10, 25, 49, 88, 237, 500, …
 
-### Python 3 — 137 bytes
+### Python 3 — 134 bytes
 
 ```python
 def s(n):
- p=2;t=1
- while p*p<=n:
-  a=1
+ p=t=1
+ while p*p<n:
+  p+=1;a=1
   while n%p<1:n//=p;a=a*p+1
-  t*=a;p+=1
+  t*=a
  return t*(n+(n>1))
 a=b=1
 while[print(a)]:a,b=b,s(a)+s(b)
@@ -21,47 +21,30 @@ while[print(a)]:a,b=b,s(a)+s(b)
 
 **How it works**
 
-- σ(m) is the sum of all positive divisors of m, including 1
-  and m itself. If m=∏pᵉ, unique prime factorization gives
-  σ(m)=∏(1+p+…+pᵉ); the function s computes this product.
-- Trial division removes every copy of the current p. Starting
-  with a=1, `a=a*p+1` gives 1+p after one copy, 1+p+p²
-  after two, and so on. Multiply that factor into t only after
-  all copies of p have been removed.
-- The bound `p*p<=n` uses the remaining cofactor n, which shrinks
-  during factorization. Once the bound fails, the cofactor is either
-  1 or a prime of exponent 1, whose divisor sum is n+1.
-  This explains the conditional final multiplication.
-- For m=1 the loop is empty and s returns 1, the correct σ(1).
-  Composite trial values of p extract nothing after all their
-  smaller prime factors have already been removed.
-- At the print, a and b are consecutive sequence values, initially
-  a(0)=a(1)=1. The simultaneous assignment
-  `a,b=b,s(a)+s(b)` advances to the next pair while both
-  function calls still read the old values.
-- For example a(2)=1+1=2, a(3)=σ(1)+σ(2)=1+3=4,
-  and a(4)=σ(2)+σ(4)=3+7=10. Both initial ones are printed.
-
-- After trial division, the remaining n is 1 or a prime. The
-  factor `n+(n>1)` is respectively 1 or n+1, combining the
-  exhausted-factor case and the final prime's divisor sum.
+- **σ by trial division.** For m = ∏ pᵉ, σ(m) = ∏ (1 + p + … + pᵉ). The
+  inner loop strips every factor p from n and builds 1 + p + … + pᵉ in
+  `a` by `a=a*p+1` (Horner), and `t` collects the product. Composite
+  trial divisors find nothing left to divide.
+- **The bound.** The loop tests p + 1 while p² < n, with n the cofactor
+  still left. So every p′ with p′² ≤ n is tried (then (p′−1)² < n), and
+  when the loop stops every prime factor of n is above p ≥ √n: n is 1 or
+  a prime, whose factor is n + 1. `n+(n>1)` gives 1 or n + 1.
+- **The recurrence.** `a, b` are a(n), a(n+1); the tuple assignment reads
+  both before overwriting them. The `a` inside `s` is local.
+- `print` sits in the loop condition: it returns `None`, and `[None]` is a
+  non-empty list, so the loop never ends (the [A000007](../A000007/) loop).
 
 **Notes**
 
-- Exact integer factorization and the multiplicative divisor-sum
-  identity prove every recurrence update. No approximate prime
-  test, fixed-width arithmetic or precomputed answer table is used.
-- The variable a inside s is local to that function; it does not
-  overwrite the outer sequence state with the same name.
-- Only the consecutive pair and temporary factorization state are
-  stored. Trial division can require O(√m) steps on a large prime
-  input m, so later terms become expensive even while their decimal
-  representations remain manageable.
-- The next iteration recomputes the divisor sum of the value just
-  shifted into a. Caching it could save work, at the cost of more
-  state and code; the present program favors the shorter recurrence.
-- The b-file has 101 terms (indices 0 through 100). The bar is the
-  first 40 terms in 10 s.
+- Other versions that print the same terms: the loop condition `p*p<=n`
+  with `p=2` and the increment at the end of the body, the first
+  version: 137 bytes. Without the √n bound (`while n>1:`) the function
+  is 12 bytes shorter but has to reach the largest prime factor, about
+  10¹⁰ already for a(0)…a(41): far too slow.
+- Exact integer arithmetic, so the program is right for every n.
+- The first 44 terms print in about 1.7 s here; a(44) needs σ(a(43)) and
+  σ(a(42)) by trial division and does not come within 30 s. The b-file
+  has 101 terms (up to a(100)); the bar is 40 terms in 10 s.
 
 ## History
 
@@ -69,6 +52,7 @@ while[print(a)]:a,b=b,s(a)+s(b)
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 146 | first entry |
 | 2026-11-06 | Python 3 | 137 | combine the remaining-prime and exhausted-factor cases |
+| 2026-11-07 | Python 3 | 134 | `p*p<n` tests p+1 before the increment |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -5,70 +5,61 @@
 
 Offset 1: 1, 2, 3, 5, 6, 7, 8, 10, 11, 13, …
 
-### Python 3 — 156 bytes
+Each term is the least integer above the previous one that is not the
+third term of a geometric progression x, y, n (y² = x·n, x < y, any
+rational ratio) with x and y earlier terms.
+
+### Python 3 — 83 bytes
 
 ```python
-def f(n):
- p=2
- while p*p<=n:
-  e=0
-  while n%p<1:n//=p;e+=1
-  while e:
-   if e%3==2:return 0
-   e//=3
-  p+=1
- return 1
-n=1
-while 1:
- if f(n):print(n)
- n+=1
+S=[];E={n:=0}
+while n:=n+1:
+ if{n}-E:print(n);E|={n*n//a*(n*n%a<1)for a in S};S+=n,
 ```
 
 **How it works**
 
-- Rankin's set, identified with the greedy set by Brown and Gordon
-  (references on the OEIS page), consists of integers whose prime
-  exponents have only digits 0 and 1 in base 3.
-- To see why it avoids progressions, a geometric progression would
-  make the three exponents of every prime an arithmetic progression.
-  Three numbers with only 0/1 ternary digits cannot form a nonconstant
-  arithmetic progression: reducing a+c=2b modulo 3 forces their
-  last digits to agree, and removing that digit repeats the argument.
-- Conversely, for an excluded integer, let δ_p be the sum of the
-  powers of 3 at the digit-2 positions of each prime exponent e_p.
-  Both e_p−δ_p and e_p−2δ_p have only 0/1 digits. The two
-  smaller integers with those exponents are already accepted and,
-  together with the excluded integer, form a geometric progression.
-- In `f`, trial division extracts e, the exponent of each p.
-  `e%3==2` rejects a forbidden digit; `e//=3` shifts to the
-  next digit. The function returns 1 only after every extracted
-  exponent has passed.
-- Once p²>n, the remaining factor is 1 or a prime with exponent 1,
-  which is allowed. The n modified inside f is local; the outer
-  increasing candidate counter is unchanged.
+- **The definition, run directly.** S lists the terms so far and E holds
+  every number that is the third term of a progression a, b, b²/a with
+  a < b both in S. A new candidate n is the largest number seen, so it
+  can only be the last term of a progression with two earlier terms; it
+  is a term exactly when n ∉ E.
+- **Updating E.** When n is accepted, the progressions with n as the
+  middle term are a, n, n²/a for the earlier terms a that divide n²;
+  `n*n//a*(n*n%a<1)` is n²/a for those and 0 for the others (0 is
+  already in E, and is never a candidate). Every pair a < b of terms is
+  handled when b is accepted, and b²/a > b, so E is complete for every
+  later candidate.
+- `{n}-E` is the empty set, which is false, exactly when n ∈ E (4 bytes
+  under `n not in E`). `E={n:=0}` starts E as {0} and n at 0 in one
+  statement.
 
 **Notes**
 
-- Exact integer factorization and digit tests, with no conjectural
-  shortcut. For example 4=2² fails, 8=2³ passes (3=10 in base 3),
-  and 16=2⁴ passes (4=11 in base 3).
-- The value 1 has no prime factors, so the tests are vacuously true
-  and it is printed first. Squarefree integers also pass because
-  their nonzero exponents are all 1.
-- Testing all possible divisors, including composites, costs at most
-  O(√n) trial steps per candidate. After smaller factors are removed,
-  a composite trial divisor extracts no additional prime factors.
-- Only the current candidate and its temporary factorization state
-  are stored; the program does not retain earlier accepted integers
-  or test every pair for a geometric progression.
-- The b-file has 10000 terms (indices 1 through 10000). The bar is the
-  whole b-file in 60 s.
+- Other versions that print the same terms:
+  - the filter in the comprehension,
+    `E|={n*n//a for a in S if n*n%a<1}`: 84 bytes and about twice as fast
+    (the bar in 17 s instead of 30 s), since non-divisors add nothing to
+    the set;
+  - the characterization below with trial division (each prime exponent
+    tested digit by digit in base 3): 119 bytes, and the original
+    156-byte version of it.
+- The terms are the integers whose prime exponents all have only the
+  digits 0 and 1 in base 3 (Rankin 1961 showed this set has no 3-term
+  geometric progression and has density 0.7197…; Brown and Gordon showed
+  it is the greedy sequence; McNew's comment on the entry). The program
+  does not use this; it follows the definition.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file's 10000 terms (up to 13886) take about 30 s here; each new
+  term scans all earlier ones. The b-file has 10000 terms (up to
+  a(10000)); the bar is the whole b-file in 60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 156 | first entry |
+| 2026-11-07 | Python 3 | 83 | greedy definition with a set of excluded numbers |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
