@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f. exp(tan(x) + sec(x) - 1).",
+  "offset": 0,
+  "min_terms": 479,
+  "timeout": 60
+}
