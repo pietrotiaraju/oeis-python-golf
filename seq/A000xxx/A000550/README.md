@@ -47,7 +47,8 @@ while[n>-16or print((sum(map(int.__mul__,Z,Z[::-1]))+Z[-n//2])//2)]:
 **Notes**
 
 - Other versions: updating `Z` after the two passes (so `Z=0,0,0`, `Z[1-n//2]`
-  and one more line) is 182 bytes; a plain list of R with the middle term as
+  and one more line) is 182 bytes; `import math` with `math.sumprod(Z,Z[::-1])`
+  for the convolution is 181; a plain list of R with the middle term as
   `n//2%2*R[-n//4+1]` was 187.
 - Exact integer arithmetic, so the program is right for every n.
 - The whole b-file prints in under 0.1 s, and about 4000 terms in 60 s here

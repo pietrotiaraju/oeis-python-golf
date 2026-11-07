@@ -1,5 +1,2 @@
-*L,n=0,0,3
-while 1:
- t=(3**n+3)//6-2**~-n;L=[t]+[t:=t+len(L)*L.pop(0)for _ in L*1]
- print(t)
- n+=1
+L=[c:=0,e:=0]
+while 1:L=[s:=(c:=3*c+(e:=e-~e))]+[s:=s+len(L)*L.pop(0)for _ in L*1];print(s)

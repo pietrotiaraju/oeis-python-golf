@@ -1,5 +1,2 @@
-*L,n=0,2
-while 1:
- t=2**~-n-1;L=[t]+[t:=t+len(L)*L.pop(0)for _ in L*1]
- print(t)
- n+=1
+L=[0]
+while 1:L=[s:=~-2**len(L)]+[s:=s+len(L)*L.pop(0)for _ in L*1];print(s)
