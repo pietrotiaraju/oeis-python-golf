@@ -5,6 +5,8 @@
 
 Offset 1: 1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920, …
 
+τ(n) is the coefficient of xⁿ in x·Π_{k≥1} (1 − x^k)²⁴.
+
 ### Python 3 — 83 bytes
 
 ```python
@@ -14,34 +16,32 @@ while[print(a[-1])]:n-=1;a+=24*sum(d*sum(a[d::d])for d in range(n,0))//-n,
 
 **How it works**
 
-- Ramanujan's generating function is
-  Σₘ≥₁τ(m)xᵐ=x∏ₖ≥₁(1−xᵏ)²⁴. Write
-  A(x)=∏ₖ≥₁(1−xᵏ)²⁴=Σₘ≥₀a(m)xᵐ; then a(m)=τ(m+1).
-- Formal logarithmic differentiation gives
-  xA′(x)/A(x)=−24Σₖ≥₁kxᵏ/(1−xᵏ). Comparing coefficients yields
+- **The recurrence.** Let A(x) = Π_{k≥1} (1 − x^k)²⁴ = Σ_m a(m)·x^m, so
+  τ(m+1) = a(m). The logarithmic derivative is
+  x·A′(x)/A(x) = −24 Σ_{k≥1} k·x^k/(1 − x^k) = −24 Σ_{t≥1} σ(t)·x^t, and
+  comparing coefficients of x^m gives
 
-  **m·a(m)=−24Σₖ₌₁ᵐ k·Σⱼ₌₁^⌊m/k⌋ a(m−jk)**.
+  m·a(m) = −24 Σ_{k=1}^{m} k·(a(m−k) + a(m−2k) + a(m−3k) + …),
 
-- The list begins with a(0)=1. Before computing coefficient m,
-  it contains a(0),…,a(m−1), and the code's n is −m.
-  For d=−k, `a[d::d]` supplies a(m−k),a(m−2k),… .
-- The sum over negative d is the negative of the positive-k sum.
-  Multiplying it by 24 and dividing by −n=m therefore gives
-  a(m) with exactly the required sign. The division is exact
-  because A is an integer-coefficient product.
-- Print the newest coefficient before each update. The initial 1
-  is τ(1), so the output begins at the OEIS offset 1.
+  which is −24 Σ_t σ(t)·a(m−t) grouped by the divisor k of t. The right side
+  is m·a(m) exactly, so the floor division by m is exact.
+- **Negative steps.** The list `a` holds a(0), …, a(m−1) and n = −m. For
+  d = −k the slice `a[d::d]` is a(m−k), a(m−2k), …, so `d*sum(a[d::d])` is
+  −k times the inner sum; the minus signs of d and of −24 cancel against
+  `//-n`, which divides by m.
+- `*a,n=1,0` sets a = [a(0)] = [1] and n = 0. `print(a[-1])` in the loop
+  condition prints τ(1) = 1 first and then each new coefficient.
 
 **Notes**
 
-- All operations use signed integers; there is no floating point
-  approximation, integer factorization or table of known tau values.
-- One coefficient list is stored. The slice sums use O(m log m)
-  entries per new coefficient, with exact cancellation. This trades
-  the sparse triangular recurrence for shorter source.
-- Python's integer-to-string conversion limit can eventually apply.
-- The reference file has 16091 terms. The unchanged verification
-  bar is 5000 terms in 60 s; every term produced is checked.
+- Other versions that print the same terms: counting n up with `n+=1`,
+  `range(-n,0)` and `//n`: also 83 bytes; `a=[1]` with `len(a)` in place of
+  n: 85 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The slices cost about m·ln m additions for a(m): about 7800 terms in 60 s
+  here. The b-file has 16091 terms; the bar is 5000 terms in 60 s.
+- |τ(n)| ≤ d(n)·n^(11/2) (Deligne), so the 4300-digit int-to-str limit is
+  out of reach.
 
 ## History
 
