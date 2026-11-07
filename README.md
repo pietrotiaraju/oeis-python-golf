@@ -437,12 +437,12 @@ sequence for the code and how it works.
 | [A000421](seq/A000xxx/A000421/) | Number of isomorphism classes of connected 3-regular (trivalent,… | **247** | 3 |
 | [A000422](seq/A000xxx/A000422/) | Concatenation of numbers from n down to 1. | **38** | 150 |
 | [A000423](seq/A000xxx/A000423/) | a(n) is smallest number > a(n-1) of form a(i)\*a(j), i < j < n. | **44** | 49 |
-| [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **86** | 16 |
+| [A000424](seq/A000xxx/A000424/) | Differences of reciprocals of unity. | **56** | 16 |
 | [A000425](seq/A000xxx/A000425/) | Coefficients of ménage hit polynomials. | **57** | 22 |
-| [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **81** | 100 |
-| [A000427](seq/A000xxx/A000427/) | Number of 7-dimensional partitions of n. | **167** | 7 |
-| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **111** | 1000 |
-| [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **129** | 200 |
+| [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **63** | 100 |
+| [A000427](seq/A000xxx/A000427/) | Number of 7-dimensional partitions of n. | **147** | 7 |
+| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **109** | 1000 |
+| [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **123** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
 | [A000432](seq/A000xxx/A000432/) | Series-parallel numbers. | **184** | 38 |
