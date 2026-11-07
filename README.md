@@ -765,6 +765,7 @@ sequence for the code and how it works.
 | [A000752](seq/A000xxx/A000752/) | Boustrophedon transform of powers of 2. | **62** | 401 |
 | [A000753](seq/A000xxx/A000753/) | Boustrophedon transform of Catalan numbers. | **78** | 401 |
 | [A000754](seq/A000xxx/A000754/) | Boustrophedon transform of odd numbers. | **62** | 401 |
+| [A000755](seq/A000xxx/A000755/) | No-3-in-line problem on n X n grid: total number of ways of placing… | **172** | 7 |
 | [A000756](seq/A000xxx/A000756/) | Boustrophedon transform of sequence 1,1,0,0,0,0,... | **60** | 401 |
 | [A000757](seq/A000xxx/A000757/) | Number of cyclic permutations of [n] with no i -> i+1 (mod n). | **43** | 201 |
 | [A000759](seq/A000xxx/A000759/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **119** | 11 |
@@ -776,6 +777,7 @@ sequence for the code and how it works.
 | [A000766](seq/A000xxx/A000766/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 6 |
 | [A000767](seq/A000xxx/A000767/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 5 |
 | [A000768](seq/A000xxx/A000768/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 4 |
+| [A000769](seq/A000xxx/A000769/) | No-3-in-line problem: number of inequivalent ways of placing 2n… | **256** | 7 |
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |
 | [A000771](seq/A000xxx/A000771/) | Stirling numbers of second kind, S(n,7). | **63** | 194 |
 | [A000772](seq/A000xxx/A000772/) | E.g.f. exp(tan(x) + sec(x) - 1). | **83** | 479 |

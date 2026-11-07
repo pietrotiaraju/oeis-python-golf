@@ -1,0 +1,6 @@
+{
+  "name": "No-3-in-line problem on n X n grid: total number of ways of placing 2n points on n X n grid so no 3 are in a line. No symmetries are taken into account.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}

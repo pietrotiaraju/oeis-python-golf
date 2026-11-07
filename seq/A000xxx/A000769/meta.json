@@ -1,0 +1,6 @@
+{
+  "name": "No-3-in-line problem: number of inequivalent ways of placing 2n points on an n X n grid so that no 3 are in a line.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
