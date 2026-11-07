@@ -1,0 +1,6 @@
+{
+  "name": "n-th superior highly composite number A002201(n) is product of first n terms of this sequence.",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 120
+}
