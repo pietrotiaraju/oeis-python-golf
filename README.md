@@ -713,6 +713,7 @@ sequence for the code and how it works.
 | [A000698](seq/A000xxx/A000698/) | A problem of configurations: a(0) = 1; for n>0, a(n) = (2n-1)!! -… | **78** | 201 |
 | [A000699](seq/A000xxx/A000699/) | Number of irreducible chord diagrams with 2n nodes. | **75** | 405 |
 | [A000700](seq/A000xxx/A000700/) | Expansion of Product\_{k>=0} (1 + x^(2k+1)); number of partitions of n… | **71** | 600 |
+| [A000701](seq/A000xxx/A000701/) | One half of number of non-self-conjugate partitions; also half of… | **79** | 1900 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
