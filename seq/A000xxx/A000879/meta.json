@@ -1,0 +1,6 @@
+{
+  "name": "Number of primes < prime(n)^2.",
+  "offset": 1,
+  "min_terms": 48,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of primes <= product of first n primes, A002110(n).",
+  "offset": 0,
+  "min_terms": 7,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of twin prime pairs < square of n-th prime.",
+  "offset": 1,
+  "min_terms": 44,
+  "timeout": 60
+}

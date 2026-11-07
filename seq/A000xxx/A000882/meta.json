@@ -1,0 +1,6 @@
+{
+  "name": "Number of twin prime pairs <= product of first n primes.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}

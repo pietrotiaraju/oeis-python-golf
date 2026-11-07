@@ -1,0 +1,6 @@
+{
+  "name": "Deceptive nonprimes: composite numbers k that divide the repunit R_{k-1}.",
+  "offset": 1,
+  "min_terms": 58,
+  "timeout": 60
+}
