@@ -1,0 +1,6 @@
+{
+  "name": "Permanent of the Desarguesian projective plane PG(2,n), or 0 if such plane does not exist.",
+  "offset": 0,
+  "min_terms": 5,
+  "timeout": 60
+}
