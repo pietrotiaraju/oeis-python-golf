@@ -5,54 +5,48 @@
 
 Offset 1: 0, 1, 8, 78, 944, 13800, 237432, 4708144, 105822432, 2660215680, …
 
-### Python 3 — 75 bytes
+### Python 3 — 72 bytes
 
 ```python
 n=1
 while 1:
  a=0;f=1
- for k in range(n-1,0,-1):f*=k;a=a*n+f
+ for j in range(1,n):f*=n-j;a=a*n+f
  print(a);n+=1
 ```
 
 **How it works**
 
-- The OEIS formula is a(n)=(n−1)!·Σₖ₌₀ⁿ⁻² nᵏ/k!.
-  Expanding the factorial ratio makes every summand an integer,
-  but computing each factorial separately would repeat work.
-- Horner's rule evaluates the polynomial in n from its highest
-  power down. With k descending from n−1 to 1, the update `f*=k`
-  makes f=(n−1)!/(k−1)!, and `a=a*n+f` incorporates the
-  coefficient of n^(k−1).
-- For n=4, the successive pairs (f,a) are (3,3), (6,18),
-  (6,78). This is 3!·(1+4+4²/2!)=78, with no rational
-  intermediate values.
-- At n=1 the loop is empty and the accumulator stays 0, the correct
-  normalized total height of a one-node tree. For each larger n,
-  `a=0;f=1` starts a fresh Horner evaluation.
+- The formula a(n) = (n−1)!·Σ_{k=0}^{n−2} nᵏ/k! from the OEIS page, with
+  k = n − 1 − j, is the polynomial Σ_{j=1}^{n−1} f_j·n^(n−1−j) in n with
+  integer coefficients f_j = (n−1)!/(n−1−j)! = (n−1)(n−2)···(n−j).
+- Horner's rule evaluates it from the top power down: in pass j, `f*=n-j`
+  turns f into f_j and `a=a*n+f` appends that coefficient. For n = 4 the
+  pairs (f, a) are (3, 3), (6, 18), (6, 78), and 78 = 3!·(1 + 4 + 4²/2!).
+- At n = 1 the loop is empty and a(1) = 0 is printed.
 
 **Notes**
 
-- This is Luschny's integer Horner algorithm, linked on the OEIS
-  page. It uses n−1 inner iterations and constant-size accumulator
-  state, apart from the growing integers themselves.
-- The exact factorial sum proves correctness beyond the reference
-  values. Python 3.11+ eventually stops when output exceeds its
-  default 4300-digit conversion limit, an interpreter limit.
-- **Reference-file correction.** The repository's b-file restores
-  leading digits missing from the downloaded OEIS values at indices
-  841, 846, 857, 858, 859, 929, 936, 938, 939, 940 and 941.
-  As recorded when the sequence was added, the repaired values were
-  checked against both the factorial sum and this integer algorithm;
-  the other reference values are unchanged.
-- The b-file has 1000 terms (indices 1 through 1000). The bar is the
-  whole b-file in 60 s.
+- Counting k down, `for k in range(n-1,0,-1):f*=k;a=a*n+f`: 75 bytes. The
+  Horner loop as a walrus comprehension on one line,
+  `a=0;f=1;[a:=a*n+(f:=f*(n-j))for j in range(1,n)];print(a);n+=1`: 74. The
+  sum with `math.perm(n-1,j)*n**(n+~j)`: 85, and too slow for the bar.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file in this repository differs from the one on the OEIS site: the
+  OEIS file has lost leading digits at n = 841, 846, 857, 858, 859, 929, 936,
+  938, 939, 940 and 941, and the repository's values there agree with the
+  formula above.
+- The b-file has 1000 terms (up to a(1000)); the bar is the whole b-file in
+  60 s, which takes about a second here.
+- a(1372) is the first term with more than 4300 digits, so Python's
+  int-to-str limit stops the printing there, after about 3 s here.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 75 | first entry |
+| 2026-11-07 | Python 3 | 72 | Horner counter j with `f*=n-j` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
