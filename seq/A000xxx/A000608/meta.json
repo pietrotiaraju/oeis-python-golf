@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected partially ordered sets with n unlabeled elements.",
+  "offset": 0,
+  "min_terms": 7,
+  "timeout": 60
+}

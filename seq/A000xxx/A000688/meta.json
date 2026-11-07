@@ -1,0 +1,6 @@
+{
+  "name": "Number of Abelian groups of order n; number of factorizations of n into prime powers.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of groups of order 2^n.",
+  "offset": 0,
+  "min_terms": 5,
+  "timeout": 60
+}
