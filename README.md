@@ -772,6 +772,7 @@ sequence for the code and how it works.
 | [A000780](seq/A000xxx/A000780/) | a(n) = (n+1)!/2 + (n-1)(n-1)!. | **41** | 200 |
 | [A000781](seq/A000xxx/A000781/) | a(n) = 3\*Catalan(n) - Catalan(n-1) - 1. | **46** | 1657 |
 | [A000782](seq/A000xxx/A000782/) | a(n) = 2\*Catalan(n) - Catalan(n-1). | **46** | 1000 |
+| [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
