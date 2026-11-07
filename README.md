@@ -847,8 +847,10 @@ sequence for the code and how it works.
 | [A000837](seq/A000xxx/A000837/) | Number of partitions of n into relatively prime parts. Also aperiodic… | **131** | 6500 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
 | [A000839](seq/A000xxx/A000839/) | Number of n-input 3-output switching networks under action of… | **47** | 6 |
+| [A000840](seq/A000xxx/A000840/) | Number of cubic bicolored graphs on n unlabeled nodes admitting an… | **388** | 20 |
 | [A000841](seq/A000xxx/A000841/) | Number of n-input 2-output switching networks under action of… | **162** | 7 |
 | [A000842](seq/A000xxx/A000842/) | Number of n-input 3-output switching networks under action of… | **162** | 6 |
+| [A000843](seq/A000xxx/A000843/) | Number of quartic bicolored graphs on n unlabeled nodes admitting an… | **388** | 16 |
 | [A000844](seq/A000xxx/A000844/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000845](seq/A000xxx/A000845/) | Number of switching networks (see Harrison reference for precise… | **225** | 7 |
 | [A000846](seq/A000xxx/A000846/) | a(n) = C(3n,n) - C(2n,n). | **64** | 201 |
