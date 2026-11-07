@@ -1,0 +1,6 @@
+{
+  "name": "Hamilton numbers.",
+  "offset": 1,
+  "min_terms": 14,
+  "timeout": 60
+}

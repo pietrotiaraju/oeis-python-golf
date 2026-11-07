@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x).",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

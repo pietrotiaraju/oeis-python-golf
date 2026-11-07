@@ -1,0 +1,6 @@
+{
+  "name": "Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+2, n]]. The number of n-orbit permutations of a (2n+2)-set with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind (e.g., Comtet).",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}
