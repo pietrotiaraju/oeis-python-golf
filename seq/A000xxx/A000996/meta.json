@@ -1,0 +1,6 @@
+{
+  "name": "Shifts 3 places left under binomial transform.",
+  "offset": 0,
+  "min_terms": 301,
+  "timeout": 60
+}
