@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform (first version) of Fibonacci numbers 0,1,1,2,3,5,...",
+  "offset": 0,
+  "min_terms": 483,
+  "timeout": 60
+}

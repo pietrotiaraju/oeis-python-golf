@@ -1,0 +1,6 @@
+{
+  "name": "Number of necklaces of partitions of n+1 labeled beads.",
+  "offset": 0,
+  "min_terms": 425,
+  "timeout": 60
+}
