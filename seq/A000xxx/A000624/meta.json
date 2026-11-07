@@ -1,0 +1,6 @@
+{
+  "name": "Number of monosubstituted alkanes C(n)H(2n+1)-X of the form shown in the Comments lines that are not stereoisomers.",
+  "offset": 1,
+  "min_terms": 3000,
+  "timeout": 60
+}

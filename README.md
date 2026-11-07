@@ -614,6 +614,16 @@ sequence for the code and how it works.
 | [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
 | [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **193** | 1001 |
 | [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **195** | 1001 |
+| [A000602](seq/A000xxx/A000602/) | Number of n-node unrooted quartic trees; number of n-carbon alkanes… | **185** | 35 |
+| [A000620](seq/A000xxx/A000620/) | Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon… | **156** | 1930 |
+| [A000621](seq/A000xxx/A000621/) | Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon… | **60** | 3000 |
+| [A000622](seq/A000xxx/A000622/) | Number of monosubstituted alkanes C(n)H(2n+1)-X of the form shown in… | **170** | 1930 |
+| [A000623](seq/A000xxx/A000623/) | Number of monosubstituted alkanes C(n)H(2n+1)-X of the form shown in… | **186** | 1930 |
+| [A000624](seq/A000xxx/A000624/) | Number of monosubstituted alkanes C(n)H(2n+1)-X of the form shown in… | **93** | 3000 |
+| [A000625](seq/A000xxx/A000625/) | Number of n-node steric rooted ternary trees; number of n carbon… | **118** | 1931 |
+| [A000626](seq/A000xxx/A000626/) | Number of stereoisomeric paraffins with n carbon atoms. | **232** | 36 |
+| [A000627](seq/A000xxx/A000627/) | Number of non-stereoisomeric paraffins with n carbon atoms. | **102** | 42 |
+| [A000628](seq/A000xxx/A000628/) | Number of n-node unrooted steric quartic trees; number of n-carbon… | **160** | 39 |
 | [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
 | [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
