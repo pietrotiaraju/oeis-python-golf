@@ -1,3 +1,2 @@
-from math import*
-a=n=0
-while[a==(a:=sum(1+isqrt(n-x*x)for x in range(isqrt(n)+1)))or print(a)]:n+=1
+a=n=0;S={0}
+while[a<(a:=a+len(S&{n-s for s in S}))!=print(a)]:n+=1;S|={n*n}
