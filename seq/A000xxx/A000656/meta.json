@@ -1,0 +1,6 @@
+{
+  "name": "Invertible Boolean functions of n variables with S(n) acting on the domain and GL(n,2) acting on the range.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}

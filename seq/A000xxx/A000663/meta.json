@@ -1,0 +1,6 @@
+{
+  "name": "Number of binary relations on an infinite set, each with exactly n ordered pairs, up to isomorphism.",
+  "offset": 0,
+  "min_terms": 7,
+  "timeout": 60
+}
