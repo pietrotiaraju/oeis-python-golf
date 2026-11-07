@@ -570,11 +570,11 @@ sequence for the code and how it works.
 | [A000554](seq/A000xxx/A000554/) | Number of labeled trees of diameter 3 with n nodes. | **38** | 997 |
 | [A000555](seq/A000xxx/A000555/) | Number of labeled trees of diameter 4 with n nodes. | **85** | 24 |
 | [A000556](seq/A000xxx/A000556/) | Expansion of exp(-x) / (1 - exp(x) + exp(-x)). | **85** | 20 |
-| [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **103** | 201 |
-| [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **86** | 557 |
-| [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **98** | 20 |
-| [A000560](seq/A000xxx/A000560/) | Number of symmetric ways of folding a strip of n labeled stamps. | **172** | 8 |
-| [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **43** | 998 |
+| [A000557](seq/A000xxx/A000557/) | Expansion of e.g.f. 1/(1 - 2\*sinh(x)). | **85** | 201 |
+| [A000558](seq/A000xxx/A000558/) | Generalized Stirling numbers of second kind. | **76** | 557 |
+| [A000559](seq/A000xxx/A000559/) | Generalized Stirling numbers of second kind. | **91** | 20 |
+| [A000560](seq/A000xxx/A000560/) | Number of symmetric ways of folding a strip of n labeled stamps. | **158** | 8 |
+| [A000561](seq/A000xxx/A000561/) | Number of discordant permutations. | **40** | 998 |
 | [A000562](seq/A000xxx/A000562/) | Number of discordant permutations. | **65** | 36 |
 | [A000563](seq/A000xxx/A000563/) | Number of discordant permutations. | **70** | 29 |
 | [A000564](seq/A000xxx/A000564/) | Number of discordant permutations. | **94** | 25 |
