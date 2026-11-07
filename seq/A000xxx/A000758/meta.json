@@ -1,0 +1,6 @@
+{
+  "name": "Sum over rooted plane trees with n edges of (height - 1); height = measured edges.",
+  "offset": 1,
+  "min_terms": 600,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of [1,2,...,n] with n-1 inversions.",
+  "offset": 1,
+  "min_terms": 420,
+  "timeout": 15
+}

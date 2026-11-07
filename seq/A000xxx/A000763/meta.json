@@ -1,0 +1,6 @@
+{
+  "name": "Number of interval orders constructed from n intervals of generic lengths.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
