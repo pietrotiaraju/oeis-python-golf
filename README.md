@@ -920,12 +920,20 @@ sequence for the code and how it works.
 | [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
 | [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
+| [A000945](seq/A000xxx/A000945/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of… | **60** | 14 |
+| [A000946](seq/A000xxx/A000946/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor… | **76** | 8 |
+| [A000959](seq/A000xxx/A000959/) | Lucky numbers. | **83** | 14000 |
+| [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
+| [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
 | [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
+| [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
+| [A000978](seq/A000xxx/A000978/) | Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime. | **66** | 10 |
+| [A000979](seq/A000xxx/A000979/) | Wagstaff primes: primes of form (2^p + 1)/3. | **68** | 10 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |
 | [A000996](seq/A000xxx/A000996/) | Shifts 3 places left under binomial transform. | **64** | 301 |

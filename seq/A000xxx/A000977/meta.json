@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are divisible by at least three different primes.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

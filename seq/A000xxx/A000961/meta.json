@@ -1,0 +1,6 @@
+{
+  "name": "Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k >= 1).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
