@@ -791,6 +791,7 @@ sequence for the code and how it works.
 | [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
 | [A000790](seq/A000xxx/A000790/) | Primary pretenders: least composite c such that n^c == n (mod c). | **66** | 10001 |
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
+| [A000793](seq/A000xxx/A000793/) | Landau's function g(n): largest order of permutation of n elements.… | **116** | 80 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000797](seq/A000xxx/A000797/) | Numbers that are not the sum of 4 tetrahedral numbers. | **121** | 241 |
