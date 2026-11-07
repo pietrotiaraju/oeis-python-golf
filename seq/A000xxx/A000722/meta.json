@@ -1,0 +1,6 @@
+{
+  "name": "Number of invertible Boolean functions of n variables: a(n) = (2^n)!.",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}
