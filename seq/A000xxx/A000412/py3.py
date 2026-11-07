@@ -1,6 +1,2 @@
-a=[1];n=b=c=0;Q=[0]*2,[0]*3
-while 1:
- b+=a[-1];c+=b;t=b
- for L in Q:L+=[t:=t+L.pop(0)]
- print(b+c+t)
- n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
+*a,n=1,0;S=[];M=int.__mul__
+while[print(sum(map(M,(3,1,-1,-2,-1,1),a)))]:n+=1;S+=sum(d<<(d<4)for d in range(1,n+1)if n%d<1),;a=[sum(map(M,S,a))//n]+a

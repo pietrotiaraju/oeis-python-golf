@@ -416,17 +416,17 @@ sequence for the code and how it works.
 | [A000399](seq/A000xxx/A000399/) | Unsigned Stirling numbers of first kind s(n,3). | **54** | 410 |
 | [A000400](seq/A000xxx/A000400/) | Powers of 6: a(n) = 6^n. | **24** | 101 |
 | [A000401](seq/A000xxx/A000401/) | Numbers of form x^2 + y^2 + 2\*z^2. | **48** | 1000 |
-| [A000402](seq/A000xxx/A000402/) | Number of permutations of [n] in which the longest increasing run has… | **129** | 452 |
+| [A000402](seq/A000xxx/A000402/) | Number of permutations of [n] in which the longest increasing run has… | **126** | 452 |
 | [A000404](seq/A000xxx/A000404/) | Numbers that are the sum of 2 nonzero squares. | **73** | 10000 |
 | [A000405](seq/A000xxx/A000405/) | Number of 6-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A000406](seq/A000xxx/A000406/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A000407](seq/A000xxx/A000407/) | a(n) = (2\*n+1)! / n!. | **33** | 101 |
 | [A000408](seq/A000xxx/A000408/) | Numbers that are the sum of three nonzero squares. | **88** | 10000 |
 | [A000409](seq/A000xxx/A000409/) | Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices… | **129** | 14 |
-| [A000410](seq/A000xxx/A000410/) | Number of singular n X n rational (0,1)-matrices. | **275** | 5 |
+| [A000410](seq/A000xxx/A000410/) | Number of singular n X n rational (0,1)-matrices. | **214** | 5 |
 | [A000411](seq/A000xxx/A000411/) | Generalized tangent numbers d(6,n). | **90** | 184 |
-| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **152** | 10001 |
-| [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **302** | 31 |
+| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **149** | 10001 |
+| [A000413](seq/A000xxx/A000413/) | Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 <= n}, V(n) = (4/3)\*Pi\*n^(3/2),… | **298** | 31 |
 | [A000414](seq/A000xxx/A000414/) | Numbers that are the sum of 4 nonzero squares. | **71** | 10000 |
 | [A000415](seq/A000xxx/A000415/) | Numbers that are the sum of 2 but no fewer nonzero squares. | **82** | 10000 |
 | [A000416](seq/A000xxx/A000416/) | Number of 6-dimensional partitions of n. | **143** | 7 |

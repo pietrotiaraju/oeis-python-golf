@@ -10,58 +10,61 @@ identical black ones. A fixed black total reduces the two-variable
 product to the ordinary partition series and a fixed collection of
 rational filters, combined directly without a polynomial convolution.
 
-### Python 3 — 152 bytes
+a(n) is the number of ways to write the vector (n, 3) as an unordered sum
+of nonzero vectors (i, j) with nonnegative integer entries: i white and j
+black objects per part. For example a(0) = 3, from (0,3), (0,2) + (0,1)
+and (0,1) + (0,1) + (0,1).
+
+### Python 3 — 149 bytes
 
 ```python
-a=[1];n=b=c=0;Q=[0]*2,[0]*3
-while 1:
- b+=a[-1];c+=b;t=b
- for L in Q:L+=[t:=t+L.pop(0)]
- print(b+c+t)
- n-=1;a+=sum(d*sum(a[d::d])for d in range(n,0))//n,
+*a,n=1,0;S=[];M=int.__mul__
+while[print(sum(map(M,(3,1,-1,-2,-1,1),a)))]:n+=1;S+=sum(d<<(d<4)for d in range(1,n+1)if n%d<1),;a=[sum(map(M,S,a))//n]+a
 ```
 
 **How it works**
 
-- A part is a pair (i,j) of nonnegative white and black counts,
-  not both zero. Since parts form a multiset, their bivariate
-  generating function is ∏_((i,j)≠(0,0))(1−xⁱyʲ)⁻¹.
-- Let P(x)=∏ᵢ≥₁(1−xⁱ)⁻¹ and D_r(x)=∏ᵢ₌₁ʳ(1−xⁱ).
-  Euler's q-binomial identity shows that a partition of the fixed
-  black total with m_j parts of size j contributes
-  P(x)/∏ⱼD_(m_j)(x). Write H_r=P/D_r.
-- The black partitions 3, 2+1 and 1+1+1 give
-  **P(x)(1/D₁+1/D₁²+1/D₃)=H₁+H₁/(1−x)+H₃**.
-- b is the coefficient stream H₁, updated by adding the next
-  ordinary partition number. The accumulator c is H₁/(1−x).
-  Starting from t=b, the two queues of lengths 2 and 3 produce
-  H₃. Their sum `b+c+t` is the requested coefficient.
-- Each queue L of length r implements division by 1−xʳ:
-  the current output is the input plus the output r steps earlier.
-  `pop(0)` retrieves that earlier value, and the updated value is
-  appended to the queue. All queues start with zeros.
-- The ordinary partition numbers in a use the logarithmic derivative
-  of P:
+- The generating function is [y³] Π_{(i,j)≠(0,0)} 1/(1 − xⁱyʲ). The parts
+  with j = 0 give P(x) = Π_{i≥1} 1/(1 − xⁱ). For each j ≥ 1, Euler's
+  identity Π_{i≥0} 1/(1 − z·xⁱ) = Σ_m z^m/D_m(x), with z = yʲ and
+  D_m(x) = (1 − x)(1 − x²)…(1 − x^m), turns m parts of black size j into a
+  factor 1/D_m. The black partitions 3, 2 + 1 and 1 + 1 + 1 of 3 therefore
+  give
 
-  **m·p(m)=Σₖ₌₁ᵐ k·Σⱼ₌₁^⌊m/k⌋ p(m−jk)**.
+  Σ a(n)xⁿ = P·(1/D₁ + 1/D₁² + 1/D₃) = H·(3 + x − x² − 2x³ − x⁴ + x⁵),
 
-  Before the append, n=−m and d=−k; `a[d::d]` contains
-  p(m−k),p(m−2k),… . The two minus signs cancel in the quotient.
-  Starting from p(0)=1 generates the exact partition stream.
+  with H = P/D₃: the polynomial is (1 − x²)(1 − x³) + (1 + x)(1 − x³) + 1.
+- H counts partitions in which the parts 1, 2, 3 come in two kinds, so
+  H = Π_k (1 − x^k)^(−w(k)) with w(k) = 2 for k ≤ 3 and 1 otherwise. Its
+  logarithmic derivative gives, for m ≥ 1,
+
+  m·h(m) = Σ_{k=1}^{m} c(k)·h(m − k),  c(k) = Σ_{d | k} d·w(d).
+
+- With n = m, `d<<(d<4)` is d·w(d), so the new entry of `S` is c(m).
+- `S` = [c(1), …, c(m)] and `a` = [h(m−1), …, h(0)] (new values are put in
+  front), so `sum(map(M,S,a))` is m·h(m) and `//n` is an exact division.
+  `M=int.__mul__` names the multiplication used by both `map` calls.
+- The header prints Σ qᵢ·h(m − i) for the coefficients
+  `(3,1,-1,-2,-1,1)` of the polynomial: `map` stops at the shorter
+  argument, which drops exactly the terms h(m − i) with m − i < 0.
 
 **Notes**
 
-- Every step is an exact formal-series identity. The finite black
-  cases above explain all constants and coefficients in the code.
-- One growing list stores ordinary partition numbers; the rational
-  filters need only queues of fixed lengths and cumulative totals.
-  No history of the final filtered stream is stored.
-- The divisor recurrence uses O(m log m) entries for coefficient m,
-  plus large-integer arithmetic. The source is shorter, with more
-  arithmetic per partition coefficient than the pentagonal recurrence.
-- Python's integer-to-string conversion limit can eventually apply.
-- The b-file has 10001 terms. The unchanged verification bar is
-  the complete reference file in 60 s.
+- The slice form of the same recurrence,
+  `*a,n=1,0` / `while[print(sum(map(int.__mul__,(3,1,-1,-2,-1,1),a[::-1])))]:n-=1;a+=sum(sum(a[d::d])*d<<(d>-4)for d in range(n,0))//n,`,
+  is 128 bytes, but it adds about m·ln m slice entries per term instead
+  of m products and prints only about 8600 terms in 60 s here, short of
+  the bar (the previous 152-byte program, built the same way, about 8100).
+  With n = −m, `range(n,0)`, `n%d>-1` (for d < 0, `n%d` lies in (d, 0])
+  and `d<<(d>-4)` the program is also 149 bytes.
+- Exact integer arithmetic and exact divisions, so the program is right
+  for every n.
+- The whole b-file (10001 terms) prints in about 32 s here.
+- The b-file has 10001 terms (up to a(10000)); the bar is the whole b-file
+  in 60 s.
+- a(10000) has 112 digits and a(n) has roughly 1.1·√n digits, so the
+  4300-digit limit only comes near n = 1.5·10⁷, far beyond this O(n²)
+  scan.
 
 ## History
 
@@ -70,6 +73,7 @@ while 1:
 | 2026-11-06 | Python 3 | 275 | first entry |
 | 2026-11-06 | Python 3 | 261 | use sumprod on padded coefficient history and combine queue updates |
 | 2026-11-06 | Python 3 | 152 | sum the black-partition cases directly and use the divisor recurrence |
+| 2026-11-07 | Python 3 | 149 | H = P/D₃ by divisor-sum convolution, times a degree-5 polynomial |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
