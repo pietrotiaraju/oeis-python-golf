@@ -1,7 +1,2 @@
 r=[n:=0,1]
-while 1:
- m=-n
- if m>=2:
-  B=m**m+1;M=B**(m+1);S=sum(r[j]*B**j for j in range(1,m+1))
-  print(S*S*(2-S)*pow(1-S,-3,M)//B**m%B)
- n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,
+while 1:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,;X=99**-n;T=0;[T:=T*X+c for c in r];V=X**-~-n;print(V*T*T*(2*V-T)//(V-T)**3%X)

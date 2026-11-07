@@ -1,6 +1,2 @@
-A=[1,n:=1]
-while 1:
- if n>3:
-  B=1<<((n+2)**2);M=B**(n+1);S=sum(A[j]*B**j for j in range(1,n+1))
-  print(4*(13+14*S+3*S*S)*(1+S)*pow(1-S,-7,M)//B**(n-4)%B)
- n+=1;A+=sum(sum(A[-d::-d])*d*A[d]for d in(1,*range(1,n)))//n,
+L=[n:=1,1]
+while 1:X=99**n;Q=0;[Q:=Q*X+c for c in L];print(4*Q*(3*Q*Q+8*Q+2)*pow(2-Q,-7,X**n)//X**~-n%X);n+=1;L=[sum(sum(L[d-1::d])*d*L[~d]for d in(1,*range(1,n)))//n]+L
