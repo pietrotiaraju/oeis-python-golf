@@ -925,6 +925,7 @@ sequence for the code and how it works.
 | [A000918](seq/A000xxx/A000918/) | a(n) = 2^n - 2. | **26** | 1001 |
 | [A000919](seq/A000xxx/A000919/) | a(n) = 4^n - C(4,3)\*3^n + C(4,2)\*2^n - C(4,1). | **42** | 201 |
 | [A000920](seq/A000xxx/A000920/) | Differences of 0: 6!\*Stirling2(n,6). | **58** | 1000 |
+| [A000925](seq/A000xxx/A000925/) | Number of ordered ways of writing n as a sum of 2 squares of… | **60** | 10001 |
 | [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **117** | 65 |
 | [A000930](seq/A000xxx/A000930/) | Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) =… | **37** | 5001 |
 | [A000931](seq/A000xxx/A000931/) | Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with… | **39** | 8181 |
@@ -936,6 +937,8 @@ sequence for the code and how it works.
 | [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
 | [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
+| [A000957](seq/A000xxx/A000957/) | Fine's sequence (or Fine numbers): number of relations of valence >=… | **54** | 1671 |
+| [A000958](seq/A000xxx/A000958/) | Number of ordered rooted trees with n edges having root of odd degree. | **55** | 1000 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000966](seq/A000xxx/A000966/) | n! never ends in this many 0's. | **48** | 10000 |
@@ -949,6 +952,7 @@ sequence for the code and how it works.
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
+| [A000992](seq/A000xxx/A000992/) | "Half-Catalan numbers": a(n) = Sum\_{k=1..floor(n/2)} a(k)\*a(n-k) with… | **72** | 2500 |
 | [A000993](seq/A000xxx/A000993/) | Number of distinct quadratic residues mod 10^n; also number of… | **49** | 1001 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |

@@ -1,0 +1,6 @@
+{
+  "name": "\"Half-Catalan numbers\": a(n) = Sum_{k=1..floor(n/2)} a(k)*a(n-k) with a(1) = 1.",
+  "offset": 1,
+  "min_terms": 2500,
+  "timeout": 60
+}
