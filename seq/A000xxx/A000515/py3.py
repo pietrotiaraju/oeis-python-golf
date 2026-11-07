@@ -1,2 +1,2 @@
-n=0;a=1
-while[print(a)]:n+=1;a=a*4*(4*n*n-1)//(n*n)
+a=n=1
+while[print(a)]:a=16*a-4*a//n//n;n+=1
