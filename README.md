@@ -922,6 +922,11 @@ sequence for the code and how it works.
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
 | [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
+| [A000937](seq/A000xxx/A000937/) | Length of longest simple cycle without chords in the n-dimensional… | **144** | 6 |
+| [A000938](seq/A000xxx/A000938/) | Number of collinear point-triples in an n X n grid. | **109** | 500 |
+| [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
+| [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
+| [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |

@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-gons with n vertices.",
+  "offset": 3,
+  "min_terms": 498,
+  "timeout": 60
+}

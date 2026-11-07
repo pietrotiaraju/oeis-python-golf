@@ -1,0 +1,6 @@
+{
+  "name": "Number of combinatorial types of simplicial n-dimensional polytopes with n+3 nodes.",
+  "offset": 1,
+  "min_terms": 34,
+  "timeout": 60
+}
