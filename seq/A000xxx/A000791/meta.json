@@ -1,0 +1,6 @@
+{
+  "name": "Ramsey numbers R(3,n).",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 120
+}
