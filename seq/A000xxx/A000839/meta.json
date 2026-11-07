@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-input 3-output switching networks under action of complementing group on the inputs and outputs.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
