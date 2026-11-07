@@ -812,6 +812,7 @@ sequence for the code and how it works.
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
 | [A000800](seq/A000xxx/A000800/) | Sum of upward diagonals of Eulerian triangle. | **84** | 601 |
+| [A000802](seq/A000xxx/A000802/) | Maximal number of states in the minimal deterministic finite… | **74** | 3301 |
 | [A000808](seq/A000xxx/A000808/) | Number of switching networks (see Harrison reference for precise… | **39** | 12 |
 | [A000809](seq/A000xxx/A000809/) | Number of switching networks (see Harrison reference for precise… | **42** | 9 |
 | [A000823](seq/A000xxx/A000823/) | Number of switching networks (see Harrison reference for precise… | **42** | 7 |

@@ -1,0 +1,6 @@
+{
+  "name": "Maximal number of states in the minimal deterministic finite automaton accepting a language over a binary alphabet consisting of some words of length n.",
+  "offset": 0,
+  "min_terms": 3301,
+  "timeout": 60
+}
