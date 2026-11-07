@@ -5,39 +5,46 @@
 
 Offset 3: 1, 3, 46, 6552, 11270400, 335390189568, 224382967916691456, 4292039421591854273003520, 2905990310033882693113989027594240, …
 
-### Python 3 — 279 bytes
+A k × n Latin rectangle has rows that are permutations of 0, …, n−1 and no
+repeated symbol in any column; it is normalized when its first row and first
+column are in natural order. Here k = n − 2.
+
+### Python 3 — 163 bytes
 
 ```python
-from functools import*
 from itertools import*
-n=2
-while 1:
- n+=1;Q=list(permutations(range(n)))
- f=cache(lambda r,C:r>n-3or sum(f(r+1,tuple(C[j]|1<<p[j]for j in range(n)))for p in Q if p[0]==r and all(~C[j]>>p[j]&1 for j in range(n))))
- print(+f(1,tuple(1<<j for j in range(n))))
+n=3
+while[print(sum(all(len({*c})>n-3for c in zip(range(n),*R))for R in product(*[permutations({*range(n)}-{i})for i in range(n-3)])))]:n+=1
 ```
 
 **How it works**
 
-- A normalized Latin rectangle has its first row and first column in
-  natural order. Start with the first row 0,1,…,n−1.
-- Each further row is a permutation whose first entry is its row index.
-  Column bit masks forbid any symbol already used in that column.
-- `f` counts all completions, memoized by row count and column masks.
-  A000573 stops after four rows; A000576 stops after n−2 rows.
-  The terminal Boolean counts as one in sums; complementing a column
-  mask before shifting tests whether the proposed symbol is still unused.
-- Unary `+` also converts the terminal Boolean to the integer 1 for the
-  first case, which already consists of the normalized first row.
-- The initial n is chosen so the first output has the OEIS offset.
-  No quotient by row permutations is applied: row positions are fixed.
+- The [A000573](../A000573/) search with k = n − 2 rows instead of 4. It
+  counts the rectangles whose first row is 0, …, n−1 and whose last column
+  is (n−1, 0, 1, …, n−4). For a symbol permutation π with π(0) = n−1 and
+  π(r) = r − 1 for 1 ≤ r ≤ n − 3, the map L ↦ L′ with
+  L′[r][c] = π(L[r][π⁻¹(c)]) keeps the first row in natural order and turns
+  the first column (0, 1, …, n−3) into that last column, so the two counts
+  agree.
+- Each of the n − 3 lower rows is an arrangement of the symbols other than
+  its last entry i in the columns 0, …, n−2,
+  `permutations({*range(n)}-{i})` for i in `range(n-3)`. `product` runs over
+  all choices, `zip(range(n),*R)` lists the columns under the first row, and
+  a choice counts when every column has n − 2 distinct entries,
+  `len({*c})>n-3`.
+- For n = 3 there are no lower rows: `product()` yields one empty choice,
+  every column holds one entry, and the count is 1.
 
 **Notes**
 
-- This is exhaustive Latin rectangle generation using exact counts.
-  The search grows quickly; the bar covers the first three terms.
-- The reference file contains 9 terms from the OEIS b-file; the verification
-  bar is 3 terms in 60 s.
+- Other versions that print the same terms: the memoized row-by-row search
+  with column bit masks: 279 bytes.
+- Exact counting, so the program is right for every n (it is an exhaustive
+  search).
+- a(3), …, a(6) take about 8 s here; a(7) would need (6!)⁴ ≈ 2.7·10¹¹
+  choices, so a 60-s run prints 4 terms. The b-file has 9 terms (up to
+  a(11)); the bar is 3 terms in 60 s.
+- The run never gets near 4300-digit terms.
 
 ## History
 
@@ -45,6 +52,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 302 | first entry |
 | 2026-11-06 | Python 3 | 279 | cached completion expression and complemented column masks |
+| 2026-11-07 | Python 3 | 163 | fix the last column, product of permutations of n − 1 symbols |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
