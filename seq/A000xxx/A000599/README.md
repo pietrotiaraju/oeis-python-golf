@@ -5,52 +5,43 @@
 
 Offset 0: 0, 0, 0, 1, 1, 3, 6, 15, 33, 82, …
 
-### Python 3 — 193 bytes
+### Python 3 — 149 bytes
 
 ```python
 from math import*
-A=1,;*C,n=0,
-print(0)
-while 1:
- C+=sumprod(A,A[::-1]),
- A+=(sumprod(C,A[::-1])+3*sumprod(A[:n//2+1],A[::-2])+2*(n%3<1)*A[n//3])//6,
- print((C[n]+(n%2<1)*A[n//2])//2-A[n]);n+=1
+L=1,;g=b=n=0
+while[print(g-b)]:b=L[-1];L+=(g:=sumprod(L,L[::-1])+L[3*n]>>1)+L[3*n],;L+=*[0]*4,(sumprod(L,L[::-1])+2*L[2*n])//6;n+=1
 ```
 
 **How it works**
 
-- Let A(x) count rooted alkyl radicals, including A₀=1 for the empty
-  branch. Pólya's S₃ cycle index gives
-  A(x)=1+x(A(x)³+3A(x)A(x²)+2A(x³))/6.
-- `C[n]` is the coefficient of A(x)². The next update uses this cached
-  square to obtain Aₙ₊₁ with two one-dimensional convolutions.
-- Write H₂(A)=(A(x)²+A(x²))/2 and H₃(A)=(A(x)³+3A(x)A(x²)+2A(x³))/6.
-  Two nonempty unordered branches have series H₂(A)−A; three have
-  H₃(A)−H₂(A). Adding the central carbon contributes one factor x.
-- A000598 prints Aₙ. A000599 and A000600 first print their zero
-  constant term, then print respectively `[x^n](H₂(A)−A)` and
-  Aₙ₊₁−[x^n]H₂(A). Removing the empty branch enforces secondary
-  and tertiary alcohols rather than primary ones.
-
-- The coefficient lists in the first two convolutions have length
-  n+1. `sumprod(A,A[::-1])` gives [x^n]A(x)² and
-  `sumprod(C,A[::-1])` gives [x^n]A(x)³ after the square
-  coefficient is appended.
-- For A(x)A(x²), pair A₀,…,A_⌊n/2⌋ with
-  Aₙ,Aₙ₋₂,… . Before appending Aₙ₊₁, these are exactly
-  `A[:n//2+1]` and `A[::-2]`, whose lengths agree.
-  All inputs are integers, so all three dot products are exact.
-- A is a tuple of the radical coefficients; the starred assignment
-  initializes an empty square-coefficient list C and counter n=0.
+- Let B(x) count alkyl radicals, with B₀ = 1 for a hydrogen. Pólya's S₃
+  cycle index gives B = 1 + x·S₃(B), S₃(F) = (F(x)³ + 3F(x)F(x²) + 2F(x³))/6.
+  Write S₂(F) = (F(x)² + F(x²))/2.
+- Cache K = (B² + 3B(x²))/2 instead of B²: then B·K + B(x³) = 3·S₃(B), so
+  Bₙ₊₁ = ([xⁿ]B·K + [xⁿ]B(x³))/3 needs one convolution once K is known,
+  and Kₙ itself needs only [xⁿ]B².
+- One tuple `L` interleaves both series: L[6e] = Bₑ, L[6e+1] = Kₑ, zeros
+  elsewhere. `L[3*n]` and `L[2*n]` are [xⁿ]B(x²) and [xⁿ]B(x³) (those
+  indices never land on a K slot), and `sumprod(L,L[::-1])` adds L[i]·L[j]
+  over i + j = len(L) − 1: when L ends with Bₙ it is [xⁿ]B² (a K slot
+  would need a partner in the empty slot 5), and right after Kₙ is
+  appended it is 2[xⁿ]B·K. So one dot product serves both convolutions,
+  and Bₙ₊₁ = (2[xⁿ]B·K + 2[xⁿ]B(x³))/6 is appended after four zeros.
+- A secondary carbon carries two nonempty radicals: a(n+1) = [xⁿ](S₂(B) − B),
+  a(0) = 0. The walrus keeps gₙ = [xⁿ]S₂(B) = ([xⁿ]B² + [xⁿ]B(x²))/2 (so
+  Kₙ = gₙ + [xⁿ]B(x²)) and `b` keeps Bₙ; the loop header prints the
+  previous g − b, which starts at 0 = a(0).
 
 **Notes**
 
-- Cycle-index divisions are exact orbit counts. There is no
+- Exact integer arithmetic: B² ≡ B(x²) (mod 2) makes the halving exact,
+  and the division by 6 returns the integer Bₙ₊₁ = [xⁿ]S₃(B). There is no
   stereochemical distinction, matching the OEIS definitions.
-- Caching the square reduces the per-term work to O(n) arithmetic
-  operations. Large integer output eventually meets Python's limit.
+- O(n) operations per term; Python's 4300-digit limit for printing
+  integers would stop it near n ≈ 9500.
 - The reference file contains 1001 terms from the OEIS b-file; the verification
-  bar is 1001 terms in 60 s.
+  bar is 1001 terms in 60 s (the program needs about 2 s here).
 
 ## History
 
@@ -58,6 +49,7 @@ while 1:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 224 | first entry |
 | 2026-11-06 | Python 3 | 193 | use exact sumprod convolutions and compact coefficient initialization |
+| 2026-11-07 | Python 3 | 149 | cache K = (B²+3B(x²))/2 and interleave B, K in one tuple |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
