@@ -915,10 +915,12 @@ sequence for the code and how it works.
 | [A000905](seq/A000xxx/A000905/) | Hamilton numbers. | **92** | 14 |
 | [A000906](seq/A000xxx/A000906/) | Exponential generating function: 2\*(1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
 | [A000907](seq/A000xxx/A000907/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+2, n]].… | **51** | 16 |
+| [A000908](seq/A000xxx/A000908/) | Atom-rooted polyenoids with n edges with symmetry class C\_s. | **117** | 27 |
 | [A000909](seq/A000xxx/A000909/) | a(n) = (2\*n)!\*(2\*n+1)! / n!^2. | **37** | 101 |
 | [A000910](seq/A000xxx/A000910/) | a(n) = 5\*binomial(n, 6). | **49** | 900 |
 | [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
 | [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
+| [A000913](seq/A000xxx/A000913/) | Number of bond-rooted polyenoids with n edges. | **107** | 25 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000915](seq/A000xxx/A000915/) | Stirling numbers of first kind s(n+4, n). | **63** | 1000 |
 | [A000917](seq/A000xxx/A000917/) | a(n) = (2n+3)!/(n!\*(n+2)!). | **44** | 201 |
@@ -931,11 +933,18 @@ sequence for the code and how it works.
 | [A000932](seq/A000xxx/A000932/) | a(n) = a(n-1) + n\*a(n-2); a(0) = a(1) = 1. | **40** | 800 |
 | [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
 | [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
+| [A000935](seq/A000xxx/A000935/) | Number of free planar polyenoids with 2n nodes and symmetry point… | **284** | 6 |
+| [A000936](seq/A000xxx/A000936/) | Number of free planar polyenoids with n nodes and symmetry point… | **278** | 11 |
 | [A000937](seq/A000xxx/A000937/) | Length of longest simple cycle without chords in the n-dimensional… | **144** | 6 |
 | [A000938](seq/A000xxx/A000938/) | Number of collinear point-triples in an n X n grid. | **109** | 500 |
 | [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
 | [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
+| [A000941](seq/A000xxx/A000941/) | Number of free planar polyenoids with n nodes and symmetry point… | **279** | 11 |
+| [A000942](seq/A000xxx/A000942/) | Number of free planar polyenoids with n nodes. | **236** | 11 |
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
+| [A000947](seq/A000xxx/A000947/) | Number of free nonplanar polyenoids with n nodes and symmetry point… | **283** | 6 |
+| [A000948](seq/A000xxx/A000948/) | Number of free nonplanar polyenoids with n nodes and symmetry point… | **284** | 6 |
+| [A000953](seq/A000xxx/A000953/) | Number of free nonplanar polyenoids with n nodes. | **250** | 6 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000966](seq/A000xxx/A000966/) | n! never ends in this many 0's. | **48** | 10000 |
@@ -949,6 +958,7 @@ sequence for the code and how it works.
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
+| [A000988](seq/A000xxx/A000988/) | Number of one-sided polyominoes with n cells. | **174** | 12 |
 | [A000993](seq/A000xxx/A000993/) | Number of distinct quadratic residues mod 10^n; also number of… | **49** | 1001 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |
