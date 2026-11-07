@@ -5,55 +5,47 @@
 
 Offset 3: 1, 0, 10, 40, 315, 2464, 22260, 222480, 2447445, 29369120, …
 
-### Python 3 — 59 bytes
+### Python 3 — 54 bytes
 
 ```python
-a=1;n=3
-while[print(a)]:n+=1;a=n*a-(-1)**n*n*(n-1)*(n-2)//6
+d=m=0;c=1
+while[print(c*(d:=d*m^1))]:m+=1;c=c*(m+3)//m
 ```
 
 **How it works**
 
-- Choose the 3 fixed points, then derange the remaining n−3
-  elements: a(n)=C(n,3)·D(n−3), where D(m) is the
-  derangement number and D(0)=1.
-- Use D(m)=m·D(m−1)+(−1)ᵐ and
-  (n−3)C(n,3)=n·C(n−1,3). This gives
-
-  **a(n)=n·a(n−1)−(−1)ⁿ·C(n,3).**
-
-- Initialize n=3, a=1, the identity on 3 elements.
-  Increment n before the update, then multiply the previous term
-  by the new n and apply the alternating correction.
-- The first update gives a(4)=0: a permutation cannot
-  have just one nonfixed point. The next gives
-  a(5)=C(5,3)=10, since
-  the remaining two elements must be exchanged.
-
-- `n*(n-1)*(n-2)//6` expands C(n,3) without an import.
-  The signed product is always divisible by 6, including when
-  it is negative, so floor division makes no rounding error.
+- Choose the 3 fixed points and derange the other n − 3 elements:
+  a(n) = C(n, 3)·D(n−3), with D the derangement numbers
+  [A000166](../A000166/). The loop runs m = n − 3 = 0, 1, 2, …
+- `d` is D(m) by the [A000166](../A000166/) update: D(m) = m·D(m−1) +
+  (−1)^m, and m·D(m−1) has the parity of m (D(k) ≡ k+1 (mod 2) by
+  induction), so adding (−1)^m is the same as `^1`. At m = 0 the update
+  gives 0^1 = 1 = D(0) whatever d was, so the walrus inside the print
+  starts the sequence with no separate first term.
+- `c` is C(m+3, 3): C(m+3, 3) = C(m+2, 3)·(m+3)/m, and `c*(m+3)//m` is
+  exact because the quotient is the next binomial coefficient.
+- `while[print(…)]:` prints first in every pass, so the product
+  printed with m = 0 is C(3,3)·D(0) = 1 = a(3).
 
 **Notes**
 
-- Exact integer arithmetic from the derangement recurrence. Only
-  the current term and its index are stored, rather than a list
-  of all derangement numbers.
-- [A000475](../A000475/) is the same construction with
-  four fixed points. The correction's
-  sign changes with the parity of the fixed-point count because
-  (−1)^(n−k)=(−1)ⁿ(−1)ᵏ.
-- Factorial growth eventually meets Python 3.11+'s default
-  4300-digit integer-to-string limit, an interpreter limit rather
-  than a failure of the recurrence.
-- The b-file has 98 terms (indices 3 through 100). The bar is the
-  whole b-file in 60 s.
+- The recurrence a(n) = n·a(n−1) − (−1)ⁿ·C(n,3), as
+  `a=1;n=3` / `while[print(a)]:n+=1;a=n*a-(-1)**n*n*(n-1)*(n-2)//6`, is 59
+  bytes. Building C(m+3, 3) by running sums (`b-=~m;c+=b`) ties at 54.
+  [A000475](../A000475/) (4 fixed points) would take the same program
+  with `c*(m+4)//m`.
+- Exact integer arithmetic, so the program is right for every n.
+- The whole b-file prints at once. The b-file has 98 terms (up to
+  a(100)); the bar is the whole b-file in 60 s.
+- a(1558) has 4299 digits and a(1559) more than 4300, so the int-to-str
+  limit stops the printing after a(1558).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 59 | first entry |
+| 2026-11-07 | Python 3 | 54 | C(m+3,3)·D(m) with the start-early `d*m^1` walrus |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

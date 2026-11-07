@@ -1,2 +1,2 @@
-a=1;n=3
-while[print(a)]:n+=1;a=n*a-(-1)**n*n*(n-1)*(n-2)//6
+d=m=0;c=1
+while[print(c*(d:=d*m^1))]:m+=1;c=c*(m+3)//m

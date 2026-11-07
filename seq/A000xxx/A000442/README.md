@@ -5,43 +5,40 @@
 
 Offset 0: 1, 1, 8, 216, 13824, 1728000, 373248000, 128024064000, 65548320768000, 47784725839872000, …
 
-### Python 3 — 36 bytes
+### Python 3 — 34 bytes
 
 ```python
-a=1;n=0
-while[print(a)]:n+=1;a*=n**3
+a=n=1
+while[print(a)]:a*=n**3;n+=1
 ```
 
 **How it works**
 
-- Start with a=(0!)³=1 and n=0. After printing, increase n and
-  multiply a by n³. Since (n!)³=n³·((n−1)!)³, the invariant
-  a=(n!)³ holds at every subsequent print.
-- Incrementing before multiplication matters: using the old initial
-  n=0 would set a to zero permanently. The actual first update
-  multiplies by 1 and supplies the second 1 in the sequence.
-- `while[print(a)]` prints in the condition; the one-element list
-  remains true after `print` returns `None`.
+- a holds (k!)³ for the k just printed and n = k+1, so `a*=n**3` makes it
+  ((k+1)!)³. The start a = n = 1 prints (0!)³ = 1 and then multiplies by
+  1³ for (1!)³ = 1; one chained `a=n=1` is shorter than `a=1;n=0` with the
+  increment before the product.
+- `while[print(a)]:` prints first in every pass: the one-element list
+  holding print's `None` is truthy.
 
 **Notes**
 
-- Exact integer multiplication, with no factorial recomputation or
-  division. Only the current term and its index are stored.
-- The first distinct multipliers are 1³, 2³, 3³, …; for example,
-  the update from 8 to 216 multiplies by 27.
-- Cubing a running factorial would need a separate output expression;
-  accumulating the cubed factors directly keeps the stored value
-  equal to the term being printed.
-- Factorial growth eventually reaches Python 3.11+'s default
-  4300-digit integer-to-string limit, an interpreter limit.
-- The b-file has 101 terms (indices 0 through 100). The bar is the
-  whole b-file in 60 s.
+- Same length: a running factorial cubed on output, `f=n=1` /
+  `while[print(f**3)]:f*=n;n+=1`. The previous `a=1;n=0` /
+  `while[print(a)]:n+=1;a*=n**3` is 36 bytes, and a start-early walrus
+  `while[print(a:=a*n**3or 1)]:n+=1` 38.
+- Exact integer arithmetic, so the program is right for every n.
+- The whole b-file prints at once. The b-file has 101 terms (up to
+  a(100)); the bar is the whole b-file in 60 s.
+- a(609) has 4300 digits and a(610) more, so the int-to-str limit stops
+  the printing after a(609).
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 36 | first entry |
+| 2026-11-07 | Python 3 | 34 | `a=n=1` start, multiply after printing |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
