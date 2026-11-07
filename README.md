@@ -915,10 +915,12 @@ sequence for the code and how it works.
 | [A000905](seq/A000xxx/A000905/) | Hamilton numbers. | **92** | 14 |
 | [A000906](seq/A000xxx/A000906/) | Exponential generating function: 2\*(1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
 | [A000907](seq/A000xxx/A000907/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+2, n]].… | **51** | 16 |
+| [A000908](seq/A000xxx/A000908/) | Atom-rooted polyenoids with n edges with symmetry class C\_s. | **117** | 27 |
 | [A000909](seq/A000xxx/A000909/) | a(n) = (2\*n)!\*(2\*n+1)! / n!^2. | **37** | 101 |
 | [A000910](seq/A000xxx/A000910/) | a(n) = 5\*binomial(n, 6). | **49** | 900 |
 | [A000911](seq/A000xxx/A000911/) | a(n) = (2n+3)! /( n! \* (n+1)! ). | **41** | 201 |
 | [A000912](seq/A000xxx/A000912/) | Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x). | **58** | 201 |
+| [A000913](seq/A000xxx/A000913/) | Number of bond-rooted polyenoids with n edges. | **107** | 25 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000915](seq/A000xxx/A000915/) | Stirling numbers of first kind s(n+4, n). | **63** | 1000 |
 | [A000917](seq/A000xxx/A000917/) | a(n) = (2n+3)!/(n!\*(n+2)!). | **44** | 201 |
@@ -952,6 +954,7 @@ sequence for the code and how it works.
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
+| [A000988](seq/A000xxx/A000988/) | Number of one-sided polyominoes with n cells. | **174** | 12 |
 | [A000992](seq/A000xxx/A000992/) | "Half-Catalan numbers": a(n) = Sum\_{k=1..floor(n/2)} a(k)\*a(n-k) with… | **72** | 2500 |
 | [A000993](seq/A000xxx/A000993/) | Number of distinct quadratic residues mod 10^n; also number of… | **49** | 1001 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
