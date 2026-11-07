@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonnegative solutions to x^2 + y^2 <= n^2.",
+  "offset": 0,
+  "min_terms": 540,
+  "timeout": 60
+}

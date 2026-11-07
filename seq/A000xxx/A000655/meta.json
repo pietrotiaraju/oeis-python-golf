@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = number of letters in a(n-1), a(1) = 1 (in English).",
+  "offset": 1,
+  "min_terms": 80,
+  "timeout": 60
+}

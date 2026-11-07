@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonnegative solutions to x^2 + y^2 + z^2 <= n.",
+  "offset": 0,
+  "min_terms": 110,
+  "timeout": 60
+}

@@ -1,0 +1,2 @@
+n=0
+while r:=range(n,1):print(sum(x*x+y*y+z*z<=-n for x in r for y in r for z in r));n-=1
