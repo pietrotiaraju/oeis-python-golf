@@ -1,0 +1,6 @@
+{
+  "name": "Stirling numbers of second kind, S(n,7).",
+  "offset": 7,
+  "min_terms": 194,
+  "timeout": 60
+}
