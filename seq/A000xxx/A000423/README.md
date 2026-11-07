@@ -5,51 +5,46 @@
 
 Offset 1: 2, 3, 6, 12, 18, 24, 36, 48, 54, 72, …
 
-### Python 3 — 79 bytes
+### Python 3 — 44 bytes
 
 ```python
-a=[];s={2,3}
-while s:
- n=min(s);s.remove(n);print(n);s|={n*x for x in a};a+=[n]
+n=1
+while 1:n+=1;6**n%n|n%6*(n>3)or print(n)
 ```
 
 **How it works**
 
-- a holds the terms already printed. The frontier s contains the seeds
-  2 and 3 until used, together with all distinct products of two
-  different earlier positions that have not yet been printed.
-- Choose `n=min(s)`, remove it, and print it. Every newly available
-  product uses this n and one old term, so `s|={n*x for x in a}`
-  adds exactly the new possibilities.
-- Append n to a only after forming those products. This enforces i<j:
-  the program cannot form n·n using the same position twice. A square
-  can still be allowed if two different sequence values multiply to it.
-- Every factor is at least 2. New products therefore exceed n and
-  cannot disturb the increasing order. A set merges products reached
-  in different ways, so no value is printed twice.
-- The seeds print first, then 6=2·3, 12=2·6 and 18=3·6.
-  Neither 4=2² nor 9=3² is initially available under the distinct-index
-  rule.
+- The terms are 2, 3 and all 2^a·3^b with a, b ≥ 1 (David W. Wilson's comment
+  on the OEIS page). Proof: call that set S. A product of two different
+  elements of S has both primes 2 and 3, so it lies in S. Conversely
+  6 = 2·3, 2^a·3^b = 2·(2^(a−1)·3^b) for a ≥ 2, and 2·3^b = 3·(2·3^(b−1)) for
+  b ≥ 2, each a product of two different smaller elements of S. With the seeds
+  2 and 3, by induction the sequence lists S in increasing order.
+- So the program scans n = 2, 3, … and prints n when n is 3-smooth and
+  (6 | n or n < 4). `6**n%n` is 0 exactly when n is 3-smooth: n | 6^n needs
+  only primes 2 and 3 and exponents v₂(n), v₃(n) < n.
+- `n%6*(n>3)` is 0 for multiples of 6 and for n = 2, 3, and nonzero for the
+  other 3-smooth numbers (4, 8, 9, 16, 27, …). Both parts are nonnegative,
+  so `|` is 0 iff both are, 3 bytes under ` or `; then `or print(n)` prints.
 
 **Notes**
 
-- The frontier remains nonempty: after the seeds, the old term 2
-  always supplies a future product 2n. Each pass therefore implements
-  the defining least-available-product rule indefinitely.
-- Exact integer products, without a cutoff on candidate size. Through
-  N outputs, N(N−1)/2 pairs have been formed before deduplication;
-  the frontier and repeated `min` scans are the main storage and time
-  costs.
-- Keeping the frontier avoids repeatedly scanning every integer and
-  testing whether it factors into two previous terms.
-- The b-file has 49 terms (indices 1 through 49). The bar is the
-  whole b-file in 60 s.
+- `pow(6,n,n)` instead of `6**n%n`: 48 bytes and much faster (136 terms in
+  20 s here). The direct construction, a set of pending products with
+  `while[print(n:=min(s))]:s=s-{n}|{n*x for x in a};a+=n,`: 67.
+- Exact integer arithmetic, so the program is right for every n.
+- 6^n has n·log₁₀ 6 digits, so each test gets slower: the bar's 49 terms
+  (up to 11664) take about 3 s here, and 67 terms (up to 49152) print in
+  60 s.
+- The b-file has 49 terms (up to a(49) = 11664); the bar is the whole b-file
+  in 60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 79 | first entry |
+| 2026-11-07 | Python 3 | 44 | the terms are 2, 3 and 2^a·3^b (a, b ≥ 1): test n \| 6^n |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

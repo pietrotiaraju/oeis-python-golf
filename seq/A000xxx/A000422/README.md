@@ -5,47 +5,43 @@
 
 Offset 1: 1, 21, 321, 4321, 54321, 654321, 7654321, 87654321, 987654321, 10987654321, …
 
-### Python 3 — 40 bytes
+### Python 3 — 38 bytes
 
 ```python
-s='';n=0
-while 1:print(s:=str(n:=n+1)+s)
+n=s=1
+while[print(s)]:n+=1;s=f'{n}{s}'
 ```
 
 **How it works**
 
-- s holds the decimal text of the previous term. Increment n first,
-  convert it to text, and prepend it: sₙ=str(n)+s_(n−1), with
-  s₀ the empty string. This gives “1”, “21”, “321”, … .
-- The inner walrus `n:=n+1` advances the counter before `str` reads
-  it. The outer `s:=...` retains the new concatenation while passing
-  that same string to `print`.
-- Every component is positive, so there is no leading zero. The
-  printed string is exactly the decimal representation of the required
-  integer; there is no need to construct that integer internally.
-- Crossing a digit boundary needs no special case: from s₉=987654321,
-  prepend “10” to obtain s₁₀=10987654321.
+- a(n) is the decimal text of n followed by that of a(n − 1), so the program
+  keeps the term as a string and prepends the new number:
+  `s=f'{n}{s}'`. Crossing a digit boundary needs nothing special:
+  "10" + "987654321" is a(10).
+- s starts as the integer 1 = a(1). The f-string turns both parts into text,
+  so the first step gives the string '21' and s stays a string from then on;
+  `str(n)+s` would fail on the integer start.
+- `while[print(s)]:` prints in the loop condition: `print` returns `None`
+  and `[None]` is true.
 
 **Notes**
 
-- The new n is prepended as an entire block, preserving the order of
-  its own digits. Reversing the decimal text of “123…n” would give
-  a different result once n has more than one digit.
-- The output length is Σₖ₌₁ⁿ digits(k), of order n·log n. Each
-  concatenation allocates the full new string, and printing also takes
-  time proportional to that output length.
-- The assembled output is never converted to an integer, so Python's
-  4300-digit integer conversion limit does not apply to that string.
-  Compare [A000461](../A000461/) for repeated, rather than descending,
-  concatenation blocks.
-- The b-file has 150 terms (indices 1 through 150). The bar is the
-  whole b-file in 60 s.
+- `s='';n=0` with `while 1:print(s:=str(n:=n+1)+s)`: 40 bytes.
+- The terms are built and printed as strings, never as integers, so the
+  program is right for every n and Python's 4300-digit int-to-str limit does
+  not apply.
+- a(n) has about n·log₁₀ n digits, so the time goes into copying and
+  printing ever longer strings: about 32700 terms in 60 s here (a(32704) has
+  152414 digits).
+- The b-file has 150 terms (up to a(150)); the bar is the whole b-file in
+  60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 40 | first entry |
+| 2026-11-07 | Python 3 | 38 | start from the integer 1 and prepend with an f-string |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
