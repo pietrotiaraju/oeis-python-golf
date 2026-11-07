@@ -1,0 +1,6 @@
+{
+  "name": "Number of 3-uniform hypergraphs on n unlabeled nodes, or equivalently number of relations with 3 arguments on n nodes.",
+  "offset": 0,
+  "min_terms": 15,
+  "timeout": 60
+}

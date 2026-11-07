@@ -623,6 +623,7 @@ sequence for the code and how it works.
 | [A000607](seq/A000xxx/A000607/) | Number of partitions of n into prime parts. | **97** | 13000 |
 | [A000609](seq/A000xxx/A000609/) | Number of threshold functions of n or fewer variables. | **247** | 6 |
 | [A000610](seq/A000xxx/A000610/) | Number of self-complementary Boolean functions of n variables: see… | **224** | 10 |
+| [A000611](seq/A000xxx/A000611/) | Number of normalized Latin squares of order n containing no 2 X 2… | **192** | 7 |
 | [A000612](seq/A000xxx/A000612/) | Number of P-equivalence classes of switching functions of n or fewer… | **175** | 13 |
 | [A000613](seq/A000xxx/A000613/) | Number of Boolean functions of n variables. | **192** | 4 |
 | [A000614](seq/A000xxx/A000614/) | Number of complemented types of Boolean functions of n variables… | **217** | 4 |
@@ -660,12 +661,21 @@ sequence for the code and how it works.
 | [A000649](seq/A000xxx/A000649/) | Number of alkyls C\_{n+15} H\_{2n+10} (Phenan) with n carbon atoms. | **158** | 26 |
 | [A000650](seq/A000xxx/A000650/) | Number of alkyls S C\_{n+4} H\_{2n+4} with n carbon atoms. | **157** | 40 |
 | [A000651](seq/A000xxx/A000651/) | Running time of Takeuchi function. | **124** | 571 |
+| [A000652](seq/A000xxx/A000652/) | Invertible Boolean functions of n variables. | **71** | 7 |
+| [A000653](seq/A000xxx/A000653/) | Invertible Boolean functions of n variables. | **291** | 8 |
+| [A000654](seq/A000xxx/A000654/) | Invertible Boolean functions of n variables. | **306** | 6 |
 | [A000655](seq/A000xxx/A000655/) | a(n) = number of letters in a(n-1), a(1) = 1 (in English). | **28** | 80 |
+| [A000656](seq/A000xxx/A000656/) | Invertible Boolean functions of n variables with S(n) acting on the… | **325** | 4 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
 | [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
 | [A000659](seq/A000xxx/A000659/) | a(n) = 2^a(n-1) + a(n-2). | **37** | 7 |
 | [A000660](seq/A000xxx/A000660/) | Boustrophedon transform of 1,1,2,3,4,5,... | **62** | 401 |
 | [A000661](seq/A000xxx/A000661/) | Shifts 2 places left under boustrophedon transform. | **63** | 481 |
+| [A000662](seq/A000xxx/A000662/) | Number of relations with 3 arguments on n nodes. | **159** | 15 |
+| [A000663](seq/A000xxx/A000663/) | Number of binary relations on an infinite set, each with exactly n… | **182** | 7 |
+| [A000664](seq/A000xxx/A000664/) | Number of graphs with n edges. | **216** | 8 |
+| [A000665](seq/A000xxx/A000665/) | Number of 3-uniform hypergraphs on n unlabeled nodes, or equivalently… | **188** | 15 |
+| [A000666](seq/A000xxx/A000666/) | Number of symmetric relations on n nodes. | **135** | 18 |
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
 | [A000668](seq/A000xxx/A000668/) | Mersenne primes (primes of the form 2^n - 1). | **66** | 15 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |

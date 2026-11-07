@@ -1,0 +1,6 @@
+{
+  "name": "Number of normalized Latin squares of order n containing no 2 X 2 Latin subsquare.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 120
+}
