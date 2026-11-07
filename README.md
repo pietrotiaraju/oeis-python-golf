@@ -822,6 +822,7 @@ sequence for the code and how it works.
 | [A000815](seq/A000xxx/A000815/) | Number of switching networks (see Harrison reference for precise… | **213** | 6 |
 | [A000823](seq/A000xxx/A000823/) | Number of switching networks (see Harrison reference for precise… | **42** | 7 |
 | [A000824](seq/A000xxx/A000824/) | Number of switching networks (see Harrison reference for precise… | **67** | 6 |
+| [A000826](seq/A000xxx/A000826/) | Number of switching networks (see Harrison reference for precise… | **187** | 8 |
 | [A000829](seq/A000xxx/A000829/) | Number of switching networks (see Harrison reference for precise… | **224** | 7 |
 | [A000830](seq/A000xxx/A000830/) | Number of switching networks (see Harrison reference for precise… | **251** | 6 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
@@ -833,6 +834,7 @@ sequence for the code and how it works.
 | [A000846](seq/A000xxx/A000846/) | a(n) = C(3n,n) - C(2n,n). | **64** | 201 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
+| [A000856](seq/A000xxx/A000856/) | Number of n-input 2-output switching networks under the action of… | **189** | 7 |
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
