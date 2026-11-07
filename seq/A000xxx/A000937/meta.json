@@ -1,0 +1,6 @@
+{
+  "name": "Length of longest simple cycle without chords in the n-dimensional hypercube graph. Also called n-coil or closed n-snake-in-the-box problem.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}

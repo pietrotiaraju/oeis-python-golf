@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent n-gons.",
+  "offset": 1,
+  "min_terms": 450,
+  "timeout": 60
+}

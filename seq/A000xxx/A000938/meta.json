@@ -1,0 +1,6 @@
+{
+  "name": "Number of collinear point-triples in an n X n grid.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
