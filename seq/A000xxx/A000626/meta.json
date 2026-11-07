@@ -1,0 +1,6 @@
+{
+  "name": "Number of stereoisomeric paraffins with n carbon atoms.",
+  "offset": 1,
+  "min_terms": 36,
+  "timeout": 60
+}

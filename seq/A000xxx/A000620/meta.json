@@ -1,0 +1,6 @@
+{
+  "name": "Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon atoms that are stereoisomers.",
+  "offset": 1,
+  "min_terms": 1930,
+  "timeout": 60
+}

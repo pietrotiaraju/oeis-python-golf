@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-node unrooted steric quartic trees; number of n-carbon alkanes C(n)H(2n+2) taking stereoisomers into account.",
+  "offset": 0,
+  "min_terms": 39,
+  "timeout": 60
+}
