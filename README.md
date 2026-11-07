@@ -621,6 +621,16 @@ sequence for the code and how it works.
 | [A000605](seq/A000xxx/A000605/) | Number of points of norm <= n in cubic lattice. | **92** | 64 |
 | [A000606](seq/A000xxx/A000606/) | Number of nonnegative solutions to x^2 + y^2 + z^2 <= n. | **89** | 110 |
 | [A000607](seq/A000xxx/A000607/) | Number of partitions of n into prime parts. | **97** | 13000 |
+| [A000609](seq/A000xxx/A000609/) | Number of threshold functions of n or fewer variables. | **247** | 6 |
+| [A000610](seq/A000xxx/A000610/) | Number of self-complementary Boolean functions of n variables: see… | **224** | 10 |
+| [A000612](seq/A000xxx/A000612/) | Number of P-equivalence classes of switching functions of n or fewer… | **175** | 13 |
+| [A000613](seq/A000xxx/A000613/) | Number of Boolean functions of n variables. | **192** | 4 |
+| [A000614](seq/A000xxx/A000614/) | Number of complemented types of Boolean functions of n variables… | **217** | 4 |
+| [A000615](seq/A000xxx/A000615/) | Number of threshold functions of exactly n variables. | **258** | 6 |
+| [A000616](seq/A000xxx/A000616/) | a(-1)=1 by convention; for n >= 0, a(n) = number of irreducible… | **219** | 12 |
+| [A000617](seq/A000xxx/A000617/) | Number of NP-equivalence classes of threshold functions of n or fewer… | **203** | 7 |
+| [A000618](seq/A000xxx/A000618/) | Number of nondegenerate Boolean functions of n variables: For n > 0,… | **221** | 9 |
+| [A000619](seq/A000xxx/A000619/) | NP-equivalence classes of threshold functions of exactly n variables. | **213** | 7 |
 | [A000620](seq/A000xxx/A000620/) | Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon… | **156** | 1930 |
 | [A000621](seq/A000xxx/A000621/) | Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon… | **60** | 3000 |
 | [A000622](seq/A000xxx/A000622/) | Number of monosubstituted alkanes C(n)H(2n+1)-X of the form shown in… | **170** | 1930 |

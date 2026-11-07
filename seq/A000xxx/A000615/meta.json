@@ -1,0 +1,6 @@
+{
+  "name": "Number of threshold functions of exactly n variables.",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 60
+}
