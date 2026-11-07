@@ -1,2 +1,2 @@
-d=m=0;c=1
-while[print(c*(d:=d*m^1))]:m+=1;c=c*(m+3)//m
+a=c=1;n=3
+while[print(a)]:n+=1;c=c*n//(3-n);a=a*n+c

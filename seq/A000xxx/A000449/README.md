@@ -5,35 +5,36 @@
 
 Offset 3: 1, 0, 10, 40, 315, 2464, 22260, 222480, 2447445, 29369120, …
 
-### Python 3 — 54 bytes
+### Python 3 — 51 bytes
 
 ```python
-d=m=0;c=1
-while[print(c*(d:=d*m^1))]:m+=1;c=c*(m+3)//m
+a=c=1;n=3
+while[print(a)]:n+=1;c=c*n//(3-n);a=a*n+c
 ```
 
 **How it works**
 
 - Choose the 3 fixed points and derange the other n − 3 elements:
   a(n) = C(n, 3)·D(n−3), with D the derangement numbers
-  [A000166](../A000166/). The loop runs m = n − 3 = 0, 1, 2, …
-- `d` is D(m) by the [A000166](../A000166/) update: D(m) = m·D(m−1) +
-  (−1)^m, and m·D(m−1) has the parity of m (D(k) ≡ k+1 (mod 2) by
-  induction), so adding (−1)^m is the same as `^1`. At m = 0 the update
-  gives 0^1 = 1 = D(0) whatever d was, so the walrus inside the print
-  starts the sequence with no separate first term.
-- `c` is C(m+3, 3): C(m+3, 3) = C(m+2, 3)·(m+3)/m, and `c*(m+3)//m` is
-  exact because the quotient is the next binomial coefficient.
-- `while[print(…)]:` prints first in every pass, so the product
-  printed with m = 0 is C(3,3)·D(0) = 1 = a(3).
+  [A000166](../A000166/).
+- D(m) = m·D(m−1) + (−1)ᵐ and (n−3)·C(n, 3) = n·C(n−1, 3) give
+  a(n) = n·a(n−1) + (−1)^(n−3)·C(n, 3) = n·a(n−1) − (−1)ⁿ·C(n, 3),
+  starting from a(3) = 1.
+- `c` carries the signed binomial −(−1)ⁿ·C(n, 3), which is 1 at n = 3, so
+  the update is a plain `a=a*n+c`. The step C(n, 3) = C(n−1, 3)·n/(n−3)
+  becomes `c=c*n//(3-n)`: dividing by 3 − n instead of n − 3 flips the
+  sign for free, and the floor division is exact because the quotient is
+  ±C(n, 3), an integer (the [A000475](../A000475/) trick).
+- `while[print(a)]:` prints first in every pass, so a(3) = 1 comes out
+  before the first step.
 
 **Notes**
 
-- The recurrence a(n) = n·a(n−1) − (−1)ⁿ·C(n,3), as
-  `a=1;n=3` / `while[print(a)]:n+=1;a=n*a-(-1)**n*n*(n-1)*(n-2)//6`, is 59
-  bytes. Building C(m+3, 3) by running sums (`b-=~m;c+=b`) ties at 54.
-  [A000475](../A000475/) (4 fixed points) would take the same program
-  with `c*(m+4)//m`.
+- Measured alternatives: C(m+3, 3)·D(m) with m = n − 3, D by the
+  start-early walrus `d:=d*m^1` (m·D(m−1) has the parity of m, so adding
+  (−1)ᵐ is `^1`) and `c=c*(m+3)//m`, 54 bytes, or with C(m+3, 3) built by
+  running sums (`b-=~m;c+=b`), also 54; the recurrence with the sign and
+  binomial written out, `a=n*a-(-1)**n*n*(n-1)*(n-2)//6`, 59.
 - Exact integer arithmetic, so the program is right for every n.
 - The whole b-file prints at once. The b-file has 98 terms (up to
   a(100)); the bar is the whole b-file in 60 s.
@@ -46,6 +47,7 @@ while[print(c*(d:=d*m^1))]:m+=1;c=c*(m+3)//m
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 59 | first entry |
 | 2026-11-07 | Python 3 | 54 | C(m+3,3)·D(m) with the start-early `d*m^1` walrus |
+| 2026-11-07 | Python 3 | 51 | signed binomial step `c*n//(3-n)` in a(n) = n·a(n−1) − (−1)ⁿC(n,3) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
