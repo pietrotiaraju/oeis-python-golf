@@ -1,2 +1,2 @@
-n=0
-while[print(3**n//6-~-2**n//2)]:n+=1
+a=e=0
+while[print(a)]:a=3*a+e//2;e-=~e

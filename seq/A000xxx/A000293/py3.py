@@ -1,3 +1,2 @@
-R=2,3,5,7
-S={frozenset()}
-while[print(len(S))]:S={s|{p}for s in S for p in{1,*{q*r for q in s for r in R}}-s if all(p%r or p//r in s for r in R)}
+P=1,2,3,5,7;D={frozenset()}
+while[print(len(D))]:D={S^{c}for S in D for s in S|{1}for p in P if{c//q for q in P if(c:=s*p)%q<1}<=S^{c}}
