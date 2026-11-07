@@ -775,6 +775,7 @@ sequence for the code and how it works.
 | [A000784](seq/A000xxx/A000784/) | Number of symmetrical planar partitions of n (planar partitions… | **230** | 150 |
 | [A000785](seq/A000xxx/A000785/) | Number of asymmetrical planar partitions of n: planar partitions… | **297** | 150 |
 | [A000786](seq/A000xxx/A000786/) | Number of inequivalent planar partitions of n, when considering them… | **153** | 151 |
+| [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |

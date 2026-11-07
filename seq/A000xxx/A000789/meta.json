@@ -1,0 +1,6 @@
+{
+  "name": "Maximal order of a triangle-free cyclic graph with no independent set of size n.",
+  "offset": 2,
+  "min_terms": 6,
+  "timeout": 120
+}
