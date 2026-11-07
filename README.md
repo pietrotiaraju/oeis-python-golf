@@ -728,8 +728,11 @@ sequence for the code and how it works.
 | [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **214** | 13 |
 | [A000718](seq/A000xxx/A000718/) | Boustrophedon transform of triangular numbers 1,1,3,6,10,... | **70** | 401 |
 | [A000719](seq/A000xxx/A000719/) | Number of disconnected graphs with n nodes. | **213** | 18 |
+| [A000721](seq/A000xxx/A000721/) | Number of NP-equivalence classes of balanced Boolean functions of n… | **263** | 6 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
+| [A000724](seq/A000xxx/A000724/) | Invertible Boolean functions of n variables. | **139** | 6 |
+| [A000725](seq/A000xxx/A000725/) | Invertible Boolean functions of n variables. | **320** | 6 |
 | [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
 | [A000732](seq/A000xxx/A000732/) | Boustrophedon transform of 1 & primes: 1,2,3,5,7,... | **80** | 401 |
 | [A000733](seq/A000xxx/A000733/) | Boustrophedon transform of partition numbers 1, 1, 1, 2, 3, 5, 7, ... | **118** | 483 |
