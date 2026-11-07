@@ -40,12 +40,11 @@ while[print(f(n,[2]*P))]:n+=1;P*=n
   `~k` is −(k+1), so `r+~k` = r−k−1 and `math.gcd(t,~k)` = gcd(t,k+1).
 - `V` is a list over t < P; a new cycle of length l shifts entry t left by
   gcd(t,l), so at a leaf V[t] = 2·F(t), and the main loop keeps P = 2·n!
-  with `P*=n`.
-- P = 2·n! (the loop starts at P = 2). For d = 1, 2, `V[::d]` lists F(0),
-  F(d), …: that is (P/d)/(order of σ^d) full turns of ⟨σ^d⟩, so
-  `sum(V[::d])` = 2·(P/d)·c_d and `sum(V[::d])//P` = 2c₁ for d = 1 and c₂
-  for d = 2: both exponents with one expression. `-1` halves each term,
-  which gives the division by |H| = 2.
+  with `P*=n` (starting from P = 2).
+- For d = 1, 2, `V[::d]` holds 2F(0), 2F(d), …: that is (P/d)/(order of σ^d)
+  full turns of ⟨σ^d⟩, so `sum(V[::d])` = 2·(P/d)·c_d and `sum(V[::d])//P` =
+  2c₁ for d = 1 and c₂ for d = 2: both exponents with one expression. `-1`
+  halves each term, which gives the division by |H| = 2.
 - The floors are exact: at every level the average over Sᵣ and H is the
   number of (Sᵣ × H)-orbits that the permutation already chosen maps to
   themselves (de Bruijn's lemma), an integer, so each `//r` divides exactly,
