@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 4^n - C(4,3)*3^n + C(4,2)*2^n - C(4,1).",
+  "offset": 1,
+  "min_terms": 201,
+  "timeout": 60
+}
