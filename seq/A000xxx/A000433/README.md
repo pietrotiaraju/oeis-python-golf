@@ -5,56 +5,52 @@
 
 Offset 0: 0, 1, 2, 3, 4, 5, 6, 7, 10, 11, …
 
-### Python 3 — 114 bytes
+The k-th digit from the right is the number of times the greedy algorithm
+subtracts k³ from n (Joerg Arndt's comment): a(26) = 32 because
+26 = 3·2³ + 2·1³, and a(27) = 100.
+
+### Python 3 — 69 bytes
 
 ```python
-n=0
-while 1:
- r=n;s='';k=1
- while k**3<=n:k+=1
- while k>1:
-  k-=1;d,r=divmod(r,k**3);s+=str(d)
- print(s or 0);n+=1
+a=[k:=0]
+while[print(a[-1])]:k+=(k+1)**3<=len(a);a+=a[-k**3]+10**~-k,
 ```
 
 **How it works**
 
-- The place values are 1³, 2³, 3³, … . A representation is chosen
-  greedily from the largest available cube downward; this is not
-  ordinary positional notation with powers of a fixed base.
-- The first loop leaves k one above the largest cube root needed.
-  The second decrements k before use and computes
-  `d,r=divmod(r,k**3)`: d is the next digit and r the remainder
-  to represent using the smaller cubes.
-- Immediately before the k³ place, r<(k+1)³. Its digit is at
-  most ⌊((k+1)³−1)/k³⌋, which is at most 7 for k≥1.
-  Thus each quotient is a single decimal digit, and `s+=str(d)`
-  records the intended notation without separators.
-- For n=9, the 8 and 1 places give digits 1 and 1, hence 11;
-  for n=27, the 27, 8 and 1 places give 100. Intermediate zero
-  digits must be retained.
-- At n=0 no place is visited and s stays empty. `s or 0` prints
-  the required zero while avoiding a leading empty output line.
+- Let k be the largest integer with k³ ≤ n. The greedy algorithm first
+  subtracts k³ as often as it can, then works on the rest with smaller cubes.
+  Subtracting just one k³ leaves a number whose greedy representation is the
+  same with the k-th digit lowered by one (if n − k³ ≥ k³ the largest cube is
+  still k³; otherwise n − k³ < k³ is exactly the rest). So
+  a(n) = a(n − k³) + 10^(k−1). The k-th digit of a(n − k³) is at most 6, since
+  before the k³ place the remainder is below (k+1)³ ≤ 8k³, so no decimal
+  carry occurs.
+- The list a holds a(0), …, a(n−1) when a(n) is built, so `len(a)` is n and
+  `a[-k**3]` is a(n − k³). n grows by one per pass, so k needs at most one
+  step: `k+=(k+1)**3<=len(a)`. `10**~-k` is 10^(k−1).
+- `a=[k:=0]` stores a(0) = 0 and sets k; `while[print(a[-1])]:` prints the
+  newest term before the next one is appended.
 
 **Notes**
 
-- Exact integer divisions; no approximate cube root is needed. The
-  representation is deterministic because the page uses the greedy
-  convention, even though unrestricted cube-place expansions need
-  not be unique.
-- Both loops visit O(n^(1/3)) place indices per output. The printed
-  representation is held as a string, so the digit sequence is never
-  parsed as a potentially huge decimal integer.
-- Compare [A000462](../A000462/), the same descending-division
-  method with triangular numbers as place values.
-- The b-file has 10001 terms (indices 0 through 10000). The bar is the
-  whole b-file in 60 s.
+- The greedy division from the top, with a string of digits per n: 114
+  bytes. Taking the whole top digit at once,
+  `n=len(a);k+=(k+1)**3<=n;a+=n//k**3*10**~-k+a[n%k**3],`: 82.
+- Exact integer arithmetic, so the program is right for every n.
+- The 10001 terms of the b-file print in a quarter of a second here; the list
+  keeps every term.
+- a(n) has ⌊n^(1/3)⌋ digits, so the 4300-digit int-to-str limit is not
+  reached in practice.
+- The b-file has 10001 terms (up to a(10000)); the bar is the whole b-file in
+  60 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 114 | first entry |
+| 2026-11-07 | Python 3 | 69 | a(n) = a(n − k³) + 10^(k−1) from the list of earlier terms |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

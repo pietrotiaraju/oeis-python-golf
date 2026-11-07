@@ -1,7 +1,2 @@
-n=0
-while 1:
- r=n;s='';k=1
- while k**3<=n:k+=1
- while k>1:
-  k-=1;d,r=divmod(r,k**3);s+=str(d)
- print(s or 0);n+=1
+a=[k:=0]
+while[print(a[-1])]:k+=(k+1)**3<=len(a);a+=a[-k**3]+10**~-k,

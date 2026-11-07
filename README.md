@@ -443,13 +443,13 @@ sequence for the code and how it works.
 | [A000427](seq/A000xxx/A000427/) | Number of 7-dimensional partitions of n. | **147** | 7 |
 | [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **109** | 1000 |
 | [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **123** | 200 |
-| [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **74** | 1000 |
-| [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **42** | 201 |
-| [A000432](seq/A000xxx/A000432/) | Series-parallel numbers. | **184** | 38 |
-| [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **114** | 10001 |
-| [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **166** | 450 |
-| [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **75** | 1000 |
-| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **120** | 101 |
+| [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **60** | 1000 |
+| [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **37** | 201 |
+| [A000432](seq/A000xxx/A000432/) | Series-parallel numbers. | **165** | 38 |
+| [A000433](seq/A000xxx/A000433/) | n written in base where place values are positive cubes. | **69** | 10001 |
+| [A000434](seq/A000xxx/A000434/) | Number of permutations of [n] in which the longest increasing run has… | **126** | 450 |
+| [A000435](seq/A000xxx/A000435/) | Normalized total height of all nodes in all rooted trees with n… | **72** | 1000 |
+| [A000436](seq/A000xxx/A000436/) | Generalized Euler numbers c(3,n). | **110** | 101 |
 | [A000437](seq/A000xxx/A000437/) | Smallest nonnegative number that is the sum of 3 squares in exactly n… | **197** | 43 |
 | [A000438](seq/A000xxx/A000438/) | Number of 1-factorizations of complete graph K\_{2n}. | **262** | 4 |
 | [A000439](seq/A000xxx/A000439/) | Powers of rooted tree enumerator. | **45** | 43 |

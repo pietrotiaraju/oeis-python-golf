@@ -1,5 +1,2 @@
-s=set();n=p=1
-while 1:
- p*=n*n;n+=1
- if p%n:s|={n,n*n}
- if n in s:print(n)
+n=1
+while 1:n+=1;sum(n%k<1for k in range(2,n))<2and print(n)
