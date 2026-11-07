@@ -25,7 +25,7 @@ while 1:s=str(k);k+=1;s==s[::-1].translate('    9 8601'*6)==print(s)
 
 **Notes**
 
-- A plain scan of all integers: 674 terms (up to about 1.1·10⁷) in 60 s
+- A plain scan of all integers: 674 terms (up to about 6·10⁷) in 60 s
   here. Building the numbers from the outside in reaches the whole b-file
   but is longer.
 - The b-file has 10000 terms (up to 8.8·10¹⁰); the bar is 510 terms in
