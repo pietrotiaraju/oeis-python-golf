@@ -748,6 +748,7 @@ sequence for the code and how it works.
 | [A000780](seq/A000xxx/A000780/) | a(n) = (n+1)!/2 + (n-1)(n-1)!. | **41** | 200 |
 | [A000781](seq/A000xxx/A000781/) | a(n) = 3\*Catalan(n) - Catalan(n-1) - 1. | **46** | 1657 |
 | [A000782](seq/A000xxx/A000782/) | a(n) = 2\*Catalan(n) - Catalan(n-1). | **46** | 1000 |
+| [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
