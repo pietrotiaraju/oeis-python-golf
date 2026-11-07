@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are not the sum of 4 tetrahedral numbers.",
+  "offset": 1,
+  "min_terms": 241,
+  "timeout": 60
+}
