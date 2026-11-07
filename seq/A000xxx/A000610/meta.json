@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-complementary Boolean functions of n variables: see Comments for precise definition.",
+  "offset": 0,
+  "min_terms": 10,
+  "timeout": 60
+}

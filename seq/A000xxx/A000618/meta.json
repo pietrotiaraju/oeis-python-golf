@@ -1,0 +1,6 @@
+{
+  "name": "Number of nondegenerate Boolean functions of n variables: For n > 0, a(n) = A000616(n) - A000616(n-1).",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "a(-1)=1 by convention; for n >= 0, a(n) = number of irreducible Boolean functions of n variables.",
+  "offset": -1,
+  "min_terms": 12,
+  "timeout": 60
+}

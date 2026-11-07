@@ -1,0 +1,6 @@
+{
+  "name": "Number of Boolean functions of n variables.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}
