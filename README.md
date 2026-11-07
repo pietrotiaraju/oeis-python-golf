@@ -801,6 +801,7 @@ sequence for the code and how it works.
 | [A000791](seq/A000xxx/A000791/) | Ramsey numbers R(3,n). | **125** | 4 |
 | [A000792](seq/A000xxx/A000792/) | a(n) = max{(n - i)\*a(i) : i < n}; a(0) = 1. | **47** | 6288 |
 | [A000793](seq/A000xxx/A000793/) | Landau's function g(n): largest order of permutation of n elements.… | **116** | 80 |
+| [A000794](seq/A000xxx/A000794/) | Permanent of the Desarguesian projective plane PG(2,n), or 0 if such… | **419** | 5 |
 | [A000795](seq/A000xxx/A000795/) | Salié numbers: expansion of cosh x / cos x = Sum\_{n >= 0}… | **70** | 101 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A000797](seq/A000xxx/A000797/) | Numbers that are not the sum of 4 tetrahedral numbers. | **121** | 241 |
