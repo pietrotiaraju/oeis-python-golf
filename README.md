@@ -830,6 +830,7 @@ sequence for the code and how it works.
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
+| [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
