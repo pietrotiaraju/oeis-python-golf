@@ -441,8 +441,8 @@ sequence for the code and how it works.
 | [A000425](seq/A000xxx/A000425/) | Coefficients of ménage hit polynomials. | **57** | 22 |
 | [A000426](seq/A000xxx/A000426/) | Coefficients of ménage hit polynomials. | **63** | 100 |
 | [A000427](seq/A000xxx/A000427/) | Number of 7-dimensional partitions of n. | **147** | 7 |
-| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **109** | 1000 |
-| [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **123** | 200 |
+| [A000428](seq/A000xxx/A000428/) | Euler transform of A000579. | **108** | 1000 |
+| [A000429](seq/A000xxx/A000429/) | Number of n-node rooted trees of height 8. | **116** | 200 |
 | [A000430](seq/A000xxx/A000430/) | Primes and squares of primes. | **60** | 1000 |
 | [A000431](seq/A000xxx/A000431/) | Expansion of 2\*x^3/((1-2\*x)^2\*(1-4\*x)). | **37** | 201 |
 | [A000432](seq/A000xxx/A000432/) | Series-parallel numbers. | **165** | 38 |
