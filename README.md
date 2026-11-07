@@ -457,7 +457,7 @@ sequence for the code and how it works.
 | [A000441](seq/A000xxx/A000441/) | a(n) = Sum\_{k=1..n-1} k\*sigma(k)\*sigma(n-k). | **77** | 1000 |
 | [A000442](seq/A000xxx/A000442/) | a(n) = (n!)^3. | **34** | 101 |
 | [A000443](seq/A000xxx/A000443/) | Numbers that are the sum of 2 squares in exactly 3 ways. | **99** | 10000 |
-| [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **174** | 100 |
+| [A000444](seq/A000xxx/A000444/) | Number of partially labeled rooted trees with n nodes (3 of which are… | **169** | 100 |
 | [A000445](seq/A000xxx/A000445/) | Latest possible occurrence of the first consecutive pair of n-th… | **874** | 2 |
 | [A000446](seq/A000xxx/A000446/) | Smallest number that is the sum of 2 squares (allowing zeros) in… | **361** | 1458 |
 | [A000447](seq/A000xxx/A000447/) | a(n) = 1^2 + 3^2 + 5^2 + 7^2 + ... + (2\*n-1)^2 = n\*(4\*n^2 - 1)/3. | **34** | 1001 |
