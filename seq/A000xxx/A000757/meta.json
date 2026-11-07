@@ -1,0 +1,6 @@
+{
+  "name": "Number of cyclic permutations of [n] with no i -> i+1 (mod n).",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

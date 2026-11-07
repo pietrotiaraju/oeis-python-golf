@@ -1,0 +1,6 @@
+{
+  "name": "Total number of 1's in binary expansions of 0, ..., n.",
+  "offset": 0,
+  "min_terms": 10001,
+  "timeout": 60
+}
