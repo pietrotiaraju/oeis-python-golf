@@ -1,0 +1,6 @@
+{
+  "name": "Landau's function g(n): largest order of permutation of n elements. Equivalently, largest LCM of partitions of n.",
+  "offset": 0,
+  "min_terms": 80,
+  "timeout": 60
+}
