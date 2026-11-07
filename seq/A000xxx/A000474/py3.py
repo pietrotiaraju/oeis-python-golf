@@ -1,15 +1,7 @@
 from itertools import*
 F=frozenset
-E=lambda a,b:1<<((c:=max(a,b))*~-c//2+a+b-c)
-M=lambda V:(e|E(a,b)for a,*W in[V]for b in W for e in M([x for x in W if x!=b]))if V else[0]
-H=lambda E:((x,*t)for x in L if x&E&-E and x&E==x for t in H(E^x))if E else[()]
 n=2
 while 1:
- R=range(n);L=[*M(R)];S=set();c=0
- for t in H((1<<n*~-n//2)-1):
-  if F(t)in S:continue
-  c+=1
-  for p in permutations(R):
-   B=[E(p[i],p[j])for j in R for i in range(j)]
-   S.add(F(sum(b*(x>>k&1)for k,b in enumerate(B))for x in t))
+ P=[*permutations(range(n))];L={F(zip(p,p[::-1]))for p in P};H=lambda E,j=1:[E][:not E]+[t|{M}for M in L if(0,j)in M<=E for t in H(E-M,j+1)];S={*H(F().union(*L))};c=0
+ while S:c+=1;x=S.pop();S-={F(F((p[a],p[b])for a,b in M)for M in x)for p in P}
  print(c);n+=2
