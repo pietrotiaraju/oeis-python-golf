@@ -1,25 +1,9 @@
-def P(q):
- p=next(p for p in range(2,q+1)if q%p<1);e=0;r=q
- while r%p<1:e+=1;r//=p
- if r>1:return
- R=range(q)
- A=lambda a,b,c=-1:sum((a//p**i-c*(b//p**i))%p*p**i for i in range(e))
- for h in R:
-  G=[];t=1
-  for _ in R[1:]:
-   G+=[t];t=A(t*p,h,t*p//q)
-  if t==1 and len(set(G))==q-1:break
- M=lambda a,b:a*b and G[(G.index(a)+G.index(b))%(q-1)]
- return[sum(1<<(x*q+A(M(a,x),b))for x in R)|1<<(q*q+a)for a in R for b in R]+[((1<<q)-1)<<(b*q)|1<<(q*q+q)for b in R]+[((1<<q+1)-1)<<q*q]
 q=1
 while 1:
- q+=1;L=P(q)
- if L:
-  N=len(L);U=(1<<N)-1;B=0;H=[[l for l in L if l>>j&1]for j in range(N)]
-  def f(S,V):
-   global B
-   n=S.bit_count();B=max(B,n)
-   while n+V.bit_count()>B:
-    b=V&-V;V-=b;T=S|b
-    f(T,V&~sum(l^b for l in H[b.bit_length()-1]if(T&l).bit_count()==3))
-  f(0,U);print(B)
+ q+=1;p=h=2
+ while q%p:p+=1
+ if p**q%q<1:
+  Q=q**3;R=range(N:=q*q+q+1);A=lambda a,b,c=1:a+b and(a+c*b)%p+p*A(a//p,b//p,c)
+  while len({*(G:=[t:=1]+[t:=A(t*p%Q,h,t*p//Q)for _ in[0]*Q*Q])})<Q-1:h+=1
+  L=[sum(1<<(i+j)%N for i in R if A(A(G[i],G[i*q]),G[i*q*q])<1)for j in R]
+  print(max(S.bit_count()*all((S&l).bit_count()<4for l in L)for S in range(1<<N)))
