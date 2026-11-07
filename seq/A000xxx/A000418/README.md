@@ -44,7 +44,10 @@ nodes whose longest root-to-leaf path has 7 edges.
   `(-d-5+h)*(h<5)` that sends the bottom layer to the constant `L[0]`.
   The constant slot makes the weight index uniform, and then `exec`
   replaces `for h in range(6):` and its line break. The same loop with
-  `for h in[1]*6:` on its own line is 123 bytes.
+  `for h in[1]*6:` on its own line is 123 bytes. Six slots per row with
+  the weight `L[n-d-7]**h` (h = 0 in the first pass of each row, so the
+  bottom weight is 1) needs a leading 0, which the slices then reach, and
+  is 125 bytes.
 - Exact integer arithmetic, so the program is right for every n.
 - The b-file has 200 terms (up to a(200)) and prints in about 0.4 s; the
   bar is 200 terms in 60 s. Here about 2400 terms print in 60 s.

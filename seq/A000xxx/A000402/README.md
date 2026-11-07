@@ -5,16 +5,16 @@
 
 Offset 1: 0, 0, 1, 6, 41, 293, 2309, 19975, 189524, 1960041, …
 
-### Python 3 — 129 bytes
+A run is a maximal block of consecutive positions whose entries increase.
+
+### Python 3 — 126 bytes
 
 ```python
 L=[c:=1]*4;m=2
 while[print(L[-1]-L[-2])]:
  m+=1
- for q in 3,4:L+=sum((c:=c*(m-k)//k)*(-1,1,0,0)[k%q]*L[-2*k]for k in range(1,m)),
+ for q in 3,4:L+=sum(1//(k%q*2-1)*(c:=c*(m-k)//k)*L[-2*k]for k in range(1,m)),
 ```
-
-A run is a maximal block of consecutive positions whose entries increase.
 
 **How it works**
 
@@ -33,7 +33,9 @@ A run is a maximal block of consecutive positions whose entries increase.
   entries and the same `L[-2*k]` is B_3(n − k). One expression serves
   both passes of `for q in 3,4`, and the newest pair gives
   `L[-1]-L[-2]` = a(n).
-- `(-1,1,0,0)[k%q]` is f_q(k): k mod q is at most 3 for q = 3, 4.
+- `1//(k%q*2-1)` is f_q(k): x = 2·(k mod q) − 1 is −1, 1, 3 or 5, and
+  ⌊1/x⌋ is then −1, 1, 0, 0. It stands first in the product, because
+  `(c:=…)*1//(…)` would floor-divide the binomial instead.
 - `c` walks the binomials C(n, 1), …, C(n, n) with m = n + 1:
   C(n, k) = C(n, k − 1)·(n − k + 1)/k, and the `//` is exact because
   C(n, k − 1)·(n − k + 1) = k·C(n, k). Each walk ends at C(n, n) = 1,
@@ -46,7 +48,8 @@ A run is a maximal block of consecutive positions whose entries increase.
 
 - `math.comb(n,k)` with a separate list per q (the [A000434](../A000434/)
   layout) is 166 bytes; with the interleaved list it is 139, and the
-  self-resetting binomial walk brings it to 129.
+  self-resetting binomial walk brings it to 129. The sign tuple
+  `(-1,1,0,0)[k%q]` in place of `1//(k%q*2-1)` is 3 bytes longer.
 - Exact integer arithmetic; correctness for every n rests on the e.g.f.
   above. A brute-force count over all permutations agrees for n ≤ 8.
 - The b-file has 452 terms (up to a(452)); the bar is the whole b-file in
@@ -61,6 +64,7 @@ A run is a maximal block of consecutive positions whose entries increase.
 | 2026-11-06 | Python 3 | 167 | first entry |
 | 2026-11-06 | Python 3 | 166 | import math for a single comb call |
 | 2026-11-07 | Python 3 | 129 | interleaved list, self-resetting binomial walk |
+| 2026-11-07 | Python 3 | 126 | f_q(k) as 1//(2(k mod q) − 1) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
