@@ -1,3 +1,3 @@
 from math import*
-n=0
-while[print(comb(n+11,9)-(n+3)*comb(n+6,4))]:n+=1
+m=3
+while[print(comb(m+8,9)-m*comb(m+3,4))]:m+=1

@@ -5,33 +5,33 @@
 
 Offset 7: 1, 8, 36, 120, 330, 792, 1716, 3432, 6435, 11440, …
 
-### Python 3 — 41 bytes
+### Python 3 — 36 bytes
 
 ```python
-n=7;a=1
-while[print(a)]:n+=1;a=a*n//(n-7)
+a=j=1
+while[print(a)]:a+=a*7//j;j+=1
 ```
 
 **How it works**
 
-- Start with C(7,7)=1 at the OEIS offset n=7.
-  Consecutive entries of the binomial column obey
-
-  **C(n,7)=n·C(n−1,7)/(n−7)**, for n>7.
-
-- Print the stored coefficient, increment n, then multiply and
-  divide by that ratio. The first division has denominator 1;
-  every later division is exact by the binomial identity.
-- The program needs only the counter and one coefficient. No
-  imports or separate handling of the column's earlier zeros are
-  needed, since output starts at n=7.
+- With j = n − 6, the printed `a` is C(j+6, 7) = C(n, 7), starting from
+  C(7, 7) = 1 at j = 1, so no zeros and no offset handling are needed.
+- **The step is Pascal's rule.** C(n+1, 7) = C(n, 7) + C(n, 6), and
+  7·C(n, 7)/j = 7·n!/(7!·(j−1)!·j) = n!/(6!·j!) = C(n, 6). So
+  `a+=a*7//j` adds exactly C(n, 6): the floor division is exact.
+- This is 3 bytes under the ratio form `a=a*(j+7)//j` and needs no
+  parentheses.
 
 **Notes**
 
-- Every term is computed with exact integer arithmetic.
-- Python 3.11+ can eventually reach its integer-to-string conversion limit.
-- The reference file contains 994 terms from the OEIS b-file; the verification
-  bar is 994 terms in 60 s.
+- Other versions that print the same terms: the ratio form,
+  `a=j=1` / `while[print(a)]:a=a*(j+7)//j;j+=1`: 39 bytes; with n itself,
+  `n=7;a=1` / `while[print(a)]:n+=1;a=a*n//(n-7)`: 41 bytes;
+  `math.comb(n,7)` with `import math`: 49 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 994 terms (up to a(1000)); the bar is the whole b-file in
+  60 s, and the program prints it in about 0.1 s here.
+- a(n) < n⁷, so the 4300-digit int-to-str limit is far out of reach.
 
 ## History
 
@@ -39,6 +39,7 @@ while[print(a)]:n+=1;a=a*n//(n-7)
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 50 | first entry |
 | 2026-11-06 | Python 3 | 41 | advance the binomial column by its exact ratio |
+| 2026-11-07 | Python 3 | 36 | Pascal step `a+=a*7//j` with j = n − 6 |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -587,15 +587,15 @@ sequence for the code and how it works.
 | [A000571](seq/A000xxx/A000571/) | Number of different score sequences that are possible in an n-team… | **144** | 1000 |
 | [A000572](seq/A000xxx/A000572/) | A Beatty sequence: [ n(e+1) ]. | **46** | 59 |
 | [A000573](seq/A000xxx/A000573/) | Number of 4 X n normalized Latin rectangles. | **276** | 3 |
-| [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **62** | 998 |
-| [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **71** | 1001 |
+| [A000574](seq/A000xxx/A000574/) | Coefficient of x^5 in expansion of (1 + x + x^2)^n. | **48** | 998 |
+| [A000575](seq/A000xxx/A000575/) | Tenth column of quintinomial coefficients. | **66** | 1001 |
 | [A000576](seq/A000xxx/A000576/) | a(n) is the number of (n-2) X n normalized Latin rectangles. | **279** | 3 |
 | [A000577](seq/A000xxx/A000577/) | Number of triangular polyominoes (or triangular polyforms, or… | **331** | 10 |
 | [A000578](seq/A000xxx/A000578/) | The cubes: a(n) = n^3. | **27** | 10001 |
-| [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **50** | 1001 |
-| [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **41** | 994 |
-| [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **41** | 993 |
-| [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **41** | 992 |
+| [A000579](seq/A000xxx/A000579/) | Figurate numbers or binomial coefficients C(n,6). | **46** | 1001 |
+| [A000580](seq/A000xxx/A000580/) | a(n) = binomial coefficient C(n,7). | **36** | 994 |
+| [A000581](seq/A000xxx/A000581/) | a(n) = binomial coefficient C(n,8). | **36** | 993 |
+| [A000582](seq/A000xxx/A000582/) | a(n) = binomial coefficient C(n,9). | **36** | 992 |
 | [A000583](seq/A000xxx/A000583/) | Fourth powers: a(n) = n^4. | **27** | 1001 |
 | [A000584](seq/A000xxx/A000584/) | Fifth powers: a(n) = n^5. | **27** | 501 |
 | [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **193** | 4 |
