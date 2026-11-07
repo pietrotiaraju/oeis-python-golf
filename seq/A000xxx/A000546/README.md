@@ -5,51 +5,66 @@
 
 Offset 1: 1, 12, 28, 314, 98, 386, 943, 1494, 1680, 4722, …
 
-### Python 3 — 190 bytes
+The Collatz map sends x to x/2 if x is even and to 3x + 1 if x is odd; the
+number of steps x takes to reach 1 is its stopping time. a(n) is the
+smallest start of a maximal block of exactly n consecutive numbers with the
+same stopping time: 12 and 13 both take 9 steps, while 11 takes 14 and 14
+takes 17, so a(2) = 12.
+
+### Python 3 — 121 bytes
 
 ```python
-def f(n):
- t=0
- while n>1:t+=1;n=3*n+1 if n%2 else n//2
- return t
-D={};n=k=r=1;t=0
-while 1:
- n+=1;s=f(n)
- if s==t:r+=1
- else:D.setdefault(r,(n-r,t));r=1;t=s
- while k in D:print(D[k][0]);k+=1
+f=lambda n:n>1and-~f(n%2*(5*n+2)+n>>1)
+D={};n=p=k=1
+while n:=n+1:f(n)==f(n-1)or[D:={n-p:p}|D,p:=n];k+=k in D!=print(D[k])
 ```
 
 **How it works**
 
-- Compute the ordinary Collatz stopping time by iterating until 1,
-  counting each halving or 3n+1 step individually.
-- Scan positive starting numbers in increasing order. `r` is the length
-  of the current run of equal stopping times, and `t` is its value.
-  Record a run only when the following stopping time changes: the OEIS
-  condition requires a maximal run of exactly that length.
-- `setdefault` keeps the first run of each length. Later occurrences
-  cannot start earlier because the scan is ordered. The next required
-  length `k` is printed as soon as its record exists, even when longer
-  runs have already been discovered.
-- The stored pair contains the run's starting integer and its stopping
-  time. This entry prints the starting integer.
+- **Maximal blocks.** The blocks must be maximal on both sides: a(5) = 98
+  starts a block of five, 98 to 102, yet a(4) = 314 is larger, so the four
+  numbers 98 to 101 inside it do not count. The scan cuts the numbers into
+  maximal blocks, and blocks end in increasing order, so the first block of
+  each length found is the earliest one.
+- **The stopping time.** `n%2*(5*n+2)+n>>1` is (6n + 2)/2 = 3n + 1 for odd
+  n and n/2 for even n (`>>` binds after `+` and `*`). `f(n)` adds 1 per
+  step (`-~`) and returns `False`, that is 0, at n = 1.
+- **The scan.** `p` is the start of the current block. When f(n) differs
+  from f(n − 1), the block p, …, n − 1 of length n − p has ended:
+  `{n-p:p}|D` adds it only if that length is new, since in a dict union
+  the right operand wins, and `p` moves to n. The `or` skips this while
+  the block goes on. The walrus in `while n:=n+1:` steps n, and n is never
+  0.
+- **Printing in order.** `k` is the next length to print. In
+  `k in D!=print(D[k])`, a chained comparison, `print` runs only when
+  `k in D` holds; it returns `None`, `D!=None` is `True`, and `k` goes up
+  by 1. So at most one term prints per n, always in order of n, even when
+  longer blocks turn up before shorter ones (a(20) = 79592 waits for
+  a(19) = 159116).
 
 **Notes**
 
-- Stopping times use exact integer operations and no recursion or large
-  memoization table. The dictionary stores only one record per run length.
-- Continued production depends on Collatz trajectories terminating and
-  on runs of the required lengths existing; these are mathematical
-  assumptions of extending this search, not inferred from a finite table.
-- The reference file contains 100 published OEIS terms; the verification
-  bar is 20 terms in 60 s.
+- Other versions that print the same terms: keeping the last stopping
+  time, `t=D={};n=p=k=1` and `t==(t:=f(n))or…`: 123 bytes, about twice as
+  fast (27 terms in 60 s here); the previous program (a loop for the
+  stopping time and `setdefault`): 190 bytes.
+- Exact integer arithmetic. The program prints the right terms as long as
+  every number it scans reaches 1 (the Collatz conjecture, checked far
+  beyond any n reached here), and it can only go on printing if blocks of
+  every length exist, which is not proved.
+- The 20 terms of the bar print in about 25 s here (a(19) = 159116 is the
+  slow one), and 27 terms in 60 s; under load it has fallen to 22. The
+  b-file has 100 terms (up to a(100)).
+- The recursion is f(n) + 1 calls deep. Every n < 1412987847 takes at most
+  987 steps ([A006877](https://oeis.org/A006877)), so Python's default
+  recursion limit of 1000 is far beyond the scan.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 190 | first entry |
+| 2026-11-07 | Python 3 | 121 | recursive lambda, dict union keeps the first block, chained print |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
