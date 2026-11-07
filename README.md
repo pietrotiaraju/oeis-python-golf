@@ -527,15 +527,15 @@ sequence for the code and how it works.
 | [A000511](seq/A000xxx/A000511/) | Number of n-step spiral self-avoiding walks on hexagonal lattice,… | **249** | 20 |
 | [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **596** | 8 |
 | [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **596** | 8 |
-| [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **93** | 995 |
-| [A000515](seq/A000xxx/A000515/) | a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)\*binomial(2n,n)^2. | **51** | 101 |
+| [A000514](seq/A000xxx/A000514/) | Eulerian numbers (Euler's triangle: column k=6 of A008292, column k=5… | **91** | 995 |
+| [A000515](seq/A000xxx/A000515/) | a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)\*binomial(2n,n)^2. | **43** | 101 |
 | [A000516](seq/A000xxx/A000516/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **596** | 8 |
-| [A000517](seq/A000xxx/A000517/) | Number of permutations of length n with exactly three valleys. | **100** | 194 |
+| [A000517](seq/A000xxx/A000517/) | Number of permutations of length n with exactly three valleys. | **71** | 194 |
 | [A000518](seq/A000xxx/A000518/) | Generalized tangent numbers d\_(n,4). | **155** | 1000 |
 | [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **618** | 7 |
 | [A000520](seq/A000xxx/A000520/) | Nearest integer to log\_10(n). | **39** | 1000 |
 | [A000521](seq/A000xxx/A000521/) | Coefficients of modular function j as power series in q = e^(2 Pi i… | **156** | 150 |
-| [A000522](seq/A000xxx/A000522/) | Total number of ordered k-tuples (k=0..n) of distinct elements from… | **36** | 451 |
+| [A000522](seq/A000xxx/A000522/) | Total number of ordered k-tuples (k=0..n) of distinct elements from… | **33** | 451 |
 | [A000523](seq/A000xxx/A000523/) | a(n) = floor(log\_2(n)). | **36** | 105 |
 | [A000524](seq/A000xxx/A000524/) | Number of rooted trees with n nodes, 2 of which are labeled. | **195** | 30 |
 | [A000525](seq/A000xxx/A000525/) | Number of partially labeled rooted trees with n nodes (4 of which are… | **214** | 21 |

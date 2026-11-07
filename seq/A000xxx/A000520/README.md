@@ -14,22 +14,24 @@ while[print(len(str(n*n))//2)]:n+=1
 
 **How it works**
 
-- If d is the number of decimal digits of n², then
-  d−1 ≤ 2 log₁₀(n) < d. It follows that
-  floor(log₁₀(n)+1/2)=floor(d/2).
-- No tie is possible: a positive integer cannot equal 10^(k+1/2).
-  Squaring and counting digits therefore gives exact nearest-integer
-  rounding without floating point logarithms.
-- The loop starts at n=1 and advances after printing in the nonempty
-  list condition.
+- If n² has d decimal digits, then 10^(d−1) ≤ n² < 10^d, so
+  d − 1 ≤ 2·log₁₀ n < d and (2·log₁₀ n + 1)/2 lies in [d/2, (d+1)/2). The
+  nearest integer ⌊log₁₀ n + 1/2⌋ is therefore ⌊d/2⌋, which is
+  `len(str(n*n))//2`.
+- There are no ties: log₁₀ n = k + 1/2 would make n² = 10^(2k+1), which is
+  not a square.
+- The test needs only integer squaring and a decimal conversion, so no
+  floating-point logarithm can round the wrong way.
 
 **Notes**
 
-- This uses exact integer multiplication and decimal conversion.
-- Python's default conversion limit is eventually reached for n² with
-  more than 4300 digits; that interpreter limit is excluded by the rules.
-- The reference file contains 1000 terms from the OEIS b-file; the verification
-  bar is 1000 terms in 60 s.
+- `len(f'{n*n}')//2` is the same length. A counter that steps up when
+  n² passes 10^(2k+1), `n=1;k=0` / `while[print(k)]:n+=1;k+=n*n>10*100**k`,
+  is 45 bytes.
+- Exact integer arithmetic, so the program is right for every n. The
+  4300-digit int-to-str limit would only matter for n near 10^2150.
+- The b-file has 1000 terms (up to a(1000)); the bar is the whole b-file in
+  60 s.
 
 ## History
 
