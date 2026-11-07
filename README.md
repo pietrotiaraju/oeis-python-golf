@@ -719,6 +719,7 @@ sequence for the code and how it works.
 | [A000704](seq/A000xxx/A000704/) | Number of degree-n even permutations of order dividing 2. | **58** | 201 |
 | [A000705](seq/A000xxx/A000705/) | n-th superior highly composite number A002201(n) is product of first… | **288** | 5000 |
 | [A000706](seq/A000xxx/A000706/) | Expansion of modular function 1/E\_3 (cf. A013973). | **81** | 361 |
+| [A000707](seq/A000xxx/A000707/) | Number of permutations of [1,2,...,n] with n-1 inversions. | **83** | 420 |
 | [A000708](seq/A000xxx/A000708/) | a(n) = E(n+1) - 2\*E(n), where E(i) is the Euler number A000111(i). | **65** | 483 |
 | [A000709](seq/A000xxx/A000709/) | Related to population of numbers of form x^2 + y^2. | **197** | 500 |
 | [A000710](seq/A000xxx/A000710/) | Number of partitions of n, with two kinds of 1, 2, 3 and 4. | **87** | 1001 |
@@ -769,10 +770,12 @@ sequence for the code and how it works.
 | [A000755](seq/A000xxx/A000755/) | No-3-in-line problem on n X n grid: total number of ways of placing… | **172** | 7 |
 | [A000756](seq/A000xxx/A000756/) | Boustrophedon transform of sequence 1,1,0,0,0,0,... | **60** | 401 |
 | [A000757](seq/A000xxx/A000757/) | Number of cyclic permutations of [n] with no i -> i+1 (mod n). | **43** | 201 |
+| [A000758](seq/A000xxx/A000758/) | Sum over rooted plane trees with n edges of (height - 1); height =… | **114** | 600 |
 | [A000759](seq/A000xxx/A000759/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **119** | 11 |
 | [A000760](seq/A000xxx/A000760/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 10 |
 | [A000761](seq/A000xxx/A000761/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 9 |
 | [A000762](seq/A000xxx/A000762/) | Number of n-step self-avoiding walks on cubic lattice ending at point… | **120** | 8 |
+| [A000763](seq/A000xxx/A000763/) | Number of interval orders constructed from n intervals of generic… | **178** | 100 |
 | [A000764](seq/A000xxx/A000764/) | Boustrophedon transform of Bell numbers. | **83** | 483 |
 | [A000765](seq/A000xxx/A000765/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **133** | 7 |
 | [A000766](seq/A000xxx/A000766/) | Number of n-step self-avoiding walks on f.c.c. lattice ending at… | **135** | 6 |
@@ -795,6 +798,7 @@ sequence for the code and how it works.
 | [A000784](seq/A000xxx/A000784/) | Number of symmetrical planar partitions of n (planar partitions… | **230** | 150 |
 | [A000785](seq/A000xxx/A000785/) | Number of asymmetrical planar partitions of n: planar partitions… | **297** | 150 |
 | [A000786](seq/A000xxx/A000786/) | Number of inequivalent planar partitions of n, when considering them… | **153** | 151 |
+| [A000787](seq/A000xxx/A000787/) | Strobogrammatic numbers: the same upside down. | **72** | 510 |
 | [A000788](seq/A000xxx/A000788/) | Total number of 1's in binary expansions of 0, ..., n. | **43** | 10001 |
 | [A000789](seq/A000xxx/A000789/) | Maximal order of a triangle-free cyclic graph with no independent set… | **201** | 6 |
 | [A000790](seq/A000xxx/A000790/) | Primary pretenders: least composite c such that n^c == n (mod c). | **66** | 10001 |
@@ -807,6 +811,7 @@ sequence for the code and how it works.
 | [A000797](seq/A000xxx/A000797/) | Numbers that are not the sum of 4 tetrahedral numbers. | **121** | 241 |
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
+| [A000800](seq/A000xxx/A000800/) | Sum of upward diagonals of Eulerian triangle. | **84** | 601 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

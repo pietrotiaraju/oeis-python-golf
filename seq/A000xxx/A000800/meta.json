@@ -1,0 +1,6 @@
+{
+  "name": "Sum of upward diagonals of Eulerian triangle.",
+  "offset": 0,
+  "min_terms": 601,
+  "timeout": 60
+}
