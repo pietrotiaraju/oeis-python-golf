@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform of triangular numbers 1,1,3,6,10,...",
+  "offset": 0,
+  "min_terms": 401,
+  "timeout": 60
+}
