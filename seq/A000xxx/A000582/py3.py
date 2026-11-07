@@ -1,2 +1,2 @@
-n=9;a=1
-while[print(a)]:n+=1;a=a*n//(n-9)
+a=j=1
+while[print(a)]:a+=a*9//j;j+=1

@@ -14,17 +14,19 @@ while[print(n**3)]:n+=1
 
 **How it works**
 
-- Raise each nonnegative integer n to the defining power 3.
-  The initial value at n=0 is included.
-- `print` returns `None`, but the containing list is nonempty, so the
-  loop continues after every output and advances n by one.
+- `n**3` is the cube, printed for n = 0, 1, 2, …
+- `while[print(…)]:` never ends: `print` returns `None` and `[None]` is a
+  non-empty list (the [A000007](../A000007/) loop), a byte under `while 1:`
+  plus a separate `print(…);`.
 
 **Notes**
 
-- Every term is computed with exact integer arithmetic.
-- Python 3.11+ can eventually reach its integer-to-string conversion limit.
-- The reference file contains 10001 terms from the OEIS b-file; the verification
-  bar is 10001 terms in 60 s.
+- Other versions that print the same terms: `n*n*n`: 28 bytes.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 10001 terms (up to a(10000)); the bar is the whole b-file in
+  60 s, and the program prints it in about 0.2 s here.
+- a(n) has about 3·log10(n) digits, so the 4300-digit int-to-str limit is
+  far out of reach.
 
 ## History
 

@@ -1,2 +1,2 @@
-n=7;a=1
-while[print(a)]:n+=1;a=a*n//(n-7)
+a=j=1
+while[print(a)]:a+=a*7//j;j+=1
