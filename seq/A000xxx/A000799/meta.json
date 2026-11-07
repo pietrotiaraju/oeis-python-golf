@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = floor(2^n / n).",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}
