@@ -1,0 +1,6 @@
+{
+  "name": "Class number of Q(sqrt(-n)), n squarefree.",
+  "offset": 1,
+  "min_terms": 180,
+  "timeout": 60
+}
