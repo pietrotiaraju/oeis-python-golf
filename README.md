@@ -722,7 +722,9 @@ sequence for the code and how it works.
 | [A000711](seq/A000xxx/A000711/) | Number of partitions of n, with three kinds of 1,2,3 and 4 and two… | **90** | 1001 |
 | [A000712](seq/A000xxx/A000712/) | a(n) = number of partitions of n into parts of 2 kinds. | **81** | 7000 |
 | [A000713](seq/A000xxx/A000713/) | EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ... | **82** | 1001 |
+| [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **214** | 13 |
 | [A000718](seq/A000xxx/A000718/) | Boustrophedon transform of triangular numbers 1,1,3,6,10,... | **70** | 401 |
+| [A000719](seq/A000xxx/A000719/) | Number of disconnected graphs with n nodes. | **213** | 18 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
 | [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
