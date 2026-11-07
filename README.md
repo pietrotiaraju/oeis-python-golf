@@ -717,14 +717,24 @@ sequence for the code and how it works.
 | [A000702](seq/A000xxx/A000702/) | a(n) is the number of conjugacy classes in the alternating group A\_n. | **92** | 1000 |
 | [A000704](seq/A000xxx/A000704/) | Number of degree-n even permutations of order dividing 2. | **58** | 201 |
 | [A000706](seq/A000xxx/A000706/) | Expansion of modular function 1/E\_3 (cf. A013973). | **81** | 361 |
+| [A000708](seq/A000xxx/A000708/) | a(n) = E(n+1) - 2\*E(n), where E(i) is the Euler number A000111(i). | **65** | 483 |
 | [A000710](seq/A000xxx/A000710/) | Number of partitions of n, with two kinds of 1, 2, 3 and 4. | **87** | 1001 |
 | [A000711](seq/A000xxx/A000711/) | Number of partitions of n, with three kinds of 1,2,3 and 4 and two… | **90** | 1001 |
 | [A000712](seq/A000xxx/A000712/) | a(n) = number of partitions of n into parts of 2 kinds. | **81** | 7000 |
 | [A000713](seq/A000xxx/A000713/) | EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ... | **82** | 1001 |
+| [A000718](seq/A000xxx/A000718/) | Boustrophedon transform of triangular numbers 1,1,3,6,10,... | **70** | 401 |
 | [A000722](seq/A000xxx/A000722/) | Number of invertible Boolean functions of n variables: a(n) = (2^n)!. | **42** | 9 |
 | [A000723](seq/A000xxx/A000723/) | Invertible Boolean functions of n variables. | **56** | 8 |
 | [A000726](seq/A000xxx/A000726/) | Number of partitions of n in which no parts are multiples of 3. | **85** | 5001 |
+| [A000732](seq/A000xxx/A000732/) | Boustrophedon transform of 1 & primes: 1,2,3,5,7,... | **80** | 401 |
+| [A000733](seq/A000xxx/A000733/) | Boustrophedon transform of partition numbers 1, 1, 1, 2, 3, 5, 7, ... | **118** | 483 |
+| [A000734](seq/A000xxx/A000734/) | Boustrophedon transform of 1,1,2,4,8,16,32,... | **65** | 401 |
+| [A000736](seq/A000xxx/A000736/) | Boustrophedon transform of Catalan numbers 1, 1, 1, 2, 5, 14, ... | **78** | 401 |
+| [A000737](seq/A000xxx/A000737/) | Boustrophedon transform of natural numbers, cf. A000027. | **62** | 401 |
+| [A000738](seq/A000xxx/A000738/) | Boustrophedon transform (first version) of Fibonacci numbers… | **70** | 401 |
 | [A000740](seq/A000xxx/A000740/) | Number of 2n-bead balanced binary necklaces of fundamental period 2n,… | **82** | 3322 |
+| [A000744](seq/A000xxx/A000744/) | Boustrophedon transform (second version) of Fibonacci numbers… | **68** | 401 |
+| [A000745](seq/A000xxx/A000745/) | Boustrophedon transform of squares. | **67** | 401 |
 | [A000748](seq/A000xxx/A000748/) | Expansion of bracket function. | **35** | 1001 |
 | [A000750](seq/A000xxx/A000750/) | Expansion of bracket function. | **55** | 3001 |
 | [A000770](seq/A000xxx/A000770/) | Stirling numbers of the second kind, S(n,6). | **63** | 195 |

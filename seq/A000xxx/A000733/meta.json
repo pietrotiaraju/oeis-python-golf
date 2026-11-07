@@ -1,0 +1,6 @@
+{
+  "name": "Boustrophedon transform of partition numbers 1, 1, 1, 2, 3, 5, 7, ...",
+  "offset": 0,
+  "min_terms": 483,
+  "timeout": 60
+}
