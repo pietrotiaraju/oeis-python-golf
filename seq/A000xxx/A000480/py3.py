@@ -1,6 +1,5 @@
-n=S=1
-print(1)
+n=0
 while 1:
- S*=2;K=S.bit_length();E=20*-~K
- p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
- while p>E and(q:=2*n*S//(p+E))==2*n*S//(p-E):print(-(q+1>>1&1));n+=1
+ N=F=1;d=0
+ while N%F<n**-d:d-=2;N=n**-d+N*~d*d;F*=~d*d
+ print(N//F);n+=1

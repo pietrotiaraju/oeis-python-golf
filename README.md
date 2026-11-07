@@ -493,11 +493,11 @@ sequence for the code and how it works.
 | [A000477](seq/A000xxx/A000477/) | a(n) = Sum\_{k=1..n-1} k^2\*sigma(k)\*sigma(n-k). | **79** | 10000 |
 | [A000478](seq/A000xxx/A000478/) | Number of ways of placing n labeled balls into 3 indistinguishable… | **47** | 195 |
 | [A000479](seq/A000xxx/A000479/) | Number of 1-factorizations of K\_{n,n}. | **231** | 6 |
-| [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **211** | 80 |
-| [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **57** | 196 |
-| [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **79** | 96 |
+| [A000480](seq/A000xxx/A000480/) | a(n) = floor(cos(n)). | **86** | 80 |
+| [A000481](seq/A000xxx/A000481/) | Stirling numbers of the second kind, S(n,5). | **55** | 196 |
+| [A000482](seq/A000xxx/A000482/) | Unsigned Stirling numbers of first kind s(n,5). | **69** | 96 |
 | [A000483](seq/A000xxx/A000483/) | Associated Stirling numbers: second-order reciprocal Stirling numbers… | **101** | 195 |
-| [A000484](seq/A000xxx/A000484/) | a(n) = round(cos(n)). | **213** | 1001 |
+| [A000484](seq/A000xxx/A000484/) | a(n) = round(cos(n)). | **89** | 1001 |
 | [A000485](seq/A000xxx/A000485/) | Number of partially labeled trees with n nodes (4 of which are… | **205** | 100 |
 | [A000486](seq/A000xxx/A000486/) | One half of the number of permutations of [n] such that the… | **114** | 996 |
 | [A000487](seq/A000xxx/A000487/) | Number of permutations of length n with exactly two valleys. | **51** | 196 |
@@ -507,7 +507,7 @@ sequence for the code and how it works.
 | [A000491](seq/A000xxx/A000491/) | Number of bipartite partitions of n white objects and 5 black ones. | **193** | 1001 |
 | [A000492](seq/A000xxx/A000492/) | Number of permutations of an n-sequence discordant with three given… | **150** | 18 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **195** | 10001 |
-| [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **215** | 1001 |
+| [A000494](seq/A000xxx/A000494/) | Nearest integer to sin(n). | **95** | 1001 |
 | [A000495](seq/A000xxx/A000495/) | Nearest integer to sinh(n). | **113** | 251 |
 | [A000496](seq/A000xxx/A000496/) | Restricted permutations. | **57** | 1001 |
 | [A000497](seq/A000xxx/A000497/) | S2(j,2j+2) where S2(n,k) is a 2-associated Stirling number of the… | **44** | 100 |

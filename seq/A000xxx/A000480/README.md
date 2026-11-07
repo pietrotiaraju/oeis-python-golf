@@ -3,70 +3,46 @@
 > a(n) = floor(cos(n)).
 > — [OEIS A000480](https://oeis.org/A000480)
 
-Offset 0: 1, 0, -1, -1, -1, 0, 0, 0, -1, -1, …
+Offset 0: 1, 0, −1, −1, −1, 0, 0, 0, −1, −1, …
 
-### Python 3 — 211 bytes
+### Python 3 — 86 bytes
 
 ```python
-n=S=1
-print(1)
+n=0
 while 1:
- S*=2;K=S.bit_length();E=20*-~K
- p=sum((-1)**k*S*a//((2*k+1)*b**(2*k+1))for a,b in((16,5),(-4,239))for k in range(K))
- while p>E and(q:=2*n*S//(p+E))==2*n*S//(p-E):print(-(q+1>>1&1));n+=1
+ N=F=1;d=0
+ while N%F<n**-d:d-=2;N=n**-d+N*~d*d;F*=~d*d
+ print(N//F);n+=1
 ```
 
 **How it works**
 
-- All angles are in **radians**. The program determines the sector
-  containing n using certified bounds on π, then reads off floor(cos(n)).
-  It never evaluates a floating-point sine or cosine.
-- [Machin's identity](https://mathworld.wolfram.com/Machin-LikeFormulas.html)
-  is π=16atan(1/5)−4atan(1/239). With
-  atan(1/b)=Σₖ≥₀ (−1)ᵏ/((2k+1)b^(2k+1)), take K terms
-  at the integer scale S. The comprehension uses the pairs
-  `(16,5)` and `(-4,239)` and rounds every signed scaled
-  contribution down before adding the two series.
-- Those divisions contribute less than 2K total error. Since
-  K=S.bit_length() and S≥2, the two scaled alternating-series
-  tails together are less than 1. The generous error allowance
-  E=20(K+1) therefore proves **p−E<Sπ<p+E**.
-- Once `p>E`, both denominators are positive. The two quotients
-  ⌊2nS/(p+E)⌋ and ⌊2nS/(p−E)⌋ bracket
-  q=⌊2n/π⌋. Print only if they agree, using the first
-  quotient stored by the walrus in q.
-- If they disagree, double S and recompute tighter bounds.
-  Otherwise advance n and reuse the current bounds for as many
-  consecutive inputs as they certify. For n>0, 2n/π is
-  not an integer, so increasing precision eventually resolves it.
-- For positive integer n, cos(n) is strictly between −1 and 1
-  and never zero. Its floor is therefore −1 precisely in the
-  two negative-cosine quadrants. With q=⌊2n/π⌋, their
-  residues are 1 and 2 modulo 4, giving `-(q+1>>1&1)`: the second bit of q+1 is set
-  precisely for those two quadrant residues.
-- The exceptional cos(0)=1 is printed before the loop; all
-  later outputs are 0 or −1. This is why n begins at 1.
-
-The sector-to-output mapping is:
-
-| q mod 4 | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|
-| floor(cos(n)) | 0 | −1 | −1 | 0 |
+- The program sums the Taylor series of cos n exactly and stops once the
+  floor is certain, with the loop of [A000484](../A000484/) (round(cos n))
+  minus the ½ shift.
+- After k steps, with t_j = n^(2j)/(2j)!, the partial sum
+  X_k = Σ_{j≤k} (−1)ʲ t_j is N/F with F = (−1)ᵏ·(2k)!. `d` is −2k, so
+  `n**-d` is n^(2k) and `~d*d` = −d(d+1) = −2k(2k−1): `F*=~d*d` extends
+  the factorial and flips the sign of F, and `N=n**-d+N*~d*d` adds
+  (−1)ᵏ·t_k.
+- `N%F` takes the sign of F. For n ≥ 1 it is ≤ 0 < nᵈ at odd k, so the
+  loop goes on; at even k it is F·frac(X_k), and the loop stops at the
+  first even k with frac(X_k) ≥ t_k. As in A000484, t_k < 1 there puts k
+  past the peak of the unimodal terms, so the tail is in (−t_{k+1}, 0),
+  cos n lies in (X_k − t_{k+1}, X_k) above ⌊X_k⌋, and `N//F` is ⌊cos n⌋.
+- The loop ends because cos n is not an integer for n ≥ 1 (cos n = 0 or
+  ±1 would make n a multiple of π/2). At n = 0 the bound is 0 from the
+  first step on, and that step (X_1 = 1, F = −2) stops with `N%F` = 0:
+  X_1 = 1 is exactly cos 0, and 1 is printed.
 
 **Notes**
 
-- Exact integer arithmetic and a rigorous error interval at every
-  precision. Irrationality of π rules out the positive-index
-  sector boundaries; the separate handling of n=0 is described above.
-- The output uses only −1, 0 and 1, so its conversion never
-  reaches Python's 4300-digit integer limit. Time and temporary
-  integer sizes grow when a closer approach to a sector boundary
-  requires a more accurate π interval.
-- [A000484](../A000484/) uses the same π bounds with
-  a different sector scale or rounding rule. The lookup is part
-  of the mathematical rounding test, not a table of sequence terms.
-- The b-file has 80 terms (indices 0 through 79). The bar is the
-  whole b-file in 60 s.
+- Keeping nᵈ in a variable `p` (`N=F=p=1`, `p*=n*n`) is 87 bytes; the
+  previous record, which located n between multiples of π/2 with
+  Machin's formula, was 211.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 80 terms (up to a(79)); the bar is the whole b-file in
+  60 s. It prints in a fraction of a second, about 930 terms in 60 s.
 
 ## History
 
@@ -74,6 +50,7 @@ The sector-to-output mapping is:
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 225 | first entry |
 | 2026-11-06 | Python 3 | 211 | share the Machin summand and shorten the quadrant test |
+| 2026-11-07 | Python 3 | 86 | exact Taylor series of cos n with a one-sided stop test |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
