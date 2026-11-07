@@ -5,54 +5,48 @@
 
 Offset 4: 1, 26, 302, 2416, 15619, 88234, 455192, 2203488, 10187685, 45533450, …
 
-### Python 3 — 73 bytes
+a(n) is the number of permutations of n elements with exactly 3 descents
+(positions i with p(i) > p(i+1)).
+
+### Python 3 — 57 bytes
 
 ```python
 n=4
-while 1:print(4**n-(n+1)*3**n+n*(n+1)*2**(n-1)-(n-1)*n*(n+1)//6);n+=1
+while[print(4**n+~n*3**n+n*-~n*(3*2**n-n+1)//6)]:n+=1
 ```
 
 **How it works**
 
-- With the zero-based descent convention, an Eulerian number
-  A(n,r) counts permutations with exactly r positions i such that
-  p_i>p_(i+1). This page uses r=3; column numbering in
-  other Eulerian triangles can be shifted by one.
-- Eulerian inclusion-exclusion gives
-  A(n,r)=Σⱼ₌₀ʳ⁺¹ (−1)ʲ C(n+1,j)(r+1−j)ⁿ.
-  At n≥4 the last term is zero, leaving
-
-  **a(n)=4ⁿ−(n+1)3ⁿ+C(n+1,2)2ⁿ−C(n+1,3).**
-
-- Expand the small binomial coefficients directly in integers.
-
-  `n*(n+1)*2**(n-1)` is C(n+1,2)2ⁿ, with the factor
-  2 in the denominator absorbed into the power. The final
-  `(n-1)*n*(n+1)//6` is C(n+1,3).
-
-- The smallest possible size is n=4, when only the
-  decreasing permutation has 3 descents. The initial
-  output is therefore 1, with no earlier zeros printed.
+- The Eulerian number with r descents is
+  A(n, r) = Σ_{j=0}^{r+1} (−1)^j·C(n+1, j)·(r+1−j)ⁿ (the standard
+  inclusion–exclusion formula; Comtet 1974). For r = 3 and n ≥ 1 the j = 4
+  term is 0ⁿ = 0, so
+  a(n) = 4ⁿ − (n+1)·3ⁿ + C(n+1, 2)·2ⁿ − C(n+1, 3), Mike Zabrocki's formula
+  in the entry.
+- The last two terms share n(n+1)/6:
+  C(n+1, 2)·2ⁿ − C(n+1, 3) = n(n+1)(3·2ⁿ − n + 1)/6. That product is 6 times
+  an integer, so `n*-~n*(3*2**n-n+1)//6` is exact, and `//` takes only the
+  product because `*` and `//` group left to right above `+`.
+- `~n*3**n` is −(n+1)·3ⁿ (`~n` = −n − 1) and `-~n` is n + 1.
 
 **Notes**
 
-- Exact integer powers and products; divisibility of the binomial
-  products makes the floor divisions exact, including after
-  applying the expression's subtraction signs.
-- [A000460](../A000460/) is the adjacent Eulerian
-  column. The direct formula avoids storing an expanding row
-  of the full Eulerian triangle.
-- There is a constant number of integer temporaries. The terms
-  grow exponentially and eventually reach Python 3.11+'s default
-  4300-digit output conversion limit, an interpreter limit.
-- The b-file has 197 terms (indices 4 through 200). The bar is the
-  whole b-file in 60 s.
+- Other versions: the same formula with the 2-power term as a shift,
+  `4**n+~n*3**n+(n*-~n<<n-1)-(n**3-n)//6`, 60 bytes; Zabrocki's formula
+  written out with `while 1:`, 73 bytes. [A000460](../A000460/) (2 descents)
+  and [A000295](../A000295/) (1 descent) are the neighbouring columns.
+- Exact integer arithmetic, so the program is right for every n.
+- The b-file has 197 terms (up to a(200)); the bar is the whole b-file in
+  60 s. All of it prints in 0.1 s here.
+- a(7143) is the first term with more than 4300 digits, so Python's
+  int-to-str limit stops the printing there, after about 2 s.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-06 | Python 3 | 73 | first entry |
+| 2026-11-07 | Python 3 | 57 | merge the last two terms over n(n+1)/6 |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
