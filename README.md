@@ -601,11 +601,11 @@ sequence for the code and how it works.
 | [A000585](seq/A000xxx/A000585/) | Number of equivalence classes of Boolean functions of n variables… | **193** | 4 |
 | [A000586](seq/A000xxx/A000586/) | Number of partitions of n into distinct primes. | **122** | 10001 |
 | [A000587](seq/A000xxx/A000587/) | Rao Uppuluri-Carpenter numbers (or complementary Bell numbers):… | **55** | 596 |
-| [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **77** | 201 |
-| [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **64** | 196 |
-| [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **64** | 195 |
-| [A000591](seq/A000xxx/A000591/) | Number of n-state 2-input 1-output automata with one initial and one… | **353** | 13 |
-| [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **100** | 2750 |
+| [A000588](seq/A000xxx/A000588/) | a(n) = 7\*binomial(2n,n-3)/(n+4). | **59** | 201 |
+| [A000589](seq/A000xxx/A000589/) | a(n) = 11\*binomial(2n,n-5)/(n+6). | **54** | 196 |
+| [A000590](seq/A000xxx/A000590/) | a(n) = 13\*binomial(2n,n-6)/(n+7). | **54** | 195 |
+| [A000591](seq/A000xxx/A000591/) | Number of n-state 2-input 1-output automata with one initial and one… | **189** | 13 |
+| [A000592](seq/A000xxx/A000592/) | Number of nonnegative solutions of x^2 + y^2 = z in first n shells. | **75** | 2750 |
 | [A000593](seq/A000xxx/A000593/) | Sum of odd divisors of n. | **62** | 10000 |
 | [A000594](seq/A000xxx/A000594/) | Ramanujan's tau function (or Ramanujan numbers, or tau numbers). | **83** | 5000 |
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **294** | 25 |

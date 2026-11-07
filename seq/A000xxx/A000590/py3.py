@@ -1,3 +1,2 @@
-from math import*
-n=6
-while[print(13*comb(2*n,n-6)//(n+7))]:n+=1
+a=1;j=6
+while[print(a)]:j+=1;a=a*j*(4*j-2)//(j*-~j-42)

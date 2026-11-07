@@ -1,3 +1,3 @@
-from math import*
-n=0
-while[print(7*comb(2*n,n-3)//(n+4)if n>=3 else 0)]:n+=1
+import math
+m=1
+while[print(7*math.comb(m,m//2+4)//m)]:m+=2

@@ -1,3 +1,2 @@
-from math import*
-n=5
-while[print(11*comb(2*n,n-5)//(n+6))]:n+=1
+a=1;j=5
+while[print(a)]:j+=1;a=a*j*(4*j-2)//(j*-~j-30)
