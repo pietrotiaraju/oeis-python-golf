@@ -1,0 +1,6 @@
+{
+  "name": "Number of cubic bicolored graphs on n unlabeled nodes admitting an automorphism exchanging the colors.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

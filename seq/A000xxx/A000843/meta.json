@@ -1,0 +1,6 @@
+{
+  "name": "Number of quartic bicolored graphs on n unlabeled nodes admitting an automorphism exchanging the colors.",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}
