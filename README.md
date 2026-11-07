@@ -841,6 +841,8 @@ sequence for the code and how it works.
 | [A000829](seq/A000xxx/A000829/) | Number of switching networks (see Harrison reference for precise… | **224** | 7 |
 | [A000830](seq/A000xxx/A000830/) | Number of switching networks (see Harrison reference for precise… | **251** | 6 |
 | [A000831](seq/A000xxx/A000831/) | Expansion of e.g.f. (1 + tan(x))/(1 - tan(x)). | **60** | 433 |
+| [A000832](seq/A000xxx/A000832/) | Number of switching networks (see Harrison reference for precise… | **217** | 4 |
+| [A000833](seq/A000xxx/A000833/) | Number of switching networks (see Harrison reference for precise… | **243** | 4 |
 | [A000834](seq/A000xxx/A000834/) | Expansion of e.g.f. exp(x)\*(1 + tan(x))/(1 - tan(x)). | **61** | 162 |
 | [A000837](seq/A000xxx/A000837/) | Number of partitions of n into relatively prime parts. Also aperiodic… | **131** | 6500 |
 | [A000838](seq/A000xxx/A000838/) | Number of n-input 2-output switching networks under action of… | **42** | 7 |
@@ -874,6 +876,8 @@ sequence for the code and how it works.
 | [A000873](seq/A000xxx/A000873/) | Numbers beginning with letter 'e' in English. | **67** | 10000 |
 | [A000874](seq/A000xxx/A000874/) | Number of switching networks with S(n) and C(2,2) acting on the… | **252** | 7 |
 | [A000875](seq/A000xxx/A000875/) | Number of switching networks with S(n) and C(2,2) acting on the… | **295** | 6 |
+| [A000877](seq/A000xxx/A000877/) | Number of switching networks with GL(n,2) acting on the domain and… | **239** | 4 |
+| [A000878](seq/A000xxx/A000878/) | Number of switching networks with GL(n,2) acting on the domain and… | **287** | 4 |
 | [A000879](seq/A000xxx/A000879/) | Number of primes < prime(n)^2. | **68** | 48 |
 | [A000882](seq/A000xxx/A000882/) | Number of twin prime pairs <= product of first n primes. | **91** | 6 |
 | [A000883](seq/A000xxx/A000883/) | Number of switching networks with C(2,n) acting on the domain and… | **48** | 10 |
@@ -885,6 +889,8 @@ sequence for the code and how it works.
 | [A000889](seq/A000xxx/A000889/) | Number of switching networks with S(n) and C(2,2) acting on the… | **266** | 7 |
 | [A000890](seq/A000xxx/A000890/) | Number of switching networks with S(n) and C(2,2) acting on the… | **317** | 7 |
 | [A000891](seq/A000xxx/A000891/) | a(n) = (2\*n)!\*(2\*n+1)! / (n! \* (n+1)!)^2. | **45** | 101 |
+| [A000892](seq/A000xxx/A000892/) | Number of switching networks with GL(n,2) acting on the domain and… | **240** | 4 |
+| [A000893](seq/A000xxx/A000893/) | Number of switching networks with GL(n,2) acting on the domain and… | **290** | 4 |
 | [A000894](seq/A000xxx/A000894/) | a(n) = (2\*n)!\*(2\*n+1)! / ((n+1)! \* n!^3). | **45** | 181 |
 | [A000897](seq/A000xxx/A000897/) | a(n) = (4\*n)! / ((2\*n)!\*n!^2). | **51** | 201 |
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
