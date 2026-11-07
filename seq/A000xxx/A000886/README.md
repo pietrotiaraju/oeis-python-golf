@@ -5,13 +5,13 @@
 
 Offset 1: 2, 11, 590, 7644658, 6406102803167154, …
 
-### Python 3 — 216 bytes
+### Python 3 — 215 bytes
 
 ```python
 import math
-f=lambda r,*L:r<1and(v:=lambda d:1<<sum(2**sum(map(math.gcd,L,[d*t]*n))for t in range(P))//P)and v(1)**2+6*v(2)+8*v(3)//v(1)or sum(f(r+~k,*L,~k)for k in range(r))//r
-n=P=1
-while[print(f(n)//24)]:n+=1;P*=n
+f=lambda r,V:r and sum(f(r+~k,[V[t]<<math.gcd(t,~k)for t in range(P)])for k in range(r))//r or sum(d**3%5<<d-3+sum(V[::d]*d,(2-d)*sum(V))//P for d in(1,2,3))
+n=1;P=6
+while[print(f(n,[1]*P)//6)]:n+=1;P*=n
 ```
 
 **What is counted**
@@ -37,30 +37,33 @@ while[print(f(n)//24)]:n+=1;P*=n
 
 **How it works**
 
-- `f(r,*L)` is the recursion of [A000612](../A000612/): it averages over the
+- `f(r,V)` is the recursion of [A000612](../A000612/): it averages over the
   permutations of the r variables left by choosing the length k+1 of the
-  cycle through one of them (probability 1/r each); the lengths are stored
-  as `~k` = −(k+1) and `r+~k` = r−k−1 (`gcd` ignores the sign). The main
-  loop keeps P = n! with `P*=n`.
-- At a leaf, the helper defined there with a walrus (so it sees `L`)
-  recomputes c_d = Σ_{t<P} F(dt)/P, F(dt) being
-  `2**sum(map(math.gcd,L,[d*t]*n))`.
-- `v(d)` is 2^c_d, so the leaf is `v(1)**2+6*v(2)+8*v(3)//v(1)`; the floor
-  is exact since c₃ ≥ c₁.
+  cycle through one of them (probability 1/r each). With `k` in `range(r)`,
+  `~k` is −(k+1), so `r+~k` = r−k−1 and `math.gcd(t,~k)` = gcd(t,k+1).
+- `V` is a list over t < P; a new cycle of length l shifts entry t left by
+  gcd(t,l), so at a leaf V[t] = F(t), and the main loop keeps P = 6·n! with
+  `P*=n` (starting from P = 6).
+- The program is [A000871](../A000871/)'s with `d-3+` in the exponent: the
+  factors 1, 2, 4 are 2^(d−1), and a division by 4 leaves 2^(d−3) at the
+  leaves and `//6` for the end. As there, `sum(V[::d]*d,(2-d)*sum(V))//P` is
+  the exponent (2−d)·c₁ + c_d (P = 6·n!, so d divides P).
 - The floors are exact: at every level the average over Sᵣ and H is the
   number of (Sᵣ × H)-orbits that the permutation already chosen maps to
-  themselves (de Bruijn's lemma), an integer, so each `//r` divides exactly.
+  themselves (de Bruijn's lemma), an integer, so each `//r` divides exactly,
+  and so does the division by 4 at the leaves (|H| = 24).
 
 **Notes**
 
 - Exact integer arithmetic, Burnside's lemma and the group facts above, so
   every term is right. The b-file has 7 terms (a(1) to a(7)); they print in
-  1.6 s here, and the bar is the whole b-file. In 60 s the program prints 8
-  terms (a(8) after 30 s): each new n costs about 2n times the last, since P
-  = n! and the recursion has 2ⁿ⁻¹ leaves. From a(13) on the terms have more
-  than 4300 digits, past CPython's int-to-str limit.
-- [A000871](../A000871/)'s program with `d-3+` added to the exponent (each
-  class times 2^rank(A−I)/4, then `//6`) is 218 bytes.
+  1.2 s here, and the bar is the whole b-file. In 60 s the program prints 8
+  terms (a(8) after 18 s): each new n costs about 2n times the last, since P
+  = 6·n! and the recursion has 2ⁿ⁻¹ leaves. From a(13) on the terms have
+  more than 4300 digits, past CPython's int-to-str limit.
+- Recomputing c_d at each leaf from the cycle lengths, with a helper v(d) =
+  2^c_d and the leaf `v(1)**2+6*v(2)+8*v(3)//v(1)` (the shape of
+  [A000872](../A000872/)'s program), was 216 bytes (the first entry).
 - The same input group S(n) with the other range groups (m = 2/3): trivial
   [A000811](../A000811/)/[A000812](../A000812/), S(m)
   [A000826](../A000826/)/[A000827](../A000827/), C(2,m)
@@ -76,6 +79,7 @@ while[print(f(n)//24)]:n+=1;P*=n
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 216 | first entry |
+| 2026-11-07 | Python 3 | 215 | A000871's V-list form with `d-3+` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

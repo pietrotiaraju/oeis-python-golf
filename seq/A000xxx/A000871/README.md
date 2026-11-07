@@ -5,11 +5,11 @@
 
 Offset 1: 5, 35, 2266, 30564722, 25624410747226866, …
 
-### Python 3 — 214 bytes
+### Python 3 — 211 bytes
 
 ```python
 import math
-f=lambda r,V:r and sum(f(r+~k,[V[t]<<math.gcd(t,~k)for t in range(P)])for k in range(r))//r or sum(d**3%5<<sum(V*(3-d)+V[::d]*d,-sum(V))//P for d in(1,2,3))
+f=lambda r,V:r and sum(f(r+~k,[V[t]<<math.gcd(t,~k)for t in range(P)])for k in range(r))//r or sum(d**3%5<<sum(V[::d]*d,(2-d)*sum(V))//P for d in(1,2,3))
 n=1;P=6
 while[print(f(n,[1]*P)//6)]:n+=1;P*=n
 ```
@@ -33,8 +33,8 @@ while[print(f(n,[1]*P)//6)]:n+=1;P*=n
   and 2^(c₃−c₁): c₂ − c₁ cycles of σ̂ have even length and (c₃ − c₁)/2 have
   length a multiple of 3. So a(n) = (1/(6·n!))·Σ_σ (4^c₁ + 3·2^c₂ +
   2·2^(c₃−c₁)).
-- These are [A000827](../A000827/)'s three exponents minus c₁ (class by
-  class), with the same class sizes.
+- With d = 1, 2, 3 for the three classes (sizes 1, 3, 2), the exponent is
+  (2−d)·c₁ + c_d: [A000827](../A000827/)'s (3−d)·c₁ + c_d minus c₁.
 
 **How it works**
 
@@ -45,9 +45,11 @@ while[print(f(n,[1]*P)//6)]:n+=1;P*=n
 - `V` is a list over t < P; a new cycle of length l shifts entry t left by
   gcd(t,l), so at a leaf V[t] = F(t), and the main loop keeps P = 6·n! with
   `P*=n` (starting from P = 6).
-- The program is [A000827](../A000827/)'s with `,-sum(V)`: the start value
-  of the inner `sum` takes P·c₁ off every exponent. P = 6·n!, so
-  `sum(V*(3-d)+V[::d]*d,-sum(V))//P` is 2c₁, c₂ and c₃ − c₁.
+- As d divides P, `V[::d]` makes (P/d)/(order of σ^d) full turns of ⟨σ^d⟩
+  and c_d = d·ΣV[::d]/P. The exponent ((2−d)·ΣV + d·ΣV[::d])/P is
+  `sum(V[::d]*d,(2-d)*sum(V))//P`: the start value of `sum` carries the
+  (2−d)·ΣV part, which is negative for d = 3.
+- The class sizes 1, 3, 2 are d³ mod 5.
 - The floors are exact: at every level the average over Sᵣ and H is the
   number of (Sᵣ × H)-orbits that the permutation already chosen maps to
   themselves (de Bruijn's lemma), an integer, so each `//r` divides exactly.
@@ -57,9 +59,11 @@ while[print(f(n,[1]*P)//6)]:n+=1;P*=n
 - Exact integer arithmetic, Burnside's lemma and the group facts above, so
   every term is right. The b-file has 7 terms (a(1) to a(7)); they print in
   1.0 s here, and the bar is the whole b-file. In 60 s the program prints 8
-  terms (a(8) after 21 s): each new n costs about 2n times the last, since P
+  terms (a(8) after 19 s): each new n costs about 2n times the last, since P
   = 6·n! and the recursion has 2ⁿ⁻¹ leaves. From a(13) on the terms have
   more than 4300 digits, past CPython's int-to-str limit.
+- A000827's list form with a start value, `sum(V*(3-d)+V[::d]*d,-sum(V))`,
+  is 3 bytes longer (the first entry).
 - The same input group S(n) with the other range groups (m = 2/3): trivial
   [A000811](../A000811/)/[A000812](../A000812/), S(m)
   [A000826](../A000826/)/[A000827](../A000827/), C(2,m)
@@ -75,6 +79,7 @@ while[print(f(n,[1]*P)//6)]:n+=1;P*=n
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 214 | first entry |
+| 2026-11-07 | Python 3 | 211 | `sum(V[::d]*d,(2-d)*sum(V))` |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

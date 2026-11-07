@@ -1,4 +1,4 @@
 import math
-f=lambda r,*L:r<1and(v:=lambda d:1<<sum(2**sum(map(math.gcd,L,[d*t]*n))for t in range(P))//P)and v(1)**2+6*v(2)+8*v(3)//v(1)or sum(f(r+~k,*L,~k)for k in range(r))//r
-n=P=1
-while[print(f(n)//24)]:n+=1;P*=n
+f=lambda r,V:r and sum(f(r+~k,[V[t]<<math.gcd(t,~k)for t in range(P)])for k in range(r))//r or sum(d**3%5<<d-3+sum(V[::d]*d,(2-d)*sum(V))//P for d in(1,2,3))
+n=1;P=6
+while[print(f(n,[1]*P)//6)]:n+=1;P*=n
