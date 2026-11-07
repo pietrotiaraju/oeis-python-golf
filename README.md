@@ -922,12 +922,15 @@ sequence for the code and how it works.
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
 | [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
+| [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
+| [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
 | [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
+| [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |
 | [A000996](seq/A000xxx/A000996/) | Shifts 3 places left under binomial transform. | **64** | 301 |
