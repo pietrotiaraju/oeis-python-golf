@@ -1,0 +1,6 @@
+{
+  "name": "Shifts left two terms under the binomial transform.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
