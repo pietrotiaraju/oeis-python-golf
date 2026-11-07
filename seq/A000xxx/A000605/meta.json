@@ -1,0 +1,6 @@
+{
+  "name": "Number of points of norm <= n in cubic lattice.",
+  "offset": 0,
+  "min_terms": 64,
+  "timeout": 60
+}

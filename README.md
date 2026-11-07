@@ -614,15 +614,25 @@ sequence for the code and how it works.
 | [A000598](seq/A000xxx/A000598/) | Number of rooted ternary trees with n nodes; number of n-carbon alkyl… | **158** | 1001 |
 | [A000599](seq/A000xxx/A000599/) | Number of secondary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **193** | 1001 |
 | [A000600](seq/A000xxx/A000600/) | Number of tertiary alcohols (alkanols or alkyl alcohols C\_n H\_{2n+1}… | **195** | 1001 |
+| [A000601](seq/A000xxx/A000601/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^3)). | **42** | 10001 |
+| [A000603](seq/A000xxx/A000603/) | Number of nonnegative solutions to x^2 + y^2 <= n^2. | **75** | 540 |
+| [A000604](seq/A000xxx/A000604/) | Number of nonnegative solutions to x^2 + y^2 + z^2 <= n^2. | **90** | 105 |
+| [A000605](seq/A000xxx/A000605/) | Number of points of norm <= n in cubic lattice. | **92** | 64 |
+| [A000606](seq/A000xxx/A000606/) | Number of nonnegative solutions to x^2 + y^2 + z^2 <= n. | **89** | 110 |
+| [A000607](seq/A000xxx/A000607/) | Number of partitions of n into prime parts. | **97** | 13000 |
 | [A000629](seq/A000xxx/A000629/) | Number of necklaces of partitions of n+1 labeled beads. | **56** | 425 |
+| [A000643](seq/A000xxx/A000643/) | a(n) = a(n-1) + 2^a(n-2). | **34** | 10 |
+| [A000655](seq/A000xxx/A000655/) | a(n) = number of letters in a(n-1), a(1) = 1 (in English). | **28** | 80 |
 | [A000657](seq/A000xxx/A000657/) | Median Euler numbers (the middle numbers of Arnold's shuttle… | **78** | 201 |
 | [A000658](seq/A000xxx/A000658/) | Strehl's sequence "C\_n^(3)". | **105** | 596 |
+| [A000659](seq/A000xxx/A000659/) | a(n) = 2^a(n-1) + a(n-2). | **37** | 7 |
 | [A000660](seq/A000xxx/A000660/) | Boustrophedon transform of 1,1,2,3,4,5,... | **62** | 401 |
 | [A000661](seq/A000xxx/A000661/) | Shifts 2 places left under boustrophedon transform. | **63** | 481 |
 | [A000667](seq/A000xxx/A000667/) | Boustrophedon transform of all-1's sequence. | **57** | 486 |
 | [A000670](seq/A000xxx/A000670/) | Fubini numbers: number of preferential arrangements of n labeled… | **59** | 425 |
 | [A000674](seq/A000xxx/A000674/) | Boustrophedon transform of 1, 2, 2, 2, 2, ... | **57** | 401 |
 | [A000687](seq/A000xxx/A000687/) | Boustrophedon transform (first version) of Fibonacci numbers… | **71** | 483 |
+| [A000689](seq/A000xxx/A000689/) | Final decimal digit of 2^n. | **27** | 81 |
 | [A000697](seq/A000xxx/A000697/) | Boustrophedon transform of 1, 1, 4, 9, 16, ... | **65** | 401 |
 | [A000796](seq/A000xxx/A000796/) | Decimal expansion of Pi (or digits of Pi). | **85** | 20000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
