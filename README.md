@@ -925,6 +925,7 @@ sequence for the code and how it works.
 | [A000918](seq/A000xxx/A000918/) | a(n) = 2^n - 2. | **26** | 1001 |
 | [A000919](seq/A000xxx/A000919/) | a(n) = 4^n - C(4,3)\*3^n + C(4,2)\*2^n - C(4,1). | **42** | 201 |
 | [A000920](seq/A000xxx/A000920/) | Differences of 0: 6!\*Stirling2(n,6). | **58** | 1000 |
+| [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **117** | 65 |
 | [A000930](seq/A000xxx/A000930/) | Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) =… | **37** | 5001 |
 | [A000931](seq/A000xxx/A000931/) | Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with… | **39** | 8181 |
 | [A000932](seq/A000xxx/A000932/) | a(n) = a(n-1) + n\*a(n-2); a(0) = a(1) = 1. | **40** | 800 |
@@ -937,15 +938,18 @@ sequence for the code and how it works.
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
+| [A000966](seq/A000xxx/A000966/) | n! never ends in this many 0's. | **48** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
 | [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
+| [A000976](seq/A000xxx/A000976/) | Period of 1/n! in base 10. | **78** | 200 |
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
+| [A000993](seq/A000xxx/A000993/) | Number of distinct quadratic residues mod 10^n; also number of… | **49** | 1001 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |
 | [A000995](seq/A000xxx/A000995/) | Shifts left two terms under the binomial transform. | **59** | 101 |
 | [A000996](seq/A000xxx/A000996/) | Shifts 3 places left under binomial transform. | **64** | 301 |
