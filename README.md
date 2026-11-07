@@ -812,7 +812,9 @@ sequence for the code and how it works.
 | [A000798](seq/A000xxx/A000798/) | Number of different quasi-orders (or topologies, or transitive… | **168** | 6 |
 | [A000799](seq/A000xxx/A000799/) | a(n) = floor(2^n / n). | **31** | 300 |
 | [A000800](seq/A000xxx/A000800/) | Sum of upward diagonals of Eulerian triangle. | **84** | 601 |
+| [A000801](seq/A000xxx/A000801/) | a(n) = Sum\_{k = 1..n} floor(2^k / k). | **38** | 500 |
 | [A000802](seq/A000xxx/A000802/) | Maximal number of states in the minimal deterministic finite… | **74** | 3301 |
+| [A000803](seq/A000xxx/A000803/) | a(n+3) = a(n+2) + a(n+1) + a(n) - 4. | **43** | 401 |
 | [A000804](seq/A000xxx/A000804/) | Permanent of a certain cyclic n X n (0,1) matrix. | **142** | 1001 |
 | [A000805](seq/A000xxx/A000805/) | Permanent of a certain cyclic n X n (0,1) matrix. | **146** | 1002 |
 | [A000806](seq/A000xxx/A000806/) | Bessel polynomial y\_n(-1). | **40** | 405 |
@@ -853,11 +855,13 @@ sequence for the code and how it works.
 | [A000849](seq/A000xxx/A000849/) | Number of primes <= product of first n primes, A002110(n). | **75** | 7 |
 | [A000853](seq/A000xxx/A000853/) | Number of n-input 2-output switching networks under action of… | **44** | 10 |
 | [A000854](seq/A000xxx/A000854/) | Number of n-input 3-output switching networks under action of… | **69** | 10 |
+| [A000855](seq/A000xxx/A000855/) | Final two digits of 2^n. | **28** | 1001 |
 | [A000856](seq/A000xxx/A000856/) | Number of n-input 2-output switching networks under the action of… | **189** | 7 |
 | [A000857](seq/A000xxx/A000857/) | Number of n-input 3-output switching networks under the action of… | **210** | 6 |
 | [A000859](seq/A000xxx/A000859/) | Number of n-input 2-output switching networks under action of S(n)… | **252** | 7 |
 | [A000860](seq/A000xxx/A000860/) | Number of n-input 3-output switching networks under action of S(n)… | **265** | 6 |
 | [A000864](seq/A000xxx/A000864/) | Deceptive nonprimes: composite numbers k that divide the repunit… | **55** | 58 |
+| [A000866](seq/A000xxx/A000866/) | 2^n written in base 5. | **59** | 301 |
 | [A000868](seq/A000xxx/A000868/) | Number of switching networks with C(2,n) acting on domain and… | **46** | 10 |
 | [A000869](seq/A000xxx/A000869/) | Number of switching networks with C(2,n) acting on domain and… | **84** | 10 |
 | [A000871](seq/A000xxx/A000871/) | Number of switching networks with S(n) acting on the domain and… | **211** | 7 |
