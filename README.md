@@ -1077,6 +1077,10 @@ sequence for the code and how it works.
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
 | [A001090](seq/A001xxx/A001090/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 0, a(1) = 1. | **34** | 1001 |
 | [A001091](seq/A001xxx/A001091/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 1, a(1) = 4. | **35** | 201 |
+| [A001093](seq/A001xxx/A001093/) | a(n) = n^3 + 1. | **30** | 10002 |
+| [A001094](seq/A001xxx/A001094/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3). | **39** | 1001 |
+| [A001095](seq/A001xxx/A001095/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4). | **39** | 1001 |
+| [A001096](seq/A001xxx/A001096/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4)\*(n-5). | **49** | 1001 |
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
 | [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
