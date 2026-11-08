@@ -1,0 +1,6 @@
+{
+  "name": "Numerators of expansion of e.g.f. sinh(x) / sin(x) (even powers only).",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

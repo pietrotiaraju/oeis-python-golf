@@ -910,7 +910,9 @@ sequence for the code and how it works.
 | [A000898](seq/A000xxx/A000898/) | a(n) = 2\*(a(n-1) + (n-1)\*a(n-2)) for n >= 2 with a(0) = 1. | **44** | 201 |
 | [A000899](seq/A000xxx/A000899/) | Number of solutions to the rook problem on an n X n board having a… | **97** | 200 |
 | [A000900](seq/A000xxx/A000900/) | Number of solutions to the rook problem on an n X n board having a… | **77** | 201 |
+| [A000901](seq/A000xxx/A000901/) | Number of solutions to the rook problem on a 2n X 2n board having a… | **73** | 403 |
 | [A000902](seq/A000xxx/A000902/) | Expansion of e.g.f. (1/2)\*(exp(2\*x + x^2) + 1). | **49** | 201 |
+| [A000903](seq/A000xxx/A000903/) | Number of inequivalent ways of placing n nonattacking rooks on n X n… | **99** | 451 |
 | [A000904](seq/A000xxx/A000904/) | a(n) = (n+1)\*a(n-1) + (n+2)\*a(n-2) + a(n-3); a(1)=0, a(2)=3, a(3)=13. | **52** | 100 |
 | [A000905](seq/A000xxx/A000905/) | Hamilton numbers. | **92** | 14 |
 | [A000906](seq/A000xxx/A000906/) | Exponential generating function: 2\*(1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
@@ -923,6 +925,7 @@ sequence for the code and how it works.
 | [A000913](seq/A000xxx/A000913/) | Number of bond-rooted polyenoids with n edges. | **107** | 25 |
 | [A000914](seq/A000xxx/A000914/) | Stirling numbers of the first kind: s(n+2, n). | **40** | 1001 |
 | [A000915](seq/A000xxx/A000915/) | Stirling numbers of first kind s(n+4, n). | **63** | 1000 |
+| [A000916](seq/A000xxx/A000916/) | a(2n) = n+2, a(2n-1) = smallest number requiring n+2 letters in… | **256** | 56 |
 | [A000917](seq/A000xxx/A000917/) | a(n) = (2n+3)!/(n!\*(n+2)!). | **44** | 201 |
 | [A000918](seq/A000xxx/A000918/) | a(n) = 2^n - 2. | **26** | 1001 |
 | [A000919](seq/A000xxx/A000919/) | a(n) = 4^n - C(4,3)\*3^n + C(4,2)\*2^n - C(4,1). | **42** | 201 |
@@ -952,14 +955,21 @@ sequence for the code and how it works.
 | [A000950](seq/A000xxx/A000950/) | Number of forests with n nodes and height at most 3. | **112** | 64 |
 | [A000951](seq/A000xxx/A000951/) | Number of forests with n nodes and height at most 4. | **112** | 41 |
 | [A000952](seq/A000xxx/A000952/) | Numbers k == 2 (mod 4) that are the orders of conference matrices. | **203** | 5 |
+| [A000955](seq/A000xxx/A000955/) | A sequence satisfying (a(2n+1) + 1)^3 = Sum\_{k=1..2n+1} a(k)^3. | **60** | 10 |
+| [A000956](seq/A000xxx/A000956/) | A sequence satisfying (a(2n+1) + 1)^3 = Sum\_{k=1..2n+1} a(k)^3. | **60** | 14 |
 | [A000957](seq/A000xxx/A000957/) | Fine's sequence (or Fine numbers): number of relations of valence >=… | **54** | 1671 |
 | [A000958](seq/A000xxx/A000958/) | Number of ordered rooted trees with n edges having root of odd degree. | **55** | 1000 |
 | [A000959](seq/A000xxx/A000959/) | Lucky numbers. | **83** | 14000 |
 | [A000960](seq/A000xxx/A000960/) | Flavius Josephus's sieve: Start with the natural numbers; at the k-th… | **57** | 10000 |
 | [A000961](seq/A000xxx/A000961/) | Powers of primes. Alternatively, 1 and the prime powers (p^k, p… | **65** | 10000 |
+| [A000962](seq/A000xxx/A000962/) | The convergent sequence A\_n for the ternary continued fraction… | **56** | 1001 |
+| [A000963](seq/A000xxx/A000963/) | The convergent sequence B\_n for the ternary continued fraction… | **56** | 1001 |
+| [A000964](seq/A000xxx/A000964/) | The convergent sequence C\_n for the ternary continued fraction… | **56** | 1001 |
+| [A000965](seq/A000xxx/A000965/) | Numerators of expansion of e.g.f. sinh(x) / sin(x) (even powers only). | **135** | 101 |
 | [A000966](seq/A000xxx/A000966/) | n! never ends in this many 0's. | **48** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |
+| [A000969](seq/A000xxx/A000969/) | Expansion of g.f. (1 + x + 2\*x^2)/((1 - x)^2\*(1 - x^3)). | **30** | 10001 |
 | [A000970](seq/A000xxx/A000970/) | Fermat coefficients. | **39** | 996 |
 | [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
