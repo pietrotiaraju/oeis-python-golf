@@ -49,7 +49,7 @@ while[print(len(S))]:n+=1;S={min(r[j:]+r[:j]for r in(v,v[::-1])for j in range(9*
   picks out the hydrogens.
 - The steps are drawn on the brick wall, the usual picture of the honeycomb
   as a square grid in which every lattice point has a left and a right
-  neighbour and one more above or below. The six headings 330°, 30°, 90°,
+  neighbour and one more, above or below by turns. The six headings 330°, 30°, 90°,
   150°, 210°, 270° become the Gaussian-integer steps 1, 1, i, −1, −1, −i,
   which is `1j**(k%6//1.5)` (k mod 6 = 0, 1, …, 5 gives the exponents 0, 0,
   1, 2, 2, 3). The brick wall is the honeycomb graph itself, so two
@@ -87,10 +87,10 @@ while[print(len(S))]:n+=1;S={min(r[j:]+r[:j]for r in(v,v[::-1])for j in range(9*
   n ≤ 11, and the same as Table 6 of Cyvin et al. (n ≤ 15) and the OEIS
   data.
 - Tuples (`(1,3)*3` and `(1,3,1,3,1)`; `c&2` and `c%3` work there too)
-  are 2 bytes longer, run at about half the speed and lose the substring tests
-  that the class programs use. Strings would need `int(c)` and a
+  are 2 bytes longer, run at about half the speed and lose the substring
+  tests that the class programs use. Strings would need `int(c)` and a
   separate carbon test.
-  `range(4*n+6)` (exactly the rotations) is 2 bytes longer and about twice
+- `range(4*n+6)` (exactly the rotations) is 2 bytes longer and about twice
   as fast.
 - The b-file is the 20 OEIS terms, so the check stops at the timeout.
 
