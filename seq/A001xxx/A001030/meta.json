@@ -1,0 +1,6 @@
+{
+  "name": "Fixed under 1 -> 21, 2 -> 211.",
+  "offset": 1,
+  "min_terms": 8119,
+  "timeout": 60
+}

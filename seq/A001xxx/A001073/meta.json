@@ -1,0 +1,6 @@
+{
+  "name": "Label a 1-cm ruler with digits 1 cm wide.",
+  "offset": 0,
+  "min_terms": 10001,
+  "timeout": 60
+}

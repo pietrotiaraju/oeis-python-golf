@@ -1,0 +1,6 @@
+{
+  "name": "Numbered stops in Manhattan on the Lexington Avenue subway.",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}

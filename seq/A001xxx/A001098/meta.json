@@ -1,0 +1,6 @@
+{
+  "name": "Multiply previous term by 2 and write in binary.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
