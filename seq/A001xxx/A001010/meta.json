@@ -1,0 +1,6 @@
+{
+  "name": "Number of symmetric foldings of a strip of n labeled stamps.",
+  "offset": 1,
+  "min_terms": 17,
+  "timeout": 5
+}
