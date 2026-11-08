@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that k / (sum of digits of k) is a square.",
+  "offset": 1,
+  "min_terms": 220,
+  "timeout": 60
+}

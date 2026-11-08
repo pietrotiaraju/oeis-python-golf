@@ -1106,6 +1106,10 @@ sequence for the code and how it works.
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
 | [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
+| [A001101](seq/A001xxx/A001101/) | Moran numbers: k such that k/(sum of digits of k) is prime. | **86** | 1300 |
+| [A001102](seq/A001xxx/A001102/) | Numbers k such that k / (sum of digits of k) is a square. | **87** | 220 |
+| [A001103](seq/A001xxx/A001103/) | Numbers k such that (k / product of digits of k) is 1 or a prime. | **93** | 90 |
+| [A001104](seq/A001xxx/A001104/) | Numbers k such that k / product of digits of k is a square. | **93** | 31 |
 | [A001105](seq/A001xxx/A001105/) | a(n) = 2\*n^2. | **28** | 1001 |
 | [A001106](seq/A001xxx/A001106/) | 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n\*(7\*n-5)/2. | **31** | 10001 |
 | [A001107](seq/A001xxx/A001107/) | 10-gonal (or decagonal) numbers: a(n) = n\*(4\*n-3). | **29** | 1001 |

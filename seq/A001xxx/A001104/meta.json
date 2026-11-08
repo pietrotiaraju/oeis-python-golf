@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that k / product of digits of k is a square.",
+  "offset": 1,
+  "min_terms": 31,
+  "timeout": 60
+}
