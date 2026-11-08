@@ -1,0 +1,6 @@
+{
+  "name": "Number of partially ordered sets (\"posets\") with n labeled elements (or labeled acyclic transitive digraphs).",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 60
+}

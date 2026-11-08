@@ -1011,6 +1011,7 @@ sequence for the code and how it works.
 | [A001001](seq/A001xxx/A001001/) | Number of sublattices of index n in generic 3-dimensional lattice. | **78** | 7500 |
 | [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
 | [A001008](seq/A001xxx/A001008/) | a(n) = numerator of harmonic number H(n) = Sum\_{i=1..n} 1/i. | **69** | 2296 |
+| [A001009](seq/A001xxx/A001009/) | Triangle giving number L(n,k) of normalized k X n Latin rectangles. | **152** | 21 |
 | [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
 | [A001011](seq/A001xxx/A001011/) | Number of ways to fold a strip of n blank stamps. | **203** | 10 |
 | [A001013](seq/A001xxx/A001013/) | Jordan-Polya numbers: products of factorial numbers A000142. | **80** | 8000 |
@@ -1027,11 +1028,15 @@ sequence for the code and how it works.
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
+| [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |
 | [A001036](seq/A001xxx/A001036/) | Partial sums of A001037, omitting A001037(1). | **90** | 34 |
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
+| [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
 | [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
+| [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
+| [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |

@@ -1,0 +1,6 @@
+{
+  "name": "Number of minimally 2-edge-connected non-isomorphic graphs with n nodes.",
+  "offset": 3,
+  "min_terms": 5,
+  "timeout": 120
+}
