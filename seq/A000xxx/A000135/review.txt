@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+fac051280fc7 counts sets with sum of x^(2/3) <= n using certified floor/ceil integer cube roots

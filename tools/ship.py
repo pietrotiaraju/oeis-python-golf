@@ -2,6 +2,7 @@
 """Commit sequences on their own branch and push it; the ship workflow then lands it on main.
 
 usage: python tools/ship.py AXXXXXX [AXXXXXX ...] [-b BRANCH] [-m MESSAGE] [--no-push]
+                            [--review NOTE]
 
 Run it from any checkout of the repository. It
   1. finds the worktree of the branch (add/AXXXXXX unless -b is given), or creates one
@@ -11,8 +12,16 @@ Run it from any checkout of the repository. It
   4. commits what changed ("Add AXXXXXX (N bytes)" unless -m is given);
   5. rebases the branch on origin/main, rebuilding the table if it clashes, and pushes it.
 Nothing is ever committed in the shared checkout.
+
+A program that tools/verify.py says needs a review (its terms would fit in a table no
+longer than itself, or it spells out terms) cannot land by itself. With --review NOTE,
+where NOTE says why the program computes the sequence for every n, ship.py adds its hash
+and NOTE to the sequence's review.txt, pushes the branch (review/AXXXXXX unless -b is
+given) and opens a pull request that shows the program and the page's argument. The
+user's merge is the review.
 """
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -101,6 +110,50 @@ def sizes(wt, aid):
     return ", ".join(f"{p.stem[4:]} {verify.size(p)} bytes".lstrip() for p in progs)
 
 
+def note_reviews(wt, aids, note):
+    """Add NOTE to review.txt for every program of these sequences that needs a review.
+
+    Return {AXXXXXX: why it needs one}."""
+    out = subprocess.run([sys.executable, "tools/verify.py", *aids, "--needs-review"], cwd=wt,
+                         capture_output=True, text=True).stdout
+    why = {}
+    for line in out.splitlines():
+        m = re.fullmatch(r"(A\d{6}) ([0-9a-f]{12}) # (.*)", line)
+        if not m:
+            continue
+        aid, digest, reason = m.groups()
+        why[aid] = reason
+        path = wt / paths(aid)[0] / "review.txt"
+        old = path.read_text(encoding="utf-8") if path.exists() else (
+            "# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why\n"
+            "# it computes the sequence for every n. This file changes only through pull requests.\n")
+        path.write_text(f"{old}{digest} {note}\n", encoding="utf-8", newline="\n")
+    if not why:
+        sys.exit("no program here needs a review: ship it without --review")
+    return why
+
+
+def open_review(wt, branch, aids, why, note):
+    """Open the pull request whose merge approves the programs."""
+    parts = []
+    for aid in aids:
+        if aid not in why:
+            continue
+        folder = wt / paths(aid)[0]
+        page = (folder / "README.md").read_text(encoding="utf-8")
+        argument = page.split("**How it works**", 1)[-1].split("## History", 1)[0].strip()
+        program = (folder / "py3.py").read_text(encoding="utf-8").rstrip()
+        parts.append(f"## {aid}\n\nNeeds a review: {why[aid]}.\n\n```python\n{program}\n```\n\n"
+                     f"**How it works** (from the page)\n\n{argument}\n")
+    body = (f"Review note: {note}\n\n" + "\n".join(parts) +
+            "\nMerging this pull request approves these programs: their hashes are in review.txt,"
+            " so tools/verify.py lets them pass.\n")
+    title = "Review: " + git("log", "-1", "--format=%s", cwd=wt).stdout.strip()
+    r = subprocess.run(["gh", "pr", "create", "--base", "main", "--head", branch, "--title", title,
+                        "--body", body], cwd=wt, capture_output=True, text=True)
+    print(r.stdout.strip() or f"gh pr create failed: {r.stderr.strip()}")
+
+
 def main(argv=None):
     sys.stdout.reconfigure(line_buffering=True)  # keep our lines in order with verify.py's
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
@@ -108,11 +161,15 @@ def main(argv=None):
     p.add_argument("-b", "--branch", help="branch to use (default add/AXXXXXX)")
     p.add_argument("-m", "--message", help="commit message")
     p.add_argument("--no-push", action="store_true", help="commit and rebase, but do not push")
+    p.add_argument("--review", metavar="NOTE", help="for programs that need a review: record NOTE (why"
+                   " the program computes the sequence) and open a pull request instead of landing")
     a = p.parse_args(argv)
     aids = [x.upper() for x in a.aids]
     if len(aids) > 1 and not a.branch:
         p.error("several sequences need -b BRANCH, for example -b golf/import-math")
-    branch = a.branch or f"add/{aids[0]}"
+    branch = a.branch or f"{'review' if a.review else 'add'}/{aids[0]}"
+    if a.review and branch.startswith(("add/", "golf/")):
+        p.error("--review needs a branch outside add/ and golf/, which land by themselves")
 
     common = git("rev-parse", "--path-format=absolute", "--git-common-dir", cwd=verify.ROOT).stdout.strip()
     shared = Path(common).resolve().parent
@@ -132,6 +189,7 @@ def main(argv=None):
         bring(shared, wt, aid)
         if not (wt / paths(aid)[0]).is_dir():
             sys.exit(f"{aid}: no {paths(aid)[0]} in {wt}")
+    why = note_reviews(wt, aids, a.review) if a.review else {}
     if subprocess.run([sys.executable, "tools/verify.py", *aids, "--write"], cwd=wt).returncode:
         sys.exit("tools/verify.py failed: nothing committed")
 
@@ -159,7 +217,8 @@ def main(argv=None):
     if check.returncode:
         fails = "\n".join(x for x in check.stdout.splitlines() if x.startswith("FAIL"))
         sys.exit(f"after the rebase on origin/main, tools/verify.py fails; not pushed:\n{fails}")
-    guard = subprocess.run([sys.executable, "tools/guard.py", "origin/main", "--strict"], cwd=wt,
+    strict = [] if a.review else ["--strict"]  # a review branch carries review.txt, which --strict refuses
+    guard = subprocess.run([sys.executable, "tools/guard.py", "origin/main", *strict], cwd=wt,
                            capture_output=True, text=True)
     if guard.returncode:
         refused = "\n".join(x for x in guard.stdout.splitlines() if x.startswith("REFUSED"))
@@ -168,6 +227,10 @@ def main(argv=None):
         print(f"{branch} is ready in {wt}; not pushed")
         return
     git("push", "-q", "--force-with-lease", "-u", "origin", branch, cwd=wt)
+    if a.review:
+        open_review(wt, branch, aids, why, a.review)
+        print(f"pushed {branch}: it lands on main when the user merges the pull request")
+        return
     print(f"pushed {branch}: the ship workflow lands it on main once tools/verify.py passes"
           " (Actions tab on GitHub)")
 

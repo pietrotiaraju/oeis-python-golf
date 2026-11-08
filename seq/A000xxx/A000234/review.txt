@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+229f73f1ab87 counts multisets with sum of x^(2/3) <= n using exact integer cube roots, as A000135

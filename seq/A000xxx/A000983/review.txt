@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+da747685299e exact exhaustive covering-code search with growing size, monotonicity argued on page

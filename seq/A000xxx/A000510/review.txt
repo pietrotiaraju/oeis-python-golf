@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+21c7bda9a1fc brute-force max (k,3)-arc over all subsets of PG(2,q) points

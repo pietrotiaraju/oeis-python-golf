@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+d2711305d897 counts distinct values of the quadratic form up to 2^n by enumeration with proved bound

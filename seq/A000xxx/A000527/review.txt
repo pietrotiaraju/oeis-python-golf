@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+4d4703e868e4 series-parallel Euler-transform recurrence plugged into the OEIS g.f.

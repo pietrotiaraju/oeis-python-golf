@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+e19dbedb8cbd Burnside over B_n x AG(3,2) with cycle-type class table; page derives each class term

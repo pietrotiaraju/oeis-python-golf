@@ -42,10 +42,20 @@ A000011 -b golf/import-math -m "A000003, A000011: import math (-1 byte each)"`.
 Don't open pull requests for sequence work, and don't edit the records table by
 hand: `tools/verify.py --write` rebuilds it.
 
+If `tools/verify.py` says a program **needs a review** (its required terms would
+fit in a table no longer than the program, or its source spells out terms), it
+cannot land by itself: matching the b-file does not show that it computes the
+sequence. Make sure the page's "How it works" argues for every n, then ship it
+on its own with `python tools/ship.py AXXXXXX --review "why it computes the
+sequence for every n"`. That records the note in the sequence's `review.txt`,
+pushes `review/AXXXXXX` and opens the one kind of pull request sequence work
+uses; the user's merge is the review. Ship the rest of a lot without it. Never
+write `review.txt` yourself, and never store terms to get under a bar.
+
 `tools/guard.py` refuses, for sequences already on `main`: a `py3.py` that is not
 shorter (unless the old one is wrong and a commit message says "fix"), any change
 to their b-file, a lower `min_terms`, a longer `timeout` or a new offset in
 `meta.json`, and deleting their program, page or `meta.json`. The `ship` workflow
-also refuses anything outside `seq/`, `bfiles/` and `README.md`: changes to
+also refuses `review.txt` and anything outside `seq/`, `bfiles/` and `README.md`: changes to
 `tools/`, workflows, `CLAUDE.md` or `CONTRIBUTING.md` need a pull request that
 the user merges.

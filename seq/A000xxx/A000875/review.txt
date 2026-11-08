@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+e2d9e1667142 Burnside over B_n signed-cycle recursion with GL(3,2) range, |H|=168; page justifies
