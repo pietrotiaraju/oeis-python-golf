@@ -11,12 +11,19 @@ usage: python tools/verify.py [AXXXXXX ...] [--write] [--no-run] [--since=REF]
   --to-bar       stop each program once it has printed its min_terms terms, instead of
                  letting it run through the b-file until the timeout
   --shard=I/N    run only every N-th sequence, starting from the I-th (0 <= I < N)
-  --report=PATH  write one tab-separated line per program run: sequence, bytes,
-                 min_terms, timeout, seconds to reach min_terms, share of the timeout, status
+  --report=PATH  write one tab-separated line per program run: sequence, bytes, min_terms,
+                 timeout, reference seconds to reach min_terms, share of the timeout,
+                 status, seconds on this machine, speed factor
 
 A program passes when every line it prints is right and its min_terms-th term
 arrives within MARGIN (half) of the sequence's timeout. The timeout itself only
 stops the run: the margin keeps the verdict from hanging on how fast a machine is.
+
+Times are in reference seconds. Before running programs (and again once a minute)
+verify.py runs the fixed benchmark tools/bench.py the same way; a machine where it
+takes twice REF_BENCH counts as twice as slow, so its timings are halved and its
+timeouts doubled. GitHub's runners differ by up to 2.3 times in speed; the factor
+takes that out, and the margin covers what it misses.
 
 Each program runs alone in an empty temporary folder, with an empty environment,
 no input and the audit hook of tools/sandbox.py: it cannot read the b-files or any
@@ -39,6 +46,9 @@ README = ROOT / "README.md"
 START, END = "<!-- records:start -->", "<!-- records:end -->"
 DEFAULT_TIMEOUT = 60
 MARGIN = 0.5  # min_terms must arrive within this share of the timeout
+REF_BENCH = 0.25  # seconds tools/bench.py takes on a typical GitHub runner (median of an audit)
+RECALIBRATE = 60  # seconds after which the speed factor is measured again
+_speed = [None, 0.0]  # [factor, time.monotonic() when measured]
 NAME_WIDTH = 70
 
 
@@ -121,11 +131,22 @@ def run(prog, want, timeout, bar):
     return lines[:want], elapsed, tail, (reached or [None])[0]
 
 
+def speed():
+    """How many times slower than the reference this machine is right now (tools/bench.py)."""
+    if _speed[0] is None or time.monotonic() - _speed[1] > RECALIBRATE:
+        lines, _, tail, _ = run(Path(__file__).with_name("bench.py"), 1, 600, 1)
+        if not lines:
+            sys.exit(f"tools/bench.py failed: {tail}")
+        _speed[:] = float(lines[0]) / REF_BENCH, time.monotonic()
+        print(f"  (benchmark {float(lines[0]):.3f} s: speed factor {_speed[0]:.2f})")
+    return _speed[0]
+
+
 def check_program(prog, ref, cfg, page, execute, to_bar=False):
     """Return (record, problems) for one program file; cfg holds the sequence's min_terms and timeout.
 
-    When the program runs, the record also holds `bar_seconds` (None if min_terms never came),
-    `timeout`, `min_terms` and `status`."""
+    When the program runs, the record also holds `bar_seconds` (reference seconds; None if
+    min_terms never came), `raw_seconds`, `factor`, `timeout`, `min_terms` and `status`."""
     problems = []
     try:
         nbytes = size(prog)
@@ -144,21 +165,25 @@ def check_program(prog, ref, cfg, page, execute, to_bar=False):
         timeout = cfg.get("timeout", DEFAULT_TIMEOUT)
         limit = timeout * MARGIN
         page_problems = len(problems)
-        lines, elapsed, tail, bar = run(prog, min_terms if to_bar else len(ref), timeout, min_terms)
+        f = speed()
+        lines, elapsed, tail, raw = run(prog, min_terms if to_bar else len(ref), timeout * f, min_terms)
+        bar = None if raw is None else raw / f
         bad = next((i for i, (x, y) in enumerate(zip(lines, ref)) if x != y), None)
         if bad is not None:
             problems.append(f"{prog.name}: term {bad + 1} is {lines[bad][:40]!r}, expected {ref[bad][:40]!r}")
         elif bar is None:
             why = f" ({tail[0]})" if tail else ""
-            problems.append(f"{prog.name}: only {len(lines)} of {min_terms} terms in {elapsed:.0f} s{why}")
+            problems.append(f"{prog.name}: only {len(lines)} of {min_terms} terms in {elapsed / f:.0f} "
+                            f"reference s ({elapsed:.0f} s here){why}")
         elif bar > limit:
-            problems.append(f"{prog.name}: term {min_terms} came after {bar:.2f} s; "
-                            f"it must come within {limit:g} s, half the {timeout} s timeout")
+            problems.append(f"{prog.name}: term {min_terms} came after {bar:.2f} reference s ({raw:.2f} s "
+                            f"here); it must come within {limit:g}, half the {timeout} s timeout")
         status = "ok" if len(problems) == page_problems else "FAIL"
-        at = f"{bar:6.1f} s" if bar is not None else "  never "
+        at = f"{bar:6.1f}" if bar is not None else " never"
         print(f"  {category(prog):<22} {nbytes:>4} bytes  {len(lines):>5} terms in {elapsed:5.1f} s"
-              f"  term {min_terms} at {at} (limit {limit:g} s)  {status}")
-        rec.update(bar_seconds=bar, timeout=timeout, min_terms=min_terms, status=status)
+              f"  term {min_terms} at {at} ref s (limit {limit:g})  {status}")
+        rec.update(bar_seconds=bar, raw_seconds=raw, factor=f, timeout=timeout, min_terms=min_terms,
+                   status=status)
     else:
         print(f"  {category(prog):<22} {nbytes:>4} bytes")
     return rec, problems
@@ -240,11 +265,12 @@ def main(argv):
     if report:
         with open(report, "w", encoding="utf-8", newline="\n") as f:
             for aid, r in timings:
-                bar = r["bar_seconds"]
+                bar, raw = r["bar_seconds"], r["raw_seconds"]
                 f.write("\t".join(map(str, (
                     aid, r["bytes"], r["min_terms"], r["timeout"],
                     "" if bar is None else f"{bar:.2f}",
-                    "" if bar is None else f"{bar / r['timeout']:.3f}", r["status"]))) + "\n")
+                    "" if bar is None else f"{bar / r['timeout']:.3f}", r["status"],
+                    "" if raw is None else f"{raw:.2f}", f"{r['factor']:.3f}"))) + "\n")
 
     for p in problems:
         print("FAIL", p)

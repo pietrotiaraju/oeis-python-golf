@@ -48,8 +48,8 @@ jobs:
           rows.sort(key=key)
           fails = [r for r in rows if r[6] != "ok"]
           out = [f"{len(rows)} programs run, {len(fails)} failing.", "",
-                 "| Sequence | Bytes | min_terms | Timeout (s) | Seconds to min_terms | Share of timeout | Status |",
-                 "|---|---|---|---|---|---|---|"]
+                 "| Sequence | Bytes | min_terms | Timeout (s) | Reference s to min_terms | Share of timeout | Status | Seconds on runner | Speed factor |",
+                 "|---|---|---|---|---|---|---|---|---|"]
           out += ["| " + " | ".join(r) + " |" for r in rows[:60]]
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
               f.write("\n".join(out) + "\n")
