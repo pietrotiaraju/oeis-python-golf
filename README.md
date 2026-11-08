@@ -1106,19 +1106,27 @@ sequence for the code and how it works.
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
 | [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
+| [A001101](seq/A001xxx/A001101/) | Moran numbers: k such that k/(sum of digits of k) is prime. | **86** | 1300 |
+| [A001102](seq/A001xxx/A001102/) | Numbers k such that k / (sum of digits of k) is a square. | **87** | 220 |
+| [A001103](seq/A001xxx/A001103/) | Numbers k such that (k / product of digits of k) is 1 or a prime. | **93** | 90 |
+| [A001104](seq/A001xxx/A001104/) | Numbers k such that k / product of digits of k is a square. | **93** | 31 |
 | [A001105](seq/A001xxx/A001105/) | a(n) = 2\*n^2. | **28** | 1001 |
 | [A001106](seq/A001xxx/A001106/) | 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n\*(7\*n-5)/2. | **31** | 10001 |
 | [A001107](seq/A001xxx/A001107/) | 10-gonal (or decagonal) numbers: a(n) = n\*(4\*n-3). | **29** | 1001 |
 | [A001108](seq/A001xxx/A001108/) | a(n)-th triangular number is a square: a(n+1) = 6\*a(n) - a(n-1) + 2,… | **35** | 1305 |
 | [A001109](seq/A001xxx/A001109/) | a(n)^2 is a triangular number: a(n) = 6\*a(n-1) - a(n-2) with a(0)=0,… | **34** | 1305 |
 | [A001110](seq/A001xxx/A001110/) | Square triangular numbers: numbers that are both triangular and… | **36** | 601 |
+| [A001111](seq/A001xxx/A001111/) | Number of inequivalent Hadamard designs of order 4n. | **423** | 5 |
 | [A001112](seq/A001xxx/A001112/) | A continued fraction. | **63** | 201 |
 | [A001113](seq/A001xxx/A001113/) | Decimal expansion of e. | **76** | 50000 |
 | [A001114](seq/A001xxx/A001114/) | Increasing blocks of digits of e. | **117** | 430 |
 | [A001115](seq/A001xxx/A001115/) | Maximal number of pairwise relatively prime polynomials of degree n… | **103** | 41 |
+| [A001116](seq/A001xxx/A001116/) | Maximal kissing number of an n-dimensional lattice. | **1447** | 6 |
 | [A001117](seq/A001xxx/A001117/) | a(n) = 3^n - 3\*2^n + 3. | **36** | 201 |
 | [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
+| [A001119](seq/A001xxx/A001119/) | Number of skew-symmetric Hadamard matrices of order 4n. | **1063** | 4 |
 | [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
+| [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **203** | 100 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

@@ -1,0 +1,6 @@
+{
+  "name": "Maximal kissing number of an n-dimensional lattice.",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 120
+}

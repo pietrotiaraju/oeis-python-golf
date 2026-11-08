@@ -1,0 +1,6 @@
+{
+  "name": "Number of skew-symmetric Hadamard matrices of order 4n.",
+  "offset": 2,
+  "min_terms": 4,
+  "timeout": 120
+}
