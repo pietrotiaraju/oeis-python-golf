@@ -9,12 +9,12 @@ The program enumerates multiplication tables and counts their isomorphism
 classes. It computes each term from the definition, without embedding a
 table of known group counts.
 
-### Python 3 — 217 bytes
+### Python 3 — 221 bytes
 
 ```python
 from itertools import*
 print(0);n=k=1;Q=product
-while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][t[b][c]]]for a,b,c in Q(R,R,R))for t in Q([R],*batched(P[k:],k))for p in P)//k);k*=n;n+=1
+while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][t[b][c]]]for a,b,c in Q(R,R,R))for t in Q([R],*batched(P[k:],k))for p in P[:k])//k);k*=n;n+=1
 ```
 
 **How it works**
@@ -36,6 +36,10 @@ while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][
   equality gives p((a·b)·c) = p(a·(b·c)); p is a permutation, so this is
   exactly associativity. Conversely, every associative table and its
   automorphisms satisfy the equality.
+- `p` runs over `P[:k]`, the (n−1)! permutations with p(0) = 0. An
+  automorphism always maps the identity to itself (p(0)·p(c) = p(c) for
+  every c makes p(0) a left identity, so p(0) = p(0)·0 = 0), so the other
+  permutations never pass, and skipping them changes no count.
 - Each accepted table is a group: it is a finite monoid whose rows are
   permutations, so every element has a right inverse. If xy = 0 and
   yz = 0, then x = x(yz) = (xy)z = z, hence yx = yz = 0 too.
@@ -51,15 +55,17 @@ while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][
 **Limits**
 
 - Fixing row 0 reduces the candidate tables from kⁿ to kⁿ⁻¹: 216 for
-  n = 4 and 331 776 for n = 5. There are n! permutations p per table,
-  hence 39 813 120 pairs at n = 5. The program reproduces a(0)…a(5)
-  within the unchanged bar of six terms in 120 seconds (about 48 seconds
-  in a local CPython 3.12 run).
+  n = 4 and 331 776 for n = 5. There are (n−1)! permutations p per table,
+  hence 7 962 624 pairs at n = 5.
+- The bar is six terms in 120 s, and it must come within half the
+  timeout, in reference seconds. The 217-byte version, which tried all n!
+  permutations, needed about 66 s on the GitHub runners; on the same local
+  machine this one is 2.4 times faster, about 27 s.
 - The search is still exhaustive: n = 6 already has 24 883 200 000
   candidate tables. Every term is computed by a finite search, but later
   terms quickly become impractical. Interpreter memory limits are not
   counted as correctness failures under the repository rules.
-- 217 bytes is an upper bound on the shortest valid program, not a proof
+- 221 bytes is an upper bound on the shortest valid program, not a proof
   of minimality.
 
 ## History
@@ -70,6 +76,7 @@ while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][
 | 2026-11-05 | Python 3 | 256 | `for a,b in Q(R,R)` (pietrotiaraju) |
 | 2026-11-05 | Python 3 | 255 | value named in the while condition |
 | 2026-11-06 | Python 3 | 217 | fix the identity row, fuse the two checks, update the factorial incrementally |
+| 2026-11-08 | Python 3 | 221 | fix: only permutations fixing the identity, so the bar comes within half the timeout |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
