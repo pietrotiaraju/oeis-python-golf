@@ -912,7 +912,7 @@ sequence for the code and how it works.
 | [A000900](seq/A000xxx/A000900/) | Number of solutions to the rook problem on an n X n board having a… | **77** | 201 |
 | [A000901](seq/A000xxx/A000901/) | Number of solutions to the rook problem on a 2n X 2n board having a… | **73** | 403 |
 | [A000902](seq/A000xxx/A000902/) | Expansion of e.g.f. (1/2)\*(exp(2\*x + x^2) + 1). | **49** | 201 |
-| [A000903](seq/A000xxx/A000903/) | Number of inequivalent ways of placing n nonattacking rooks on n X n… | **99** | 451 |
+| [A000903](seq/A000xxx/A000903/) | Number of inequivalent ways of placing n nonattacking rooks on n X n… | **97** | 451 |
 | [A000904](seq/A000xxx/A000904/) | a(n) = (n+1)\*a(n-1) + (n+2)\*a(n-2) + a(n-3); a(1)=0, a(2)=3, a(3)=13. | **52** | 100 |
 | [A000905](seq/A000xxx/A000905/) | Hamilton numbers. | **92** | 14 |
 | [A000906](seq/A000xxx/A000906/) | Exponential generating function: 2\*(1+3\*x)/(1-2\*x)^(7/2). | **37** | 201 |
@@ -965,7 +965,7 @@ sequence for the code and how it works.
 | [A000962](seq/A000xxx/A000962/) | The convergent sequence A\_n for the ternary continued fraction… | **56** | 1001 |
 | [A000963](seq/A000xxx/A000963/) | The convergent sequence B\_n for the ternary continued fraction… | **56** | 1001 |
 | [A000964](seq/A000xxx/A000964/) | The convergent sequence C\_n for the ternary continued fraction… | **56** | 1001 |
-| [A000965](seq/A000xxx/A000965/) | Numerators of expansion of e.g.f. sinh(x) / sin(x) (even powers only). | **135** | 101 |
+| [A000965](seq/A000xxx/A000965/) | Numerators of expansion of e.g.f. sinh(x) / sin(x) (even powers only). | **134** | 101 |
 | [A000966](seq/A000xxx/A000966/) | n! never ends in this many 0's. | **48** | 10000 |
 | [A000967](seq/A000xxx/A000967/) | Sum of Fermat coefficients. | **56** | 1000 |
 | [A000968](seq/A000xxx/A000968/) | Sum of odd Fermat coefficients rounded to nearest integer. | **54** | 500 |

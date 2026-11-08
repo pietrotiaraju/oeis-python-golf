@@ -5,12 +5,12 @@
 
 Offset 0: 1, 2, 4, 104, 272, 3104, 79808, 631936, 1708288, 7045156352, 1413417032704, …
 
-### Python 3 — 135 bytes
+### Python 3 — 134 bytes
 
 ```python
 from math import*
 F=[];P=k=1
-while 1:X=P-sum(comb(k,j)*F[j]for j in range(k-1));F=[-e*k for e in F]+[-X,0];P*=k;print(X//gcd(X,P));k+=2
+while 1:X=P-sumprod(F,map(comb,[k]*k,range(k-1)));F=[-e*k for e in F]+[-X,0];P*=k;print(X//gcd(X,P));k+=2
 ```
 
 **The recurrence**
@@ -35,9 +35,11 @@ and by induction b(j)·(2m+1)!! is an integer for every j ≤ m, where
 
 - `k` = 2m+1 and `P` = (2m−1)!! before the step. `F` holds the integers
   (−1)ᵐ⁻ʲ·b(j)·P at the even places 2j, with 0 at the odd places, so the
-  list index is the binomial's lower index and `comb(k,j)` needs no `2*`
-  (the zeros add nothing).
-- `X=P-sum(…)` is then P·(2m+1)·b(m) = (2m+1)!!·b(m), an integer.
+  list index is the binomial's lower index and needs no `2*` (the zeros
+  add nothing).
+- `map(comb,[k]*k,range(k-1))` gives C(k, 0), …, C(k, k−2), as many as
+  `F` has entries, and `math.sumprod` (3.12; exact on integers) adds the
+  products. `X=P-sumprod(…)` is then P·(2m+1)·b(m) = (2m+1)!!·b(m), an integer.
 - For the next m every sign flips and the scale grows by k:
   `F=[-e*k for e in F]+[-X,0]` (the new entry has sign (−1)¹), and
   `P*=k`. Now b(m) = X/P, so its numerator is `X//gcd(X,P)` (b(m) > 0,
@@ -47,11 +49,13 @@ and by induction b(j)·(2m+1)!! is an integer for every j ≤ m, where
 
 - Exact integer arithmetic, correct for every n.
 - `fractions.Fraction` with the same recurrence costs the second import,
-  `Fraction(k)` and `.numerator`: over 160 bytes. Indexing `F` by j with
-  `comb(k,2*j)` and `range(k//2)` is 1 byte longer than the zero padding.
-- Step m does m binomials on numbers of thousands of digits: 918 terms
-  print in about a minute, and then a(918) has more than 4300 digits, so
-  `str()` stops the program with a `ValueError` (Python 3.11+ limit).
+  `Fraction(k)` and `.numerator`: 163 bytes. The generator
+  `sum(comb(k,j)*F[j]for j in range(k-1))` instead of `sumprod` is 135
+  bytes, and 136 without the zero padding (`comb(k,2*j)`, `range(k//2)`).
+- Step m does m binomials on numbers of thousands of digits: about 900
+  terms print in 60 s. At about 61 s, after 918 terms, a(918) has more
+  than 4300 digits and `str()` stops the program with a `ValueError`
+  (Python 3.11+ limit).
 - The b-file has 101 terms (n = 0 to 100); they print in 0.1 s. The bar
   is the whole b-file.
 
@@ -60,6 +64,7 @@ and by induction b(j)·(2m+1)!! is an integer for every j ≤ m, where
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 135 | first entry |
+| 2026-11-08 | Python 3 | 134 | `math.sumprod` for the convolution |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

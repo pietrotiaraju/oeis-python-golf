@@ -5,13 +5,13 @@
 
 Offset 0: 1, 1, 1, 2, 7, 23, 115, 694, 5282, 46066, 456454, 4999004, 59916028, …
 
-### Python 3 — 99 bytes
+### Python 3 — 97 bytes
 
 ```python
 n=0;f=C=1;c=d=p=q=2
 while[print(f+C+q+d+7>>3)]:
- n+=1;f*=n;c,d=d,d+~-n*c
- if~n%2:C*=n;p,q=q,(n-2)*p
+ if n%2:C*=n+1;p,q=q,~-n*p
+ c,d=d,d+n*c;n+=1;f*=n
 ```
 
 **The formula**
@@ -44,10 +44,11 @@ agrees for n ≤ 8.
 - R(n) depends only on j = ⌊n/2⌋: it is x(j) with x(2m) = (2m)!/m! and
   x(2m+1) = 0, and x(j) = 2(j−1)·x(j−2) covers both (the ratio
   (2m)!/m! ÷ (2m−2)!/(m−1)! is 2(2m−1)). `p,q` = (x(j−1), x(j)) and moves,
-  with C, only when n becomes even (`if~n%2:`, since ~n is odd exactly
-  when n is even): 2(j−1) = n − 2, and C(n) = n·C(n−1).
-- The dummy seeds c = D(−1) and p = x(−1) are multiplied by n − 1 = 0
-  and n − 2 = 0 in their first use.
+  with C, only when n is odd, just before n becomes 2j: then
+  2(j−1) = n − 1 = `~-n` and C(2j) = 2j·C(2j−1) = `C*=n+1`.
+- `c,d=d,d+n*c` is D(n+1) = D(n) + n·D(n−1), done before `n+=1;f*=n`.
+- The dummy seeds c = D(−1) and p = x(−1) are multiplied by n = 0 and
+  n − 1 = 0 in their first use.
 
 **Notes**
 
@@ -55,14 +56,16 @@ agrees for n ≤ 8.
 - 1559 terms print almost at once; a(1559) has more than 4300 digits and
   `str()` stops the program with a `ValueError` (Python 3.11+ limit).
 - The b-file has 451 terms (n = 0 to 450); the bar is the whole b-file.
-- One loop line with R tracked as a single factor,
-  `r*=(n-2)**(n%4<1)` and `r*(n%4<2)` in the print, is 107 bytes.
+- Updating after `n+=1` instead (`if~n%2:C*=n;p,q=q,(n-2)*p`) is 99 bytes;
+  one loop line with R tracked as a single factor, `r*=(n-2)**(n%4<1)`
+  and `r*(n%4<2)` in the print, is 107.
 
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 99 | first entry |
+| 2026-11-08 | Python 3 | 97 | step C and x at odd n, before the increment |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
