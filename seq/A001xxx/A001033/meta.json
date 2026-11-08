@@ -1,0 +1,6 @@
+{
+  "name": "Numbers n such that the sum of the squares of n consecutive positive odd numbers x^2 + (x+2)^2 + ... + (x+2n-2)^2 = k^2 for some integer k. The least values of x and k for each n are in A056131 and A056132, respectively.",
+  "offset": 1,
+  "min_terms": 250,
+  "timeout": 120
+}

@@ -1038,6 +1038,9 @@ sequence for the code and how it works.
 | [A001029](seq/A001xxx/A001029/) | Powers of 19: a(n) = 19^n. | **25** | 101 |
 | [A001030](seq/A001xxx/A001030/) | Fixed under 1 -> 21, 2 -> 211. | **37** | 8119 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
+| [A001032](seq/A001xxx/A001032/) | Numbers k such that sum of squares of k consecutive integers >= 1 is… | **495** | 380 |
+| [A001033](seq/A001xxx/A001033/) | Numbers n such that the sum of the squares of n consecutive positive… | **493** | 250 |
+| [A001034](seq/A001xxx/A001034/) | Orders of noncyclic simple groups (without repetition). | **945** | 10000 |
 | [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |
 | [A001036](seq/A001xxx/A001036/) | Partial sums of A001037, omitting A001037(1). | **90** | 34 |
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |

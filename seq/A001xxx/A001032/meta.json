@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that sum of squares of k consecutive integers >= 1 is a square.",
+  "offset": 1,
+  "min_terms": 380,
+  "timeout": 120
+}
