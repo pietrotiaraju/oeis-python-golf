@@ -1,0 +1,6 @@
+{
+  "name": "Powers of 11: a(n) = 11^n.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
