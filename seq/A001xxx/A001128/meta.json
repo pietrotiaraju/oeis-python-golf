@@ -1,0 +1,6 @@
+{
+  "name": "Reverse digits of previous term and multiply by previous term.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 60
+}
