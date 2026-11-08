@@ -46,14 +46,19 @@ faster, while two computers differ by a factor of two or three. So a program
 counts only if its `min_terms`-th term arrives within **half** of `timeout`;
 the other half is margin, so that no verdict hangs on how fast a machine is.
 
-**The judge is the CI**, the same for everyone: GitHub's `ubuntu-latest`
-runner with CPython 3.12. Timings on your own machine are only a guide, and a
-faster machine does not let a slower program in.
+**Times are in reference seconds**, so the verdict is the same on any machine.
+Before running programs, and again once a minute, `tools/verify.py` runs the
+fixed benchmark [`tools/bench.py`](tools/bench.py) the same way it runs a
+program. On a machine where it takes twice `REF_BENCH` (the median of GitHub's
+runners), timings count half and timeouts double; on a faster machine, the
+other way round. GitHub's own runners differ by up to two times in speed, which
+is why plain seconds were not enough; the margin covers what the benchmark
+misses. The CI (`ubuntu-latest`, CPython 3.12) remains the official judge.
 
 `tools/verify.py` runs each program, stops it at the timeout, and compares
 every printed line with the b-file in [`bfiles/`](bfiles/). A program passes
 when every line it printed is right and its `min_terms`-th line came within
-half the timeout. Lines after that are still checked, up to the timeout.
+half the timeout, in reference seconds. Lines after that are still checked, up to the timeout.
 
 The script also checks that each page shows the program verbatim under a
 heading `### <category> — <bytes> bytes`, and that the records table in the
