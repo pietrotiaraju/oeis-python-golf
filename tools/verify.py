@@ -17,8 +17,14 @@ usage: python tools/verify.py [AXXXXXX ...] [--write] [--no-run] [--since=REF]
 A program passes when every line it prints is right and its min_terms-th term
 arrives within MARGIN (half) of the sequence's timeout. The timeout itself only
 stops the run: the margin keeps the verdict from hanging on how fast a machine is.
+
+Each program runs alone in an empty temporary folder, with an empty environment,
+no input and the audit hook of tools/sandbox.py: it cannot read the b-files or any
+other file outside the Python installation, start processes or use the network.
 """
 import json
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -84,9 +90,15 @@ def run(prog, want, timeout, bar):
 
     Return (lines, seconds, stderr tail, seconds until line `bar` arrived or None)."""
     lines, reached = [], []
-    with tempfile.TemporaryFile() as err:
-        proc = subprocess.Popen([sys.executable, "-u", prog.name], cwd=prog.parent,
-                                stdout=subprocess.PIPE, stderr=err, text=True)
+    with tempfile.TemporaryFile() as err, tempfile.TemporaryDirectory() as box:
+        # Alone in an empty folder, with the sandbox hook loaded as sitecustomize.
+        shutil.copyfile(prog, Path(box) / "py3.py")
+        shutil.copyfile(Path(__file__).with_name("sandbox.py"), Path(box) / "sitecustomize.py")
+        env = {"PYTHONPATH": box, "PYTHONDONTWRITEBYTECODE": "1"}
+        if "SYSTEMROOT" in os.environ:  # Windows needs it to start at all
+            env["SYSTEMROOT"] = os.environ["SYSTEMROOT"]
+        proc = subprocess.Popen([sys.executable, "-u", "py3.py"], cwd=box, env=env,
+                                stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=err, text=True)
 
         def read():
             for line in proc.stdout:

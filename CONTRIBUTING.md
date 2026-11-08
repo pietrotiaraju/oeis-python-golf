@@ -12,7 +12,10 @@
    Nothing else goes to stdout; stderr is ignored, so warnings such as the
    `SyntaxWarning` for `1for` are fine.
 3. **Interpreter:** CPython 3.12, run as `python -u file.py`, with no other
-   command-line flags and no input.
+   command-line flags and no input, alone in an empty folder with an empty
+   environment. The program may not read files outside the Python installation
+   (the b-files included), write files, list folders, start processes or use the
+   network; [`tools/sandbox.py`](tools/sandbox.py) blocks these while it runs.
 4. **Size:** the UTF-8 bytes of the file with LF line endings. A single
    trailing newline is not counted.
 
@@ -23,7 +26,7 @@
   the b-file are not enough.
 - Hard-coding terms is allowed only when the page explains why it is right,
   for example the impossible cases n = 2, 3, 5 in [A300001](seq/A300xxx/A300001/).
-  A program that embeds the b-file is not accepted.
+  A program that embeds or reads the b-file is not accepted.
 - If correctness beyond the b-file rests on a theorem or a conjecture, the
   page must say which.
 - Interpreter limits (memory, recursion depth, the 4300-digit int-to-str limit
