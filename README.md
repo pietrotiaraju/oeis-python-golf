@@ -1032,7 +1032,10 @@ sequence for the code and how it works.
 | [A001023](seq/A001xxx/A001023/) | Powers of 14: a(n) = 14^n. | **25** | 101 |
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
+| [A001026](seq/A001xxx/A001026/) | Powers of 17: a(n) = 17^n. | **25** | 101 |
+| [A001027](seq/A001xxx/A001027/) | Powers of 18: a(n) = 18^n. | **25** | 101 |
 | [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **153** | 300 |
+| [A001029](seq/A001xxx/A001029/) | Powers of 19: a(n) = 19^n. | **25** | 101 |
 | [A001030](seq/A001xxx/A001030/) | Fixed under 1 -> 21, 2 -> 211. | **37** | 8119 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
 | [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |

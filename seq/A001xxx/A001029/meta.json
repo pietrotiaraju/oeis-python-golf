@@ -1,0 +1,6 @@
+{
+  "name": "Powers of 19: a(n) = 19^n.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
