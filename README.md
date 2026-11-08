@@ -1064,7 +1064,7 @@ sequence for the code and how it works.
 | [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
 | [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
-| [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **128** | 10000 |
+| [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **117** | 10000 |
 | [A001068](seq/A001xxx/A001068/) | a(n) = floor(5\*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5. | **27** | 10001 |
 | [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
