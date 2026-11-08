@@ -1,0 +1,6 @@
+{
+  "name": "Primes expressible as concatenation of phi(sigma(n)) and sigma(phi(n)).",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}
