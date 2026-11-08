@@ -2,11 +2,21 @@
 """Check every golfed program against its OEIS b-file and keep the README records table in sync.
 
 usage: python tools/verify.py [AXXXXXX ...] [--write] [--no-run] [--since=REF]
+                              [--to-bar] [--shard=I/N] [--report=PATH]
 
-  --write       rewrite the records table in README.md instead of only checking it
-  --no-run      skip running the programs (sizes, pages and table only)
-  --since=REF   run only the programs of sequences whose files changed since git REF
-                (a file moved without changes does not count); still check every page
+  --write        rewrite the records table in README.md instead of only checking it
+  --no-run       skip running the programs (sizes, pages and table only)
+  --since=REF    run only the programs of sequences whose files changed since git REF
+                 (a file moved without changes does not count); still check every page
+  --to-bar       stop each program once it has printed its min_terms terms, instead of
+                 letting it run through the b-file until the timeout
+  --shard=I/N    run only every N-th sequence, starting from the I-th (0 <= I < N)
+  --report=PATH  write one tab-separated line per program run: sequence, bytes,
+                 min_terms, timeout, seconds to reach min_terms, share of the timeout, status
+
+A program passes when every line it prints is right and its min_terms-th term
+arrives within MARGIN (half) of the sequence's timeout. The timeout itself only
+stops the run: the margin keeps the verdict from hanging on how fast a machine is.
 """
 import json
 import subprocess
@@ -22,6 +32,7 @@ BFILES = ROOT / "bfiles"
 README = ROOT / "README.md"
 START, END = "<!-- records:start -->", "<!-- records:end -->"
 DEFAULT_TIMEOUT = 60
+MARGIN = 0.5  # min_terms must arrive within this share of the timeout
 NAME_WIDTH = 70
 
 
@@ -68,9 +79,11 @@ def changed(ref):
     return aids
 
 
-def run(prog, want, timeout):
-    """Run prog until it prints `want` lines or `timeout` seconds pass; return (lines, seconds, stderr tail)."""
-    lines = []
+def run(prog, want, timeout, bar):
+    """Run prog until it prints `want` lines or `timeout` seconds pass.
+
+    Return (lines, seconds, stderr tail, seconds until line `bar` arrived or None)."""
+    lines, reached = [], []
     with tempfile.TemporaryFile() as err:
         proc = subprocess.Popen([sys.executable, "-u", prog.name], cwd=prog.parent,
                                 stdout=subprocess.PIPE, stderr=err, text=True)
@@ -78,6 +91,8 @@ def run(prog, want, timeout):
         def read():
             for line in proc.stdout:
                 lines.append(line.strip())
+                if len(lines) == bar:
+                    reached.append(time.monotonic() - t0)
                 if len(lines) >= want:
                     break
 
@@ -91,11 +106,14 @@ def run(prog, want, timeout):
         reader.join()
         err.seek(0)
         tail = err.read().decode(errors="replace").strip().splitlines()[-1:]
-    return lines[:want], elapsed, tail
+    return lines[:want], elapsed, tail, (reached or [None])[0]
 
 
-def check_program(prog, ref, cfg, page, execute):
-    """Return (record, problems) for one program file; cfg holds the sequence's min_terms and timeout."""
+def check_program(prog, ref, cfg, page, execute, to_bar=False):
+    """Return (record, problems) for one program file; cfg holds the sequence's min_terms and timeout.
+
+    When the program runs, the record also holds `bar_seconds` (None if min_terms never came),
+    `timeout`, `min_terms` and `status`."""
     problems = []
     try:
         nbytes = size(prog)
@@ -109,19 +127,29 @@ def check_program(prog, ref, cfg, page, execute):
         problems.append(f"{prog.name}: page does not show the program verbatim")
 
     min_terms = min(cfg.get("min_terms", len(ref)), len(ref))
+    rec = {"category": category(prog), "bytes": nbytes}
     if execute:
-        lines, elapsed, tail = run(prog, len(ref), cfg.get("timeout", DEFAULT_TIMEOUT))
+        timeout = cfg.get("timeout", DEFAULT_TIMEOUT)
+        limit = timeout * MARGIN
+        page_problems = len(problems)
+        lines, elapsed, tail, bar = run(prog, min_terms if to_bar else len(ref), timeout, min_terms)
         bad = next((i for i, (x, y) in enumerate(zip(lines, ref)) if x != y), None)
         if bad is not None:
             problems.append(f"{prog.name}: term {bad + 1} is {lines[bad][:40]!r}, expected {ref[bad][:40]!r}")
-        elif len(lines) < min_terms:
+        elif bar is None:
             why = f" ({tail[0]})" if tail else ""
             problems.append(f"{prog.name}: only {len(lines)} of {min_terms} terms in {elapsed:.0f} s{why}")
-        status = "ok" if bad is None and len(lines) >= min_terms else "FAIL"
-        print(f"  {category(prog):<22} {nbytes:>4} bytes  {len(lines):>5} terms in {elapsed:5.1f} s  {status}")
+        elif bar > limit:
+            problems.append(f"{prog.name}: term {min_terms} came after {bar:.2f} s; "
+                            f"it must come within {limit:g} s, half the {timeout} s timeout")
+        status = "ok" if len(problems) == page_problems else "FAIL"
+        at = f"{bar:6.1f} s" if bar is not None else "  never "
+        print(f"  {category(prog):<22} {nbytes:>4} bytes  {len(lines):>5} terms in {elapsed:5.1f} s"
+              f"  term {min_terms} at {at} (limit {limit:g} s)  {status}")
+        rec.update(bar_seconds=bar, timeout=timeout, min_terms=min_terms, status=status)
     else:
         print(f"  {category(prog):<22} {nbytes:>4} bytes")
-    return {"category": category(prog), "bytes": nbytes}, problems
+    return rec, problems
 
 
 def table(rows):
@@ -148,16 +176,19 @@ def main(argv):
     write = "--write" in argv
     execute = "--no-run" not in argv
     only = {a.upper() for a in argv if not a.startswith("--")}
+    to_bar = "--to-bar" in argv
     since = next((a.split("=", 1)[1] for a in argv if a.startswith("--since=")), None)
+    shard = next((tuple(map(int, a.split("=", 1)[1].split("/"))) for a in argv if a.startswith("--shard=")), None)
+    report = next((a.split("=", 1)[1] for a in argv if a.startswith("--report=")), None)
     to_run = changed(since) if since else None
     if to_run is not None:
         print(f"changed since {since}: {', '.join(sorted(to_run)) or 'nothing'}")
-    problems, rows = [], []
+    problems, rows, timings = [], [], []
 
     # A bucket is the only kind of name that is its own bucket.
     problems += [f"seq/{p.name}: move it to seq/{bucket(p.name)}/{p.name}/"
                  for p in sorted(SEQ.iterdir()) if p.is_dir() and p.name != bucket(p.name)]
-    for d in sorted((p for p in SEQ.glob("*/A*") if p.is_dir()), key=lambda p: p.name):
+    for k, d in enumerate(sorted((p for p in SEQ.glob("*/A*") if p.is_dir()), key=lambda p: p.name)):
         aid = d.name
         if d.parent.name != bucket(aid):
             problems.append(f"seq/{d.parent.name}/{aid}: move it to seq/{bucket(aid)}/{aid}/")
@@ -165,18 +196,20 @@ def main(argv):
         page = (d / "README.md").read_text(encoding="utf-8")
         ref = bfile(aid)
         recs = []
-        selected = not only or aid in only
+        selected = (not only or aid in only) and (shard is None or k % shard[1] == shard[0])
         if selected:
             print(f"{aid}  ({len(ref)} terms in b-file)")
         problems += [f"{aid}/{p.name}: only plain Python 3 counts (py3.py, standard library); delete it"
                      for p in sorted(d.glob("py3-*.py"))]
         for prog in sorted(d.glob("py3.py")):
             runs = execute and selected and (to_run is None or aid in to_run)
-            rec, probs = check_program(prog, ref, meta, page, runs) if selected else (
+            rec, probs = check_program(prog, ref, meta, page, runs, to_bar) if selected else (
                 {"category": category(prog), "bytes": size(prog)}, [])
             problems += [f"{aid}/{p}" for p in probs]
             if rec:
                 recs.append(rec)
+                if "status" in rec:
+                    timings.append((aid, rec))
         rows.append((aid, meta["name"], recs, min(meta.get("min_terms", len(ref)), len(ref))))
 
     text = README.read_text(encoding="utf-8")
@@ -191,6 +224,15 @@ def main(argv):
             print("README.md records table rewritten")
         else:
             problems.append("README.md records table is out of date: run tools/verify.py --write")
+
+    if report:
+        with open(report, "w", encoding="utf-8", newline="\n") as f:
+            for aid, r in timings:
+                bar = r["bar_seconds"]
+                f.write("\t".join(map(str, (
+                    aid, r["bytes"], r["min_terms"], r["timeout"],
+                    "" if bar is None else f"{bar:.2f}",
+                    "" if bar is None else f"{bar / r['timeout']:.3f}", r["status"]))) + "\n")
 
     for p in problems:
         print("FAIL", p)

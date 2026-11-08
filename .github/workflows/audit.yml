@@ -1,0 +1,61 @@
+name: audit
+
+# Run every record up to its bar (min_terms) and report how much of the timeout it
+# needs. Runs by hand, and on pull requests that change the checker, so a change of
+# rules is measured against all records before it lands.
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - tools/verify.py
+      - .github/workflows/audit.yml
+
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/verify.py --to-bar --shard=${{ matrix.shard }}/12 --report=timings-${{ matrix.shard }}.tsv
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: timings-${{ matrix.shard }}
+          path: timings-${{ matrix.shard }}.tsv
+
+  summary:
+    needs: shard
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: timings-*
+          merge-multiple: true
+      - name: Summarize
+        shell: python
+        run: |
+          import glob, os
+          rows = [l.rstrip("\n").split("\t") for f in sorted(glob.glob("timings-*.tsv")) for l in open(f)]
+          key = lambda r: -float(r[5]) if r[5] else float("-inf")
+          rows.sort(key=key)
+          fails = [r for r in rows if r[6] != "ok"]
+          out = [f"{len(rows)} programs run, {len(fails)} failing.", "",
+                 "| Sequence | Bytes | min_terms | Timeout (s) | Seconds to min_terms | Share of timeout | Status |",
+                 "|---|---|---|---|---|---|---|"]
+          out += ["| " + " | ".join(r) + " |" for r in rows[:60]]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(out) + "\n")
+          with open("timings.tsv", "w") as f:
+              f.write("".join("\t".join(r) + "\n" for r in rows))
+      - uses: actions/upload-artifact@v4
+        with:
+          name: timings
+          path: timings.tsv
