@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that (k / product of digits of k) is 1 or a prime.",
+  "offset": 1,
+  "min_terms": 90,
+  "timeout": 60
+}

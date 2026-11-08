@@ -1,0 +1,6 @@
+{
+  "name": "Moran numbers: k such that k/(sum of digits of k) is prime.",
+  "offset": 1,
+  "min_terms": 1300,
+  "timeout": 60
+}
