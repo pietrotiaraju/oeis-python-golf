@@ -1,0 +1,6 @@
+{
+  "name": "Number of red-black rooted trees with n-1 internal nodes.",
+  "offset": 0,
+  "min_terms": 34,
+  "timeout": 60
+}
