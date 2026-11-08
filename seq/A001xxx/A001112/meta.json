@@ -1,0 +1,6 @@
+{
+  "name": "A continued fraction.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

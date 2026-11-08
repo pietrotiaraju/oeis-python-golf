@@ -1,0 +1,6 @@
+{
+  "name": "Number of distinct traces of length n of Wolfram's 2-state 3-symbol Turing machine, i.e., sequences of n (state, symbol read) pairs produced from an arbitrary tape and starting state.",
+  "offset": 1,
+  "min_terms": 18,
+  "timeout": 60
+}

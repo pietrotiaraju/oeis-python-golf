@@ -1,0 +1,6 @@
+{
+  "name": "10-gonal (or decagonal) numbers: a(n) = n*(4*n-3).",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

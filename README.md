@@ -18,7 +18,7 @@ sequence for the code and how it works.
 
 | Sequence | Name | Python 3 | Terms checked |
 |---|---|---|---|
-| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **217** | 6 |
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **221** | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | 10502 |
 | [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **141** | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | 1001 |
@@ -66,7 +66,7 @@ sequence for the code and how it works.
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | 25 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **92** | 3321 |
 | [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3\*x^2 + 4\*y^2. | **93** | 24 |
-| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **87** | 25 |
+| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **91** | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | 101 |
 | [A000052](seq/A000xxx/A000052/) | 1-digit numbers arranged in alphabetical order, then the 2-digit… | **389** | 10000 |
 | [A000053](seq/A000xxx/A000053/) | Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway. | **62** | 29 |
@@ -88,9 +88,9 @@ sequence for the code and how it works.
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | 10001 |
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum\_{k=0..n} p(k) where p(k) = number of partitions of k… | **80** | 1001 |
 | [A000071](seq/A000xxx/A000071/) | a(n) = Fibonacci(n) - 1. | **32** | 500 |
-| [A000072](seq/A000xxx/A000072/) | Number of positive integers <= 2^n of form x^2 + 4 y^2. | **91** | 25 |
+| [A000072](seq/A000xxx/A000072/) | Number of positive integers <= 2^n of form x^2 + 4 y^2. | **98** | 25 |
 | [A000073](seq/A000xxx/A000073/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with… | **39** | 3001 |
-| [A000074](seq/A000xxx/A000074/) | Number of odd integers <= 2^n of form x^2 + y^2. | **90** | 25 |
+| [A000074](seq/A000xxx/A000074/) | Number of odd integers <= 2^n of form x^2 + y^2. | **100** | 25 |
 | [A000075](seq/A000xxx/A000075/) | Number of positive integers <= 2^n of form 2\*x^2 + 3\*y^2. | **93** | 24 |
 | [A000076](seq/A000xxx/A000076/) | Number of integers <= 2^n of form 4 x^2 + 4 x y + 5 y^2. | **97** | 24 |
 | [A000077](seq/A000xxx/A000077/) | Number of positive integers <= 2^n of form x^2 + 6 y^2. | **91** | 24 |
@@ -121,7 +121,7 @@ sequence for the code and how it works.
 | [A000102](seq/A000xxx/A000102/) | a(n) = number of compositions of n in which the maximum part size is… | **63** | 201 |
 | [A000103](seq/A000xxx/A000103/) | Number of n-node triangulations of sphere in which every node has… | **425** | 7 |
 | [A000104](seq/A000xxx/A000104/) | Number of n-celled free polyominoes without holes. | **285** | 12 |
-| [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **209** | 13 |
+| [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **217** | 13 |
 | [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **111** | 999 |
 | [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **120** | 1001 |
 | [A000108](seq/A000xxx/A000108/) | Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!). | **39** | 1001 |
@@ -1032,37 +1032,100 @@ sequence for the code and how it works.
 | [A001023](seq/A001xxx/A001023/) | Powers of 14: a(n) = 14^n. | **25** | 101 |
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
+| [A001026](seq/A001xxx/A001026/) | Powers of 17: a(n) = 17^n. | **25** | 101 |
+| [A001027](seq/A001xxx/A001027/) | Powers of 18: a(n) = 18^n. | **25** | 101 |
 | [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **153** | 300 |
+| [A001029](seq/A001xxx/A001029/) | Powers of 19: a(n) = 19^n. | **25** | 101 |
 | [A001030](seq/A001xxx/A001030/) | Fixed under 1 -> 21, 2 -> 211. | **37** | 8119 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
+| [A001032](seq/A001xxx/A001032/) | Numbers k such that sum of squares of k consecutive integers >= 1 is… | **495** | 380 |
+| [A001033](seq/A001xxx/A001033/) | Numbers n such that the sum of the squares of n consecutive positive… | **493** | 250 |
+| [A001034](seq/A001xxx/A001034/) | Orders of noncyclic simple groups (without repetition). | **945** | 10000 |
 | [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |
 | [A001036](seq/A001xxx/A001036/) | Partial sums of A001037, omitting A001037(1). | **90** | 34 |
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
 | [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
+| [A001040](seq/A001xxx/A001040/) | a(n+1) = n\*a(n) + a(n-1) with a(0)=0, a(1)=1. | **40** | 451 |
+| [A001041](seq/A001xxx/A001041/) | a(0)=12; thereafter a(n) = 12 times the product of the first n primes. | **54** | 101 |
+| [A001042](seq/A001xxx/A001042/) | a(n) = a(n-1)^2 - a(n-2)^2. | **37** | 14 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
+| [A001044](seq/A001xxx/A001044/) | a(n) = (n!)^2. | **33** | 101 |
+| [A001045](seq/A001xxx/A001045/) | Jacobsthal sequence (or Jacobsthal numbers): a(n) = a(n-1) +… | **29** | 3317 |
+| [A001046](seq/A001xxx/A001046/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = a(1) = 1. | **47** | 101 |
+| [A001047](seq/A001xxx/A001047/) | a(n) = 3^n - 2^n. | **32** | 201 |
+| [A001048](seq/A001xxx/A001048/) | a(n) = n! + (n-1)!. | **35** | 100 |
 | [A001049](seq/A001xxx/A001049/) | Numbered stops in Manhattan on the Lexington Avenue subway. | **36** | 16 |
 | [A001050](seq/A001xxx/A001050/) | Number of letters in n (in Finnish). | **226** | 20001 |
 | [A001051](seq/A001xxx/A001051/) | Number of subgroups of order n in orthogonal group O(3). | **65** | 10000 |
+| [A001052](seq/A001xxx/A001052/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = 1, a(1) = 2. | **49** | 101 |
+| [A001053](seq/A001xxx/A001053/) | a(n+1) = n\*a(n) + a(n-1) with a(0)=1, a(1)=0. | **41** | 101 |
+| [A001054](seq/A001xxx/A001054/) | a(n) = a(n-1)\*a(n-2) - 1. | **35** | 22 |
 | [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
+| [A001056](seq/A001xxx/A001056/) | a(n) = a(n-1)\*a(n-2) + 1, a(0) = 1, a(1) = 3. | **35** | 18 |
+| [A001057](seq/A001xxx/A001057/) | Canonical enumeration of integers: interleaved positive and negative… | **29** | 1001 |
 | [A001058](seq/A001xxx/A001058/) | 1-digit numbers in reverse alphabetical order, then 2-digit numbers,… | **395** | 10000 |
 | [A001059](seq/A001xxx/A001059/) | Number of doubly labeled heap-ordered trees. | **100** | 101 |
+| [A001060](seq/A001xxx/A001060/) | a(n) = a(n-1) + a(n-2) with a(0)=2, a(1)=5. Sometimes called the… | **33** | 1001 |
+| [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
-| [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **128** | 10000 |
+| [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
+| [A001065](seq/A001xxx/A001065/) | Sum of proper divisors (or aliquot parts) of n: sum of divisors of n… | **56** | 10000 |
+| [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **117** | 10000 |
+| [A001067](seq/A001xxx/A001067/) | Numerator of Bernoulli(2\*n)/(2\*n). | **122** | 314 |
+| [A001068](seq/A001xxx/A001068/) | a(n) = floor(5\*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5. | **27** | 10001 |
+| [A001069](seq/A001xxx/A001069/) | Log2\*(n) (version 2): take log\_2 of n this many times to get a number… | **54** | 1000 |
 | [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
 | [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
+| [A001074](seq/A001xxx/A001074/) | Numbers m such that Sum\_{k=0..m-1} exp(2\*Pi\*i\*k^3/m) != 0. | **107** | 1000 |
+| [A001075](seq/A001xxx/A001075/) | a(0) = 1, a(1) = 2, a(n) = 4\*a(n-1) - a(n-2). | **33** | 1746 |
+| [A001076](seq/A001xxx/A001076/) | Denominators of continued fraction convergents to sqrt(5). | **33** | 1001 |
+| [A001077](seq/A001xxx/A001077/) | Numerators of continued fraction convergents to sqrt(5). | **34** | 1001 |
+| [A001078](seq/A001xxx/A001078/) | a(n) = 10\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2. | **34** | 1001 |
+| [A001079](seq/A001xxx/A001079/) | a(n) = 10\*a(n-1) - a(n-2); a(0) = 1, a(1) = 5. | **35** | 201 |
+| [A001080](seq/A001xxx/A001080/) | a(n) = 16\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
+| [A001081](seq/A001xxx/A001081/) | a(n) = 16\*a(n-1) - a(n-2). | **35** | 201 |
+| [A001082](seq/A001xxx/A001082/) | Generalized octagonal numbers: k\*(3\*k-2), k=0, +- 1, +- 2, +-3, ... | **31** | 1000 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
+| [A001084](seq/A001xxx/A001084/) | a(n) = 20\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
+| [A001085](seq/A001xxx/A001085/) | a(n) = 20\*a(n-1) - a(n-2). | **35** | 201 |
+| [A001086](seq/A001xxx/A001086/) | Continued fraction associated with y(y+1) = x(x^2 -1). | **415** | 73 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
+| [A001088](seq/A001xxx/A001088/) | Product of totient function: a(n) = Product\_{k=1..n} phi(k) (cf.… | **74** | 497 |
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
+| [A001090](seq/A001xxx/A001090/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 0, a(1) = 1. | **34** | 1001 |
+| [A001091](seq/A001xxx/A001091/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 1, a(1) = 4. | **35** | 201 |
+| [A001092](seq/A001xxx/A001092/) | Union of all numbers {p, q} where p and q are both primes or powers… | **79** | 900 |
+| [A001093](seq/A001xxx/A001093/) | a(n) = n^3 + 1. | **30** | 10002 |
+| [A001094](seq/A001xxx/A001094/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3). | **39** | 1001 |
+| [A001095](seq/A001xxx/A001095/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4). | **39** | 1001 |
+| [A001096](seq/A001xxx/A001096/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4)\*(n-5). | **49** | 1001 |
+| [A001097](seq/A001xxx/A001097/) | Twin primes. | **61** | 1700 |
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
+| [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
+| [A001105](seq/A001xxx/A001105/) | a(n) = 2\*n^2. | **28** | 1001 |
+| [A001106](seq/A001xxx/A001106/) | 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n\*(7\*n-5)/2. | **31** | 10001 |
+| [A001107](seq/A001xxx/A001107/) | 10-gonal (or decagonal) numbers: a(n) = n\*(4\*n-3). | **29** | 1001 |
+| [A001108](seq/A001xxx/A001108/) | a(n)-th triangular number is a square: a(n+1) = 6\*a(n) - a(n-1) + 2,… | **35** | 1305 |
+| [A001109](seq/A001xxx/A001109/) | a(n)^2 is a triangular number: a(n) = 6\*a(n-1) - a(n-2) with a(0)=0,… | **34** | 1305 |
+| [A001110](seq/A001xxx/A001110/) | Square triangular numbers: numbers that are both triangular and… | **36** | 601 |
+| [A001112](seq/A001xxx/A001112/) | A continued fraction. | **63** | 201 |
+| [A001113](seq/A001xxx/A001113/) | Decimal expansion of e. | **76** | 50000 |
+| [A001114](seq/A001xxx/A001114/) | Increasing blocks of digits of e. | **117** | 430 |
+| [A001115](seq/A001xxx/A001115/) | Maximal number of pairwise relatively prime polynomials of degree n… | **103** | 41 |
+| [A001117](seq/A001xxx/A001117/) | a(n) = 3^n - 3\*2^n + 3. | **36** | 201 |
+| [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
+| [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
 | [A139569](seq/A139xxx/A139569/) | A triangle of coefficients of a Chebyshev T(x,n) polynomials to make… | **86** | 66 |
+| [A228129](seq/A228xxx/A228129/) | a(n) = number of semistandard Young tableau families, headed by a… | **91** | 36 |
+| [A228444](seq/A228xxx/A228444/) | Primes expressible as concatenation of phi(sigma(n)) and… | **127** | 16 |
 | [A276805](seq/A276xxx/A276805/) | a(n) = numerator((n^2 + 3\*n + 2)/n^3). | **41** | 1000 |
 | [A300000](seq/A300xxx/A300000/) | The sum of the first n terms of the sequence is the concatenation of… | **65** | 1001 |
 | [A300001](seq/A300xxx/A300001/) | Side length of the smallest equilateral triangle that can be… | **71** | 100 |
@@ -1071,6 +1134,7 @@ sequence for the code and how it works.
 | [A335332](seq/A335xxx/A335332/) | Decimal representation of n-th iteration of the one-dimensional… | **42** | 22 |
 | [A384128](seq/A384xxx/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | 106 |
 | [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | **131** | 200 |
+| [A401762](seq/A401xxx/A401762/) | Number of distinct traces of length n of Wolfram's 2-state 3-symbol… | **144** | 18 |
 
 <!-- records:end -->
 

@@ -1,0 +1,6 @@
+{
+  "name": "Increasing blocks of digits of e.",
+  "offset": 1,
+  "min_terms": 430,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Orders of noncyclic simple groups (without repetition).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
