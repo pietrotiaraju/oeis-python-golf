@@ -1121,6 +1121,7 @@ sequence for the code and how it works.
 | [A001113](seq/A001xxx/A001113/) | Decimal expansion of e. | **76** | 50000 |
 | [A001114](seq/A001xxx/A001114/) | Increasing blocks of digits of e. | **117** | 430 |
 | [A001115](seq/A001xxx/A001115/) | Maximal number of pairwise relatively prime polynomials of degree n… | **103** | 41 |
+| [A001116](seq/A001xxx/A001116/) | Maximal kissing number of an n-dimensional lattice. | **1447** | 6 |
 | [A001117](seq/A001xxx/A001117/) | a(n) = 3^n - 3\*2^n + 3. | **36** | 201 |
 | [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
 | [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
