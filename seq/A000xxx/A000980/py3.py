@@ -1,2 +1,2 @@
-q=1,;z=()
-while[print(sum(x*x*2for x in q))]:z+=0,;q=*map(sum,zip(q+z,z+q)),
+r=2,;z=()
+while[print(max(r))]:z+=0,;exec("r=*map(sum,zip(r+z,z+r)),;"*2)

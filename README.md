@@ -980,7 +980,7 @@ sequence for the code and how it works.
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000978](seq/A000xxx/A000978/) | Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime. | **66** | 10 |
 | [A000979](seq/A000xxx/A000979/) | Wagstaff primes: primes of form (2^p + 1)/3. | **68** | 10 |
-| [A000980](seq/A000xxx/A000980/) | Number of ways of writing 0 as Sum\_{k=-n..n} e(k)\*k, where e(k) is 0… | **76** | 520 |
+| [A000980](seq/A000xxx/A000980/) | Number of ways of writing 0 as Sum\_{k=-n..n} e(k)\*k, where e(k) is 0… | **73** | 520 |
 | [A000981](seq/A000xxx/A000981/) | Numbers beginning with letter 'n' in English. | **59** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000983](seq/A000xxx/A000983/) | Size of minimal binary covering code of length n and covering radius… | **180** | 7 |
