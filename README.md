@@ -1008,6 +1008,7 @@ sequence for the code and how it works.
 | [A000998](seq/A000xxx/A000998/) | From a differential equation. | **67** | 696 |
 | [A000999](seq/A000xxx/A000999/) | 5-adic valuation of binomial(2\*n,n): largest k such that 5^k divides… | **54** | 1001 |
 | [A001000](seq/A001xxx/A001000/) | a(n) = least m such that if a/b < c/d where a,b,c,d are integers in… | **52** | 1000 |
+| [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
 | [A001014](seq/A001xxx/A001014/) | Sixth powers: a(n) = n^6. | **27** | 501 |
 | [A001015](seq/A001xxx/A001015/) | Seventh powers: a(n) = n^7. | **27** | 1001 |
 | [A001016](seq/A001xxx/A001016/) | Eighth powers: a(n) = n^8. | **27** | 1001 |
