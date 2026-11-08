@@ -1,0 +1,6 @@
+{
+  "name": "Number of free planar polyenoids with n nodes and symmetry point group C_s.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 120
+}

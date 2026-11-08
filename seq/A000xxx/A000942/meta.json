@@ -1,0 +1,6 @@
+{
+  "name": "Number of free planar polyenoids with n nodes.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 120
+}
