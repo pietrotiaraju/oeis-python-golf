@@ -1,0 +1,6 @@
+{
+  "name": "3-adic valuation of binomial(2*n, n): largest k such that 3^k divides binomial(2*n, n).",
+  "offset": 0,
+  "min_terms": 2001,
+  "timeout": 60
+}

@@ -974,14 +974,17 @@ sequence for the code and how it works.
 | [A000971](seq/A000xxx/A000971/) | Fermat coefficients. | **47** | 995 |
 | [A000972](seq/A000xxx/A000972/) | Fermat coefficients. | **52** | 994 |
 | [A000973](seq/A000xxx/A000973/) | Fermat coefficients. | **52** | 993 |
+| [A000975](seq/A000xxx/A000975/) | a(2n) = 2\*a(2n-1), a(2n+1) = 2\*a(2n)+1 (also a(n) is the n-th number… | **27** | 3301 |
 | [A000976](seq/A000xxx/A000976/) | Period of 1/n! in base 10. | **78** | 200 |
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000978](seq/A000xxx/A000978/) | Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime. | **66** | 10 |
 | [A000979](seq/A000xxx/A000979/) | Wagstaff primes: primes of form (2^p + 1)/3. | **68** | 10 |
+| [A000981](seq/A000xxx/A000981/) | Numbers beginning with letter 'n' in English. | **59** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000983](seq/A000xxx/A000983/) | Size of minimal binary covering code of length n and covering radius… | **180** | 7 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
 | [A000988](seq/A000xxx/A000988/) | Number of one-sided polyominoes with n cells. | **174** | 12 |
+| [A000989](seq/A000xxx/A000989/) | 3-adic valuation of binomial(2\*n, n): largest k such that 3^k divides… | **54** | 2001 |
 | [A000990](seq/A000xxx/A000990/) | Number of plane partitions of n with at most two rows. | **87** | 6500 |
 | [A000991](seq/A000xxx/A000991/) | Number of 3-line partitions of n. | **89** | 6001 |
 | [A000992](seq/A000xxx/A000992/) | "Half-Catalan numbers": a(n) = Sum\_{k=1..floor(n/2)} a(k)\*a(n-k) with… | **72** | 2500 |
@@ -991,6 +994,8 @@ sequence for the code and how it works.
 | [A000996](seq/A000xxx/A000996/) | Shifts 3 places left under binomial transform. | **64** | 301 |
 | [A000997](seq/A000xxx/A000997/) | From a differential equation. | **64** | 31 |
 | [A000998](seq/A000xxx/A000998/) | From a differential equation. | **67** | 696 |
+| [A000999](seq/A000xxx/A000999/) | 5-adic valuation of binomial(2\*n,n): largest k such that 5^k divides… | **54** | 1001 |
+| [A001000](seq/A001xxx/A001000/) | a(n) = least m such that if a/b < c/d where a,b,c,d are integers in… | **52** | 1000 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

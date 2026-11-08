@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = least m such that if a/b < c/d where a,b,c,d are integers in [0,n], then a/b < k/m < c/d for some integer k.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
