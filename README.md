@@ -927,10 +927,13 @@ sequence for the code and how it works.
 | [A000918](seq/A000xxx/A000918/) | a(n) = 2^n - 2. | **26** | 1001 |
 | [A000919](seq/A000xxx/A000919/) | a(n) = 4^n - C(4,3)\*3^n + C(4,2)\*2^n - C(4,1). | **42** | 201 |
 | [A000920](seq/A000xxx/A000920/) | Differences of 0: 6!\*Stirling2(n,6). | **58** | 1000 |
+| [A000921](seq/A000xxx/A000921/) | Primes p of the form 3k+1 such that Sum\_{x=1..p} cos(2\*Pi\*x^3/p) >… | **236** | 175 |
+| [A000922](seq/A000xxx/A000922/) | Primes p of the form 3k+1 such that -sqrt(p) < Sum\_{x=1..p}… | **229** | 130 |
+| [A000923](seq/A000xxx/A000923/) | Primes p of the form 3k+1 such that Sum\_{x=1..p} cos(2\*Pi\*x^3/p) <… | **236** | 90 |
 | [A000924](seq/A000xxx/A000924/) | Class number of Q(sqrt(-n)), n squarefree. | **161** | 180 |
 | [A000925](seq/A000xxx/A000925/) | Number of ordered ways of writing n as a sum of 2 squares of… | **60** | 10001 |
 | [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **117** | 65 |
-| [A000927](seq/A000xxx/A000927/) | "First factor" (or relative class number) h- for cyclotomic field Q(… | **235** | 75 |
+| [A000927](seq/A000xxx/A000927/) | "First factor" (or relative class number) h- for cyclotomic field Q(… | **227** | 75 |
 | [A000928](seq/A000xxx/A000928/) | Irregular primes: primes p such that at least one of the numerators… | **99** | 45 |
 | [A000930](seq/A000xxx/A000930/) | Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) =… | **37** | 5001 |
 | [A000931](seq/A000xxx/A000931/) | Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with… | **39** | 8181 |
