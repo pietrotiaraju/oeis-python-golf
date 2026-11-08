@@ -1135,7 +1135,10 @@ sequence for the code and how it works.
 | [A001128](seq/A001xxx/A001128/) | Reverse digits of previous term and multiply by previous term. | **40** | 12 |
 | [A001129](seq/A001xxx/A001129/) | Iccanobif numbers: reverse digits of two previous terms and add. | **65** | 1001 |
 | [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **203** | 100 |
+| [A001131](seq/A001xxx/A001131/) | Number of red-black rooted trees with n-1 internal nodes. | **82** | 34 |
 | [A001132](seq/A001xxx/A001132/) | Primes == +-1 (mod 8). | **46** | 4500 |
+| [A001137](seq/A001xxx/A001137/) | Number of black-rooted red-black trees with n internal nodes. | **78** | 220 |
+| [A001138](seq/A001xxx/A001138/) | Number of red rooted red-black trees with n internal nodes. | **82** | 35 |
 | [A001140](seq/A001xxx/A001140/) | Describe the previous term! (method A - initial term is 4). | **82** | 20 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
