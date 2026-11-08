@@ -1043,24 +1043,36 @@ sequence for the code and how it works.
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
 | [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
+| [A001042](seq/A001xxx/A001042/) | a(n) = a(n-1)^2 - a(n-2)^2. | **37** | 14 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
+| [A001046](seq/A001xxx/A001046/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = a(1) = 1. | **47** | 101 |
 | [A001049](seq/A001xxx/A001049/) | Numbered stops in Manhattan on the Lexington Avenue subway. | **36** | 16 |
 | [A001050](seq/A001xxx/A001050/) | Number of letters in n (in Finnish). | **226** | 20001 |
 | [A001051](seq/A001xxx/A001051/) | Number of subgroups of order n in orthogonal group O(3). | **65** | 10000 |
+| [A001052](seq/A001xxx/A001052/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = 1, a(1) = 2. | **49** | 101 |
+| [A001054](seq/A001xxx/A001054/) | a(n) = a(n-1)\*a(n-2) - 1. | **35** | 22 |
 | [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
+| [A001056](seq/A001xxx/A001056/) | a(n) = a(n-1)\*a(n-2) + 1, a(0) = 1, a(1) = 3. | **35** | 18 |
 | [A001058](seq/A001xxx/A001058/) | 1-digit numbers in reverse alphabetical order, then 2-digit numbers,… | **395** | 10000 |
 | [A001059](seq/A001xxx/A001059/) | Number of doubly labeled heap-ordered trees. | **100** | 101 |
 | [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
+| [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
 | [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **128** | 10000 |
 | [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
 | [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
+| [A001081](seq/A001xxx/A001081/) | a(n) = 16\*a(n-1) - a(n-2). | **35** | 201 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
+| [A001084](seq/A001xxx/A001084/) | a(n) = 20\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
+| [A001085](seq/A001xxx/A001085/) | a(n) = 20\*a(n-1) - a(n-2). | **35** | 201 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
+| [A001090](seq/A001xxx/A001090/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 0, a(1) = 1. | **34** | 1001 |
+| [A001091](seq/A001xxx/A001091/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 1, a(1) = 4. | **35** | 201 |
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
+| [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
