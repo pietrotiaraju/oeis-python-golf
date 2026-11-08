@@ -1126,6 +1126,14 @@ sequence for the code and how it works.
 | [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
 | [A001119](seq/A001xxx/A001119/) | Number of skew-symmetric Hadamard matrices of order 4n. | **1063** | 4 |
 | [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
+| [A001122](seq/A001xxx/A001122/) | Primes with primitive root 2. | **65** | 450 |
+| [A001123](seq/A001xxx/A001123/) | Primes with 3 as smallest primitive root. | **87** | 190 |
+| [A001124](seq/A001xxx/A001124/) | Primes with 5 as smallest primitive root. | **91** | 100 |
+| [A001125](seq/A001xxx/A001125/) | Primes with 6 as smallest primitive root. | **95** | 38 |
+| [A001126](seq/A001xxx/A001126/) | Primes with 7 as smallest primitive root. | **97** | 38 |
+| [A001127](seq/A001xxx/A001127/) | Trajectory of 1 under map x->x + (x-with-digits-reversed). | **40** | 1001 |
+| [A001128](seq/A001xxx/A001128/) | Reverse digits of previous term and multiply by previous term. | **40** | 12 |
+| [A001129](seq/A001xxx/A001129/) | Iccanobif numbers: reverse digits of two previous terms and add. | **65** | 1001 |
 | [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **203** | 100 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |

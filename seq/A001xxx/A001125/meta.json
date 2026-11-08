@@ -1,0 +1,6 @@
+{
+  "name": "Primes with 6 as smallest primitive root.",
+  "offset": 1,
+  "min_terms": 38,
+  "timeout": 60
+}

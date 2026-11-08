@@ -1,0 +1,6 @@
+{
+  "name": "Primes with 3 as smallest primitive root.",
+  "offset": 1,
+  "min_terms": 190,
+  "timeout": 60
+}
