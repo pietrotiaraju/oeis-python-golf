@@ -1,0 +1,6 @@
+{
+  "name": "Number of subgroups of order n in orthogonal group O(3).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

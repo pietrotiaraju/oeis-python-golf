@@ -1,0 +1,6 @@
+{
+  "name": "Dimensions (sorted, with duplicates removed) of real simple Lie algebras.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

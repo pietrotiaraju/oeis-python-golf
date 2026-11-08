@@ -1,0 +1,6 @@
+{
+  "name": "Length of one version of Kolakoski sequence {A000002(i)} at n-th growth stage.",
+  "offset": 1,
+  "min_terms": 32,
+  "timeout": 10
+}
