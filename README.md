@@ -1109,6 +1109,9 @@ sequence for the code and how it works.
 | [A001105](seq/A001xxx/A001105/) | a(n) = 2\*n^2. | **28** | 1001 |
 | [A001106](seq/A001xxx/A001106/) | 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n\*(7\*n-5)/2. | **31** | 10001 |
 | [A001107](seq/A001xxx/A001107/) | 10-gonal (or decagonal) numbers: a(n) = n\*(4\*n-3). | **29** | 1001 |
+| [A001108](seq/A001xxx/A001108/) | a(n)-th triangular number is a square: a(n+1) = 6\*a(n) - a(n-1) + 2,… | **35** | 1305 |
+| [A001109](seq/A001xxx/A001109/) | a(n)^2 is a triangular number: a(n) = 6\*a(n-1) - a(n-2) with a(0)=0,… | **34** | 1305 |
+| [A001110](seq/A001xxx/A001110/) | Square triangular numbers: numbers that are both triangular and… | **36** | 601 |
 | [A001112](seq/A001xxx/A001112/) | A continued fraction. | **63** | 201 |
 | [A001113](seq/A001xxx/A001113/) | Decimal expansion of e. | **76** | 50000 |
 | [A001114](seq/A001xxx/A001114/) | Increasing blocks of digits of e. | **117** | 430 |

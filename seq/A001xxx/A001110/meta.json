@@ -1,0 +1,6 @@
+{
+  "name": "Square triangular numbers: numbers that are both triangular and square.",
+  "offset": 0,
+  "min_terms": 601,
+  "timeout": 60
+}
