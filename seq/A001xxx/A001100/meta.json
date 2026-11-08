@@ -1,0 +1,6 @@
+{
+  "name": "Triangle read by rows: T(n,k) = number of permutations of length n with exactly k rising or falling successions, for n >= 1, 0 <= k <= n-1.",
+  "offset": 1,
+  "min_terms": 40,
+  "timeout": 60
+}
