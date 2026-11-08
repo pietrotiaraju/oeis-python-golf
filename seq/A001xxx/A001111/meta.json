@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent Hadamard designs of order 4n.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 120
+}
