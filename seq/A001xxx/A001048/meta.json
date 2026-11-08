@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = n! + (n-1)!.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

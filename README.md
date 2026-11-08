@@ -1044,6 +1044,9 @@ sequence for the code and how it works.
 | [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
+| [A001044](seq/A001xxx/A001044/) | a(n) = (n!)^2. | **33** | 101 |
+| [A001047](seq/A001xxx/A001047/) | a(n) = 3^n - 2^n. | **32** | 201 |
+| [A001048](seq/A001xxx/A001048/) | a(n) = n! + (n-1)!. | **35** | 100 |
 | [A001049](seq/A001xxx/A001049/) | Numbered stops in Manhattan on the Lexington Avenue subway. | **36** | 16 |
 | [A001050](seq/A001xxx/A001050/) | Number of letters in n (in Finnish). | **226** | 20001 |
 | [A001051](seq/A001xxx/A001051/) | Number of subgroups of order n in orthogonal group O(3). | **65** | 10000 |
