@@ -1056,17 +1056,20 @@ sequence for the code and how it works.
 | [A001054](seq/A001xxx/A001054/) | a(n) = a(n-1)\*a(n-2) - 1. | **35** | 22 |
 | [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
 | [A001056](seq/A001xxx/A001056/) | a(n) = a(n-1)\*a(n-2) + 1, a(0) = 1, a(1) = 3. | **35** | 18 |
+| [A001057](seq/A001xxx/A001057/) | Canonical enumeration of integers: interleaved positive and negative… | **29** | 1001 |
 | [A001058](seq/A001xxx/A001058/) | 1-digit numbers in reverse alphabetical order, then 2-digit numbers,… | **395** | 10000 |
 | [A001059](seq/A001xxx/A001059/) | Number of doubly labeled heap-ordered trees. | **100** | 101 |
 | [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
 | [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
 | [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **128** | 10000 |
+| [A001068](seq/A001xxx/A001068/) | a(n) = floor(5\*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5. | **27** | 10001 |
 | [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
 | [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
 | [A001081](seq/A001xxx/A001081/) | a(n) = 16\*a(n-1) - a(n-2). | **35** | 201 |
+| [A001082](seq/A001xxx/A001082/) | Generalized octagonal numbers: k\*(3\*k-2), k=0, +- 1, +- 2, +-3, ... | **31** | 1000 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
 | [A001084](seq/A001xxx/A001084/) | a(n) = 20\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
 | [A001085](seq/A001xxx/A001085/) | a(n) = 20\*a(n-1) - a(n-2). | **35** | 201 |

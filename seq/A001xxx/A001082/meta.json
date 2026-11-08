@@ -1,0 +1,6 @@
+{
+  "name": "Generalized octagonal numbers: k*(3*k-2), k=0, +- 1, +- 2, +-3, ...",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
