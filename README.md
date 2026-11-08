@@ -20,7 +20,7 @@ sequence for the code and how it works.
 |---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **217** | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | 10502 |
-| [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **146** | 300 |
+| [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **141** | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | 1001 |
 | [A000005](seq/A000xxx/A000005/) | d(n) (also called tau(n) or sigma\_0(n)), the number of divisors of n. | **52** | 10000 |
 | [A000006](seq/A000xxx/A000006/) | Integer part of square root of n-th prime. | **56** | 5000 |
