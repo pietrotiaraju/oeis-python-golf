@@ -980,10 +980,14 @@ sequence for the code and how it works.
 | [A000977](seq/A000xxx/A000977/) | Numbers that are divisible by at least three different primes. | **69** | 10000 |
 | [A000978](seq/A000xxx/A000978/) | Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime. | **66** | 10 |
 | [A000979](seq/A000xxx/A000979/) | Wagstaff primes: primes of form (2^p + 1)/3. | **68** | 10 |
+| [A000980](seq/A000xxx/A000980/) | Number of ways of writing 0 as Sum\_{k=-n..n} e(k)\*k, where e(k) is 0… | **76** | 520 |
 | [A000981](seq/A000xxx/A000981/) | Numbers beginning with letter 'n' in English. | **59** | 10000 |
 | [A000982](seq/A000xxx/A000982/) | a(n) = ceiling(n^2/2). | **31** | 3001 |
 | [A000983](seq/A000xxx/A000983/) | Size of minimal binary covering code of length n and covering radius… | **180** | 7 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
+| [A000985](seq/A000xxx/A000985/) | Number of n X n symmetric matrices with nonnegative entries and all… | **75** | 101 |
+| [A000986](seq/A000xxx/A000986/) | Number of n X n symmetric matrices with (0,1) entries and all row… | **75** | 446 |
+| [A000987](seq/A000xxx/A000987/) | Number of stochastic matrices of integers. | **74** | 446 |
 | [A000988](seq/A000xxx/A000988/) | Number of one-sided polyominoes with n cells. | **174** | 12 |
 | [A000989](seq/A000xxx/A000989/) | 3-adic valuation of binomial(2\*n, n): largest k such that 3^k divides… | **54** | 2001 |
 | [A000990](seq/A000xxx/A000990/) | Number of plane partitions of n with at most two rows. | **87** | 6500 |
