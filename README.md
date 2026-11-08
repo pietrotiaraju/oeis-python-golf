@@ -949,6 +949,7 @@ sequence for the code and how it works.
 | [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
 | [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
+| [A000944](seq/A000xxx/A000944/) | Number of polyhedra (or 3-connected simple planar graphs) with n… | **473** | 6 |
 | [A000945](seq/A000xxx/A000945/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of… | **60** | 14 |
 | [A000946](seq/A000xxx/A000946/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor… | **75** | 8 |
 | [A000949](seq/A000xxx/A000949/) | Number of forests with n nodes and height at most 2. | **113** | 101 |
