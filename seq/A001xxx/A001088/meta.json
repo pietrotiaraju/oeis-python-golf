@@ -1,0 +1,6 @@
+{
+  "name": "Product of totient function: a(n) = Product_{k=1..n} phi(k) (cf. A000010).",
+  "offset": 0,
+  "min_terms": 497,
+  "timeout": 60
+}

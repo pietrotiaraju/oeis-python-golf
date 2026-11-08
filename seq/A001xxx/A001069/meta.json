@@ -1,0 +1,6 @@
+{
+  "name": "Log2*(n) (version 2): take log_2 of n this many times to get a number < 2.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

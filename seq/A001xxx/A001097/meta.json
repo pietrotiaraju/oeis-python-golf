@@ -1,0 +1,6 @@
+{
+  "name": "Twin primes.",
+  "offset": 1,
+  "min_terms": 1700,
+  "timeout": 60
+}

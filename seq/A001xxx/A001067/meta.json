@@ -1,0 +1,6 @@
+{
+  "name": "Numerator of Bernoulli(2*n)/(2*n).",
+  "offset": 1,
+  "min_terms": 314,
+  "timeout": 60
+}

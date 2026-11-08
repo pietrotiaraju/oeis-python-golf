@@ -1044,6 +1044,7 @@ sequence for the code and how it works.
 | [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
 | [A001040](seq/A001xxx/A001040/) | a(n+1) = n\*a(n) + a(n-1) with a(0)=0, a(1)=1. | **40** | 451 |
+| [A001041](seq/A001xxx/A001041/) | a(0)=12; thereafter a(n) = 12 times the product of the first n primes. | **54** | 101 |
 | [A001042](seq/A001xxx/A001042/) | a(n) = a(n-1)^2 - a(n-2)^2. | **37** | 14 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
 | [A001044](seq/A001xxx/A001044/) | a(n) = (n!)^2. | **33** | 101 |
@@ -1066,12 +1067,16 @@ sequence for the code and how it works.
 | [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
 | [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
+| [A001065](seq/A001xxx/A001065/) | Sum of proper divisors (or aliquot parts) of n: sum of divisors of n… | **56** | 10000 |
 | [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **117** | 10000 |
+| [A001067](seq/A001xxx/A001067/) | Numerator of Bernoulli(2\*n)/(2\*n). | **122** | 314 |
 | [A001068](seq/A001xxx/A001068/) | a(n) = floor(5\*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5. | **27** | 10001 |
+| [A001069](seq/A001xxx/A001069/) | Log2\*(n) (version 2): take log\_2 of n this many times to get a number… | **54** | 1000 |
 | [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
 | [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
+| [A001074](seq/A001xxx/A001074/) | Numbers m such that Sum\_{k=0..m-1} exp(2\*Pi\*i\*k^3/m) != 0. | **107** | 1000 |
 | [A001075](seq/A001xxx/A001075/) | a(0) = 1, a(1) = 2, a(n) = 4\*a(n-1) - a(n-2). | **33** | 1746 |
 | [A001076](seq/A001xxx/A001076/) | Denominators of continued fraction convergents to sqrt(5). | **33** | 1001 |
 | [A001077](seq/A001xxx/A001077/) | Numerators of continued fraction convergents to sqrt(5). | **34** | 1001 |
@@ -1084,13 +1089,16 @@ sequence for the code and how it works.
 | [A001084](seq/A001xxx/A001084/) | a(n) = 20\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
 | [A001085](seq/A001xxx/A001085/) | a(n) = 20\*a(n-1) - a(n-2). | **35** | 201 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
+| [A001088](seq/A001xxx/A001088/) | Product of totient function: a(n) = Product\_{k=1..n} phi(k) (cf.… | **74** | 497 |
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
 | [A001090](seq/A001xxx/A001090/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 0, a(1) = 1. | **34** | 1001 |
 | [A001091](seq/A001xxx/A001091/) | a(n) = 8\*a(n-1) - a(n-2); a(0) = 1, a(1) = 4. | **35** | 201 |
+| [A001092](seq/A001xxx/A001092/) | Union of all numbers {p, q} where p and q are both primes or powers… | **79** | 900 |
 | [A001093](seq/A001xxx/A001093/) | a(n) = n^3 + 1. | **30** | 10002 |
 | [A001094](seq/A001xxx/A001094/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3). | **39** | 1001 |
 | [A001095](seq/A001xxx/A001095/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4). | **39** | 1001 |
 | [A001096](seq/A001xxx/A001096/) | a(n) = n + n\*(n-1)\*(n-2)\*(n-3)\*(n-4)\*(n-5). | **49** | 1001 |
+| [A001097](seq/A001xxx/A001097/) | Twin primes. | **61** | 1700 |
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
 | [A001099](seq/A001xxx/A001099/) | a(n) = n^n - a(n-1), with a(1) = 1. | **35** | 100 |
 | [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
