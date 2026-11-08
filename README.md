@@ -944,17 +944,24 @@ sequence for the code and how it works.
 | [A000932](seq/A000xxx/A000932/) | a(n) = a(n-1) + n\*a(n-2); a(0) = a(1) = 1. | **40** | 800 |
 | [A000933](seq/A000xxx/A000933/) | Genus of complete graph on n nodes. | **40** | 1000 |
 | [A000934](seq/A000xxx/A000934/) | Chromatic number (or Heawood number) Chi(n) of a closed orientable… | **54** | 10001 |
+| [A000935](seq/A000xxx/A000935/) | Number of free planar polyenoids with 2n nodes and symmetry point… | **284** | 6 |
+| [A000936](seq/A000xxx/A000936/) | Number of free planar polyenoids with n nodes and symmetry point… | **278** | 11 |
 | [A000937](seq/A000xxx/A000937/) | Length of longest simple cycle without chords in the n-dimensional… | **144** | 6 |
 | [A000938](seq/A000xxx/A000938/) | Number of collinear point-triples in an n X n grid. | **109** | 500 |
 | [A000939](seq/A000xxx/A000939/) | Number of inequivalent n-gons. | **155** | 450 |
 | [A000940](seq/A000xxx/A000940/) | Number of n-gons with n vertices. | **162** | 498 |
+| [A000941](seq/A000xxx/A000941/) | Number of free planar polyenoids with n nodes and symmetry point… | **279** | 11 |
+| [A000942](seq/A000xxx/A000942/) | Number of free planar polyenoids with n nodes. | **236** | 11 |
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
 | [A000945](seq/A000xxx/A000945/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of… | **60** | 14 |
 | [A000946](seq/A000xxx/A000946/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor… | **75** | 8 |
+| [A000947](seq/A000xxx/A000947/) | Number of free nonplanar polyenoids with n nodes and symmetry point… | **283** | 6 |
+| [A000948](seq/A000xxx/A000948/) | Number of free nonplanar polyenoids with n nodes and symmetry point… | **284** | 6 |
 | [A000949](seq/A000xxx/A000949/) | Number of forests with n nodes and height at most 2. | **113** | 101 |
 | [A000950](seq/A000xxx/A000950/) | Number of forests with n nodes and height at most 3. | **112** | 64 |
 | [A000951](seq/A000xxx/A000951/) | Number of forests with n nodes and height at most 4. | **112** | 41 |
 | [A000952](seq/A000xxx/A000952/) | Numbers k == 2 (mod 4) that are the orders of conference matrices. | **203** | 5 |
+| [A000953](seq/A000xxx/A000953/) | Number of free nonplanar polyenoids with n nodes. | **250** | 6 |
 | [A000955](seq/A000xxx/A000955/) | A sequence satisfying (a(2n+1) + 1)^3 = Sum\_{k=1..2n+1} a(k)^3. | **60** | 10 |
 | [A000956](seq/A000xxx/A000956/) | A sequence satisfying (a(2n+1) + 1)^3 = Sum\_{k=1..2n+1} a(k)^3. | **60** | 14 |
 | [A000957](seq/A000xxx/A000957/) | Fine's sequence (or Fine numbers): number of relations of valence >=… | **54** | 1671 |

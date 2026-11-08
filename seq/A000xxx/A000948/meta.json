@@ -1,0 +1,6 @@
+{
+  "name": "Number of free nonplanar polyenoids with n nodes and symmetry point group C_s.",
+  "offset": 7,
+  "min_terms": 6,
+  "timeout": 120
+}

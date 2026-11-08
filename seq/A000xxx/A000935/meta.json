@@ -1,0 +1,6 @@
+{
+  "name": "Number of free planar polyenoids with 2n nodes and symmetry point group C_{2h}.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 120
+}
