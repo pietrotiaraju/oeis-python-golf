@@ -1,0 +1,6 @@
+{
+  "name": "Powers of 17: a(n) = 17^n.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
