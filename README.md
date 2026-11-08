@@ -932,7 +932,7 @@ sequence for the code and how it works.
 | [A000923](seq/A000xxx/A000923/) | Primes p of the form 3k+1 such that Sum\_{x=1..p} cos(2\*Pi\*x^3/p) <… | **236** | 90 |
 | [A000924](seq/A000xxx/A000924/) | Class number of Q(sqrt(-n)), n squarefree. | **161** | 180 |
 | [A000925](seq/A000xxx/A000925/) | Number of ordered ways of writing n as a sum of 2 squares of… | **60** | 10001 |
-| [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **117** | 65 |
+| [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **115** | 65 |
 | [A000927](seq/A000xxx/A000927/) | "First factor" (or relative class number) h- for cyclotomic field Q(… | **227** | 75 |
 | [A000928](seq/A000xxx/A000928/) | Irregular primes: primes p such that at least one of the numerators… | **99** | 45 |
 | [A000929](seq/A000xxx/A000929/) | Dimension of the n-th graded piece of the mod-2 Steenrod algebra A\_2. | **77** | 210 |

@@ -5,11 +5,11 @@
 
 Offset 1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 15, 16, 18, 21, 22, 24, 25, 28, …
 
-### Python 3 — 117 bytes
+### Python 3 — 115 bytes
 
 ```python
 n=1
-while[any(0==r<2*b<a<c for a in range(n)if a*a<2*n for b in range(a)for c,r in[divmod(b*b+n,a)])or print(n)]:n+=1
+while[any(0==r<2*b<a<c for a in range(n)for b in range(a)[:n//-~a]for c,r in[divmod(b*b+n,a)])or print(n)]:n+=1
 ```
 
 **How it works**
@@ -24,8 +24,11 @@ while[any(0==r<2*b<a<c for a in range(n)if a*a<2*n for b in range(a)for c,r in[d
   reduced too, so it is enough to look for 0 < 2b < a < c:
   `divmod(b*b+n,a)` gives c and a remainder `r`, and the chain
   `0==r<2*b<a<c` is the whole test (b = 0 fails at `r<2*b`, a = 0 has an
-  empty `range(0)`). Such a form needs a² < ac = b² + n < a²/4 + n, so
-  a² < 4n/3, hence the filter `a*a<2*n`.
+  empty `range(0)`).
+- Such a form has c ≥ a+1 and 2b ≤ a−1, so
+  n = ac − b² ≥ a(a+1) − (a−1)²/4 ≥ (a+1)²/2 ≥ (b+1)(a+1): its b is below
+  n/(a+1). The slice `range(a)[:n//-~a]` (`-~a` is a+1) keeps every such b
+  and cuts the b-loop short when a is large.
 - No primitivity test: a non-primitive form g·(a′, B′, c′) that breaks the
   rule has a primitive part of discriminant −4n/g² whose class has order
   greater than 2 (its inverse is the different reduced form
@@ -51,6 +54,7 @@ while[any(0==r<2*b<a<c for a in range(n)if a*a<2*n for b in range(a)for c,r in[d
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-07 | Python 3 | 117 | first entry |
+| 2026-11-07 | Python 3 | 115 | slice `range(a)[:n//-~a]` instead of a filter on a |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
