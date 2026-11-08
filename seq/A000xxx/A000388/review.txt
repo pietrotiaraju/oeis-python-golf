@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+9a0b2b0d0423 counts permutations of Z_n with exactly 2 hits via weighted DP and base-B digits

@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+a3b4fcd2c51e Burnside over GL(n,2) x AG(3,2), enumerating matrices; class table derived on page

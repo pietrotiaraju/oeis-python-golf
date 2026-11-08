@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+bec4242b9b82 A(n) at record |A-pi n| via exact big-integer pi; page notes precision proof only for large n

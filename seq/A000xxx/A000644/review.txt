@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+e0d1de7457e1 enumerates turn sequences with sum 4, checks simple loop, counts canonical forms

@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+d91244d2fa0d no-3-in-line search with Burnside over the 8 dihedral symmetries

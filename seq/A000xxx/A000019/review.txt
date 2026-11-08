@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+f9664a9ee24a enumerates all subgroups of S_n, tests primitivity by blocks, counts conjugacy classes

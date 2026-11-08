@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+522aa2666b12 Burnside over AG(n,2) with order-48 range group, class weights derived on page

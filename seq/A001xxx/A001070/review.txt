@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+fc230fcdc298 backtracking over reduced Latin squares tracking inversion parity of the second row

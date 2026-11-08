@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+36d5f8196355 exact floor/ceiling integer bounds on sums of square roots, scale doubled until equal
