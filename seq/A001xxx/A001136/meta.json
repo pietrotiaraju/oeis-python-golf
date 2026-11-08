@@ -1,0 +1,6 @@
+{
+  "name": "Primes p such that the multiplicative order of 2 modulo p is (p-1)/6.",
+  "offset": 1,
+  "min_terms": 62,
+  "timeout": 120
+}

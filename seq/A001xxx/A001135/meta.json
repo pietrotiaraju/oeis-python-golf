@@ -1,0 +1,6 @@
+{
+  "name": "Primes p such that the multiplicative order of 2 modulo p is (p-1)/5.",
+  "offset": 1,
+  "min_terms": 24,
+  "timeout": 120
+}

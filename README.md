@@ -1138,6 +1138,10 @@ sequence for the code and how it works.
 | [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **203** | 100 |
 | [A001131](seq/A001xxx/A001131/) | Number of red-black rooted trees with n-1 internal nodes. | **82** | 34 |
 | [A001132](seq/A001xxx/A001132/) | Primes == +-1 (mod 8). | **46** | 4500 |
+| [A001133](seq/A001xxx/A001133/) | Primes p such that the multiplicative order of 2 modulo p is (p-1)/3. | **71** | 80 |
+| [A001134](seq/A001xxx/A001134/) | Primes p such that the multiplicative order of 2 modulo p is (p-1)/4. | **71** | 56 |
+| [A001135](seq/A001xxx/A001135/) | Primes p such that the multiplicative order of 2 modulo p is (p-1)/5. | **71** | 24 |
+| [A001136](seq/A001xxx/A001136/) | Primes p such that the multiplicative order of 2 modulo p is (p-1)/6. | **72** | 62 |
 | [A001137](seq/A001xxx/A001137/) | Number of black-rooted red-black trees with n internal nodes. | **78** | 220 |
 | [A001138](seq/A001xxx/A001138/) | Number of red rooted red-black trees with n internal nodes. | **82** | 35 |
 | [A001139](seq/A001xxx/A001139/) | Number of stable feedback shift registers with n stages. | **117** | 5 |
