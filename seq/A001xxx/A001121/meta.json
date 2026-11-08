@@ -1,0 +1,6 @@
+{
+  "name": "Number of doubly-regular tournaments of order 4n-1.",
+  "offset": 2,
+  "min_terms": 5,
+  "timeout": 120
+}
