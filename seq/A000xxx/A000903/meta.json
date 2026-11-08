@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent ways of placing n nonattacking rooks on n X n board up to rotations and reflections of the board.",
+  "offset": 0,
+  "min_terms": 451,
+  "timeout": 60
+}
