@@ -1,0 +1,6 @@
+{
+  "name": "Continued fraction associated with y(y+1) = x(x^2 -1).",
+  "offset": 0,
+  "min_terms": 73,
+  "timeout": 60
+}
