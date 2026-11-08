@@ -1,0 +1,6 @@
+{
+  "name": "Schroeder's second problem (generalized parentheses); also called super-Catalan numbers or little Schroeder numbers.",
+  "offset": 0,
+  "min_terms": 1313,
+  "timeout": 60
+}
