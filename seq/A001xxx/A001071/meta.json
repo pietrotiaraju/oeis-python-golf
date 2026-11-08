@@ -1,0 +1,6 @@
+{
+  "name": "Number of one-sided chessboard polyominoes with n cells.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}
