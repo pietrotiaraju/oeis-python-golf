@@ -1,0 +1,6 @@
+{
+  "name": "Simple continued fraction expansion of Pi.",
+  "offset": 0,
+  "min_terms": 10000,
+  "timeout": 60
+}
