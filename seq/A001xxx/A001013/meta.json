@@ -1,0 +1,6 @@
+{
+  "name": "Jordan-Polya numbers: products of factorial numbers A000142.",
+  "offset": 1,
+  "min_terms": 8000,
+  "timeout": 60
+}

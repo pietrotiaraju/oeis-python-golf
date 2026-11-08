@@ -1,0 +1,6 @@
+{
+  "name": "Number of sublattices of index n in generic 3-dimensional lattice.",
+  "offset": 1,
+  "min_terms": 7500,
+  "timeout": 60
+}
