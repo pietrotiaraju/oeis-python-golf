@@ -1124,6 +1124,7 @@ sequence for the code and how it works.
 | [A001116](seq/A001xxx/A001116/) | Maximal kissing number of an n-dimensional lattice. | **1447** | 6 |
 | [A001117](seq/A001xxx/A001117/) | a(n) = 3^n - 3\*2^n + 3. | **36** | 201 |
 | [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
+| [A001119](seq/A001xxx/A001119/) | Number of skew-symmetric Hadamard matrices of order 4n. | **1063** | 4 |
 | [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
