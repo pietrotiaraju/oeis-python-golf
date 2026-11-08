@@ -1121,6 +1121,7 @@ sequence for the code and how it works.
 | [A335332](seq/A335xxx/A335332/) | Decimal representation of n-th iteration of the one-dimensional… | **42** | 22 |
 | [A384128](seq/A384xxx/A384128/) | Number of iterations for the circular absolute first-difference on… | **118** | 106 |
 | [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | **131** | 200 |
+| [A401762](seq/A401xxx/A401762/) | Number of distinct traces of length n of Wolfram's 2-state 3-symbol… | **144** | 18 |
 
 <!-- records:end -->
 
