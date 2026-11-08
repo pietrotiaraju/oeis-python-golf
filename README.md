@@ -1021,6 +1021,7 @@ sequence for the code and how it works.
 | [A001023](seq/A001xxx/A001023/) | Powers of 14: a(n) = 14^n. | **25** | 101 |
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
+| [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
