@@ -1,0 +1,6 @@
+{
+  "name": "Number of graphical basis partitions of 2n.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 80
+}
