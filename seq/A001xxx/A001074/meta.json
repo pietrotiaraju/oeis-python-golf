@@ -1,0 +1,6 @@
+{
+  "name": "Numbers m such that Sum_{k=0..m-1} exp(2*Pi*i*k^3/m) != 0.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Union of all numbers {p, q} where p and q are both primes or powers of primes and q = p+2.",
+  "offset": 1,
+  "min_terms": 900,
+  "timeout": 60
+}
