@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k == 2 (mod 4) that are the orders of conference matrices.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 60
+}

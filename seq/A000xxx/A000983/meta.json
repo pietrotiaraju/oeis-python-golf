@@ -1,0 +1,6 @@
+{
+  "name": "Size of minimal binary covering code of length n and covering radius 1.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 120
+}
