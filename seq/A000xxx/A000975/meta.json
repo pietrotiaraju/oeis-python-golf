@@ -1,0 +1,6 @@
+{
+  "name": "a(2n) = 2*a(2n-1), a(2n+1) = 2*a(2n)+1 (also a(n) is the n-th number without consecutive equal binary digits).",
+  "offset": 0,
+  "min_terms": 3301,
+  "timeout": 60
+}
