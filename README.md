@@ -1043,6 +1043,7 @@ sequence for the code and how it works.
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
 | [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
+| [A001040](seq/A001xxx/A001040/) | a(n+1) = n\*a(n) + a(n-1) with a(0)=0, a(1)=1. | **40** | 451 |
 | [A001042](seq/A001xxx/A001042/) | a(n) = a(n-1)^2 - a(n-2)^2. | **37** | 14 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
 | [A001044](seq/A001xxx/A001044/) | a(n) = (n!)^2. | **33** | 101 |
@@ -1053,6 +1054,7 @@ sequence for the code and how it works.
 | [A001050](seq/A001xxx/A001050/) | Number of letters in n (in Finnish). | **226** | 20001 |
 | [A001051](seq/A001xxx/A001051/) | Number of subgroups of order n in orthogonal group O(3). | **65** | 10000 |
 | [A001052](seq/A001xxx/A001052/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = 1, a(1) = 2. | **49** | 101 |
+| [A001053](seq/A001xxx/A001053/) | a(n+1) = n\*a(n) + a(n-1) with a(0)=1, a(1)=0. | **41** | 101 |
 | [A001054](seq/A001xxx/A001054/) | a(n) = a(n-1)\*a(n-2) - 1. | **35** | 22 |
 | [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
 | [A001056](seq/A001xxx/A001056/) | a(n) = a(n-1)\*a(n-2) + 1, a(0) = 1, a(1) = 3. | **35** | 18 |
