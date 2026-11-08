@@ -1,0 +1,6 @@
+{
+  "name": "Primes with primitive root 2.",
+  "offset": 1,
+  "min_terms": 450,
+  "timeout": 60
+}
