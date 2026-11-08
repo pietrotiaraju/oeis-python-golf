@@ -1,0 +1,6 @@
+{
+  "name": "The multiplicative partition function: number of ways of factoring n with all factors greater than 1 (a(1) = 1 by convention).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
