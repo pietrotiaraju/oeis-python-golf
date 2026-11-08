@@ -1091,6 +1091,7 @@ sequence for the code and how it works.
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
 | [A001084](seq/A001xxx/A001084/) | a(n) = 20\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
 | [A001085](seq/A001xxx/A001085/) | a(n) = 20\*a(n-1) - a(n-2). | **35** | 201 |
+| [A001086](seq/A001xxx/A001086/) | Continued fraction associated with y(y+1) = x(x^2 -1). | **415** | 73 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
 | [A001088](seq/A001xxx/A001088/) | Product of totient function: a(n) = Product\_{k=1..n} phi(k) (cf.… | **74** | 497 |
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
