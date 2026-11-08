@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = numerator of harmonic number H(n) = Sum_{i=1..n} 1/i.",
+  "offset": 1,
+  "min_terms": 2296,
+  "timeout": 60
+}

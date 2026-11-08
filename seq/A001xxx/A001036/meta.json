@@ -1,0 +1,6 @@
+{
+  "name": "Partial sums of A001037, omitting A001037(1).",
+  "offset": 1,
+  "min_terms": 34,
+  "timeout": 60
+}

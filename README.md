@@ -1008,7 +1008,11 @@ sequence for the code and how it works.
 | [A000998](seq/A000xxx/A000998/) | From a differential equation. | **67** | 696 |
 | [A000999](seq/A000xxx/A000999/) | 5-adic valuation of binomial(2\*n,n): largest k such that 5^k divides… | **54** | 1001 |
 | [A001000](seq/A001xxx/A001000/) | a(n) = least m such that if a/b < c/d where a,b,c,d are integers in… | **52** | 1000 |
+| [A001001](seq/A001xxx/A001001/) | Number of sublattices of index n in generic 3-dimensional lattice. | **78** | 7800 |
+| [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
+| [A001008](seq/A001xxx/A001008/) | a(n) = numerator of harmonic number H(n) = Sum\_{i=1..n} 1/i. | **69** | 2296 |
 | [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
+| [A001013](seq/A001xxx/A001013/) | Jordan-Polya numbers: products of factorial numbers A000142. | **80** | 8000 |
 | [A001014](seq/A001xxx/A001014/) | Sixth powers: a(n) = n^6. | **27** | 501 |
 | [A001015](seq/A001xxx/A001015/) | Seventh powers: a(n) = n^7. | **27** | 1001 |
 | [A001016](seq/A001xxx/A001016/) | Eighth powers: a(n) = n^8. | **27** | 1001 |
@@ -1021,6 +1025,12 @@ sequence for the code and how it works.
 | [A001023](seq/A001xxx/A001023/) | Powers of 14: a(n) = 14^n. | **25** | 101 |
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
+| [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
+| [A001036](seq/A001xxx/A001036/) | Partial sums of A001037, omitting A001037(1). | **90** | 34 |
+| [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
+| [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
+| [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
+| [A001055](seq/A001xxx/A001055/) | The multiplicative partition function: number of ways of factoring n… | **92** | 10000 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

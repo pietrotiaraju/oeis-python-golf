@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 2 successive primes.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

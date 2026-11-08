@@ -1,0 +1,6 @@
+{
+  "name": "Number of degree-n irreducible polynomials over GF(2); number of n-bead necklaces with beads of 2 colors when turning over is not allowed and with primitive period n; number of binary Lyndon words of length n.",
+  "offset": 0,
+  "min_terms": 3334,
+  "timeout": 60
+}
