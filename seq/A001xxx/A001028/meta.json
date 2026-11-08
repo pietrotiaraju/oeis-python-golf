@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0.",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}

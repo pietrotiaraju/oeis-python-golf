@@ -1011,6 +1011,7 @@ sequence for the code and how it works.
 | [A001001](seq/A001xxx/A001001/) | Number of sublattices of index n in generic 3-dimensional lattice. | **78** | 7500 |
 | [A001002](seq/A001xxx/A001002/) | Number of dissections of a convex (n+2)-gon into triangles and… | **62** | 210 |
 | [A001003](seq/A001xxx/A001003/) | Schroeder's second problem (generalized parentheses); also called… | **55** | 1313 |
+| [A001004](seq/A001xxx/A001004/) | Number of nonequivalent dissections of an (n+2)-gon by… | **168** | 201 |
 | [A001005](seq/A001xxx/A001005/) | Number of ways of partitioning n points on a circle into subsets only… | **58** | 201 |
 | [A001006](seq/A001xxx/A001006/) | Motzkin numbers: number of ways of drawing any number of… | **51** | 2107 |
 | [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
@@ -1031,6 +1032,7 @@ sequence for the code and how it works.
 | [A001023](seq/A001xxx/A001023/) | Powers of 14: a(n) = 14^n. | **25** | 101 |
 | [A001024](seq/A001xxx/A001024/) | Powers of 15: a(n) = 15^n. | **25** | 101 |
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
+| [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **153** | 300 |
 | [A001030](seq/A001xxx/A001030/) | Fixed under 1 -> 21, 2 -> 211. | **37** | 8119 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
 | [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |
@@ -1055,6 +1057,7 @@ sequence for the code and how it works.
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |
 | [A001089](seq/A001xxx/A001089/) | Number of permutations of [n] containing exactly 2 increasing… | **92** | 1001 |
 | [A001098](seq/A001xxx/A001098/) | Multiply previous term by 2 and write in binary. | **36** | 7 |
+| [A001100](seq/A001xxx/A001100/) | Triangle read by rows: T(n,k) = number of permutations of length n… | **139** | 40 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
