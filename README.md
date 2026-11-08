@@ -932,6 +932,7 @@ sequence for the code and how it works.
 | [A000926](seq/A000xxx/A000926/) | Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or… | **117** | 65 |
 | [A000927](seq/A000xxx/A000927/) | "First factor" (or relative class number) h- for cyclotomic field Q(… | **235** | 75 |
 | [A000928](seq/A000xxx/A000928/) | Irregular primes: primes p such that at least one of the numerators… | **99** | 45 |
+| [A000929](seq/A000xxx/A000929/) | Dimension of the n-th graded piece of the mod-2 Steenrod algebra A\_2. | **77** | 210 |
 | [A000930](seq/A000xxx/A000930/) | Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) =… | **37** | 5001 |
 | [A000931](seq/A000xxx/A000931/) | Padovan sequence (or Padovan numbers): a(n) = a(n-2) + a(n-3) with… | **39** | 8181 |
 | [A000932](seq/A000xxx/A000932/) | a(n) = a(n-1) + n\*a(n-2); a(0) = a(1) = 1. | **40** | 800 |
@@ -944,6 +945,9 @@ sequence for the code and how it works.
 | [A000943](seq/A000xxx/A000943/) | Number of combinatorial types of simplicial n-dimensional polytopes… | **104** | 34 |
 | [A000945](seq/A000xxx/A000945/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of… | **60** | 14 |
 | [A000946](seq/A000xxx/A000946/) | Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor… | **75** | 8 |
+| [A000949](seq/A000xxx/A000949/) | Number of forests with n nodes and height at most 2. | **113** | 101 |
+| [A000950](seq/A000xxx/A000950/) | Number of forests with n nodes and height at most 3. | **112** | 64 |
+| [A000951](seq/A000xxx/A000951/) | Number of forests with n nodes and height at most 4. | **112** | 41 |
 | [A000952](seq/A000xxx/A000952/) | Numbers k == 2 (mod 4) that are the orders of conference matrices. | **203** | 5 |
 | [A000957](seq/A000xxx/A000957/) | Fine's sequence (or Fine numbers): number of relations of valence >=… | **54** | 1671 |
 | [A000958](seq/A000xxx/A000958/) | Number of ordered rooted trees with n edges having root of odd degree. | **55** | 1000 |
@@ -965,6 +969,8 @@ sequence for the code and how it works.
 | [A000983](seq/A000xxx/A000983/) | Size of minimal binary covering code of length n and covering radius… | **180** | 7 |
 | [A000984](seq/A000xxx/A000984/) | Central binomial coefficients: binomial(2\*n,n) = (2\*n)!/(n!)^2. | **39** | 1501 |
 | [A000988](seq/A000xxx/A000988/) | Number of one-sided polyominoes with n cells. | **174** | 12 |
+| [A000990](seq/A000xxx/A000990/) | Number of plane partitions of n with at most two rows. | **87** | 6500 |
+| [A000991](seq/A000xxx/A000991/) | Number of 3-line partitions of n. | **89** | 6001 |
 | [A000992](seq/A000xxx/A000992/) | "Half-Catalan numbers": a(n) = Sum\_{k=1..floor(n/2)} a(k)\*a(n-k) with… | **72** | 2500 |
 | [A000993](seq/A000xxx/A000993/) | Number of distinct quadratic residues mod 10^n; also number of… | **49** | 1001 |
 | [A000994](seq/A000xxx/A000994/) | Shifts 2 places left under binomial transform. | **59** | 651 |

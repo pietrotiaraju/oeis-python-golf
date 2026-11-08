@@ -1,0 +1,6 @@
+{
+  "name": "Number of plane partitions of n with at most two rows.",
+  "offset": 0,
+  "min_terms": 6500,
+  "timeout": 60
+}
