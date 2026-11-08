@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = (p^p-1)/(p-1) where p = prime(n).",
+  "offset": 1,
+  "min_terms": 26,
+  "timeout": 60
+}

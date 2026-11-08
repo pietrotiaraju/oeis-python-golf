@@ -1,0 +1,6 @@
+{
+  "name": "Goldbach conjecture: a(n) = number of decompositions of 2n into sum of two primes (counting 1 as a prime).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
