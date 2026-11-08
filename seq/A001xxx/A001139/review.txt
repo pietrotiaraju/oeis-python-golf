@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+bf183faf7e8b Counts n-stage binary FSRs with feedback x1*g(x2..xn) in which every state reaches 0^n: the reading that reproduces all five OEIS terms (brute force over g for n<=5, formula for n=6; the all-functions count 2^(2^n-n-1) does not fit). The weight never increases, so a cycle is a rotation orbit; the register is stable iff every nonzero necklace has a rotation 1y with g(y)=0, so a(n) = product over nonzero necklaces of (2^k-1), k = distinct rotations starting with 1. The program finds the rotations as w*2^i mod 2^n-1 and takes each necklace once at its largest rotation.

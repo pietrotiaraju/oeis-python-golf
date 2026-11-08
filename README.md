@@ -1139,6 +1139,7 @@ sequence for the code and how it works.
 | [A001132](seq/A001xxx/A001132/) | Primes == +-1 (mod 8). | **46** | 4500 |
 | [A001137](seq/A001xxx/A001137/) | Number of black-rooted red-black trees with n internal nodes. | **78** | 220 |
 | [A001138](seq/A001xxx/A001138/) | Number of red rooted red-black trees with n internal nodes. | **82** | 35 |
+| [A001139](seq/A001xxx/A001139/) | Number of stable feedback shift registers with n stages. | **117** | 5 |
 | [A001140](seq/A001xxx/A001140/) | Describe the previous term! (method A - initial term is 4). | **82** | 20 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |

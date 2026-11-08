@@ -1,0 +1,6 @@
+{
+  "name": "Number of stable feedback shift registers with n stages.",
+  "offset": 2,
+  "min_terms": 5,
+  "timeout": 60
+}
