@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of e.",
+  "offset": 1,
+  "min_terms": 50000,
+  "timeout": 60
+}
