@@ -111,9 +111,9 @@ the earlier tests. So a(n) is the number of matrices that reach the end,
   with little memory. 27 vertices (722) is far out of reach. The bar is
   5 terms in 120 s. The OEIS has no real b-file; the one here is its file
   synthesized from the six data terms.
-- **Recursion.** `T` recurses once per cell, about N²/2 levels. Python's
-  default recursion limit would stop it at n = 12 (47 vertices), far beyond
-  reach.
+- **Recursion.** `T` recurses once per cell, and `U` adds two frames per
+  depth: about N(N−1)/2 + 2N levels in all. Python's default recursion limit
+  (1000) would stop it at n = 11 (43 vertices), far beyond reach.
 
 ## History
 
