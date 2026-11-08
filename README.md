@@ -88,7 +88,7 @@ sequence for the code and how it works.
 | [A000069](seq/A000xxx/A000069/) | Odious numbers: numbers with an odd number of 1's in their binary… | **41** | 10001 |
 | [A000070](seq/A000xxx/A000070/) | a(n) = Sum\_{k=0..n} p(k) where p(k) = number of partitions of k… | **80** | 1001 |
 | [A000071](seq/A000xxx/A000071/) | a(n) = Fibonacci(n) - 1. | **32** | 500 |
-| [A000072](seq/A000xxx/A000072/) | Number of positive integers <= 2^n of form x^2 + 4 y^2. | **91** | 25 |
+| [A000072](seq/A000xxx/A000072/) | Number of positive integers <= 2^n of form x^2 + 4 y^2. | **98** | 25 |
 | [A000073](seq/A000xxx/A000073/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with… | **39** | 3001 |
 | [A000074](seq/A000xxx/A000074/) | Number of odd integers <= 2^n of form x^2 + y^2. | **90** | 25 |
 | [A000075](seq/A000xxx/A000075/) | Number of positive integers <= 2^n of form 2\*x^2 + 3\*y^2. | **93** | 24 |
@@ -121,7 +121,7 @@ sequence for the code and how it works.
 | [A000102](seq/A000xxx/A000102/) | a(n) = number of compositions of n in which the maximum part size is… | **63** | 201 |
 | [A000103](seq/A000xxx/A000103/) | Number of n-node triangulations of sphere in which every node has… | **425** | 7 |
 | [A000104](seq/A000xxx/A000104/) | Number of n-celled free polyominoes without holes. | **285** | 12 |
-| [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **209** | 13 |
+| [A000105](seq/A000xxx/A000105/) | Number of free polyominoes (or square animals) with n cells. | **217** | 13 |
 | [A000106](seq/A000xxx/A000106/) | 2nd power of rooted tree enumerator; number of linear forests of 2… | **111** | 999 |
 | [A000107](seq/A000xxx/A000107/) | Number of rooted trees with n nodes and a single labeled node;… | **120** | 1001 |
 | [A000108](seq/A000xxx/A000108/) | Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!). | **39** | 1001 |
