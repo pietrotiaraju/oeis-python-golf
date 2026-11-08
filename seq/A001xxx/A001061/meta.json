@@ -1,0 +1,6 @@
+{
+  "name": "1-, 2-, 3-, ... digit numbers in alphabetical order in German.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
