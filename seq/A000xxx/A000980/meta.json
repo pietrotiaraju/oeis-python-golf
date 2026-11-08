@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of writing 0 as Sum_{k=-n..n} e(k)*k, where e(k) is 0 or 1.",
+  "offset": 0,
+  "min_terms": 520,
+  "timeout": 60
+}
