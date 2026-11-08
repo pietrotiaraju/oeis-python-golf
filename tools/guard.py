@@ -11,7 +11,8 @@ Compared with git BASE, for every sequence that BASE already has:
     (a correction of a wrong program may be longer).
 New sequences are left to tools/verify.py. With --strict (the ship workflow), a change
 outside seq/, bfiles/ and README.md is refused too: tools, workflows and rules go
-through a pull request.
+through a pull request. So is any change to a sequence's review.txt, new sequences
+included: a review lands only through a pull request, whose merge is the review.
 """
 import json
 import re
@@ -46,6 +47,10 @@ def check(base, strict):
         if parts[0] == "bfiles" and len(parts) == 3 and show(base, path) is not None:
             problems.append(f"{path}: the b-file of an existing sequence cannot change")
         if parts[0] != "seq" or len(parts) != 4:
+            continue
+        if strict and parts[3] == "review.txt":
+            problems.append(f"{path}: a review lands only through a pull request"
+                            " (python tools/ship.py AXXXXXX --review NOTE)")
             continue
         folder, name = "/".join(parts[:3]), parts[3]
         if show(base, f"{folder}/meta.json") is None:
