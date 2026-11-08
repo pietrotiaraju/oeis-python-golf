@@ -1,0 +1,6 @@
+{
+  "name": "Triangle giving number L(n,k) of normalized k X n Latin rectangles.",
+  "offset": 1,
+  "min_terms": 21,
+  "timeout": 60
+}

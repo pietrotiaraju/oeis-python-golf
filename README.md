@@ -1015,6 +1015,7 @@ sequence for the code and how it works.
 | [A001006](seq/A001xxx/A001006/) | Motzkin numbers: number of ways of drawing any number of… | **51** | 2107 |
 | [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
 | [A001008](seq/A001xxx/A001008/) | a(n) = numerator of harmonic number H(n) = Sum\_{i=1..n} 1/i. | **69** | 2296 |
+| [A001009](seq/A001xxx/A001009/) | Triangle giving number L(n,k) of normalized k X n Latin rectangles. | **152** | 21 |
 | [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
 | [A001011](seq/A001xxx/A001011/) | Number of ways to fold a strip of n blank stamps. | **203** | 10 |
 | [A001013](seq/A001xxx/A001013/) | Jordan-Polya numbers: products of factorial numbers A000142. | **80** | 8000 |
@@ -1032,8 +1033,10 @@ sequence for the code and how it works.
 | [A001025](seq/A001xxx/A001025/) | Powers of 16: a(n) = 16^n. | **25** | 821 |
 | [A001030](seq/A001xxx/A001030/) | Fixed under 1 -> 21, 2 -> 211. | **37** | 8119 |
 | [A001031](seq/A001xxx/A001031/) | Goldbach conjecture: a(n) = number of decompositions of 2n into sum… | **84** | 10000 |
+| [A001035](seq/A001xxx/A001035/) | Number of partially ordered sets ("posets") with n labeled elements… | **168** | 6 |
 | [A001036](seq/A001xxx/A001036/) | Partial sums of A001037, omitting A001037(1). | **90** | 34 |
 | [A001037](seq/A001xxx/A001037/) | Number of degree-n irreducible polynomials over GF(2); number of… | **90** | 3334 |
+| [A001038](seq/A001xxx/A001038/) | Invertible Boolean functions with GL(n,2) acting on the domain and… | **274** | 4 |
 | [A001039](seq/A001xxx/A001039/) | a(n) = (p^p-1)/(p-1) where p = prime(n). | **50** | 26 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
 | [A001049](seq/A001xxx/A001049/) | Numbered stops in Manhattan on the Lexington Avenue subway. | **36** | 16 |
@@ -1042,6 +1045,8 @@ sequence for the code and how it works.
 | [A001059](seq/A001xxx/A001059/) | Number of doubly labeled heap-ordered trees. | **100** | 101 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
 | [A001066](seq/A001xxx/A001066/) | Dimensions (sorted, with duplicates removed) of real simple Lie… | **128** | 10000 |
+| [A001070](seq/A001xxx/A001070/) | Number of normalized Latin squares with second row even. | **191** | 6 |
+| [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
 | [A001087](seq/A001xxx/A001087/) | Related to S(n), the number of self-dual monotone Boolean functions… | **96** | 32 |

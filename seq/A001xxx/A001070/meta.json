@@ -1,0 +1,6 @@
+{
+  "name": "Number of normalized Latin squares with second row even.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
