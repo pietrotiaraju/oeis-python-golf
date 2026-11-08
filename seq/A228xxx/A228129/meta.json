@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = number of semistandard Young tableau families, headed by a father SSYT, containing daughter SSYT of shape equal to once-trimmed father's shape, so that union of families equals all SSYT with sum of entries n.",
+  "offset": 1,
+  "min_terms": 36,
+  "timeout": 60
+}
