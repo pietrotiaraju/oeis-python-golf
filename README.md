@@ -1109,6 +1109,13 @@ sequence for the code and how it works.
 | [A001105](seq/A001xxx/A001105/) | a(n) = 2\*n^2. | **28** | 1001 |
 | [A001106](seq/A001xxx/A001106/) | 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n\*(7\*n-5)/2. | **31** | 10001 |
 | [A001107](seq/A001xxx/A001107/) | 10-gonal (or decagonal) numbers: a(n) = n\*(4\*n-3). | **29** | 1001 |
+| [A001112](seq/A001xxx/A001112/) | A continued fraction. | **63** | 201 |
+| [A001113](seq/A001xxx/A001113/) | Decimal expansion of e. | **76** | 50000 |
+| [A001114](seq/A001xxx/A001114/) | Increasing blocks of digits of e. | **117** | 430 |
+| [A001115](seq/A001xxx/A001115/) | Maximal number of pairwise relatively prime polynomials of degree n… | **103** | 41 |
+| [A001117](seq/A001xxx/A001117/) | a(n) = 3^n - 3\*2^n + 3. | **36** | 201 |
+| [A001118](seq/A001xxx/A001118/) | Number of labeled ordered set partitions into 5 parts for n>=1,… | **51** | 1001 |
+| [A001120](seq/A001xxx/A001120/) | a(0) = a(1) = 1; for n > 1, a(n) = n\*a(n-1) + (-1)^n. | **36** | 451 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
