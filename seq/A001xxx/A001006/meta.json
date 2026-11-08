@@ -1,0 +1,6 @@
+{
+  "name": "Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining n (labeled) points on a circle.",
+  "offset": 0,
+  "min_terms": 2107,
+  "timeout": 60
+}

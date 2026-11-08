@@ -1009,6 +1009,8 @@ sequence for the code and how it works.
 | [A000999](seq/A000xxx/A000999/) | 5-adic valuation of binomial(2\*n,n): largest k such that 5^k divides… | **54** | 1001 |
 | [A001000](seq/A001xxx/A001000/) | a(n) = least m such that if a/b < c/d where a,b,c,d are integers in… | **52** | 1000 |
 | [A001001](seq/A001xxx/A001001/) | Number of sublattices of index n in generic 3-dimensional lattice. | **78** | 7500 |
+| [A001003](seq/A001xxx/A001003/) | Schroeder's second problem (generalized parentheses); also called… | **55** | 1313 |
+| [A001006](seq/A001xxx/A001006/) | Motzkin numbers: number of ways of drawing any number of… | **51** | 2107 |
 | [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
 | [A001008](seq/A001xxx/A001008/) | a(n) = numerator of harmonic number H(n) = Sum\_{i=1..n} 1/i. | **69** | 2296 |
 | [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
