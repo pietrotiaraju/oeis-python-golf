@@ -1047,6 +1047,7 @@ sequence for the code and how it works.
 | [A001042](seq/A001xxx/A001042/) | a(n) = a(n-1)^2 - a(n-2)^2. | **37** | 14 |
 | [A001043](seq/A001xxx/A001043/) | Numbers that are the sum of 2 successive primes. | **49** | 10000 |
 | [A001044](seq/A001xxx/A001044/) | a(n) = (n!)^2. | **33** | 101 |
+| [A001045](seq/A001xxx/A001045/) | Jacobsthal sequence (or Jacobsthal numbers): a(n) = a(n-1) +… | **29** | 3317 |
 | [A001046](seq/A001xxx/A001046/) | a(n) = n\*(n-1)\*a(n-1)/2 + a(n-2), a(0) = a(1) = 1. | **47** | 101 |
 | [A001047](seq/A001xxx/A001047/) | a(n) = 3^n - 2^n. | **32** | 201 |
 | [A001048](seq/A001xxx/A001048/) | a(n) = n! + (n-1)!. | **35** | 100 |
@@ -1061,6 +1062,7 @@ sequence for the code and how it works.
 | [A001057](seq/A001xxx/A001057/) | Canonical enumeration of integers: interleaved positive and negative… | **29** | 1001 |
 | [A001058](seq/A001xxx/A001058/) | 1-digit numbers in reverse alphabetical order, then 2-digit numbers,… | **395** | 10000 |
 | [A001059](seq/A001xxx/A001059/) | Number of doubly labeled heap-ordered trees. | **100** | 101 |
+| [A001060](seq/A001xxx/A001060/) | a(n) = a(n-1) + a(n-2) with a(0)=2, a(1)=5. Sometimes called the… | **33** | 1001 |
 | [A001061](seq/A001xxx/A001061/) | 1-, 2-, 3-, ... digit numbers in alphabetical order in German. | **250** | 10000 |
 | [A001063](seq/A001xxx/A001063/) | E.g.f. satisfies A'(x) = A(x/(1-x)). | **63** | 301 |
 | [A001064](seq/A001xxx/A001064/) | a(n) = a(n-1)\*a(n-2) + a(n-3). | **41** | 23 |
@@ -1070,6 +1072,12 @@ sequence for the code and how it works.
 | [A001071](seq/A001xxx/A001071/) | Number of one-sided chessboard polyominoes with n cells. | **271** | 9 |
 | [A001072](seq/A001xxx/A001072/) | Number of minimally 2-edge-connected non-isomorphic graphs with n… | **351** | 5 |
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
+| [A001075](seq/A001xxx/A001075/) | a(0) = 1, a(1) = 2, a(n) = 4\*a(n-1) - a(n-2). | **33** | 1746 |
+| [A001076](seq/A001xxx/A001076/) | Denominators of continued fraction convergents to sqrt(5). | **33** | 1001 |
+| [A001077](seq/A001xxx/A001077/) | Numerators of continued fraction convergents to sqrt(5). | **34** | 1001 |
+| [A001078](seq/A001xxx/A001078/) | a(n) = 10\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2. | **34** | 1001 |
+| [A001079](seq/A001xxx/A001079/) | a(n) = 10\*a(n-1) - a(n-2); a(0) = 1, a(1) = 5. | **35** | 201 |
+| [A001080](seq/A001xxx/A001080/) | a(n) = 16\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
 | [A001081](seq/A001xxx/A001081/) | a(n) = 16\*a(n-1) - a(n-2). | **35** | 201 |
 | [A001082](seq/A001xxx/A001082/) | Generalized octagonal numbers: k\*(3\*k-2), k=0, +- 1, +- 2, +-3, ... | **31** | 1000 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
