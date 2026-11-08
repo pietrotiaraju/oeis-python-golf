@@ -1,0 +1,6 @@
+{
+  "name": "Sixth powers: a(n) = n^6.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
