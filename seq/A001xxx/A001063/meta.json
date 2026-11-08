@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f. satisfies A'(x) = A(x/(1-x)).",
+  "offset": 0,
+  "min_terms": 301,
+  "timeout": 60
+}
