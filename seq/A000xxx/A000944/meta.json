@@ -1,0 +1,6 @@
+{
+  "name": "Number of polyhedra (or 3-connected simple planar graphs) with n nodes.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 120
+}
