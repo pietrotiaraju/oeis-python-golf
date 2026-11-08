@@ -1,0 +1,6 @@
+{
+  "name": "Number of letters in n (in Finnish).",
+  "offset": 0,
+  "min_terms": 20001,
+  "timeout": 60
+}
