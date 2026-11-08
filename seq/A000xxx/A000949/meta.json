@@ -1,0 +1,6 @@
+{
+  "name": "Number of forests with n nodes and height at most 2.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
