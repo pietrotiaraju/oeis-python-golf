@@ -1074,6 +1074,10 @@ sequence for the code and how it works.
 | [A001073](seq/A001xxx/A001073/) | Label a 1-cm ruler with digits 1 cm wide. | **40** | 10001 |
 | [A001075](seq/A001xxx/A001075/) | a(0) = 1, a(1) = 2, a(n) = 4\*a(n-1) - a(n-2). | **33** | 1746 |
 | [A001076](seq/A001xxx/A001076/) | Denominators of continued fraction convergents to sqrt(5). | **33** | 1001 |
+| [A001077](seq/A001xxx/A001077/) | Numerators of continued fraction convergents to sqrt(5). | **34** | 1001 |
+| [A001078](seq/A001xxx/A001078/) | a(n) = 10\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 2. | **34** | 1001 |
+| [A001079](seq/A001xxx/A001079/) | a(n) = 10\*a(n-1) - a(n-2); a(0) = 1, a(1) = 5. | **35** | 201 |
+| [A001080](seq/A001xxx/A001080/) | a(n) = 16\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3. | **35** | 201 |
 | [A001081](seq/A001xxx/A001081/) | a(n) = 16\*a(n-1) - a(n-2). | **35** | 201 |
 | [A001082](seq/A001xxx/A001082/) | Generalized octagonal numbers: k\*(3\*k-2), k=0, +- 1, +- 2, +-3, ... | **31** | 1000 |
 | [A001083](seq/A001xxx/A001083/) | Length of one version of Kolakoski sequence {A000002(i)} at n-th… | **73** | 32 |
