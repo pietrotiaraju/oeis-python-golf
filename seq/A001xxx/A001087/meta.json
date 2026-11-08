@@ -1,0 +1,6 @@
+{
+  "name": "Related to S(n), the number of self-dual monotone Boolean functions of n variables (A001206): 2^n-th term is S(n).",
+  "offset": 1,
+  "min_terms": 32,
+  "timeout": 60
+}
