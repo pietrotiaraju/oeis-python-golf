@@ -1011,6 +1011,7 @@ sequence for the code and how it works.
 | [A001007](seq/A001xxx/A001007/) | a(n) = ( Sum C(p,i); i=1,...,floor(2p/3) ) / p^2, where p = prime(n). | **77** | 198 |
 | [A001008](seq/A001xxx/A001008/) | a(n) = numerator of harmonic number H(n) = Sum\_{i=1..n} 1/i. | **69** | 2296 |
 | [A001010](seq/A001xxx/A001010/) | Number of symmetric foldings of a strip of n labeled stamps. | **185** | 17 |
+| [A001011](seq/A001xxx/A001011/) | Number of ways to fold a strip of n blank stamps. | **203** | 10 |
 | [A001014](seq/A001xxx/A001014/) | Sixth powers: a(n) = n^6. | **27** | 501 |
 | [A001015](seq/A001xxx/A001015/) | Seventh powers: a(n) = n^7. | **27** | 1001 |
 | [A001016](seq/A001xxx/A001016/) | Eighth powers: a(n) = n^8. | **27** | 1001 |
