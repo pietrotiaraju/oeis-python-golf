@@ -1,0 +1,6 @@
+{
+  "name": "Number of doubly labeled heap-ordered trees.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
