@@ -111,6 +111,8 @@ def changed(ref):
     aids = set()
     for line in git.stdout.splitlines():
         path = Path(line)
+        if path.name == "review.txt":  # a review does not change what the program prints
+            continue
         if path.parts[0] == "seq" and len(path.parts) > 3:
             aids.add(path.parts[2])
         elif path.parts[0] == "bfiles" and path.stem.startswith("b"):
