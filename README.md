@@ -18,7 +18,7 @@ sequence for the code and how it works.
 
 | Sequence | Name | Python 3 | Terms checked |
 |---|---|---|---|
-| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **217** | 6 |
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **221** | 6 |
 | [A000002](seq/A000xxx/A000002/) | Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence… | **53** | 10502 |
 | [A000003](seq/A000xxx/A000003/) | Number of classes of primitive positive definite binary quadratic… | **141** | 300 |
 | [A000004](seq/A000xxx/A000004/) | The zero sequence. | **16** | 1001 |
@@ -66,7 +66,7 @@ sequence for the code and how it works.
 | [A000047](seq/A000xxx/A000047/) | Number of integers <= 2^n of form x^2 - 2y^2. | **95** | 25 |
 | [A000048](seq/A000xxx/A000048/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **92** | 3321 |
 | [A000049](seq/A000xxx/A000049/) | Number of positive integers <= 2^n of the form 3\*x^2 + 4\*y^2. | **93** | 24 |
-| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **87** | 25 |
+| [A000050](seq/A000xxx/A000050/) | Number of positive integers <= 2^n of form x^2 + y^2. | **91** | 25 |
 | [A000051](seq/A000xxx/A000051/) | a(n) = 2^n + 1. | **26** | 101 |
 | [A000052](seq/A000xxx/A000052/) | 1-digit numbers arranged in alphabetical order, then the 2-digit… | **389** | 10000 |
 | [A000053](seq/A000xxx/A000053/) | Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway. | **62** | 29 |
@@ -90,7 +90,7 @@ sequence for the code and how it works.
 | [A000071](seq/A000xxx/A000071/) | a(n) = Fibonacci(n) - 1. | **32** | 500 |
 | [A000072](seq/A000xxx/A000072/) | Number of positive integers <= 2^n of form x^2 + 4 y^2. | **98** | 25 |
 | [A000073](seq/A000xxx/A000073/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) for n >= 3 with… | **39** | 3001 |
-| [A000074](seq/A000xxx/A000074/) | Number of odd integers <= 2^n of form x^2 + y^2. | **90** | 25 |
+| [A000074](seq/A000xxx/A000074/) | Number of odd integers <= 2^n of form x^2 + y^2. | **100** | 25 |
 | [A000075](seq/A000xxx/A000075/) | Number of positive integers <= 2^n of form 2\*x^2 + 3\*y^2. | **93** | 24 |
 | [A000076](seq/A000xxx/A000076/) | Number of integers <= 2^n of form 4 x^2 + 4 x y + 5 y^2. | **97** | 24 |
 | [A000077](seq/A000xxx/A000077/) | Number of positive integers <= 2^n of form x^2 + 6 y^2. | **91** | 24 |
