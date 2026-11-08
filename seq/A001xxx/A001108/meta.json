@@ -1,0 +1,6 @@
+{
+  "name": "a(n)-th triangular number is a square: a(n+1) = 6*a(n) - a(n-1) + 2, with a(0) = 0, a(1) = 1.",
+  "offset": 0,
+  "min_terms": 1305,
+  "timeout": 60
+}
