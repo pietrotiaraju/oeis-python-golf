@@ -1369,6 +1369,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001365](seq/A001xxx/A001365/) | Expansion of… | **66** | 1001 |
 | [A001367](seq/A001xxx/A001367/) | Solution to f(2) = 1, f(n) = sqrt(n) f(sqrt(n)) + n at values n =… | **35** | 12 |
 | [A001370](seq/A001xxx/A001370/) | Sum of digits of 2^n. | **43** | 10001 |
+| [A001371](seq/A001xxx/A001371/) | Number of n-bead necklaces with beads of 2 colors and primitive… | **126** | 401 |
+| [A001372](seq/A001xxx/A001372/) | Number of unlabeled mappings (or mapping patterns) from n points to… | **200** | 800 |
+| [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **246** | 509 |
+| [A001374](seq/A001xxx/A001374/) | Number of relational systems on n nodes. Also number of directed… | **173** | 40 |
+| [A001376](seq/A001xxx/A001376/) | Relational systems on n nodes. | **152** | 6 |
+| [A001377](seq/A001xxx/A001377/) | Number of relations with 4 arguments on n nodes. | **152** | 7 |
+| [A001383](seq/A001xxx/A001383/) | Number of n-node rooted trees of height at most 3. | **110** | 201 |
+| [A001384](seq/A001xxx/A001384/) | Number of n-node trees of height at most 4. | **115** | 201 |
+| [A001385](seq/A001xxx/A001385/) | Number of n-node trees of height at most 5. | **117** | 201 |
 | [A001386](seq/A001xxx/A001386/) | Coordination sequence for 4-dimensional I-centered tetragonal… | **41** | 1001 |
 | [A001387](seq/A001xxx/A001387/) | Binary "look and say" sequence. | **84** | 17 |
 | [A001388](seq/A001xxx/A001388/) | Describe the previous term (in base 3)!. | **94** | 23 |

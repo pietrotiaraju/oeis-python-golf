@@ -1,0 +1,6 @@
+{
+  "name": "Number of functional digraphs (digraphs of functions on n nodes where every node has outdegree 1 and loops of length 1 are forbidden).",
+  "offset": 0,
+  "min_terms": 509,
+  "timeout": 60
+}

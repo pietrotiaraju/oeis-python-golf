@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-node trees of height at most 4.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
