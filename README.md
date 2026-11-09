@@ -1313,11 +1313,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001307](seq/A001xxx/A001307/) | Expansion of 1/(1-x)^2/(1-x^2)/(1-x^4)/(1-x^10)/(1-x^20). | **61** | 1001 |
 | [A001308](seq/A001xxx/A001308/) | Order of Chevalley group D\_n (2). | **45** | 20 |
 | [A001309](seq/A001xxx/A001309/) | Order of real Clifford group L\_n connected with Barnes-Wall lattices… | **46** | 9 |
+| [A001310](seq/A001xxx/A001310/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **66** | 1001 |
 | [A001311](seq/A001xxx/A001311/) | Final 2 digits of 6^n. | **28** | 1001 |
+| [A001312](seq/A001xxx/A001312/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001313](seq/A001xxx/A001313/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001314](seq/A001xxx/A001314/) | Number of (unordered) ways of making change for n cents using coins… | **71** | 1001 |
 | [A001315](seq/A001xxx/A001315/) | a(n) = Sum\_{k=0..n} 2^binomial(n,k). | **55** | 14 |
 | [A001316](seq/A001xxx/A001316/) | Gould's sequence: a(n) = Sum\_{k=0..n} (binomial(n,k) mod 2); number… | **39** | 50001 |
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
+| [A001319](seq/A001xxx/A001319/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
@@ -1328,6 +1333,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
 | [A001341](seq/A001xxx/A001341/) | Expansion of e.g.f. 6\*exp(x)/(1-x)^4. | **45** | 101 |
 | [A001342](seq/A001xxx/A001342/) | E.g.f.: 24\*exp(x)/(1-x)^5. | **45** | 101 |
+| [A001343](seq/A001xxx/A001343/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001344](seq/A001xxx/A001344/) | a(n) = Sum\_{k=0..2} (n+k)! \* C(2,k). | **49** | 102 |
 | [A001345](seq/A001xxx/A001345/) | a(n) = Sum\_{k = 0..3} (n+k)! C(3,k). | **54** | 102 |
 | [A001346](seq/A001xxx/A001346/) | a(n) = Sum\_{k = 0..4} (n+k)! C(4,k). | **60** | 102 |
