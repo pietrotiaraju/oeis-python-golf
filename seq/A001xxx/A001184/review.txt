@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+eeab31155988 Frontier (transfer-matrix) DP over the cells with exact integer counts: every cell gets degree 2, the two corners get one outside edge each, cycles are refused (a==b), so the counted edge sets are exactly the corner-to-corner Hamiltonian paths for every n; states are canonical bit masks of path pieces; no term is stored. Argument on the page.
