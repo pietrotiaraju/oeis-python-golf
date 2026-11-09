@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the number of partitions of n into at most 3 parts; also partitions of n+3 in which the greatest part is 3; also number of unlabeled multigraphs with 3 nodes and n edges.",
+  "offset": 0,
+  "min_terms": 17502,
+  "timeout": 60
+}

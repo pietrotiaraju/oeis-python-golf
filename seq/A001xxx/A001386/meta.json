@@ -1,0 +1,6 @@
+{
+  "name": "Coordination sequence for 4-dimensional I-centered tetragonal orthogonal lattice.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
