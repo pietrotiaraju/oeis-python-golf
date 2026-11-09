@@ -1,0 +1,6 @@
+{
+  "name": "Number of relational systems on n nodes. Also number of directed 3-multigraphs with loops on n nodes.",
+  "offset": 1,
+  "min_terms": 40,
+  "timeout": 60
+}
