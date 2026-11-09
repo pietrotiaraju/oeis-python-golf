@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+c38d8c8df500 Counts orbits of G = {f -> f(Mx+a)+b.x+c} (the OEIS comment) on all 2^(2^n) functions by search: for n>=2 the maps g o T, g o B (T=R+e0, B=R+x0 e0, R = coordinate rotation) generate AG(n,2) (B R^-1 is a transvection, conjugates by R give GL(n,2); T^n is translation by 11..1) and adding K=1+x0 then gives all affine additions, so search components are exactly G-orbits; n=1 has one class and the search from 0 reaches all four masks.

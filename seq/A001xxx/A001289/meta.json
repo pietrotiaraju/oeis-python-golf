@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of Boolean functions modulo linear functions.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}
