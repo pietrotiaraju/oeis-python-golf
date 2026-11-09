@@ -1373,6 +1373,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001372](seq/A001xxx/A001372/) | Number of unlabeled mappings (or mapping patterns) from n points to… | **200** | 800 |
 | [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **246** | 509 |
 | [A001374](seq/A001xxx/A001374/) | Number of relational systems on n nodes. Also number of directed… | **173** | 40 |
+| [A001375](seq/A001xxx/A001375/) | Relational systems on n nodes. | **142** | 8 |
 | [A001376](seq/A001xxx/A001376/) | Relational systems on n nodes. | **152** | 6 |
 | [A001377](seq/A001xxx/A001377/) | Number of relations with 4 arguments on n nodes. | **152** | 7 |
 | [A001383](seq/A001xxx/A001383/) | Number of n-node rooted trees of height at most 3. | **110** | 201 |
