@@ -1,0 +1,6 @@
+{
+  "name": "Stirling's formula: numerators of asymptotic series for Gamma function.",
+  "offset": 0,
+  "min_terms": 228,
+  "timeout": 60
+}

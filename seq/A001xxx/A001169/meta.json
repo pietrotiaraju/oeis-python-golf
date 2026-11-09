@@ -1,0 +1,6 @@
+{
+  "name": "Number of board-pile polyominoes with n cells.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
