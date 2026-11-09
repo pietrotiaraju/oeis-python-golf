@@ -1,0 +1,6 @@
+{
+  "name": "Weight distribution of binary [ 48,24,12 ] quadratic residue code.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
