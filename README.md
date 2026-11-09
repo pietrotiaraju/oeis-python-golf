@@ -1326,6 +1326,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
+| [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
@@ -1408,6 +1409,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **90** | 20 | 107 | 115 |
 | [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
+| [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **174** | 17 | 215 | 28 |
 
 <!-- short:end -->
 
