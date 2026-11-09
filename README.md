@@ -1462,6 +1462,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001335](seq/A001xxx/A001335/) | Number of n-step polygons on hexagonal lattice. | **123** | 11 | 134 | 13 |
 | [A001337](seq/A001xxx/A001337/) | Number of n-step polygons on f.c.c. lattice. | **133** | 7 | 155 | 8 |
 | [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
+| [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **148** | 20 | 246 | 509 |
 
 <!-- short:end -->
 
