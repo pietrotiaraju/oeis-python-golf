@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 ca95d01a91ea enumerates triple systems leaf-first, counts minimal connected ones up to relabeling
+6dd0b97a4050 Exhaustive: every set T of 1..n triples on n points, kept when its triples join all points (e grows the points reached from 0; n passes suffice) and no T minus one triple does. The triple-set bitmask after a relabelling determines the system, so the minimum over all n! relabellings is one number per isomorphism class. Exact for every n; only slow.

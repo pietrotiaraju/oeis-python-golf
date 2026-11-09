@@ -44,11 +44,57 @@ while S:=[*permutations(range(n))]:
   second, a(5) takes about 45 s on this PC, and a(6) is out of reach. The bar
   is 6 terms in 120 s.
 
+## First four terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(3) have to arrive in time.
+
+### Python 3, 4 terms — 251 bytes
+
+```python
+from itertools import*
+n=q=0
+while P:=[*permutations(range(n))]:print(-q+(q:=sum({tuple(a[i]for i in b)for a in H for b in H}=={*H}=={tuple(g.index(h[x])for x in g)for h in H}for k in range(len(P))for H in combinations(P,k+1)for g in P)//len(P)));n+=1
+```
+
+**How it works**
+
+- a(n) = A000638(n) − A000638(n − 1), as in the main record: up to
+  conjugacy, the groups of degree n with a fixed point are the groups of
+  degree n − 1.
+- The sum is the [A000638](../A000638/) short record, whose page has the
+  argument: Burnside's lemma for S_n acting on its subgroups by conjugation.
+  It counts the pairs (H, g) of a nonempty subset H of S_n and a g ∈ S_n
+  such that the products a∘b of H are exactly H (so H is a subgroup) and
+  g⁻¹Hg = H, and divides by n!: the number of conjugacy classes of
+  subgroups.
+- `q` keeps the previous count, so `-q+(q:=…)` prints the difference and
+  stores the new value. It starts at 0, the value of A000638(−1), which gives
+  a(0) = 1 (the group of degree 0 fixes nothing) and a(1) = 0.
+
+**Limits**
+
+- a(3) takes 63 subsets of S_3 times 6 conjugations.
+  The four terms arrive in a fraction of a second.
+- a(4) would test 2²⁴ − 1 ≈ 1.7·10⁷ subsets of S_4 against 24 conjugations
+  each, every test squaring the subset: many hours. The main record builds
+  subgroups by closure, one class at a time, and reaches six terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 292 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 292 | first entry |
+
+**Python 3, 4 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 251 | first entry: Burnside over all subsets of S_n and all conjugations, difference of degrees |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

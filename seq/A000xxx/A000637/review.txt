@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 5f5ffc39e7dd differences of the enumerated count of permutation-group classes (A000638)
+eae001cdfa6b Every nonempty subset H of S_n closed under products is a subgroup, and {g^-1 h g} == H says g normalizes H, so the sum counts pairs (H, g) with g in N(H): n! per conjugacy class (orbit-stabilizer), hence //n! is the number of classes. A000637 prints the difference with the previous term: subgroups with a fixed point are, up to conjugacy, those of S_(n-1) (two subgroups fixing the last point that are conjugate in S_n are conjugate in S_(n-1): compose with the transposition of their two common fixed points). Exhaustive, exact for every n.

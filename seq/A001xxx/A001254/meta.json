@@ -1,0 +1,6 @@
+{
+  "name": "Squares of Lucas numbers.",
+  "offset": 0,
+  "min_terms": 2376,
+  "timeout": 60
+}

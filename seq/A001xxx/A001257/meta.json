@@ -1,0 +1,6 @@
+{
+  "name": "Squares of numbers of rooted trees.",
+  "offset": 0,
+  "min_terms": 21,
+  "timeout": 60
+}
