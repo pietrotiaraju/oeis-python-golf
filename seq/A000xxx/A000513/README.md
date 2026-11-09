@@ -88,14 +88,69 @@ while[print(sum(H//r//s*(f:=cache(lambda R,C,h:R==()or C[-1]>(0,)and(sum(comb(g:
   far out of reach.
 - The b-file has 22 terms (up to a(22)); the bar is 8 terms in 60 s.
 
+## First six terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(6) have to arrive in time.
+
+### Python 3, 6 terms — 224 bytes
+
+```python
+from itertools import*
+n=1
+while R:=range(n):print(len({min(sum(5**sum(1<<q[j]for j in r)for r in M)for q in permutations(R))for M in combinations_with_replacement(combinations(R,4),n)if max(map(sum(M,()).count,R))<5}));n+=1
+```
+
+**How it works**
+
+- A matrix is taken as its n rows, each the 4-subset of the columns that
+  holds its ones. Permuting the rows only reorders them, so
+  `combinations_with_replacement(combinations(R,4),n)` hands over every
+  matrix with row sums 4 exactly once up to row order, as a sorted multiset
+  of rows.
+- `sum(M,())` lists the column of every one, and
+  `max(map(sum(M,()).count,R))<5` keeps M when no column holds more than
+  four ones. The 4n ones then fill the n columns with exactly four each, so
+  this is the column condition.
+- For a column permutation q, `sum(1<<q[j]for j in r)` is row r as a bitmask
+  after the permutation, and `sum(5**…for r in M)` writes the multiset of
+  these bitmasks as base-5 digits. A row occurs at most four times (its
+  columns hold four ones each), so every digit is 0…4 and the number
+  determines the multiset of rows.
+- So the minimum over all n! column permutations is the same for two
+  matrices exactly when one becomes the other by permuting columns and then
+  rows: the set of minima has one element per equivalence class, and its
+  size is a(n).
+- For n < 4 there is no 4-subset, nothing is enumerated, and the count
+  is 0, with no special case.
+
+**Limits**
+
+- a(6) takes C(20, 6) = 38 760 row multisets, and 720 column permutations
+  for each one that passes. The six terms arrive in about 0.7 reference
+  seconds (1.2 s on this PC).
+- a(7) would take C(41, 7) ≈ 2.2·10⁷ multisets before any column
+  permutation, minutes instead of seconds, which is why the main record
+  counts with Burnside's lemma over cycle types instead of listing matrices.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 776 | first entry |
-| 2026-11-06 | Python 3 | 607 | carry cycle-type denominators and merge the orbit recurrences |
-| 2026-11-06 | Python 3 | 596 | transpose sorted residual pairs and short-circuit the zero-degree test |
-| 2026-11-07 | Python 3 | 436 | slot list with a sentinel, one cache per cycle-type pair |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 776 | first entry |
+| 2026-11-06 | 607 | carry cycle-type denominators and merge the orbit recurrences |
+| 2026-11-06 | 596 | transpose sorted residual pairs and short-circuit the zero-degree test |
+| 2026-11-07 | 436 | slot list with a sentinel, one cache per cycle-type pair |
+
+**Python 3, 6 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 224 | first entry: row multisets, minimum over column permutations |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

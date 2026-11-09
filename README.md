@@ -1280,10 +1280,21 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 |---|---|---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 5 | 221 | 6 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **128** | 5000 | 149 | 10001 |
+| [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **119** | 12 | 219 | 10000 |
 | [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **68** | 19 | 134 | 40 |
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **89** | 1000 | 126 | 10001 |
+| [A000512](seq/A000xxx/A000512/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **224** | 6 | 436 | 8 |
+| [A000513](seq/A000xxx/A000513/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **224** | 6 | 436 | 8 |
+| [A000516](seq/A000xxx/A000516/) | Number of equivalence classes of n X n matrices over {0,1} with rows… | **224** | 6 | 436 | 8 |
+| [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **241** | 6 | 457 | 7 |
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
+| [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **177** | 6 | 214 | 13 |
+| [A000840](seq/A000xxx/A000840/) | Number of cubic bicolored graphs on n unlabeled nodes admitting an… | **292** | 6 | 388 | 20 |
+| [A000843](seq/A000xxx/A000843/) | Number of quartic bicolored graphs on n unlabeled nodes admitting an… | **292** | 6 | 388 | 16 |
+| [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **126** | 11 | 153 | 300 |
+| [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **173** | 45 | 203 | 100 |
+| [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 
 <!-- short:end -->

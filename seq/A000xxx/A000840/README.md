@@ -74,11 +74,73 @@ orbits that give every cycle the row sum 3.
 - [A000843](../A000843/) is the same program for the quartic case
   (`4` in place of `3`).
 
+## First six terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(6) have to arrive in time.
+
+### Python 3, 6 terms — 292 bytes
+
+```python
+from itertools import*
+n=1
+while R:=range(n):c=lambda M:min(sum(4**sum(r[j]<<q[j]for j in R)for r in M)for q in permutations(R));print(len({x for M in combinations_with_replacement([[j in t for j in R]for t in combinations(R,3)],n)if max(map(sum,zip(*M)))<4and(x:=c(M))==c([*zip(*M)])}));n+=1
+```
+
+**How it works**
+
+- As in the main record, a cubic bicolored graph with n nodes of each
+  colour is an n×n 0-1 matrix M with every row and column sum 3 (rows are
+  one colour,
+  columns the other), up to row and column permutations.
+- Rows are 0-1 lists `[j in t for j in R]` of the 3-subsets t of the
+  columns. Permuting rows only reorders them, so
+  `combinations_with_replacement(…,n)` hands over every matrix with row sums
+  3 exactly once up to row order. `zip(*M)` gives the columns, and
+  `max(map(sum,zip(*M)))<4` keeps M when no column holds more than
+  three ones, hence exactly three each (3n ones in n columns).
+- `c(M)` is a canonical number for the class. For a column permutation q,
+  `sum(r[j]<<q[j]for j in R)` is row r as a bitmask after the permutation,
+  and `sum(4**…for r in M)` writes the multiset of these bitmasks as
+  base-4 digits; a row occurs at most three times (its columns hold
+  three ones each), so the number determines the multiset. The minimum over
+  all n!
+  column permutations is the same for two matrices exactly when one becomes
+  the other by permuting rows and columns.
+- An automorphism exchanging the colours sends row i to some column α(i) and
+  column j to some row β(j), and keeps edges: M(i, j) = M(β(j), α(i)). That
+  says the transpose, rows permuted by α and columns by β, is M. So the class
+  has such an automorphism exactly when the transpose `[*zip(*M)]` (again a
+  matrix with line sums 3) is in it, that is when `c(M)==c([*zip(*M)])`.
+  The set collects c(M) for those M: one element per class with the
+  property, and its size is a(n).
+- For n < 3 there is no 3-subset, nothing is enumerated, and the count is
+  0.
+
+**Limits**
+
+- a(6) takes C(25, 6) = 177 100 row multisets, and two canonical numbers
+  (720 column permutations each) for each one that passes.
+  The six terms arrive in about 5.3 reference seconds (11.2 s on this PC).
+- a(7) would take C(41, 7) ≈ 2.2·10⁷ multisets before any canonical number,
+  minutes instead of seconds; the main record, with Burnside's lemma over
+  cycle types, reaches twenty terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 388 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 388 | first entry |
+
+**Python 3, 6 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 292 | first entry: row multisets, canonical number of the matrix and of its transpose |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

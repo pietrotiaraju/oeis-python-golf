@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 9bcf903d578d Burnside over S(n) cycle types, counting cubic bicolored graph colour-swap automorphisms; derived
+c25b10d4aff2 The same exhaustive canonical form as A000512/A000513 (minimum over column permutations of the row multiset in base 4 or 5) gives one number per bicolored class. An automorphism exchanging the colors is a pair of permutations taking the transpose to M, so a class has one exactly when the transpose lies in it, which c(M)==c(transpose) tests. Exact for every n; only slow.

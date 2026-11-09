@@ -149,8 +149,11 @@ So a sequence may also hold **one short-bar record**, `py3-N.py` next to
   usually needs a review: `python tools/ship.py AXXXXXX --review "NOTE"` opens
   the pull request, and its merge approves the program.
 - Its page section comes after the main record's, under a heading
-  `### Python 3, N terms — <bytes> bytes`, with its own **How it works**; the
-  History table records it under the category `Python 3, N terms`.
+  `### Python 3, N terms — <bytes> bytes`, with its own **How it works**.
+- The page's History then has one table per record, `**Python 3**` and
+  `**Python 3, N terms**`, each with the columns Date, Bytes and Note. A
+  program that left the main record only for being too slow, and reaches
+  the N terms in time, is listed in the short table too.
 - It is listed in the README's short-bar table, next to the main record.
 
 ## Sending a record

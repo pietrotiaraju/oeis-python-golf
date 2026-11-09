@@ -49,11 +49,55 @@ while 1:X=1<<n*n;print(f(n)//X**(n*n-n>>2)%X);n+=1
   polynomials of about n⁴/2 bits: 17 terms in about 30 s and no 18th within
   60 s on the PC used. The bar is 13 terms in 60 s; the b-file has 40.
 
+## First six terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(6) have to arrive in time.
+
+### Python 3, 6 terms — 177 bytes
+
+```python
+from itertools import*
+n=1
+while R:=range(n):print(len({min(sum(1<<2**p[a]+2**p[b]for a,b in G)for p in permutations(R))for G in combinations(combinations(R,2),n*n-n>>2)}));n+=1
+```
+
+**How it works**
+
+- A labelled graph on the nodes `R` is a set G of edges, pairs a < b from
+  `combinations(R,2)`, and `combinations(…,n*n-n>>2)` lists every one with
+  ⌊n(n − 1)/4⌋ edges (`n*n-n>>2` is (n² − n) >> 2).
+- For a relabelling p, edge {a, b} goes to {p[a], p[b]}, coded as
+  2^p[a] + 2^p[b], a number whose binary digits are exactly the two
+  endpoints. `sum(1<<…)` sets one bit per edge, so the number determines the
+  relabelled edge set.
+- So the minimum over all relabellings is the same for two graphs exactly
+  when they are isomorphic: the set of minima has one element per
+  isomorphism class, and its size is a(n).
+
+**Limits**
+
+- a(6) takes C(15, 7) = 6435 graphs times 720 relabellings.
+  The six terms arrive in about 11.3 reference seconds (21.4 s on this PC).
+- a(7) would take C(21, 10) = 352 716 graphs times 5040 relabellings,
+  about 1.8·10⁹ steps, hours instead of seconds; the main record counts with
+  Burnside's lemma over cycle types and reaches thirteen terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 214 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 214 | first entry |
+
+**Python 3, 6 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 177 | first entry: every labelled graph, minimum over relabellings |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

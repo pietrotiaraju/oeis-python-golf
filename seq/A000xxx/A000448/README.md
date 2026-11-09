@@ -63,14 +63,57 @@ while 1:
 - The minima are nondecreasing and can repeat: a(7) = a(8) = 27625 =
   5³·13·17, B = 16.
 
+## First 12 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(12) have to arrive in time.
+
+### Python 3, 12 terms — 119 bytes
+
+```python
+from math import*
+n=m=0
+while 1:
+ n+=1
+ while sum(isqrt(k:=m-x*x)**2==k for x in range(isqrt(m//2)+1))<n:m+=1
+ print(m)
+```
+
+**How it works**
+
+- Straight from the definition. For each m the sum counts the x with
+  2x² ≤ m (that is, x ≤ y) for which k = m − x² is a perfect square
+  y², `isqrt(k)**2==k`; this is the number of ways m = x² + y² with
+  0 ≤ x ≤ y.
+- m only moves up: for the next n the search goes on from the m that
+  answered the previous one, which is right because a(n) is non-decreasing
+  (an m with at least n + 1 ways also has at least n). Equal terms, such as
+  a(7) = a(8) = 27625, come out without moving m.
+- Exact integer arithmetic (`isqrt`), so it is right for every n.
+
+**Limits**
+
+- About √(m/2) steps per m, so reaching a(n) costs about m^1.5 steps in
+  all. Here a(12) = 160225 arrives after about 14 s (about 7 reference
+  seconds); a(13) = 801125 would need about eleven times as long, and the
+  main bar is 10000 terms.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 366 | first entry |
-| 2026-11-06 | Python 3 | 361 | simplify equivalent expressions |
-| 2026-11-06 | Python 3 | 319 | use Wilson prime generation and shorten exact threshold expressions |
-| 2026-11-07 | Python 3 | 219 | threshold B > c, start at p^c, no exponent bound, `2**len(P)<=c` |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 366 | first entry |
+| 2026-11-06 | 361 | simplify equivalent expressions |
+| 2026-11-06 | 319 | use Wilson prime generation and shorten exact threshold expressions |
+| 2026-11-07 | 219 | threshold B > c, start at p^c, no exponent bound, `2**len(P)<=c` |
+
+**Python 3, 12 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 119 | first entry: count x ≤ y with m − x² square, m by m |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

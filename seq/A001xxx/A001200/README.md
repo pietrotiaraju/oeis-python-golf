@@ -68,11 +68,68 @@ while[print(len(L))]:
   would need 384·9! images (minutes). Memory stays under 100 MB.
 - The b-file has the 13 known terms; the bar is 9 terms in 60 s.
 
+## First seven terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(6) have to arrive in time.
+
+### Python 3, 7 terms — 257 bytes
+
+```python
+from itertools import*
+n=0;C=combinations
+while 1:R=range(n);print(len({min(sum(1<<sum(1<<p[i]for i in t)for t in T)for p in permutations(R))for k in range(1<<n)for T in C(C(R,3),k)if all({*C(sorted(S),3)}<={*T}for t,u in C(T,2)if len(S:={*t,*u})<5)}));n+=1
+```
+
+**How it works**
+
+- Collinear triples. In a linear geometry call three points collinear when
+  one line holds them. The set T of collinear triples has the property (∗):
+  if abc and abd are in T, every triple of {a, b, c, d} is in T, because
+  the line through a and b holds c and d.
+- Every T with (∗) comes from exactly one geometry. Let L(a, b) be {a, b}
+  together with every c such that abc ∈ T. Any three points of L(a, b) form
+  a triple of T: abz by definition; ayz (and byz alike) from aby, abz by
+  (∗); and for x, y, z outside {a, b}, (∗) gives axy and axz, then xyz.
+  So if c, d lie in L(a, b), every other point z of L(a, b) has cdz ∈ T and
+  L(a, b) ⊆ L(c, d); then a, b lie in L(c, d), and L(c, d) ⊆ L(a, b). The
+  sets L(a, b) are therefore lines putting every pair on exactly one line,
+  their collinear triples are T, and they are the only lines that do so.
+  Lines of two points are the pairs in no triple of T.
+- So a(n) is the number of sets T ⊆ C(n, 3) with (∗), up to relabelling.
+  T runs over all of them, `C(C(R,3),k)` for k < 2ⁿ (2ⁿ > C(n, 3)).
+  `for t,u in C(T,2)if len(S:={*t,*u})<5` picks the pairs of triples that
+  share two points, and `{*C(sorted(S),3)}<={*T}` checks that all four
+  triples of their union are in T.
+- For a relabelling p, triple t becomes the bitmask `sum(1<<p[i]for i in t)`,
+  and `sum(1<<…)` sets one bit per triple, so the number determines the
+  relabelled set. The minimum over all n! relabellings is the same for two
+  sets exactly when they are isomorphic, so the set of minima has one element
+  per geometry, and its size is a(n).
+- For n ≤ 2 only T = () exists, which gives 1.
+
+**Limits**
+
+- a(6) checks all 2²⁰ ≈ 10⁶ sets of triples on six points.
+  The seven terms arrive in about 4.7 reference seconds (9.2 s on this PC).
+- a(7) would check 2³⁵ ≈ 3.4·10¹⁰ sets: out of reach. The main record
+  builds the geometries point by point and reaches nine terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-09 | Python 3 | 338 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 338 | first entry |
+
+**Python 3, 7 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 257 | first entry: sets of collinear triples, minimum over relabellings |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

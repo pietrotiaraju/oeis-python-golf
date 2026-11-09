@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+a4e681753f22 The main record's recursion with the same argument for every n, only without functools.cache: each state is recomputed wherever it is reached, and its value does not depend on how it was reached, so every term is the same integer. Only slower.

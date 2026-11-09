@@ -92,14 +92,69 @@ while[print(sum(H//r//s*(f:=cache(lambda R,C,h:R==()or C[-1]>(0,)and(sum(comb(g:
   far out of reach.
 - The b-file has 18 terms (up to a(18)); the bar is 7 terms in 60 s.
 
+## First six terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(6) have to arrive in time.
+
+### Python 3, 6 terms — 241 bytes
+
+```python
+from itertools import*
+n=1
+while R:=range(n):print(len({min(sum(1<<n*sum(1<<q[j]for j in r)for r in M)for q in permutations(R))for k in R for M in combinations_with_replacement(combinations(R,k+1),n)if max(map(sum(M,()).count,R))<k+2}));n+=1
+```
+
+**How it works**
+
+- A nonzero regular matrix has the same number k + 1 ≥ 1 of ones in every row
+  and column, and equivalent matrices share it, so the program counts
+  classes for each k + 1 = 1 … n and adds them up in one set.
+- A matrix is taken as its n rows, each the (k + 1)-subset of the columns
+  that holds its ones. Permuting the rows only reorders them, so
+  `combinations_with_replacement(combinations(R,k+1),n)` hands over every
+  matrix with row sums k + 1 exactly once up to row order.
+- `sum(M,())` lists the column of every one, and
+  `max(map(sum(M,()).count,R))<k+2` keeps M when no column holds more than
+  k + 1. The n(k + 1) ones then fill the n columns with exactly k + 1 each.
+- For a column permutation q, `sum(1<<q[j]for j in r)` is row r as a bitmask
+  after the permutation, and `sum(1<<n*…for r in M)` writes the multiset of
+  these bitmasks in base 2ⁿ. A row occurs at most k + 1 ≤ n < 2ⁿ times, so
+  the number determines the multiset of rows.
+- So the minimum over all n! column permutations is the same for two
+  matrices exactly when one becomes the other by permuting columns and then
+  rows. Matrices with different k have rows with different numbers of bits,
+  so their minima differ too: the set of minima has one element per class,
+  and its size is a(n).
+
+**Limits**
+
+- a(6) takes 255 545 row multisets over the six values of k (177 100 of them
+  for three ones per row), and 720 column permutations for each one that
+  passes. The six terms arrive in about 2.8 reference seconds (8.4 s on this
+  PC).
+- The main bar is seven terms, so a short bar has at most six. a(7) would
+  also be slow here: C(41, 7) ≈ 2.2·10⁷ multisets each for three and for four
+  ones per row.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 802 | first entry |
-| 2026-11-06 | Python 3 | 633 | carry cycle-type denominators and merge the orbit recurrences |
-| 2026-11-06 | Python 3 | 618 | transpose sorted residual pairs and short-circuit the zero-degree test |
-| 2026-11-07 | Python 3 | 457 | slot list with a sentinel, one cache per cycle-type pair |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 802 | first entry |
+| 2026-11-06 | 633 | carry cycle-type denominators and merge the orbit recurrences |
+| 2026-11-06 | 618 | transpose sorted residual pairs and short-circuit the zero-degree test |
+| 2026-11-07 | 457 | slot list with a sentinel, one cache per cycle-type pair |
+
+**Python 3, 6 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 241 | first entry: row multisets for every row sum, minimum over column permutations |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
