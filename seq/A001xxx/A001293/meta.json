@@ -1,0 +1,6 @@
+{
+  "name": "Leech triangle: k-th number (0 <= k <= n) in n-th row (0 <= n) is number of octads in S(5,8,24) containing k given points and missing n-k given points.",
+  "offset": 0,
+  "min_terms": 45,
+  "timeout": 60
+}
