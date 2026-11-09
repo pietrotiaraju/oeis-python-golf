@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+7e8ebac7bc3a py3-20.py counts phi(k+1) directly as the number of j in 0..k with gcd(k+1, j) = 1 (j = 0 never counts since gcd(k+1,0) = k+1 >= 2), keeps phi(k) in a (walrus reads the old value first) and prints k when phi(k) = phi(k+1); every k >= 1 is tested in order, exact integers throughout.

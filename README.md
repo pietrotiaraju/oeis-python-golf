@@ -1274,7 +1274,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001266](seq/A001xxx/A001266/) | One-half the number of permutations of length n without rising or… | **73** | 449 |
 | [A001267](seq/A001xxx/A001267/) | One-half the number of permutations of length n with exactly 3 rising… | **138** | 201 |
 | [A001268](seq/A001xxx/A001268/) | One-half the number of permutations of length n with exactly 4 rising… | **137** | 201 |
+| [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **82** | 190 |
+| [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **85** | 101 |
+| [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **83** | 58 |
+| [A001272](seq/A001xxx/A001272/) | Numbers k such that k! - (k-1)! + (k-2)! - (k-3)! + ... - (-1)^k\*1!… | **101** | 9 |
 | [A001273](seq/A001xxx/A001273/) | Smallest number that takes n steps to reach 1 under iteration of… | **101** | 8 |
+| [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **107** | 115 |
+| [A001275](seq/A001xxx/A001275/) | Smallest prime p such that the product of q/(q-1) over the primes… | **136** | 175 |
+| [A001276](seq/A001xxx/A001276/) | Smallest k such that the product of q/(q-1) over the primes from… | **141** | 175 |
 | [A001277](seq/A001xxx/A001277/) | Number of permutations of length n by rises. | **43** | 22 |
 | [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
@@ -1363,6 +1370,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **71** | 81 | 82 | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **70** | 59 | 85 | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **72** | 29 | 83 | 58 |
+| [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **90** | 20 | 107 | 115 |
 | [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 
