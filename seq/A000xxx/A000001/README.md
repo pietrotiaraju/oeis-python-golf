@@ -70,7 +70,7 @@ while P:=[*permutations(R:=range(n))]:print(sum(all(t[p[t[a][b]]][p[c]]==p[t[a][
 
 ## First five terms
 
-A [separate record](../../../CONTRIBUTING.md#five-term-records): the same
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
 rules, but only a(0)…a(4) have to arrive in time.
 
 ### Python 3, 5 terms — 194 bytes

@@ -46,9 +46,9 @@ A program that ends by itself (exit status 0) before the b-file does fails too, 
 meta.json says "finite": true. A crash after the bar (recursion, memory, the 4300-digit
 limit) is still not a failure.
 
-A sequence whose bar is more than five terms may also hold a five-term record, py3-5.py:
-the same rules, but its bar is the first FIVE_TERMS terms within half the timeout, and it
-is always run as with --to-bar. It is listed in the README's second table.
+A sequence may also hold one short-bar record, py3-N.py with N fewer than its bar: the
+same rules, but its bar is the first N terms within half the timeout, and it is always
+run as with --to-bar. It is listed in the README's second table.
 """
 import ast
 import hashlib
@@ -71,9 +71,9 @@ BFILES = ROOT / "bfiles"
 README = ROOT / "README.md"
 GRACE = 1  # with --to-bar, seconds to wait after the bar to see whether the program ends
 START, END = "<!-- records:start -->", "<!-- records:end -->"
-FIVE_START, FIVE_END = "<!-- five:start -->", "<!-- five:end -->"
-MAIN, FIVE = "py3.py", "py3-5.py"  # the record and the optional five-term record
-FIVE_TERMS = 5
+SHORT_START, SHORT_END = "<!-- short:start -->", "<!-- short:end -->"
+MAIN = "py3.py"  # the record; py3-N.py is the optional short-bar record (SHORT)
+SHORT = re.compile(r"py3-([1-9][0-9]*)\.py")
 DEFAULT_TIMEOUT = 60
 MARGIN = 0.5  # min_terms must arrive within this share of the timeout
 REF_BENCH = 0.265  # seconds tools/bench.py takes on a typical GitHub runner (median of 11, 2026-11-08)
@@ -82,9 +82,16 @@ _speed = [None, 0.0]  # [factor, time.monotonic() when measured]
 NAME_WIDTH = 70
 
 
+def short_terms(prog):
+    """N for a short-bar record py3-N.py, else None."""
+    m = SHORT.fullmatch(prog.name)
+    return int(m[1]) if m else None
+
+
 def category(prog):
     """py3.py -> 'Python 3', py3-5.py -> 'Python 3, 5 terms'."""
-    return f"Python 3, {FIVE_TERMS} terms" if prog.name == FIVE else "Python 3"
+    n = short_terms(prog)
+    return f"Python 3, {n} terms" if n else "Python 3"
 
 
 def size(prog):
@@ -370,10 +377,10 @@ def check_program(prog, ref, cfg, page, execute, to_bar=False):
 
 
 def table(rows):
-    """The records table and the five-term records table, as markdown."""
-    main, five = "Python 3", f"Python 3, {FIVE_TERMS} terms"
+    """The records table and the short-bar records table, as markdown."""
+    main = "Python 3"
     out = [f"| Sequence | Name | {main} | Terms checked |", "|---" * 4 + "|"]
-    out5 = [f"| Sequence | Name | {five} | {main} | Terms checked |", "|---" * 5 + "|"]
+    out2 = [f"| Sequence | Name | Short record | Its terms | {main} | Terms checked |", "|---" * 6 + "|"]
     for aid, name, recs, terms in rows:
         if len(name) > NAME_WIDTH:
             name = name[:NAME_WIDTH].rsplit(" ", 1)[0] + "…"
@@ -382,9 +389,10 @@ def table(rows):
         by = {r["category"]: r["bytes"] for r in recs}
         link = f"[{aid}](seq/{bucket(aid)}/{aid}/)"
         out.append(f"| {link} | {name} | {f'**{by[main]}**' if main in by else '—'} | {terms} |")
-        if five in by:
-            out5.append(f"| {link} | {name} | **{by[five]}** | {by.get(main, '—')} | {terms} |")
-    return "\n".join(out), "\n".join(out5) if len(out5) > 2 else "None yet."
+        for r in recs:
+            if r.get("short"):
+                out2.append(f"| {link} | {name} | **{r['bytes']}** | {r['short']} | {by.get(main, '—')} | {terms} |")
+    return "\n".join(out), "\n".join(out2) if len(out2) > 2 else "None yet."
 
 
 def put(text, start, end, body):
@@ -425,22 +433,25 @@ def main(argv):
         if selected:
             print(f"{aid}  ({len(ref)} terms in b-file)")
         problems += [f"{aid}/{p.name}: only plain Python 3 counts (py3.py, standard library, and"
-                     f" {FIVE} for a five-term record); delete it"
-                     for p in sorted(d.glob("py3-*.py")) if p.name != FIVE]
+                     " one short-bar record py3-N.py); delete it"
+                     for p in sorted(d.glob("py3-*.py")) if not short_terms(p)]
         bar = min(meta.get("min_terms", len(ref)), len(ref))
-        if (d / FIVE).exists() and bar <= FIVE_TERMS:
-            problems.append(f"{aid}/{FIVE}: the bar is already {bar} terms, so {MAIN} is the"
-                            f" {FIVE_TERMS}-term record too; delete {FIVE}")
-        for prog in (d / name for name in (MAIN, FIVE)):
+        shorts = sorted((p for p in d.glob("py3-*.py") if short_terms(p)), key=short_terms)
+        if len(shorts) > 1:
+            problems.append(f"{aid}: one short-bar record at most, not {', '.join(p.name for p in shorts)}")
+        problems += [f"{aid}/{p.name}: a short bar must be fewer terms than the bar of {bar}"
+                     for p in shorts if short_terms(p) >= bar]
+        for prog in [d / MAIN, *shorts]:
             if not prog.exists():
                 continue
-            five = prog.name == FIVE
-            cfg = {**meta, "min_terms": FIVE_TERMS} if five else meta
+            n = short_terms(prog)
+            cfg = {**meta, "min_terms": n} if n else meta
             runs = execute and selected and (to_run is None or aid in to_run)
-            rec, probs = check_program(prog, ref, cfg, page, runs, to_bar or five) if selected else (
+            rec, probs = check_program(prog, ref, cfg, page, runs, to_bar or bool(n)) if selected else (
                 {"category": category(prog), "bytes": size(prog)}, [])
             problems += [f"{aid}/{p}" for p in probs]
             if rec:
+                rec["short"] = n
                 recs.append(rec)
                 if "status" in rec:
                     timings.append((aid, rec))
@@ -453,8 +464,8 @@ def main(argv):
         return 0
 
     text = README.read_text(encoding="utf-8")
-    records, fives = table(rows)
-    new = put(put(text, START, END, records), FIVE_START, FIVE_END, fives)
+    records, shorts = table(rows)
+    new = put(put(text, START, END, records), SHORT_START, SHORT_END, shorts)
     if new != text:
         if write:
             README.write_text(new, encoding="utf-8", newline="\n")

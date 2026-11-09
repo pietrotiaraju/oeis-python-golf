@@ -106,12 +106,13 @@ def rebase(wt):
 
 
 def programs(folder):
-    """The sequence's record and, if it has one, its five-term record."""
-    return [p for p in (folder / verify.MAIN, folder / verify.FIVE) if p.exists()]
+    """The sequence's record and, if it has one, its short-bar record."""
+    shorts = sorted((p for p in folder.glob("py3-*.py") if verify.short_terms(p)), key=verify.short_terms)
+    return [p for p in (folder / verify.MAIN, *shorts) if p.exists()]
 
 
 def sizes(wt, aid):
-    return ", ".join(f"{'5 terms: ' if p.name == verify.FIVE else ''}{verify.size(p)} bytes"
+    return ", ".join(f"{f'{verify.short_terms(p)} terms: ' if verify.short_terms(p) else ''}{verify.size(p)} bytes"
                      for p in programs(wt / paths(aid)[0]))
 
 

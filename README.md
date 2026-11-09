@@ -13,8 +13,8 @@ short example and links to the sequences that use it.
 Size in bytes. The last column is how many terms every program for that
 sequence must reproduce within its time limit. Click a sequence for the code
 and how it works. Where the bar forces a fast but long method, the shortest
-correct program that only reaches the first five terms in time is a separate
-record: see [Five-term records](#five-term-records) below the table.
+correct program that only reaches the first few terms in time is a separate
+record: see [Short-bar records](#short-bar-records) below the table.
 
 <!-- records:start -->
 
@@ -1189,7 +1189,9 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001179](seq/A001xxx/A001179/) | Leonardo logarithm of n. | **118** | 4000 |
 | [A001181](seq/A001xxx/A001181/) | Number of Baxter permutations of length n (also called Baxter… | **75** | 1120 |
 | [A001182](seq/A001xxx/A001182/) | Number of cells of square lattice of edge 1/n inside quadrant of unit… | **79** | 10000 |
+| [A001183](seq/A001xxx/A001183/) | Number of nontrivial Baxter permutations of length 2n-1. | **148** | 9 |
 | [A001184](seq/A001xxx/A001184/) | Number of simple Hamiltonian paths connecting opposite corners of a… | **245** | 6 |
+| [A001185](seq/A001xxx/A001185/) | Number of nontrivial Baxter permutations of length 2n-1. | **181** | 9 |
 | [A001186](seq/A001xxx/A001186/) | Number of cubic Hamiltonian graphs with 2n nodes. | **325** | 6 |
 | [A001187](seq/A001xxx/A001187/) | Number of connected labeled graphs with n nodes. | **121** | 51 |
 | [A001188](seq/A001xxx/A001188/) | Number of even graphs with n edges. | **158** | 50 |
@@ -1223,28 +1225,27 @@ record: see [Five-term records](#five-term-records) below the table.
 
 <!-- records:end -->
 
-## Five-term records
+## Short-bar records
 
-Programs that follow every rule but only have to print the first five terms
-within the time limit; the main record next to them clears the full bar.
-They exist only where the bar is more than five terms, and each one is read
-by a person before it lands
-([rules](CONTRIBUTING.md#five-term-records)).
+Programs that follow every rule but only have to print the first few terms
+(the "Its terms" column) within the time limit; the main record next to them
+clears the full bar. Each sequence has at most one, and each one is read by a
+person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 
-<!-- five:start -->
+<!-- short:start -->
 
-| Sequence | Name | Python 3, 5 terms | Python 3 | Terms checked |
-|---|---|---|---|---|
-| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 221 | 6 |
+| Sequence | Name | Short record | Its terms | Python 3 | Terms checked |
+|---|---|---|---|---|---|
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 5 | 221 | 6 |
 
-<!-- five:end -->
+<!-- short:end -->
 
 ## Rules in short
 
 - Print the sequence from its OEIS offset, one term per line, forever.
 - CPython 3.12, no flags, no input. Size = file bytes, trailing newline free.
 - Plain Python 3, standard library only; one program per sequence, plus
-  optionally a [five-term record](#five-term-records).
+  optionally a [short-bar record](#short-bar-records).
 - Correct for every n, with exact arithmetic; hard-coding only with a proof on
   the page.
 
