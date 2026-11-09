@@ -1267,6 +1267,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001259](seq/A001xxx/A001259/) | A sequence of sorted odd primes 3 = p\_1 < p\_2 < ... < p\_m such that… | **93** | 21 |
 | [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
 | [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
+| [A001277](seq/A001xxx/A001277/) | Number of permutations of length n by rises. | **43** | 22 |
+| [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
+| [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
+| [A001280](seq/A001xxx/A001280/) | Number of permutations of length n by rises. | **84** | 16 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
