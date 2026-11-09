@@ -52,11 +52,61 @@ while S:=[*permutations(range(n))]:
   S₆. The bar is 6 terms in 120 s.
 - [A000637](../A000637/) uses the same search.
 
+## First four terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(3) have to arrive in time.
+
+### Python 3, 4 terms — 241 bytes
+
+```python
+from itertools import*
+n=0
+while P:=[*permutations(range(n))]:print(sum({tuple(a[i]for i in b)for a in H for b in H}=={*H}=={tuple(g.index(h[x])for x in g)for h in H}for k in range(len(P))for H in combinations(P,k+1)for g in P)//len(P));n+=1
+```
+
+**How it works**
+
+- Burnside's lemma for S_n acting on its subgroups by conjugation: the
+  number of conjugacy classes of subgroups is (1/n!) Σ_g #{H : g⁻¹Hg = H}.
+  The program sums over all pairs (H, g) and divides by `len(P)` = n!.
+- `P` lists S_n as tuples, and H runs over every nonempty subset of it,
+  `combinations(P,k+1)` for k + 1 = 1 … n!.
+- `{tuple(a[i]for i in b)for a in H for b in H}` is the set of products
+  a∘b. It equals H exactly when H is a subgroup: a subgroup is closed and
+  contains the identity, so HH = H; conversely a nonempty finite set closed
+  under products is a subgroup (a ∈ H has some finite order m, so
+  a⁻¹ = a^(m−1) ∈ H).
+- `tuple(g.index(h[x])for x in g)` is g⁻¹hg (at position i it holds
+  g⁻¹(h(g(i)))), so the second comparison says g⁻¹Hg = H. The chain
+  `X=={*H}==Y` is X = H and H = Y, so a pair counts exactly when H is a
+  subgroup normalized by g, and each subgroup counts |N(H)| times, which is
+  n! over the size of its conjugacy class.
+- At n = 0, P = [()] and the one subgroup {()} gives 1.
+
+**Limits**
+
+- a(3) takes 63 subsets of S_3 times 6 conjugations.
+  The four terms arrive in a fraction of a second.
+- a(4) would test 2²⁴ − 1 ≈ 1.7·10⁷ subsets of S_4 against 24 conjugations
+  each, every test squaring the subset: many hours. The main record builds
+  subgroups by closure, one class at a time, and reaches six terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 282 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 282 | first entry |
+
+**Python 3, 4 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 241 | first entry: Burnside over all subsets of S_n and all conjugations |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

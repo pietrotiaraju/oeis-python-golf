@@ -1293,6 +1293,8 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
 | [A000618](seq/A000xxx/A000618/) | Number of nondegenerate Boolean functions of n variables: For n > 0,… | **203** | 4 | 221 | 9 |
+| [A000637](seq/A000xxx/A000637/) | Number of fixed-point-free permutation groups of degree n. | **251** | 4 | 292 | 6 |
+| [A000638](seq/A000xxx/A000638/) | Number of permutation groups of degree n; also number of conjugacy… | **241** | 4 | 282 | 6 |
 | [A000653](seq/A000xxx/A000653/) | Invertible Boolean functions of n variables. | **216** | 3 | 291 | 8 |
 | [A000654](seq/A000xxx/A000654/) | Invertible Boolean functions of n variables. | **237** | 3 | 306 | 6 |
 | [A000664](seq/A000xxx/A000664/) | Number of graphs with n edges. | **173** | 4 | 216 | 8 |
