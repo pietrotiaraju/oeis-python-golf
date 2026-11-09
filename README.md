@@ -1375,6 +1375,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001374](seq/A001xxx/A001374/) | Number of relational systems on n nodes. Also number of directed… | **173** | 40 |
 | [A001376](seq/A001xxx/A001376/) | Relational systems on n nodes. | **152** | 6 |
 | [A001377](seq/A001xxx/A001377/) | Number of relations with 4 arguments on n nodes. | **152** | 7 |
+| [A001378](seq/A001xxx/A001378/) | Degrees of irreducible representations of Baby Monster group B. | **586** | 184 |
+| [A001379](seq/A001xxx/A001379/) | Degrees of irreducible representations of Monster group M. | **848** | 194 |
 | [A001383](seq/A001xxx/A001383/) | Number of n-node rooted trees of height at most 3. | **110** | 201 |
 | [A001384](seq/A001xxx/A001384/) | Number of n-node trees of height at most 4. | **115** | 201 |
 | [A001385](seq/A001xxx/A001385/) | Number of n-node trees of height at most 5. | **117** | 201 |
