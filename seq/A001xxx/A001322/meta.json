@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of n-valued Post functions of 2 variables under action of symmetric group S_2.",
+  "offset": 2,
+  "min_terms": 7,
+  "timeout": 60
+}
