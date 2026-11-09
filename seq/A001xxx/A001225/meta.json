@@ -1,0 +1,6 @@
+{
+  "name": "Number of consistent arcs in a tournament with n nodes.",
+  "offset": 2,
+  "min_terms": 10,
+  "timeout": 120
+}

@@ -1225,6 +1225,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001222](seq/A001xxx/A001222/) | Number of prime divisors of n counted with multiplicity (also called… | **78** | 7000 |
 | [A001223](seq/A001xxx/A001223/) | Prime gaps: differences between consecutive primes. | **51** | 5000 |
 | [A001224](seq/A001xxx/A001224/) | If F(n) is the n-th Fibonacci number, then a(2n) = (F(2n+1) +… | **58** | 500 |
+| [A001225](seq/A001xxx/A001225/) | Number of consistent arcs in a tournament with n nodes. | **344** | 10 |
 | [A001226](seq/A001xxx/A001226/) | Lerch's function q\_2(n) = (2^{phi(t)} - 1)/t where t = 2\*n - 1. | **79** | 200 |
 | [A001227](seq/A001xxx/A001227/) | Number of odd divisors of n. | **56** | 10000 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
