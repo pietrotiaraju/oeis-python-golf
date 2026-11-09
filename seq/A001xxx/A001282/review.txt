@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+aadd733b8b60 Brute force from the definition: counts the runs of +-1 steps of all n! permutations by their first steps (with a sentinel in front), keeps those with exactly 3, halved because reversal pairs them off; exhaustive, so right for every n
