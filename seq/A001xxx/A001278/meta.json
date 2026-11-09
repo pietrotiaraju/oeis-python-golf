@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n by rises.",
+  "offset": 4,
+  "min_terms": 22,
+  "timeout": 60
+}
