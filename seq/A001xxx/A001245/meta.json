@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 4 cubes in more than 1 way.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

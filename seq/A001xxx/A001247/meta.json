@@ -1,0 +1,6 @@
+{
+  "name": "Squares of Bell numbers.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

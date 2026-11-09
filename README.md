@@ -1250,6 +1250,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **83** | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **83** | 993 |
+| [A001245](seq/A001xxx/A001245/) | Numbers that are the sum of 4 cubes in more than 1 way. | **113** | 1000 |
+| [A001246](seq/A001xxx/A001246/) | Squares of Catalan numbers. | **41** | 101 |
+| [A001247](seq/A001xxx/A001247/) | Squares of Bell numbers. | **50** | 101 |
+| [A001248](seq/A001xxx/A001248/) | Squares of primes. | **42** | 10000 |
+| [A001249](seq/A001xxx/A001249/) | Squares of tetrahedral numbers: a(n) = binomial(n+3,n)^2. | **38** | 1001 |
+| [A001250](seq/A001xxx/A001250/) | Number of alternating permutations of order n. | **66** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

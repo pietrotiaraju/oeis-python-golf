@@ -1,0 +1,6 @@
+{
+  "name": "Squares of primes.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
