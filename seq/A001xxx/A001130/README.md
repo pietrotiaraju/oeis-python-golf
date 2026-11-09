@@ -93,10 +93,17 @@ while[print(sum(r(d,1,0,n-d*d)for d in range(n)))]:n+=2
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-08 | Python 3 | 203 | first entry |
-| 2026-11-09 | Python 3, 45 terms | 173 | first entry: the main recursion without the cache |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-08 | 203 | first entry |
+
+**Python 3, 45 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 173 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -81,10 +81,17 @@ while 1:n+=1;print(f(n,1))
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-08 | Python 3 | 153 | first entry |
-| 2026-11-09 | Python 3, 11 terms | 126 | first entry: the main recursion without the cache |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-08 | 153 | first entry |
+
+**Python 3, 11 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 126 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
