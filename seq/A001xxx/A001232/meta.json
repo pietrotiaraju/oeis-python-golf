@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 9*k = (k written backwards), k > 0.",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}
