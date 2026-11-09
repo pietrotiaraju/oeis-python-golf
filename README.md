@@ -1158,6 +1158,14 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001148](seq/A001xxx/A001148/) | Final digit of 3^n. | **27** | 81 |
 | [A001149](seq/A001xxx/A001149/) | A self-generating sequence: a(1)=1, a(2)=2, a(n+1) chosen so that… | **73** | 2000 |
 | [A001150](seq/A001xxx/A001150/) | Number of n-input 2-output switching networks with GL(n,2) acting on… | **219** | 4 |
+| [A001151](seq/A001xxx/A001151/) | Describe the previous term! (method A - initial term is 8). | **82** | 20 |
+| [A001154](seq/A001xxx/A001154/) | Describe the previous term! (method A - initial term is 9). | **82** | 20 |
+| [A001155](seq/A001xxx/A001155/) | Describe the previous term! (method A - initial term is 0). | **82** | 20 |
+| [A001156](seq/A001xxx/A001156/) | Number of partitions of n into squares. | **88** | 8000 |
+| [A001157](seq/A001xxx/A001157/) | a(n) = sigma\_2(n): sum of squares of divisors of n. | **58** | 10000 |
+| [A001158](seq/A001xxx/A001158/) | sigma\_3(n): sum of cubes of divisors of n. | **59** | 10000 |
+| [A001159](seq/A001xxx/A001159/) | sigma\_4(n): sum of 4th powers of divisors of n. | **59** | 10000 |
+| [A001160](seq/A001xxx/A001160/) | sigma\_5(n), the sum of the 5th powers of the divisors of n. | **59** | 10000 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

@@ -1,0 +1,6 @@
+{
+  "name": "sigma_3(n): sum of cubes of divisors of n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Describe the previous term! (method A - initial term is 0).",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}
