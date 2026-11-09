@@ -1,0 +1,6 @@
+{
+  "name": "One-half the number of permutations of length n without rising or falling successions.",
+  "offset": 2,
+  "min_terms": 449,
+  "timeout": 60
+}
