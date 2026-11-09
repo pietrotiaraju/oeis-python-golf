@@ -85,11 +85,64 @@ while[print(f(n)//24)]:n+=1
   A000889/[A000890](../A000890/). The same range group with only complementing
   inputs: [A000883](../A000883/)/[A000884](../A000884/).
 
+## First three terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(3) have to arrive in time.
+
+### Python 3, 3 terms — 223 bytes
+
+```python
+from itertools import*
+n=1
+while 1:R=range(2**n);print(len({min(tuple(map((g:=[f[s^sum((x>>i&1)<<p[i]for i in p)]for x in R]).index,g))for p in permutations(R[:n])for s in R)for f in product((0,),*[range(4)]*~-2**n)}));n+=1
+```
+
+**How it works**
+
+- A map f: {0,1}ⁿ → {0,1}² is the tuple of its 2ⁿ values in 0…3. AG(2,2)
+  is every permutation of the four outputs, so a(n) counts the maps up to
+  any relabelling of the values and B_n on the inputs.
+- For a permutation p of the coordinates and a mask s,
+  `s^sum((x>>i&1)<<p[i]for i in p)` is β(x) = s ⊕ σ̂(x), where σ̂ moves bit i
+  of x to position p[i]. `for i in p` visits every index once, only in
+  another order, and `R[:n]` is range(n) because n < 2ⁿ. Over all p and s
+  these are the 2ⁿ·n! elements of B_n, and g is the list of f∘β.
+- `tuple(map(g.index,g))` replaces every value by the position where it
+  first occurs. It is the same for g and h∘g whatever the relabelling h, and
+  two lists with the same pattern differ by a relabelling, so it is a
+  canonical form of g up to the outputs' group.
+- The minimum of that form over β ∈ B_n is therefore the same for every map
+  in the class of f, and two maps with the same minimum are in the same
+  class. So the set of minima has one element per class.
+- `product((0,),*[range(4)]*~-2**n)` only starts from maps with f(0) = 0
+  (a fixed 0, then 2ⁿ − 1 free values). Every class has one, by relabelling
+  the outputs, so the set still meets every class: its size is a(n).
+- Nothing is approximated; the count is exact for every n.
+
+**Limits**
+
+- a(3) = 124 takes 4⁷ = 16 384 maps × 48 elements of B_3: the three terms
+  come in about 6 reference seconds.
+- a(4) would take 4¹⁵ ≈ 1.1·10⁹ maps × 384 elements. The main record never
+  lists maps: Burnside's lemma over B_n × AG(2,2), with the cycle counts of
+  each group element, gives all seven b-file terms at once.
+- 223 bytes is an upper bound on the shortest valid three-term program, not
+  a proof of minimality.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 266 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 266 | first entry |
+
+**Python 3, 3 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 223 | first entry: first-occurrence pattern minimised over B_n, from the maps with f(0) = 0 |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
