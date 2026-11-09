@@ -1309,18 +1309,26 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001303](seq/A001xxx/A001303/) | Stirling numbers of first kind, s(n+3, n), negated. | **46** | 1000 |
 | [A001304](seq/A001xxx/A001304/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)). | **43** | 1001 |
 | [A001305](seq/A001xxx/A001305/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)\*(1-x^10)\*(1-x^20)). | **61** | 1001 |
-| [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **67** | 1001 |
+| [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **65** | 1001 |
 | [A001307](seq/A001xxx/A001307/) | Expansion of 1/(1-x)^2/(1-x^2)/(1-x^4)/(1-x^10)/(1-x^20). | **61** | 1001 |
 | [A001308](seq/A001xxx/A001308/) | Order of Chevalley group D\_n (2). | **45** | 20 |
 | [A001309](seq/A001xxx/A001309/) | Order of real Clifford group L\_n connected with Barnes-Wall lattices… | **46** | 9 |
+| [A001310](seq/A001xxx/A001310/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **66** | 1001 |
 | [A001311](seq/A001xxx/A001311/) | Final 2 digits of 6^n. | **28** | 1001 |
+| [A001312](seq/A001xxx/A001312/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001313](seq/A001xxx/A001313/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001314](seq/A001xxx/A001314/) | Number of (unordered) ways of making change for n cents using coins… | **71** | 1001 |
 | [A001315](seq/A001xxx/A001315/) | a(n) = Sum\_{k=0..n} 2^binomial(n,k). | **55** | 14 |
 | [A001316](seq/A001xxx/A001316/) | Gould's sequence: a(n) = Sum\_{k=0..n} (binomial(n,k) mod 2); number… | **39** | 50001 |
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
+| [A001319](seq/A001xxx/A001319/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
+| [A001321](seq/A001xxx/A001321/) | Number of equivalence classes of 3-valued Post functions of n… | **169** | 5 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001323](seq/A001xxx/A001323/) | Number of equivalence classes of 3-valued Post functions of n… | **203** | 5 |
+| [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
+| [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
@@ -1328,11 +1336,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
 | [A001341](seq/A001xxx/A001341/) | Expansion of e.g.f. 6\*exp(x)/(1-x)^4. | **45** | 101 |
 | [A001342](seq/A001xxx/A001342/) | E.g.f.: 24\*exp(x)/(1-x)^5. | **45** | 101 |
+| [A001343](seq/A001xxx/A001343/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001344](seq/A001xxx/A001344/) | a(n) = Sum\_{k=0..2} (n+k)! \* C(2,k). | **49** | 102 |
 | [A001345](seq/A001xxx/A001345/) | a(n) = Sum\_{k = 0..3} (n+k)! C(3,k). | **54** | 102 |
 | [A001346](seq/A001xxx/A001346/) | a(n) = Sum\_{k = 0..4} (n+k)! C(4,k). | **60** | 102 |
 | [A001347](seq/A001xxx/A001347/) | a(n) = Sum\_{k=0..5} (n+k)! \* C(5,k). | **66** | 102 |
 | [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
+| [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **242** | 40 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1402,6 +1412,8 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **90** | 20 | 107 | 115 |
 | [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
+| [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **174** | 17 | 215 | 28 |
+| [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
 
 <!-- short:end -->
 

@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of n-valued Post functions of 2 variables under action of semi-direct product of symmetric group S_2 and complementing group D(2,n).",
+  "offset": 2,
+  "min_terms": 8,
+  "timeout": 60
+}
