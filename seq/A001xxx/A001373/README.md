@@ -51,11 +51,65 @@ while[print(B[0])]:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,;B=[g
 - Putting x/T(x) into the base case `g(m,0)` instead of dividing at the end
   is 5 bytes longer.
 
+## First 20 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(19) have to arrive in time.
+
+### Python 3, 20 terms — 148 bytes
+
+```python
+import math
+f=lambda r,*L:sum(f(k,*L,r-k)for k in range(r))//r if r else math.prod(sum(j*(i%j<1)for j in L)-1for i in L)
+n=0
+while[print(f(n))]:n+=1
+```
+
+**How it works**
+
+- **Burnside.** Relabelling by a permutation π turns a map f into πfπ⁻¹; it
+  keeps f free of fixed points, and the orbits of S_n are the maps up to
+  relabelling. So a(n) = (1/n!) Σ_π |{f without fixed points : fπ = πf}|.
+- **Maps that commute with π.** If fπ = πf, then f(πⁱx) = πⁱf(x), so f is
+  fixed by its value y = f(x) at one point x of each cycle of π, and y may be
+  any point on a cycle whose length divides the length of x's cycle: for a
+  cycle of length i, Σ j choices over the cycles of π of length j dividing i
+  (the [A001372](../A001372/) count). A point πⁱx of this cycle is fixed by f
+  exactly when πⁱy = πⁱx, that is, when y = x. So the maps without fixed
+  points are those that avoid the one choice y = x on every cycle, and their
+  number is the product of (Σ j) − 1 over the cycles:
+  `math.prod(sum(j*(i%j<1)for j in L)-1for i in L)`.
+- **The sum over permutations.** `f(r,*L)` averages over the permutations of
+  r further points given the cycle lengths `L` so far: for each length r − k
+  of the cycle through a fixed new point, (r − 1)! of the r! permutations,
+  then the remaining k points; at r = 0 it returns the count above. `//r` is
+  exact at every level (de Bruijn's form of Burnside's lemma, as on
+  [A000273](../../A000xxx/A000273/)).
+- A partial sum can be 0 (a cycle of length 1 with nothing else to map to
+  leaves no choice: a(1) = 0), so the program uses `… if r else …` rather
+  than `r and … or …`.
+- No rooted trees, no series and no division: 98 bytes under the main record.
+
+**Limits**
+
+- Exact for every n, but the recursion visits all 2ⁿ⁻¹ compositions of n, so
+  each term takes more than twice as long as the one before: here a(19)
+  arrives after about 13 s (8 reference seconds) and a(20) after about 27 s,
+  so the bar is 20 terms. The main record reaches the whole b-file.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-09 | Python 3 | 246 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 246 | first entry |
+
+**Python 3, 20 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 148 | first entry: Burnside over the cycle types, maps that commute with a permutation and avoid y = x on every cycle |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

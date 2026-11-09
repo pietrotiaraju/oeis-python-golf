@@ -1,0 +1,10 @@
+# A001382 (b-file synthesized from sequence entry)
+0 1
+1 0
+2 0
+3 4048
+4 61824
+5 242880
+6 198352
+7 24288
+8 48
