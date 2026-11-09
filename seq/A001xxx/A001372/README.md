@@ -52,11 +52,62 @@ while[print(+g(-n,-n))]:n-=1;r+=sum(d*r[-d]*sum(r[d::d])for d in range(n,0))//n,
 - Multiplying lists of coefficients instead, recomputing the product for every
   term, came to about 210 bytes and is much slower.
 
+## First 20 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(19) have to arrive in time.
+
+### Python 3, 20 terms — 145 bytes
+
+```python
+import math
+f=lambda r,*L:r and sum(f(k,*L,r-k)for k in range(r))//r or math.prod(sum(j*(i%j<1)for j in L)for i in L)
+n=0
+while[print(f(n))]:n+=1
+```
+
+**How it works**
+
+- **Burnside.** Relabelling by a permutation π turns a map f into πfπ⁻¹, and
+  the orbits of S_n are the mappings up to relabelling. So
+  a(n) = (1/n!) Σ_π |{f : fπ = πf}|.
+- **Maps that commute with π.** If fπ = πf, then f(πⁱx) = πⁱf(x), so f is
+  fixed by its value y = f(x) at one point x of each cycle of π. Any y works
+  as long as πˡy = y for the length l of x's cycle, that is, as long as y lies
+  on a cycle whose length divides l. So a cycle of length i has
+  Σ j choices, summed over the cycles of π whose length j divides i (every
+  point of such a cycle), and the count is the product over the cycles:
+  `math.prod(sum(j*(i%j<1)for j in L)for i in L)`.
+- **The sum over permutations.** `f(r,*L)` averages over the permutations of
+  r further points given the cycle lengths `L` so far: for each length r − k
+  of the cycle through a fixed new point, (r − 1)! of the r! permutations,
+  then the remaining k points; at r = 0 it returns the count above. `//r` is
+  exact at every level (de Bruijn's form of Burnside's lemma, as on
+  [A000273](../../A000xxx/A000273/): each partial sum counts orbits of S_r on
+  maps fixed by a permutation of the other points), and every partial sum is
+  at least 1, so `r and … or …` is safe.
+- No rooted trees and no series: 55 bytes under the main record.
+
+**Limits**
+
+- Exact for every n, but the recursion visits all 2ⁿ⁻¹ compositions of n, so
+  each term takes more than twice as long as the one before: here a(19)
+  arrives after about 12 s (7 reference seconds) and a(20) after about 29 s,
+  so the bar is 20 terms. The main record's series reach the 800-term bar.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-09 | Python 3 | 200 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 200 | first entry |
+
+**Python 3, 20 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 145 | first entry: Burnside over the cycle types, counting the maps that commute with a permutation |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

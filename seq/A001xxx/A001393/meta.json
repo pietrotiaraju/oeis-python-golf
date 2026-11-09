@@ -1,0 +1,6 @@
+{
+  "name": "High temperature series for spin-1/2 Ising free energy on 3-dimensional simple cubic lattice.",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 120
+}
