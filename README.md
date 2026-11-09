@@ -1326,6 +1326,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
+| [A001328](seq/A001xxx/A001328/) | Number of equivalence classes of n-valued Post functions of 2… | **208** | 8 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
