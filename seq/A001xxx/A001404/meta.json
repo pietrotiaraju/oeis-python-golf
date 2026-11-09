@@ -1,0 +1,6 @@
+{
+  "name": "Triangle of values of 2-d recurrence.",
+  "offset": 0,
+  "min_terms": 69,
+  "timeout": 60
+}
