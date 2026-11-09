@@ -1288,6 +1288,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001286](seq/A001xxx/A001286/) | Lah numbers: a(n) = (n-1)\*n!/2. | **35** | 99 |
 | [A001287](seq/A001xxx/A001287/) | a(n) = binomial coefficient C(n,10). | **37** | 991 |
 | [A001288](seq/A001xxx/A001288/) | a(n) = binomial(n,11). | **37** | 990 |
+| [A001289](seq/A001xxx/A001289/) | Number of equivalence classes of Boolean functions modulo linear… | **193** | 4 |
 | [A001292](seq/A001xxx/A001292/) | Concatenations of cyclic permutations of initial positive integers. | **86** | 10000 |
 | [A001296](seq/A001xxx/A001296/) | 4-dimensional pyramidal numbers: a(n) = (3\*n+1)\*binomial(n+2, 3)/4.… | **39** | 1001 |
 | [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
