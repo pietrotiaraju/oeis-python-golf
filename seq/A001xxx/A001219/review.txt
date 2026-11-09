@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+9830dae09e80 Finite sequence (OEIS keywords fini, full). By S. P. Mohanty, Acta Math. Hungar. 58 (1991) 31-36 (also Guy, UPINT D3), the only triangular numbers that are products a(a+1)(a+2) of three consecutive integers are these seven; the program prints exactly that list and ends. The page checks each term as a(a+1)(a+2) = t(t+1)/2.
