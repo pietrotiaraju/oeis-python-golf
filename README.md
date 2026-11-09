@@ -1247,6 +1247,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001240](seq/A001xxx/A001240/) | Expansion of 1/((1-2x)(1-3x)(1-6x)). | **39** | 100 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
+| [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **83** | 994 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1282,6 +1283,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **89** | 1000 | 126 | 10001 |
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
+| [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 
 <!-- short:end -->
 
