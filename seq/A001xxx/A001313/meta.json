@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of making change for n cents using coins of 1, 2, 5, 10, 20, 50 cents.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
