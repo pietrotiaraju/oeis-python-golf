@@ -65,11 +65,38 @@ while[print(sum(r(d,1,0,n-d*d)for d in range(n)))]:n+=2
   them all in about 30 s here, with about 1.6 million memo entries
   (250 MB). The bar is the whole b-file in 80 s.
 
+## First 45 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(45) have to arrive in time.
+
+### Python 3, 45 terms — 173 bytes
+
+```python
+r=lambda j,t,D,E:D+j*t<=E and sum(r(j-1,u,max(D+u,0),E-j*abs(u-t))for u in range(t-E//j,t+E//j+1))if j else E|D<1
+n=2
+while[print(sum(r(d,1,0,n-d*d)for d in range(n)))]:n+=2
+```
+
+**How it works**
+
+- The same recursion over rank vectors as the main record, with the same
+  argument for every n, without `functools.cache`: each state (j, t, D, E)
+  is recomputed whenever it is reached, and the value does not depend on
+  how it was reached, so every term is the same integer.
+
+**Limits**
+
+- Without the memo nothing is shared between branches or between terms.
+  Here the 45th term arrives after about 32 s (about 16 reference seconds,
+  against a limit of 40) and the 47th after 46 s; the main bar is 100 terms.
+
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-08 | Python 3 | 203 | first entry |
+| 2026-11-09 | Python 3, 45 terms | 173 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

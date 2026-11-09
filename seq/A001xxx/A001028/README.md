@@ -53,11 +53,38 @@ while 1:n+=1;print(f(n,1))
   it stops with `RecursionError` at Python's default limit of 1000: an
   interpreter limit, far beyond the bar.
 
+## First 11 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(11) have to arrive in time.
+
+### Python 3, 11 terms — 126 bytes
+
+```python
+import math
+f=lambda n,k:k and sum(math.comb(n-1,j)*f(j,k+1)*f(n-j,k-1)for j in range(n))or n<2
+n=0
+while 1:n+=1;print(f(n,1))
+```
+
+**How it works**
+
+- The same recursion as the main record, with the same argument for every
+  n, without `functools.cache` and its import: each f(n, k) is recomputed
+  wherever it is needed, with the same integer value.
+
+**Limits**
+
+- Without the table the recursion fans out exponentially: here a(10)
+  arrives after about 1.5 s, a(11) after about 8 s (about 4 reference
+  seconds) and a(12) not within 40 s; the main bar is 300 terms.
+
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-08 | Python 3 | 153 | first entry |
+| 2026-11-09 | Python 3, 11 terms | 126 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
