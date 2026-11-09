@@ -1,0 +1,6 @@
+{
+  "name": "Table of prime factors of 10^n - 1 (with multiplicity).",
+  "offset": 1,
+  "min_terms": 101,
+  "timeout": 60
+}
