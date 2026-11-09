@@ -1368,6 +1368,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001363](seq/A001xxx/A001363/) | Primes in ternary. | **75** | 847 |
 | [A001364](seq/A001xxx/A001364/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **66** | 1001 |
 | [A001365](seq/A001xxx/A001365/) | Expansion of… | **66** | 1001 |
+| [A001366](seq/A001xxx/A001366/) | Maximum number of unattacked squares with n queens on an n X n board… | **231** | 9 |
 | [A001367](seq/A001xxx/A001367/) | Solution to f(2) = 1, f(n) = sqrt(n) f(sqrt(n)) + n at values n =… | **35** | 12 |
 | [A001369](seq/A001xxx/A001369/) | Blocks of increasing length using 1,2,3,...,9,10; omit leading 0's. | **62** | 200 |
 | [A001370](seq/A001xxx/A001370/) | Sum of digits of 2^n. | **43** | 10001 |
