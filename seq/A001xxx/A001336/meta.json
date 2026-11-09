@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step self-avoiding walks on f.c.c. lattice.",
+  "offset": 0,
+  "min_terms": 8,
+  "timeout": 120
+}
