@@ -1412,6 +1412,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
 | [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
+| [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
 | [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
 | [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
 | [A001446](seq/A001xxx/A001446/) | a(n) = (4^n + 4^[n/2])/2. | **38** | 1000 |
