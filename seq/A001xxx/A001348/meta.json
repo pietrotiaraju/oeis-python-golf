@@ -1,0 +1,6 @@
+{
+  "name": "Mersenne numbers: 2^p - 1, where p is prime.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

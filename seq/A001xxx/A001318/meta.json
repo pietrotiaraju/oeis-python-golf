@@ -1,0 +1,6 @@
+{
+  "name": "Generalized pentagonal numbers: m*(3*m - 1)/2, m = 0, +-1, +-2, +-3, ....",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

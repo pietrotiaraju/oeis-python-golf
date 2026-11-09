@@ -1304,6 +1304,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
 | [A001299](seq/A001xxx/A001299/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **54** | 10001 |
 | [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
+| [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
+| [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
+| [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
+| [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
