@@ -1,0 +1,6 @@
+{
+  "name": "Number of undirected closed knight's tours on a 2n X 2n chessboard.",
+  "offset": 1,
+  "min_terms": 3,
+  "timeout": 120
+}
