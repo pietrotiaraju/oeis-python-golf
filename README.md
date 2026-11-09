@@ -1319,6 +1319,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
+| [A001321](seq/A001xxx/A001321/) | Number of equivalence classes of 3-valued Post functions of n… | **169** | 5 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
