@@ -1,0 +1,6 @@
+{
+  "name": "Degrees of primitive irreducible trinomials: n such that 2^n - 1 is a Mersenne prime and x^n + x^k + 1 is a primitive irreducible polynomial over GF(2) for some k with 0 < k < n.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 60
+}
