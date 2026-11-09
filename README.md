@@ -1222,6 +1222,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
 | [A001220](seq/A001xxx/A001220/) | Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1. | **55** | 2 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
+| [A001231](seq/A001xxx/A001231/) | Number of nonisomorphic projective planes of order n. | **483** | 5 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
