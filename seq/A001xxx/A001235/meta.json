@@ -1,0 +1,6 @@
+{
+  "name": "Taxi-cab numbers: sums of 2 cubes in more than 1 way.",
+  "offset": 1,
+  "min_terms": 11000,
+  "timeout": 60
+}

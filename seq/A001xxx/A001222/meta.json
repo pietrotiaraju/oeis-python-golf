@@ -1,0 +1,6 @@
+{
+  "name": "Number of prime divisors of n counted with multiplicity (also called big omega of n, bigomega(n) or Omega(n)).",
+  "offset": 1,
+  "min_terms": 7000,
+  "timeout": 60
+}

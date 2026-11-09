@@ -1,0 +1,6 @@
+{
+  "name": "Unsigned Stirling numbers of the first kind s(n,7).",
+  "offset": 7,
+  "min_terms": 94,
+  "timeout": 60
+}

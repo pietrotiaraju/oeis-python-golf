@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 3 nonnegative cubes in more than 1 way.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
