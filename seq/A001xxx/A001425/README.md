@@ -68,11 +68,41 @@ while[print(f(n))]:n+=1
   factor S(i)^⌊i/2⌋·S(i/g) per cycle (Howroyd's formula in the entry), need
   `enumerate` and cost more than the square root.
 
+## First 17 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(16) have to arrive in time.
+
+### Python 3, 17 terms — 196 bytes
+
+```python
+from math import*
+f=lambda r,*L:r and sum(f(k,*L,r-k)for k in range(r))//r or isqrt(prod(sum(l>>(lcm(i,j)>>(j<0))%l*l for l in L)**gcd(i,j)for i in L for j in L+(-2,)))
+n=0
+while[print(f(n))]:n+=1
+```
+
+**How it works**
+
+- The same recursion, square root and pseudo-cycle −2 as the main record,
+  without the cache: the new cycle is appended as it comes, `*L,r-k`, so
+  `f` visits every composition of n, 2^(n−1) leaves, each computing the
+  product for its cycle type. The order of L does not change the product,
+  and the integer argument for `//r` is the same, so it is right for
+  every n.
+
+**Limits**
+
+- a(16) arrives after about 22 s here (about 10 reference seconds) and
+  a(17) after about 55 s, too close to the limit of 30 for an 18-term bar.
+  Far short of the main bar of 30 terms.
+
 ## History
 
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-09 | Python 3 | 237 | first entry |
+| 2026-11-09 | Python 3, 17 terms | 196 | first entry: the recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
