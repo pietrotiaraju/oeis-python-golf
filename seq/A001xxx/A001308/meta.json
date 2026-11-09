@@ -1,0 +1,6 @@
+{
+  "name": "Order of Chevalley group D_n (2).",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

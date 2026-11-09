@@ -1304,6 +1304,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
 | [A001299](seq/A001xxx/A001299/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **54** | 10001 |
 | [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
+| [A001308](seq/A001xxx/A001308/) | Order of Chevalley group D\_n (2). | **45** | 20 |
+| [A001309](seq/A001xxx/A001309/) | Order of real Clifford group L\_n connected with Barnes-Wall lattices… | **46** | 9 |
+| [A001311](seq/A001xxx/A001311/) | Final 2 digits of 6^n. | **28** | 1001 |
+| [A001315](seq/A001xxx/A001315/) | a(n) = Sum\_{k=0..n} 2^binomial(n,k). | **55** | 14 |
+| [A001316](seq/A001xxx/A001316/) | Gould's sequence: a(n) = Sum\_{k=0..n} (binomial(n,k) mod 2); number… | **39** | 50001 |
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
