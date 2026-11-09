@@ -1404,6 +1404,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001400](seq/A001xxx/A001400/) | Number of partitions of n into at most 4 parts. | **49** | 1001 |
 | [A001401](seq/A001xxx/A001401/) | Number of partitions of n into at most 5 parts. | **60** | 1001 |
 | [A001402](seq/A001xxx/A001402/) | Number of partitions of n into at most 6 parts. | **61** | 10001 |
+| [A001403](seq/A001xxx/A001403/) | Number of combinatorial configurations of type (n\_3). | **460** | 9 |
 | [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
 | [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
