@@ -1388,6 +1388,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001390](seq/A001xxx/A001390/) | Smallest multiplicative generator for quadratic residues mod prime(n). | **109** | 1200 |
 | [A001391](seq/A001xxx/A001391/) | To get the 3rd term, for example, note that 2nd term has three (11 in… | **85** | 17 |
 | [A001392](seq/A001xxx/A001392/) | a(n) = 9\*binomial(2n,n-4)/(n+5). | **54** | 197 |
+| [A001397](seq/A001xxx/A001397/) | Number of 2n-step self-avoiding walks on diamond lattice ending at… | **113** | 7 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
