@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+d1008768f6f7 Burnside over S_2 x| Z_k^2 acting on Z_k^2 (order 2k^2): a translation by (a,b) has k*gcd(a,b,k) cycles; (x,y)->(y+a,x+b) squares to the translation by (s,s), s=a+b, and has (g*k + k mod 2g)/2 cycles with g=gcd(s,k) (derived on the page from the fixed points of its powers); the sum over i<k^2 covers each (a,b) and each s exactly k times, and dividing by 2k^2 is exact, so the closed form holds for every k.
