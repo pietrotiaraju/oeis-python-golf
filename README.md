@@ -27,7 +27,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A000005](seq/A000xxx/A000005/) | d(n) (also called tau(n) or sigma\_0(n)), the number of divisors of n. | **52** | 10000 |
 | [A000006](seq/A000xxx/A000006/) | Integer part of square root of n-th prime. | **56** | 5000 |
 | [A000007](seq/A000xxx/A000007/) | The characteristic function of {0}: a(n) = 0^n. | **23** | 1001 |
-| [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **67** | 10001 |
+| [A000008](seq/A000xxx/A000008/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **59** | 10001 |
 | [A000009](seq/A000xxx/A000009/) | Expansion of Product\_{m >= 1} (1 + x^m); number of partitions of n… | **68** | 500 |
 | [A000010](seq/A000xxx/A000010/) | Euler totient function phi(n): count numbers <= n and prime to n. | **67** | 500 |
 | [A000011](seq/A000xxx/A000011/) | Number of n-bead necklaces (turning over is allowed) where… | **110** | 3336 |
@@ -82,7 +82,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A000061](seq/A000xxx/A000061/) | Generalized tangent numbers d(n,1). | **158** | 1000 |
 | [A000062](seq/A000xxx/A000062/) | A Beatty sequence: a(n) = floor(n/(e-2)). | **53** | 1000 |
 | [A000063](seq/A000xxx/A000063/) | Symmetrical dissections of an n-gon. | **91** | 996 |
-| [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **69** | 1001 |
+| [A000064](seq/A000xxx/A000064/) | Partial sums of (unordered) ways of making change for n cents using… | **60** | 1001 |
 | [A000065](seq/A000xxx/A000065/) | -1 + number of partitions of n. | **81** | 1001 |
 | [A000066](seq/A000xxx/A000066/) | Smallest number of vertices in trivalent graph with girth (shortest… | **225** | 6 |
 | [A000067](seq/A000xxx/A000067/) | Number of positive integers <= 2^n of form x^2 + 2 y^2. | **89** | 24 |
@@ -1303,7 +1303,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
 | [A001299](seq/A001xxx/A001299/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **54** | 10001 |
-| [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
+| [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **64** | 10001 |
 | [A001301](seq/A001xxx/A001301/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **60** | 1001 |
 | [A001302](seq/A001xxx/A001302/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
 | [A001303](seq/A001xxx/A001303/) | Stirling numbers of first kind, s(n+3, n), negated. | **46** | 1000 |

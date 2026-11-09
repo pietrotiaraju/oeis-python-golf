@@ -5,31 +5,60 @@
 
 Offset 0: 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 6, 6, 6, 6, 6, 9, …
 
-### Python 3 — 74 bytes
+### Python 3 — 64 bytes
 
 ```python
-m=60
-while[print(sum((m-5*j)//50*(j*j//4)for j in range(m//5,0,-5)))]:m+=1
+a=[0]*999
+while v:=1:a+=[v:=v+a[-i]for i in b'(b\305'];print(v)
 ```
+
+The bytes literal holds one raw control byte (0x13) that a browser does not
+show, and one octal escape. Byte for byte, the second line is
+
+```text
+while v:=1:a+=[v:=v+a[-i]for i in b'(<13>bÅ'];print(v)
+```
+
+where `<13>` stands for the single byte 0x13. Escaping it too, ``, makes
+the program 66 bytes.
 
 **How it works**
 
-- **Count in nickels.** Pennies pay whatever is left, so with t = ⌊n/5⌋,
-  a(n) is the number of (c, d, q, h) ≥ 0 with c + 2d + 5q + 10h ≤ t
-  (nickels, dimes, quarters, halves). If quarters and halves make 5r
-  nickels, q + 2h = r has ⌊r/2⌋ + 1 solutions, and the pairs (c, d) with
-  c + 2d ≤ t − 5r number ⌊(t − 5r + 2)²/4⌋. So
-  a(n) = Σ_{r ≤ t/5} (⌊r/2⌋ + 1)·⌊(t − 5r + 2)²/4⌋.
-- With m = n + 60, j runs from ⌊m/5⌋ = t + 12 down in steps of 5: j = t + 12
-  − 5i. For i = r + 2 the term `j*j//4` is ⌊(t − 5r + 2)²/4⌋. The weight is
-  `(m-5*j)//50`: m − 5j = 25i + (n mod 5), so it is ⌊i/2⌋ = ⌊r/2⌋ + 1, and
-  0 for the two extra first values i = 0, 1. The range stops before j = 0;
-  j = 1 adds `1//4` = 0 and j ≥ 2 is exactly t − 5r ≥ 0.
-- This is the 5-cent-unit version of the sum behind
-  [A000008](../../A000xxx/A000008/) (coins 1, 2, 5, 10), with ⌊j²/4⌋ in
-  place of ⌊j/2⌋ because pennies add one more free coin.
+- **Layers.** Pennies alone pay any n ≥ 0 in exactly one way: A₀(n) = 1. Add
+  the other coins one at a time, in the order c₁, …, c₄ = 10, 5, 25, 50, and
+  let Aⱼ(n) count the ways with pennies and c₁, …, cⱼ. A way either uses no
+  cⱼ coin or uses one and leaves a way for n − cⱼ, so
+  Aⱼ(n) = Aⱼ₋₁(n) + Aⱼ(n − cⱼ), with Aⱼ(m) = 0 for m < 0, and
+  a(n) = A₄(n). The order of the coins does not change the count.
+- **One flat list.** `a` starts with 999 zeros and each pass appends row n:
+  A₁(n), …, A₄(n). While row n is built the list still has 999 + 4n
+  entries, because `a+=[…]` evaluates the whole comprehension before it
+  extends `a`. Slot k (k = 0…3) of row n − c is then 4c − k places before
+  the end, at `a[-(4c-k)]`; for n < c the index falls into the zeros, which
+  supply Aⱼ(m) = 0 for m < 0. The largest offset is 197, so 99 zeros would
+  not be enough.
+- **The offsets.** For (k, cⱼ) = (0, 10), (1, 5), (2, 25), (3, 50), 4cⱼ − k
+  is 40, 19, 98, 197: `(`, the byte 0x13, `b`, and `Å` (a bytes literal
+  takes only ASCII, so 197 needs the octal escape whichever slot the
+  half-dollar gets). This order keeps 39, the quote, out of the literal.
+  Iterating over a bytes object gives ints, so `i` is the offset itself.
+- **The running sum.** `while v:=1:` sets v = A₀(n) = 1 at the start of
+  every pass (and is always true). `v:=v+a[-i]` turns v into A₁(n), …,
+  A₄(n) in turn and stores each as its slot; the walrus in the
+  comprehension binds the outer `v`, so after the row v = a(n), which is
+  printed. The same template gives [A001301](../A001301/) and
+  [A000008](../../A000xxx/A000008/).
 
 **Notes**
+
+- The previous record (74 bytes) counted in nickels: with t = ⌊n/5⌋,
+  quarters and halves making 5r nickels in ⌊r/2⌋ + 1 ways and nickels and
+  dimes paying the rest in ⌊(t − 5r + 2)²/4⌋ ways, it is
+
+  ```python
+  m=60
+  while[print(sum((m-5*j)//50*(j*j//4)for j in range(m//5,0,-5)))]:m+=1
+  ```
 
 - Writing the weight as `(m//5-j)//10` is 75 bytes; a double sum over
   halves and quarters, `sum(j*j//4for k in range(m//5,0,-10)for j in
@@ -48,6 +77,7 @@ while[print(sum((m-5*j)//50*(j*j//4)for j in range(m//5,0,-5)))]:m+=1
 | Date | Category | Bytes | Note |
 |---|---|---|---|
 | 2026-11-09 | Python 3 | 74 | first entry |
+| 2026-11-09 | Python 3 | 64 | layered running sums in one flat list, offsets in a bytes literal (-10) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
