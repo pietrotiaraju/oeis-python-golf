@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+5cd8254c6ffc Enumerates every chord matching of the labeled cycle C_2n (every Hamiltonian cubic graph with a marked Hamiltonian cycle) and groups them by isomorphism with a complete invariant: the per-position neighbour-position sums along a Hamiltonian path determine the relabeled cubic graph. A new class adds the keys of all its Hamiltonian paths, so each class is counted once, for every n.

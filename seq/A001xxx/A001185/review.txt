@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+a53143ee3d33 Same exhaustive search as A001183 (Boyce's definition, order N=2n+1, fixed points excluded); Burnside over Boyce's classes {P, P^-1, UPU, UP^-1U}; page proves P^-1=P and UPU=P force a fixed point, so classes = (|X| + #{P: PU involution})/4, and the leaf list is exactly PU; an explicit orbit count matched all 9 terms.

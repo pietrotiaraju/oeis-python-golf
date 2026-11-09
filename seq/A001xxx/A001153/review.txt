@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+931d36d86eba Every exponent p is tested in order: the Lucas-Lehmer test proves 2^p-1 prime for any p, and for those p the trinomials x^p+x^j+1 are checked with x^(2^p) = x mod f, which is irreducibility for prime p when f has no root; with 2^p-1 prime, irreducible means primitive. No terms are stored.
