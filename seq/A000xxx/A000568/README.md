@@ -77,13 +77,53 @@ count. So the program never needs n! or the class sizes of the cycle types.
 - a(n) is close to 2^C(n,2)/n!, which first has more than 4300 digits near
   n = 176, so the int-to-str limit is far beyond a 60-s run.
 
+## First 32 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(31) have to arrive in time.
+
+### Python 3, 32 terms — 136 bytes
+
+```python
+import math
+f=lambda r,*L:r<1or sum(f(r-k,*L,k)<<k//2+sum(map(math.gcd,L,[k]*n))for k in range(1,r+1,2))//r
+n=0
+while[print(+f(n))]:n+=1
+```
+
+**How it works**
+
+- The same cycle recursion over odd cycle lengths as the main record, with
+  the same argument for every n, without the cache. Without
+  `functools.cache` the cycle lengths need no sorting, so `f(r-k,*L,k)`
+  appends k as it comes, and `functools` is not imported.
+- The value of f depends only on the multiset of cycle lengths, since the
+  gcd sum ignores their order. So each call returns the same integer as in
+  the cached version, and `//r` stays exact.
+
+**Limits**
+
+- Without the cache f walks every composition of n into odd parts, a
+  Fibonacci number of them, so each term takes about 1.6 times as long as
+  the one before. Here a(31) arrives after about 22 s (about 11 reference
+  seconds), a(32) after 36 s and a(33) after 66 s, short of the main bar of
+  35 terms.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 308 | first entry |
-| 2026-11-06 | Python 3 | 291 | cached partition expression and occurrence-index class factors |
-| 2026-11-07 | Python 3 | 171 | A000171-style cycle recursion, `//r` at every level, cached on the sorted cycle list |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 308 | first entry |
+| 2026-11-06 | 291 | cached partition expression and occurrence-index class factors |
+| 2026-11-07 | 171 | A000171-style cycle recursion, `//r` at every level, cached on the sorted cycle list |
+
+**Python 3, 32 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 136 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

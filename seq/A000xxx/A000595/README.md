@@ -63,12 +63,54 @@ while[print(+f(n))]:n+=1
 - a(n) ~ 2^(n²)/n! (McIlroy 1955), so a(123), with about 4350 digits, is the
   first term past the 4300-digit int-to-str limit, far beyond reach.
 
+## First 23 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(22) have to arrive in time.
+
+### Python 3, 23 terms — 133 bytes
+
+```python
+import math
+f=lambda r,*L:r<1or sum(f(r-k,*L,k)<<k+2*sum(map(math.gcd,L,[k]*n))for k in range(1,r+1))//r
+n=0
+while[print(+f(n))]:n+=1
+```
+
+**How it works**
+
+- The same recursion as the main record,
+
+  f(r, L) = (1/r) Σ_{k=1}^{r} 2^(k + 2·Σ_{l∈L} gcd(k, l)) · f(r − k, L + [k]),
+
+  with the same Burnside argument for every n. Only the cache is gone.
+  Without `functools.cache` the cycle lengths need no sorting, so
+  `f(r-k,*L,k)` appends k as it comes, and `functools` is not imported.
+- The value of f depends only on the multiset of cycle lengths, since the
+  gcd sum ignores their order. So each call returns the same integer as in
+  the cached version, and `//r` stays exact.
+
+**Limits**
+
+- Without the cache f walks every composition of n, 2^(n−1) of them for
+  a(n), so each term takes about twice as long as the one before. Here
+  a(22) arrives after about 24 s (about 12 reference seconds), a(23) after
+  48 s, and a(24), the 25th term of the main bar, is out of reach.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 294 | first entry |
-| 2026-11-07 | Python 3 | 171 | A000250-style recursion with exact `//r`, cached on sorted cycle lengths |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 294 | first entry |
+| 2026-11-07 | 171 | A000250-style recursion with exact `//r`, cached on sorted cycle lengths |
+
+**Python 3, 23 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 133 | first entry: the main recursion without the cache |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
