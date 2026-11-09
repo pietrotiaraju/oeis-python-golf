@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step self-avoiding walks on diamond.",
+  "offset": 0,
+  "min_terms": 16,
+  "timeout": 120
+}
