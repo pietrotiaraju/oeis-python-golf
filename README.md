@@ -1175,6 +1175,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001166](seq/A001xxx/A001166/) | Smallest natural number requiring n letters in English. | **247** | 55 |
 | [A001167](seq/A001xxx/A001167/) | Smallest natural number requiring n words in English (as spoken in… | **186** | 25 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
+| [A001170](seq/A001xxx/A001170/) | Number of board-pair-pile polyominoes with n cells. | **229** | 13 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
 | [A001172](seq/A001xxx/A001172/) | Smallest even number that is an unordered sum of two odd primes in… | **121** | 55 |
 | [A001173](seq/A001xxx/A001173/) | Half the number of binary relations on n unlabeled points. | **135** | 21 |
