@@ -1,0 +1,6 @@
+{
+  "name": "Smallest natural number requiring n letters in English.",
+  "offset": 3,
+  "min_terms": 55,
+  "timeout": 60
+}
