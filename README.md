@@ -1324,6 +1324,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
 | [A001319](seq/A001xxx/A001319/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
+| [A001321](seq/A001xxx/A001321/) | Number of equivalence classes of 3-valued Post functions of n… | **169** | 5 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
