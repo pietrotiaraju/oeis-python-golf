@@ -1276,6 +1276,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **82** | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **85** | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **83** | 58 |
+| [A001272](seq/A001xxx/A001272/) | Numbers k such that k! - (k-1)! + (k-2)! - (k-3)! + ... - (-1)^k\*1!… | **101** | 9 |
 | [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **107** | 115 |
 | [A001275](seq/A001xxx/A001275/) | Smallest prime p such that the product of q/(q-1) over the primes… | **136** | 175 |
 | [A001276](seq/A001xxx/A001276/) | Smallest k such that the product of q/(q-1) over the primes from… | **141** | 175 |

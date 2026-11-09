@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+c59320b36a4f N runs through the alternating factorials exactly (af(k) = k! - af(k-1), from af(3) = 5; af(1) = af(2) = 1 are not prime); af(k) is odd, so odd trial division up to isqrt(N) is an exact primality test. Every k >= 3 is tested in order, so it prints exactly the k with af(k) prime. Finite by Zivkovic (3612703 | af(k) for k >= 3612702); the program keeps searching.
