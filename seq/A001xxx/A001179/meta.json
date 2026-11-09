@@ -1,0 +1,6 @@
+{
+  "name": "Leonardo logarithm of n.",
+  "offset": 1,
+  "min_terms": 4000,
+  "timeout": 60
+}

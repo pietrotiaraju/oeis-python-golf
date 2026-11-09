@@ -1159,6 +1159,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001149](seq/A001xxx/A001149/) | A self-generating sequence: a(1)=1, a(2)=2, a(n+1) chosen so that… | **73** | 2000 |
 | [A001150](seq/A001xxx/A001150/) | Number of n-input 2-output switching networks with GL(n,2) acting on… | **219** | 4 |
 | [A001151](seq/A001xxx/A001151/) | Describe the previous term! (method A - initial term is 8). | **82** | 20 |
+| [A001152](seq/A001xxx/A001152/) | Number of n-input 3-output switching networks with GL(n,2) acting on… | **255** | 4 |
 | [A001153](seq/A001xxx/A001153/) | Degrees of primitive irreducible trinomials: n such that 2^n - 1 is a… | **186** | 11 |
 | [A001154](seq/A001xxx/A001154/) | Describe the previous term! (method A - initial term is 9). | **82** | 20 |
 | [A001155](seq/A001xxx/A001155/) | Describe the previous term! (method A - initial term is 0). | **82** | 20 |
@@ -1167,11 +1168,32 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001158](seq/A001xxx/A001158/) | sigma\_3(n): sum of cubes of divisors of n. | **59** | 10000 |
 | [A001159](seq/A001xxx/A001159/) | sigma\_4(n): sum of 4th powers of divisors of n. | **59** | 10000 |
 | [A001160](seq/A001xxx/A001160/) | sigma\_5(n), the sum of the 5th powers of the divisors of n. | **59** | 10000 |
+| [A001162](seq/A001xxx/A001162/) | Numbers containing an odd number of letters. | **172** | 50 |
 | [A001163](seq/A001xxx/A001163/) | Stirling's formula: numerators of asymptotic series for Gamma… | **170** | 228 |
 | [A001164](seq/A001xxx/A001164/) | Stirling's formula: denominators of asymptotic series for Gamma… | **172** | 296 |
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
+| [A001166](seq/A001xxx/A001166/) | Smallest natural number requiring n letters in English. | **247** | 55 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
+| [A001172](seq/A001xxx/A001172/) | Smallest even number that is an unordered sum of two odd primes in… | **121** | 55 |
+| [A001173](seq/A001xxx/A001173/) | Half the number of binary relations on n unlabeled points. | **135** | 21 |
+| [A001174](seq/A001xxx/A001174/) | Number of oriented graphs (i.e., digraphs with no bidirected edges)… | **138** | 21 |
+| [A001175](seq/A001xxx/A001175/) | Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n. | **68** | 5000 |
+| [A001176](seq/A001xxx/A001176/) | Number of zeros in fundamental period of Fibonacci numbers mod n. | **74** | 1000 |
+| [A001177](seq/A001xxx/A001177/) | Fibonacci entry points: a(n) = least k >= 1 such that n divides… | **62** | 10000 |
+| [A001178](seq/A001xxx/A001178/) | Fibonacci frequency of n. | **103** | 4000 |
+| [A001179](seq/A001xxx/A001179/) | Leonardo logarithm of n. | **118** | 4000 |
+| [A001181](seq/A001xxx/A001181/) | Number of Baxter permutations of length n (also called Baxter… | **75** | 1120 |
+| [A001182](seq/A001xxx/A001182/) | Number of cells of square lattice of edge 1/n inside quadrant of unit… | **79** | 10000 |
+| [A001187](seq/A001xxx/A001187/) | Number of connected labeled graphs with n nodes. | **121** | 51 |
+| [A001188](seq/A001xxx/A001188/) | Number of even graphs with n edges. | **158** | 50 |
+| [A001189](seq/A001xxx/A001189/) | Number of degree-n permutations of order exactly 2. | **42** | 800 |
+| [A001190](seq/A001xxx/A001190/) | Wedderburn-Etherington numbers: unlabeled binary rooted trees (every… | **95** | 2546 |
+| [A001191](seq/A001xxx/A001191/) | Digits of positive squares. | **41** | 5500 |
+| [A001192](seq/A001xxx/A001192/) | Number of full sets of size n. | **108** | 51 |
+| [A001193](seq/A001xxx/A001193/) | a(n) = (n+1)\*(2\*n)!/(2^n\*n!) = (n+1)\*(2n-1)!!. | **37** | 101 |
+| [A001194](seq/A001xxx/A001194/) | a(n) = A059366(n,n-2) = A059366(n,2) for n >= 2, where the triangle… | **48** | 18 |
+| [A001196](seq/A001xxx/A001196/) | Double-bitters: only even length runs in binary expansion. | **40** | 10001 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

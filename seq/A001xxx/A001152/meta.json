@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-input 3-output switching networks with GL(n,2) acting on the input and S(3) and C(2,3) acting on the output.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 60
+}

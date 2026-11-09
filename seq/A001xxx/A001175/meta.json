@@ -1,0 +1,6 @@
+{
+  "name": "Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}
