@@ -1,0 +1,4 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+6b56e29100a2 Main: counts (n-1)-step self-avoiding walks on the triangular lattice that end next to the origin (the n-th step closes the polygon); code i+jB with B=n is exact for S and for the neighbour test (code 0 needs B+1 steps), n<=2 handled explicitly. Short-bar: n-step walks with the origin outside S that end at the origin, the n=2 out-and-back excluded. Both argued on the page.
+240c02e1dcb7 Main: counts (n-1)-step self-avoiding walks on the triangular lattice that end next to the origin (the n-th step closes the polygon); code i+jB with B=n is exact for S and for the neighbour test (code 0 needs B+1 steps), n<=2 handled explicitly. Short-bar: n-step walks with the origin outside S that end at the origin, the n=2 out-and-back excluded. Both argued on the page.
