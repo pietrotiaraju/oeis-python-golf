@@ -45,6 +45,10 @@ argues for every n.
 A program that ends by itself (exit status 0) before the b-file does fails too, unless
 meta.json says "finite": true. A crash after the bar (recursion, memory, the 4300-digit
 limit) is still not a failure.
+
+A sequence whose bar is more than five terms may also hold a five-term record, py3-5.py:
+the same rules, but its bar is the first FIVE_TERMS terms within half the timeout, and it
+is always run as with --to-bar. It is listed in the README's second table.
 """
 import ast
 import hashlib
@@ -67,6 +71,9 @@ BFILES = ROOT / "bfiles"
 README = ROOT / "README.md"
 GRACE = 1  # with --to-bar, seconds to wait after the bar to see whether the program ends
 START, END = "<!-- records:start -->", "<!-- records:end -->"
+FIVE_START, FIVE_END = "<!-- five:start -->", "<!-- five:end -->"
+MAIN, FIVE = "py3.py", "py3-5.py"  # the record and the optional five-term record
+FIVE_TERMS = 5
 DEFAULT_TIMEOUT = 60
 MARGIN = 0.5  # min_terms must arrive within this share of the timeout
 REF_BENCH = 0.265  # seconds tools/bench.py takes on a typical GitHub runner (median of 11, 2026-11-08)
@@ -76,8 +83,8 @@ NAME_WIDTH = 70
 
 
 def category(prog):
-    """py3.py -> 'Python 3'."""
-    return " + ".join(["Python 3"] + prog.stem.split("-")[1:])
+    """py3.py -> 'Python 3', py3-5.py -> 'Python 3, 5 terms'."""
+    return f"Python 3, {FIVE_TERMS} terms" if prog.name == FIVE else "Python 3"
 
 
 def size(prog):
@@ -363,23 +370,30 @@ def check_program(prog, ref, cfg, page, execute, to_bar=False):
 
 
 def table(rows):
-    cats = sorted({r["category"] for _, _, recs, _ in rows for r in recs}, key=lambda c: (c != "Python 3", c))
-    out = ["| Sequence | Name | " + " | ".join(cats) + " | Terms checked |", "|---" * (len(cats) + 3) + "|"]
+    """The records table and the five-term records table, as markdown."""
+    main, five = "Python 3", f"Python 3, {FIVE_TERMS} terms"
+    out = [f"| Sequence | Name | {main} | Terms checked |", "|---" * 4 + "|"]
+    out5 = [f"| Sequence | Name | {five} | {main} | Terms checked |", "|---" * 5 + "|"]
     for aid, name, recs, terms in rows:
         if len(name) > NAME_WIDTH:
             name = name[:NAME_WIDTH].rsplit(" ", 1)[0] + "…"
         for ch in "\\|*_":  # p|n would split the cell, 3*x^2 + 4*y^2 or p_j^k_j turn italic
             name = name.replace(ch, "\\" + ch)
-        best = min(r["bytes"] for r in recs)
-        cells = []
-        for c in cats:
-            r = next((r for r in recs if r["category"] == c), None)
-            if r is None:
-                cells.append("—")
-            else:
-                cells.append(f"**{r['bytes']}**" if r["bytes"] == best else str(r["bytes"]))
-        out.append(f"| [{aid}](seq/{bucket(aid)}/{aid}/) | {name} | " + " | ".join(cells) + f" | {terms} |")
-    return "\n".join(out)
+        by = {r["category"]: r["bytes"] for r in recs}
+        link = f"[{aid}](seq/{bucket(aid)}/{aid}/)"
+        out.append(f"| {link} | {name} | {f'**{by[main]}**' if main in by else '—'} | {terms} |")
+        if five in by:
+            out5.append(f"| {link} | {name} | **{by[five]}** | {by.get(main, '—')} | {terms} |")
+    return "\n".join(out), "\n".join(out5) if len(out5) > 2 else "None yet."
+
+
+def put(text, start, end, body):
+    """Replace what lies between the markers start and end in text."""
+    head, rest = text.split(start, 1)
+    _, tail = rest.split(end, 1)
+    # Blank lines around a table: without them kramdown (GitHub Pages) reads the
+    # comment and the table as one paragraph. GitHub's own renderer does not mind.
+    return f"{head}{start}\n\n{body}\n\n{end}{tail}"
 
 
 def main(argv):
@@ -410,11 +424,20 @@ def main(argv):
         selected = (not only or aid in only) and (shard is None or k % shard[1] == shard[0])
         if selected:
             print(f"{aid}  ({len(ref)} terms in b-file)")
-        problems += [f"{aid}/{p.name}: only plain Python 3 counts (py3.py, standard library); delete it"
-                     for p in sorted(d.glob("py3-*.py"))]
-        for prog in sorted(d.glob("py3.py")):
+        problems += [f"{aid}/{p.name}: only plain Python 3 counts (py3.py, standard library, and"
+                     f" {FIVE} for a five-term record); delete it"
+                     for p in sorted(d.glob("py3-*.py")) if p.name != FIVE]
+        bar = min(meta.get("min_terms", len(ref)), len(ref))
+        if (d / FIVE).exists() and bar <= FIVE_TERMS:
+            problems.append(f"{aid}/{FIVE}: the bar is already {bar} terms, so {MAIN} is the"
+                            f" {FIVE_TERMS}-term record too; delete {FIVE}")
+        for prog in (d / name for name in (MAIN, FIVE)):
+            if not prog.exists():
+                continue
+            five = prog.name == FIVE
+            cfg = {**meta, "min_terms": FIVE_TERMS} if five else meta
             runs = execute and selected and (to_run is None or aid in to_run)
-            rec, probs = check_program(prog, ref, meta, page, runs, to_bar) if selected else (
+            rec, probs = check_program(prog, ref, cfg, page, runs, to_bar or five) if selected else (
                 {"category": category(prog), "bytes": size(prog)}, [])
             problems += [f"{aid}/{p}" for p in probs]
             if rec:
@@ -422,19 +445,16 @@ def main(argv):
                 if "status" in rec:
                     timings.append((aid, rec))
                 if rec.get("review") and not rec["reviewed"]:
-                    pending.append(f"{aid} {rec['hash']} # {'; '.join(rec['review'])}")
-        rows.append((aid, meta["name"], recs, min(meta.get("min_terms", len(ref)), len(ref))))
+                    pending.append(f"{aid} {rec['hash']} # {prog.name}: {'; '.join(rec['review'])}")
+        rows.append((aid, meta["name"], recs, bar))
 
     if needs_review:
         print("\n".join(pending) or "no program needs a review")
         return 0
 
     text = README.read_text(encoding="utf-8")
-    head, rest = text.split(START, 1)
-    _, tail = rest.split(END, 1)
-    # Blank lines around the table: without them kramdown (GitHub Pages) reads the
-    # comment and the table as one paragraph. GitHub's own renderer does not mind.
-    new = f"{head}{START}\n\n{table(rows)}\n\n{END}{tail}"
+    records, fives = table(rows)
+    new = put(put(text, START, END, records), FIVE_START, FIVE_END, fives)
     if new != text:
         if write:
             README.write_text(new, encoding="utf-8", newline="\n")
