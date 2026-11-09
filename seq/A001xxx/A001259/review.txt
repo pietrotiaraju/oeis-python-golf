@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+50584389eed9 Greedy search over odd p: take p when P%(p-2)==0 (p-2 divides the product P of the primes taken), pow(2P,p,p-1)==0 (every prime factor of p-1 divides 2P, since p-1<2^p) and trial division says p is prime. The conditions only weaken as P grows, so by induction every valid sorted list is contained in the greedy one, which is the OEIS list (Holt: complete, ends at 160001). The program keeps scanning after 160001 and never stops by itself, so it does not rely on Holt's theorem.
