@@ -1,0 +1,6 @@
+{
+  "name": "Smallest k such that the product of q/(q-1) over the primes from prime(n) to prime(n+k-1) is greater than 2.",
+  "offset": 1,
+  "min_terms": 175,
+  "timeout": 60
+}
