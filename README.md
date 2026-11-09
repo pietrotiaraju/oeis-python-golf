@@ -1181,6 +1181,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001192](seq/A001xxx/A001192/) | Number of full sets of size n. | **108** | 51 |
 | [A001193](seq/A001xxx/A001193/) | a(n) = (n+1)\*(2\*n)!/(2^n\*n!) = (n+1)\*(2n-1)!!. | **37** | 101 |
 | [A001194](seq/A001xxx/A001194/) | a(n) = A059366(n,n-2) = A059366(n,2) for n >= 2, where the triangle… | **48** | 18 |
+| [A001195](seq/A001xxx/A001195/) | a(n) = floor(n\*log((14/11)\*n^(10/9))). | **144** | 58 |
 | [A001196](seq/A001xxx/A001196/) | Double-bitters: only even length runs in binary expansion. | **40** | 10001 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
