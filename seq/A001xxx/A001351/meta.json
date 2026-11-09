@@ -1,0 +1,6 @@
+{
+  "name": "Associated Mersenne numbers.",
+  "offset": 0,
+  "min_terms": 6001,
+  "timeout": 60
+}
