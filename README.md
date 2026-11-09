@@ -1221,7 +1221,22 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
 | [A001220](seq/A001xxx/A001220/) | Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1. | **55** | 2 |
+| [A001221](seq/A001xxx/A001221/) | Number of distinct primes dividing n (also called omega(n)). | **68** | 30000 |
+| [A001222](seq/A001xxx/A001222/) | Number of prime divisors of n counted with multiplicity (also called… | **78** | 7000 |
+| [A001223](seq/A001xxx/A001223/) | Prime gaps: differences between consecutive primes. | **51** | 5000 |
+| [A001224](seq/A001xxx/A001224/) | If F(n) is the n-th Fibonacci number, then a(2n) = (F(2n+1) +… | **58** | 500 |
+| [A001226](seq/A001xxx/A001226/) | Lerch's function q\_2(n) = (2^{phi(t)} - 1)/t where t = 2\*n - 1. | **79** | 200 |
+| [A001227](seq/A001xxx/A001227/) | Number of odd divisors of n. | **56** | 10000 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
+| [A001232](seq/A001xxx/A001232/) | Numbers k such that 9\*k = (k written backwards), k > 0. | **67** | 400 |
+| [A001233](seq/A001xxx/A001233/) | Unsigned Stirling numbers of first kind s(n,6). | **69** | 95 |
+| [A001234](seq/A001xxx/A001234/) | Unsigned Stirling numbers of the first kind s(n,7). | **69** | 94 |
+| [A001235](seq/A001xxx/A001235/) | Taxi-cab numbers: sums of 2 cubes in more than 1 way. | **127** | 11000 |
+| [A001236](seq/A001xxx/A001236/) | Differences of reciprocals of unity. | **73** | 70 |
+| [A001237](seq/A001xxx/A001237/) | Differences of reciprocals of unity. | **81** | 12 |
+| [A001238](seq/A001xxx/A001238/) | Differences of reciprocals of unity. | **81** | 10 |
+| [A001239](seq/A001xxx/A001239/) | Numbers that are the sum of 3 nonnegative cubes in more than 1 way. | **151** | 10000 |
+| [A001240](seq/A001xxx/A001240/) | Expansion of 1/((1-2x)(1-3x)(1-6x)). | **39** | 100 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
