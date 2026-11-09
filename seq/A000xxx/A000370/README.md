@@ -84,12 +84,62 @@ point.
 - Terms past n = 13 exceed Python's 4300-digit limit for printing integers,
   long after the timeout.
 
+## First four terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(3) have to arrive in time.
+
+### Python 3, 4 terms — 209 bytes
+
+```python
+from itertools import*
+n=0
+while 1:R=range(2**n);print(len({min(sum((f>>(s^sum((x>>i&1)<<p[i]for i in p))&1^k)<<x for x in R)for p in permutations(R[:n])for s in R for k in(0,1))for f in range(2**2**n)}));n+=1
+```
+
+**How it works**
+
+- A function f of n variables is its truth table read as an integer, bit x
+  holding f(x), and `range(2**2**n)` runs over all 2^(2ⁿ) of them. As in the
+  main record, "n or fewer variables" changes nothing.
+- For a permutation p of the coordinates and a mask s,
+  `s^sum((x>>i&1)<<p[i]for i in p)` is g(x) = s ⊕ σ̂(x), where σ̂ moves bit i
+  of x to position p[i]. `for i in p` visits every index once, only in
+  another order, and `R[:n]` is range(n) because n < 2ⁿ. Over all p and s
+  these are the 2ⁿ·n! elements of B_n.
+- `sum((f>>g(x)&1^k)<<x for x in R)` is the truth table of x ↦ f(g(x)) ⊕ k.
+  As (g, k) runs over B_n × Z₂, a group, the generator yields exactly the
+  NPN class of f (with repetitions).
+- Its minimum is the same for every function in the class, and different
+  classes are disjoint, so the set of minima has one element per class: its
+  size is a(n). At n = 0 the empty permutation gives g(0) = 0 and k swaps
+  the two constants, so a(0) = 1.
+- Every step is exact integer work, for every n; only the time grows.
+
+**Limits**
+
+- a(3) = 14 takes 256 functions × 96 transforms of 8 points: the four terms
+  come in about 0.2 reference seconds.
+- a(4) would take 65 536 functions × 768 transforms of 16 points, about half
+  an hour here, and a(5) would loop over 2³² functions. The main record never
+  lists functions: it sums 2^c(g) over signed cycle types.
+- 209 bytes is an upper bound on the shortest valid four-term program, not a
+  proof of minimality.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 235 | first entry |
-| 2026-11-07 | Python 3 | 226 | signed cycle-type recursion with //(2r) at every level |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 235 | first entry |
+| 2026-11-07 | 226 | signed cycle-type recursion with //(2r) at every level |
+
+**Python 3, 4 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 209 | first entry: smallest truth table of each NPN class, over all functions |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

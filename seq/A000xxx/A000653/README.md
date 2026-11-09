@@ -61,11 +61,56 @@ while 1:
   int-to-str limit would stop the output after 10 terms.
 - The bar is the whole b-file, 8 terms, in 60 s.
 
+## First three terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(3) have to arrive in time.
+
+### Python 3, 3 terms — 216 bytes
+
+```python
+from itertools import*
+n=1
+while 1:R=range(2**n);P=[[sum((x>>i&1)<<p[i]for i in p)for x in R]for p in permutations(R[:n])];print(len({min(tuple(a[t[y]]for y in b)for a in P for b in P)for t in permutations(R)}));n+=1
+```
+
+**How it works**
+
+- `P` holds the n! maps σ̂ as lists, σ̂[x] being x with bit i moved to
+  position p[i]. `for i in p` visits every index once, only in another
+  order, and `R[:n]` is range(n) because n < 2ⁿ.
+- `permutations(R)` gives every invertible map π of the 2ⁿ points as the
+  tuple t = (π(0), π(1), …). Since y runs over b[0], b[1], …,
+  `tuple(a[t[y]]for y in b)` is the tuple of a∘π∘b.
+- P is a group, so as a and b run over it these tuples are exactly the class
+  {σ̂∘π∘τ̂⁻¹} of π. Its minimum is the same for every member of the class and
+  different classes are disjoint, so the set of minima has one element per
+  class: its size is a(n).
+- Nothing is approximated; the count is exact for every n.
+
+**Limits**
+
+- a(3) = 1172 takes 40 320 bijections × 36 pairs (σ, τ): the three terms
+  come in about 2 reference seconds.
+- a(4) would have to list 16! ≈ 2.1·10¹³ bijections. The main record never
+  lists them: Burnside's lemma over pairs of cycle types, with the
+  centralizer order z_T, reaches all eight b-file terms.
+- 216 bytes is an upper bound on the shortest valid three-term program, not
+  a proof of minimality.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 291 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 291 | first entry |
+
+**Python 3, 3 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 216 | first entry: smallest bijection of each class, over all bijections |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
