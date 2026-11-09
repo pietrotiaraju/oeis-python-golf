@@ -1,0 +1,6 @@
+{
+  "name": "Final 2 digits of 4^n.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

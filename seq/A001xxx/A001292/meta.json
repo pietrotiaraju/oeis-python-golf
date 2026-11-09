@@ -1,0 +1,6 @@
+{
+  "name": "Concatenations of cyclic permutations of initial positive integers.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
