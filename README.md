@@ -1202,6 +1202,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001195](seq/A001xxx/A001195/) | a(n) = floor(n\*log((14/11)\*n^(10/9))). | **144** | 58 |
 | [A001196](seq/A001xxx/A001196/) | Double-bitters: only even length runs in binary expansion. | **40** | 10001 |
 | [A001197](seq/A001xxx/A001197/) | Zarankiewicz's problem k\_2(n). | **249** | 17 |
+| [A001198](seq/A001xxx/A001198/) | Zarankiewicz's problem k\_3(n). | **275** | 9 |
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **338** | 9 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
