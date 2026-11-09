@@ -1336,6 +1336,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001330](seq/A001xxx/A001330/) | Number of n-element algebras with 2 binary operations. | **175** | 8 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
+| [A001334](seq/A001xxx/A001334/) | Number of n-step self-avoiding walks on hexagonal [ =triangular ]… | **108** | 12 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
 | [A001339](seq/A001xxx/A001339/) | a(n) = Sum\_{k=0..n} (k+1)! binomial(n,k). | **38** | 201 |
 | [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
