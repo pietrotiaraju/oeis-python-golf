@@ -1361,6 +1361,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001356](seq/A001xxx/A001356/) | Dates at fortnightly intervals from Jan 01 in the Julian calendar. | **51** | 10000 |
 | [A001357](seq/A001xxx/A001357/) | Powers of 2 written in base 9. | **59** | 1001 |
 | [A001358](seq/A001xxx/A001358/) | Semiprimes (or biprimes): products of two primes. | **85** | 20000 |
+| [A001359](seq/A001xxx/A001359/) | Lesser of twin primes. | **54** | 800 |
 | [A001360](seq/A001xxx/A001360/) | Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle… | **33** | 1001 |
 | [A001361](seq/A001xxx/A001361/) | Number of points in interior of n-th crystal ball in E\_8 lattice. | **81** | 1000 |
 | [A001362](seq/A001xxx/A001362/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **59** | 1001 |
@@ -1384,6 +1385,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001387](seq/A001xxx/A001387/) | Binary "look and say" sequence. | **84** | 17 |
 | [A001388](seq/A001xxx/A001388/) | Describe the previous term (in base 3)!. | **94** | 23 |
 | [A001389](seq/A001xxx/A001389/) | To get the 6th term, for example, note that 5th term has three (10 in… | **94** | 22 |
+| [A001390](seq/A001xxx/A001390/) | Smallest multiplicative generator for quadratic residues mod prime(n). | **109** | 1200 |
 | [A001391](seq/A001xxx/A001391/) | To get the 3rd term, for example, note that 2nd term has three (11 in… | **85** | 17 |
 | [A001392](seq/A001xxx/A001392/) | a(n) = 9\*binomial(2n,n-4)/(n+5). | **54** | 197 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |

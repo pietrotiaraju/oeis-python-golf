@@ -1,0 +1,6 @@
+{
+  "name": "Smallest multiplicative generator for quadratic residues mod prime(n).",
+  "offset": 1,
+  "min_terms": 1200,
+  "timeout": 60
+}
