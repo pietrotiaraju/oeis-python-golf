@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+f6c1f03e5594 builds the extended binary Golay code G24 (span of x^i*g(x), g = x^11+x^10+x^6+x^5+x^4+x^2+1, plus a parity bit) and counts its weight-12 words (dodecads) that contain the first k and miss the next n-k points of the fixed octad 76377; finite table, all 45 entries
