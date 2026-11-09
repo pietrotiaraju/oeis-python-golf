@@ -1,0 +1,6 @@
+{
+  "name": "Number of relations with 4 arguments on n nodes.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
