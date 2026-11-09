@@ -1394,6 +1394,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001390](seq/A001xxx/A001390/) | Smallest multiplicative generator for quadratic residues mod prime(n). | **109** | 1200 |
 | [A001391](seq/A001xxx/A001391/) | To get the 3rd term, for example, note that 2nd term has three (11 in… | **85** | 17 |
 | [A001392](seq/A001xxx/A001392/) | a(n) = 9\*binomial(2n,n-4)/(n+5). | **54** | 197 |
+| [A001393](seq/A001xxx/A001393/) | High temperature series for spin-1/2 Ising free energy on… | **368** | 6 |
 | [A001394](seq/A001xxx/A001394/) | Number of n-step self-avoiding walks on diamond. | **102** | 16 |
 | [A001395](seq/A001xxx/A001395/) | Number of (2n+1)-step self-avoiding walks on diamond lattice ending… | **113** | 8 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |
