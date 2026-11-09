@@ -1233,6 +1233,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001225](seq/A001xxx/A001225/) | Number of consistent arcs in a tournament with n nodes. | **344** | 10 |
 | [A001226](seq/A001xxx/A001226/) | Lerch's function q\_2(n) = (2^{phi(t)} - 1)/t where t = 2\*n - 1. | **79** | 200 |
 | [A001227](seq/A001xxx/A001227/) | Number of odd divisors of n. | **56** | 10000 |
+| [A001228](seq/A001xxx/A001228/) | Orders of sporadic simple groups. | **190** | 26 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
 | [A001231](seq/A001xxx/A001231/) | Number of nonisomorphic projective planes of order n. | **483** | 5 |
 | [A001232](seq/A001xxx/A001232/) | Numbers k such that 9\*k = (k written backwards), k > 0. | **67** | 400 |
@@ -1246,6 +1247,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001240](seq/A001xxx/A001240/) | Expansion of 1/((1-2x)(1-3x)(1-6x)). | **39** | 100 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
+| [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **83** | 994 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1292,6 +1294,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **126** | 11 | 153 | 300 |
 | [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **173** | 45 | 203 | 100 |
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
+| [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 
 <!-- short:end -->
 
