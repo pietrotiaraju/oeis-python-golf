@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+9bb17c3b4f06 Burnside over S_n acting on {0,1,2}^n: the recursion f(r,L)=sum_k f(r-k,L+[k])/r averages 3^c(sigma) over all permutations by cycle type (same recursion as A000612), and the leaf computes the exact cycle count c(sigma)=(1/n!)sum_{t<n!} 3^(sum gcd(t,l)) from Burnside for <sigma>; floors are exact by de Bruijn's lemma, so the output is the orbit count for every n.
