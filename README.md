@@ -1306,6 +1306,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
 | [A001301](seq/A001xxx/A001301/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **60** | 1001 |
 | [A001302](seq/A001xxx/A001302/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001303](seq/A001xxx/A001303/) | Stirling numbers of first kind, s(n+3, n), negated. | **46** | 1000 |
 | [A001304](seq/A001xxx/A001304/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)). | **43** | 1001 |
 | [A001305](seq/A001xxx/A001305/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)\*(1-x^10)\*(1-x^20)). | **61** | 1001 |
 | [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **67** | 1001 |
@@ -1319,12 +1320,17 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
+| [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
 | [A001339](seq/A001xxx/A001339/) | a(n) = Sum\_{k=0..n} (k+1)! binomial(n,k). | **38** | 201 |
 | [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
 | [A001341](seq/A001xxx/A001341/) | Expansion of e.g.f. 6\*exp(x)/(1-x)^4. | **45** | 101 |
 | [A001342](seq/A001xxx/A001342/) | E.g.f.: 24\*exp(x)/(1-x)^5. | **45** | 101 |
+| [A001344](seq/A001xxx/A001344/) | a(n) = Sum\_{k=0..2} (n+k)! \* C(2,k). | **49** | 102 |
+| [A001345](seq/A001xxx/A001345/) | a(n) = Sum\_{k = 0..3} (n+k)! C(3,k). | **54** | 102 |
+| [A001346](seq/A001xxx/A001346/) | a(n) = Sum\_{k = 0..4} (n+k)! C(4,k). | **60** | 102 |
+| [A001347](seq/A001xxx/A001347/) | a(n) = Sum\_{k=0..5} (n+k)! \* C(5,k). | **66** | 102 |
 | [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

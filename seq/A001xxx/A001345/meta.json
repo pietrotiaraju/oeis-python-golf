@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = Sum_{k = 0..3} (n+k)! C(3,k).",
+  "offset": -1,
+  "min_terms": 102,
+  "timeout": 60
+}
