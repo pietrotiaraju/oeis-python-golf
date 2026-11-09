@@ -1340,6 +1340,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001346](seq/A001xxx/A001346/) | a(n) = Sum\_{k = 0..4} (n+k)! C(4,k). | **60** | 102 |
 | [A001347](seq/A001xxx/A001347/) | a(n) = Sum\_{k=0..5} (n+k)! \* C(5,k). | **66** | 102 |
 | [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
+| [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **242** | 40 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1410,6 +1411,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **174** | 17 | 215 | 28 |
+| [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
 
 <!-- short:end -->
 
