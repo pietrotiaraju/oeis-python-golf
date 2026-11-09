@@ -1,0 +1,6 @@
+{
+  "name": "Number of linear geometries on n (unlabeled) points.",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}
