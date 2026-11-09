@@ -1,0 +1,6 @@
+{
+  "name": "Number of (2n+1)-step self-avoiding walks on diamond lattice ending at point with x = 3.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 120
+}
