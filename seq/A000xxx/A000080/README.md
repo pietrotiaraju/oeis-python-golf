@@ -90,13 +90,66 @@ while R:=range(n):D={0};print(sum(e(T:=(7,)+U)>any(map(e,C(T,k)))==(T in D)!=D.u
   the value in the loop condition is 1 byte shorter and keeps the loop
   going, because the range is never empty (n starts at 3).
 
+## First four terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(3)…a(6) have to arrive in time.
+
+### Python 3, 4 terms — 264 bytes
+
+```python
+from itertools import*
+e=lambda T,s={0}:{*R}in[s:=s|{*t}for t in T*n if s&{*t}]
+n=3;C=combinations
+while R:=range(n):print(len({min(sum(1<<sum(1<<p[i]for i in t)for t in T)for p in permutations(R))for k in R for T in C(C(R,3),k+1)if e(T)>any(map(e,C(T,k)))}));n+=1
+```
+
+**How it works**
+
+- As in the main record, a(n) counts minimal triangle systems T on n points
+  up to relabelling: T is connected (its triples join all points) and
+  dropping any one triple disconnects it. A minimal system has at most
+  n − 2 triples (main record), so `C(C(R,3),k+1)` for k + 1 = 1 … n lists
+  every one.
+- `e(T)` grows the set of points reached from point 0, adding the points of
+  every triple that meets it, and says whether all of `R` is reached. n
+  passes over T are enough: each pass adds a new triple until nothing
+  changes, and T has at most n triples.
+- `e(T)>any(map(e,C(T,k)))`: T (k + 1 triples) is connected and none of its
+  k-subsets, T minus one triple, is.
+- For a relabelling p, triple t becomes the bitmask `sum(1<<p[i]for i in t)`,
+  and `sum(1<<…)` sets one bit per triple, so the number determines the
+  relabelled system. The minimum over all n! relabellings is the same for two
+  systems exactly when they are isomorphic, so the set of minima has one
+  element per class, and its size is a(n).
+
+**Limits**
+
+- a(6) takes C(20, 1) + … + C(20, 6) ≈ 6·10⁴ triple sets and 720
+  relabellings for each minimal one. The four terms arrive in about 2.4
+  reference seconds (7.3 s on this PC).
+- a(7) would take about 8.7·10⁶ triple sets and 5040 relabellings for each
+  labelled minimal system, far past half the timeout.
+  The main record puts a leaf triple first, stops at n − 2 triples and
+  stores every relabelling of each class found, which reaches six terms.
+- Everything is exact and exhaustive, so the program is right for every n;
+  it is only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-05 | Python 3 | 347 | first entry |
-| 2026-11-05 | Python 3 | 340 | `C=combinations` alias (pietrotiaraju) |
-| 2026-11-05 | Python 3 | 339 | value named in the while condition |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-05 | 347 | first entry |
+| 2026-11-05 | 340 | `C=combinations` alias (pietrotiaraju) |
+| 2026-11-05 | 339 | value named in the while condition |
+
+**Python 3, 4 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 264 | first entry: every set of triples, minimum over relabellings |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
