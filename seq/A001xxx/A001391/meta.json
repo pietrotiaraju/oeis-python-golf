@@ -1,0 +1,6 @@
+{
+  "name": "To get the 3rd term, for example, note that 2nd term has three (11 in binary!) 1's and one (1) 0, giving 11 1 1 0.",
+  "offset": 1,
+  "min_terms": 17,
+  "timeout": 60
+}
