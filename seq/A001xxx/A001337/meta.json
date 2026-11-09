@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step polygons on f.c.c. lattice.",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 120
+}

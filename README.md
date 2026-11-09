@@ -1339,6 +1339,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001334](seq/A001xxx/A001334/) | Number of n-step self-avoiding walks on hexagonal [ =triangular ]… | **108** | 12 |
 | [A001335](seq/A001xxx/A001335/) | Number of n-step polygons on hexagonal lattice. | **134** | 13 |
 | [A001336](seq/A001xxx/A001336/) | Number of n-step self-avoiding walks on f.c.c. lattice. | **120** | 8 |
+| [A001337](seq/A001xxx/A001337/) | Number of n-step polygons on f.c.c. lattice. | **155** | 8 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
 | [A001339](seq/A001xxx/A001339/) | a(n) = Sum\_{k=0..n} (k+1)! binomial(n,k). | **38** | 201 |
 | [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
@@ -1422,6 +1423,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **174** | 17 | 215 | 28 |
 | [A001335](seq/A001xxx/A001335/) | Number of n-step polygons on hexagonal lattice. | **123** | 11 | 134 | 13 |
+| [A001337](seq/A001xxx/A001337/) | Number of n-step polygons on f.c.c. lattice. | **133** | 7 | 155 | 8 |
 | [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
 
 <!-- short:end -->
