@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 fee16a822d66 Burnside over cycle types with orbit-filling DP, 4-regular bipartite matrices
+671bc6f8889e Exhaustive canonical forms. Every n x n 0-1 matrix with row sums k is a multiset of k-subsets of the columns (combinations_with_replacement), and the column-count test keeps exactly those with column sums k. The multiset of row bitmasks written in a base above the largest possible multiplicity determines the rows, so its minimum over all n! column permutations is equal for two matrices exactly when they are row/column-equivalent: one element per class (A000519 takes every k = 1..n; different k give different minima). Exact for every n; only slow.
