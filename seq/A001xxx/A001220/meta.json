@@ -1,0 +1,6 @@
+{
+  "name": "Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1.",
+  "offset": 1,
+  "min_terms": 2,
+  "timeout": 60
+}
