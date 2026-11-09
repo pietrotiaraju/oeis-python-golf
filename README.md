@@ -1404,9 +1404,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001400](seq/A001xxx/A001400/) | Number of partitions of n into at most 4 parts. | **49** | 1001 |
 | [A001401](seq/A001xxx/A001401/) | Number of partitions of n into at most 5 parts. | **60** | 1001 |
 | [A001402](seq/A001xxx/A001402/) | Number of partitions of n into at most 6 parts. | **61** | 10001 |
-| [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **89** | 69 |
+| [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
-| [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **84** | 27 |
+| [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
