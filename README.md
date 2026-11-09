@@ -1284,6 +1284,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001287](seq/A001xxx/A001287/) | a(n) = binomial coefficient C(n,10). | **37** | 991 |
 | [A001288](seq/A001xxx/A001288/) | a(n) = binomial(n,11). | **37** | 990 |
 | [A001292](seq/A001xxx/A001292/) | Concatenations of cyclic permutations of initial positive integers. | **86** | 10000 |
+| [A001293](seq/A001xxx/A001293/) | Leech triangle: k-th number (0 <= k <= n) in n-th row (0 <= n) is… | **147** | 45 |
 | [A001296](seq/A001xxx/A001296/) | 4-dimensional pyramidal numbers: a(n) = (3\*n+1)\*binomial(n+2, 3)/4.… | **39** | 1001 |
 | [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
