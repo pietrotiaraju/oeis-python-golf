@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-step polygons on hexagonal lattice.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 120
+}
