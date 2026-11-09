@@ -1312,6 +1312,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
+| [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
+| [A001339](seq/A001xxx/A001339/) | a(n) = Sum\_{k=0..n} (k+1)! binomial(n,k). | **38** | 201 |
+| [A001340](seq/A001xxx/A001340/) | E.g.f.: 2\*exp(x)/(1-x)^3. | **43** | 101 |
+| [A001341](seq/A001xxx/A001341/) | Expansion of e.g.f. 6\*exp(x)/(1-x)^4. | **45** | 101 |
+| [A001342](seq/A001xxx/A001342/) | E.g.f.: 24\*exp(x)/(1-x)^5. | **45** | 101 |
 | [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

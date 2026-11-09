@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of e.g.f. 6*exp(x)/(1-x)^4.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
