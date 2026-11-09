@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 2^(2^n).",
+  "offset": 0,
+  "min_terms": 12,
+  "timeout": 60
+}
