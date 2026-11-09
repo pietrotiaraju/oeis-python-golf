@@ -1216,12 +1216,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001208](seq/A001xxx/A001208/) | a(n) = solution to the postage stamp problem with 3 denominations and… | **208** | 1000 |
 | [A001209](seq/A001xxx/A001209/) | a(n) is the solution to the postage stamp problem with 4… | **150** | 20 |
 | [A001210](seq/A001xxx/A001210/) | a(n) is the solution to the postage stamp problem with 5… | **150** | 10 |
+| [A001212](seq/A001xxx/A001212/) | a(n) = solution to the postage stamp problem with n denominations and… | **148** | 11 |
 | [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
 | [A001220](seq/A001xxx/A001220/) | Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1. | **55** | 2 |
+| [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
 | [A001231](seq/A001xxx/A001231/) | Number of nonisomorphic projective planes of order n. | **483** | 5 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
+| [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1252,6 +1255,11 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | Sequence | Name | Short record | Its terms | Python 3 | Terms checked |
 |---|---|---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 5 | 221 | 6 |
+| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **128** | 5000 | 149 | 10001 |
+| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **68** | 19 | 134 | 40 |
+| [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **89** | 1000 | 126 | 10001 |
+| [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
+| [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
 
 <!-- short:end -->
 

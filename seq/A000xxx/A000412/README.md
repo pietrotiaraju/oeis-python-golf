@@ -66,14 +66,55 @@ while[print(sum(map(M,(3,1,-1,-2,-1,1),a)))]:n+=1;S+=sum(d<<(d<4)for d in range(
   4300-digit limit only comes near n = 1.5·10⁷, far beyond this O(n²)
   scan.
 
+## First 5000 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(4999) have to arrive in time.
+
+### Python 3, 5000 terms — 128 bytes
+
+```python
+*a,n=1,0
+while[print(sum(map(int.__mul__,(3,1,-1,-2,-1,1),a[::-1])))]:n-=1;a+=sum(sum(a[d::d])*d<<(d>-4)for d in range(n,0))//n,
+```
+
+**How it works**
+
+- The same generating function and recurrence as the main record,
+  m·h(m) = Σ_{k=1}^{m} c(k)·h(m − k) with c(k) = Σ_{d | k} d·w(d), but the
+  divisor sums are not stored. `a` = [h(0), …, h(m−1)] grows at the end,
+  and n = −m counts down.
+- For d = −j (j = 1 … m), `a[d::d]` is h(m − j), h(m − 2j), …: every
+  h(m − k) with j | k. So Σ_j j·w(j)·Σ_i h(m − ij) regroups as
+  Σ_k c(k)·h(m − k) = m·h(m). With d negative, `sum(…)*d` is −j times the
+  slice sum, and `<<(d>-4)` doubles it for j ≤ 3 (w = 2 there); `//n`
+  divides by −m, exactly.
+- The header prints Σ qᵢ·h(m − i) for the polynomial coefficients
+  `(3,1,-1,-2,-1,1)`, as in the main record; `a[::-1]` puts h(m) first.
+
+**Limits**
+
+- Exact integer arithmetic and exact divisions, so it is right for every
+  n. It builds about m·ln m slice entries per term instead of m products.
+  Here a(4999) arrives after about 14 s (about 7 reference seconds) and
+  about 9000 terms in 50 s, short of the main bar of 10001 terms.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 275 | first entry |
-| 2026-11-06 | Python 3 | 261 | use sumprod on padded coefficient history and combine queue updates |
-| 2026-11-06 | Python 3 | 152 | sum the black-partition cases directly and use the divisor recurrence |
-| 2026-11-07 | Python 3 | 149 | H = P/D₃ by divisor-sum convolution, times a degree-5 polynomial |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 275 | first entry |
+| 2026-11-06 | 261 | use sumprod on padded coefficient history and combine queue updates |
+| 2026-11-06 | 152 | sum the black-partition cases directly and use the divisor recurrence |
+| 2026-11-07 | 149 | H = P/D₃ by divisor-sum convolution, times a degree-5 polynomial |
+
+**Python 3, 5000 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 128 | first entry: divisor sums through negative slices, no stored c(k) |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

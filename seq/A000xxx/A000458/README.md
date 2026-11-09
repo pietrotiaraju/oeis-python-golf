@@ -46,13 +46,50 @@ while[print(a)]:a,b=b,s(a)+s(b)
   σ(a(42)) by trial division and does not come within 30 s. The b-file
   has 101 terms (up to a(100)); the bar is 40 terms in 10 s.
 
+## First 19 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(18) have to arrive in time.
+
+### Python 3, 19 terms — 68 bytes
+
+```python
+a=1;t=0
+while[print(a)]:a=t+(t:=sum(d*(a%d<1)for d in range(1,a+1)))
+```
+
+**How it works**
+
+- σ(a) is summed straight from the definition, `d*(a%d<1)` over
+  d = 1 … a.
+- `t` holds σ of the previous term, so each σ is computed once:
+  `t+(t:=…)` reads the old t (σ(a(n−1))), stores σ(a(n)) in t and adds them,
+  which is a(n+1) = σ(a(n)) + σ(a(n−1)). The start t = 0 gives
+  a(1) = σ(1) + 0 = 1; after that t = σ(a(0)) = 1 as the rule needs.
+
+**Limits**
+
+- One pass over d per term, and the terms grow about fourfold each time:
+  here a(18) = 49 984 224 arrives after about 3 s (under 2 reference
+  seconds) and a(19) needs about 50 million more steps, past the 5-second
+  limit, so the main bar of 40 terms needs the main record's trial
+  division up to √n.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 146 | first entry |
-| 2026-11-06 | Python 3 | 137 | combine the remaining-prime and exhausted-factor cases |
-| 2026-11-07 | Python 3 | 134 | `p*p<n` tests p+1 before the increment |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 146 | first entry |
+| 2026-11-06 | 137 | combine the remaining-prime and exhausted-factor cases |
+| 2026-11-07 | 134 | `p*p<n` tests p+1 before the increment |
+
+**Python 3, 19 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 68 | first entry: σ from the definition, each σ computed once |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
