@@ -1272,6 +1272,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
 | [A001280](seq/A001xxx/A001280/) | Number of permutations of length n by rises. | **84** | 16 |
+| [A001286](seq/A001xxx/A001286/) | Lah numbers: a(n) = (n-1)\*n!/2. | **35** | 99 |
+| [A001287](seq/A001xxx/A001287/) | a(n) = binomial coefficient C(n,10). | **37** | 991 |
+| [A001288](seq/A001xxx/A001288/) | a(n) = binomial(n,11). | **37** | 990 |
+| [A001296](seq/A001xxx/A001296/) | 4-dimensional pyramidal numbers: a(n) = (3\*n+1)\*binomial(n+2, 3)/4.… | **39** | 1001 |
+| [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
+| [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
+| [A001299](seq/A001xxx/A001299/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **54** | 10001 |
+| [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

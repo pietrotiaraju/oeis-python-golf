@@ -1,0 +1,6 @@
+{
+  "name": "Lah numbers: a(n) = (n-1)*n!/2.",
+  "offset": 2,
+  "min_terms": 99,
+  "timeout": 60
+}

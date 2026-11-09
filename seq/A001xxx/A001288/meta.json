@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = binomial(n,11).",
+  "offset": 11,
+  "min_terms": 990,
+  "timeout": 60
+}
