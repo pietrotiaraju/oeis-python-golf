@@ -1234,6 +1234,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001226](seq/A001xxx/A001226/) | Lerch's function q\_2(n) = (2^{phi(t)} - 1)/t where t = 2\*n - 1. | **79** | 200 |
 | [A001227](seq/A001xxx/A001227/) | Number of odd divisors of n. | **56** | 10000 |
 | [A001228](seq/A001xxx/A001228/) | Orders of sporadic simple groups. | **190** | 26 |
+| [A001229](seq/A001xxx/A001229/) | Numbers k such that phi(sigma(k)) = k. | **115** | 8 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
 | [A001231](seq/A001xxx/A001231/) | Number of nonisomorphic projective planes of order n. | **483** | 5 |
 | [A001232](seq/A001xxx/A001232/) | Numbers k such that 9\*k = (k written backwards), k > 0. | **67** | 400 |
