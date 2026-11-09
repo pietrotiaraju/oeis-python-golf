@@ -1166,6 +1166,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001158](seq/A001xxx/A001158/) | sigma\_3(n): sum of cubes of divisors of n. | **59** | 10000 |
 | [A001159](seq/A001xxx/A001159/) | sigma\_4(n): sum of 4th powers of divisors of n. | **59** | 10000 |
 | [A001160](seq/A001xxx/A001160/) | sigma\_5(n), the sum of the 5th powers of the divisors of n. | **59** | 10000 |
+| [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
