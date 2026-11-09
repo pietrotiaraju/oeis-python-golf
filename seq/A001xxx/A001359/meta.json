@@ -1,0 +1,6 @@
+{
+  "name": "Lesser of twin primes.",
+  "offset": 1,
+  "min_terms": 800,
+  "timeout": 60
+}

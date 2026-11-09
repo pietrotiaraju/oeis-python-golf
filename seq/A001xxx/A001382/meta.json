@@ -1,0 +1,6 @@
+{
+  "name": "Weight distribution of ternary [ 24,12,9 ] quadratic residue code (also of Pless symmetry code).",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}

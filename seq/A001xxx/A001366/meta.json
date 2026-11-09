@@ -1,0 +1,6 @@
+{
+  "name": "Maximum number of unattacked squares with n queens on an n X n board (answers for n >= 19 only probable).",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 120
+}
