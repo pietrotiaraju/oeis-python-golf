@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of 1/((1-2x)(1-3x)(1-6x)).",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
