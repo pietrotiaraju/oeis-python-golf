@@ -1,0 +1,6 @@
+{
+  "name": "Number of distinct primes dividing n (also called omega(n)).",
+  "offset": 1,
+  "min_terms": 30000,
+  "timeout": 60
+}
