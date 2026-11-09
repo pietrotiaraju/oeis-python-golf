@@ -1,0 +1,6 @@
+{
+  "name": "Orders of sporadic simple groups.",
+  "offset": 1,
+  "min_terms": 26,
+  "timeout": 60
+}
