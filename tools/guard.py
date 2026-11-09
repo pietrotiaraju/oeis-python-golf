@@ -6,9 +6,9 @@ usage: python tools/guard.py BASE [--strict]
 Compared with git BASE, for every sequence that BASE already has:
   - its b-file stays as it is, and so does the bar in meta.json: offset unchanged,
     min_terms not lower, timeout not longer;
-  - neither its py3.py, its page nor its meta.json is deleted;
-  - a changed py3.py is shorter, unless a commit message since BASE says "fix"
-    (a correction of a wrong program may be longer).
+  - neither its py3.py, its five-term py3-5.py, its page nor its meta.json is deleted;
+  - a changed py3.py or py3-5.py is shorter, unless a commit message since BASE says
+    "fix" (a correction of a wrong program may be longer).
 New sequences are left to tools/verify.py. With --strict (the ship workflow), a change
 outside seq/, bfiles/ and README.md is refused too: tools, workflows and rules go
 through a pull request. So is any change to a sequence's review.txt, new sequences
@@ -55,9 +55,9 @@ def check(base, strict):
         folder, name = "/".join(parts[:3]), parts[3]
         if show(base, f"{folder}/meta.json") is None:
             continue  # a new sequence
-        if status == "D" and name in ("py3.py", "README.md", "meta.json"):
+        if status == "D" and name in ("py3.py", "py3-5.py", "README.md", "meta.json"):
             problems.append(f"{path}: an existing sequence cannot lose it")
-        elif name == "py3.py" and show(base, path) is not None:
+        elif name in ("py3.py", "py3-5.py") and show(base, path) is not None:
             old, new = size(show(base, path)), size(show("HEAD", path))
             if new >= old and not fix:
                 problems.append(f"{path}: {new} bytes is not shorter than the {old} bytes on main"

@@ -10,9 +10,11 @@ short example and links to the sequences that use it.
 
 ## Records
 
-Size in bytes, shortest in bold. The last column is how many terms every
-program for that sequence must reproduce within its time limit. Click a
-sequence for the code and how it works.
+Size in bytes. The last column is how many terms every program for that
+sequence must reproduce within its time limit. Click a sequence for the code
+and how it works. Where the bar forces a fast but long method, the shortest
+correct program that only reaches the first five terms in time is a separate
+record: see [Five-term records](#five-term-records) below the table.
 
 <!-- records:start -->
 
@@ -1175,11 +1177,28 @@ sequence for the code and how it works.
 
 <!-- records:end -->
 
+## Five-term records
+
+Programs that follow every rule but only have to print the first five terms
+within the time limit; the main record next to them clears the full bar.
+They exist only where the bar is more than five terms, and each one is read
+by a person before it lands
+([rules](CONTRIBUTING.md#five-term-records)).
+
+<!-- five:start -->
+
+| Sequence | Name | Python 3, 5 terms | Python 3 | Terms checked |
+|---|---|---|---|---|
+| [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 221 | 6 |
+
+<!-- five:end -->
+
 ## Rules in short
 
 - Print the sequence from its OEIS offset, one term per line, forever.
 - CPython 3.12, no flags, no input. Size = file bytes, trailing newline free.
-- Plain Python 3, standard library only; one program per sequence.
+- Plain Python 3, standard library only; one program per sequence, plus
+  optionally a [five-term record](#five-term-records).
 - Correct for every n, with exact arithmetic; hard-coding only with a proof on
   the page.
 

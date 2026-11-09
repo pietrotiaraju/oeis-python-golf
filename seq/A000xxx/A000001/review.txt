@@ -1,3 +1,4 @@
-# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 07219fdaf70a enumerates multiplication tables, counts associative ones with identity up to isomorphism
+69e3e47f6bdd enumerates sets of n permutations read as right translations; the fused equation passes exactly groups with identity 0 and their automorphisms (proof on the page), counted up to isomorphism

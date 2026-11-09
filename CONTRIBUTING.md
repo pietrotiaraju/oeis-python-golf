@@ -6,7 +6,9 @@
    **standard library only** (no sympy or other packages). Sequences are
    grouped a thousand to a folder named after their first digits, so A000026
    lives in `seq/A000xxx/A000026/` and A300001 in `seq/A300xxx/A300001/`. Its
-   b-file follows the same rule: `bfiles/A000xxx/b000026.txt`.
+   b-file follows the same rule: `bfiles/A000xxx/b000026.txt`. A sequence
+   may also hold a second, separate record next to it, `py3-5.py`: see
+   [Five-term records](#five-term-records).
 2. **Output:** print the terms in order, starting at the OEIS offset, one term
    per line, and keep going forever (or stop at the end of a finite sequence).
    A program that ends by itself (exit status 0) before printing every term of
@@ -119,6 +121,33 @@ conjecture it rests on), that the code does what the page says, and that any
 stored data, such as number names, the orders of the sporadic groups or a
 finite list, is explained.
 
+## Five-term records
+
+A bar asks for speed as well as correctness, and for some sequences the speed
+costs bytes: the shortest correct method is too slow for the bar. Number of
+groups (A000001) is one: six terms in two minutes need a search that fixes the
+identity row, while the shortest correct search, over sets of permutations,
+reaches a(4) in half a second and would need hours for a(5).
+
+So a sequence whose bar is **more than five terms** may also hold a five-term
+record, `seq/AXXXxxx/AXXXXXX/py3-5.py`, next to `py3.py`:
+
+- It follows every rule above except the bar: its first **five** terms must
+  come within half the sequence's timeout, in reference seconds. After the
+  fifth term `tools/verify.py` waits one more second to see whether it ends.
+- It must still be correct for every n and keep going: only the speed is
+  relaxed. A program that knows it will only be asked for five terms (a list,
+  or a formula that happens to fit them) is not a record.
+- Five terms fit in a table shorter than nearly any program, so a five-term
+  program needs a review: `python tools/ship.py AXXXXXX --review "NOTE"`
+  opens the pull request, and its merge approves the program.
+- Its page section comes after the main record's, under a heading
+  `### Python 3, 5 terms — <bytes> bytes`, with its own **How it works**; the
+  History table records it under the category `Python 3, 5 terms`.
+- It is listed in the README's five-term table, next to the main record, and
+  `tools/guard.py` treats it like `py3.py`: a new one must be shorter, and it is
+  not deleted.
+
 ## Sending a record
 
 1. Add or replace the program file. For a new sequence, also add
@@ -133,7 +162,7 @@ finite list, is explained.
 For a sequence that is already here, `tools/guard.py` (run by CI and the `ship`
 workflow) holds the line:
 
-- a new `py3.py` must be **shorter** than the one it replaces. A correction of a
+- a new `py3.py` (or `py3-5.py`) must be **shorter** than the one it replaces. A correction of a
   program found wrong may be longer, if a commit message says "fix";
 - the b-file and the bar in `meta.json` stay as they are (same offset,
   `min_terms` not lower, `timeout` not longer), and the program, page and

@@ -105,15 +105,20 @@ def rebase(wt):
         r = git("-c", "core.editor=true", "rebase", "--continue", cwd=wt, check=False)
 
 
+def programs(folder):
+    """The sequence's record and, if it has one, its five-term record."""
+    return [p for p in (folder / verify.MAIN, folder / verify.FIVE) if p.exists()]
+
+
 def sizes(wt, aid):
-    progs = sorted((wt / paths(aid)[0]).glob("py3*.py"), key=lambda p: (p.stem != "py3", p.stem))
-    return ", ".join(f"{p.stem[4:]} {verify.size(p)} bytes".lstrip() for p in progs)
+    return ", ".join(f"{'5 terms: ' if p.name == verify.FIVE else ''}{verify.size(p)} bytes"
+                     for p in programs(wt / paths(aid)[0]))
 
 
 def note_reviews(wt, aids, note):
     """Add NOTE to review.txt for every program of these sequences that needs a review.
 
-    Return {AXXXXXX: why it needs one}."""
+    Return {AXXXXXX: {hash: why it needs one}}."""
     out = subprocess.run([sys.executable, "tools/verify.py", *aids, "--needs-review"], cwd=wt,
                          capture_output=True, text=True).stdout
     why = {}
@@ -122,10 +127,10 @@ def note_reviews(wt, aids, note):
         if not m:
             continue
         aid, digest, reason = m.groups()
-        why[aid] = reason
+        why.setdefault(aid, {})[digest] = reason
         path = wt / paths(aid)[0] / "review.txt"
         old = path.read_text(encoding="utf-8") if path.exists() else (
-            "# Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why\n"
+            "# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why\n"
             "# it computes the sequence for every n. This file changes only through pull requests.\n")
         path.write_text(f"{old}{digest} {note}\n", encoding="utf-8", newline="\n")
     if not why:
@@ -137,14 +142,18 @@ def open_review(wt, branch, aids, why, note):
     """Open the pull request whose merge approves the programs."""
     parts = []
     for aid in aids:
-        if aid not in why:
-            continue
         folder = wt / paths(aid)[0]
         page = (folder / "README.md").read_text(encoding="utf-8")
-        argument = page.split("**How it works**", 1)[-1].split("## History", 1)[0].strip()
-        program = (folder / "py3.py").read_text(encoding="utf-8").rstrip()
-        parts.append(f"## {aid}\n\nNeeds a review: {why[aid]}.\n\n```python\n{program}\n```\n\n"
-                     f"**How it works** (from the page)\n\n{argument}\n")
+        for prog in programs(folder):
+            reason = why.get(aid, {}).get(verify.digest(prog))
+            if reason is None:
+                continue
+            # The argument under this program's heading, up to the page's next section.
+            section = page.split(f"### {verify.category(prog)} — ", 1)[-1]
+            argument = section.split("**How it works**", 1)[-1].split("\n## ", 1)[0].strip()
+            program = prog.read_text(encoding="utf-8").rstrip()
+            parts.append(f"## {aid}, {verify.category(prog)}\n\nNeeds a review: {reason}.\n\n"
+                         f"```python\n{program}\n```\n\n**How it works** (from the page)\n\n{argument}\n")
     body = (f"Review note: {note}\n\n" + "\n".join(parts) +
             "\nMerging this pull request approves these programs: their hashes are in review.txt,"
             " so tools/verify.py lets them pass.\n")
