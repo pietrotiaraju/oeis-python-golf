@@ -1,0 +1,6 @@
+{
+  "name": "Number of fixed polyominoes with n cells.",
+  "offset": 0,
+  "min_terms": 15,
+  "timeout": 60
+}
