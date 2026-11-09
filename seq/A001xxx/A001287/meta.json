@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = binomial coefficient C(n,10).",
+  "offset": 10,
+  "min_terms": 991,
+  "timeout": 60
+}
