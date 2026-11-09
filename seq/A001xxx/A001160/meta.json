@@ -1,0 +1,6 @@
+{
+  "name": "sigma_5(n), the sum of the 5th powers of the divisors of n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
