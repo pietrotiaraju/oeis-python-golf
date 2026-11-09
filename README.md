@@ -1272,6 +1272,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001266](seq/A001xxx/A001266/) | One-half the number of permutations of length n without rising or… | **73** | 449 |
 | [A001267](seq/A001xxx/A001267/) | One-half the number of permutations of length n with exactly 3 rising… | **138** | 201 |
 | [A001268](seq/A001xxx/A001268/) | One-half the number of permutations of length n with exactly 4 rising… | **137** | 201 |
+| [A001273](seq/A001xxx/A001273/) | Smallest number that takes n steps to reach 1 under iteration of… | **101** | 8 |
 | [A001277](seq/A001xxx/A001277/) | Number of permutations of length n by rises. | **43** | 22 |
 | [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |

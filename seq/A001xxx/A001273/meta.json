@@ -1,0 +1,6 @@
+{
+  "name": "Smallest number that takes n steps to reach 1 under iteration of sum-of-squares-of-digits map (= smallest \"happy number\" of height n).",
+  "offset": 0,
+  "min_terms": 8,
+  "timeout": 60
+}
