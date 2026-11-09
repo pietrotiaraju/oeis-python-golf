@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+68683472a688 Exact enumeration for every n: each linear space on n points is a representative on n-1 points plus a new point joined to pairwise disjoint old lines (deleting a point leaves a linear space), and one space per isomorphism class is kept by deleting whole orbits under all n! permutations. No conjecture, no stored terms.
