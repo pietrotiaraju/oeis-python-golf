@@ -1,0 +1,6 @@
+{
+  "name": "Triangular numbers of form a*(a+1)*(a+2).",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}
