@@ -1,0 +1,6 @@
+{
+  "name": "To get the 6th term, for example, note that 5th term has three (10 in ternary!) 1's, one (1) 0, etc., giving 10 1 1 0 1 2 2 1 1 2.",
+  "offset": 1,
+  "min_terms": 22,
+  "timeout": 60
+}

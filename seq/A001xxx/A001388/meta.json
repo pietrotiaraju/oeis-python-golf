@@ -1,0 +1,6 @@
+{
+  "name": "Describe the previous term (in base 3)!.",
+  "offset": 1,
+  "min_terms": 23,
+  "timeout": 60
+}

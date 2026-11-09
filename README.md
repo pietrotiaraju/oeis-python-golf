@@ -1352,6 +1352,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001347](seq/A001xxx/A001347/) | a(n) = Sum\_{k=0..5} (n+k)! \* C(5,k). | **66** | 102 |
 | [A001348](seq/A001xxx/A001348/) | Mersenne numbers: 2^p - 1, where p is prime. | **45** | 100 |
 | [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **242** | 40 |
+| [A001362](seq/A001xxx/A001362/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **59** | 1001 |
+| [A001364](seq/A001xxx/A001364/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **66** | 1001 |
+| [A001365](seq/A001xxx/A001365/) | Expansion of… | **66** | 1001 |
+| [A001387](seq/A001xxx/A001387/) | Binary "look and say" sequence. | **84** | 17 |
+| [A001388](seq/A001xxx/A001388/) | Describe the previous term (in base 3)!. | **94** | 23 |
+| [A001389](seq/A001xxx/A001389/) | To get the 6th term, for example, note that 5th term has three (10 in… | **94** | 22 |
+| [A001391](seq/A001xxx/A001391/) | To get the 3rd term, for example, note that 2nd term has three (11 in… | **85** | 17 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

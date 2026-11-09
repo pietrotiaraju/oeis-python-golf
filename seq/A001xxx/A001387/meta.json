@@ -1,0 +1,6 @@
+{
+  "name": "Binary \"look and say\" sequence.",
+  "offset": 1,
+  "min_terms": 17,
+  "timeout": 60
+}
