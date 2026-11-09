@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+b0f148c08712 Burnside's lemma over S_3 wr S_n (order 6^n*n!): f(r,L) averages over cycle types (the cycle through a marked coordinate has length k with probability 1/r, and its cycle product is uniform on S_3: one element of order 1, three of order 2, two of order 3, the six raw bytes), and 3^c(g) comes from c(g) = average of fix(g^t) over t < lcm(k*o), where a cycle contributes (fixed points of h^(t/d))^d, d = gcd(t,k): 3 if o | t/d, else 1 (transposition) or 0 (3-cycle). Floors exact by de Bruijn's lemma; nothing is stored.
