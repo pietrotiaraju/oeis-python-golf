@@ -1,0 +1,6 @@
+{
+  "name": "An exponential function on partitions (next term is 2^512).",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 60
+}
