@@ -1149,6 +1149,7 @@ sequence for the code and how it works.
 | [A001141](seq/A001xxx/A001141/) | Describe the previous term! (method A - initial term is 5). | **82** | 20 |
 | [A001142](seq/A001xxx/A001142/) | a(n) = Product\_{k=1..n} k^(2k - 1 - n). | **45** | 51 |
 | [A001143](seq/A001xxx/A001143/) | Describe the previous term! (method A - initial term is 6). | **82** | 20 |
+| [A001144](seq/A001xxx/A001144/) | An exponential function on partitions (next term is 2^512). | **50** | 8 |
 | [A001145](seq/A001xxx/A001145/) | Describe the previous term! (method A - initial term is 7). | **82** | 20 |
 | [A001146](seq/A001xxx/A001146/) | a(n) = 2^(2^n). | **24** | 12 |
 | [A001147](seq/A001xxx/A001147/) | Double factorial of odd numbers: a(n) = (2\*n-1)!! = 1\*3\*5\*...\*(2\*n-1). | **31** | 401 |
