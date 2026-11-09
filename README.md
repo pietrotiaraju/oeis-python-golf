@@ -1146,6 +1146,13 @@ sequence for the code and how it works.
 | [A001138](seq/A001xxx/A001138/) | Number of red rooted red-black trees with n internal nodes. | **82** | 35 |
 | [A001139](seq/A001xxx/A001139/) | Number of stable feedback shift registers with n stages. | **117** | 5 |
 | [A001140](seq/A001xxx/A001140/) | Describe the previous term! (method A - initial term is 4). | **82** | 20 |
+| [A001141](seq/A001xxx/A001141/) | Describe the previous term! (method A - initial term is 5). | **82** | 20 |
+| [A001142](seq/A001xxx/A001142/) | a(n) = Product\_{k=1..n} k^(2k - 1 - n). | **45** | 51 |
+| [A001143](seq/A001xxx/A001143/) | Describe the previous term! (method A - initial term is 6). | **82** | 20 |
+| [A001145](seq/A001xxx/A001145/) | Describe the previous term! (method A - initial term is 7). | **82** | 20 |
+| [A001146](seq/A001xxx/A001146/) | a(n) = 2^(2^n). | **24** | 12 |
+| [A001147](seq/A001xxx/A001147/) | Double factorial of odd numbers: a(n) = (2\*n-1)!! = 1\*3\*5\*...\*(2\*n-1). | **31** | 401 |
+| [A001148](seq/A001xxx/A001148/) | Final digit of 3^n. | **27** | 81 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
