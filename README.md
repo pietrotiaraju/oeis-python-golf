@@ -1190,6 +1190,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001193](seq/A001xxx/A001193/) | a(n) = (n+1)\*(2\*n)!/(2^n\*n!) = (n+1)\*(2n-1)!!. | **37** | 101 |
 | [A001194](seq/A001xxx/A001194/) | a(n) = A059366(n,n-2) = A059366(n,2) for n >= 2, where the triangle… | **48** | 18 |
 | [A001196](seq/A001xxx/A001196/) | Double-bitters: only even length runs in binary expansion. | **40** | 10001 |
+| [A001197](seq/A001xxx/A001197/) | Zarankiewicz's problem k\_2(n). | **249** | 17 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
