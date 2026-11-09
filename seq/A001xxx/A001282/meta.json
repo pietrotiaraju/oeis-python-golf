@@ -1,0 +1,6 @@
+{
+  "name": "One-half of the number of permutations p of [n] having exactly three runs of adjacent entries differing by 1.",
+  "offset": 6,
+  "min_terms": 445,
+  "timeout": 60
+}
