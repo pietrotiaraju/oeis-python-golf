@@ -74,11 +74,50 @@ while 1:A+=sumprod(A[-4:],(k,2-k,~k,k+4)),;q=sumprod(A[-10:],(3,-15,24,-24,27,9,
   with more than 4300 digits (Python's int-to-str limit), so the program
   stops with a `ValueError` after a(1558).
 
+## First five terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(6)…a(10) have to arrive in time.
+
+### Python 3, 5 terms — 147 bytes
+
+```python
+from itertools import*
+n=6
+while[print(sum(sum((-2<y-z<2)>(-2<x-y<2)for x,y,z in zip((-2,)+p,p,p[1:]))==3for p in permutations(range(n)))//2)]:n+=1
+```
+
+**How it works**
+
+- The definition, by brute force: for every permutation p of 0, …, n−1,
+  count the runs by their first steps. Along the triples x, y, z of
+  neighbours, a run starts at the step y→z when that step is ±1 and the
+  step x→y before it is not, which is `(-2<y-z<2)>(-2<x-y<2)` (True >
+  False; the entries are distinct, so `-2<d<2` means d = ±1). The
+  sentinel −2 in front of p is never ±1 away from an entry, so a run at
+  the very start counts too.
+- The permutations with exactly 3 runs are counted and halved; reversal
+  pairs them off (see above), so the count is even.
+
+**Limits**
+
+- Row n costs n! permutations: a(6)…a(9) come within 2 s, a(10) after
+  about 21 s here (13 reference seconds); a(11) would need about four
+  minutes. Exhaustive and exact, so right for every n, only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-09 | Python 3 | 204 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 204 | first entry |
+
+**Python 3, 5 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 147 | first entry: brute force over all permutations |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -1363,6 +1363,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **71** | 81 | 82 | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **70** | 59 | 85 | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **72** | 29 | 83 | 58 |
+| [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 
 <!-- short:end -->
