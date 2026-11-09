@@ -1,0 +1,6 @@
+{
+  "name": "A self-generating sequence: a(1)=1, a(2)=2, a(n+1) chosen so that a(n+1)-a(n-1) is the first number not obtainable as a(j)-a(i) for 1<=i<j<=n.",
+  "offset": 1,
+  "min_terms": 2000,
+  "timeout": 60
+}
