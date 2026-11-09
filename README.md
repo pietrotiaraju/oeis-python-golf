@@ -1267,6 +1267,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001259](seq/A001xxx/A001259/) | A sequence of sorted odd primes 3 = p\_1 < p\_2 < ... < p\_m such that… | **93** | 21 |
 | [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
 | [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
+| [A001262](seq/A001xxx/A001262/) | Strong pseudoprimes to base 2. | **116** | 70 |
 | [A001263](seq/A001xxx/A001263/) | Triangle of Narayana numbers T(n,k) = C(n-1,k-1)\*C(n,k-1)/k with 1 <=… | **68** | 5050 |
 | [A001264](seq/A001xxx/A001264/) | Final 2 digits of 4^n. | **28** | 1001 |
 | [A001265](seq/A001xxx/A001265/) | Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n >=… | **81** | 250 |
@@ -1276,6 +1277,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **82** | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **85** | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **83** | 58 |
+| [A001272](seq/A001xxx/A001272/) | Numbers k such that k! - (k-1)! + (k-2)! - (k-3)! + ... - (-1)^k\*1!… | **101** | 9 |
+| [A001273](seq/A001xxx/A001273/) | Smallest number that takes n steps to reach 1 under iteration of… | **101** | 8 |
 | [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **107** | 115 |
 | [A001275](seq/A001xxx/A001275/) | Smallest prime p such that the product of q/(q-1) over the primes… | **136** | 175 |
 | [A001276](seq/A001xxx/A001276/) | Smallest k such that the product of q/(q-1) over the primes from… | **141** | 175 |
@@ -1291,7 +1294,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001286](seq/A001xxx/A001286/) | Lah numbers: a(n) = (n-1)\*n!/2. | **35** | 99 |
 | [A001287](seq/A001xxx/A001287/) | a(n) = binomial coefficient C(n,10). | **37** | 991 |
 | [A001288](seq/A001xxx/A001288/) | a(n) = binomial(n,11). | **37** | 990 |
+| [A001289](seq/A001xxx/A001289/) | Number of equivalence classes of Boolean functions modulo linear… | **193** | 4 |
 | [A001292](seq/A001xxx/A001292/) | Concatenations of cyclic permutations of initial positive integers. | **86** | 10000 |
+| [A001293](seq/A001xxx/A001293/) | Leech triangle: k-th number (0 <= k <= n) in n-th row (0 <= n) is… | **147** | 45 |
+| [A001294](seq/A001xxx/A001294/) | Triangle in which k-th number (0<=k<=n) in n-th row (0<=n) is number… | **148** | 45 |
+| [A001295](seq/A001xxx/A001295/) | Triangle in which k-th number (0<=k<=n) in n-th row (0<=n) is number… | **154** | 28 |
 | [A001296](seq/A001xxx/A001296/) | 4-dimensional pyramidal numbers: a(n) = (3\*n+1)\*binomial(n+2, 3)/4.… | **39** | 1001 |
 | [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
@@ -1356,11 +1363,15 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **82** | 700 | 83 | 993 |
+| [A001262](seq/A001xxx/A001262/) | Strong pseudoprimes to base 2. | **86** | 17 | 116 | 70 |
 | [A001265](seq/A001xxx/A001265/) | Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n >=… | **68** | 91 | 81 | 250 |
+| [A001267](seq/A001xxx/A001267/) | One-half the number of permutations of length n with exactly 3 rising… | **124** | 11 | 138 | 201 |
+| [A001268](seq/A001xxx/A001268/) | One-half the number of permutations of length n with exactly 4 rising… | **124** | 11 | 137 | 201 |
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **71** | 81 | 82 | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **70** | 59 | 85 | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **72** | 29 | 83 | 58 |
 | [A001274](seq/A001xxx/A001274/) | Numbers k such that phi(k) = phi(k+1). | **90** | 20 | 107 | 115 |
+| [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **147** | 5 | 204 | 445 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 
 <!-- short:end -->
