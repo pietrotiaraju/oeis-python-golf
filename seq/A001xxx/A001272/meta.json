@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that k! - (k-1)! + (k-2)! - (k-3)! + ... - (-1)^k*1! is prime.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}

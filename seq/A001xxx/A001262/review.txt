@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+0075eed57fe0 py3.py: exact base-2 strong test (recursion over the squaring chain, proof on the page) plus exact trial division with m*m > k; py3-17.py: same strong test (set form rejects even k) with Wilson's theorem P = 2(k-1)! for compositeness. Both test every k in order, so they print exactly the strong pseudoprimes to base 2.
