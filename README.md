@@ -1326,6 +1326,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001321](seq/A001xxx/A001321/) | Number of equivalence classes of 3-valued Post functions of n… | **169** | 5 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
+| [A001325](seq/A001xxx/A001325/) | Number of equivalence classes of 3-valued Post functions of n… | **213** | 5 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
