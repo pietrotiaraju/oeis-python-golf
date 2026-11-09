@@ -1267,6 +1267,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001259](seq/A001xxx/A001259/) | A sequence of sorted odd primes 3 = p\_1 < p\_2 < ... < p\_m such that… | **93** | 21 |
 | [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
 | [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
+| [A001262](seq/A001xxx/A001262/) | Strong pseudoprimes to base 2. | **116** | 70 |
 | [A001263](seq/A001xxx/A001263/) | Triangle of Narayana numbers T(n,k) = C(n-1,k-1)\*C(n,k-1)/k with 1 <=… | **68** | 5050 |
 | [A001264](seq/A001xxx/A001264/) | Final 2 digits of 4^n. | **28** | 1001 |
 | [A001266](seq/A001xxx/A001266/) | One-half the number of permutations of length n without rising or… | **73** | 449 |
@@ -1348,6 +1349,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **82** | 700 | 83 | 993 |
+| [A001262](seq/A001xxx/A001262/) | Strong pseudoprimes to base 2. | **86** | 17 | 116 | 70 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 
 <!-- short:end -->
