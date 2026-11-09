@@ -1304,6 +1304,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
 | [A001299](seq/A001xxx/A001299/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **54** | 10001 |
 | [A001300](seq/A001xxx/A001300/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **74** | 10001 |
+| [A001301](seq/A001xxx/A001301/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **60** | 1001 |
+| [A001302](seq/A001xxx/A001302/) | Number of ways of making change for n cents using coins of 1, 2, 5,… | **65** | 1001 |
+| [A001304](seq/A001xxx/A001304/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)). | **43** | 1001 |
+| [A001305](seq/A001xxx/A001305/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)\*(1-x^10)\*(1-x^20)). | **61** | 1001 |
+| [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **67** | 1001 |
+| [A001307](seq/A001xxx/A001307/) | Expansion of 1/(1-x)^2/(1-x^2)/(1-x^4)/(1-x^10)/(1-x^20). | **61** | 1001 |
 | [A001308](seq/A001xxx/A001308/) | Order of Chevalley group D\_n (2). | **45** | 20 |
 | [A001309](seq/A001xxx/A001309/) | Order of real Clifford group L\_n connected with Barnes-Wall lattices… | **46** | 9 |
 | [A001311](seq/A001xxx/A001311/) | Final 2 digits of 6^n. | **28** | 1001 |
