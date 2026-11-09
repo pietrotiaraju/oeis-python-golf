@@ -1206,7 +1206,12 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001197](seq/A001xxx/A001197/) | Zarankiewicz's problem k\_2(n). | **249** | 17 |
 | [A001198](seq/A001xxx/A001198/) | Zarankiewicz's problem k\_3(n). | **275** | 9 |
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **338** | 9 |
+| [A001202](seq/A001xxx/A001202/) | a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10\*a(n+1). | **46** | 8192 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
+| [A001204](seq/A001xxx/A001204/) | Continued fraction for e^2. | **52** | 20001 |
+| [A001205](seq/A001xxx/A001205/) | Number of clouds with n points; number of undirected 2-regular… | **57** | 101 |
+| [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
+| [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

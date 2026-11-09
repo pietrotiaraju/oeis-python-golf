@@ -1,0 +1,6 @@
+{
+  "name": "Sorted list of orders of Weyl groups of types A_n, B_n, D_n, E_n, F_4, G_2.",
+  "offset": 1,
+  "min_terms": 34,
+  "timeout": 60
+}
