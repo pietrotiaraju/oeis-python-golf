@@ -1280,6 +1280,8 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | Sequence | Name | Short record | Its terms | Python 3 | Terms checked |
 |---|---|---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 5 | 221 | 6 |
+| [A000080](seq/A000xxx/A000080/) | Number of nonisomorphic minimal triangle graphs. | **264** | 4 | 339 | 6 |
+| [A000370](seq/A000xxx/A000370/) | Number of NPN-equivalence classes of Boolean functions of n or fewer… | **209** | 4 | 226 | 7 |
 | [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **128** | 5000 | 149 | 10001 |
 | [A000448](seq/A000xxx/A000448/) | Smallest number that is the sum of 2 squares in at least n ways. | **119** | 12 | 219 | 10000 |
 | [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **68** | 19 | 134 | 40 |
@@ -1290,9 +1292,16 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A000519](seq/A000xxx/A000519/) | Number of equivalence classes of nonzero regular 0-1 matrices of… | **241** | 6 | 457 | 7 |
 | [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
 | [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
+| [A000618](seq/A000xxx/A000618/) | Number of nondegenerate Boolean functions of n variables: For n > 0,… | **203** | 4 | 221 | 9 |
+| [A000653](seq/A000xxx/A000653/) | Invertible Boolean functions of n variables. | **216** | 3 | 291 | 8 |
+| [A000654](seq/A000xxx/A000654/) | Invertible Boolean functions of n variables. | **237** | 3 | 306 | 6 |
+| [A000664](seq/A000xxx/A000664/) | Number of graphs with n edges. | **173** | 4 | 216 | 8 |
 | [A000717](seq/A000xxx/A000717/) | Number of graphs with n nodes and floor(n(n-1)/4) edges. | **177** | 6 | 214 | 13 |
+| [A000721](seq/A000xxx/A000721/) | Number of NP-equivalence classes of balanced Boolean functions of n… | **217** | 4 | 263 | 6 |
+| [A000725](seq/A000xxx/A000725/) | Invertible Boolean functions of n variables. | **245** | 3 | 320 | 6 |
 | [A000840](seq/A000xxx/A000840/) | Number of cubic bicolored graphs on n unlabeled nodes admitting an… | **292** | 6 | 388 | 20 |
 | [A000843](seq/A000xxx/A000843/) | Number of quartic bicolored graphs on n unlabeled nodes admitting an… | **292** | 6 | 388 | 16 |
+| [A000889](seq/A000xxx/A000889/) | Number of switching networks with S(n) and C(2,2) acting on the… | **223** | 3 | 266 | 7 |
 | [A001028](seq/A001xxx/A001028/) | E.g.f. A(x) satisfies A'(x) = 1 + A(A(x)), with A(0) = 0. | **126** | 11 | 153 | 300 |
 | [A001130](seq/A001xxx/A001130/) | Number of graphical basis partitions of 2n. | **173** | 45 | 203 | 100 |
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |

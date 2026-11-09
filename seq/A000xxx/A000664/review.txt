@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 d83947bc28d5 Burnside over S_2n on vertex pairs, coefficient of x^n via packed recursion
+9be414db274a Exhaustive: a graph with n edges and no isolated vertices has at most 2n vertices, so its classes are those of graphs on 2n labelled points with n edges (pad with isolated points). The edge-set bitmask after a relabelling determines the graph, so the minimum over all (2n)! relabellings is one number per isomorphism class. Exact for every n; only slow.
