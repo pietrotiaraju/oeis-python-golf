@@ -1330,6 +1330,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001325](seq/A001xxx/A001325/) | Number of equivalence classes of 3-valued Post functions of n… | **213** | 5 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
 | [A001327](seq/A001xxx/A001327/) | Number of equivalence classes of 3-valued Post functions of n… | **237** | 5 |
+| [A001328](seq/A001xxx/A001328/) | Number of equivalence classes of n-valued Post functions of 2… | **208** | 8 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
