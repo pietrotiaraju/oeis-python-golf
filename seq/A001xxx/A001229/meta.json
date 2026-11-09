@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that phi(sigma(k)) = k.",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 60
+}
