@@ -142,14 +142,22 @@ while P:=[*permutations(range(n))]:print(sum(all(t[p[c]][p[t[b][a]]]==p[t[t[c][b
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-05 | Python 3 | 260 | first entry |
-| 2026-11-05 | Python 3 | 256 | `for a,b in Q(R,R)` (pietrotiaraju) |
-| 2026-11-05 | Python 3 | 255 | value named in the while condition |
-| 2026-11-06 | Python 3 | 217 | fix the identity row, fuse the two checks, update the factorial incrementally |
-| 2026-11-08 | Python 3 | 221 | fix: only permutations fixing the identity, so the bar comes within half the timeout |
-| 2026-11-09 | Python 3, 5 terms | 194 | first entry: sets of right translations, no identity row, no factorial counter |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-05 | 260 | first entry |
+| 2026-11-05 | 256 | `for a,b in Q(R,R)` (pietrotiaraju) |
+| 2026-11-05 | 255 | value named in the while condition |
+| 2026-11-06 | 217 | fix the identity row, fuse the two checks, update the factorial incrementally |
+| 2026-11-08 | 221 | fix: only permutations fixing the identity, so the bar comes within half the timeout (the 217-byte program still holds five terms, below) |
+
+**Python 3, 5 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 217 | the main record of that day (every permutation p tried): a(0)…a(4) at once, too slow for six terms under the 2026-11-08 timing rules |
+| 2026-11-09 | 194 | sets of right translations, no identity row, no factorial counter |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
