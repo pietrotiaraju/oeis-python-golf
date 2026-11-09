@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of order n with the length of longest run equal to 4.",
+  "offset": 1,
+  "min_terms": 450,
+  "timeout": 60
+}

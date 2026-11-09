@@ -1256,6 +1256,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001248](seq/A001xxx/A001248/) | Squares of primes. | **42** | 10000 |
 | [A001249](seq/A001xxx/A001249/) | Squares of tetrahedral numbers: a(n) = binomial(n+3,n)^2. | **38** | 1001 |
 | [A001250](seq/A001xxx/A001250/) | Number of alternating permutations of order n. | **66** | 501 |
+| [A001251](seq/A001xxx/A001251/) | Number of permutations of order n with the length of longest run… | **161** | 450 |
+| [A001252](seq/A001xxx/A001252/) | Number of permutations of order n with the length of longest run… | **169** | 450 |
+| [A001253](seq/A001xxx/A001253/) | Number of permutations of order n with the length of longest run… | **173** | 450 |
+| [A001254](seq/A001xxx/A001254/) | Squares of Lucas numbers. | **35** | 2376 |
+| [A001255](seq/A001xxx/A001255/) | Squares of partition numbers. | **82** | 1001 |
+| [A001256](seq/A001xxx/A001256/) | Squares of numbers of trees. | **142** | 1001 |
+| [A001257](seq/A001xxx/A001257/) | Squares of numbers of rooted trees. | **90** | 21 |
+| [A001258](seq/A001xxx/A001258/) | Number of labeled n-node trees with unlabeled end-points. | **165** | 99 |
+| [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

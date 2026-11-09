@@ -1,0 +1,6 @@
+{
+  "name": "Number of labeled n-node trees with unlabeled end-points.",
+  "offset": 2,
+  "min_terms": 99,
+  "timeout": 60
+}
