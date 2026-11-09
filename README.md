@@ -1189,6 +1189,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001179](seq/A001xxx/A001179/) | Leonardo logarithm of n. | **118** | 4000 |
 | [A001181](seq/A001xxx/A001181/) | Number of Baxter permutations of length n (also called Baxter… | **75** | 1120 |
 | [A001182](seq/A001xxx/A001182/) | Number of cells of square lattice of edge 1/n inside quadrant of unit… | **79** | 10000 |
+| [A001184](seq/A001xxx/A001184/) | Number of simple Hamiltonian paths connecting opposite corners of a… | **245** | 6 |
 | [A001186](seq/A001xxx/A001186/) | Number of cubic Hamiltonian graphs with 2n nodes. | **325** | 6 |
 | [A001187](seq/A001xxx/A001187/) | Number of connected labeled graphs with n nodes. | **121** | 51 |
 | [A001188](seq/A001xxx/A001188/) | Number of even graphs with n edges. | **158** | 50 |
