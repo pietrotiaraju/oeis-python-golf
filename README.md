@@ -1174,6 +1174,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
 | [A001166](seq/A001xxx/A001166/) | Smallest natural number requiring n letters in English. | **247** | 55 |
 | [A001167](seq/A001xxx/A001167/) | Smallest natural number requiring n words in English (as spoken in… | **186** | 25 |
+| [A001168](seq/A001xxx/A001168/) | Number of fixed polyominoes with n cells. | **152** | 15 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
 | [A001170](seq/A001xxx/A001170/) | Number of board-pair-pile polyominoes with n cells. | **229** | 13 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
