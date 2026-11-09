@@ -1354,6 +1354,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **82** | 700 | 83 | 993 |
 | [A001265](seq/A001xxx/A001265/) | Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n >=… | **68** | 91 | 81 | 250 |
+| [A001268](seq/A001xxx/A001268/) | One-half the number of permutations of length n with exactly 4 rising… | **124** | 11 | 137 | 201 |
 | [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **71** | 81 | 82 | 190 |
 | [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **70** | 59 | 85 | 101 |
 | [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **72** | 29 | 83 | 58 |
