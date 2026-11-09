@@ -1,0 +1,6 @@
+{
+  "name": "Dates at fortnightly intervals from Jan 01 in the Julian calendar.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
