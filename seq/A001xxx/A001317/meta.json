@@ -1,0 +1,6 @@
+{
+  "name": "Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal.",
+  "offset": 0,
+  "min_terms": 3322,
+  "timeout": 60
+}
