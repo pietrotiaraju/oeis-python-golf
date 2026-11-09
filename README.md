@@ -1160,6 +1160,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001150](seq/A001xxx/A001150/) | Number of n-input 2-output switching networks with GL(n,2) acting on… | **219** | 4 |
 | [A001151](seq/A001xxx/A001151/) | Describe the previous term! (method A - initial term is 8). | **82** | 20 |
 | [A001152](seq/A001xxx/A001152/) | Number of n-input 3-output switching networks with GL(n,2) acting on… | **255** | 4 |
+| [A001153](seq/A001xxx/A001153/) | Degrees of primitive irreducible trinomials: n such that 2^n - 1 is a… | **186** | 11 |
 | [A001154](seq/A001xxx/A001154/) | Describe the previous term! (method A - initial term is 9). | **82** | 20 |
 | [A001155](seq/A001xxx/A001155/) | Describe the previous term! (method A - initial term is 0). | **82** | 20 |
 | [A001156](seq/A001xxx/A001156/) | Number of partitions of n into squares. | **88** | 8000 |
