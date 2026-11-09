@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 723dd168b1be Polya counting graphs with floor(n(n-1)/4) edges via packed recursion
+c8f4d965e0e1 Exhaustive: every labelled graph with floor(n(n-1)/4) edges, as a set of pairs; the edge-set bitmask after a relabelling p determines the relabelled graph, so its minimum over all n! relabellings is equal exactly for isomorphic graphs and the set of minima has one element per class. Exact for every n; only slow.
