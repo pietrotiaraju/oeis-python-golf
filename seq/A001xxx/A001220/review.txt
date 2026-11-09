@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+f37bde6a5934 Exhaustive search, no stored terms: for every k it tests primality by Wilson (P = ((k-1)!)^2, P mod k = 1 iff k is prime) and the Wieferich condition 2^k = 2 (mod k^2), equivalent to p^2 | 2^(p-1)-1 for odd primes, and prints k exactly when both hold. So it lists every Wieferich prime in order, for every n, whether or not more than 1093 and 3511 exist.
