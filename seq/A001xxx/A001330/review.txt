@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+6d107f9e50a4 Burnside over S_n: a permutation of cycle type L fixes prod_{i,j in L}(sum of l in L dividing lcm(i,j))^gcd(i,j) single operations (gcd(i,j) pair orbits of length lcm(i,j)), and a pair of operations the square of that (L*2 runs over every cycle twice). f averages |Fix| over S_n one cycle at a time (new cycle length r-k with probability 1/r); every partial average is an orbit count, so //r is exact. Exact integers, so right for every n.

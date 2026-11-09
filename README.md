@@ -1333,6 +1333,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001327](seq/A001xxx/A001327/) | Number of equivalence classes of 3-valued Post functions of n… | **237** | 5 |
 | [A001328](seq/A001xxx/A001328/) | Number of equivalence classes of n-valued Post functions of 2… | **208** | 8 |
 | [A001329](seq/A001xxx/A001329/) | Number of nonisomorphic groupoids with n elements. | **215** | 28 |
+| [A001330](seq/A001xxx/A001330/) | Number of n-element algebras with 2 binary operations. | **175** | 8 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
