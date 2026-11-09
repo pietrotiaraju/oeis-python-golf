@@ -1325,6 +1325,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001319](seq/A001xxx/A001319/) | Number of (unordered) ways of making change for n cents using coins… | **70** | 1001 |
 | [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
 | [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
+| [A001325](seq/A001xxx/A001325/) | Number of equivalence classes of 3-valued Post functions of n… | **213** | 5 |
 | [A001326](seq/A001xxx/A001326/) | Number of equivalence classes of n-valued Post functions of 2… | **93** | 8 |
 | [A001332](seq/A001xxx/A001332/) | a(n) = Bernoulli(2\*n) \* (2\*n + 1)!. | **98** | 51 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
