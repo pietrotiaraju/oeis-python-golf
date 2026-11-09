@@ -1357,12 +1357,18 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001352](seq/A001xxx/A001352/) | a(0) = 1, a(1) = 6, a(2) = 24; for n>=3, a(n) = 4a(n-1) - a(n-2). | **40** | 201 |
 | [A001353](seq/A001xxx/A001353/) | a(n) = 4\*a(n-1) - a(n-2) with a(0) = 0, a(1) = 1. | **34** | 201 |
 | [A001354](seq/A001xxx/A001354/) | Coordination sequence for hyperbolic tessellation 3^7 (from triangle… | **38** | 1001 |
+| [A001355](seq/A001xxx/A001355/) | Mix digits of Pi and e. | **136** | 10000 |
+| [A001356](seq/A001xxx/A001356/) | Dates at fortnightly intervals from Jan 01 in the Julian calendar. | **51** | 10000 |
+| [A001357](seq/A001xxx/A001357/) | Powers of 2 written in base 9. | **59** | 1001 |
+| [A001358](seq/A001xxx/A001358/) | Semiprimes (or biprimes): products of two primes. | **85** | 20000 |
 | [A001360](seq/A001xxx/A001360/) | Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle… | **33** | 1001 |
 | [A001361](seq/A001xxx/A001361/) | Number of points in interior of n-th crystal ball in E\_8 lattice. | **81** | 1000 |
 | [A001362](seq/A001xxx/A001362/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **59** | 1001 |
+| [A001363](seq/A001xxx/A001363/) | Primes in ternary. | **75** | 847 |
 | [A001364](seq/A001xxx/A001364/) | Number of ways of making change for n cents using coins of 1, 2, 4,… | **66** | 1001 |
 | [A001365](seq/A001xxx/A001365/) | Expansion of… | **66** | 1001 |
 | [A001367](seq/A001xxx/A001367/) | Solution to f(2) = 1, f(n) = sqrt(n) f(sqrt(n)) + n at values n =… | **35** | 12 |
+| [A001370](seq/A001xxx/A001370/) | Sum of digits of 2^n. | **43** | 10001 |
 | [A001386](seq/A001xxx/A001386/) | Coordination sequence for 4-dimensional I-centered tetragonal… | **41** | 1001 |
 | [A001387](seq/A001xxx/A001387/) | Binary "look and say" sequence. | **84** | 17 |
 | [A001388](seq/A001xxx/A001388/) | Describe the previous term (in base 3)!. | **94** | 23 |

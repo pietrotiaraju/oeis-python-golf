@@ -1,0 +1,6 @@
+{
+  "name": "Semiprimes (or biprimes): products of two primes.",
+  "offset": 1,
+  "min_terms": 20000,
+  "timeout": 60
+}

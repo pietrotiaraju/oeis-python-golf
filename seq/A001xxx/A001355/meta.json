@@ -1,0 +1,6 @@
+{
+  "name": "Mix digits of Pi and e.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
