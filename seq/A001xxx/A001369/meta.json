@@ -1,0 +1,6 @@
+{
+  "name": "Blocks of increasing length using 1,2,3,...,9,10; omit leading 0's.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
