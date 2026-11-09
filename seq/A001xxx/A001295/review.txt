@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+2b8abf960553 builds the extended binary Golay code, takes the 132 octads with exactly 2 points in the dodecad 916384 (their parts in the complementary dodecad are the hexads of S(5,6,12)) and counts those containing the first k and missing the next n-k points of the hexad 95; finite table, all 28 entries
