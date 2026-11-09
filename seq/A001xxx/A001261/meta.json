@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n with 5 consecutive ascending pairs.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
