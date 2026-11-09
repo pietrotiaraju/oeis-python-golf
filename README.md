@@ -1211,10 +1211,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A001204](seq/A001xxx/A001204/) | Continued fraction for e^2. | **52** | 20001 |
 | [A001205](seq/A001xxx/A001205/) | Number of clouds with n points; number of undirected 2-regular… | **57** | 101 |
-| [A001206](seq/A001xxx/A001206/) | Number of self-dual monotone Boolean functions of n variables. | **141** | 8 | 
+| [A001206](seq/A001xxx/A001206/) | Number of self-dual monotone Boolean functions of n variables. | **141** | 8 |
 | [A001207](seq/A001xxx/A001207/) | Number of fixed hexagonal polyominoes with n cells. | **154** | 12 |
 | [A001208](seq/A001xxx/A001208/) | a(n) = solution to the postage stamp problem with 3 denominations and… | **208** | 1000 |
 | [A001209](seq/A001xxx/A001209/) | a(n) is the solution to the postage stamp problem with 4… | **150** | 20 |
+| [A001210](seq/A001xxx/A001210/) | a(n) is the solution to the postage stamp problem with 5… | **150** | 10 |
 | [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
