@@ -1473,6 +1473,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001337](seq/A001xxx/A001337/) | Number of n-step polygons on f.c.c. lattice. | **133** | 7 | 155 | 8 |
 | [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
 | [A001372](seq/A001xxx/A001372/) | Number of unlabeled mappings (or mapping patterns) from n points to… | **145** | 20 | 200 | 800 |
+| [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **148** | 20 | 246 | 509 |
 
 <!-- short:end -->
 
