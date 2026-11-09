@@ -1408,6 +1408,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
 | [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
+| [A001420](seq/A001xxx/A001420/) | Number of fixed 2-dimensional triangular-celled animals with n cells… | **153** | 18 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
