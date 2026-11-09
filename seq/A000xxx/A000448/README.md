@@ -100,13 +100,20 @@ while 1:
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 366 | first entry |
-| 2026-11-06 | Python 3 | 361 | simplify equivalent expressions |
-| 2026-11-06 | Python 3 | 319 | use Wilson prime generation and shorten exact threshold expressions |
-| 2026-11-07 | Python 3 | 219 | threshold B > c, start at p^c, no exponent bound, `2**len(P)<=c` |
-| 2026-11-09 | Python 3, 12 terms | 119 | first entry: count x ≤ y with m − x² square, m by m |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 366 | first entry |
+| 2026-11-06 | 361 | simplify equivalent expressions |
+| 2026-11-06 | 319 | use Wilson prime generation and shorten exact threshold expressions |
+| 2026-11-07 | 219 | threshold B > c, start at p^c, no exponent bound, `2**len(P)<=c` |
+
+**Python 3, 12 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 119 | first entry: count x ≤ y with m − x² square, m by m |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
