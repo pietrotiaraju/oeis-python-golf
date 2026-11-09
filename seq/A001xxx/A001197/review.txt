@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+01c05d0afe47 Exact exhaustive search, no stored terms: for c = a(n-1), a(n-1)+1, ... it decides whether some n x n 0/1 matrix with at least c ones has no two rows sharing two columns, and prints the first c that fails. Only valid cuts prune: rows in decreasing (weight, value) order with columns lexicographically decreasing (a normal form every matrix has, argued on the page), the bound d <= k*w and the weight floor p(c) >= d-(k-1)w. So the output is z(n)+1 = a(n) for every n.

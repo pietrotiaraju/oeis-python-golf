@@ -1,0 +1,6 @@
+{
+  "name": "Number of cubic Hamiltonian graphs with 2n nodes.",
+  "offset": 2,
+  "min_terms": 6,
+  "timeout": 60
+}

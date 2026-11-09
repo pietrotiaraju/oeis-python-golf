@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+447b7c34f796 Same Redelmeier enumeration as A001168, counting the polyominoes whose every column has at most two runs (Zeilberger's class A(2)); with <2 it reproduces A001169.
