@@ -59,10 +59,11 @@ bytes escaped, `b'\2\5\n2\24'`, the program is 69 bytes.
 - The 20 sits last in the table so that its escape `\24` is not followed by
   a digit.
 - a(n) is a quasi-polynomial of degree 5 with period dividing 100; no single
-  polynomial with a floor, as in [A001299](../A001299/), was found, and the
-  nested sums of [A001300](../A001300/) need one level per extra coin (two
-  levels over the sum of [A000008](../../A000xxx/A000008/) are already 116
-  bytes for [A001312](../A001312/)).
+  polynomial with a floor, as in [A001299](../A001299/), was found, and
+  nested closed sums like the earlier records of
+  [A000008](../../A000xxx/A000008/) and [A001300](../A001300/) need one
+  level per extra coin (two levels are already 116 bytes for
+  [A001312](../A001312/)).
 - a(n) ≤ (n + 1)⁵, since the numbers of the five larger coins fix the
   pennies, so the terms stay far below the 4300-digit int-to-str limit.
 - The b-file has 1001 terms (n = 0 to 1000); the bar is the whole b-file in

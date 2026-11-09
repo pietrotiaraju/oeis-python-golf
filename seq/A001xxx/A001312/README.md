@@ -55,12 +55,13 @@ the raw bytes escaped, `b'\2\5\n2d'`, the program is 67 bytes.
 - The comprehension form of [A001301](../A001301/), `a+=[…]` with the
   offsets 5c minus the slot, needs `ord` on a `str` for 50 and 100 and is 67
   bytes at best; the coins as a tuple instead of bytes make 70.
-- The nested sums of [A001300](../A001300/) need one level per extra coin:
-  summing the closed sum of [A000008](../../A000xxx/A000008/) (coins 1, 2,
-  5, 10) over the amounts 50t paid in 50s and 100s, each in ⌊t/2⌋ + 1 ways,
-  is 116 bytes. a(n) is a quasi-polynomial of degree 5 with period dividing
-  100; no single polynomial with a floor, as in [A001299](../A001299/), was
-  found.
+- Nested closed sums like the earlier records of
+  [A000008](../../A000xxx/A000008/) and [A001300](../A001300/) need one
+  level per extra coin: the former A000008 sum for coins 1, 2, 5, 10,
+  `sum((m-j)//10*(j//2)for j in range(m,1,-5))`, summed over the amounts 50t
+  paid in 50s and 100s, each in ⌊t/2⌋ + 1 ways, is 116 bytes. a(n) is a
+  quasi-polynomial of degree 5 with period dividing 100; no single
+  polynomial with a floor, as in [A001299](../A001299/), was found.
 - a(n) ≤ (n + 1)⁵, since the numbers of the five larger coins fix the
   pennies, so the terms stay far below the 4300-digit int-to-str limit.
 - The b-file has 1001 terms (n = 0 to 1000); the bar is the whole b-file in

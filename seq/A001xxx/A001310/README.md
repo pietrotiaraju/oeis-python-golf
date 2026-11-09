@@ -64,9 +64,9 @@ With the raw bytes escaped, `b'\2\4\n\24(d'`, the program is 70 bytes.
   is 98 bytes and takes about 50 s for the b-file here.
 - a(n) is a quasi-polynomial of degree 6 whose period divides 200, the lcm
   of the coins; no single polynomial with a floor, as in
-  [A001299](../A001299/), was found, and the nested sums of
-  [A001300](../A001300/) need one level per extra coin (two levels over the
-  sum of [A000008](../../A000xxx/A000008/) already make 116 bytes for
+  [A001299](../A001299/), was found, and nested closed sums like the earlier
+  records of [A000008](../../A000xxx/A000008/) and [A001300](../A001300/)
+  need one level per extra coin (two levels already make 116 bytes for
   [A001312](../A001312/)).
 - a(n) ≤ (n + 1)⁶, since the numbers of the six larger coins fix the
   pennies, so the terms stay far below the 4300-digit int-to-str limit.
