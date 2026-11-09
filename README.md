@@ -1171,6 +1171,18 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
+| [A001181](seq/A001xxx/A001181/) | Number of Baxter permutations of length n (also called Baxter… | **75** | 1120 |
+| [A001182](seq/A001xxx/A001182/) | Number of cells of square lattice of edge 1/n inside quadrant of unit… | **79** | 10000 |
+| [A001187](seq/A001xxx/A001187/) | Number of connected labeled graphs with n nodes. | **121** | 51 |
+| [A001188](seq/A001xxx/A001188/) | Number of even graphs with n edges. | **158** | 50 |
+| [A001189](seq/A001xxx/A001189/) | Number of degree-n permutations of order exactly 2. | **42** | 800 |
+| [A001190](seq/A001xxx/A001190/) | Wedderburn-Etherington numbers: unlabeled binary rooted trees (every… | **95** | 2546 |
+| [A001191](seq/A001xxx/A001191/) | Digits of positive squares. | **41** | 5500 |
+| [A001192](seq/A001xxx/A001192/) | Number of full sets of size n. | **108** | 51 |
+| [A001193](seq/A001xxx/A001193/) | a(n) = (n+1)\*(2\*n)!/(2^n\*n!) = (n+1)\*(2n-1)!!. | **37** | 101 |
+| [A001194](seq/A001xxx/A001194/) | a(n) = A059366(n,n-2) = A059366(n,2) for n >= 2, where the triangle… | **48** | 18 |
+| [A001195](seq/A001xxx/A001195/) | a(n) = floor(n\*log((14/11)\*n^(10/9))). | **144** | 58 |
+| [A001196](seq/A001xxx/A001196/) | Double-bitters: only even length runs in binary expansion. | **40** | 10001 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

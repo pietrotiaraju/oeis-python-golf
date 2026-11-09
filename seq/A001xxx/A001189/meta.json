@@ -1,0 +1,6 @@
+{
+  "name": "Number of degree-n permutations of order exactly 2.",
+  "offset": 1,
+  "min_terms": 800,
+  "timeout": 60
+}
