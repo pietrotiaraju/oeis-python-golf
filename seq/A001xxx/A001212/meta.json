@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = solution to the postage stamp problem with n denominations and 2 stamps.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 120
+}

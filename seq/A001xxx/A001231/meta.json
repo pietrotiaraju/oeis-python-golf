@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonisomorphic projective planes of order n.",
+  "offset": 2,
+  "min_terms": 5,
+  "timeout": 60
+}

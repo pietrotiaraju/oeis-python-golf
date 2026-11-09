@@ -1,0 +1,5 @@
+# A001230 (b-file synthesized from sequence entry)
+1 0
+2 0
+3 9862
+4 13267364410532

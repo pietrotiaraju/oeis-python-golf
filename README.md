@@ -1216,11 +1216,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001208](seq/A001xxx/A001208/) | a(n) = solution to the postage stamp problem with 3 denominations and… | **208** | 1000 |
 | [A001209](seq/A001xxx/A001209/) | a(n) is the solution to the postage stamp problem with 4… | **150** | 20 |
 | [A001210](seq/A001xxx/A001210/) | a(n) is the solution to the postage stamp problem with 5… | **150** | 10 |
+| [A001212](seq/A001xxx/A001212/) | a(n) = solution to the postage stamp problem with n denominations and… | **148** | 11 |
 | [A001213](seq/A001xxx/A001213/) | a(n) is the solution to the postage stamp problem with n… | **148** | 8 |
 | [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
 | [A001220](seq/A001xxx/A001220/) | Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1. | **55** | 2 |
+| [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
+| [A001231](seq/A001xxx/A001231/) | Number of nonisomorphic projective planes of order n. | **483** | 5 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
