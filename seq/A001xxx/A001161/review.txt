@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+3b49d9c2d1de Exact parity of the US English letter count (A005589 convention) for every n below 10^66: one bit per word, summed along the name's recursion; the page derives each step.
