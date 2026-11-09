@@ -1,0 +1,6 @@
+{
+  "name": "Prime gaps: differences between consecutive primes.",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}

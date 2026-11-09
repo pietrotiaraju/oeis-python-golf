@@ -1,0 +1,6 @@
+{
+  "name": "If F(n) is the n-th Fibonacci number, then a(2n) = (F(2n+1) + F(n+2))/2 and a(2n+1) = (F(2n+2) + F(n+1))/2.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
