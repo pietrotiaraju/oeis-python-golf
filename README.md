@@ -1401,6 +1401,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001397](seq/A001xxx/A001397/) | Number of 2n-step self-avoiding walks on diamond lattice ending at… | **113** | 7 |
 | [A001398](seq/A001xxx/A001398/) | Number of (2n+1)-step self-avoiding walks on diamond lattice ending… | **113** | 7 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |
+| [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
