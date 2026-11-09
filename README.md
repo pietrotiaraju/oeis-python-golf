@@ -1398,6 +1398,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001394](seq/A001xxx/A001394/) | Number of n-step self-avoiding walks on diamond. | **102** | 16 |
 | [A001395](seq/A001xxx/A001395/) | Number of (2n+1)-step self-avoiding walks on diamond lattice ending… | **113** | 8 |
 | [A001396](seq/A001xxx/A001396/) | Number of 2n-step self-avoiding walks on diamond lattice ending at… | **114** | 8 |
+| [A001397](seq/A001xxx/A001397/) | Number of 2n-step self-avoiding walks on diamond lattice ending at… | **113** | 7 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
