@@ -1155,6 +1155,7 @@ sequence for the code and how it works.
 | [A001147](seq/A001xxx/A001147/) | Double factorial of odd numbers: a(n) = (2\*n-1)!! = 1\*3\*5\*...\*(2\*n-1). | **31** | 401 |
 | [A001148](seq/A001xxx/A001148/) | Final digit of 3^n. | **27** | 81 |
 | [A001149](seq/A001xxx/A001149/) | A self-generating sequence: a(1)=1, a(2)=2, a(n+1) chosen so that… | **73** | 2000 |
+| [A001150](seq/A001xxx/A001150/) | Number of n-input 2-output switching networks with GL(n,2) acting on… | **219** | 4 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
