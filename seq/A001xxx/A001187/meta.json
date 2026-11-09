@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected labeled graphs with n nodes.",
+  "offset": 0,
+  "min_terms": 51,
+  "timeout": 60
+}
