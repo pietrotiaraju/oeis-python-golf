@@ -1401,7 +1401,22 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001397](seq/A001xxx/A001397/) | Number of 2n-step self-avoiding walks on diamond lattice ending at… | **113** | 7 |
 | [A001398](seq/A001xxx/A001398/) | Number of (2n+1)-step self-avoiding walks on diamond lattice ending… | **113** | 7 |
 | [A001399](seq/A001xxx/A001399/) | a(n) is the number of partitions of n into at most 3 parts; also… | **34** | 17502 |
+| [A001400](seq/A001xxx/A001400/) | Number of partitions of n into at most 4 parts. | **49** | 1001 |
+| [A001401](seq/A001xxx/A001401/) | Number of partitions of n into at most 5 parts. | **60** | 1001 |
+| [A001402](seq/A001xxx/A001402/) | Number of partitions of n into at most 6 parts. | **61** | 10001 |
+| [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **89** | 69 |
+| [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
+| [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **84** | 27 |
+| [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
+| [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
+| [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
+| [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
+| [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
+| [A001446](seq/A001xxx/A001446/) | a(n) = (4^n + 4^[n/2])/2. | **38** | 1000 |
+| [A001447](seq/A001xxx/A001447/) | a(n) = (5^n + 5^floor(n/2))/2. | **38** | 301 |
+| [A001448](seq/A001xxx/A001448/) | a(n) = binomial(4n,2n) or (4\*n)!/((2\*n)!\*(2\*n)!). | **49** | 101 |
+| [A001449](seq/A001xxx/A001449/) | Binomial coefficients binomial(5n,n). | **51** | 101 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

@@ -1,0 +1,6 @@
+{
+  "name": "Sum of rows of triangle defined in A001404.",
+  "offset": 0,
+  "min_terms": 27,
+  "timeout": 60
+}

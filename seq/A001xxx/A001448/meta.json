@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = binomial(4n,2n) or (4*n)!/((2*n)!*(2*n)!).",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

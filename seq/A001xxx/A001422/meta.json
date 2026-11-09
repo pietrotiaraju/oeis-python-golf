@@ -1,0 +1,6 @@
+{
+  "name": "Numbers which are not the sum of distinct squares.",
+  "offset": 1,
+  "min_terms": 31,
+  "timeout": 60
+}
