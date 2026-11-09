@@ -1171,6 +1171,14 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
+| [A001172](seq/A001xxx/A001172/) | Smallest even number that is an unordered sum of two odd primes in… | **121** | 55 |
+| [A001173](seq/A001xxx/A001173/) | Half the number of binary relations on n unlabeled points. | **135** | 21 |
+| [A001174](seq/A001xxx/A001174/) | Number of oriented graphs (i.e., digraphs with no bidirected edges)… | **138** | 21 |
+| [A001175](seq/A001xxx/A001175/) | Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n. | **68** | 5000 |
+| [A001176](seq/A001xxx/A001176/) | Number of zeros in fundamental period of Fibonacci numbers mod n. | **74** | 1000 |
+| [A001177](seq/A001xxx/A001177/) | Fibonacci entry points: a(n) = least k >= 1 such that n divides… | **62** | 10000 |
+| [A001178](seq/A001xxx/A001178/) | Fibonacci frequency of n. | **103** | 4000 |
+| [A001179](seq/A001xxx/A001179/) | Leonardo logarithm of n. | **118** | 4000 |
 | [A001181](seq/A001xxx/A001181/) | Number of Baxter permutations of length n (also called Baxter… | **75** | 1120 |
 | [A001182](seq/A001xxx/A001182/) | Number of cells of square lattice of edge 1/n inside quadrant of unit… | **79** | 10000 |
 | [A001187](seq/A001xxx/A001187/) | Number of connected labeled graphs with n nodes. | **121** | 51 |

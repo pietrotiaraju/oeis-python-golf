@@ -1,0 +1,6 @@
+{
+  "name": "Smallest even number that is an unordered sum of two odd primes in exactly n ways.",
+  "offset": 0,
+  "min_terms": 55,
+  "timeout": 60
+}

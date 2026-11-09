@@ -1,0 +1,6 @@
+{
+  "name": "Fibonacci entry points: a(n) = least k >= 1 such that n divides Fibonacci number F_k (=A000045(k)).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
