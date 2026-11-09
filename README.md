@@ -1166,6 +1166,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001158](seq/A001xxx/A001158/) | sigma\_3(n): sum of cubes of divisors of n. | **59** | 10000 |
 | [A001159](seq/A001xxx/A001159/) | sigma\_4(n): sum of 4th powers of divisors of n. | **59** | 10000 |
 | [A001160](seq/A001xxx/A001160/) | sigma\_5(n), the sum of the 5th powers of the divisors of n. | **59** | 10000 |
+| [A001162](seq/A001xxx/A001162/) | Numbers containing an odd number of letters. | **172** | 50 |
 | [A001163](seq/A001xxx/A001163/) | Stirling's formula: numerators of asymptotic series for Gamma… | **170** | 228 |
 | [A001164](seq/A001xxx/A001164/) | Stirling's formula: denominators of asymptotic series for Gamma… | **172** | 296 |
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
