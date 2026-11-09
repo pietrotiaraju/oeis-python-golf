@@ -1309,7 +1309,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001303](seq/A001xxx/A001303/) | Stirling numbers of first kind, s(n+3, n), negated. | **46** | 1000 |
 | [A001304](seq/A001xxx/A001304/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)). | **43** | 1001 |
 | [A001305](seq/A001xxx/A001305/) | Expansion of 1/((1-x)^2\*(1-x^2)\*(1-x^5)\*(1-x^10)\*(1-x^20)). | **61** | 1001 |
-| [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **67** | 1001 |
+| [A001306](seq/A001xxx/A001306/) | Number of ways of making change for n cents using coins of 1, 5, 10,… | **65** | 1001 |
 | [A001307](seq/A001xxx/A001307/) | Expansion of 1/(1-x)^2/(1-x^2)/(1-x^4)/(1-x^10)/(1-x^20). | **61** | 1001 |
 | [A001308](seq/A001xxx/A001308/) | Order of Chevalley group D\_n (2). | **45** | 20 |
 | [A001309](seq/A001xxx/A001309/) | Order of real Clifford group L\_n connected with Barnes-Wall lattices… | **46** | 9 |
