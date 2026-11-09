@@ -1210,6 +1210,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A001204](seq/A001xxx/A001204/) | Continued fraction for e^2. | **52** | 20001 |
 | [A001205](seq/A001xxx/A001205/) | Number of clouds with n points; number of undirected 2-regular… | **57** | 101 |
+| [A001208](seq/A001xxx/A001208/) | a(n) = solution to the postage stamp problem with 3 denominations and… | **208** | 1000 |
 | [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
