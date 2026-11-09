@@ -1,0 +1,6 @@
+{
+  "name": "Digits of positive squares.",
+  "offset": 1,
+  "min_terms": 5500,
+  "timeout": 60
+}

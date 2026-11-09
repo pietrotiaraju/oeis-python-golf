@@ -1,0 +1,6 @@
+{
+  "name": "Number of full sets of size n.",
+  "offset": 0,
+  "min_terms": 51,
+  "timeout": 60
+}
