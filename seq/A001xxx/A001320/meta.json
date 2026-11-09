@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-complementary Boolean functions of n variables, up to equivalence under the group (C_2)^n of all 2^n complementations of variables.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}

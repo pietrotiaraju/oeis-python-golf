@@ -1317,6 +1317,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001316](seq/A001xxx/A001316/) | Gould's sequence: a(n) = Sum\_{k=0..n} (binomial(n,k) mod 2); number… | **39** | 50001 |
 | [A001317](seq/A001xxx/A001317/) | Sierpiński's triangle (Pascal's triangle mod 2) converted to decimal. | **26** | 3322 |
 | [A001318](seq/A001xxx/A001318/) | Generalized pentagonal numbers: m\*(3\*m - 1)/2, m = 0, +-1, +-2, +-3,… | **34** | 1001 |
+| [A001320](seq/A001xxx/A001320/) | Number of self-complementary Boolean functions of n variables, up to… | **36** | 9 |
+| [A001322](seq/A001xxx/A001322/) | Number of equivalence classes of n-valued Post functions of 2… | **47** | 7 |
 | [A001333](seq/A001xxx/A001333/) | Pell-Lucas numbers: numerators of continued fraction convergents to… | **33** | 501 |
 | [A001338](seq/A001xxx/A001338/) | -1 + Sum (k-1)! C(n,k), k = 1..n for n > 0, a(0) = 1. | **48** | 101 |
 | [A001339](seq/A001xxx/A001339/) | a(n) = Sum\_{k=0..n} (k+1)! binomial(n,k). | **38** | 201 |
