@@ -1269,9 +1269,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
 | [A001263](seq/A001xxx/A001263/) | Triangle of Narayana numbers T(n,k) = C(n-1,k-1)\*C(n,k-1)/k with 1 <=… | **68** | 5050 |
 | [A001264](seq/A001xxx/A001264/) | Final 2 digits of 4^n. | **28** | 1001 |
+| [A001265](seq/A001xxx/A001265/) | Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n >=… | **81** | 250 |
 | [A001266](seq/A001xxx/A001266/) | One-half the number of permutations of length n without rising or… | **73** | 449 |
 | [A001267](seq/A001xxx/A001267/) | One-half the number of permutations of length n with exactly 3 rising… | **138** | 201 |
 | [A001268](seq/A001xxx/A001268/) | One-half the number of permutations of length n with exactly 4 rising… | **137** | 201 |
+| [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **82** | 190 |
+| [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **85** | 101 |
+| [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **83** | 58 |
 | [A001277](seq/A001xxx/A001277/) | Number of permutations of length n by rises. | **43** | 22 |
 | [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
@@ -1348,6 +1352,10 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **82** | 700 | 83 | 993 |
+| [A001265](seq/A001xxx/A001265/) | Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n >=… | **68** | 91 | 81 | 250 |
+| [A001269](seq/A001xxx/A001269/) | Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >=… | **71** | 81 | 82 | 190 |
+| [A001270](seq/A001xxx/A001270/) | Table of prime factors of 10^n - 1 (with multiplicity). | **70** | 59 | 85 | 101 |
+| [A001271](seq/A001xxx/A001271/) | Irregular table read by rows: row n lists prime factors of 10^n + 1,… | **72** | 29 | 83 | 58 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **68** | 5500 | 76 | 10000 |
 
 <!-- short:end -->

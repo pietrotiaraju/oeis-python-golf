@@ -1,0 +1,6 @@
+{
+  "name": "Table T(n,k) in which n-th row lists prime factors of 2^n + 1 (n >= 0), with repetition.",
+  "offset": 0,
+  "min_terms": 190,
+  "timeout": 60
+}
