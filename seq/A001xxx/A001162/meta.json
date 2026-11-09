@@ -1,0 +1,6 @@
+{
+  "name": "Numbers containing an odd number of letters.",
+  "offset": 1,
+  "min_terms": 50,
+  "timeout": 60
+}
