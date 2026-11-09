@@ -1206,6 +1206,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001197](seq/A001xxx/A001197/) | Zarankiewicz's problem k\_2(n). | **249** | 17 |
 | [A001198](seq/A001xxx/A001198/) | Zarankiewicz's problem k\_3(n). | **275** | 9 |
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **338** | 9 |
+| [A001201](seq/A001xxx/A001201/) | Number of Steiner triple systems (STS's) on 6n+1 or 6n+3 elements. | **195** | 5 |
 | [A001202](seq/A001xxx/A001202/) | a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10\*a(n+1). | **46** | 8192 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
 | [A001204](seq/A001xxx/A001204/) | Continued fraction for e^2. | **52** | 20001 |

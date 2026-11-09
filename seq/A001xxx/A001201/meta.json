@@ -1,0 +1,6 @@
+{
+  "name": "Number of Steiner triple systems (STS's) on 6n+1 or 6n+3 elements.",
+  "offset": 0,
+  "min_terms": 5,
+  "timeout": 120
+}
