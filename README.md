@@ -1221,6 +1221,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
 | [A001220](seq/A001xxx/A001220/) | Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1. | **55** | 2 |
+| [A001225](seq/A001xxx/A001225/) | Number of consistent arcs in a tournament with n nodes. | **344** | 10 |
 | [A001230](seq/A001xxx/A001230/) | Number of undirected closed knight's tours on a 2n X 2n chessboard. | **210** | 3 |
 | [A001241](seq/A001xxx/A001241/) | Differences of reciprocals of unity. | **50** | 700 |
 | [A001242](seq/A001xxx/A001242/) | Differences of reciprocals of unity. | **61** | 481 |
