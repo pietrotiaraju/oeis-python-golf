@@ -1,0 +1,6 @@
+{
+  "name": "Smallest natural number requiring n words in English (as spoken in England).",
+  "offset": 1,
+  "min_terms": 25,
+  "timeout": 60
+}
