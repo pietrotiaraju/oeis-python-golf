@@ -54,11 +54,47 @@ while[print(-sum((-1)**m*comb(m,3)*perm(n-m)*comb(n-m,b+1)*comb(m-1,b)<<b for m 
   a(1559) is the first term with more than 4300 digits (Python's
   int-to-str limit), far beyond what the program reaches in practice.
 
+## First eleven terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(10) have to arrive in time.
+
+### Python 3, 11 terms — 124 bytes
+
+```python
+from itertools import*
+n=0
+while[print(sum(sum(-2<x-y<2for x,y in zip(p,p[1:]))==3for p in permutations(range(n)))//2)]:n+=1
+```
+
+**How it works**
+
+- The definition, by brute force as on [A001100](../A001100/): for every
+  permutation p of 0, …, n−1, count the positions where neighbours differ
+  by 1 (`-2<x-y<2`, as the entries are distinct), and count the
+  permutations where that number is 3.
+- Reversal pairs them off (see above), so the count is even and `//2`
+  gives a(n). For n = 0 and 1 the one permutation has no succession.
+
+**Limits**
+
+- Row n costs n! permutations: a(0)…a(9) come within 0.2 s, a(10) after
+  about 13 s here (8 reference seconds); a(11) would need about two
+  minutes. Exhaustive and exact, so right for every n, only slow.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-09 | Python 3 | 138 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 138 | first entry |
+
+**Python 3, 11 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 124 | first entry: brute force over all permutations |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
