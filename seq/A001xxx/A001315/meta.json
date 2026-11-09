@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = Sum_{k=0..n} 2^binomial(n,k).",
+  "offset": 0,
+  "min_terms": 14,
+  "timeout": 60
+}

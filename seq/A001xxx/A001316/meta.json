@@ -1,0 +1,6 @@
+{
+  "name": "Gould's sequence: a(n) = Sum_{k=0..n} (binomial(n,k) mod 2); number of odd entries in row n of Pascal's triangle (A007318); a(n) = 2^A000120(n).",
+  "offset": 0,
+  "min_terms": 50001,
+  "timeout": 60
+}
