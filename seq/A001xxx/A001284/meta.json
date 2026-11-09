@@ -1,0 +1,6 @@
+{
+  "name": "Numbers of form m*k with m+1 <= k <= 2m-1.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

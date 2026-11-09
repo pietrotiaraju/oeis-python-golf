@@ -1,0 +1,6 @@
+{
+  "name": "Triangle read by rows, in which row n consists of n(n+m) for m = 1 .. n-1.",
+  "offset": 2,
+  "min_terms": 4950,
+  "timeout": 60
+}

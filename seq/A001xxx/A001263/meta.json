@@ -1,0 +1,6 @@
+{
+  "name": "Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with 1 <= k <= n, read by rows. Also called the Catalan triangle.",
+  "offset": 1,
+  "min_terms": 5050,
+  "timeout": 60
+}

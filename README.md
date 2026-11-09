@@ -1267,14 +1267,21 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001259](seq/A001xxx/A001259/) | A sequence of sorted odd primes 3 = p\_1 < p\_2 < ... < p\_m such that… | **93** | 21 |
 | [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
 | [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
+| [A001263](seq/A001xxx/A001263/) | Triangle of Narayana numbers T(n,k) = C(n-1,k-1)\*C(n,k-1)/k with 1 <=… | **68** | 5050 |
+| [A001264](seq/A001xxx/A001264/) | Final 2 digits of 4^n. | **28** | 1001 |
 | [A001266](seq/A001xxx/A001266/) | One-half the number of permutations of length n without rising or… | **73** | 449 |
 | [A001277](seq/A001xxx/A001277/) | Number of permutations of length n by rises. | **43** | 22 |
 | [A001278](seq/A001xxx/A001278/) | Number of permutations of length n by rises. | **57** | 22 |
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
 | [A001280](seq/A001xxx/A001280/) | Number of permutations of length n by rises. | **84** | 16 |
+| [A001281](seq/A001xxx/A001281/) | Image of n under the map n->n/2 if n even, n->3n-1 if n odd. | **36** | 1001 |
+| [A001283](seq/A001xxx/A001283/) | Triangle read by rows, in which row n consists of n(n+m) for m = 1 ..… | **46** | 4950 |
+| [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **77** | 10000 |
+| [A001285](seq/A001xxx/A001285/) | Thue-Morse sequence: let A\_k denote the first 2^k terms; then A\_0 = 1… | **40** | 10001 |
 | [A001286](seq/A001xxx/A001286/) | Lah numbers: a(n) = (n-1)\*n!/2. | **35** | 99 |
 | [A001287](seq/A001xxx/A001287/) | a(n) = binomial coefficient C(n,10). | **37** | 991 |
 | [A001288](seq/A001xxx/A001288/) | a(n) = binomial(n,11). | **37** | 990 |
+| [A001292](seq/A001xxx/A001292/) | Concatenations of cyclic permutations of initial positive integers. | **86** | 10000 |
 | [A001296](seq/A001xxx/A001296/) | 4-dimensional pyramidal numbers: a(n) = (3\*n+1)\*binomial(n+2, 3)/4.… | **39** | 1001 |
 | [A001297](seq/A001xxx/A001297/) | Stirling numbers of the second kind S(n+3, n). | **48** | 1001 |
 | [A001298](seq/A001xxx/A001298/) | Stirling numbers of the second kind S(n+4, n). | **56** | 1001 |
@@ -1339,6 +1346,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001200](seq/A001xxx/A001200/) | Number of linear geometries on n (unlabeled) points. | **257** | 7 | 338 | 9 |
 | [A001243](seq/A001xxx/A001243/) | Eulerian numbers (Euler's triangle: column k=7 of A008292, column k=6… | **82** | 700 | 83 | 994 |
 | [A001244](seq/A001xxx/A001244/) | Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7… | **82** | 700 | 83 | 993 |
+| [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **70** | 5500 | 77 | 10000 |
 
 <!-- short:end -->
 
