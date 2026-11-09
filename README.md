@@ -1266,6 +1266,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001258](seq/A001xxx/A001258/) | Number of labeled n-node trees with unlabeled end-points. | **165** | 99 |
 | [A001259](seq/A001xxx/A001259/) | A sequence of sorted odd primes 3 = p\_1 < p\_2 < ... < p\_m such that… | **93** | 21 |
 | [A001260](seq/A001xxx/A001260/) | Number of permutations of length n with 4 consecutive ascending pairs. | **49** | 200 |
+| [A001261](seq/A001xxx/A001261/) | Number of permutations of length n with 5 consecutive ascending pairs. | **56** | 200 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
