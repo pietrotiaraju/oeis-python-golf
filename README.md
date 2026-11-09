@@ -1281,6 +1281,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001279](seq/A001xxx/A001279/) | Number of permutations of length n by rises. | **71** | 20 |
 | [A001280](seq/A001xxx/A001280/) | Number of permutations of length n by rises. | **84** | 16 |
 | [A001281](seq/A001xxx/A001281/) | Image of n under the map n->n/2 if n even, n->3n-1 if n odd. | **36** | 1001 |
+| [A001282](seq/A001xxx/A001282/) | One-half of the number of permutations p of [n] having exactly three… | **204** | 445 |
 | [A001283](seq/A001xxx/A001283/) | Triangle read by rows, in which row n consists of n(n+m) for m = 1 ..… | **46** | 4950 |
 | [A001284](seq/A001xxx/A001284/) | Numbers of form m\*k with m+1 <= k <= 2m-1. | **76** | 10000 |
 | [A001285](seq/A001xxx/A001285/) | Thue-Morse sequence: let A\_k denote the first 2^k terms; then A\_0 = 1… | **40** | 10001 |
