@@ -1169,6 +1169,7 @@ record: see [Five-term records](#five-term-records) below the table.
 | [A001163](seq/A001xxx/A001163/) | Stirling's formula: numerators of asymptotic series for Gamma… | **170** | 228 |
 | [A001164](seq/A001xxx/A001164/) | Stirling's formula: denominators of asymptotic series for Gamma… | **172** | 296 |
 | [A001165](seq/A001xxx/A001165/) | Position of first even digit after decimal point in sqrt(n). | **79** | 1000 |
+| [A001166](seq/A001xxx/A001166/) | Smallest natural number requiring n letters in English. | **247** | 55 |
 | [A001169](seq/A001xxx/A001169/) | Number of board-pile polyominoes with n cells. | **60** | 200 |
 | [A001171](seq/A001xxx/A001171/) | From least significant term in expansion of E( tr (X'\*X)^n ), X… | **219** | 100 |
 | [A001203](seq/A001xxx/A001203/) | Simple continued fraction expansion of Pi. | **116** | 10000 |
