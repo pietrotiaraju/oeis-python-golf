@@ -48,11 +48,61 @@ while 1:
   used, but n = 7 has 645120 elements on 128 points (a few minutes). The
   bar is 6 terms in 60 s; the b-file has 10.
 
+## First four terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(1)…a(4) have to arrive in time.
+
+### Python 3, 4 terms — 217 bytes
+
+```python
+from itertools import*
+n=1
+while 1:R=range(2**n);S={0};print(sum({*f}not in S!=S.update(frozenset(s^sum((x>>i&1)<<p[i]for i in p)for x in f)for p in permutations(R[:n])for s in R)for f in combinations(R,2**~-n)));n+=1
+```
+
+**How it works**
+
+- A balanced function is the set of its 2ⁿ⁻¹ true points, and
+  `combinations(R,2**~-n)` gives each such set once (`2**~-n` is 2ⁿ⁻¹).
+- For a permutation p of the coordinates and a mask s,
+  `s^sum((x>>i&1)<<p[i]for i in p)` is g(x) = s ⊕ σ̂(x), where σ̂ moves bit i
+  of x to position p[i]. `for i in p` visits every index once, only in
+  another order, and `R[:n]` is range(n) because n < 2ⁿ. Over all p and s
+  these are the 2ⁿ·n! elements of B_n, and the images g(f) of the set f are
+  exactly the sets in its NP class (g(f) is the set of true points of f∘g⁻¹).
+- `S` starts as {0}, a placeholder that is never a set of points, and
+  collects every class met so far. `{*f}not in S!=S.update(…)` is a chained
+  comparison: if f is already in S it is False and the update is skipped;
+  otherwise `S.update` adds the whole class of f and returns None, and
+  S != None is True. (A set looked up among frozensets is compared as a
+  frozenset.) So the sum counts each class once, at its first member: a(n).
+- Nothing is approximated; the count is exact for every n.
+
+**Limits**
+
+- a(4) = 74 takes the 12 870 balanced sets of 16 points and 74 classes of
+  at most 384 images: the four terms come in about 0.3 reference seconds.
+- a(5) would loop over C(32, 16) ≈ 6.0·10⁸ sets, and S would end up holding
+  all of them: past a(4) the program only grows in memory until the
+  interpreter gives up. The main record sums the subset-sum polynomials of
+  the cycles of each group element instead.
+- 217 bytes is an upper bound on the shortest valid four-term program, not a
+  proof of minimality.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-07 | Python 3 | 263 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-07 | 263 | first entry |
+
+**Python 3, 4 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 217 | first entry: NP classes of balanced point sets, each counted at its first member |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

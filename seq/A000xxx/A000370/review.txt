@@ -1,3 +1,4 @@
 # Programs read and approved: the first 12 hex digits of the SHA-256 of py3.py, then why
 # it computes the sequence for every n. This file changes only through pull requests.
 c00d77f59487 Burnside over signed permutations, cycle-type recursion; page proves it
+38c419dc2c0d Every truth table of n variables is transformed exactly by each g(x) = s xor (bit permutation p)(x), the 2^n n! elements of B_n (with output negation k too for the NPN classes of A000370; functions of fewer variables are among them). The minimum over the group is one number per class (A000370, and A000616 for A000618, which prints A000616(n) - A000616(n-1) as its definition says). A000721 takes each balanced function as its set of true points and counts it when its NP orbit, added to S in full, was not there yet. Exhaustive, exact for every n.
