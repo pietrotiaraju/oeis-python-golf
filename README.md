@@ -1251,6 +1251,11 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | Sequence | Name | Short record | Its terms | Python 3 | Terms checked |
 |---|---|---|---|---|---|
 | [A000001](seq/A000xxx/A000001/) | Number of groups of order n. | **194** | 5 | 221 | 6 |
+| [A000412](seq/A000xxx/A000412/) | Number of bipartite partitions of n white objects and 3 black ones. | **128** | 5000 | 149 | 10001 |
+| [A000458](seq/A000xxx/A000458/) | a(0) = a(1) = 1; thereafter a(n) = sigma(a(n-1)) + sigma(a(n-2)). | **68** | 19 | 134 | 40 |
+| [A000493](seq/A000xxx/A000493/) | a(n) = floor(sin(n)). | **89** | 1000 | 126 | 10001 |
+| [A000568](seq/A000xxx/A000568/) | Number of outcomes of unlabeled n-team round-robin tournaments. | **136** | 32 | 171 | 35 |
+| [A000595](seq/A000xxx/A000595/) | Number of binary relations on n unlabeled points. | **133** | 23 | 171 | 25 |
 
 <!-- short:end -->
 

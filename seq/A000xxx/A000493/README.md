@@ -55,13 +55,62 @@ while 1:
   a(10000)); the bar is the whole b-file in 60 s, which takes 0.2 s.
 - The terms are 0 and −1, so the 4300-digit int-to-str limit never applies.
 
+## First 1000 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only a(0)…a(999) have to arrive in time.
+
+### Python 3, 1000 terms — 89 bytes
+
+```python
+n=0
+while 1:
+ N=p=n;F=1;d=0
+ while N%F<p:d+=2;p*=n*n;N=p+N*~d*d;F*=~d*d
+ print(N//F);n+=1
+```
+
+**How it works**
+
+- It sums the Taylor series sin n = Σ_k (−1)^k n^(2k+1)/(2k+1)! exactly.
+  After k steps, N/F is the partial sum S_k, and |p/F| = n^(2k+1)/(2k+1)! =
+  t_k is its last term. `~d*d` is −(d+1)·d with d = 2k, so F = (−1)^k·(2k+1)!
+  changes sign at every step and N stays an integer:
+  N_k = n^(2k+1) − (2k+1)(2k)·N_{k−1}.
+- When F < 0 (odd k), `N%F` lies in (F, 0], below p, so the loop goes on.
+  When F > 0 (even k, the last term was added), `N%F<p` fails exactly when
+  the fractional part of S_k is at least t_k.
+- Stopping there is safe. If t_k < 1 then n < 2k + 1 (because
+  (2k+1)! ≤ (2k+1)^(2k+1)), so from term k on the terms decrease and
+  alternate, and sin n lies in [S_k − t_k, S_k]. With fractional part at
+  least t_k, that interval holds no integer, so ⌊sin n⌋ = ⌊S_k⌋ = `N//F`.
+  While t_k ≥ 1 the test cannot pass, since the fractional part is below 1.
+- It always stops. For n ≥ 1, sin n is not an integer, S_k → sin n and
+  t_k → 0, so the fractional part of S_k tends to that of sin n > 0 and
+  ends up above t_k. For n = 0, p = 0 and the loop is skipped: a(0) = 0.
+
+**Limits**
+
+- Exact integer arithmetic. Each term costs about 1.4·n big-number steps
+  on numbers of about n·log n digits. Here a(999) arrives after about
+  11 s (about 6 reference seconds) and the 1600th term after 60 s, far
+  short of the main bar of 10001 terms.
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-06 | Python 3 | 210 | first entry |
-| 2026-11-06 | Python 3 | 195 | share the Machin summand and remove multiplication by one |
-| 2026-11-07 | Python 3 | 126 | Euler's series k!/(2k+1)!! for π, `q%-2` |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-06 | 210 | first entry |
+| 2026-11-06 | 195 | share the Machin summand and remove multiplication by one |
+| 2026-11-07 | 126 | Euler's series k!/(2k+1)!! for π, `q%-2` |
+
+**Python 3, 1000 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-09 | 89 | first entry: exact Taylor series of sin n, stop when the floor is certain |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
