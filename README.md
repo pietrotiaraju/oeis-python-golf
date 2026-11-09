@@ -1220,6 +1220,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001213](seq/A001xxx/A001213/) | a(n) is the solution to the postage stamp problem with n… | **148** | 8 |
 | [A001214](seq/A001xxx/A001214/) | a(n) is the solution to the postage stamp problem with n… | **148** | 7 |
 | [A001215](seq/A001xxx/A001215/) | a(n) is the solution to the postage stamp problem with n… | **148** | 6 |
+| [A001216](seq/A001xxx/A001216/) | a(n) = solution to the postage stamp problem with n denominations and… | **148** | 6 |
 | [A001217](seq/A001xxx/A001217/) | Sorted list of orders of Weyl groups of types A\_n, B\_n, D\_n, E\_n,… | **118** | 34 |
 | [A001218](seq/A001xxx/A001218/) | a(n) = 3^n mod 100. | **29** | 1001 |
 | [A001219](seq/A001xxx/A001219/) | Triangular numbers of form a\*(a+1)\*(a+2). | **45** | 7 |
