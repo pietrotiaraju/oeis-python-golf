@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+688ead25fef7 Muroga-Toda-Takasu weight bound (as in the reviewed A000617): every NP class of threshold functions of <= n variables holds exactly one function [w.x > t] with integer weights 0 <= w1 <= ... <= wn <= B. Self-duality is NP-invariant, and a self-dual threshold function [w.x > t] with w >= 0 equals [2w.x > W] with no sum equal to W/2 (short proof on the page); conversely each such [2w.x > W] is self-dual threshold. So a(n) = number of distinct tables [2w.x > W] over the sorted vectors with no tie. V is a chain of generators (constant memory). Exact integers, every n.
