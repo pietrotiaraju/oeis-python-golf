@@ -1,0 +1,6 @@
+{
+  "name": "Number of 2n-step self-avoiding cycles on the cubic lattice.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 120
+}

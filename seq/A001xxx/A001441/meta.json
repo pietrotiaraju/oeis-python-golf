@@ -1,0 +1,6 @@
+{
+  "name": "Number of inequivalent Costas arrays of order n under dihedral group.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 120
+}

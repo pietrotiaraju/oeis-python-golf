@@ -1,0 +1,6 @@
+{
+  "name": "Number of semigroups of order n, considered to be equivalent when they are isomorphic or anti-isomorphic (by reversal of the operator).",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 60
+}
