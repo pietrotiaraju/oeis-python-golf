@@ -1,0 +1,6 @@
+{
+  "name": "Maximal number of mutually orthogonal Latin squares (or MOLS) of order n.",
+  "offset": 2,
+  "min_terms": 8,
+  "timeout": 60
+}
