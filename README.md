@@ -1452,6 +1452,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001449](seq/A001xxx/A001449/) | Binomial coefficients binomial(5n,n). | **51** | 101 |
 | [A001450](seq/A001xxx/A001450/) | a(n) = binomial(5\*n,2\*n). | **53** | 101 |
 | [A001451](seq/A001xxx/A001451/) | a(n) = (5\*n)!/((3\*n)!\*n!\*n!). | **64** | 201 |
+| [A001452](seq/A001xxx/A001452/) | Number of 5-line partitions of n. | **89** | 6000 |
 | [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
 | [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
 | [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
@@ -1474,6 +1475,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001479](seq/A001xxx/A001479/) | Let p = A007645(n) be the n-th generalized cuban prime and write p = … | **87** | 1000 |
 | [A001480](seq/A001xxx/A001480/) | Let p = A007645(n) be the n-th generalized cuban prime and write p = … | **87** | 1000 |
 | [A001481](seq/A001xxx/A001481/) | Numbers that are the sum of 2 squares. | **70** | 10000 |
+| [A001482](seq/A001xxx/A001482/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^4 in powers of x. | **110** | 8000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |
