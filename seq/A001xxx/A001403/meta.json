@@ -1,0 +1,6 @@
+{
+  "name": "Number of combinatorial configurations of type (n_3).",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 120
+}

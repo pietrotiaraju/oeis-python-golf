@@ -1,0 +1,6 @@
+{
+  "name": "Number of symmetric Costas arrays of order n that are inequivalent under dihedral group.",
+  "offset": 1,
+  "min_terms": 16,
+  "timeout": 60
+}
