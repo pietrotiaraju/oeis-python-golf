@@ -1,0 +1,6 @@
+{
+  "name": "High temperature series for partition function for spin-1/2 Ising model on b.c.c. lattice.",
+  "offset": 0,
+  "min_terms": 5,
+  "timeout": 120
+}

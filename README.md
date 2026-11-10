@@ -1407,6 +1407,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001403](seq/A001xxx/A001403/) | Number of combinatorial configurations of type (n\_3). | **460** | 9 |
 | [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
+| [A001406](seq/A001xxx/A001406/) | High temperature series for partition function for spin-1/2 Ising… | **574** | 5 |
 | [A001407](seq/A001xxx/A001407/) | High temperature series for partition function for spin-1/2 Ising… | **456** | 8 |
 | [A001408](seq/A001xxx/A001408/) | High temperature series for spin-1/2 Ising specific heat on… | **437** | 5 |
 | [A001409](seq/A001xxx/A001409/) | Number of 2n-step polygons on cubic lattice. | **132** | 6 |
