@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = binomial(5*n,2*n).",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
