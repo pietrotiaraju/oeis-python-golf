@@ -1404,15 +1404,41 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001400](seq/A001xxx/A001400/) | Number of partitions of n into at most 4 parts. | **49** | 1001 |
 | [A001401](seq/A001xxx/A001401/) | Number of partitions of n into at most 5 parts. | **60** | 1001 |
 | [A001402](seq/A001xxx/A001402/) | Number of partitions of n into at most 6 parts. | **61** | 10001 |
+| [A001403](seq/A001xxx/A001403/) | Number of combinatorial configurations of type (n\_3). | **460** | 9 |
 | [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
+| [A001408](seq/A001xxx/A001408/) | High temperature series for spin-1/2 Ising specific heat on… | **437** | 5 |
+| [A001409](seq/A001xxx/A001409/) | Number of 2n-step polygons on cubic lattice. | **132** | 6 |
 | [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
+| [A001411](seq/A001xxx/A001411/) | Number of n-step self-avoiding walks on square lattice. | **100** | 16 |
+| [A001412](seq/A001xxx/A001412/) | Number of n-step self-avoiding walks on cubic lattice. | **109** | 11 |
+| [A001413](seq/A001xxx/A001413/) | Number of 2n-step self-avoiding cycles on the cubic lattice. | **121** | 5 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
+| [A001415](seq/A001xxx/A001415/) | Number of ways of folding a 2 X n strip of stamps. | **190** | 9 |
+| [A001416](seq/A001xxx/A001416/) | Number of ways of folding a 3 X n strip of stamps. | **206** | 6 |
+| [A001417](seq/A001xxx/A001417/) | Number of ways of folding a 2 X 2 X ... X 2 n-dimensional map. | **196** | 5 |
+| [A001418](seq/A001xxx/A001418/) | Number of ways of folding an n X n sheet of stamps. | **221** | 4 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
+| [A001423](seq/A001xxx/A001423/) | Number of semigroups of order n, considered to be equivalent when… | **348** | 6 |
+| [A001424](seq/A001xxx/A001424/) | Number of nonisomorphic and nonantiisomorphic groupoids with n… | **280** | 9 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
+| [A001426](seq/A001xxx/A001426/) | Number of commutative semigroups of order n. | **357** | 6 |
+| [A001427](seq/A001xxx/A001427/) | Number of regular semigroups of order n, considered to be equivalent… | **397** | 5 |
+| [A001428](seq/A001xxx/A001428/) | Number of inverse semigroups of order n, considered to be equivalent… | **424** | 5 |
 | [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
+| [A001430](seq/A001xxx/A001430/) | Number of graphs with n nodes and n-2 edges. | **270** | 23 |
+| [A001431](seq/A001xxx/A001431/) | Number of graphs with n nodes and n-3 edges. | **271** | 23 |
+| [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **271** | 23 |
+| [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **264** | 23 |
+| [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **264** | 24 |
+| [A001435](seq/A001xxx/A001435/) | Number of connected graphs with n nodes and n+1 edges. | **366** | 21 |
+| [A001436](seq/A001xxx/A001436/) | Number of connected graphs with n nodes, n+2 edges. | **400** | 21 |
 | [A001437](seq/A001xxx/A001437/) | Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges. | **455** | 18 |
+| [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
+| [A001440](seq/A001xxx/A001440/) | Number of symmetric Costas arrays of order n that are inequivalent… | **200** | 16 |
+| [A001441](seq/A001xxx/A001441/) | Number of inequivalent Costas arrays of order n under dihedral group. | **199** | 10 |
+| [A001443](seq/A001xxx/A001443/) | Number of strong starters in cyclic group of order 2n+1. | **153** | 11 |
 | [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
 | [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
 | [A001446](seq/A001xxx/A001446/) | a(n) = (4^n + 4^[n/2])/2. | **38** | 1000 |
@@ -1495,6 +1521,13 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001372](seq/A001xxx/A001372/) | Number of unlabeled mappings (or mapping patterns) from n points to… | **145** | 20 | 200 | 800 |
 | [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **148** | 20 | 246 | 509 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **196** | 17 | 237 | 30 |
+| [A001430](seq/A001xxx/A001430/) | Number of graphs with n nodes and n-2 edges. | **218** | 16 | 270 | 23 |
+| [A001431](seq/A001xxx/A001431/) | Number of graphs with n nodes and n-3 edges. | **222** | 16 | 271 | 23 |
+| [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **222** | 16 | 271 | 23 |
+| [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **213** | 16 | 264 | 23 |
+| [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **213** | 17 | 264 | 24 |
+| [A001435](seq/A001xxx/A001435/) | Number of connected graphs with n nodes and n+1 edges. | **315** | 16 | 366 | 21 |
+| [A001436](seq/A001xxx/A001436/) | Number of connected graphs with n nodes, n+2 edges. | **349** | 16 | 400 | 21 |
 | [A001437](seq/A001xxx/A001437/) | Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges. | **404** | 15 | 455 | 18 |
 
 <!-- short:end -->
