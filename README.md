@@ -1428,6 +1428,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **264** | 24 |
 | [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
 | [A001440](seq/A001xxx/A001440/) | Number of symmetric Costas arrays of order n that are inequivalent… | **200** | 16 |
+| [A001441](seq/A001xxx/A001441/) | Number of inequivalent Costas arrays of order n under dihedral group. | **199** | 10 |
 | [A001443](seq/A001xxx/A001443/) | Number of strong starters in cyclic group of order 2n+1. | **153** | 11 |
 | [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
 | [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
