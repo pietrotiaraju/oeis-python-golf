@@ -1,0 +1,6 @@
+{
+  "name": "Number of transpositions needed to generate permutations of length n.",
+  "offset": 1,
+  "min_terms": 450,
+  "timeout": 60
+}

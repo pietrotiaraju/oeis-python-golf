@@ -1503,15 +1503,34 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001506](seq/A001xxx/A001506/) | a(n) is the number of c-nets with n+1 vertices and 2n edges, n >= 1. | **165** | 200 |
 | [A001507](seq/A001xxx/A001507/) | a(n) is the number of c-nets with n+1 vertices and 2n+1 edges, n >= 1. | **170** | 203 |
 | [A001508](seq/A001xxx/A001508/) | a(n) is the number of c-nets with n+1 vertices and 2n+2 edges, n >= 1. | **174** | 204 |
+| [A001510](seq/A001xxx/A001510/) | a(n) = 2\*a(n-1)\*(a(n-1)-1) for n > 1, with a(0) = 1, a(1) = 2. | **32** | 10 |
+| [A001511](seq/A001xxx/A001511/) | The ruler function: exponent of the highest power of 2 dividing 2n.… | **34** | 10000 |
 | [A001513](seq/A001xxx/A001513/) | a(n) = (6\*n+1)\*(6\*n+5). | **28** | 1001 |
+| [A001519](seq/A001xxx/A001519/) | a(n) = 3\*a(n-1) - a(n-2) for n >= 2, with a(0) = a(1) = 1. | **31** | 201 |
+| [A001521](seq/A001xxx/A001521/) | a(1) = 1; thereafter a(n+1) = floor(sqrt(2\*a(n)\*(a(n)+1))). | **53** | 5000 |
 | [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
+| [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
 | [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
 | [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
 | [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |
 | [A001536](seq/A001xxx/A001536/) | a(n) = (11\*n+1)\*(11\*n+10). | **31** | 1001 |
 | [A001538](seq/A001xxx/A001538/) | a(n) = (12\*n+1)\*(12\*n+11). | **30** | 1001 |
 | [A001539](seq/A001xxx/A001539/) | a(n) = (4\*n+1)\*(4\*n+3). | **28** | 1001 |
+| [A001540](seq/A001xxx/A001540/) | Number of transpositions needed to generate permutations of length n. | **36** | 450 |
+| [A001541](seq/A001xxx/A001541/) | a(0) = 1, a(1) = 3; for n > 1, a(n) = 6\*a(n-1) - a(n-2). | **35** | 201 |
+| [A001542](seq/A001xxx/A001542/) | a(n) = 6\*a(n-1) - a(n-2) for n > 1, a(0)=0 and a(1)=2. | **34** | 101 |
+| [A001543](seq/A001xxx/A001543/) | a(0) = 1, a(n) = 5 + Product\_{i=0..n-1} a(i) for n > 0. | **32** | 13 |
+| [A001544](seq/A001xxx/A001544/) | A nonlinear recurrence: a(n) = a(n-1)^2 - 6\*a(n-1) + 6, with a(0) =… | **32** | 12 |
 | [A001545](seq/A001xxx/A001545/) | a(n) = (5\*n+1)\*(5\*n+4). | **30** | 1001 |
+| [A001550](seq/A001xxx/A001550/) | a(n) = 1^n + 2^n + 3^n. | **34** | 201 |
+| [A001551](seq/A001xxx/A001551/) | a(n) = 1^n + 2^n + 3^n + 4^n. | **39** | 201 |
+| [A001552](seq/A001xxx/A001552/) | a(n) = 1^n + 2^n + ... + 5^n. | **44** | 201 |
+| [A001553](seq/A001xxx/A001553/) | a(n) = 1^n + 2^n + ... + 6^n. | **49** | 201 |
+| [A001554](seq/A001xxx/A001554/) | a(n) = 1^n + 2^n + ... + 7^n. | **52** | 201 |
+| [A001555](seq/A001xxx/A001555/) | a(n) = 1^n + 2^n + ... + 8^n. | **52** | 1001 |
+| [A001556](seq/A001xxx/A001556/) | a(n) = 1^n + 2^n + ... + 9^n. | **53** | 201 |
+| [A001557](seq/A001xxx/A001557/) | a(n) = 1^n + 2^n + ... + 10^n. | **53** | 201 |
+| [A001559](seq/A001xxx/A001559/) | a(0) = 1, a(1) = 4; thereafter a(n)\*(2n + 10) - a(n-1)\*(11n + 35) +… | **66** | 201 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
