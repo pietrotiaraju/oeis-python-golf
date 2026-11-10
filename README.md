@@ -1414,6 +1414,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001416](seq/A001xxx/A001416/) | Number of ways of folding a 3 X n strip of stamps. | **206** | 6 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
+| [A001423](seq/A001xxx/A001423/) | Number of semigroups of order n, considered to be equivalent when… | **348** | 6 |
 | [A001424](seq/A001xxx/A001424/) | Number of nonisomorphic and nonantiisomorphic groupoids with n… | **280** | 9 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
 | [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
