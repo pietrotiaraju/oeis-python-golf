@@ -1,0 +1,6 @@
+{
+  "name": "Number of degree-n odd permutations of order 2.",
+  "offset": 0,
+  "min_terms": 801,
+  "timeout": 60
+}

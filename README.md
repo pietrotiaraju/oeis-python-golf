@@ -1455,12 +1455,23 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
 | [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
 | [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
+| [A001461](seq/A001xxx/A001461/) | Partial sums of A006206. | **103** | 1000 |
+| [A001464](seq/A001xxx/A001464/) | Expansion of e.g.f. exp(-x - (1/2)\*x^2). | **42** | 808 |
+| [A001465](seq/A001xxx/A001465/) | Number of degree-n odd permutations of order 2. | **58** | 801 |
+| [A001469](seq/A001xxx/A001469/) | Genocchi numbers (of first kind); unsigned coefficients give… | **70** | 275 |
+| [A001470](seq/A001xxx/A001470/) | Number of degree-n permutations of order dividing 3. | **50** | 632 |
+| [A001471](seq/A001xxx/A001471/) | Number of degree-n permutations of order exactly 3. | **52** | 101 |
+| [A001472](seq/A001xxx/A001472/) | Number of degree-n permutations of order dividing 4. | **66** | 571 |
+| [A001473](seq/A001xxx/A001473/) | Number of degree-n permutations of order exactly 4. | **84** | 565 |
+| [A001475](seq/A001xxx/A001475/) | a(n) = a(n-1) + n \* a(n-2), where a(1) = 1, a(2) = 2. | **42** | 795 |
 | [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
 | [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |
 | [A001496](seq/A001xxx/A001496/) | Number of 4 X 4 matrices with nonnegative integer entries and row and… | **68** | 1001 |
+| [A001497](seq/A001xxx/A001497/) | Triangle of coefficients of Bessel polynomials (exponents in… | **79** | 1326 |
+| [A001498](seq/A001xxx/A001498/) | Triangle a(n,k) (n >= 0, 0 <= k <= n) of coefficients of Bessel… | **76** | 1326 |
 | [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
