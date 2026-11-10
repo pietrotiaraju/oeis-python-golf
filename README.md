@@ -1458,6 +1458,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
+| [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |
+| [A001496](seq/A001xxx/A001496/) | Number of 4 X 4 matrices with nonnegative integer entries and row and… | **68** | 1001 |
+| [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
