@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges.",
+  "offset": 2,
+  "min_terms": 18,
+  "timeout": 60
+}
