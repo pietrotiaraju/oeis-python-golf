@@ -1,0 +1,6 @@
+{
+  "name": "w such that w^3+x^3+y^3+z^3=0, w>|x|>|y|>|z|, is soluble.",
+  "offset": 1,
+  "min_terms": 65,
+  "timeout": 60
+}

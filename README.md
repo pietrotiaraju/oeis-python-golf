@@ -1407,6 +1407,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001403](seq/A001xxx/A001403/) | Number of combinatorial configurations of type (n\_3). | **460** | 9 |
 | [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
+| [A001406](seq/A001xxx/A001406/) | High temperature series for partition function for spin-1/2 Ising… | **574** | 5 |
 | [A001407](seq/A001xxx/A001407/) | High temperature series for partition function for spin-1/2 Ising… | **456** | 8 |
 | [A001408](seq/A001xxx/A001408/) | High temperature series for spin-1/2 Ising specific heat on… | **437** | 5 |
 | [A001409](seq/A001xxx/A001409/) | Number of 2n-step polygons on cubic lattice. | **132** | 6 |
@@ -1441,6 +1442,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
 | [A001440](seq/A001xxx/A001440/) | Number of symmetric Costas arrays of order n that are inequivalent… | **200** | 16 |
 | [A001441](seq/A001xxx/A001441/) | Number of inequivalent Costas arrays of order n under dihedral group. | **199** | 10 |
+| [A001442](seq/A001xxx/A001442/) | G-symmetric Costas arrays of order n that are inequivalent under… | **289** | 12 |
 | [A001443](seq/A001xxx/A001443/) | Number of strong starters in cyclic group of order 2n+1. | **153** | 11 |
 | [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
 | [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
@@ -1450,14 +1452,48 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001449](seq/A001xxx/A001449/) | Binomial coefficients binomial(5n,n). | **51** | 101 |
 | [A001450](seq/A001xxx/A001450/) | a(n) = binomial(5\*n,2\*n). | **53** | 101 |
 | [A001451](seq/A001xxx/A001451/) | a(n) = (5\*n)!/((3\*n)!\*n!\*n!). | **64** | 201 |
+| [A001452](seq/A001xxx/A001452/) | Number of 5-line partitions of n. | **89** | 6000 |
 | [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
 | [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
 | [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
+| [A001461](seq/A001xxx/A001461/) | Partial sums of A006206. | **103** | 1000 |
+| [A001462](seq/A001xxx/A001462/) | Golomb's sequence: a(n) is the number of times n occurs in the… | **46** | 10000 |
+| [A001463](seq/A001xxx/A001463/) | Partial sums of A001462; also a(n) is the last occurrence of n in… | **47** | 10000 |
+| [A001464](seq/A001xxx/A001464/) | Expansion of e.g.f. exp(-x - (1/2)\*x^2). | **42** | 808 |
+| [A001465](seq/A001xxx/A001465/) | Number of degree-n odd permutations of order 2. | **58** | 801 |
+| [A001466](seq/A001xxx/A001466/) | Denominators of greedy Egyptian fraction expansion of Pi - 3. | **98** | 10 |
+| [A001467](seq/A001xxx/A001467/) | Denominators of an expansion for Pi. | **152** | 9 |
+| [A001468](seq/A001xxx/A001468/) | There are a(n) 2's between successive 1's. | **38** | 1001 |
+| [A001469](seq/A001xxx/A001469/) | Genocchi numbers (of first kind); unsigned coefficients give… | **70** | 275 |
+| [A001470](seq/A001xxx/A001470/) | Number of degree-n permutations of order dividing 3. | **50** | 632 |
+| [A001471](seq/A001xxx/A001471/) | Number of degree-n permutations of order exactly 3. | **52** | 101 |
+| [A001472](seq/A001xxx/A001472/) | Number of degree-n permutations of order dividing 4. | **66** | 571 |
+| [A001473](seq/A001xxx/A001473/) | Number of degree-n permutations of order exactly 4. | **84** | 565 |
+| [A001474](seq/A001xxx/A001474/) | w such that w^3+x^3+y^3+z^3=0, w>\|x\|>\|y\|>\|z\|, is soluble. | **139** | 65 |
+| [A001475](seq/A001xxx/A001475/) | a(n) = a(n-1) + n \* a(n-2), where a(1) = 1, a(2) = 2. | **42** | 795 |
+| [A001476](seq/A001xxx/A001476/) | Numbers that are not the sum of distinct positive cubes. | **61** | 2788 |
 | [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
 | [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
+| [A001479](seq/A001xxx/A001479/) | Let p = A007645(n) be the n-th generalized cuban prime and write p = … | **87** | 1000 |
+| [A001480](seq/A001xxx/A001480/) | Let p = A007645(n) be the n-th generalized cuban prime and write p = … | **87** | 1000 |
+| [A001481](seq/A001xxx/A001481/) | Numbers that are the sum of 2 squares. | **70** | 10000 |
+| [A001482](seq/A001xxx/A001482/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^4 in powers of x. | **110** | 8000 |
+| [A001483](seq/A001xxx/A001483/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^5 in powers of x. | **110** | 8000 |
+| [A001484](seq/A001xxx/A001484/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^6 in powers of x. | **110** | 8000 |
+| [A001485](seq/A001xxx/A001485/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^7 in powers of x. | **110** | 8000 |
+| [A001486](seq/A001xxx/A001486/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^8 in powers of x. | **110** | 8000 |
+| [A001487](seq/A001xxx/A001487/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^9 in powers of x. | **111** | 8000 |
+| [A001488](seq/A001xxx/A001488/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^10 in powers of x. | **111** | 8000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
+| [A001490](seq/A001xxx/A001490/) | Expansion of {Product\_{j>=1} (1 - (-x)^j) - 1}^12 in powers of x. | **111** | 8000 |
 | [A001491](seq/A001xxx/A001491/) | Opus numbers of Beethoven's nine symphonies. | **29** | 9 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
+| [A001494](seq/A001xxx/A001494/) | Numbers k such that phi(k) = phi(k+2). | **115** | 10000 |
+| [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |
+| [A001496](seq/A001xxx/A001496/) | Number of 4 X 4 matrices with nonnegative integer entries and row and… | **68** | 1001 |
+| [A001497](seq/A001xxx/A001497/) | Triangle of coefficients of Bessel polynomials (exponents in… | **79** | 1326 |
+| [A001498](seq/A001xxx/A001498/) | Triangle a(n,k) (n >= 0, 0 <= k <= n) of coefficients of Bessel… | **76** | 1326 |
+| [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

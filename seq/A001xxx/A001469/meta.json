@@ -1,0 +1,6 @@
+{
+  "name": "Genocchi numbers (of first kind); unsigned coefficients give expansion of x*tan(x/2).",
+  "offset": 1,
+  "min_terms": 275,
+  "timeout": 60
+}

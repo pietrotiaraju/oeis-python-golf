@@ -1,0 +1,6 @@
+{
+  "name": "Number of degree-n permutations of order exactly 4.",
+  "offset": 1,
+  "min_terms": 565,
+  "timeout": 60
+}

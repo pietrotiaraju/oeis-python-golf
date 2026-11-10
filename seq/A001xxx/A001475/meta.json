@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = a(n-1) + n * a(n-2), where a(1) = 1, a(2) = 2.",
+  "offset": 1,
+  "min_terms": 795,
+  "timeout": 60
+}

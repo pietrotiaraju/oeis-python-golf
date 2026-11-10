@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of (Product_{j>=1} (1-(-x)^j) - 1)^4 in powers of x.",
+  "offset": 4,
+  "min_terms": 8000,
+  "timeout": 60
+}

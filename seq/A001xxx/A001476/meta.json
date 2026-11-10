@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are not the sum of distinct positive cubes.",
+  "offset": 1,
+  "min_terms": 2788,
+  "timeout": 60
+}

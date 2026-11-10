@@ -1,0 +1,6 @@
+{
+  "name": "Number of degree-n permutations of order dividing 4.",
+  "offset": 0,
+  "min_terms": 571,
+  "timeout": 60
+}
