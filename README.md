@@ -1428,6 +1428,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
 | [A001430](seq/A001xxx/A001430/) | Number of graphs with n nodes and n-2 edges. | **270** | 23 |
 | [A001431](seq/A001xxx/A001431/) | Number of graphs with n nodes and n-3 edges. | **271** | 23 |
+| [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **271** | 23 |
 | [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **264** | 23 |
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **264** | 24 |
 | [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
@@ -1518,6 +1519,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **196** | 17 | 237 | 30 |
 | [A001430](seq/A001xxx/A001430/) | Number of graphs with n nodes and n-2 edges. | **218** | 16 | 270 | 23 |
 | [A001431](seq/A001xxx/A001431/) | Number of graphs with n nodes and n-3 edges. | **222** | 16 | 271 | 23 |
+| [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **222** | 16 | 271 | 23 |
 | [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **213** | 16 | 264 | 23 |
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **213** | 17 | 264 | 24 |
 
