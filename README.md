@@ -1411,6 +1411,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001412](seq/A001xxx/A001412/) | Number of n-step self-avoiding walks on cubic lattice. | **109** | 11 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
 | [A001415](seq/A001xxx/A001415/) | Number of ways of folding a 2 X n strip of stamps. | **190** | 9 |
+| [A001416](seq/A001xxx/A001416/) | Number of ways of folding a 3 X n strip of stamps. | **206** | 6 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001424](seq/A001xxx/A001424/) | Number of nonisomorphic and nonantiisomorphic groupoids with n… | **280** | 9 |
