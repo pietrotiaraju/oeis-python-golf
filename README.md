@@ -1409,6 +1409,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
 | [A001411](seq/A001xxx/A001411/) | Number of n-step self-avoiding walks on square lattice. | **100** | 16 |
 | [A001412](seq/A001xxx/A001412/) | Number of n-step self-avoiding walks on cubic lattice. | **109** | 11 |
+| [A001413](seq/A001xxx/A001413/) | Number of 2n-step self-avoiding cycles on the cubic lattice. | **121** | 5 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
 | [A001415](seq/A001xxx/A001415/) | Number of ways of folding a 2 X n strip of stamps. | **190** | 9 |
 | [A001416](seq/A001xxx/A001416/) | Number of ways of folding a 3 X n strip of stamps. | **206** | 6 |
