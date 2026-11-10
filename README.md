@@ -1414,6 +1414,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001415](seq/A001xxx/A001415/) | Number of ways of folding a 2 X n strip of stamps. | **190** | 9 |
 | [A001416](seq/A001xxx/A001416/) | Number of ways of folding a 3 X n strip of stamps. | **206** | 6 |
 | [A001417](seq/A001xxx/A001417/) | Number of ways of folding a 2 X 2 X ... X 2 n-dimensional map. | **196** | 5 |
+| [A001418](seq/A001xxx/A001418/) | Number of ways of folding an n X n sheet of stamps. | **221** | 4 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001423](seq/A001xxx/A001423/) | Number of semigroups of order n, considered to be equivalent when… | **348** | 6 |
