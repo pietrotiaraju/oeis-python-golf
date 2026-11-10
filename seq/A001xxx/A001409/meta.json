@@ -1,0 +1,6 @@
+{
+  "name": "Number of 2n-step polygons on cubic lattice.",
+  "offset": 0,
+  "min_terms": 6,
+  "timeout": 120
+}
