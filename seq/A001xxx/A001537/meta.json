@@ -1,0 +1,6 @@
+{
+  "name": "Invertible Boolean functions with AG(n,2) acting on the domain and range.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}

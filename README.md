@@ -1531,6 +1531,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
 | [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |
 | [A001536](seq/A001xxx/A001536/) | a(n) = (11\*n+1)\*(11\*n+10). | **31** | 1001 |
+| [A001537](seq/A001xxx/A001537/) | Invertible Boolean functions with AG(n,2) acting on the domain and… | **611** | 6 |
 | [A001538](seq/A001xxx/A001538/) | a(n) = (12\*n+1)\*(12\*n+11). | **30** | 1001 |
 | [A001539](seq/A001xxx/A001539/) | a(n) = (4\*n+1)\*(4\*n+3). | **28** | 1001 |
 | [A001540](seq/A001xxx/A001540/) | Number of transpositions needed to generate permutations of length n. | **36** | 450 |
