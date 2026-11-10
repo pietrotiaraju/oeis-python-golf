@@ -1,0 +1,6 @@
+{
+  "name": "Catalan numbers - 1.",
+  "offset": 2,
+  "min_terms": 499,
+  "timeout": 60
+}
