@@ -1,0 +1,6 @@
+{
+  "name": "Number of stacks, or arrangements of n pennies in contiguous rows, each touching 2 in row below.",
+  "offset": 0,
+  "min_terms": 3500,
+  "timeout": 60
+}

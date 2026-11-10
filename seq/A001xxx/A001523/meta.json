@@ -1,0 +1,6 @@
+{
+  "name": "Number of stacks, or planar partitions of n; also number of weakly unimodal compositions of n.",
+  "offset": 0,
+  "min_terms": 3500,
+  "timeout": 60
+}
