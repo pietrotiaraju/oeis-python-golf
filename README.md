@@ -1424,6 +1424,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
 | [A001426](seq/A001xxx/A001426/) | Number of commutative semigroups of order n. | **357** | 6 |
 | [A001427](seq/A001xxx/A001427/) | Number of regular semigroups of order n, considered to be equivalent… | **397** | 5 |
+| [A001428](seq/A001xxx/A001428/) | Number of inverse semigroups of order n, considered to be equivalent… | **424** | 5 |
 | [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **264** | 24 |
 | [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
