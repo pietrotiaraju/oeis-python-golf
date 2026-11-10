@@ -1446,6 +1446,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001447](seq/A001xxx/A001447/) | a(n) = (5^n + 5^floor(n/2))/2. | **38** | 301 |
 | [A001448](seq/A001xxx/A001448/) | a(n) = binomial(4n,2n) or (4\*n)!/((2\*n)!\*(2\*n)!). | **49** | 101 |
 | [A001449](seq/A001xxx/A001449/) | Binomial coefficients binomial(5n,n). | **51** | 101 |
+| [A001450](seq/A001xxx/A001450/) | a(n) = binomial(5\*n,2\*n). | **53** | 101 |
+| [A001451](seq/A001xxx/A001451/) | a(n) = (5\*n)!/((3\*n)!\*n!\*n!). | **64** | 201 |
+| [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
+| [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
+| [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
+| [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
+| [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
+| [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
+| [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
