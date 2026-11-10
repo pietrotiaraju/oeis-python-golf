@@ -1486,6 +1486,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001488](seq/A001xxx/A001488/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^10 in powers of x. | **111** | 8000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
 | [A001490](seq/A001xxx/A001490/) | Expansion of {Product\_{j>=1} (1 - (-x)^j) - 1}^12 in powers of x. | **111** | 8000 |
+| [A001491](seq/A001xxx/A001491/) | Opus numbers of Beethoven's nine symphonies. | **29** | 9 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A001494](seq/A001xxx/A001494/) | Numbers k such that phi(k) = phi(k+2). | **115** | 10000 |
 | [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |

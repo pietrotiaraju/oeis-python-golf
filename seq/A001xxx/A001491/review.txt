@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+f27c423ede45 Finite real-world list (keywords fini, full): the opus numbers of Beethoven's nine symphonies, Op. 21, 36, 55, 60, 67, 68, 92, 93, 125 in symphony order, as in the OEIS entry and Grove's Beethoven and his Nine Symphonies. The program stores them one byte each in a bytes literal (0x15 raw, and the unknown escape \] standing for the bytes 92, 93) and prints the nine values, then stops; the page explains the encoding and lists the works.
