@@ -1,0 +1,6 @@
+{
+  "name": "Number of n X n 0-1 matrices with all column and row sums equal to 3.",
+  "offset": 0,
+  "min_terms": 186,
+  "timeout": 90
+}
