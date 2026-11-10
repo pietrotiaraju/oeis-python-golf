@@ -1468,6 +1468,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001471](seq/A001xxx/A001471/) | Number of degree-n permutations of order exactly 3. | **52** | 101 |
 | [A001472](seq/A001xxx/A001472/) | Number of degree-n permutations of order dividing 4. | **66** | 571 |
 | [A001473](seq/A001xxx/A001473/) | Number of degree-n permutations of order exactly 4. | **84** | 565 |
+| [A001474](seq/A001xxx/A001474/) | w such that w^3+x^3+y^3+z^3=0, w>\|x\|>\|y\|>\|z\|, is soluble. | **139** | 65 |
 | [A001475](seq/A001xxx/A001475/) | a(n) = a(n-1) + n \* a(n-2), where a(1) = 1, a(2) = 2. | **42** | 795 |
 | [A001476](seq/A001xxx/A001476/) | Numbers that are not the sum of distinct positive cubes. | **61** | 2788 |
 | [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
