@@ -1419,6 +1419,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001417](seq/A001xxx/A001417/) | Number of ways of folding a 2 X 2 X ... X 2 n-dimensional map. | **196** | 5 |
 | [A001418](seq/A001xxx/A001418/) | Number of ways of folding an n X n sheet of stamps. | **221** | 4 |
 | [A001419](seq/A001xxx/A001419/) | Number of n-celled polyominoes with holes. | **413** | 13 |
+| [A001420](seq/A001xxx/A001420/) | Number of fixed 2-dimensional triangular-celled animals with n cells… | **153** | 18 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001423](seq/A001xxx/A001423/) | Number of semigroups of order n, considered to be equivalent when… | **348** | 6 |
