@@ -1,0 +1,6 @@
+{
+  "name": "Denominators of an expansion for Pi.",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}

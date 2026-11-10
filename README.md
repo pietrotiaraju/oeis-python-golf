@@ -1462,6 +1462,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001464](seq/A001xxx/A001464/) | Expansion of e.g.f. exp(-x - (1/2)\*x^2). | **42** | 808 |
 | [A001465](seq/A001xxx/A001465/) | Number of degree-n odd permutations of order 2. | **58** | 801 |
 | [A001466](seq/A001xxx/A001466/) | Denominators of greedy Egyptian fraction expansion of Pi - 3. | **98** | 10 |
+| [A001467](seq/A001xxx/A001467/) | Denominators of an expansion for Pi. | **152** | 9 |
 | [A001468](seq/A001xxx/A001468/) | There are a(n) 2's between successive 1's. | **38** | 1001 |
 | [A001469](seq/A001xxx/A001469/) | Genocchi numbers (of first kind); unsigned coefficients give… | **70** | 275 |
 | [A001470](seq/A001xxx/A001470/) | Number of degree-n permutations of order dividing 3. | **50** | 632 |
