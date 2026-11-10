@@ -1499,9 +1499,26 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001497](seq/A001xxx/A001497/) | Triangle of coefficients of Bessel polynomials (exponents in… | **79** | 1326 |
 | [A001498](seq/A001xxx/A001498/) | Triangle a(n,k) (n >= 0, 0 <= k <= n) of coefficients of Bessel… | **76** | 1326 |
 | [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
+| [A001504](seq/A001xxx/A001504/) | a(n) = (3\*n+1)\*(3\*n+2). | **28** | 1001 |
+| [A001505](seq/A001xxx/A001505/) | a(n) = (4\*n+1)\*(4\*n+2)\*(4\*n+3). | **29** | 1001 |
 | [A001506](seq/A001xxx/A001506/) | a(n) is the number of c-nets with n+1 vertices and 2n edges, n >= 1. | **165** | 200 |
 | [A001507](seq/A001xxx/A001507/) | a(n) is the number of c-nets with n+1 vertices and 2n+1 edges, n >= 1. | **170** | 203 |
 | [A001508](seq/A001xxx/A001508/) | a(n) is the number of c-nets with n+1 vertices and 2n+2 edges, n >= 1. | **174** | 204 |
+| [A001509](seq/A001xxx/A001509/) | a(n) = (5\*n + 1)\*(5\*n + 2)\*(5\*n + 3). | **29** | 1001 |
+| [A001512](seq/A001xxx/A001512/) | a(n) = (5\*n+1)\*(5\*n+2)\*(5\*n+3)\*(5\*n+4). | **36** | 1001 |
+| [A001513](seq/A001xxx/A001513/) | a(n) = (6\*n+1)\*(6\*n+5). | **28** | 1001 |
+| [A001520](seq/A001xxx/A001520/) | a(n) = (6\*n+1)\*(6\*n+3)\*(6\*n+5). | **31** | 1001 |
+| [A001525](seq/A001xxx/A001525/) | a(n) = (3n)!/(3!n!). | **37** | 100 |
+| [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
+| [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
+| [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
+| [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |
+| [A001536](seq/A001xxx/A001536/) | a(n) = (11\*n+1)\*(11\*n+10). | **31** | 1001 |
+| [A001538](seq/A001xxx/A001538/) | a(n) = (12\*n+1)\*(12\*n+11). | **30** | 1001 |
+| [A001539](seq/A001xxx/A001539/) | a(n) = (4\*n+1)\*(4\*n+3). | **28** | 1001 |
+| [A001545](seq/A001xxx/A001545/) | a(n) = (5\*n+1)\*(5\*n+4). | **30** | 1001 |
+| [A001546](seq/A001xxx/A001546/) | a(n) = (8\*n+1)\*(8\*n+3)\*(8\*n+5)\*(8\*n+7). | **36** | 10001 |
+| [A001547](seq/A001xxx/A001547/) | a(n) = (7\*n+1)\*(7\*n+2)\*(7\*n+4). | **34** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
