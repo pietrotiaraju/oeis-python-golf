@@ -44,8 +44,9 @@ while 1:C+=f(),;C+=C[-1]+f(),;print(C[-1]or 1)
 **Notes**
 
 - The cached recursion over the differences d_i (as in
-  [A001524](../A001524/)) is shorter, but with d_i = 0 allowed it nests n
-  levels deep and keeps n² values: it stops near n = 1000.
+  [A001524](../A001524/), with weight d+1 for d ≥ 0) is 126 bytes, but
+  with d_i = 0 allowed it nests n levels deep (two frames each) and keeps
+  n² values: it hits the recursion limit at n = 500.
 - Exact integer arithmetic, so the program is right for every n, given the
   generating function above. a(n) has about 1.6·√n digits, far from the
   4300-digit int-to-str limit.

@@ -1525,12 +1525,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001525](seq/A001xxx/A001525/) | a(n) = (3n)!/(3!n!). | **37** | 100 |
 | [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
 | [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
+| [A001528](seq/A001xxx/A001528/) | NPN-equivalence classes of switching functions of exactly n variables. | **234** | 7 |
 | [A001529](seq/A001xxx/A001529/) | Number of NPN-equivalence classes of threshold functions of n or… | **223** | 7 |
 | [A001530](seq/A001xxx/A001530/) | NPN-equivalence classes of threshold functions of exactly n variables. | **233** | 7 |
+| [A001531](seq/A001xxx/A001531/) | Number of self-dual Boolean functions of n variables that are… | **265** | 9 |
+| [A001532](seq/A001xxx/A001532/) | Number of NP-equivalence classes of self-dual threshold functions of… | **221** | 6 |
 | [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
 | [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
 | [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |
 | [A001536](seq/A001xxx/A001536/) | a(n) = (11\*n+1)\*(11\*n+10). | **31** | 1001 |
+| [A001537](seq/A001xxx/A001537/) | Invertible Boolean functions with AG(n,2) acting on the domain and… | **611** | 6 |
 | [A001538](seq/A001xxx/A001538/) | a(n) = (12\*n+1)\*(12\*n+11). | **30** | 1001 |
 | [A001539](seq/A001xxx/A001539/) | a(n) = (4\*n+1)\*(4\*n+3). | **28** | 1001 |
 | [A001540](seq/A001xxx/A001540/) | Number of transpositions needed to generate permutations of length n. | **36** | 450 |
