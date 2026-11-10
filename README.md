@@ -1407,6 +1407,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001403](seq/A001xxx/A001403/) | Number of combinatorial configurations of type (n\_3). | **460** | 9 |
 | [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
+| [A001409](seq/A001xxx/A001409/) | Number of 2n-step polygons on cubic lattice. | **132** | 6 |
 | [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
 | [A001411](seq/A001xxx/A001411/) | Number of n-step self-avoiding walks on square lattice. | **100** | 16 |
 | [A001412](seq/A001xxx/A001412/) | Number of n-step self-avoiding walks on cubic lattice. | **109** | 11 |
