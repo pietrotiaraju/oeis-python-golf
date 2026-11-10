@@ -1,0 +1,6 @@
+{
+  "name": "The nonnegative integers.",
+  "offset": 0,
+  "min_terms": 500001,
+  "timeout": 60
+}
