@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-dual Boolean functions of n variables that are distinct under complementation/permutation.",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}
