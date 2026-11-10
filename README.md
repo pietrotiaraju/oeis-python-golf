@@ -1431,6 +1431,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **271** | 23 |
 | [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **264** | 23 |
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **264** | 24 |
+| [A001435](seq/A001xxx/A001435/) | Number of connected graphs with n nodes and n+1 edges. | **366** | 21 |
 | [A001438](seq/A001xxx/A001438/) | Maximal number of mutually orthogonal Latin squares (or MOLS) of… | **330** | 8 |
 | [A001440](seq/A001xxx/A001440/) | Number of symmetric Costas arrays of order n that are inequivalent… | **200** | 16 |
 | [A001441](seq/A001xxx/A001441/) | Number of inequivalent Costas arrays of order n under dihedral group. | **199** | 10 |
@@ -1522,6 +1523,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001432](seq/A001xxx/A001432/) | Number of graphs with n nodes and n-4 edges. | **222** | 16 | 271 | 23 |
 | [A001433](seq/A001xxx/A001433/) | Number of graphs with n nodes and n-1 edges. | **213** | 16 | 264 | 23 |
 | [A001434](seq/A001xxx/A001434/) | Number of graphs with n nodes and n edges. | **213** | 17 | 264 | 24 |
+| [A001435](seq/A001xxx/A001435/) | Number of connected graphs with n nodes and n+1 edges. | **315** | 16 | 366 | 21 |
 
 <!-- short:end -->
 
