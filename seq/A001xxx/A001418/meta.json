@@ -1,0 +1,6 @@
+{
+  "name": "Number of ways of folding an n X n sheet of stamps.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 120
+}
