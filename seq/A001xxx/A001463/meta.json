@@ -1,0 +1,6 @@
+{
+  "name": "Partial sums of A001462; also a(n) is the last occurrence of n in A001462.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
