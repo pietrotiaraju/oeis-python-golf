@@ -1499,6 +1499,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001497](seq/A001xxx/A001497/) | Triangle of coefficients of Bessel polynomials (exponents in… | **79** | 1326 |
 | [A001498](seq/A001xxx/A001498/) | Triangle a(n,k) (n >= 0, 0 <= k <= n) of coefficients of Bessel… | **76** | 1326 |
 | [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
+| [A001506](seq/A001xxx/A001506/) | a(n) is the number of c-nets with n+1 vertices and 2n edges, n >= 1. | **165** | 200 |
+| [A001507](seq/A001xxx/A001507/) | a(n) is the number of c-nets with n+1 vertices and 2n+1 edges, n >= 1. | **170** | 203 |
+| [A001508](seq/A001xxx/A001508/) | a(n) is the number of c-nets with n+1 vertices and 2n+2 edges, n >= 1. | **174** | 204 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
