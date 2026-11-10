@@ -1,0 +1,6 @@
+{
+  "name": "Number of graphs with n nodes and n edges.",
+  "offset": 0,
+  "min_terms": 24,
+  "timeout": 60
+}
