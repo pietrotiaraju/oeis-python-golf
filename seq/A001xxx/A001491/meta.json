@@ -1,0 +1,6 @@
+{
+  "name": "Opus numbers of Beethoven's nine symphonies.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}

@@ -1456,6 +1456,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
 | [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
+| [A001491](seq/A001xxx/A001491/) | Opus numbers of Beethoven's nine symphonies. | **29** | 9 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
