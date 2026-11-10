@@ -1,0 +1,6 @@
+{
+  "name": "Number of nonisomorphic and nonantiisomorphic groupoids with n elements.",
+  "offset": 0,
+  "min_terms": 9,
+  "timeout": 60
+}
