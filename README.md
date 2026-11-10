@@ -1527,6 +1527,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
 | [A001528](seq/A001xxx/A001528/) | NPN-equivalence classes of switching functions of exactly n variables. | **234** | 7 |
 | [A001531](seq/A001xxx/A001531/) | Number of self-dual Boolean functions of n variables that are… | **265** | 9 |
+| [A001532](seq/A001xxx/A001532/) | Number of NP-equivalence classes of self-dual threshold functions of… | **221** | 6 |
 | [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
 | [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
 | [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |

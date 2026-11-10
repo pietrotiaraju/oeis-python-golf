@@ -1,0 +1,6 @@
+{
+  "name": "Number of NP-equivalence classes of self-dual threshold functions of n or fewer variables; number of majority (i.e., decisive and weighted) games with n players.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
