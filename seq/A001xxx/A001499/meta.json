@@ -1,0 +1,6 @@
+{
+  "name": "Number of n X n matrices with exactly 2 1's in each row and column, other entries 0.",
+  "offset": 0,
+  "min_terms": 254,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Number of 4 X 4 matrices with nonnegative integer entries and row and column sums equal to n.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
