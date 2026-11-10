@@ -1539,6 +1539,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001545](seq/A001xxx/A001545/) | a(n) = (5\*n+1)\*(5\*n+4). | **30** | 1001 |
 | [A001546](seq/A001xxx/A001546/) | a(n) = (8\*n+1)\*(8\*n+3)\*(8\*n+5)\*(8\*n+7). | **36** | 10001 |
 | [A001547](seq/A001xxx/A001547/) | a(n) = (7\*n+1)\*(7\*n+2)\*(7\*n+4). | **34** | 1001 |
+| [A001548](seq/A001xxx/A001548/) | Number of connected linear spaces with n (unlabeled) points. | **412** | 9 |
 | [A001550](seq/A001xxx/A001550/) | a(n) = 1^n + 2^n + 3^n. | **34** | 201 |
 | [A001551](seq/A001xxx/A001551/) | a(n) = 1^n + 2^n + 3^n + 4^n. | **39** | 201 |
 | [A001552](seq/A001xxx/A001552/) | a(n) = 1^n + 2^n + ... + 5^n. | **44** | 201 |
@@ -1633,6 +1634,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001435](seq/A001xxx/A001435/) | Number of connected graphs with n nodes and n+1 edges. | **315** | 16 | 366 | 21 |
 | [A001436](seq/A001xxx/A001436/) | Number of connected graphs with n nodes, n+2 edges. | **349** | 16 | 400 | 21 |
 | [A001437](seq/A001xxx/A001437/) | Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges. | **404** | 15 | 455 | 18 |
+| [A001548](seq/A001xxx/A001548/) | Number of connected linear spaces with n (unlabeled) points. | **318** | 7 | 412 | 9 |
 
 <!-- short:end -->
 
