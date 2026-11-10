@@ -1511,9 +1511,17 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001511](seq/A001xxx/A001511/) | The ruler function: exponent of the highest power of 2 dividing 2n.… | **34** | 10000 |
 | [A001512](seq/A001xxx/A001512/) | a(n) = (5\*n+1)\*(5\*n+2)\*(5\*n+3)\*(5\*n+4). | **36** | 1001 |
 | [A001513](seq/A001xxx/A001513/) | a(n) = (6\*n+1)\*(6\*n+5). | **28** | 1001 |
+| [A001514](seq/A001xxx/A001514/) | Bessel polynomial {y\_n}'(1). | **49** | 401 |
+| [A001515](seq/A001xxx/A001515/) | Bessel polynomial y\_n(x) evaluated at x=1. | **40** | 405 |
+| [A001516](seq/A001xxx/A001516/) | Bessel polynomial {y\_n}''(1). | **59** | 401 |
+| [A001517](seq/A001xxx/A001517/) | Bessel polynomials y\_n(x) (see A001498) evaluated at 2. | **42** | 335 |
+| [A001518](seq/A001xxx/A001518/) | Bessel polynomial y\_n(3). | **42** | 201 |
 | [A001519](seq/A001xxx/A001519/) | a(n) = 3\*a(n-1) - a(n-2) for n >= 2, with a(0) = a(1) = 1. | **31** | 201 |
 | [A001520](seq/A001xxx/A001520/) | a(n) = (6\*n+1)\*(6\*n+3)\*(6\*n+5). | **31** | 1001 |
 | [A001521](seq/A001xxx/A001521/) | a(1) = 1; thereafter a(n+1) = floor(sqrt(2\*a(n)\*(a(n)+1))). | **53** | 5000 |
+| [A001522](seq/A001xxx/A001522/) | Number of n-stacks with strictly receding walls, or the number of… | **114** | 5000 |
+| [A001523](seq/A001xxx/A001523/) | Number of stacks, or planar partitions of n; also number of weakly… | **140** | 3500 |
+| [A001524](seq/A001xxx/A001524/) | Number of stacks, or arrangements of n pennies in contiguous rows,… | **122** | 3500 |
 | [A001525](seq/A001xxx/A001525/) | a(n) = (3n)!/(3!n!). | **37** | 100 |
 | [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
 | [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
@@ -1539,6 +1547,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001555](seq/A001xxx/A001555/) | a(n) = 1^n + 2^n + ... + 8^n. | **52** | 1001 |
 | [A001556](seq/A001xxx/A001556/) | a(n) = 1^n + 2^n + ... + 9^n. | **53** | 201 |
 | [A001557](seq/A001xxx/A001557/) | a(n) = 1^n + 2^n + ... + 10^n. | **53** | 201 |
+| [A001558](seq/A001xxx/A001558/) | Number of hill-free Dyck paths of semilength n+3 and having length of… | **79** | 1000 |
 | [A001559](seq/A001xxx/A001559/) | a(0) = 1, a(1) = 4; thereafter a(n)\*(2n + 10) - a(n-1)\*(11n + 35) +… | **66** | 201 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

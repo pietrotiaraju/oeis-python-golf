@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-stacks with strictly receding walls, or the number of Type A partitions of n in the sense of Auluck (1951).",
+  "offset": 0,
+  "min_terms": 5000,
+  "timeout": 60
+}
