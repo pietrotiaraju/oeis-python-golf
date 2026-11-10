@@ -1,0 +1,6 @@
+{
+  "name": "Number of 5-line partitions of n.",
+  "offset": 0,
+  "min_terms": 6000,
+  "timeout": 60
+}

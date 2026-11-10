@@ -1452,6 +1452,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001449](seq/A001xxx/A001449/) | Binomial coefficients binomial(5n,n). | **51** | 101 |
 | [A001450](seq/A001xxx/A001450/) | a(n) = binomial(5\*n,2\*n). | **53** | 101 |
 | [A001451](seq/A001xxx/A001451/) | a(n) = (5\*n)!/((3\*n)!\*n!\*n!). | **64** | 201 |
+| [A001452](seq/A001xxx/A001452/) | Number of 5-line partitions of n. | **89** | 6000 |
 | [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
 | [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
 | [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
@@ -1466,7 +1467,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001475](seq/A001xxx/A001475/) | a(n) = a(n-1) + n \* a(n-2), where a(1) = 1, a(2) = 2. | **42** | 795 |
 | [A001477](seq/A001xxx/A001477/) | The nonnegative integers. | **24** | 500001 |
 | [A001478](seq/A001xxx/A001478/) | The negative integers. | **25** | 10000 |
+| [A001482](seq/A001xxx/A001482/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^4 in powers of x. | **110** | 8000 |
+| [A001483](seq/A001xxx/A001483/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^5 in powers of x. | **110** | 8000 |
+| [A001484](seq/A001xxx/A001484/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^6 in powers of x. | **110** | 8000 |
+| [A001485](seq/A001xxx/A001485/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^7 in powers of x. | **110** | 8000 |
+| [A001486](seq/A001xxx/A001486/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^8 in powers of x. | **110** | 8000 |
+| [A001487](seq/A001xxx/A001487/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^9 in powers of x. | **111** | 8000 |
+| [A001488](seq/A001xxx/A001488/) | Expansion of (Product\_{j>=1} (1-(-x)^j) - 1)^10 in powers of x. | **111** | 8000 |
 | [A001489](seq/A001xxx/A001489/) | a(n) = -n. | **24** | 1001 |
+| [A001490](seq/A001xxx/A001490/) | Expansion of {Product\_{j>=1} (1 - (-x)^j) - 1}^12 in powers of x. | **111** | 8000 |
 | [A001492](seq/A001xxx/A001492/) | Clock chimes with a quarter-hour bell. | **39** | 1001 |
 | [A001495](seq/A001xxx/A001495/) | Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and… | **80** | 201 |
 | [A001496](seq/A001xxx/A001496/) | Number of 4 X 4 matrices with nonnegative integer entries and row and… | **68** | 1001 |
