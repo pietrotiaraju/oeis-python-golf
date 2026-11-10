@@ -1404,14 +1404,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001400](seq/A001xxx/A001400/) | Number of partitions of n into at most 4 parts. | **49** | 1001 |
 | [A001401](seq/A001xxx/A001401/) | Number of partitions of n into at most 5 parts. | **60** | 1001 |
 | [A001402](seq/A001xxx/A001402/) | Number of partitions of n into at most 6 parts. | **61** | 10001 |
-| [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **89** | 69 |
+| [A001404](seq/A001xxx/A001404/) | Triangle of values of 2-d recurrence. | **80** | 69 |
 | [A001405](seq/A001xxx/A001405/) | a(n) = binomial(n, floor(n/2)). | **42** | 1001 |
-| [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **84** | 27 |
+| [A001410](seq/A001xxx/A001410/) | Sum of rows of triangle defined in A001404. | **81** | 27 |
 | [A001411](seq/A001xxx/A001411/) | Number of n-step self-avoiding walks on square lattice. | **100** | 16 |
 | [A001414](seq/A001xxx/A001414/) | Integer log of n: sum of primes dividing n (with repetition). Also… | **71** | 50000 |
 | [A001421](seq/A001xxx/A001421/) | a(n) = (6\*n)!/((n!)^3\*(3\*n)!). | **56** | 311 |
 | [A001422](seq/A001xxx/A001422/) | Numbers which are not the sum of distinct squares. | **51** | 31 |
 | [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **237** | 30 |
+| [A001429](seq/A001xxx/A001429/) | Number of n-node connected unicyclic graphs. | **318** | 498 |
 | [A001444](seq/A001xxx/A001444/) | Bending a piece of wire of length n+1 (configurations that can only… | **38** | 1001 |
 | [A001445](seq/A001xxx/A001445/) | a(n) = (2^n + 2^[ n/2 ] )/2. | **38** | 1000 |
 | [A001446](seq/A001xxx/A001446/) | a(n) = (4^n + 4^[n/2])/2. | **38** | 1000 |
@@ -1493,6 +1494,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001349](seq/A001xxx/A001349/) | Number of simple connected graphs on n unlabeled nodes. | **207** | 23 | 242 | 40 |
 | [A001372](seq/A001xxx/A001372/) | Number of unlabeled mappings (or mapping patterns) from n points to… | **145** | 20 | 200 | 800 |
 | [A001373](seq/A001xxx/A001373/) | Number of functional digraphs (digraphs of functions on n nodes where… | **148** | 20 | 246 | 509 |
+| [A001425](seq/A001xxx/A001425/) | Number of commutative groupoids with n elements. | **196** | 17 | 237 | 30 |
 
 <!-- short:end -->
 

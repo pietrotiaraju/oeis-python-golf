@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-node connected unicyclic graphs.",
+  "offset": 3,
+  "min_terms": 498,
+  "timeout": 60
+}
