@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of length n with longest increasing subsequence of length 6.",
+  "offset": 6,
+  "min_terms": 88,
+  "timeout": 60
+}

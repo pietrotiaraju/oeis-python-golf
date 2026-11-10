@@ -1454,6 +1454,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001451](seq/A001xxx/A001451/) | a(n) = (5\*n)!/((3\*n)!\*n!\*n!). | **64** | 201 |
 | [A001452](seq/A001xxx/A001452/) | Number of 5-line partitions of n. | **89** | 6000 |
 | [A001453](seq/A001xxx/A001453/) | Catalan numbers - 1. | **43** | 499 |
+| [A001454](seq/A001xxx/A001454/) | Number of permutations of length n with longest increasing… | **100** | 998 |
+| [A001455](seq/A001xxx/A001455/) | Number of permutations of length n with longest increasing… | **131** | 190 |
+| [A001456](seq/A001xxx/A001456/) | Number of permutations of length n with longest increasing… | **131** | 115 |
+| [A001457](seq/A001xxx/A001457/) | Number of permutations of length n with longest increasing… | **131** | 88 |
+| [A001458](seq/A001xxx/A001458/) | Number of permutations of length n with longest increasing… | **132** | 72 |
 | [A001459](seq/A001xxx/A001459/) | a(n) = (5\*n)!/((2\*n)!\*(2\*n)!\*n!). | **66** | 401 |
 | [A001460](seq/A001xxx/A001460/) | a(n) = (5\*n)!/((2\*n)!\*(n!)^3). | **66** | 401 |
 | [A001461](seq/A001xxx/A001461/) | Partial sums of A006206. | **103** | 1000 |
