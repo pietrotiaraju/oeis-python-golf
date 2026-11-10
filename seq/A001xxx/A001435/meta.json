@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected graphs with n nodes and n+1 edges.",
+  "offset": 1,
+  "min_terms": 21,
+  "timeout": 60
+}
