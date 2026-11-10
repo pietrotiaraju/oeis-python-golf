@@ -1525,6 +1525,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001525](seq/A001xxx/A001525/) | a(n) = (3n)!/(3!n!). | **37** | 100 |
 | [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
 | [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
+| [A001528](seq/A001xxx/A001528/) | NPN-equivalence classes of switching functions of exactly n variables. | **234** | 7 |
 | [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
 | [A001534](seq/A001xxx/A001534/) | a(n) = (9\*n+1)\*(9\*n+8). | **30** | 1001 |
 | [A001535](seq/A001xxx/A001535/) | a(n) = (10n+1)\*(10n+9). | **30** | 1001 |
