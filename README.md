@@ -1502,14 +1502,19 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001500](seq/A001xxx/A001500/) | Number of stochastic matrices of integers: n X n arrays of… | **156** | 181 |
 | [A001501](seq/A001xxx/A001501/) | Number of n X n 0-1 matrices with all column and row sums equal to 3. | **159** | 186 |
 | [A001504](seq/A001xxx/A001504/) | a(n) = (3\*n+1)\*(3\*n+2). | **28** | 1001 |
+| [A001505](seq/A001xxx/A001505/) | a(n) = (4\*n+1)\*(4\*n+2)\*(4\*n+3). | **29** | 1001 |
 | [A001506](seq/A001xxx/A001506/) | a(n) is the number of c-nets with n+1 vertices and 2n edges, n >= 1. | **165** | 200 |
 | [A001507](seq/A001xxx/A001507/) | a(n) is the number of c-nets with n+1 vertices and 2n+1 edges, n >= 1. | **170** | 203 |
 | [A001508](seq/A001xxx/A001508/) | a(n) is the number of c-nets with n+1 vertices and 2n+2 edges, n >= 1. | **174** | 204 |
+| [A001509](seq/A001xxx/A001509/) | a(n) = (5\*n + 1)\*(5\*n + 2)\*(5\*n + 3). | **29** | 1001 |
 | [A001510](seq/A001xxx/A001510/) | a(n) = 2\*a(n-1)\*(a(n-1)-1) for n > 1, with a(0) = 1, a(1) = 2. | **32** | 10 |
 | [A001511](seq/A001xxx/A001511/) | The ruler function: exponent of the highest power of 2 dividing 2n.… | **34** | 10000 |
+| [A001512](seq/A001xxx/A001512/) | a(n) = (5\*n+1)\*(5\*n+2)\*(5\*n+3)\*(5\*n+4). | **36** | 1001 |
 | [A001513](seq/A001xxx/A001513/) | a(n) = (6\*n+1)\*(6\*n+5). | **28** | 1001 |
 | [A001519](seq/A001xxx/A001519/) | a(n) = 3\*a(n-1) - a(n-2) for n >= 2, with a(0) = a(1) = 1. | **31** | 201 |
+| [A001520](seq/A001xxx/A001520/) | a(n) = (6\*n+1)\*(6\*n+3)\*(6\*n+5). | **31** | 1001 |
 | [A001521](seq/A001xxx/A001521/) | a(1) = 1; thereafter a(n+1) = floor(sqrt(2\*a(n)\*(a(n)+1))). | **53** | 5000 |
+| [A001525](seq/A001xxx/A001525/) | a(n) = (3n)!/(3!n!). | **37** | 100 |
 | [A001526](seq/A001xxx/A001526/) | a(n) = (7\*n+1)\*(7\*n+6). | **30** | 1001 |
 | [A001527](seq/A001xxx/A001527/) | a(n) = 2 \* Sum\_{i=0..n} C(2^n-1, i). | **61** | 31 |
 | [A001533](seq/A001xxx/A001533/) | a(n) = (8\*n+1)\*(8\*n+7). | **28** | 1001 |
@@ -1524,6 +1529,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001543](seq/A001xxx/A001543/) | a(0) = 1, a(n) = 5 + Product\_{i=0..n-1} a(i) for n > 0. | **32** | 13 |
 | [A001544](seq/A001xxx/A001544/) | A nonlinear recurrence: a(n) = a(n-1)^2 - 6\*a(n-1) + 6, with a(0) =… | **32** | 12 |
 | [A001545](seq/A001xxx/A001545/) | a(n) = (5\*n+1)\*(5\*n+4). | **30** | 1001 |
+| [A001546](seq/A001xxx/A001546/) | a(n) = (8\*n+1)\*(8\*n+3)\*(8\*n+5)\*(8\*n+7). | **36** | 10001 |
+| [A001547](seq/A001xxx/A001547/) | a(n) = (7\*n+1)\*(7\*n+2)\*(7\*n+4). | **34** | 1001 |
 | [A001550](seq/A001xxx/A001550/) | a(n) = 1^n + 2^n + 3^n. | **34** | 201 |
 | [A001551](seq/A001xxx/A001551/) | a(n) = 1^n + 2^n + 3^n + 4^n. | **39** | 201 |
 | [A001552](seq/A001xxx/A001552/) | a(n) = 1^n + 2^n + ... + 5^n. | **44** | 201 |
