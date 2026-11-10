@@ -1,0 +1,6 @@
+{
+  "name": "Number of n-celled polyominoes with holes.",
+  "offset": 1,
+  "min_terms": 13,
+  "timeout": 120
+}

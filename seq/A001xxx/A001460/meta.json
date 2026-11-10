@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = (5*n)!/((2*n)!*(n!)^3).",
+  "offset": 0,
+  "min_terms": 401,
+  "timeout": 60
+}
