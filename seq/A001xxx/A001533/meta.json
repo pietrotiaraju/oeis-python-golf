@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = (8*n+1)*(8*n+7).",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}
