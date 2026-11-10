@@ -1,0 +1,6 @@
+{
+  "name": "Number of stochastic matrices of integers: n X n arrays of nonnegative integers with all row and column sums equal to 3.",
+  "offset": 0,
+  "min_terms": 181,
+  "timeout": 90
+}

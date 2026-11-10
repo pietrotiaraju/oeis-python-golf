@@ -1499,6 +1499,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001497](seq/A001xxx/A001497/) | Triangle of coefficients of Bessel polynomials (exponents in… | **79** | 1326 |
 | [A001498](seq/A001xxx/A001498/) | Triangle a(n,k) (n >= 0, 0 <= k <= n) of coefficients of Bessel… | **76** | 1326 |
 | [A001499](seq/A001xxx/A001499/) | Number of n X n matrices with exactly 2 1's in each row and column,… | **55** | 254 |
+| [A001500](seq/A001xxx/A001500/) | Number of stochastic matrices of integers: n X n arrays of… | **156** | 181 |
+| [A001501](seq/A001xxx/A001501/) | Number of n X n 0-1 matrices with all column and row sums equal to 3. | **159** | 186 |
 | [A001504](seq/A001xxx/A001504/) | a(n) = (3\*n+1)\*(3\*n+2). | **28** | 1001 |
 | [A001506](seq/A001xxx/A001506/) | a(n) is the number of c-nets with n+1 vertices and 2n edges, n >= 1. | **165** | 200 |
 | [A001507](seq/A001xxx/A001507/) | a(n) is the number of c-nets with n+1 vertices and 2n+1 edges, n >= 1. | **170** | 203 |
