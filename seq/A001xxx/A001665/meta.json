@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-avoiding n-step walks on Kagome lattice.",
+  "offset": 0,
+  "min_terms": 16,
+  "timeout": 60
+}
