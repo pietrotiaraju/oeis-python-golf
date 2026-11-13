@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that (10^k + 1)/11 is a prime.",
+  "offset": 1,
+  "min_terms": 3,
+  "timeout": 60
+}
