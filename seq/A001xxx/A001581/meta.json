@@ -1,0 +1,6 @@
+{
+  "name": "Winning moves in Fibonacci nim.",
+  "offset": 1,
+  "min_terms": 165109,
+  "timeout": 60
+}

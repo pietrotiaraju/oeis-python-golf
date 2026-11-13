@@ -1,0 +1,6 @@
+{
+  "name": "Smallest primitive prime factor of Fibonacci number F(n), or 1 if F(n) has no primitive prime factor.",
+  "offset": 1,
+  "min_terms": 80,
+  "timeout": 60
+}
