@@ -1656,6 +1656,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001671](seq/A001xxx/A001671/) | Powers of e rounded up. | **79** | 501 |
 | [A001672](seq/A001xxx/A001672/) | a(n) = floor(Pi^n). | **97** | 280 |
 | [A001673](seq/A001xxx/A001673/) | a(n) = ceiling(Pi^n). | **99** | 280 |
+| [A001674](seq/A001xxx/A001674/) | a(n) = floor(sqrt( 2\*Pi )^n). | **121** | 180 |
 | [A001677](seq/A001xxx/A001677/) | Number of series-parallel networks with n edges. | **144** | 499 |
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
