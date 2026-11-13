@@ -1623,8 +1623,19 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
 | [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
+| [A001630](seq/A001xxx/A001630/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 3504 |
+| [A001631](seq/A001xxx/A001631/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 1001 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
+| [A001634](seq/A001xxx/A001634/) | a(n) = a(n-2) + a(n-3) + a(n-4), with initial values a(0) = 0, a(1) =… | **45** | 501 |
+| [A001635](seq/A001xxx/A001635/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-6), n >= 7. | **48** | 1000 |
 | [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
+| [A001638](seq/A001xxx/A001638/) | A Fielder sequence: a(n) = a(n-1) + a(n-3) + a(n-4), n >= 4. | **46** | 1001 |
+| [A001639](seq/A001xxx/A001639/) | A Fielder sequence. a(n) = a(n-1) + a(n-3) + a(n-4) + a(n-5), n >= 6. | **49** | 1000 |
+| [A001641](seq/A001xxx/A001641/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) + a(n-4). | **47** | 1000 |
+| [A001642](seq/A001xxx/A001642/) | A Fielder sequence. | **50** | 1000 |
+| [A001644](seq/A001xxx/A001644/) | a(n) = a(n-1) + a(n-2) + a(n-3), a(0)=3, a(1)=1, a(2)=3. | **39** | 1001 |
+| [A001645](seq/A001xxx/A001645/) | A Fielder sequence. | **50** | 1000 |
+| [A001648](seq/A001xxx/A001648/) | Tetranacci numbers A073817 without the leading term 4. | **42** | 3501 |
 | [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
 | [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
 | [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
