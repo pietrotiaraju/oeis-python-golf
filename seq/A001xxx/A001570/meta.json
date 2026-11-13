@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that k^2 is centered hexagonal.",
+  "offset": 1,
+  "min_terms": 870,
+  "timeout": 60
+}

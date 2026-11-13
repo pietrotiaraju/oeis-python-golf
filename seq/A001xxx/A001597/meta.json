@@ -1,0 +1,6 @@
+{
+  "name": "Perfect powers: m^k where m > 0 and k >= 2.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
