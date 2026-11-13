@@ -1582,6 +1582,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001596](seq/A001xxx/A001596/) | a(n) = 7^n + n^7. | **32** | 1001 |
 | [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **102** | 10000 |
 | [A001598](seq/A001xxx/A001598/) | Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n)… | **118** | 1000 |
+| [A001599](seq/A001xxx/A001599/) | Harmonic or Ore numbers: numbers k such that the harmonic mean of the… | **106** | 28 |
 | [A001601](seq/A001xxx/A001601/) | a(n) = 2\*a(n-1)^2 - 1, if n>1. a(0)=1, a(1)=3. | **33** | 12 |
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
@@ -1594,6 +1595,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
 | [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
 | [A001615](seq/A001xxx/A001615/) | Dedekind psi function: n \* Product\_{p\|n, p prime} (1 + 1/p). | **83** | 10000 |
+| [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 3200 |
 | [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
