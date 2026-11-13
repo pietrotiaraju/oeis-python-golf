@@ -1610,6 +1610,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 9000 |
 | [A001617](seq/A001xxx/A001617/) | Genus of modular group Gamma\_0(n). Or, genus of modular curve X\_0(n). | **176** | 4400 |
 | [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
+| [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
