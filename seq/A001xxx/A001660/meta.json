@@ -1,0 +1,6 @@
+{
+  "name": "Hypotenusal numbers.",
+  "offset": 0,
+  "min_terms": 11,
+  "timeout": 60
+}

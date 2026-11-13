@@ -1,0 +1,6 @@
+{
+  "name": "Tetranacci numbers A073817 without the leading term 4.",
+  "offset": 1,
+  "min_terms": 3501,
+  "timeout": 60
+}
