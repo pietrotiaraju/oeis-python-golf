@@ -1,0 +1,6 @@
+{
+  "name": "Artiads: the primes p == 1 (mod 5) for which Fibonacci((p-1)/5) is divisible by p.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

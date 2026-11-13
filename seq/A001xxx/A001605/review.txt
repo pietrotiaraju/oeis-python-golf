@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+2fc582dc96ec Follows the definition directly: (a, b) walks (F(n), F(n+1)) from n = 3 (F(0), F(1), F(2) = 0, 1, 1 are not prime), and n is printed exactly when trial division by every d from 2 to math.isqrt(F(n)) finds no divisor, i.e. exactly when F(n) is prime. Exact integers throughout; correct for every n with no theorem or conjecture. The bar is 11 terms because proving F(83) prime this way takes about 3e8 divisions.

@@ -1563,14 +1563,24 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
 | [A001566](seq/A001xxx/A001566/) | a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2. | **27** | 13 |
+| [A001567](seq/A001xxx/A001567/) | Fermat pseudoprimes to base 2, also called Sarrus numbers or Poulet… | **95** | 800 |
+| [A001568](seq/A001xxx/A001568/) | Related to 3-line Latin rectangles. | **96** | 18 |
+| [A001569](seq/A001xxx/A001569/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = BesselI(0,2\*(1-exp(x))^(1/2)). | **79** | 20 |
 | [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
 | [A001571](seq/A001xxx/A001571/) | a(n) = 4\*a(n-1) - a(n-2) + 1, with a(0) = 0, a(1) = 2. | **35** | 201 |
+| [A001572](seq/A001xxx/A001572/) | Related to series-parallel networks. | **138** | 29 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
+| [A001577](seq/A001xxx/A001577/) | An operational recurrence. | **47** | 12 |
+| [A001578](seq/A001xxx/A001578/) | Smallest primitive prime factor of Fibonacci number F(n), or 1 if… | **108** | 80 |
 | [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
 | [A001580](seq/A001xxx/A001580/) | a(n) = 2^n + n^2. | **31** | 1001 |
+| [A001581](seq/A001xxx/A001581/) | Winning moves in Fibonacci nim. | **87** | 165109 |
 | [A001582](seq/A001xxx/A001582/) | Product of Fibonacci and Pell numbers. | **50** | 201 |
+| [A001583](seq/A001xxx/A001583/) | Artiads: the primes p == 1 (mod 5) for which Fibonacci((p-1)/5) is… | **107** | 10000 |
 | [A001584](seq/A001xxx/A001584/) | A generalized Fibonacci sequence. | **47** | 1001 |
 | [A001585](seq/A001xxx/A001585/) | a(n) = 3^n + n^3. | **32** | 1001 |
+| [A001586](seq/A001xxx/A001586/) | Generalized Euler numbers, or Springer numbers. | **80** | 433 |
+| [A001587](seq/A001xxx/A001587/) | Generalized Euler numbers. | **99** | 200 |
 | [A001588](seq/A001xxx/A001588/) | a(n) = a(n-1) + a(n-2) - 1. | **34** | 501 |
 | [A001589](seq/A001xxx/A001589/) | a(n) = 4^n + n^4. | **32** | 1001 |
 | [A001590](seq/A001xxx/A001590/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=0,… | **39** | 201 |
@@ -1584,8 +1594,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001598](seq/A001xxx/A001598/) | Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n)… | **118** | 1000 |
 | [A001599](seq/A001xxx/A001599/) | Harmonic or Ore numbers: numbers k such that the harmonic mean of the… | **106** | 28 |
 | [A001601](seq/A001xxx/A001601/) | a(n) = 2\*a(n-1)^2 - 1, if n>1. a(0)=1, a(1)=3. | **33** | 12 |
+| [A001602](seq/A001xxx/A001602/) | Fibonacci entry points: a(n) = smallest m > 0 such that the n-th… | **81** | 4000 |
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
+| [A001605](seq/A001xxx/A001605/) | Indices of prime Fibonacci numbers. | **100** | 11 |
 | [A001606](seq/A001xxx/A001606/) | Indices of prime Lucas numbers. | **105** | 18 |
 | [A001607](seq/A001xxx/A001607/) | a(n) = -a(n-1) - 2\*a(n-2). | **35** | 501 |
 | [A001608](seq/A001xxx/A001608/) | Perrin sequence (or Perrin numbers, or Ondrej Such sequence): a(n) =… | **41** | 8173 |
@@ -1596,8 +1608,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
 | [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
 | [A001615](seq/A001xxx/A001615/) | Dedekind psi function: n \* Product\_{p\|n, p prime} (1 + 1/p). | **83** | 10000 |
-| [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 3200 |
+| [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 9000 |
+| [A001617](seq/A001xxx/A001617/) | Genus of modular group Gamma\_0(n). Or, genus of modular curve X\_0(n). | **176** | 4400 |
 | [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
+| [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
+| [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

@@ -1,0 +1,6 @@
+{
+  "name": "Number of letters in English name for n increases at these numbers.",
+  "offset": 1,
+  "min_terms": 42,
+  "timeout": 60
+}
