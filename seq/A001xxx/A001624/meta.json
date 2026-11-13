@@ -1,0 +1,6 @@
+{
+  "name": "Related to Latin rectangles.",
+  "offset": 2,
+  "min_terms": 15,
+  "timeout": 60
+}
