@@ -1,0 +1,6 @@
+{
+  "name": "An operational recurrence.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 60
+}
