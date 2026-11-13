@@ -1569,6 +1569,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
 | [A001571](seq/A001xxx/A001571/) | a(n) = 4\*a(n-1) - a(n-2) + 1, with a(0) = 0, a(1) = 2. | **35** | 201 |
 | [A001572](seq/A001xxx/A001572/) | Related to series-parallel networks. | **138** | 29 |
+| [A001574](seq/A001xxx/A001574/) | Colored series-parallel networks. | **122** | 8 |
+| [A001575](seq/A001xxx/A001575/) | Colored series-parallel networks. | **139** | 8 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
 | [A001577](seq/A001xxx/A001577/) | An operational recurrence. | **47** | 12 |
 | [A001578](seq/A001xxx/A001578/) | Smallest primitive prime factor of Fibonacci number F(n), or 1 if… | **108** | 80 |
