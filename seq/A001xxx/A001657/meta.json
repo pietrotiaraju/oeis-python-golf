@@ -1,0 +1,6 @@
+{
+  "name": "Fibonomial coefficients: column 5 of A010048.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

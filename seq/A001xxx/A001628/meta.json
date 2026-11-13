@@ -1,0 +1,6 @@
+{
+  "name": "Convolved Fibonacci numbers.",
+  "offset": 0,
+  "min_terms": 4501,
+  "timeout": 60
+}
