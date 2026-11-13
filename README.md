@@ -1557,6 +1557,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001557](seq/A001xxx/A001557/) | a(n) = 1^n + 2^n + ... + 10^n. | **53** | 201 |
 | [A001558](seq/A001xxx/A001558/) | Number of hill-free Dyck paths of semilength n+3 and having length of… | **79** | 1000 |
 | [A001559](seq/A001xxx/A001559/) | a(0) = 1, a(1) = 4; thereafter a(n)\*(2n + 10) - a(n-1)\*(11n + 35) +… | **66** | 201 |
+| [A001561](seq/A001xxx/A001561/) | a(n) = (7\*n+3)\*(7\*n+5)\*(7\*n+6). | **33** | 1001 |
+| [A001563](seq/A001xxx/A001563/) | a(n) = n\*n! = (n+1)! - n!. | **35** | 101 |
+| [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
+| [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
+| [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
+| [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
+| [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
+| [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
