@@ -1,0 +1,6 @@
+{
+  "name": "Product of Fibonacci and Pell numbers.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}
