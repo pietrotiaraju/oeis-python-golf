@@ -1618,11 +1618,27 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
+| [A001622](seq/A001xxx/A001622/) | Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2. | **63** | 15000 |
+| [A001623](seq/A001xxx/A001623/) | Number of 3 X n reduced (normalized) Latin rectangles. | **93** | 252 |
 | [A001624](seq/A001xxx/A001624/) | Related to Latin rectangles. | **157** | 15 |
+| [A001626](seq/A001xxx/A001626/) | Number of 3-line Latin rectangles. | **95** | 17 |
+| [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
 | [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
+| [A001630](seq/A001xxx/A001630/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 3504 |
+| [A001631](seq/A001xxx/A001631/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 1001 |
+| [A001632](seq/A001xxx/A001632/) | Smallest prime p such that there is a gap of 2n between p and… | **72** | 22 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
+| [A001634](seq/A001xxx/A001634/) | a(n) = a(n-2) + a(n-3) + a(n-4), with initial values a(0) = 0, a(1) =… | **45** | 501 |
+| [A001635](seq/A001xxx/A001635/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-6), n >= 7. | **48** | 1000 |
 | [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
+| [A001638](seq/A001xxx/A001638/) | A Fielder sequence: a(n) = a(n-1) + a(n-3) + a(n-4), n >= 4. | **46** | 1001 |
+| [A001639](seq/A001xxx/A001639/) | A Fielder sequence. a(n) = a(n-1) + a(n-3) + a(n-4) + a(n-5), n >= 6. | **49** | 1000 |
+| [A001641](seq/A001xxx/A001641/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) + a(n-4). | **47** | 1000 |
+| [A001642](seq/A001xxx/A001642/) | A Fielder sequence. | **50** | 1000 |
+| [A001644](seq/A001xxx/A001644/) | a(n) = a(n-1) + a(n-2) + a(n-3), a(0)=3, a(1)=1, a(2)=3. | **39** | 1001 |
+| [A001645](seq/A001xxx/A001645/) | A Fielder sequence. | **50** | 1000 |
+| [A001648](seq/A001xxx/A001648/) | Tetranacci numbers A073817 without the leading term 4. | **42** | 3501 |
 | [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
 | [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
 | [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
@@ -1632,8 +1648,20 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001656](seq/A001xxx/A001656/) | Fibonomial coefficients. | **48** | 1001 |
 | [A001657](seq/A001xxx/A001657/) | Fibonomial coefficients: column 5 of A010048. | **44** | 201 |
 | [A001658](seq/A001xxx/A001658/) | Fibonomial coefficients. | **53** | 201 |
+| [A001659](seq/A001xxx/A001659/) | Expansion of bracket function. | **87** | 1000 |
+| [A001660](seq/A001xxx/A001660/) | Hypotenusal numbers. | **107** | 11 |
+| [A001662](seq/A001xxx/A001662/) | Coefficients of Airey's converging factor. | **104** | 201 |
+| [A001668](seq/A001xxx/A001668/) | Number of self-avoiding n-step walks on honeycomb lattice. | **96** | 24 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
+| [A001671](seq/A001xxx/A001671/) | Powers of e rounded up. | **79** | 501 |
+| [A001672](seq/A001xxx/A001672/) | a(n) = floor(Pi^n). | **97** | 280 |
+| [A001673](seq/A001xxx/A001673/) | a(n) = ceiling(Pi^n). | **99** | 280 |
+| [A001674](seq/A001xxx/A001674/) | a(n) = floor(sqrt( 2\*Pi )^n). | **121** | 180 |
+| [A001675](seq/A001xxx/A001675/) | a(n) = round(sqrt( 2\*Pi )^n). | **130** | 180 |
+| [A001677](seq/A001xxx/A001677/) | Number of series-parallel networks with n edges. | **144** | 499 |
+| [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
+| [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

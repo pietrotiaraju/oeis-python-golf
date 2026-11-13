@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2.",
+  "offset": 1,
+  "min_terms": 15000,
+  "timeout": 60
+}
