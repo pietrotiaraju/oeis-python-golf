@@ -1,0 +1,6 @@
+{
+  "name": "2n-step polygons on b.c.c. lattice.",
+  "offset": 2,
+  "min_terms": 4,
+  "timeout": 60
+}
