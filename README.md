@@ -1566,8 +1566,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
 | [A001571](seq/A001xxx/A001571/) | a(n) = 4\*a(n-1) - a(n-2) + 1, with a(0) = 0, a(1) = 2. | **35** | 201 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
+| [A001578](seq/A001xxx/A001578/) | Smallest primitive prime factor of Fibonacci number F(n), or 1 if… | **108** | 80 |
 | [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
 | [A001580](seq/A001xxx/A001580/) | a(n) = 2^n + n^2. | **31** | 1001 |
+| [A001581](seq/A001xxx/A001581/) | Winning moves in Fibonacci nim. | **87** | 165109 |
 | [A001582](seq/A001xxx/A001582/) | Product of Fibonacci and Pell numbers. | **50** | 201 |
 | [A001584](seq/A001xxx/A001584/) | A generalized Fibonacci sequence. | **47** | 1001 |
 | [A001585](seq/A001xxx/A001585/) | a(n) = 3^n + n^3. | **32** | 1001 |
