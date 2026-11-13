@@ -1650,6 +1650,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001659](seq/A001xxx/A001659/) | Expansion of bracket function. | **87** | 1000 |
 | [A001660](seq/A001xxx/A001660/) | Hypotenusal numbers. | **107** | 11 |
 | [A001662](seq/A001xxx/A001662/) | Coefficients of Airey's converging factor. | **104** | 201 |
+| [A001668](seq/A001xxx/A001668/) | Number of self-avoiding n-step walks on honeycomb lattice. | **96** | 24 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
 | [A001671](seq/A001xxx/A001671/) | Powers of e rounded up. | **79** | 501 |
