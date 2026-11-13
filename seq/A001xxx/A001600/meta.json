@@ -1,0 +1,6 @@
+{
+  "name": "Harmonic means of divisors of harmonic numbers.",
+  "offset": 1,
+  "min_terms": 28,
+  "timeout": 20
+}
