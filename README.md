@@ -1563,9 +1563,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
 | [A001566](seq/A001xxx/A001566/) | a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2. | **27** | 13 |
+| [A001568](seq/A001xxx/A001568/) | Related to 3-line Latin rectangles. | **96** | 18 |
+| [A001569](seq/A001xxx/A001569/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = BesselI(0,2\*(1-exp(x))^(1/2)). | **79** | 20 |
 | [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
 | [A001571](seq/A001xxx/A001571/) | a(n) = 4\*a(n-1) - a(n-2) + 1, with a(0) = 0, a(1) = 2. | **35** | 201 |
+| [A001572](seq/A001xxx/A001572/) | Related to series-parallel networks. | **138** | 29 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
+| [A001577](seq/A001xxx/A001577/) | An operational recurrence. | **47** | 12 |
 | [A001578](seq/A001xxx/A001578/) | Smallest primitive prime factor of Fibonacci number F(n), or 1 if… | **108** | 80 |
 | [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
 | [A001580](seq/A001xxx/A001580/) | a(n) = 2^n + n^2. | **31** | 1001 |
@@ -1573,6 +1577,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001582](seq/A001xxx/A001582/) | Product of Fibonacci and Pell numbers. | **50** | 201 |
 | [A001584](seq/A001xxx/A001584/) | A generalized Fibonacci sequence. | **47** | 1001 |
 | [A001585](seq/A001xxx/A001585/) | a(n) = 3^n + n^3. | **32** | 1001 |
+| [A001586](seq/A001xxx/A001586/) | Generalized Euler numbers, or Springer numbers. | **80** | 433 |
+| [A001587](seq/A001xxx/A001587/) | Generalized Euler numbers. | **99** | 200 |
 | [A001588](seq/A001xxx/A001588/) | a(n) = a(n-1) + a(n-2) - 1. | **34** | 501 |
 | [A001589](seq/A001xxx/A001589/) | a(n) = 4^n + n^4. | **32** | 1001 |
 | [A001590](seq/A001xxx/A001590/) | Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) with a(0)=0,… | **39** | 201 |

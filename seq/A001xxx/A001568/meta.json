@@ -1,0 +1,6 @@
+{
+  "name": "Related to 3-line Latin rectangles.",
+  "offset": 1,
+  "min_terms": 18,
+  "timeout": 60
+}
