@@ -1621,6 +1621,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001622](seq/A001xxx/A001622/) | Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2. | **63** | 15000 |
 | [A001623](seq/A001xxx/A001623/) | Number of 3 X n reduced (normalized) Latin rectangles. | **93** | 252 |
 | [A001624](seq/A001xxx/A001624/) | Related to Latin rectangles. | **157** | 15 |
+| [A001625](seq/A001xxx/A001625/) | Related to Latin rectangles. | **157** | 15 |
 | [A001626](seq/A001xxx/A001626/) | Number of 3-line Latin rectangles. | **95** | 17 |
 | [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
