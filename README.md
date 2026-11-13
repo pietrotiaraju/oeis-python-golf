@@ -1618,6 +1618,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
+| [A001623](seq/A001xxx/A001623/) | Number of 3 X n reduced (normalized) Latin rectangles. | **93** | 252 |
+| [A001626](seq/A001xxx/A001626/) | Number of 3-line Latin rectangles. | **95** | 17 |
+| [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
 | [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
@@ -1633,6 +1636,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001658](seq/A001xxx/A001658/) | Fibonomial coefficients. | **53** | 201 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
+| [A001677](seq/A001xxx/A001677/) | Number of series-parallel networks with n edges. | **144** | 499 |
+| [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
+| [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
