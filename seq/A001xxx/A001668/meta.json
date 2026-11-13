@@ -1,0 +1,6 @@
+{
+  "name": "Number of self-avoiding n-step walks on honeycomb lattice.",
+  "offset": 0,
+  "min_terms": 24,
+  "timeout": 120
+}
