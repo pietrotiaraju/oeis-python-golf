@@ -1626,6 +1626,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
 | [A001630](seq/A001xxx/A001630/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 3504 |
 | [A001631](seq/A001xxx/A001631/) | Tetranacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4), with… | **41** | 1001 |
+| [A001632](seq/A001xxx/A001632/) | Smallest prime p such that there is a gap of 2n between p and… | **72** | 22 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
 | [A001634](seq/A001xxx/A001634/) | a(n) = a(n-2) + a(n-3) + a(n-4), with initial values a(0) = 0, a(1) =… | **45** | 501 |
 | [A001635](seq/A001xxx/A001635/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-6), n >= 7. | **48** | 1000 |

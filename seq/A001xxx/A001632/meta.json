@@ -1,0 +1,6 @@
+{
+  "name": "Smallest prime p such that there is a gap of 2n between p and previous prime.",
+  "offset": 1,
+  "min_terms": 22,
+  "timeout": 60
+}
