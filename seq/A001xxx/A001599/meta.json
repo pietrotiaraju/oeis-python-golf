@@ -1,0 +1,6 @@
+{
+  "name": "Harmonic or Ore numbers: numbers k such that the harmonic mean of the divisors of k is an integer.",
+  "offset": 1,
+  "min_terms": 28,
+  "timeout": 20
+}

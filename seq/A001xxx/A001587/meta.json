@@ -1,0 +1,6 @@
+{
+  "name": "Generalized Euler numbers.",
+  "offset": 0,
+  "min_terms": 200,
+  "timeout": 60
+}

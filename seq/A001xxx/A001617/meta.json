@@ -1,0 +1,6 @@
+{
+  "name": "Genus of modular group Gamma_0(n). Or, genus of modular curve X_0(n).",
+  "offset": 1,
+  "min_terms": 4400,
+  "timeout": 30
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sum_{n>=0} a(n)*x^n/n!^2 = BesselI(0,2*(1-exp(x))^(1/2)).",
+  "offset": 0,
+  "min_terms": 20,
+  "timeout": 60
+}
