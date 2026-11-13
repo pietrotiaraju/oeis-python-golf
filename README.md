@@ -1563,6 +1563,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
 | [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
+| [A001580](seq/A001xxx/A001580/) | a(n) = 2^n + n^2. | **31** | 1001 |
+| [A001585](seq/A001xxx/A001585/) | a(n) = 3^n + n^3. | **32** | 1001 |
+| [A001589](seq/A001xxx/A001589/) | a(n) = 4^n + n^4. | **32** | 1001 |
+| [A001593](seq/A001xxx/A001593/) | a(n) = 5^n + n^5. | **32** | 1001 |
+| [A001594](seq/A001xxx/A001594/) | a(n) = 6^n + n^6. | **32** | 1001 |
+| [A001596](seq/A001xxx/A001596/) | a(n) = 7^n + n^7. | **32** | 1001 |
 | [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
 | [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
