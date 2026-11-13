@@ -1624,7 +1624,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
 | [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
+| [A001636](seq/A001xxx/A001636/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-7), n >= 8. | **51** | 1000 |
 | [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
+| [A001640](seq/A001xxx/A001640/) | A Fielder sequence. | **52** | 1000 |
+| [A001643](seq/A001xxx/A001643/) | A Fielder sequence. | **53** | 1000 |
+| [A001649](seq/A001xxx/A001649/) | A Fielder sequence. | **53** | 1000 |
 | [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
 | [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
 | [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
