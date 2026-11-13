@@ -1617,7 +1617,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
 | [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
+| [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
+| [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
+| [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
+| [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
+| [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
+| [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
+| [A001653](seq/A001xxx/A001653/) | Numbers k such that 2\*k^2 - 1 is a square. | **33** | 1000 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
+| [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
