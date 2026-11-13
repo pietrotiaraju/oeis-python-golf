@@ -1659,6 +1659,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001664](seq/A001xxx/A001664/) | Quadratic coefficient of the n-th converging polynomial of Weber… | **203** | 22 |
 | [A001665](seq/A001xxx/A001665/) | Number of self-avoiding n-step walks on Kagome lattice. | **126** | 16 |
 | [A001666](seq/A001xxx/A001666/) | Number of n-step self-avoiding walks on b.c.c. lattice (version 2). | **116** | 9 |
+| [A001667](seq/A001xxx/A001667/) | 2n-step polygons on b.c.c. lattice. | **128** | 4 |
 | [A001668](seq/A001xxx/A001668/) | Number of self-avoiding n-step walks on honeycomb lattice. | **96** | 24 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
