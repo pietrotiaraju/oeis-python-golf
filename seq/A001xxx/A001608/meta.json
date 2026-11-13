@@ -1,0 +1,6 @@
+{
+  "name": "Perrin sequence (or Perrin numbers, or Ondrej Such sequence): a(n) = a(n-2) + a(n-3) with a(0) = 3, a(1) = 0, a(2) = 2.",
+  "offset": 0,
+  "min_terms": 8173,
+  "timeout": 60
+}

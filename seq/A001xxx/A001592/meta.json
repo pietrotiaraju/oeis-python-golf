@@ -1,0 +1,6 @@
+{
+  "name": "Hexanacci numbers: a(n+1) = a(n)+...+a(n-5) with a(0)=...=a(4)=0, a(5)=1.",
+  "offset": 0,
+  "min_terms": 3362,
+  "timeout": 60
+}

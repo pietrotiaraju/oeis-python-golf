@@ -1,0 +1,6 @@
+{
+  "name": "a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3).",
+  "offset": 1,
+  "min_terms": 6012,
+  "timeout": 60
+}
