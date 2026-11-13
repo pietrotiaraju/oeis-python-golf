@@ -1563,6 +1563,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
 | [A001566](seq/A001xxx/A001566/) | a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2. | **27** | 13 |
+| [A001567](seq/A001xxx/A001567/) | Fermat pseudoprimes to base 2, also called Sarrus numbers or Poulet… | **95** | 800 |
 | [A001568](seq/A001xxx/A001568/) | Related to 3-line Latin rectangles. | **96** | 18 |
 | [A001569](seq/A001xxx/A001569/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = BesselI(0,2\*(1-exp(x))^(1/2)). | **79** | 20 |
 | [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
@@ -1575,6 +1576,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001580](seq/A001xxx/A001580/) | a(n) = 2^n + n^2. | **31** | 1001 |
 | [A001581](seq/A001xxx/A001581/) | Winning moves in Fibonacci nim. | **87** | 165109 |
 | [A001582](seq/A001xxx/A001582/) | Product of Fibonacci and Pell numbers. | **50** | 201 |
+| [A001583](seq/A001xxx/A001583/) | Artiads: the primes p == 1 (mod 5) for which Fibonacci((p-1)/5) is… | **107** | 10000 |
 | [A001584](seq/A001xxx/A001584/) | A generalized Fibonacci sequence. | **47** | 1001 |
 | [A001585](seq/A001xxx/A001585/) | a(n) = 3^n + n^3. | **32** | 1001 |
 | [A001586](seq/A001xxx/A001586/) | Generalized Euler numbers, or Springer numbers. | **80** | 433 |
@@ -1592,6 +1594,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001598](seq/A001xxx/A001598/) | Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n)… | **118** | 1000 |
 | [A001599](seq/A001xxx/A001599/) | Harmonic or Ore numbers: numbers k such that the harmonic mean of the… | **106** | 28 |
 | [A001601](seq/A001xxx/A001601/) | a(n) = 2\*a(n-1)^2 - 1, if n>1. a(0)=1, a(1)=3. | **33** | 12 |
+| [A001602](seq/A001xxx/A001602/) | Fibonacci entry points: a(n) = smallest m > 0 such that the n-th… | **81** | 4000 |
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
 | [A001607](seq/A001xxx/A001607/) | a(n) = -a(n-1) - 2\*a(n-2). | **35** | 501 |

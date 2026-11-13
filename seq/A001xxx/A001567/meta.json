@@ -1,0 +1,6 @@
+{
+  "name": "Fermat pseudoprimes to base 2, also called Sarrus numbers or Poulet numbers.",
+  "offset": 1,
+  "min_terms": 800,
+  "timeout": 60
+}
