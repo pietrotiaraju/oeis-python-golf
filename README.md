@@ -1559,6 +1559,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001559](seq/A001xxx/A001559/) | a(0) = 1, a(1) = 4; thereafter a(n)\*(2n + 10) - a(n-1)\*(11n + 35) +… | **66** | 201 |
 | [A001560](seq/A001xxx/A001560/) | Numbers with an even number of partitions. | **86** | 1000 |
 | [A001561](seq/A001xxx/A001561/) | a(n) = (7\*n+3)\*(7\*n+5)\*(7\*n+6). | **33** | 1001 |
+| [A001562](seq/A001xxx/A001562/) | Numbers k such that (10^k + 1)/11 is a prime. | **120** | 3 |
 | [A001563](seq/A001xxx/A001563/) | a(n) = n\*n! = (n+1)! - n!. | **35** | 101 |
 | [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
