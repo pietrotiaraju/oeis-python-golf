@@ -1618,6 +1618,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
+| [A001622](seq/A001xxx/A001622/) | Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2. | **63** | 15000 |
 | [A001623](seq/A001xxx/A001623/) | Number of 3 X n reduced (normalized) Latin rectangles. | **93** | 252 |
 | [A001626](seq/A001xxx/A001626/) | Number of 3-line Latin rectangles. | **95** | 17 |
 | [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
@@ -1645,8 +1646,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001656](seq/A001xxx/A001656/) | Fibonomial coefficients. | **48** | 1001 |
 | [A001657](seq/A001xxx/A001657/) | Fibonomial coefficients: column 5 of A010048. | **44** | 201 |
 | [A001658](seq/A001xxx/A001658/) | Fibonomial coefficients. | **53** | 201 |
+| [A001659](seq/A001xxx/A001659/) | Expansion of bracket function. | **87** | 1000 |
+| [A001660](seq/A001xxx/A001660/) | Hypotenusal numbers. | **107** | 11 |
+| [A001662](seq/A001xxx/A001662/) | Coefficients of Airey's converging factor. | **104** | 201 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
+| [A001671](seq/A001xxx/A001671/) | Powers of e rounded up. | **79** | 501 |
 | [A001677](seq/A001xxx/A001677/) | Number of series-parallel networks with n edges. | **144** | 499 |
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
