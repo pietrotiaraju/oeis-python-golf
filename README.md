@@ -1557,11 +1557,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001557](seq/A001xxx/A001557/) | a(n) = 1^n + 2^n + ... + 10^n. | **53** | 201 |
 | [A001558](seq/A001xxx/A001558/) | Number of hill-free Dyck paths of semilength n+3 and having length of… | **79** | 1000 |
 | [A001559](seq/A001xxx/A001559/) | a(0) = 1, a(1) = 4; thereafter a(n)\*(2n + 10) - a(n-1)\*(11n + 35) +… | **66** | 201 |
+| [A001560](seq/A001xxx/A001560/) | Numbers with an even number of partitions. | **86** | 1000 |
 | [A001561](seq/A001xxx/A001561/) | a(n) = (7\*n+3)\*(7\*n+5)\*(7\*n+6). | **33** | 1001 |
 | [A001563](seq/A001xxx/A001563/) | a(n) = n\*n! = (n+1)! - n!. | **35** | 101 |
 | [A001564](seq/A001xxx/A001564/) | 2nd differences of factorial numbers. | **39** | 101 |
 | [A001565](seq/A001xxx/A001565/) | 3rd differences of factorial numbers. | **43** | 101 |
 | [A001566](seq/A001xxx/A001566/) | a(0) = 3; thereafter, a(n) = a(n-1)^2 - 2. | **27** | 13 |
+| [A001570](seq/A001xxx/A001570/) | Numbers k such that k^2 is centered hexagonal. | **34** | 870 |
 | [A001571](seq/A001xxx/A001571/) | a(n) = 4\*a(n-1) - a(n-2) + 1, with a(0) = 0, a(1) = 2. | **35** | 201 |
 | [A001576](seq/A001xxx/A001576/) | a(n) = 1^n + 2^n + 4^n. | **29** | 201 |
 | [A001579](seq/A001xxx/A001579/) | a(n) = 3^n + 5^n + 6^n. | **37** | 301 |
@@ -1578,6 +1580,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001594](seq/A001xxx/A001594/) | a(n) = 6^n + n^6. | **32** | 1001 |
 | [A001595](seq/A001xxx/A001595/) | a(n) = a(n-1) + a(n-2) + 1, with a(0) = a(1) = 1. | **32** | 501 |
 | [A001596](seq/A001xxx/A001596/) | a(n) = 7^n + n^7. | **32** | 1001 |
+| [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **102** | 10000 |
+| [A001598](seq/A001xxx/A001598/) | Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n)… | **118** | 1000 |
 | [A001601](seq/A001xxx/A001601/) | a(n) = 2\*a(n-1)^2 - 1, if n>1. a(0)=1, a(1)=3. | **33** | 12 |
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
@@ -1589,6 +1593,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001612](seq/A001xxx/A001612/) | a(n) = a(n-1) + a(n-2) - 1 for n > 1, a(0)=3, a(1)=2. | **33** | 501 |
 | [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
 | [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
+| [A001615](seq/A001xxx/A001615/) | Dedekind psi function: n \* Product\_{p\|n, p prime} (1 + 1/p). | **83** | 10000 |
+| [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -1674,6 +1680,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001436](seq/A001xxx/A001436/) | Number of connected graphs with n nodes, n+2 edges. | **349** | 16 | 400 | 21 |
 | [A001437](seq/A001xxx/A001437/) | Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges. | **404** | 15 | 455 | 18 |
 | [A001548](seq/A001xxx/A001548/) | Number of connected linear spaces with n (unlabeled) points. | **318** | 7 | 412 | 9 |
+| [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **65** | 1000 | 102 | 10000 |
 
 <!-- short:end -->
 
