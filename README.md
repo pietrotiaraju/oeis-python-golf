@@ -1606,8 +1606,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001613](seq/A001xxx/A001613/) | Delete all odd digits from n. | **61** | 1001 |
 | [A001614](seq/A001xxx/A001614/) | Connell sequence: 1 odd, 2 even, 3 odd, ... | **40** | 1000 |
 | [A001615](seq/A001xxx/A001615/) | Dedekind psi function: n \* Product\_{p\|n, p prime} (1 + 1/p). | **83** | 10000 |
-| [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 3200 |
+| [A001616](seq/A001xxx/A001616/) | Number of parabolic vertices of Gamma\_0(n). | **116** | 9000 |
+| [A001617](seq/A001xxx/A001617/) | Genus of modular group Gamma\_0(n). Or, genus of modular curve X\_0(n). | **176** | 4400 |
 | [A001618](seq/A001xxx/A001618/) | Nearest integer to 2\*n\*log(n). | **159** | 100001 |
+| [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

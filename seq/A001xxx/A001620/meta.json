@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of Euler's constant (or the Euler-Mascheroni constant), gamma.",
+  "offset": 0,
+  "min_terms": 9800,
+  "timeout": 40
+}
