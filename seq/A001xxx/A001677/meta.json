@@ -1,0 +1,6 @@
+{
+  "name": "Number of series-parallel networks with n edges.",
+  "offset": 2,
+  "min_terms": 499,
+  "timeout": 60
+}
