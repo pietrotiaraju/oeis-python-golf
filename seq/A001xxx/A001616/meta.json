@@ -1,6 +1,6 @@
 {
   "name": "Number of parabolic vertices of Gamma_0(n).",
   "offset": 1,
-  "min_terms": 3200,
+  "min_terms": 9000,
   "timeout": 30
 }
