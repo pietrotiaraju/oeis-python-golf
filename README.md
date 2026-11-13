@@ -1620,6 +1620,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
 | [A001622](seq/A001xxx/A001622/) | Decimal expansion of golden ratio phi (or tau) = (1 + sqrt(5))/2. | **63** | 15000 |
 | [A001623](seq/A001xxx/A001623/) | Number of 3 X n reduced (normalized) Latin rectangles. | **93** | 252 |
+| [A001624](seq/A001xxx/A001624/) | Related to Latin rectangles. | **157** | 15 |
+| [A001625](seq/A001xxx/A001625/) | Related to Latin rectangles. | **157** | 15 |
 | [A001626](seq/A001xxx/A001626/) | Number of 3-line Latin rectangles. | **95** | 17 |
 | [A001627](seq/A001xxx/A001627/) | Related to Latin rectangles. | **105** | 17 |
 | [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
@@ -1630,14 +1632,18 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
 | [A001634](seq/A001xxx/A001634/) | a(n) = a(n-2) + a(n-3) + a(n-4), with initial values a(0) = 0, a(1) =… | **45** | 501 |
 | [A001635](seq/A001xxx/A001635/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-6), n >= 7. | **48** | 1000 |
+| [A001636](seq/A001xxx/A001636/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) - a(n-7), n >= 8. | **51** | 1000 |
 | [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
 | [A001638](seq/A001xxx/A001638/) | A Fielder sequence: a(n) = a(n-1) + a(n-3) + a(n-4), n >= 4. | **46** | 1001 |
 | [A001639](seq/A001xxx/A001639/) | A Fielder sequence. a(n) = a(n-1) + a(n-3) + a(n-4) + a(n-5), n >= 6. | **49** | 1000 |
+| [A001640](seq/A001xxx/A001640/) | A Fielder sequence. | **52** | 1000 |
 | [A001641](seq/A001xxx/A001641/) | A Fielder sequence: a(n) = a(n-1) + a(n-2) + a(n-4). | **47** | 1000 |
 | [A001642](seq/A001xxx/A001642/) | A Fielder sequence. | **50** | 1000 |
+| [A001643](seq/A001xxx/A001643/) | A Fielder sequence. | **53** | 1000 |
 | [A001644](seq/A001xxx/A001644/) | a(n) = a(n-1) + a(n-2) + a(n-3), a(0)=3, a(1)=1, a(2)=3. | **39** | 1001 |
 | [A001645](seq/A001xxx/A001645/) | A Fielder sequence. | **50** | 1000 |
 | [A001648](seq/A001xxx/A001648/) | Tetranacci numbers A073817 without the leading term 4. | **42** | 3501 |
+| [A001649](seq/A001xxx/A001649/) | A Fielder sequence. | **53** | 1000 |
 | [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
 | [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
 | [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
@@ -1650,10 +1656,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001659](seq/A001xxx/A001659/) | Expansion of bracket function. | **87** | 1000 |
 | [A001660](seq/A001xxx/A001660/) | Hypotenusal numbers. | **107** | 11 |
 | [A001662](seq/A001xxx/A001662/) | Coefficients of Airey's converging factor. | **104** | 201 |
+| [A001664](seq/A001xxx/A001664/) | Quadratic coefficient of the n-th converging polynomial of Weber… | **203** | 22 |
 | [A001666](seq/A001xxx/A001666/) | Number of n-step self-avoiding walks on b.c.c. lattice (version 2). | **116** | 9 |
+| [A001668](seq/A001xxx/A001668/) | Number of self-avoiding n-step walks on honeycomb lattice. | **96** | 24 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
 | [A001671](seq/A001xxx/A001671/) | Powers of e rounded up. | **79** | 501 |
+| [A001672](seq/A001xxx/A001672/) | a(n) = floor(Pi^n). | **97** | 280 |
+| [A001673](seq/A001xxx/A001673/) | a(n) = ceiling(Pi^n). | **99** | 280 |
+| [A001674](seq/A001xxx/A001674/) | a(n) = floor(sqrt( 2\*Pi )^n). | **121** | 180 |
+| [A001675](seq/A001xxx/A001675/) | a(n) = round(sqrt( 2\*Pi )^n). | **130** | 180 |
 | [A001677](seq/A001xxx/A001677/) | Number of series-parallel networks with n edges. | **144** | 499 |
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
