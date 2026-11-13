@@ -1,0 +1,6 @@
+{
+  "name": "Fibonacci entry points: a(n) = smallest m > 0 such that the n-th prime divides Fibonacci(m).",
+  "offset": 1,
+  "min_terms": 4000,
+  "timeout": 60
+}
