@@ -1582,6 +1582,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001596](seq/A001xxx/A001596/) | a(n) = 7^n + n^7. | **32** | 1001 |
 | [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **102** | 10000 |
 | [A001598](seq/A001xxx/A001598/) | Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n)… | **118** | 1000 |
+| [A001599](seq/A001xxx/A001599/) | Harmonic or Ore numbers: numbers k such that the harmonic mean of the… | **106** | 28 |
 | [A001601](seq/A001xxx/A001601/) | a(n) = 2\*a(n-1)^2 - 1, if n>1. a(0)=1, a(1)=3. | **33** | 12 |
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
