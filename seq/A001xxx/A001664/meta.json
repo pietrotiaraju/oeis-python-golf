@@ -1,0 +1,6 @@
+{
+  "name": "Quadratic coefficient of the n-th converging polynomial of Weber functions.",
+  "offset": 2,
+  "min_terms": 22,
+  "timeout": 60
+}
