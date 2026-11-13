@@ -1618,12 +1618,19 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001619](seq/A001xxx/A001619/) | Number of letters in English name for n increases at these numbers. | **258** | 42 |
 | [A001620](seq/A001xxx/A001620/) | Decimal expansion of Euler's constant (or the Euler-Mascheroni… | **172** | 9800 |
 | [A001621](seq/A001xxx/A001621/) | a(n) = n\*(n + 1)\*(n^2 + n + 2)/4. | **35** | 1001 |
+| [A001628](seq/A001xxx/A001628/) | Convolved Fibonacci numbers. | **53** | 4501 |
+| [A001629](seq/A001xxx/A001629/) | Self-convolution of Fibonacci numbers. | **49** | 501 |
 | [A001633](seq/A001xxx/A001633/) | Numbers with an odd number of digits. | **41** | 1000 |
 | [A001637](seq/A001xxx/A001637/) | Numbers with an even number of digits. | **40** | 1000 |
 | [A001650](seq/A001xxx/A001650/) | k appears k times (k odd). | **35** | 10000 |
 | [A001651](seq/A001xxx/A001651/) | Numbers not divisible by 3. | **26** | 10000 |
 | [A001652](seq/A001xxx/A001652/) | a(n) = 6\*a(n-1) - a(n-2) + 2 with a(0) = 0, a(1) = 3. | **37** | 201 |
 | [A001653](seq/A001xxx/A001653/) | Numbers k such that 2\*k^2 - 1 is a square. | **33** | 1000 |
+| [A001654](seq/A001xxx/A001654/) | Golden rectangle numbers: F(n) \* F(n+1), where F(n) = A000045(n)… | **35** | 1001 |
+| [A001655](seq/A001xxx/A001655/) | Fibonomial coefficients: a(n) = F(n+1) \* F(n+2) \* F(n+3)/2, where F()… | **41** | 201 |
+| [A001656](seq/A001xxx/A001656/) | Fibonomial coefficients. | **48** | 1001 |
+| [A001657](seq/A001xxx/A001657/) | Fibonomial coefficients: column 5 of A010048. | **44** | 201 |
+| [A001658](seq/A001xxx/A001658/) | Fibonomial coefficients. | **53** | 201 |
 | [A001669](seq/A001xxx/A001669/) | Number of 7-level labeled rooted trees with n leaves. | **85** | 151 |
 | [A001670](seq/A001xxx/A001670/) | k appears k times (k even). | **35** | 10000 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |

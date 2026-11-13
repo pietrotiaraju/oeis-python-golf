@@ -1,0 +1,6 @@
+{
+  "name": "Self-convolution of Fibonacci numbers.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
