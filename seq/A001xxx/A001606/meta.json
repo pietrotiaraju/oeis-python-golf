@@ -1,0 +1,6 @@
+{
+  "name": "Indices of prime Lucas numbers.",
+  "offset": 1,
+  "min_terms": 18,
+  "timeout": 60
+}

@@ -1598,6 +1598,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001603](seq/A001xxx/A001603/) | Odd-indexed terms of A124296. | **39** | 1188 |
 | [A001604](seq/A001xxx/A001604/) | Odd-indexed terms of A124297. | **39** | 1188 |
 | [A001605](seq/A001xxx/A001605/) | Indices of prime Fibonacci numbers. | **100** | 11 |
+| [A001606](seq/A001xxx/A001606/) | Indices of prime Lucas numbers. | **105** | 18 |
 | [A001607](seq/A001xxx/A001607/) | a(n) = -a(n-1) - 2\*a(n-2). | **35** | 501 |
 | [A001608](seq/A001xxx/A001608/) | Perrin sequence (or Perrin numbers, or Ondrej Such sequence): a(n) =… | **41** | 8173 |
 | [A001609](seq/A001xxx/A001609/) | a(1) = a(2) = 1, a(3) = 4; thereafter a(n) = a(n-1) + a(n-3). | **39** | 6012 |
