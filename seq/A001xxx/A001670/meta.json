@@ -1,0 +1,6 @@
+{
+  "name": "k appears k times (k even).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
