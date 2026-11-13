@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of Airey's converging factor.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

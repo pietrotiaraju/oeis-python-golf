@@ -1,0 +1,6 @@
+{
+  "name": "Powers of e rounded up.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
