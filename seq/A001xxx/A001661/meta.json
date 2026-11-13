@@ -1,0 +1,6 @@
+{
+  "name": "Largest number not the sum of distinct positive n-th powers.",
+  "offset": 2,
+  "min_terms": 4,
+  "timeout": 20
+}
