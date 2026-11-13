@@ -1,0 +1,6 @@
+{
+  "name": "Number of parabolic vertices of Gamma_0(n).",
+  "offset": 1,
+  "min_terms": 3200,
+  "timeout": 30
+}
