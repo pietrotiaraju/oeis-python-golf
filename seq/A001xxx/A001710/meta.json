@@ -1,0 +1,6 @@
+{
+  "name": "Order of alternating group A_n, or number of even permutations of n letters.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

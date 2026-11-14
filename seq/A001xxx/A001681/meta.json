@@ -1,0 +1,6 @@
+{
+  "name": "The partition function G(n,4).",
+  "offset": 0,
+  "min_terms": 610,
+  "timeout": 60
+}

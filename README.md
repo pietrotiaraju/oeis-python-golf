@@ -1673,12 +1673,35 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
+| [A001681](seq/A001xxx/A001681/) | The partition function G(n,4). | **68** | 610 |
+| [A001683](seq/A001xxx/A001683/) | Number of one-sided triangulations of the disk; or flexagons of order… | **88** | 199 |
+| [A001684](seq/A001xxx/A001684/) | From a continued fraction. | **48** | 18 |
+| [A001685](seq/A001xxx/A001685/) | a(0) = 1, a(1) = 2, a(2) = 3; for n >= 3, a(n) = a(n-2) +… | **41** | 17 |
+| [A001686](seq/A001xxx/A001686/) | From a continued fraction. | **59** | 12 |
+| [A001687](seq/A001xxx/A001687/) | a(n) = a(n-2) + a(n-5). | **45** | 1001 |
+| [A001688](seq/A001xxx/A001688/) | 4th forward differences of factorial numbers A000142. | **47** | 101 |
+| [A001689](seq/A001xxx/A001689/) | 5th forward differences of factorial numbers A000142. | **48** | 101 |
+| [A001690](seq/A001xxx/A001690/) | Non-Fibonacci numbers. | **54** | 1000 |
+| [A001692](seq/A001xxx/A001692/) | Number of irreducible polynomials of degree n over GF(5); dimensions… | **90** | 1436 |
+| [A001693](seq/A001xxx/A001693/) | Number of degree-n irreducible polynomials over GF(7); dimensions of… | **90** | 1187 |
+| [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
+| [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
+| [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
+| [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
+| [A001700](seq/A001xxx/A001700/) | a(n) = binomial(2\*n+1, n+1): number of ways to put n+1… | **39** | 1201 |
+| [A001710](seq/A001xxx/A001710/) | Order of alternating group A\_n, or number of even permutations of n… | **36** | 101 |
+| [A001715](seq/A001xxx/A001715/) | a(n) = n!/6. | **33** | 198 |
+| [A001720](seq/A001xxx/A001720/) | a(n) = n!/24. | **33** | 297 |
+| [A001725](seq/A001xxx/A001725/) | a(n) = n!/5!. | **33** | 296 |
+| [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
+| [A001730](seq/A001xxx/A001730/) | a(n) = n!/6!. | **33** | 295 |
 | [A001731](seq/A001xxx/A001731/) | a(n) is 9 written in base 10-n. | **46** | 10 |
 | [A001732](seq/A001xxx/A001732/) | 8 in base 10-n. | **46** | 10 |
 | [A001733](seq/A001xxx/A001733/) | 7 in base 10-n. | **39** | 10 |
 | [A001734](seq/A001xxx/A001734/) | 6 in base 10-n. | **38** | 10 |
 | [A001735](seq/A001xxx/A001735/) | 5 in base 10-n. | **37** | 10 |
 | [A001736](seq/A001xxx/A001736/) | 4 in base 10-n. | **34** | 10 |
+| [A001747](seq/A001xxx/A001747/) | 2 together with primes multiplied by 2. | **41** | 1000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
