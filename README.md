@@ -1673,6 +1673,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
+| [A001731](seq/A001xxx/A001731/) | a(n) is 9 written in base 10-n. | **46** | 10 |
+| [A001732](seq/A001xxx/A001732/) | 8 in base 10-n. | **46** | 10 |
+| [A001733](seq/A001xxx/A001733/) | 7 in base 10-n. | **39** | 10 |
+| [A001734](seq/A001xxx/A001734/) | 6 in base 10-n. | **38** | 10 |
+| [A001735](seq/A001xxx/A001735/) | 5 in base 10-n. | **37** | 10 |
+| [A001736](seq/A001xxx/A001736/) | 4 in base 10-n. | **34** | 10 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
