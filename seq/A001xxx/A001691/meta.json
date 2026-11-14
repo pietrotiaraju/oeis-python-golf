@@ -1,0 +1,6 @@
+{
+  "name": "Number of two-element generating sets in the symmetric group S_n.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 60
+}
