@@ -1,0 +1,6 @@
+{
+  "name": "a(0) = 1, a(1) = 2, a(2) = 3; for n >= 3, a(n) = a(n-2) + a(n-1)*Product_{i=1..n-3} a(i).",
+  "offset": 0,
+  "min_terms": 17,
+  "timeout": 60
+}
