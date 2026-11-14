@@ -1732,6 +1732,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001746](seq/A001xxx/A001746/) | At least one digit contains a loop (version 1). | **47** | 1000 |
 | [A001747](seq/A001xxx/A001747/) | 2 together with primes multiplied by 2. | **41** | 1000 |
 | [A001748](seq/A001xxx/A001748/) | a(n) = 3 \* prime(n). | **42** | 12000 |
+| [A001749](seq/A001xxx/A001749/) | Primes multiplied by 4. | **42** | 12000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
