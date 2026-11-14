@@ -1683,6 +1683,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001688](seq/A001xxx/A001688/) | 4th forward differences of factorial numbers A000142. | **47** | 101 |
 | [A001689](seq/A001xxx/A001689/) | 5th forward differences of factorial numbers A000142. | **48** | 101 |
 | [A001690](seq/A001xxx/A001690/) | Non-Fibonacci numbers. | **54** | 1000 |
+| [A001691](seq/A001xxx/A001691/) | Number of two-element generating sets in the symmetric group S\_n. | **288** | 6 |
 | [A001692](seq/A001xxx/A001692/) | Number of irreducible polynomials of degree n over GF(5); dimensions… | **90** | 1436 |
 | [A001693](seq/A001xxx/A001693/) | Number of degree-n irreducible polynomials over GF(7); dimensions of… | **90** | 1187 |
 | [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
@@ -1797,6 +1798,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001437](seq/A001xxx/A001437/) | Number of connected graphs with n nodes and ceiling(n(n-1)/4) edges. | **404** | 15 | 455 | 18 |
 | [A001548](seq/A001xxx/A001548/) | Number of connected linear spaces with n (unlabeled) points. | **318** | 7 | 412 | 9 |
 | [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **65** | 1000 | 102 | 10000 |
+| [A001691](seq/A001xxx/A001691/) | Number of two-element generating sets in the symmetric group S\_n. | **208** | 5 | 288 | 6 |
 
 <!-- short:end -->
 
