@@ -1,0 +1,6 @@
+{
+  "name": "Generalized Stirling numbers, [n+3,n]_2.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

@@ -1,0 +1,42 @@
+# A001711
+
+> Generalized Stirling numbers, [n+4,4]_3.
+> — [OEIS A001711](https://oeis.org/A001711)
+
+Offset 0: 1, 7, 47, 342, 2754, 24552, 241128, 2592720, 30334320, 383970240, 5231113920, 76349105280, …
+
+### Python 3 — 44 bytes
+
+```python
+a=0;f=1;c=3
+while[print(a:=a*c+f)]:f*=c;c+=1
+```
+
+**How it works**
+
+- The generalized Stirling number [N, K]ᵣ (Mitrinović's numbers with a = −r, b = −1, as in the entry; the r-Stirling numbers of the first kind) is the coefficient of x^K in xʳ(x+r)(x+r+1)⋯(x+N−1). Here r = 3 and K = r + 1, so a(n) is the coefficient of x in
+  Pₙ(x) = (x+3)(x+4)⋯(x+n+3), n + 1 factors.
+- Multiplying a polynomial P by x + c turns its coefficient of x into
+  c·[x]P + P(0) and its constant term into c·P(0). The program keeps a = [x]P
+  and f = P(0) for the product so far and starts from the empty product
+  (a = 0, f = 1) with c = 3. The walrus in `print` multiplies in x + c and
+  prints the new coefficient of x; `f*=c` and `c+=1` finish the step. The
+  first print is [x](x+3) = 1 = a(0).
+
+**Notes**
+
+- Exact integer arithmetic, correct for every n. It prints up to a(1555); the next term passes the 4300-digit int-to-str limit of Python 3.11+ and stops it. The whole b-file (441 terms, n = 0 to 440) prints in well under a second; the bar is the whole b-file in 60 s.
+- For r = 2 ([A001705](../A001705/)) the loop can start one step earlier with
+  a = −1 and `f=c=1`; here that step would need f = 1/2.
+- The same template gives [A001705](../A001705/) (r = 2), [A001716](../A001716/) (r = 4), [A001721](../A001721/) (r = 5); [A001712](../A001712/) is the coefficient of
+  x² for r = 3.
+
+## History
+
+| Date | Category | Bytes | Note |
+|---|---|---|---|
+| 2026-11-14 | Python 3 | 44 | first entry |
+
+---
+Sequence name and terms from [The On-Line Encyclopedia of Integer
+Sequences](https://oeis.org/A001711), CC BY-SA 4.0.
