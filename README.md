@@ -1718,10 +1718,17 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001723](seq/A001xxx/A001723/) | Generalized Stirling numbers, [n+8,8]\_5. | **69** | 101 |
 | [A001724](seq/A001xxx/A001724/) | Generalized Stirling numbers, [n+9,9]\_5. | **69** | 101 |
 | [A001725](seq/A001xxx/A001725/) | a(n) = n!/5!. | **33** | 296 |
+| [A001726](seq/A001xxx/A001726/) | Weight distribution of [ 64,22,16 ] 2nd-order Reed-Muller code of… | **66** | 17 |
 | [A001727](seq/A001xxx/A001727/) | Weight distribution of [64,42,8] 3rd-order Reed-Muller code of length… | **136** | 33 |
 | [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
 | [A001729](seq/A001xxx/A001729/) | List of numbers whose digits contain no loops (version 1). | **48** | 1000 |
 | [A001730](seq/A001xxx/A001730/) | a(n) = n!/6!. | **33** | 295 |
+| [A001731](seq/A001xxx/A001731/) | a(n) is 9 written in base 10-n. | **46** | 10 |
+| [A001732](seq/A001xxx/A001732/) | 8 in base 10-n. | **46** | 10 |
+| [A001733](seq/A001xxx/A001733/) | 7 in base 10-n. | **39** | 10 |
+| [A001734](seq/A001xxx/A001734/) | 6 in base 10-n. | **38** | 10 |
+| [A001735](seq/A001xxx/A001735/) | 5 in base 10-n. | **37** | 10 |
+| [A001736](seq/A001xxx/A001736/) | 4 in base 10-n. | **34** | 10 |
 | [A001737](seq/A001xxx/A001737/) | Squares written in base 2. | **33** | 1001 |
 | [A001738](seq/A001xxx/A001738/) | a(n) = n^2 written in base 3. | **61** | 1001 |
 | [A001739](seq/A001xxx/A001739/) | Squares written in base 4. | **61** | 1001 |
