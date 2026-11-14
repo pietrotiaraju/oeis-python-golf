@@ -1,0 +1,6 @@
+{
+  "name": "Number of one-sided triangulations of the disk; or flexagons of order n; or unlabeled plane trivalent trees (n-2 internal vertices, all of degree 3 and hence n leaves).",
+  "offset": 2,
+  "min_terms": 199,
+  "timeout": 60
+}

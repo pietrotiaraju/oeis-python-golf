@@ -1673,6 +1673,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001678](seq/A001xxx/A001678/) | Number of series-reduced planted trees with n nodes. | **108** | 1001 |
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
+| [A001681](seq/A001xxx/A001681/) | The partition function G(n,4). | **68** | 610 |
+| [A001683](seq/A001xxx/A001683/) | Number of one-sided triangulations of the disk; or flexagons of order… | **88** | 199 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
