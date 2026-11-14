@@ -1,0 +1,6 @@
+{
+  "name": "Numbers n such that every digit contains a loop (version 2).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

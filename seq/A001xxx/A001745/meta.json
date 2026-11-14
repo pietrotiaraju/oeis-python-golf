@@ -1,0 +1,6 @@
+{
+  "name": "Numbers such that at least one digit contains a loop (version 2). Also called \"holey\" or \"holy\" numbers.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
