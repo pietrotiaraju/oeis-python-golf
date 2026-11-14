@@ -1693,6 +1693,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001715](seq/A001xxx/A001715/) | a(n) = n!/6. | **33** | 198 |
 | [A001720](seq/A001xxx/A001720/) | a(n) = n!/24. | **33** | 297 |
 | [A001725](seq/A001xxx/A001725/) | a(n) = n!/5!. | **33** | 296 |
+| [A001727](seq/A001xxx/A001727/) | Weight distribution of [64,42,8] 3rd-order Reed-Muller code of length… | **136** | 33 |
 | [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
 | [A001730](seq/A001xxx/A001730/) | a(n) = n!/6!. | **33** | 295 |
 | [A001747](seq/A001xxx/A001747/) | 2 together with primes multiplied by 2. | **41** | 1000 |
