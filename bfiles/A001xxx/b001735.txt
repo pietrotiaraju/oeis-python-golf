@@ -1,0 +1,11 @@
+# A001735 (b-file synthesized from sequence entry)
+0 5
+1 5
+2 5
+3 5
+4 5
+5 10
+6 11
+7 12
+8 101
+9 11111

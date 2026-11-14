@@ -1,0 +1,6 @@
+{
+  "name": "Decimal concatenation of n, n+1, and n+2.",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

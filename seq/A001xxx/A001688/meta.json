@@ -1,0 +1,6 @@
+{
+  "name": "4th forward differences of factorial numbers A000142.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

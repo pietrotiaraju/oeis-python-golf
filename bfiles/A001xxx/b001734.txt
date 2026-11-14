@@ -1,0 +1,11 @@
+# A001734 (b-file synthesized from sequence entry)
+0 6
+1 6
+2 6
+3 6
+4 10
+5 11
+6 12
+7 20
+8 110
+9 111111

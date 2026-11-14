@@ -1,0 +1,6 @@
+{
+  "name": "Generalized Stirling numbers, [n+2,3]_2: a(n) = n! * Sum_{k=0..n-1} (k+1)/(n-k).",
+  "offset": 0,
+  "min_terms": 446,
+  "timeout": 60
+}

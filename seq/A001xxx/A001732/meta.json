@@ -1,0 +1,6 @@
+{
+  "name": "8 in base 10-n.",
+  "offset": 0,
+  "min_terms": 10,
+  "timeout": 60
+}

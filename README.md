@@ -1674,17 +1674,66 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001679](seq/A001xxx/A001679/) | Number of series-reduced rooted trees with n nodes. | **168** | 1001 |
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
 | [A001681](seq/A001xxx/A001681/) | The partition function G(n,4). | **68** | 610 |
+| [A001682](seq/A001xxx/A001682/) | Numbers k such that 3^k, 3^(k+1) and 3^(k+2) have the same number of… | **56** | 1000 |
 | [A001683](seq/A001xxx/A001683/) | Number of one-sided triangulations of the disk; or flexagons of order… | **88** | 199 |
 | [A001684](seq/A001xxx/A001684/) | From a continued fraction. | **48** | 18 |
 | [A001685](seq/A001xxx/A001685/) | a(0) = 1, a(1) = 2, a(2) = 3; for n >= 3, a(n) = a(n-2) +… | **41** | 17 |
 | [A001686](seq/A001xxx/A001686/) | From a continued fraction. | **59** | 12 |
+| [A001687](seq/A001xxx/A001687/) | a(n) = a(n-2) + a(n-5). | **45** | 1001 |
+| [A001688](seq/A001xxx/A001688/) | 4th forward differences of factorial numbers A000142. | **47** | 101 |
+| [A001689](seq/A001xxx/A001689/) | 5th forward differences of factorial numbers A000142. | **48** | 101 |
 | [A001690](seq/A001xxx/A001690/) | Non-Fibonacci numbers. | **54** | 1000 |
+| [A001692](seq/A001xxx/A001692/) | Number of irreducible polynomials of degree n over GF(5); dimensions… | **90** | 1436 |
+| [A001693](seq/A001xxx/A001693/) | Number of degree-n irreducible polynomials over GF(7); dimensions of… | **90** | 1187 |
 | [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
 | [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
 | [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
+| [A001698](seq/A001xxx/A001698/) | a(n) = ceiling(sqrt( 2\*Pi )^n). | **125** | 200 |
 | [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
-| [A001726](seq/A001xxx/A001726/) | Weight distribution of [ 64,22,16 ] 2nd-order Reed-Muller code of… | **66** | 17 |
+| [A001700](seq/A001xxx/A001700/) | a(n) = binomial(2\*n+1, n+1): number of ways to put n+1… | **39** | 1201 |
+| [A001701](seq/A001xxx/A001701/) | Generalized Stirling numbers, [n+2,n]\_2. | **47** | 1000 |
+| [A001702](seq/A001xxx/A001702/) | Generalized Stirling numbers, [n+3,n]\_2. | **58** | 1000 |
+| [A001703](seq/A001xxx/A001703/) | Decimal concatenation of n, n+1, and n+2. | **44** | 1001 |
+| [A001704](seq/A001xxx/A001704/) | a(n) = n concatenated with n + 1. | **34** | 25000 |
+| [A001705](seq/A001xxx/A001705/) | Generalized Stirling numbers, [n+2,3]\_2: a(n) = n! \* Sum\_{k=0..n-1}… | **43** | 446 |
+| [A001706](seq/A001xxx/A001706/) | Generalized Stirling numbers, [n+4,4]\_2. | **55** | 101 |
+| [A001707](seq/A001xxx/A001707/) | Generalized Stirling numbers, [n+5,5]\_2. | **68** | 101 |
+| [A001708](seq/A001xxx/A001708/) | Generalized Stirling numbers, [n+6,6]\_2. | **68** | 101 |
+| [A001709](seq/A001xxx/A001709/) | Generalized Stirling numbers, [n+7,7]\_2. | **68** | 101 |
+| [A001710](seq/A001xxx/A001710/) | Order of alternating group A\_n, or number of even permutations of n… | **36** | 101 |
+| [A001711](seq/A001xxx/A001711/) | Generalized Stirling numbers, [n+4,4]\_3. | **44** | 441 |
+| [A001712](seq/A001xxx/A001712/) | Generalized Stirling numbers, [n+5,5]\_3. | **55** | 101 |
+| [A001713](seq/A001xxx/A001713/) | Generalized Stirling numbers, [n+6,6]\_3. | **69** | 101 |
+| [A001714](seq/A001xxx/A001714/) | Generalized Stirling numbers, [n+7,7]\_3. | **69** | 101 |
+| [A001715](seq/A001xxx/A001715/) | a(n) = n!/6. | **33** | 198 |
+| [A001716](seq/A001xxx/A001716/) | Generalized Stirling numbers, [n+5,5]\_4. | **44** | 101 |
+| [A001717](seq/A001xxx/A001717/) | Generalized Stirling numbers, [n+6,6]\_4. | **55** | 101 |
+| [A001718](seq/A001xxx/A001718/) | Generalized Stirling numbers, [n+7,7]\_4. | **69** | 101 |
+| [A001719](seq/A001xxx/A001719/) | Generalized Stirling numbers, [n+8,8]\_4. | **69** | 101 |
+| [A001720](seq/A001xxx/A001720/) | a(n) = n!/24. | **33** | 297 |
+| [A001721](seq/A001xxx/A001721/) | Generalized Stirling numbers, [n+6,6]\_5. | **44** | 101 |
+| [A001722](seq/A001xxx/A001722/) | Generalized Stirling numbers, [n+7,7]\_5. | **55** | 101 |
+| [A001723](seq/A001xxx/A001723/) | Generalized Stirling numbers, [n+8,8]\_5. | **69** | 101 |
+| [A001724](seq/A001xxx/A001724/) | Generalized Stirling numbers, [n+9,9]\_5. | **69** | 101 |
+| [A001725](seq/A001xxx/A001725/) | a(n) = n!/5!. | **33** | 296 |
+| [A001727](seq/A001xxx/A001727/) | Weight distribution of [64,42,8] 3rd-order Reed-Muller code of length… | **136** | 33 |
 | [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
+| [A001729](seq/A001xxx/A001729/) | List of numbers whose digits contain no loops (version 1). | **48** | 1000 |
+| [A001730](seq/A001xxx/A001730/) | a(n) = n!/6!. | **33** | 295 |
+| [A001737](seq/A001xxx/A001737/) | Squares written in base 2. | **33** | 1001 |
+| [A001738](seq/A001xxx/A001738/) | a(n) = n^2 written in base 3. | **61** | 1001 |
+| [A001739](seq/A001xxx/A001739/) | Squares written in base 4. | **61** | 1001 |
+| [A001740](seq/A001xxx/A001740/) | Squares written in base 5. | **61** | 1001 |
+| [A001741](seq/A001xxx/A001741/) | Squares written in base 6. | **61** | 1001 |
+| [A001742](seq/A001xxx/A001742/) | Numbers whose digits contain no loops (version 2). | **47** | 10000 |
+| [A001743](seq/A001xxx/A001743/) | Numbers in which every digit contains at least one loop (version 1). | **46** | 10000 |
+| [A001744](seq/A001xxx/A001744/) | Numbers n such that every digit contains a loop (version 2). | **47** | 10000 |
+| [A001745](seq/A001xxx/A001745/) | Numbers such that at least one digit contains a loop (version 2).… | **48** | 1000 |
+| [A001746](seq/A001xxx/A001746/) | At least one digit contains a loop (version 1). | **47** | 1000 |
+| [A001747](seq/A001xxx/A001747/) | 2 together with primes multiplied by 2. | **41** | 1000 |
+| [A001748](seq/A001xxx/A001748/) | a(n) = 3 \* prime(n). | **42** | 12000 |
+| [A001749](seq/A001xxx/A001749/) | Primes multiplied by 4. | **42** | 12000 |
+| [A001750](seq/A001xxx/A001750/) | Primes multiplied by 5. | **42** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
