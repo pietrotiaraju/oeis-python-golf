@@ -1675,6 +1675,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001680](seq/A001xxx/A001680/) | The partition function G(n,3). | **55** | 654 |
 | [A001681](seq/A001xxx/A001681/) | The partition function G(n,4). | **68** | 610 |
 | [A001683](seq/A001xxx/A001683/) | Number of one-sided triangulations of the disk; or flexagons of order… | **88** | 199 |
+| [A001684](seq/A001xxx/A001684/) | From a continued fraction. | **48** | 18 |
+| [A001685](seq/A001xxx/A001685/) | a(0) = 1, a(1) = 2, a(2) = 3; for n >= 3, a(n) = a(n-2) +… | **41** | 17 |
+| [A001686](seq/A001xxx/A001686/) | From a continued fraction. | **59** | 12 |
+| [A001690](seq/A001xxx/A001690/) | Non-Fibonacci numbers. | **54** | 1000 |
+| [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
+| [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
+| [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
+| [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
+| [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

@@ -1,0 +1,6 @@
+{
+  "name": "Number of binary trees of height n; or products (ways to insert parentheses) of height n when multiplication is non-commutative and non-associative.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
