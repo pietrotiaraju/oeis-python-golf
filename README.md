@@ -1690,11 +1690,30 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
 | [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
 | [A001700](seq/A001xxx/A001700/) | a(n) = binomial(2\*n+1, n+1): number of ways to put n+1… | **39** | 1201 |
+| [A001701](seq/A001xxx/A001701/) | Generalized Stirling numbers, [n+2,n]\_2. | **47** | 1000 |
+| [A001702](seq/A001xxx/A001702/) | Generalized Stirling numbers, [n+3,n]\_2. | **58** | 1000 |
 | [A001703](seq/A001xxx/A001703/) | Decimal concatenation of n, n+1, and n+2. | **44** | 1001 |
 | [A001704](seq/A001xxx/A001704/) | a(n) = n concatenated with n + 1. | **34** | 25000 |
+| [A001705](seq/A001xxx/A001705/) | Generalized Stirling numbers, [n+2,3]\_2: a(n) = n! \* Sum\_{k=0..n-1}… | **43** | 446 |
+| [A001706](seq/A001xxx/A001706/) | Generalized Stirling numbers, [n+4,4]\_2. | **55** | 101 |
+| [A001707](seq/A001xxx/A001707/) | Generalized Stirling numbers, [n+5,5]\_2. | **68** | 101 |
+| [A001708](seq/A001xxx/A001708/) | Generalized Stirling numbers, [n+6,6]\_2. | **68** | 101 |
+| [A001709](seq/A001xxx/A001709/) | Generalized Stirling numbers, [n+7,7]\_2. | **68** | 101 |
 | [A001710](seq/A001xxx/A001710/) | Order of alternating group A\_n, or number of even permutations of n… | **36** | 101 |
+| [A001711](seq/A001xxx/A001711/) | Generalized Stirling numbers, [n+4,4]\_3. | **44** | 441 |
+| [A001712](seq/A001xxx/A001712/) | Generalized Stirling numbers, [n+5,5]\_3. | **55** | 101 |
+| [A001713](seq/A001xxx/A001713/) | Generalized Stirling numbers, [n+6,6]\_3. | **69** | 101 |
+| [A001714](seq/A001xxx/A001714/) | Generalized Stirling numbers, [n+7,7]\_3. | **69** | 101 |
 | [A001715](seq/A001xxx/A001715/) | a(n) = n!/6. | **33** | 198 |
+| [A001716](seq/A001xxx/A001716/) | Generalized Stirling numbers, [n+5,5]\_4. | **44** | 101 |
+| [A001717](seq/A001xxx/A001717/) | Generalized Stirling numbers, [n+6,6]\_4. | **55** | 101 |
+| [A001718](seq/A001xxx/A001718/) | Generalized Stirling numbers, [n+7,7]\_4. | **69** | 101 |
+| [A001719](seq/A001xxx/A001719/) | Generalized Stirling numbers, [n+8,8]\_4. | **69** | 101 |
 | [A001720](seq/A001xxx/A001720/) | a(n) = n!/24. | **33** | 297 |
+| [A001721](seq/A001xxx/A001721/) | Generalized Stirling numbers, [n+6,6]\_5. | **44** | 101 |
+| [A001722](seq/A001xxx/A001722/) | Generalized Stirling numbers, [n+7,7]\_5. | **55** | 101 |
+| [A001723](seq/A001xxx/A001723/) | Generalized Stirling numbers, [n+8,8]\_5. | **69** | 101 |
+| [A001724](seq/A001xxx/A001724/) | Generalized Stirling numbers, [n+9,9]\_5. | **69** | 101 |
 | [A001725](seq/A001xxx/A001725/) | a(n) = n!/5!. | **33** | 296 |
 | [A001727](seq/A001xxx/A001727/) | Weight distribution of [64,42,8] 3rd-order Reed-Muller code of length… | **136** | 33 |
 | [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
