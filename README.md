@@ -1683,6 +1683,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
 | [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
 | [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
+| [A001726](seq/A001xxx/A001726/) | Weight distribution of [ 64,22,16 ] 2nd-order Reed-Muller code of… | **66** | 17 |
 | [A001728](seq/A001xxx/A001728/) | Expansion of cos x / cos 4x. | **75** | 51 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
