@@ -1,0 +1,6 @@
+{
+  "name": "Primes multiplied by 4.",
+  "offset": 1,
+  "min_terms": 12000,
+  "timeout": 60
+}

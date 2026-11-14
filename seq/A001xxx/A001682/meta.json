@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 3^k, 3^(k+1) and 3^(k+2) have the same number of digits.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

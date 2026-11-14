@@ -1,0 +1,6 @@
+{
+  "name": "Weight distribution of [64,42,8] 3rd-order Reed-Muller code of length 64.",
+  "offset": 0,
+  "min_terms": 33,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Numbers whose digits contain no loops (version 2).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
