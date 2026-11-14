@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = 3 * prime(n).",
+  "offset": 1,
+  "min_terms": 12000,
+  "timeout": 60
+}
