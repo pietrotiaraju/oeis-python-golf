@@ -1685,6 +1685,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001692](seq/A001xxx/A001692/) | Number of irreducible polynomials of degree n over GF(5); dimensions… | **90** | 1436 |
 | [A001693](seq/A001xxx/A001693/) | Number of degree-n irreducible polynomials over GF(7); dimensions of… | **90** | 1187 |
 | [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
+| [A001695](seq/A001xxx/A001695/) | a(n) = H\_n(2,n) where H\_n is the n-th hyperoperator. | **86** | 5 |
 | [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
 | [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
 | [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
