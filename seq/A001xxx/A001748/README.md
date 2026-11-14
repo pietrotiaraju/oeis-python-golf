@@ -29,7 +29,7 @@ while[-P%k==1==print(3*k)]:P*=k;k+=1
 - A000040's other 40-byte forms, `while k:=k+1:~P%k or print(k);P*=k` and the
   squared factorial, `while[P%k>0==print(k)]:P*=k*k;k+=1`, tie here too
   (42 bytes).
-- P has about k log₂ k bits, so each step costs about k log k. The b-file has 20000 terms (up to 3 · 224737): the first 12000 arrive in about 20 reference seconds and the whole b-file in about 55, so the bar is 12000 terms in 60 s, well inside half the timeout.
+- P has about k log₂ k bits, so each step costs about k log k. The b-file has 20000 terms (up to 3 · 224737). On GitHub's runner the first 12000 arrive in about 24 s and about 17700 terms in the 60 s, so the bar is 12000 terms in 60 s.
 - Multiples of primes: [A001747](../A001747/) (2), [A001748](../A001748/)
   (3), [A001749](../A001749/) (4), [A001750](../A001750/) (5).
 
