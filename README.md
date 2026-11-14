@@ -1688,6 +1688,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001694](seq/A001xxx/A001694/) | Powerful numbers, definition (1): if a prime p divides n then p^2… | **102** | 10000 |
 | [A001696](seq/A001xxx/A001696/) | a(n) = a(n-1)\*(1 + a(n-1) - a(n-2)), a(0) = 0, a(1) = 1. | **33** | 14 |
 | [A001697](seq/A001xxx/A001697/) | a(n+1) = a(n)\*(a(0) + ... + a(n)), a(0) = 1. | **31** | 13 |
+| [A001698](seq/A001xxx/A001698/) | a(n) = ceiling(sqrt( 2\*Pi )^n). | **125** | 200 |
 | [A001699](seq/A001xxx/A001699/) | Number of binary trees of height n; or products (ways to insert… | **32** | 13 |
 | [A001700](seq/A001xxx/A001700/) | a(n) = binomial(2\*n+1, n+1): number of ways to put n+1… | **39** | 1201 |
 | [A001701](seq/A001xxx/A001701/) | Generalized Stirling numbers, [n+2,n]\_2. | **47** | 1000 |
