@@ -1,0 +1,6 @@
+{
+  "name": "G.f.: Sum_{n>0} x^n/(1-x^(3n)) = Sum_{n>=0} x^(3n+1)/(1-x^(3n+1)).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that phi(k+2) = phi(k) + 2.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

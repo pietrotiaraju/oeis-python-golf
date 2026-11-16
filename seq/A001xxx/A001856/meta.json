@@ -1,0 +1,6 @@
+{
+  "name": "A self-generating sequence: every positive integer occurs as a(i)-a(j) for a unique pair i,j.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}
