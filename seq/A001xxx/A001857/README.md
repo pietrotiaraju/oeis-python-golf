@@ -29,9 +29,9 @@ while m:=m+1:
 **Notes**
 
 - Exact integer arithmetic. Each candidate costs a pass over `s` (about n²/2·11 set lookups
-  for n terms, since the terms grow like 11n), so the program slows down quadratically: term
-  5000 comes after about 11 reference seconds and all 10000 terms of the b-file after about 46.
-  The bar is 7000 terms in 60 s.
+  for n terms, since the terms grow like 11n), so the program slows down quadratically (a bit worse, as
+  the sets grow): term 5000 comes after 11–15 reference seconds, term 7000 after about 27 and
+  the whole b-file (10000 terms) after about 50. The bar is 6000 terms in 60 s.
 
 ## History
 
