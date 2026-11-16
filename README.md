@@ -1808,13 +1808,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001814](seq/A001xxx/A001814/) | Coefficient of H\_2 when expressing x^{2n} in terms of Hermite… | **37** | 200 |
 | [A001815](seq/A001xxx/A001815/) | a(n) = binomial(n,2) \* 2^(n-1). | **34** | 501 |
 | [A001816](seq/A001xxx/A001816/) | Coefficients of x^n in Hermite polynomial H\_{n+4}. | **41** | 501 |
+| [A001817](seq/A001xxx/A001817/) | G.f.: Sum\_{n>0} x^n/(1-x^(3n)) = Sum\_{n>=0} x^(3n+1)/(1-x^(3n+1)). | **57** | 10000 |
 | [A001818](seq/A001xxx/A001818/) | Squares of double factorials: (1\*3\*5\*...\*(2n-1))^2 = ((2\*n-1)!!)^2. | **33** | 51 |
 | [A001819](seq/A001xxx/A001819/) | Central factorial numbers: second right-hand column of triangle… | **47** | 254 |
 | [A001820](seq/A001xxx/A001820/) | Central factorial numbers: 2nd subdiagonal of A008955. | **59** | 101 |
 | [A001821](seq/A001xxx/A001821/) | Central factorial numbers: 3rd subdiagonal of A008955. | **73** | 101 |
+| [A001822](seq/A001xxx/A001822/) | Expansion of Sum\_{n>=0} x^(3n+2)/(1-x^(3n+2)). | **58** | 10000 |
 | [A001823](seq/A001xxx/A001823/) | Central factorial numbers: column 2 in triangle A008956. | **46** | 1000 |
 | [A001824](seq/A001xxx/A001824/) | Central factorial numbers: 1st subdiagonal of A008956. | **45** | 225 |
 | [A001825](seq/A001xxx/A001825/) | Central factorial numbers: 2nd subdiagonal of A008956. | **59** | 51 |
+| [A001826](seq/A001xxx/A001826/) | Number of divisors of n of the form 4k+1. | **57** | 10000 |
 | [A001827](seq/A001xxx/A001827/) | Related to graded partially ordered sets. | **122** | 113 |
 | [A001828](seq/A001xxx/A001828/) | Related to graded partially ordered sets. | **131** | 113 |
 | [A001829](seq/A001xxx/A001829/) | Related to graded partially ordered sets. | **150** | 113 |
@@ -1825,6 +1828,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
 | [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
 | [A001840](seq/A001xxx/A001840/) | Expansion of g.f. x/((1 - x)^2\*(1 - x^3)). | **30** | 1001 |
+| [A001842](seq/A001xxx/A001842/) | Number of divisors of n of the form 4\*k+3. | **58** | 10001 |
 | [A001844](seq/A001xxx/A001844/) | Centered square numbers: a(n) = 2\*n\*(n+1)+1. Sums of two consecutive… | **31** | 1001 |
 | [A001845](seq/A001xxx/A001845/) | Centered octahedral numbers (crystal ball sequence for cubic lattice). | **35** | 1001 |
 | [A001846](seq/A001xxx/A001846/) | Centered 4-dimensional orthoplex numbers (crystal ball sequence for… | **39** | 1001 |
@@ -1832,6 +1836,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001848](seq/A001xxx/A001848/) | Crystal ball sequence for 6-dimensional cubic lattice. | **50** | 1001 |
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
+| [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
+| [A001856](seq/A001xxx/A001856/) | A self-generating sequence: every positive integer occurs as… | **98** | 1000 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001861](seq/A001xxx/A001861/) | Expansion of e.g.f. exp(2\*(exp(x) - 1)). | **48** | 559 |
@@ -1843,9 +1849,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001873](seq/A001xxx/A001873/) | Convolved Fibonacci numbers. | **53** | 501 |
 | [A001874](seq/A001xxx/A001874/) | Convolved Fibonacci numbers. | **53** | 501 |
 | [A001875](seq/A001xxx/A001875/) | Convolved Fibonacci numbers. | **53** | 501 |
+| [A001876](seq/A001xxx/A001876/) | Number of divisors of n of the form 5k+1; a(0)=0. | **58** | 10001 |
+| [A001877](seq/A001xxx/A001877/) | Number of divisors of n of the form 5k+2; a(0) = 0. | **58** | 10001 |
+| [A001878](seq/A001xxx/A001878/) | Number of divisors of n of the form 5k+3; a(0) = 0. | **58** | 10001 |
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
+| [A001882](seq/A001xxx/A001882/) | a(2n) = a(2n-1) + 2a(2n-2), a(2n+1) = a(2n) + a(2n-1), with a(1) = 2… | **44** | 500 |
 | [A001883](seq/A001xxx/A001883/) | Number of permutations s of {1,2,...,n} such that \|s(i)-i\|>1 for each… | **149** | 201 |
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
@@ -1854,6 +1864,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
 | [A001894](seq/A001xxx/A001894/) | Number of permutations of {1,...,n} having n-4 inversions (n>=4). | **92** | 400 |
+| [A001896](seq/A001xxx/A001896/) | Numerators of cosecant numbers -2\*(2^(2\*n - 1) - 1)\*Bernoulli(2\*n);… | **135** | 18 |
+| [A001897](seq/A001xxx/A001897/) | Denominators of cosecant numbers: -2\*(2^(2\*n-1)-1)\*Bernoulli(2\*n). | **79** | 52 |
+| [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
