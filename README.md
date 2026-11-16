@@ -1875,6 +1875,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001883](seq/A001xxx/A001883/) | Number of permutations s of {1,2,...,n} such that \|s(i)-i\|>1 for each… | **149** | 201 |
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
 | [A001885](seq/A001xxx/A001885/) | Hit polynomials. | **167** | 22 |
+| [A001886](seq/A001xxx/A001886/) | Hit polynomials. | **167** | 21 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
 | [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
 | [A001890](seq/A001xxx/A001890/) | Hit polynomials. | **165** | 21 |
