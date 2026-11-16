@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected functions on n labeled nodes.",
+  "offset": 1,
+  "min_terms": 380,
+  "timeout": 60
+}

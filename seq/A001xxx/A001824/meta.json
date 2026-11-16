@@ -1,0 +1,6 @@
+{
+  "name": "Central factorial numbers: 1st subdiagonal of A008956.",
+  "offset": 0,
+  "min_terms": 225,
+  "timeout": 60
+}

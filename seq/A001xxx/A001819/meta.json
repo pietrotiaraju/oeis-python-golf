@@ -1,0 +1,6 @@
+{
+  "name": "Central factorial numbers: second right-hand column of triangle A008955.",
+  "offset": 0,
+  "min_terms": 254,
+  "timeout": 60
+}

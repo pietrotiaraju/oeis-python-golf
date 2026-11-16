@@ -1809,9 +1809,26 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001815](seq/A001xxx/A001815/) | a(n) = binomial(n,2) \* 2^(n-1). | **34** | 501 |
 | [A001816](seq/A001xxx/A001816/) | Coefficients of x^n in Hermite polynomial H\_{n+4}. | **41** | 501 |
 | [A001818](seq/A001xxx/A001818/) | Squares of double factorials: (1\*3\*5\*...\*(2n-1))^2 = ((2\*n-1)!!)^2. | **33** | 51 |
+| [A001819](seq/A001xxx/A001819/) | Central factorial numbers: second right-hand column of triangle… | **47** | 254 |
+| [A001820](seq/A001xxx/A001820/) | Central factorial numbers: 2nd subdiagonal of A008955. | **59** | 101 |
+| [A001821](seq/A001xxx/A001821/) | Central factorial numbers: 3rd subdiagonal of A008955. | **73** | 101 |
+| [A001823](seq/A001xxx/A001823/) | Central factorial numbers: column 2 in triangle A008956. | **46** | 1000 |
+| [A001824](seq/A001xxx/A001824/) | Central factorial numbers: 1st subdiagonal of A008956. | **45** | 225 |
+| [A001825](seq/A001xxx/A001825/) | Central factorial numbers: 2nd subdiagonal of A008956. | **59** | 51 |
+| [A001827](seq/A001xxx/A001827/) | Related to graded partially ordered sets. | **122** | 113 |
+| [A001828](seq/A001xxx/A001828/) | Related to graded partially ordered sets. | **131** | 113 |
+| [A001829](seq/A001xxx/A001829/) | Related to graded partially ordered sets. | **150** | 113 |
+| [A001830](seq/A001xxx/A001830/) | Related to graded partially ordered sets. | **150** | 113 |
+| [A001831](seq/A001xxx/A001831/) | Number of labeled graded partially ordered sets with n elements of… | **89** | 51 |
+| [A001832](seq/A001xxx/A001832/) | Number of labeled connected bipartite graphs on n nodes. | **165** | 50 |
+| [A001833](seq/A001xxx/A001833/) | Number of labeled graded partially ordered sets with n elements. | **216** | 101 |
 | [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
 | [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
+| [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
+| [A001861](seq/A001xxx/A001861/) | Expansion of e.g.f. exp(2\*(exp(x) - 1)). | **48** | 559 |
+| [A001865](seq/A001xxx/A001865/) | Number of connected functions on n labeled nodes. | **58** | 380 |
+| [A001866](seq/A001xxx/A001866/) | Number of connected graphs with n nodes and n edges. | **77** | 101 |
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
