@@ -1,0 +1,6 @@
+{
+  "name": "a(1)=2, a(2)=3; for n >= 3, a(n) is smallest number that is uniquely of the form a(j) + a(k) with 1 <= j < k < n.",
+  "offset": 1,
+  "min_terms": 7000,
+  "timeout": 60
+}
