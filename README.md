@@ -1832,6 +1832,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
+| [A001883](seq/A001xxx/A001883/) | Number of permutations s of {1,2,...,n} such that \|s(i)-i\|>1 for each… | **149** | 201 |
+| [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
+| [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
+| [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
+| [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
+| [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
+| [A001894](seq/A001xxx/A001894/) | Number of permutations of {1,...,n} having n-4 inversions (n>=4). | **92** | 400 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

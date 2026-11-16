@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of {1,...,n} having n-4 inversions (n>=4).",
+  "offset": 4,
+  "min_terms": 400,
+  "timeout": 15
+}
