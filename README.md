@@ -1843,6 +1843,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
 | [A001853](seq/A001xxx/A001853/) | Total height of trees with n nodes. | **151** | 300 |
+| [A001854](seq/A001xxx/A001854/) | Total height of all rooted trees on n labeled nodes. | **169** | 240 |
 | [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
 | [A001856](seq/A001xxx/A001856/) | A self-generating sequence: every positive integer occurs as… | **98** | 1000 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
