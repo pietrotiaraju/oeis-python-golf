@@ -1745,14 +1745,29 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001750](seq/A001xxx/A001750/) | Primes multiplied by 5. | **42** | 10000 |
 | [A001752](seq/A001xxx/A001752/) | Expansion of 1/((1+x)\*(1-x)^5). | **37** | 10001 |
 | [A001753](seq/A001xxx/A001753/) | Expansion of g.f. 1/((1+x)\*(1-x)^6). | **45** | 10001 |
+| [A001754](seq/A001xxx/A001754/) | Lah numbers: a(n) = n!\*binomial(n-1,2)/6. | **45** | 300 |
+| [A001755](seq/A001xxx/A001755/) | Lah numbers: a(n) = n! \* binomial(n-1, 3)/4!. | **45** | 97 |
+| [A001756](seq/A001xxx/A001756/) | a(n) = A059366(n,n-3) = A059366(n,3) for n >= 3, where the triangle… | **46** | 98 |
+| [A001757](seq/A001xxx/A001757/) | Expansion of an integral: central elements of rows of triangle in… | **50** | 22 |
+| [A001761](seq/A001xxx/A001761/) | a(n) = (2\*n)!/(n+1)!. | **45** | 201 |
+| [A001762](seq/A001xxx/A001762/) | Number of labeled n-vertex dissections of a ball. | **67** | 98 |
+| [A001763](seq/A001xxx/A001763/) | a(n) = (3n+3)!/(2n+3)!. | **48** | 102 |
+| [A001764](seq/A001xxx/A001764/) | a(n) = binomial(3\*n,n)/(2\*n+1) (enumerates ternary trees and also… | **55** | 1001 |
+| [A001765](seq/A001xxx/A001765/) | Coefficients of iterated exponentials. | **85** | 100 |
 | [A001769](seq/A001xxx/A001769/) | Expansion of 1/((1+x)\*(1-x)^7). | **45** | 10001 |
+| [A001777](seq/A001xxx/A001777/) | Lah numbers: a(n) = n! \* binomial(n-1, 4)/5!. | **45** | 96 |
+| [A001778](seq/A001xxx/A001778/) | Lah numbers: a(n) = n!\*binomial(n-1,5)/6!. | **45** | 95 |
 | [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
 | [A001780](seq/A001xxx/A001780/) | Expansion of 1/((1+x)\*(1-x)^9). | **45** | 2001 |
 | [A001781](seq/A001xxx/A001781/) | Expansion of 1/((1+x)\*(1-x)^10). | **45** | 10001 |
+| [A001784](seq/A001xxx/A001784/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+3, n]].… | **67** | 16 |
+| [A001785](seq/A001xxx/A001785/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+4, n]].… | **76** | 15 |
 | [A001786](seq/A001xxx/A001786/) | Expansion of 1/((1+x)\*(1-x)^11). | **46** | 1001 |
 | [A001787](seq/A001xxx/A001787/) | a(n) = n\*2^(n-1). | **30** | 501 |
 | [A001788](seq/A001xxx/A001788/) | a(n) = n\*(n+1)\*2^(n-2). | **34** | 501 |
 | [A001789](seq/A001xxx/A001789/) | a(n) = binomial(n,3)\*2^(n-3). | **38** | 498 |
+| [A001790](seq/A001xxx/A001790/) | Numerators in expansion of 1/sqrt(1-x). | **46** | 1667 |
+| [A001791](seq/A001xxx/A001791/) | a(n) = binomial coefficient C(2n, n-1). | **43** | 1201 |
 | [A001792](seq/A001xxx/A001792/) | a(n) = (n+2)\*2^(n-1). | **30** | 501 |
 | [A001793](seq/A001xxx/A001793/) | a(n) = n\*(n+3)\*2^(n-3). | **36** | 500 |
 | [A001794](seq/A001xxx/A001794/) | Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n… | **43** | 501 |
