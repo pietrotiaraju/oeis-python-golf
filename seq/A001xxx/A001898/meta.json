@@ -1,0 +1,6 @@
+{
+  "name": "Denominators of Bernoulli polynomials B(n)(x).",
+  "offset": 0,
+  "min_terms": 27,
+  "timeout": 60
+}
