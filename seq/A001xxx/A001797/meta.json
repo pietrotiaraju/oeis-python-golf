@@ -1,0 +1,6 @@
+{
+  "name": "Coefficient of P_2(x) in the Legendre expansion of x^n.",
+  "offset": 1,
+  "min_terms": 830,
+  "timeout": 60
+}

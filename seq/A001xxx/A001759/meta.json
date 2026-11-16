@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations of [n] with n-3 sequences.",
+  "offset": 4,
+  "min_terms": 18,
+  "timeout": 60
+}
