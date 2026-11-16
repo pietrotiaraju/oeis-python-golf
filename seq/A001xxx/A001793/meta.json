@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = n*(n+3)*2^(n-3).",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
