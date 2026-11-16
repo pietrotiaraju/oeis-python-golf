@@ -1763,6 +1763,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001768](seq/A001xxx/A001768/) | Sorting numbers: number of comparisons for merge insertion sort of n… | **44** | 10000 |
 | [A001769](seq/A001xxx/A001769/) | Expansion of 1/((1+x)\*(1-x)^7). | **45** | 10001 |
 | [A001770](seq/A001xxx/A001770/) | Numbers k such that 5\*2^k - 1 is prime. | **68** | 25 |
+| [A001771](seq/A001xxx/A001771/) | Numbers k such that 7\*2^k - 1 is prime. | **72** | 8 |
+| [A001772](seq/A001xxx/A001772/) | Numbers k such that 11\*2^k - 1 is prime. | **72** | 11 |
+| [A001773](seq/A001xxx/A001773/) | Numbers k such that 13\*2^k - 1 is prime. | **75** | 6 |
+| [A001774](seq/A001xxx/A001774/) | Numbers k such that 17\*2^k - 1 is prime. | **75** | 22 |
+| [A001775](seq/A001xxx/A001775/) | Numbers k such that 19\*2^k - 1 is prime. | **78** | 20 |
 | [A001777](seq/A001xxx/A001777/) | Lah numbers: a(n) = n! \* binomial(n-1, 4)/5!. | **45** | 96 |
 | [A001778](seq/A001xxx/A001778/) | Lah numbers: a(n) = n!\*binomial(n-1,5)/6!. | **45** | 95 |
 | [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
