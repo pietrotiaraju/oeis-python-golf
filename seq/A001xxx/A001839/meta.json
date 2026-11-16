@@ -1,0 +1,6 @@
+{
+  "name": "The coding-theoretic function A(n,4,3).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
