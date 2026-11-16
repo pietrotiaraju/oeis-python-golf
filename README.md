@@ -1874,6 +1874,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001882](seq/A001xxx/A001882/) | a(2n) = a(2n-1) + 2a(2n-2), a(2n+1) = a(2n) + a(2n-1), with a(1) = 2… | **44** | 500 |
 | [A001883](seq/A001xxx/A001883/) | Number of permutations s of {1,2,...,n} such that \|s(i)-i\|>1 for each… | **149** | 201 |
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
+| [A001885](seq/A001xxx/A001885/) | Hit polynomials. | **167** | 22 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
 | [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
 | [A001891](seq/A001xxx/A001891/) | Hit polynomials; convolution of natural numbers with Fibonacci… | **42** | 1001 |
