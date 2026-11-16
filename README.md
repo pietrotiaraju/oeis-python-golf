@@ -1743,12 +1743,17 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001748](seq/A001xxx/A001748/) | a(n) = 3 \* prime(n). | **42** | 12000 |
 | [A001749](seq/A001xxx/A001749/) | Primes multiplied by 4. | **42** | 12000 |
 | [A001750](seq/A001xxx/A001750/) | Primes multiplied by 5. | **42** | 10000 |
+| [A001751](seq/A001xxx/A001751/) | Primes together with primes multiplied by 2. | **64** | 10000 |
 | [A001752](seq/A001xxx/A001752/) | Expansion of 1/((1+x)\*(1-x)^5). | **37** | 10001 |
 | [A001753](seq/A001xxx/A001753/) | Expansion of g.f. 1/((1+x)\*(1-x)^6). | **45** | 10001 |
+| [A001766](seq/A001xxx/A001766/) | Index of (the image of) the modular group Gamma(n) in PSL\_2(Z). | **86** | 1000 |
+| [A001767](seq/A001xxx/A001767/) | Genus of modular group Gamma(n) = genus of modular curve Chi(n). | **91** | 999 |
+| [A001768](seq/A001xxx/A001768/) | Sorting numbers: number of comparisons for merge insertion sort of n… | **44** | 10000 |
 | [A001769](seq/A001xxx/A001769/) | Expansion of 1/((1+x)\*(1-x)^7). | **45** | 10001 |
 | [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
 | [A001780](seq/A001xxx/A001780/) | Expansion of 1/((1+x)\*(1-x)^9). | **45** | 2001 |
 | [A001781](seq/A001xxx/A001781/) | Expansion of 1/((1+x)\*(1-x)^10). | **45** | 10001 |
+| [A001783](seq/A001xxx/A001783/) | n-phi-torial, or phi-torial of n: Product k, 1 <= k <= n, k… | **81** | 200 |
 | [A001786](seq/A001xxx/A001786/) | Expansion of 1/((1+x)\*(1-x)^11). | **46** | 1001 |
 | [A001787](seq/A001xxx/A001787/) | a(n) = n\*2^(n-1). | **30** | 501 |
 | [A001788](seq/A001xxx/A001788/) | a(n) = n\*(n+1)\*2^(n-2). | **34** | 501 |
