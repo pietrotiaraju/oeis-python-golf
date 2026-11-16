@@ -1,3 +1,2 @@
-import math
-n=2
-while[print(n*math.comb(2*n-2,n)>>n.bit_count())]:n+=1
+d=1;n=2
+while[print(d)]:n+=1;d=d*(2*n-3)*(n&-n)//(n-2)

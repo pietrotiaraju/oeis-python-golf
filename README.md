@@ -1791,7 +1791,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001797](seq/A001xxx/A001797/) | Coefficient of P\_2(x) in the Legendre expansion of x^n. | **80** | 830 |
 | [A001798](seq/A001xxx/A001798/) | Coefficient of P\_3(x) in the Legendre expansion of x^n. | **83** | 830 |
 | [A001799](seq/A001xxx/A001799/) | Coefficient of P\_4(x) in the Legendre expansion of x^n. | **93** | 829 |
-| [A001800](seq/A001xxx/A001800/) | Diagonal 2 of triangle A100258 comprising coefficients of Legendre… | **70** | 501 |
+| [A001800](seq/A001xxx/A001800/) | Diagonal 2 of triangle A100258 comprising coefficients of Legendre… | **54** | 501 |
 | [A001801](seq/A001xxx/A001801/) | Diagonal 3 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
 | [A001802](seq/A001xxx/A001802/) | Diagonal 4 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
 | [A001803](seq/A001xxx/A001803/) | Numerators in expansion of (1 - x)^(-3/2). | **47** | 201 |
