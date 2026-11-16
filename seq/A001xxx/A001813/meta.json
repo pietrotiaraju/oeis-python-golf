@@ -1,0 +1,6 @@
+{
+  "name": "Quadruple factorial numbers: a(n) = (2n)!/n!.",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}

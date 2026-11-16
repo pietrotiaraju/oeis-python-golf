@@ -1795,11 +1795,23 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001801](seq/A001xxx/A001801/) | Diagonal 3 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
 | [A001802](seq/A001xxx/A001802/) | Diagonal 4 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
 | [A001803](seq/A001xxx/A001803/) | Numerators in expansion of (1 - x)^(-3/2). | **47** | 201 |
+| [A001804](seq/A001xxx/A001804/) | a(n) = n! \* C(n,2). | **39** | 99 |
+| [A001805](seq/A001xxx/A001805/) | a(n) = n! \* binomial(n,3). | **43** | 98 |
+| [A001806](seq/A001xxx/A001806/) | a(n) = n! \* binomial(n,4). | **43** | 97 |
+| [A001807](seq/A001xxx/A001807/) | a(n) = n! \* binomial(n,5). | **44** | 96 |
+| [A001808](seq/A001xxx/A001808/) | Expansion of 1/((1+x)\*(1-x)^12). | **46** | 1001 |
+| [A001809](seq/A001xxx/A001809/) | a(n) = n! \* n(n-1)/4. | **42** | 101 |
+| [A001810](seq/A001xxx/A001810/) | a(n) = n!\*n\*(n-1)\*(n-2)/36. | **49** | 101 |
 | [A001811](seq/A001xxx/A001811/) | Coefficients of Laguerre polynomials. | **43** | 97 |
 | [A001812](seq/A001xxx/A001812/) | Coefficients of Laguerre polynomials. | **43** | 96 |
+| [A001813](seq/A001xxx/A001813/) | Quadruple factorial numbers: a(n) = (2n)!/n!. | **33** | 101 |
 | [A001814](seq/A001xxx/A001814/) | Coefficient of H\_2 when expressing x^{2n} in terms of Hermite… | **37** | 200 |
+| [A001815](seq/A001xxx/A001815/) | a(n) = binomial(n,2) \* 2^(n-1). | **34** | 501 |
 | [A001816](seq/A001xxx/A001816/) | Coefficients of x^n in Hermite polynomial H\_{n+4}. | **41** | 501 |
 | [A001818](seq/A001xxx/A001818/) | Squares of double factorials: (1\*3\*5\*...\*(2n-1))^2 = ((2\*n-1)!!)^2. | **33** | 51 |
+| [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
+| [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
+| [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
