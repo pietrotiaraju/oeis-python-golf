@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 7*2^k - 1 is prime.",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 10
+}
