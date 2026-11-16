@@ -1743,7 +1743,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001748](seq/A001xxx/A001748/) | a(n) = 3 \* prime(n). | **42** | 12000 |
 | [A001749](seq/A001xxx/A001749/) | Primes multiplied by 4. | **42** | 12000 |
 | [A001750](seq/A001xxx/A001750/) | Primes multiplied by 5. | **42** | 10000 |
-| [A001751](seq/A001xxx/A001751/) | Primes together with primes multiplied by 2. | **64** | 10000 |
+| [A001751](seq/A001xxx/A001751/) | Primes together with primes multiplied by 2. | **66** | 10000 |
 | [A001752](seq/A001xxx/A001752/) | Expansion of 1/((1+x)\*(1-x)^5). | **37** | 10001 |
 | [A001753](seq/A001xxx/A001753/) | Expansion of g.f. 1/((1+x)\*(1-x)^6). | **45** | 10001 |
 | [A001754](seq/A001xxx/A001754/) | Lah numbers: a(n) = n!\*binomial(n-1,2)/6. | **45** | 300 |
