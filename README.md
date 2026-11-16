@@ -1762,6 +1762,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001767](seq/A001xxx/A001767/) | Genus of modular group Gamma(n) = genus of modular curve Chi(n). | **91** | 999 |
 | [A001768](seq/A001xxx/A001768/) | Sorting numbers: number of comparisons for merge insertion sort of n… | **44** | 10000 |
 | [A001769](seq/A001xxx/A001769/) | Expansion of 1/((1+x)\*(1-x)^7). | **45** | 10001 |
+| [A001770](seq/A001xxx/A001770/) | Numbers k such that 5\*2^k - 1 is prime. | **68** | 25 |
 | [A001777](seq/A001xxx/A001777/) | Lah numbers: a(n) = n! \* binomial(n-1, 4)/5!. | **45** | 96 |
 | [A001778](seq/A001xxx/A001778/) | Lah numbers: a(n) = n!\*binomial(n-1,5)/6!. | **45** | 95 |
 | [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
