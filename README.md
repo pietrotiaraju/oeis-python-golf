@@ -1827,8 +1827,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001833](seq/A001xxx/A001833/) | Number of labeled graded partially ordered sets with n elements. | **216** | 101 |
 | [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
 | [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
+| [A001839](seq/A001xxx/A001839/) | The coding-theoretic function A(n,4,3). | **43** | 10000 |
 | [A001840](seq/A001xxx/A001840/) | Expansion of g.f. x/((1 - x)^2\*(1 - x^3)). | **30** | 1001 |
+| [A001841](seq/A001xxx/A001841/) | Related to Zarankiewicz's problem. | **38** | 9998 |
 | [A001842](seq/A001xxx/A001842/) | Number of divisors of n of the form 4\*k+3. | **58** | 10001 |
+| [A001843](seq/A001xxx/A001843/) | The coding-theoretic function A(n,4,4). | **53** | 1000 |
 | [A001844](seq/A001xxx/A001844/) | Centered square numbers: a(n) = 2\*n\*(n+1)+1. Sums of two consecutive… | **31** | 1001 |
 | [A001845](seq/A001xxx/A001845/) | Centered octahedral numbers (crystal ball sequence for cubic lattice). | **35** | 1001 |
 | [A001846](seq/A001xxx/A001846/) | Centered 4-dimensional orthoplex numbers (crystal ball sequence for… | **39** | 1001 |
@@ -1836,13 +1839,21 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001848](seq/A001xxx/A001848/) | Crystal ball sequence for 6-dimensional cubic lattice. | **50** | 1001 |
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
+| [A001853](seq/A001xxx/A001853/) | Total height of trees with n nodes. | **151** | 300 |
 | [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
 | [A001856](seq/A001xxx/A001856/) | A self-generating sequence: every positive integer occurs as… | **98** | 1000 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
+| [A001860](seq/A001xxx/A001860/) | Number of series-reduced planted trees with n+9 nodes and 4 internal… | **42** | 1001 |
 | [A001861](seq/A001xxx/A001861/) | Expansion of e.g.f. exp(2\*(exp(x) - 1)). | **48** | 559 |
+| [A001862](seq/A001xxx/A001862/) | Number of forests of least height with n nodes. | **106** | 101 |
+| [A001863](seq/A001xxx/A001863/) | Normalized total height of rooted trees with n nodes. | **62** | 385 |
+| [A001864](seq/A001xxx/A001864/) | Total height of rooted trees with n labeled nodes. | **68** | 100 |
 | [A001865](seq/A001xxx/A001865/) | Number of connected functions on n labeled nodes. | **58** | 380 |
 | [A001866](seq/A001xxx/A001866/) | Number of connected graphs with n nodes and n edges. | **77** | 101 |
+| [A001867](seq/A001xxx/A001867/) | Number of n-bead necklaces with 3 colors. | **82** | 201 |
+| [A001868](seq/A001xxx/A001868/) | Number of n-bead necklaces with 4 colors. | **82** | 201 |
+| [A001869](seq/A001xxx/A001869/) | Number of n-bead necklaces with 5 colors. | **82** | 201 |
 | [A001870](seq/A001xxx/A001870/) | Expansion of (1-x)/(1 - 3\*x + x^2)^2. | **47** | 1001 |
 | [A001871](seq/A001xxx/A001871/) | Expansion of 1/(1 - 3\*x + x^2)^2. | **47** | 1001 |
 | [A001872](seq/A001xxx/A001872/) | Convolved Fibonacci numbers. | **53** | 501 |
@@ -1864,6 +1875,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
 | [A001894](seq/A001xxx/A001894/) | Number of permutations of {1,...,n} having n-4 inversions (n>=4). | **92** | 400 |
+| [A001895](seq/A001xxx/A001895/) | Number of rooted planar 2-trees with n nodes. | **84** | 200 |
 | [A001896](seq/A001xxx/A001896/) | Numerators of cosecant numbers -2\*(2^(2\*n - 1) - 1)\*Bernoulli(2\*n);… | **135** | 18 |
 | [A001897](seq/A001xxx/A001897/) | Denominators of cosecant numbers: -2\*(2^(2\*n-1)-1)\*Bernoulli(2\*n). | **79** | 52 |
 | [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
