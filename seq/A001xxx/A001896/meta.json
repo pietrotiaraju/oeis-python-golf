@@ -1,0 +1,6 @@
+{
+  "name": "Numerators of cosecant numbers -2*(2^(2*n - 1) - 1)*Bernoulli(2*n); also of Bernoulli(2*n, 1/2) and Bernoulli(2*n, 1/4).",
+  "offset": 0,
+  "min_terms": 18,
+  "timeout": 60
+}

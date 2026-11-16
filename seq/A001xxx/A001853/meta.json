@@ -1,0 +1,6 @@
+{
+  "name": "Total height of trees with n nodes.",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of Sum_{n>=0} x^(3n+2)/(1-x^(3n+2)).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

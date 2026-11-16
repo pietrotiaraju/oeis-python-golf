@@ -1,0 +1,6 @@
+{
+  "name": "Total height of all rooted trees on n labeled nodes.",
+  "offset": 1,
+  "min_terms": 240,
+  "timeout": 60
+}

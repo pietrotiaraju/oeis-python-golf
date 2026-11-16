@@ -1,0 +1,6 @@
+{
+  "name": "Denominators of cosecant numbers: -2*(2^(2*n-1)-1)*Bernoulli(2*n).",
+  "offset": 0,
+  "min_terms": 52,
+  "timeout": 60
+}
