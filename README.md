@@ -1846,7 +1846,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001854](seq/A001xxx/A001854/) | Total height of all rooted trees on n labeled nodes. | **169** | 240 |
 | [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
 | [A001856](seq/A001xxx/A001856/) | A self-generating sequence: every positive integer occurs as… | **98** | 1000 |
-| [A001857](seq/A001xxx/A001857/) | a(1)=2, a(2)=3; for n >= 3, a(n) is smallest number that is uniquely… | **78** | 6000 |
+| [A001857](seq/A001xxx/A001857/) | a(1)=2, a(2)=3; for n >= 3, a(n) is smallest number that is uniquely… | **78** | 5000 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001860](seq/A001xxx/A001860/) | Number of series-reduced planted trees with n+9 nodes and 4 internal… | **42** | 1001 |
