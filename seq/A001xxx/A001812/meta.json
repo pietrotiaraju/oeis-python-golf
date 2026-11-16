@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of Laguerre polynomials.",
+  "offset": 5,
+  "min_terms": 96,
+  "timeout": 60
+}

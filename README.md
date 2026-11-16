@@ -1792,6 +1792,18 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001798](seq/A001xxx/A001798/) | Coefficient of P\_3(x) in the Legendre expansion of x^n. | **83** | 830 |
 | [A001799](seq/A001xxx/A001799/) | Coefficient of P\_4(x) in the Legendre expansion of x^n. | **93** | 829 |
 | [A001800](seq/A001xxx/A001800/) | Diagonal 2 of triangle A100258 comprising coefficients of Legendre… | **70** | 501 |
+| [A001801](seq/A001xxx/A001801/) | Diagonal 3 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
+| [A001802](seq/A001xxx/A001802/) | Diagonal 4 of triangle A100258 comprising coefficients of Legendre… | **54** | 1001 |
+| [A001803](seq/A001xxx/A001803/) | Numerators in expansion of (1 - x)^(-3/2). | **47** | 201 |
+| [A001811](seq/A001xxx/A001811/) | Coefficients of Laguerre polynomials. | **43** | 97 |
+| [A001812](seq/A001xxx/A001812/) | Coefficients of Laguerre polynomials. | **43** | 96 |
+| [A001814](seq/A001xxx/A001814/) | Coefficient of H\_2 when expressing x^{2n} in terms of Hermite… | **37** | 200 |
+| [A001816](seq/A001xxx/A001816/) | Coefficients of x^n in Hermite polynomial H\_{n+4}. | **41** | 501 |
+| [A001818](seq/A001xxx/A001818/) | Squares of double factorials: (1\*3\*5\*...\*(2n-1))^2 = ((2\*n-1)!!)^2. | **33** | 51 |
+| [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
+| [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
+| [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
+| [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
