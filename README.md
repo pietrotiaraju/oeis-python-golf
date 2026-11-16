@@ -1832,6 +1832,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
+| [A001890](seq/A001xxx/A001890/) | Hit polynomials. | **165** | 21 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
