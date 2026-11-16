@@ -1,0 +1,6 @@
+{
+  "name": "Total diameter of unlabeled trees with n nodes.",
+  "offset": 1,
+  "min_terms": 30,
+  "timeout": 60
+}
