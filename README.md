@@ -1832,6 +1832,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001848](seq/A001xxx/A001848/) | Crystal ball sequence for 6-dimensional cubic lattice. | **50** | 1001 |
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
+| [A001852](seq/A001xxx/A001852/) | Total diameter of labeled trees with n nodes. | **222** | 18 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001861](seq/A001xxx/A001861/) | Expansion of e.g.f. exp(2\*(exp(x) - 1)). | **48** | 559 |
