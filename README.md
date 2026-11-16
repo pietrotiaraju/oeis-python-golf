@@ -1871,6 +1871,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
 | [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
+| [A001889](seq/A001xxx/A001889/) | Hit polynomials. | **165** | 22 |
 | [A001891](seq/A001xxx/A001891/) | Hit polynomials; convolution of natural numbers with Fibonacci… | **42** | 1001 |
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
