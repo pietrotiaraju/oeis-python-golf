@@ -1,0 +1,6 @@
+{
+  "name": "n-phi-torial, or phi-torial of n: Product k, 1 <= k <= n, k relatively prime to n.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

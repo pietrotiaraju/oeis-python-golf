@@ -1,0 +1,6 @@
+{
+  "name": "Sorting numbers: number of comparisons for merge insertion sort of n elements.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
