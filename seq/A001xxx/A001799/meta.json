@@ -1,0 +1,6 @@
+{
+  "name": "Coefficient of P_4(x) in the Legendre expansion of x^n.",
+  "offset": 2,
+  "min_terms": 829,
+  "timeout": 60
+}
