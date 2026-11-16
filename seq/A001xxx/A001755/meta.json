@@ -1,0 +1,6 @@
+{
+  "name": "Lah numbers: a(n) = n! * binomial(n-1, 3)/4!.",
+  "offset": 4,
+  "min_terms": 97,
+  "timeout": 60
+}

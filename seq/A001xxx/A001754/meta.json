@@ -1,0 +1,6 @@
+{
+  "name": "Lah numbers: a(n) = n!*binomial(n-1,2)/6.",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 60
+}
