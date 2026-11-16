@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted planar 2-trees with n nodes.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
