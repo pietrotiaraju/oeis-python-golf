@@ -1801,7 +1801,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001807](seq/A001xxx/A001807/) | a(n) = n! \* binomial(n,5). | **44** | 96 |
 | [A001808](seq/A001xxx/A001808/) | Expansion of 1/((1+x)\*(1-x)^12). | **46** | 1001 |
 | [A001809](seq/A001xxx/A001809/) | a(n) = n! \* n(n-1)/4. | **42** | 101 |
-| [A001810](seq/A001xxx/A001810/) | a(n) = n!\*n\*(n-1)\*(n-2)/36. | **49** | 101 |
+| [A001810](seq/A001xxx/A001810/) | a(n) = n!\*n\*(n-1)\*(n-2)/36. | **47** | 101 |
 | [A001811](seq/A001xxx/A001811/) | Coefficients of Laguerre polynomials. | **43** | 97 |
 | [A001812](seq/A001xxx/A001812/) | Coefficients of Laguerre polynomials. | **43** | 96 |
 | [A001813](seq/A001xxx/A001813/) | Quadruple factorial numbers: a(n) = (2n)!/n!. | **33** | 101 |
