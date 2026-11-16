@@ -1,0 +1,6 @@
+{
+  "name": "Genus of modular group Gamma(n) = genus of modular curve Chi(n).",
+  "offset": 2,
+  "min_terms": 999,
+  "timeout": 60
+}
