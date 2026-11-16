@@ -30,6 +30,9 @@ while[print(f*n*~-n>>2)]:n+=1;f*=n
   the shift, but here the offset is 0 and n!/2 is not an integer at
   n = 0, 1. The ratio a(n) = a(n − 1)·n²/(n − 2) cannot start from the
   zero terms a(0) = a(1) = 0.
+- Same length with the counter one behind and f = −(n + 1)!, the start
+  that saves 2 bytes in [A001810](../A001810/): `f=n=-1` /
+  `while[print(f*n*~n>>2)]:n+=1;f*=n+1`.
 - a(1557) is the first term over 4300 digits, so Python's int-to-str limit
   stops the program there (an interpreter limit, not a wrong term).
 - The b-file has 101 terms (n = 0 to 100); the bar is the whole b-file
