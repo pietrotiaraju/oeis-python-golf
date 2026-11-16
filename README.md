@@ -1827,6 +1827,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001833](seq/A001xxx/A001833/) | Number of labeled graded partially ordered sets with n elements. | **216** | 101 |
 | [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
 | [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
+| [A001836](seq/A001xxx/A001836/) | Numbers k such that phi(2k-1) < phi(2k), where phi is Euler's totient… | **111** | 1000 |
+| [A001837](seq/A001xxx/A001837/) | Numbers k such that phi(2k+1) < phi(2k). | **110** | 10000 |
+| [A001838](seq/A001xxx/A001838/) | Numbers k such that phi(k+2) = phi(k) + 2. | **114** | 10000 |
 | [A001840](seq/A001xxx/A001840/) | Expansion of g.f. x/((1 - x)^2\*(1 - x^3)). | **30** | 1001 |
 | [A001842](seq/A001xxx/A001842/) | Number of divisors of n of the form 4\*k+3. | **58** | 10001 |
 | [A001844](seq/A001xxx/A001844/) | Centered square numbers: a(n) = 2\*n\*(n+1)+1. Sums of two consecutive… | **31** | 1001 |
@@ -1955,6 +1958,9 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001548](seq/A001xxx/A001548/) | Number of connected linear spaces with n (unlabeled) points. | **318** | 7 | 412 | 9 |
 | [A001597](seq/A001xxx/A001597/) | Perfect powers: m^k where m > 0 and k >= 2. | **65** | 1000 | 102 | 10000 |
 | [A001691](seq/A001xxx/A001691/) | Number of two-element generating sets in the symmetric group S\_n. | **208** | 5 | 288 | 6 |
+| [A001836](seq/A001xxx/A001836/) | Numbers k such that phi(2k-1) < phi(2k), where phi is Euler's totient… | **96** | 150 | 111 | 1000 |
+| [A001837](seq/A001xxx/A001837/) | Numbers k such that phi(2k+1) < phi(2k). | **96** | 130 | 110 | 10000 |
+| [A001838](seq/A001xxx/A001838/) | Numbers k such that phi(k+2) = phi(k) + 2. | **96** | 300 | 114 | 10000 |
 
 <!-- short:end -->
 
