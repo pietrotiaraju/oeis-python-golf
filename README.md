@@ -1887,6 +1887,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001895](seq/A001xxx/A001895/) | Number of rooted planar 2-trees with n nodes. | **84** | 200 |
 | [A001896](seq/A001xxx/A001896/) | Numerators of cosecant numbers -2\*(2^(2\*n - 1) - 1)\*Bernoulli(2\*n);… | **135** | 18 |
 | [A001897](seq/A001xxx/A001897/) | Denominators of cosecant numbers: -2\*(2^(2\*n-1)-1)\*Bernoulli(2\*n). | **79** | 52 |
+| [A001898](seq/A001xxx/A001898/) | Denominators of Bernoulli polynomials B(n)(x). | **222** | 27 |
 | [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
