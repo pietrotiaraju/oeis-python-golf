@@ -1750,6 +1750,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001755](seq/A001xxx/A001755/) | Lah numbers: a(n) = n! \* binomial(n-1, 3)/4!. | **45** | 97 |
 | [A001756](seq/A001xxx/A001756/) | a(n) = A059366(n,n-3) = A059366(n,3) for n >= 3, where the triangle… | **46** | 98 |
 | [A001757](seq/A001xxx/A001757/) | Expansion of an integral: central elements of rows of triangle in… | **50** | 22 |
+| [A001758](seq/A001xxx/A001758/) | Number of quasi-alternating permutations of length n. | **68** | 99 |
+| [A001759](seq/A001xxx/A001759/) | Number of permutations of [n] with n-3 sequences. | **98** | 18 |
+| [A001760](seq/A001xxx/A001760/) | Number of permutations of [n] with n-4 sequences. | **103** | 17 |
 | [A001761](seq/A001xxx/A001761/) | a(n) = (2\*n)!/(n+1)!. | **45** | 201 |
 | [A001762](seq/A001xxx/A001762/) | Number of labeled n-vertex dissections of a ball. | **67** | 98 |
 | [A001763](seq/A001xxx/A001763/) | a(n) = (3n+3)!/(2n+3)!. | **48** | 102 |
@@ -1776,6 +1779,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001792](seq/A001xxx/A001792/) | a(n) = (n+2)\*2^(n-1). | **30** | 501 |
 | [A001793](seq/A001xxx/A001793/) | a(n) = n\*(n+3)\*2^(n-3). | **36** | 500 |
 | [A001794](seq/A001xxx/A001794/) | Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n… | **43** | 501 |
+| [A001795](seq/A001xxx/A001795/) | Coefficient of P\_0(x) in the Legendre expansion of x^n. | **69** | 101 |
+| [A001796](seq/A001xxx/A001796/) | Coefficient of P\_1(x) in the Legendre expansion of x^n. | **73** | 831 |
+| [A001797](seq/A001xxx/A001797/) | Coefficient of P\_2(x) in the Legendre expansion of x^n. | **80** | 830 |
+| [A001798](seq/A001xxx/A001798/) | Coefficient of P\_3(x) in the Legendre expansion of x^n. | **83** | 830 |
+| [A001799](seq/A001xxx/A001799/) | Coefficient of P\_4(x) in the Legendre expansion of x^n. | **93** | 829 |
+| [A001800](seq/A001xxx/A001800/) | Diagonal 2 of triangle A100258 comprising coefficients of Legendre… | **70** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
