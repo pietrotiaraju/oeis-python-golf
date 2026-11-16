@@ -1,0 +1,6 @@
+{
+  "name": "Discriminants of Shapiro polynomials.",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 60
+}

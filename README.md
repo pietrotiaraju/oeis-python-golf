@@ -1767,6 +1767,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
 | [A001780](seq/A001xxx/A001780/) | Expansion of 1/((1+x)\*(1-x)^9). | **45** | 2001 |
 | [A001781](seq/A001xxx/A001781/) | Expansion of 1/((1+x)\*(1-x)^10). | **45** | 10001 |
+| [A001782](seq/A001xxx/A001782/) | Discriminants of Shapiro polynomials. | **328** | 8 |
 | [A001783](seq/A001xxx/A001783/) | n-phi-torial, or phi-torial of n: Product k, 1 <= k <= n, k… | **81** | 200 |
 | [A001784](seq/A001xxx/A001784/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+3, n]].… | **67** | 16 |
 | [A001785](seq/A001xxx/A001785/) | Second-order reciprocal Stirling number (Fekete) a(n) = [[2n+4, n]].… | **76** | 15 |
