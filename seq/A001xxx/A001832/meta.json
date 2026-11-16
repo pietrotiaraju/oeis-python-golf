@@ -1,0 +1,6 @@
+{
+  "name": "Number of labeled connected bipartite graphs on n nodes.",
+  "offset": 1,
+  "min_terms": 50,
+  "timeout": 60
+}
