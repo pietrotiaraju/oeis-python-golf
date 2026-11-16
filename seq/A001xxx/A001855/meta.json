@@ -1,0 +1,6 @@
+{
+  "name": "Sorting numbers: maximal number of comparisons for sorting n elements by binary insertion.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

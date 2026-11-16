@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that phi(2k+1) < phi(2k).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

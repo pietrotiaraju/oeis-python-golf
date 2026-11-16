@@ -1,0 +1,6 @@
+{
+  "name": "Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or p(i) - i > 2 for all i.",
+  "offset": 0,
+  "min_terms": 301,
+  "timeout": 60
+}
