@@ -1,0 +1,6 @@
+{
+  "name": "Squares of double factorials: (1*3*5*...*(2n-1))^2 = ((2*n-1)!!)^2.",
+  "offset": 0,
+  "min_terms": 51,
+  "timeout": 60
+}

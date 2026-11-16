@@ -1,0 +1,6 @@
+{
+  "name": "Successive numerators of Wallis's approximation to Pi/2 (unreduced).",
+  "offset": 0,
+  "min_terms": 450,
+  "timeout": 60
+}

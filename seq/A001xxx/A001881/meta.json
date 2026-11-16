@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of Bessel polynomials y_n (x).",
+  "offset": 5,
+  "min_terms": 396,
+  "timeout": 60
+}
