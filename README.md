@@ -1743,6 +1743,19 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001748](seq/A001xxx/A001748/) | a(n) = 3 \* prime(n). | **42** | 12000 |
 | [A001749](seq/A001xxx/A001749/) | Primes multiplied by 4. | **42** | 12000 |
 | [A001750](seq/A001xxx/A001750/) | Primes multiplied by 5. | **42** | 10000 |
+| [A001752](seq/A001xxx/A001752/) | Expansion of 1/((1+x)\*(1-x)^5). | **37** | 10001 |
+| [A001753](seq/A001xxx/A001753/) | Expansion of g.f. 1/((1+x)\*(1-x)^6). | **45** | 10001 |
+| [A001769](seq/A001xxx/A001769/) | Expansion of 1/((1+x)\*(1-x)^7). | **45** | 10001 |
+| [A001779](seq/A001xxx/A001779/) | Expansion of g.f. 1/((1+x)\*(1-x)^8). | **45** | 10001 |
+| [A001780](seq/A001xxx/A001780/) | Expansion of 1/((1+x)\*(1-x)^9). | **45** | 2001 |
+| [A001781](seq/A001xxx/A001781/) | Expansion of 1/((1+x)\*(1-x)^10). | **45** | 10001 |
+| [A001786](seq/A001xxx/A001786/) | Expansion of 1/((1+x)\*(1-x)^11). | **46** | 1001 |
+| [A001787](seq/A001xxx/A001787/) | a(n) = n\*2^(n-1). | **30** | 501 |
+| [A001788](seq/A001xxx/A001788/) | a(n) = n\*(n+1)\*2^(n-2). | **34** | 501 |
+| [A001789](seq/A001xxx/A001789/) | a(n) = binomial(n,3)\*2^(n-3). | **38** | 498 |
+| [A001792](seq/A001xxx/A001792/) | a(n) = (n+2)\*2^(n-1). | **30** | 501 |
+| [A001793](seq/A001xxx/A001793/) | a(n) = n\*(n+3)\*2^(n-3). | **36** | 500 |
+| [A001794](seq/A001xxx/A001794/) | Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n… | **43** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
