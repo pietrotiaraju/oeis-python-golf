@@ -1,0 +1,6 @@
+{
+  "name": "Hit polynomials.",
+  "offset": 3,
+  "min_terms": 21,
+  "timeout": 60
+}

@@ -1843,10 +1843,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
 | [A001851](seq/A001xxx/A001851/) | Total diameter of unlabeled trees with n nodes. | **216** | 30 |
+| [A001852](seq/A001xxx/A001852/) | Total diameter of labeled trees with n nodes. | **222** | 18 |
 | [A001853](seq/A001xxx/A001853/) | Total height of trees with n nodes. | **151** | 300 |
 | [A001854](seq/A001xxx/A001854/) | Total height of all rooted trees on n labeled nodes. | **169** | 240 |
 | [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
 | [A001856](seq/A001xxx/A001856/) | A self-generating sequence: every positive integer occurs as… | **98** | 1000 |
+| [A001857](seq/A001xxx/A001857/) | a(1)=2, a(2)=3; for n >= 3, a(n) is smallest number that is uniquely… | **78** | 5000 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001860](seq/A001xxx/A001860/) | Number of series-reduced planted trees with n+9 nodes and 4 internal… | **42** | 1001 |
@@ -1874,8 +1876,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001882](seq/A001xxx/A001882/) | a(2n) = a(2n-1) + 2a(2n-2), a(2n+1) = a(2n) + a(2n-1), with a(1) = 2… | **44** | 500 |
 | [A001883](seq/A001xxx/A001883/) | Number of permutations s of {1,2,...,n} such that \|s(i)-i\|>1 for each… | **149** | 201 |
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
+| [A001885](seq/A001xxx/A001885/) | Hit polynomials. | **167** | 22 |
+| [A001886](seq/A001xxx/A001886/) | Hit polynomials. | **167** | 21 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
 | [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
+| [A001889](seq/A001xxx/A001889/) | Hit polynomials. | **165** | 22 |
+| [A001890](seq/A001xxx/A001890/) | Hit polynomials. | **165** | 21 |
 | [A001891](seq/A001xxx/A001891/) | Hit polynomials; convolution of natural numbers with Fibonacci… | **42** | 1001 |
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
@@ -1883,6 +1889,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001895](seq/A001xxx/A001895/) | Number of rooted planar 2-trees with n nodes. | **84** | 200 |
 | [A001896](seq/A001xxx/A001896/) | Numerators of cosecant numbers -2\*(2^(2\*n - 1) - 1)\*Bernoulli(2\*n);… | **135** | 18 |
 | [A001897](seq/A001xxx/A001897/) | Denominators of cosecant numbers: -2\*(2^(2\*n-1)-1)\*Bernoulli(2\*n). | **79** | 52 |
+| [A001898](seq/A001xxx/A001898/) | Denominators of Bernoulli polynomials B(n)(x). | **222** | 27 |
 | [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
