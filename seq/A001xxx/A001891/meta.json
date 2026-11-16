@@ -1,0 +1,6 @@
+{
+  "name": "Hit polynomials; convolution of natural numbers with Fibonacci numbers F(2), F(3), F(4), ....",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

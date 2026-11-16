@@ -1,0 +1,6 @@
+{
+  "name": "Centered 4-dimensional orthoplex numbers (crystal ball sequence for 4-dimensional cubic lattice).",
+  "offset": 0,
+  "min_terms": 1001,
+  "timeout": 60
+}

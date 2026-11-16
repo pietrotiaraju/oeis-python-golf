@@ -1824,11 +1824,25 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001833](seq/A001xxx/A001833/) | Number of labeled graded partially ordered sets with n elements. | **216** | 101 |
 | [A001834](seq/A001xxx/A001834/) | a(0) = 1, a(1) = 5, a(n) = 4\*a(n-1) - a(n-2). | **33** | 201 |
 | [A001835](seq/A001xxx/A001835/) | a(n) = 4\*a(n-1) - a(n-2), with a(0) = 1, a(1) = 1. | **33** | 201 |
+| [A001840](seq/A001xxx/A001840/) | Expansion of g.f. x/((1 - x)^2\*(1 - x^3)). | **30** | 1001 |
+| [A001844](seq/A001xxx/A001844/) | Centered square numbers: a(n) = 2\*n\*(n+1)+1. Sums of two consecutive… | **31** | 1001 |
+| [A001845](seq/A001xxx/A001845/) | Centered octahedral numbers (crystal ball sequence for cubic lattice). | **35** | 1001 |
+| [A001846](seq/A001xxx/A001846/) | Centered 4-dimensional orthoplex numbers (crystal ball sequence for… | **39** | 1001 |
+| [A001847](seq/A001xxx/A001847/) | Crystal ball sequence for 5-dimensional cubic lattice. | **46** | 1001 |
+| [A001848](seq/A001xxx/A001848/) | Crystal ball sequence for 6-dimensional cubic lattice. | **50** | 1001 |
+| [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
+| [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
 | [A001858](seq/A001xxx/A001858/) | Number of forests of trees on n labeled nodes. | **106** | 389 |
 | [A001859](seq/A001xxx/A001859/) | Triangular numbers plus quarter-squares: n\*(n+1)/2 + floor((n+1)^2/4)… | **30** | 1001 |
 | [A001861](seq/A001xxx/A001861/) | Expansion of e.g.f. exp(2\*(exp(x) - 1)). | **48** | 559 |
 | [A001865](seq/A001xxx/A001865/) | Number of connected functions on n labeled nodes. | **58** | 380 |
 | [A001866](seq/A001xxx/A001866/) | Number of connected graphs with n nodes and n edges. | **77** | 101 |
+| [A001870](seq/A001xxx/A001870/) | Expansion of (1-x)/(1 - 3\*x + x^2)^2. | **47** | 1001 |
+| [A001871](seq/A001xxx/A001871/) | Expansion of 1/(1 - 3\*x + x^2)^2. | **47** | 1001 |
+| [A001872](seq/A001xxx/A001872/) | Convolved Fibonacci numbers. | **53** | 501 |
+| [A001873](seq/A001xxx/A001873/) | Convolved Fibonacci numbers. | **53** | 501 |
+| [A001874](seq/A001xxx/A001874/) | Convolved Fibonacci numbers. | **53** | 501 |
+| [A001875](seq/A001xxx/A001875/) | Convolved Fibonacci numbers. | **53** | 501 |
 | [A001879](seq/A001xxx/A001879/) | a(n) = (2n+2)!/(n!\*2^(n+1)). | **36** | 201 |
 | [A001880](seq/A001xxx/A001880/) | Coefficients of Bessel polynomials y\_n (x). | **43** | 97 |
 | [A001881](seq/A001xxx/A001881/) | Coefficients of Bessel polynomials y\_n (x). | **44** | 396 |
@@ -1836,6 +1850,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001884](seq/A001xxx/A001884/) | Hit polynomials. | **166** | 24 |
 | [A001887](seq/A001xxx/A001887/) | Number of permutations p of {1,2,...,n} such that p(i) - i < 0 or… | **147** | 301 |
 | [A001888](seq/A001xxx/A001888/) | Hit polynomials. | **164** | 24 |
+| [A001891](seq/A001xxx/A001891/) | Hit polynomials; convolution of natural numbers with Fibonacci… | **42** | 1001 |
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
 | [A001894](seq/A001xxx/A001894/) | Number of permutations of {1,...,n} having n-4 inversions (n>=4). | **92** | 400 |
