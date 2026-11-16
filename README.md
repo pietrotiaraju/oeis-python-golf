@@ -1842,6 +1842,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001848](seq/A001xxx/A001848/) | Crystal ball sequence for 6-dimensional cubic lattice. | **50** | 1001 |
 | [A001849](seq/A001xxx/A001849/) | Crystal ball sequence for 7-dimensional cubic lattice. | **50** | 1001 |
 | [A001850](seq/A001xxx/A001850/) | Central Delannoy numbers: a(n) = Sum\_{k=0..n} C(n,k)\*C(n+k,k). | **53** | 1309 |
+| [A001852](seq/A001xxx/A001852/) | Total diameter of labeled trees with n nodes. | **222** | 18 |
 | [A001853](seq/A001xxx/A001853/) | Total height of trees with n nodes. | **151** | 300 |
 | [A001854](seq/A001xxx/A001854/) | Total height of all rooted trees on n labeled nodes. | **169** | 240 |
 | [A001855](seq/A001xxx/A001855/) | Sorting numbers: maximal number of comparisons for sorting n elements… | **43** | 10000 |
