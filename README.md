@@ -1854,6 +1854,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001892](seq/A001xxx/A001892/) | Number of permutations of (1,...,n) having n-2 inversions (n>=2). | **84** | 400 |
 | [A001893](seq/A001xxx/A001893/) | Number of permutations of (1,...,n) having n-3 inversions (n>=3). | **88** | 400 |
 | [A001894](seq/A001xxx/A001894/) | Number of permutations of {1,...,n} having n-4 inversions (n>=4). | **92** | 400 |
+| [A001898](seq/A001xxx/A001898/) | Denominators of Bernoulli polynomials B(n)(x). | **222** | 27 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
