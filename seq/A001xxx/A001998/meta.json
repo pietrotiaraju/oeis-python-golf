@@ -1,0 +1,6 @@
+{
+  "name": "Bending a piece of wire of length n+1; walks of length n+1 on a tetrahedron; also non-branched catafusenes with n+2 condensed hexagons.",
+  "offset": 0,
+  "min_terms": 2093,
+  "timeout": 60
+}
