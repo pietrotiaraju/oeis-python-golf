@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions with no even part repeated; partitions of n in which no parts are multiples of 4.",
+  "offset": 0,
+  "min_terms": 8500,
+  "timeout": 60
+}

@@ -1902,7 +1902,24 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
-| [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
+| [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
+| [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
+| [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
+| [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
+| [A001937](seq/A001xxx/A001937/) | Expansion of (psi(x^2) / psi(-x))^3 in powers of x where psi() is a… | **87** | 8000 |
+| [A001938](seq/A001xxx/A001938/) | Expansion of k/(4\*q^(1/2)) in powers of q, where k defined by sqrt(k)… | **92** | 7000 |
+| [A001939](seq/A001xxx/A001939/) | Expansion of (psi(-x) / phi(-x))^5 in powers of x where phi(), psi()… | **87** | 7000 |
+| [A001940](seq/A001xxx/A001940/) | Absolute value of coefficients of an elliptic function. | **87** | 1001 |
+| [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
+| [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
+| [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
+| [A001970](seq/A001xxx/A001970/) | Functional determinants; partitions of partitions; Euler transform… | **107** | 4000 |
+| [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
+| [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
+| [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
+| [A001978](seq/A001xxx/A001978/) | Number of partitions of 3n-1 into n nonnegative integers each no more… | **92** | 1001 |
+| [A001981](seq/A001xxx/A001981/) | Restricted partitions. | **90** | 760 |
+| [A001982](seq/A001xxx/A001982/) | Number of partitions of 4n-1 into n nonnegative integers each no… | **92** | 760 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
@@ -1920,6 +1937,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | **131** | 200 |
 | [A401762](seq/A401xxx/A401762/) | Number of distinct traces of length n of Wolfram's 2-state 3-symbol… | **144** | 18 |
 | [A401765](seq/A401xxx/A401765/) | Largest m such that an n X m rectangle can be tiled with Culik's 13… | **312** | 10 |
+| [A402396](seq/A402xxx/A402396/) | Number of tilings of a 3 X 3 X n box using copies of the seven Soma… | **411** | 7 |
 
 <!-- records:end -->
 

@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of (psi(x^2) / psi(-x))^3 in powers of x where psi() is a Ramanujan theta function.",
+  "offset": 0,
+  "min_terms": 8000,
+  "timeout": 60
+}

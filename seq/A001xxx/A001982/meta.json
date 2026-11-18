@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of 4n-1 into n nonnegative integers each no greater than 8.",
+  "offset": 0,
+  "min_terms": 760,
+  "timeout": 60
+}
