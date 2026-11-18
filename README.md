@@ -1892,6 +1892,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001898](seq/A001xxx/A001898/) | Denominators of Bernoulli polynomials B(n)(x). | **222** | 27 |
 | [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
+| [A001901](seq/A001xxx/A001901/) | Successive numerators of Wallis's approximation to Pi/2 (reduced). | **37** | 24 |
+| [A001902](seq/A001xxx/A001902/) | Successive denominators of Wallis's approximation to Pi/2 (reduced). | **55** | 25 |
+| [A001904](seq/A001xxx/A001904/) | From higher order Bernoulli numbers: absolute value of numerator of D… | **113** | 201 |
+| [A001905](seq/A001xxx/A001905/) | From higher-order Bernoulli numbers: absolute value of numerator of… | **121** | 200 |
+| [A001907](seq/A001xxx/A001907/) | Expansion of e.g.f. exp(-x)/(1-4\*x). | **38** | 351 |
+| [A001908](seq/A001xxx/A001908/) | E.g.f. exp(-x)/(1-5\*x). | **33** | 101 |
+| [A001909](seq/A001xxx/A001909/) | a(n) = n\*a(n-1) + (n-4)\*a(n-2), a(2) = 0, a(3) = 1. | **48** | 99 |
+| [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
+| [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
+| [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |

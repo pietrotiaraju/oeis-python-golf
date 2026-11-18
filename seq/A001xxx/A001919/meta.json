@@ -1,0 +1,6 @@
+{
+  "name": "Eighth column of quadrinomial coefficients.",
+  "offset": 3,
+  "min_terms": 998,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = n*a(n-1) + (n-4)*a(n-2), a(2) = 0, a(3) = 1.",
+  "offset": 2,
+  "min_terms": 99,
+  "timeout": 60
+}
