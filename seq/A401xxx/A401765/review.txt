@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+28392a94537c Exhaustive search: h enumerates every closed column (cycle of n tiles, last bottom = first top) for every arrangement of row kinds, and the frontier S of right edges is advanced column by column, so a(n) is the longest path in the column graph; states are kept as their least row rotation, which is exact because rotating the rows of a wrapping strip gives a strip. No block-word lemma is used. The loop ends because a cycle of columns would tile the plane periodically, which Culik's aperiodic set forbids.
