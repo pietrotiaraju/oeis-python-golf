@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f. exp(-x)/(1-5*x).",
+  "offset": 0,
+  "min_terms": 101,
+  "timeout": 60
+}
