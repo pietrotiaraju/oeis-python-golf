@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+1bc24627ac80 Fixed polycubes = polycubes up to translation (OEIS comment). Redelmeier's algorithm in the cubic lattice, as in A001168 with a third axis: each polycube is generated exactly once from its lowest cell in (z,y,x) order placed at the origin. Cells are coded x+K*y+K*K*z with K=n+2; the page shows that every cell the search touches has coordinates within K-3 of the origin and pairwise differences below K, so the code is injective and 'code>0' is exactly the (z,y,x)-after-origin test. Exhaustive, integer arithmetic only, so correct for every n.
