@@ -1902,8 +1902,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
+| [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
 | [A001938](seq/A001xxx/A001938/) | Expansion of k/(4\*q^(1/2)) in powers of q, where k defined by sqrt(k)… | **92** | 7000 |
 | [A001939](seq/A001xxx/A001939/) | Expansion of (psi(-x) / phi(-x))^5 in powers of x where phi(), psi()… | **87** | 7000 |
+| [A001940](seq/A001xxx/A001940/) | Absolute value of coefficients of an elliptic function. | **87** | 1001 |
+| [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
+| [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
+| [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
