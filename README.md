@@ -1892,6 +1892,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001898](seq/A001xxx/A001898/) | Denominators of Bernoulli polynomials B(n)(x). | **222** | 27 |
 | [A001899](seq/A001xxx/A001899/) | Number of divisors of n of the form 5k+4; a(0) = 0. | **58** | 10001 |
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
+| [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
