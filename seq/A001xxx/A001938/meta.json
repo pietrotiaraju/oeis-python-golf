@@ -1,0 +1,6 @@
+{
+  "name": "Expansion of k/(4*q^(1/2)) in powers of q, where k defined by sqrt(k) = theta_2(0, q)/theta_3(0, q).",
+  "offset": 0,
+  "min_terms": 7000,
+  "timeout": 60
+}
