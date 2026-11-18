@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+fad50c34dbab Counts connected quasi-orders (= connected finite topologies, open sets = up-sets) up to isomorphism. Reflexive relations are listed as bit rows; the same clopen-set count as the A001929 record (0 for non-transitive relations, 2^c for a quasi-order with c components) keeps the connected quasi-orders when 0<count<3, and the canonical form is the minimum over all n! relabellings of the injective n^2-bit encoding of the relabelled relation, so the number of distinct minima is the number of isomorphism classes. Exhaustive search with exact integers, right for every n.
