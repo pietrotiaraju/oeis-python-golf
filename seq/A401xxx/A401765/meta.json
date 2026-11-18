@@ -1,0 +1,6 @@
+{
+  "name": "Largest m such that an n X m rectangle can be tiled with Culik's 13 Wang tiles so that every column wraps around (its bottom edge matches its top edge).",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}
