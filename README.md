@@ -1908,6 +1908,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
 | [A001978](seq/A001xxx/A001978/) | Number of partitions of 3n-1 into n nonnegative integers each no more… | **92** | 1001 |
+| [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
