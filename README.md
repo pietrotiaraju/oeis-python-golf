@@ -1902,8 +1902,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
 | [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
+| [A001937](seq/A001xxx/A001937/) | Expansion of (psi(x^2) / psi(-x))^3 in powers of x where psi() is a… | **87** | 8000 |
 | [A001938](seq/A001xxx/A001938/) | Expansion of k/(4\*q^(1/2)) in powers of q, where k defined by sqrt(k)… | **92** | 7000 |
 | [A001939](seq/A001xxx/A001939/) | Expansion of (psi(-x) / phi(-x))^5 in powers of x where phi(), psi()… | **87** | 7000 |
 | [A001940](seq/A001xxx/A001940/) | Absolute value of coefficients of an elliptic function. | **87** | 1001 |
