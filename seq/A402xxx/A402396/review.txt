@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+4de64a7815c3 The pieces are generated, not listed: all 3- and 4-cell sets of a 3x3x3 window that form a non-straight tree (edge count k-1 from the digit sum of W, a '1' digit for a bend), giving the 688 placements = 92 orientations of the 7 Soma pieces. The count is an exact cell-by-cell transfer DP over the covered-ahead mask (27 bits suffice since a piece spans at most 3 layers); a(n) is the empty-mask count after n layers, with big-int counts, so it holds for every n. Terms agree with the draft's DATA and with its independent layer-matrix b-file through n=13.
