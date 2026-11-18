@@ -1902,6 +1902,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001938](seq/A001xxx/A001938/) | Expansion of k/(4\*q^(1/2)) in powers of q, where k defined by sqrt(k)… | **92** | 7000 |
+| [A001939](seq/A001xxx/A001939/) | Expansion of (psi(-x) / phi(-x))^5 in powers of x where phi(), psi()… | **87** | 7000 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
