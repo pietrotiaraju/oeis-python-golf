@@ -1936,6 +1936,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A386929](seq/A386xxx/A386929/) | a(n) is the least base b in {2,...,10} such that the base-b expansion… | **131** | 200 |
 | [A401762](seq/A401xxx/A401762/) | Number of distinct traces of length n of Wolfram's 2-state 3-symbol… | **144** | 18 |
 | [A401765](seq/A401xxx/A401765/) | Largest m such that an n X m rectangle can be tiled with Culik's 13… | **312** | 10 |
+| [A402396](seq/A402xxx/A402396/) | Number of tilings of a 3 X 3 X n box using copies of the seven Soma… | **411** | 7 |
 
 <!-- records:end -->
 
