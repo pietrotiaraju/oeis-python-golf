@@ -1902,6 +1902,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001927](seq/A001xxx/A001927/) | Number of connected partially ordered sets with n labeled points. | **212** | 6 |
+| [A001928](seq/A001xxx/A001928/) | Number of connected topologies with n unlabeled nodes. | **283** | 6 |
+| [A001929](seq/A001xxx/A001929/) | Number of connected topologies on n labeled points. | **199** | 6 |
 | [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
@@ -1920,6 +1923,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001978](seq/A001xxx/A001978/) | Number of partitions of 3n-1 into n nonnegative integers each no more… | **92** | 1001 |
 | [A001981](seq/A001xxx/A001981/) | Restricted partitions. | **90** | 760 |
 | [A001982](seq/A001xxx/A001982/) | Number of partitions of 4n-1 into n nonnegative integers each no… | **92** | 760 |
+| [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
+| [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
+| [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
+| [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
