@@ -1912,6 +1912,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
 | [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
 | [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
+| [A001970](seq/A001xxx/A001970/) | Functional determinants; partitions of partitions; Euler transform… | **107** | 4000 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
