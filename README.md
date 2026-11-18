@@ -1902,6 +1902,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
 | [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |

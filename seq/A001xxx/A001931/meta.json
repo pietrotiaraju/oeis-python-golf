@@ -1,0 +1,6 @@
+{
+  "name": "Number of fixed 3-dimensional polycubes with n cells; lattice animals in the simple cubic lattice (6 nearest neighbors), face-connected cubes.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}
