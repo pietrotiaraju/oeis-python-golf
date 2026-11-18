@@ -1902,6 +1902,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
