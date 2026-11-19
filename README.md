@@ -1907,6 +1907,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001913](seq/A001xxx/A001913/) | Full reptend primes: primes with primitive root 10. | **62** | 170 |
 | [A001914](seq/A001xxx/A001914/) | Cyclic numbers: 10 is a quadratic residue modulo p and class of… | **74** | 180 |
 | [A001915](seq/A001xxx/A001915/) | Primes p such that the congruence 2^x == 3 (mod p) is solvable. | **70** | 560 |
+| [A001916](seq/A001xxx/A001916/) | Primes p such that the congruence 2^x = 5 (mod p) is solvable. | **71** | 560 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001920](seq/A001xxx/A001920/) | Expansion of 1/(1+759\*x^2+2576\*x^3+759\*x^4+x^6). | **68** | 701 |
 | [A001921](seq/A001xxx/A001921/) | a(n) = 14\*a(n-1) - a(n-2) + 6 for n>1, a(0)=0, a(1)=7. | **37** | 201 |
