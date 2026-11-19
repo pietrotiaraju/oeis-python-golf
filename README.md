@@ -1963,12 +1963,24 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002012](seq/A002xxx/A002012/) | Number of rooted planar maps with three trivalent vertices and a root… | **53** | 23 |
 | [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
 | [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
+| [A002017](seq/A002xxx/A002017/) | Expansion of e.g.f. exp(sin(x)). | **82** | 101 |
+| [A002018](seq/A002xxx/A002018/) | From a distribution problem. | **53** | 254 |
+| [A002019](seq/A002xxx/A002019/) | a(n) = a(n-1) - (n-1)(n-2)a(n-2). | **44** | 101 |
+| [A002020](seq/A002xxx/A002020/) | a(n+1) = a(n) - n\*(n-1)\*a(n-1), with a(n) = 1 for n <= 3. | **50** | 101 |
 | [A002021](seq/A002xxx/A002021/) | Pile of coconuts problem: (n-1)\*(n^n - 1), n even; n^n - n + 1, n odd. | **42** | 100 |
 | [A002022](seq/A002xxx/A002022/) | In the pile of coconuts problem, the number of coconuts that remain… | **35** | 99 |
 | [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
 | [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
+| [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **54** | 2106 |
+| [A002039](seq/A002xxx/A002039/) | Convolution inverse of A143348. | **91** | 1001 |
+| [A002040](seq/A002xxx/A002040/) | Related to partitions. | **105** | 301 |
 | [A002041](seq/A002xxx/A002041/) | Expansion of x/((1-x)(1-4x^2)(1-5x)). | **43** | 1000 |
 | [A002042](seq/A002xxx/A002042/) | a(n) = 7\*4^n. | **24** | 501 |
+| [A002043](seq/A002xxx/A002043/) | MacMahon's solid partitions of n in which 2 is the smallest summand. | **113** | 999 |
+| [A002044](seq/A002xxx/A002044/) | MacMahon's solid partitions of n in which 3 is the smallest summand. | **125** | 34 |
+| [A002045](seq/A002xxx/A002045/) | MacMahon's solid partitions of n in which 4 is the smallest summand. | **123** | 35 |
+| [A002050](seq/A002xxx/A002050/) | Number of simplices in barycentric subdivision of n-simplex. | **58** | 425 |
+| [A002051](seq/A002xxx/A002051/) | Steffensen's bracket function [n,2]. | **70** | 100 |
 | [A002054](seq/A002xxx/A002054/) | Binomial coefficient C(2n+1, n-1). | **52** | 1000 |
 | [A002055](seq/A002xxx/A002055/) | Number of diagonal dissections of a convex n-gon into n-4 regions. | **58** | 96 |
 | [A002056](seq/A002xxx/A002056/) | Number of diagonal dissections of a convex n-gon into n-5 regions. | **61** | 95 |
