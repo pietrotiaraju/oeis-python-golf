@@ -1901,6 +1901,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001909](seq/A001xxx/A001909/) | a(n) = n\*a(n-1) + (n-4)\*a(n-2), a(2) = 0, a(3) = 1. | **48** | 99 |
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
 | [A001912](seq/A001xxx/A001912/) | Numbers k such that 4\*k^2 + 1 is prime. | **64** | 3000 |
+| [A001913](seq/A001xxx/A001913/) | Full reptend primes: primes with primitive root 10. | **62** | 170 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
 | [A001927](seq/A001xxx/A001927/) | Number of connected partially ordered sets with n labeled points. | **212** | 6 |
