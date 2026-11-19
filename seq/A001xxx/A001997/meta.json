@@ -1,0 +1,6 @@
+{
+  "name": "Number of different shapes formed by bending a piece of wire of length n in the plane.",
+  "offset": 0,
+  "min_terms": 15,
+  "timeout": 60
+}

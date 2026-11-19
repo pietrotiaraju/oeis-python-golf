@@ -1948,6 +1948,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
+| [A001997](seq/A001xxx/A001997/) | Number of different shapes formed by bending a piece of wire of… | **178** | 15 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A002000](seq/A002xxx/A002000/) | a(n+1) = a(n)\*(a(n)^2 - 3) with a(0) = 7. | **28** | 7 |
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
