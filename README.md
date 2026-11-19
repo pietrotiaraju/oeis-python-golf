@@ -1998,6 +1998,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002022](seq/A002xxx/A002022/) | In the pile of coconuts problem, the number of coconuts that remain… | **35** | 99 |
 | [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
 | [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
+| [A002025](seq/A002xxx/A002025/) | Smaller of an amicable pair: (a,b) such that sigma(a) = sigma(b) =… | **130** | 35 |
 | [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **51** | 2106 |
 | [A002027](seq/A002xxx/A002027/) | Number of connected graphs on n labeled nodes, each node being… | **161** | 51 |
 | [A002028](seq/A002xxx/A002028/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
