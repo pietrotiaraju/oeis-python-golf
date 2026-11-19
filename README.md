@@ -1921,6 +1921,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
 | [A001978](seq/A001xxx/A001978/) | Number of partitions of 3n-1 into n nonnegative integers each no more… | **92** | 1001 |
+| [A001979](seq/A001xxx/A001979/) | Number of partitions of floor(7n/2) into n nonnegative integers each… | **93** | 800 |
+| [A001980](seq/A001xxx/A001980/) | Number of partitions of floor(7n/2)-1 into n nonnegative integers… | **95** | 800 |
 | [A001981](seq/A001xxx/A001981/) | Restricted partitions. | **90** | 760 |
 | [A001982](seq/A001xxx/A001982/) | Number of partitions of 4n-1 into n nonnegative integers each no… | **92** | 760 |
 | [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
