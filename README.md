@@ -1916,6 +1916,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
 | [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
 | [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
+| [A001948](seq/A001xxx/A001948/) | These numbers when multiplied by all powers of 4 give the numbers… | **111** | 31 |
 | [A001950](seq/A001xxx/A001950/) | Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi^2),… | **46** | 10000 |
 | [A001951](seq/A001xxx/A001951/) | A Beatty sequence: a(n) = floor(n\*sqrt(2)). | **46** | 10001 |
 | [A001952](seq/A001xxx/A001952/) | A Beatty sequence: a(n) = floor(n\*(2 + sqrt(2))). | **48** | 10000 |

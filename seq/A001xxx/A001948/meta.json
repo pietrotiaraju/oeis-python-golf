@@ -1,0 +1,6 @@
+{
+  "name": "These numbers when multiplied by all powers of 4 give the numbers that are not the sums of 4 distinct squares.",
+  "offset": 1,
+  "min_terms": 31,
+  "timeout": 60
+}
