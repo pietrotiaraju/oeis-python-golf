@@ -2005,7 +2005,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002027](seq/A002xxx/A002027/) | Number of connected graphs on n labeled nodes, each node being… | **161** | 51 |
 | [A002028](seq/A002xxx/A002028/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
 | [A002029](seq/A002xxx/A002029/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
-| [A002030](seq/A002xxx/A002030/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 45 |
+| [A002030](seq/A002xxx/A002030/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
 | [A002031](seq/A002xxx/A002031/) | Number of labeled connected digraphs on n nodes where every node has… | **164** | 99 |
 | [A002032](seq/A002xxx/A002032/) | Number of n-colored connected graphs on n labeled nodes. | **131** | 51 |
 | [A002033](seq/A002xxx/A002033/) | Number of perfect partitions of n. | **76** | 10000 |
