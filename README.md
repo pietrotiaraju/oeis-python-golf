@@ -1916,6 +1916,25 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
 | [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
 | [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
+| [A001950](seq/A001xxx/A001950/) | Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi^2),… | **46** | 10000 |
+| [A001951](seq/A001xxx/A001951/) | A Beatty sequence: a(n) = floor(n\*sqrt(2)). | **46** | 10001 |
+| [A001952](seq/A001xxx/A001952/) | A Beatty sequence: a(n) = floor(n\*(2 + sqrt(2))). | **48** | 10000 |
+| [A001953](seq/A001xxx/A001953/) | a(n) = floor((n + 1/2) \* sqrt(2)). | **46** | 10001 |
+| [A001954](seq/A001xxx/A001954/) | a(n) = floor((n+1/2)\*(2+sqrt(2))); winning positions in the 2-Wythoff… | **48** | 10001 |
+| [A001955](seq/A001xxx/A001955/) | Beatty sequence of 1 + 1/sqrt(11). | **44** | 10000 |
+| [A001956](seq/A001xxx/A001956/) | Beatty sequence of (5+sqrt(13))/2. | **50** | 10000 |
+| [A001957](seq/A001xxx/A001957/) | u-pile positions in the 3-Wythoff game with i=1. | **50** | 10001 |
+| [A001958](seq/A001xxx/A001958/) | v-pile numbers of the 3-Wythoff game with i=1. | **52** | 10001 |
+| [A001959](seq/A001xxx/A001959/) | u-pile numbers for the 3-Wythoff game with i=2. | **48** | 10001 |
+| [A001960](seq/A001xxx/A001960/) | a(n) = floor((n+2/3)\*(5+sqrt(13))/2); v-pile positions in the… | **50** | 10001 |
+| [A001961](seq/A001xxx/A001961/) | A Beatty sequence: floor(n \* (sqrt(5) - 1)). | **48** | 10000 |
+| [A001962](seq/A001xxx/A001962/) | A Beatty sequence: floor(n \* (sqrt(5) + 3)). | **51** | 10000 |
+| [A001963](seq/A001xxx/A001963/) | Winning positions in the u-pile of the 4-Wythoff game with i=1. | **52** | 10001 |
+| [A001964](seq/A001xxx/A001964/) | v-pile positions of the 4-Wythoff game with i=1. | **54** | 10001 |
+| [A001965](seq/A001xxx/A001965/) | u-pile count for the 4-Wythoff game with i=2. | **48** | 10001 |
+| [A001966](seq/A001xxx/A001966/) | v-pile counts for the 4-Wythoff game with i=2. | **51** | 10001 |
+| [A001967](seq/A001xxx/A001967/) | u-pile positions for the 4-Wythoff game with i=3. | **52** | 10001 |
+| [A001968](seq/A001xxx/A001968/) | v-pile positions of the 4-Wythoff game with i=3. | **54** | 10001 |
 | [A001970](seq/A001xxx/A001970/) | Functional determinants; partitions of partitions; Euler transform… | **107** | 4000 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
