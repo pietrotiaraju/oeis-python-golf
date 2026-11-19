@@ -1994,6 +1994,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002049](seq/A002xxx/A002049/) | Prime numbers of measurement. | **70** | 9000 |
 | [A002050](seq/A002xxx/A002050/) | Number of simplices in barycentric subdivision of n-simplex. | **58** | 425 |
 | [A002051](seq/A002xxx/A002051/) | Steffensen's bracket function [n,2]. | **70** | 100 |
+| [A002052](seq/A002xxx/A002052/) | Prime determinants of forms with class number 2. | **168** | 4000 |
 | [A002054](seq/A002xxx/A002054/) | Binomial coefficient C(2n+1, n-1). | **52** | 1000 |
 | [A002055](seq/A002xxx/A002055/) | Number of diagonal dissections of a convex n-gon into n-4 regions. | **58** | 96 |
 | [A002056](seq/A002xxx/A002056/) | Number of diagonal dissections of a convex n-gon into n-5 regions. | **61** | 95 |
