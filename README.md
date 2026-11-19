@@ -1972,6 +1972,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
 | [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
 | [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **51** | 2106 |
+| [A002033](seq/A002xxx/A002033/) | Number of perfect partitions of n. | **76** | 10000 |
+| [A002034](seq/A002xxx/A002034/) | Kempner numbers: smallest positive integer m such that n divides m!. | **58** | 10000 |
+| [A002035](seq/A002xxx/A002035/) | Numbers that contain primes to odd powers only. | **87** | 1000 |
+| [A002036](seq/A002xxx/A002036/) | Compressed primes: a(n) is the nearest integer to prime(n)/log… | **154** | 1000 |
+| [A002037](seq/A002xxx/A002037/) | Product of all primes up to 3^n. | **64** | 6 |
+| [A002038](seq/A002xxx/A002038/) | Numbers dividing A002037(i) and larger than A002037(i-1), for some… | **84** | 57 |
 | [A002039](seq/A002xxx/A002039/) | Convolution inverse of A143348. | **91** | 1001 |
 | [A002040](seq/A002xxx/A002040/) | Related to partitions. | **105** | 301 |
 | [A002041](seq/A002xxx/A002041/) | Expansion of x/((1-x)(1-4x^2)(1-5x)). | **43** | 1000 |
