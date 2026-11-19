@@ -1953,7 +1953,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
 | [A002002](seq/A002xxx/A002002/) | a(n) = Sum\_{k=0..n-1} binomial(n,k+1) \* binomial(n+k,k). | **56** | 1001 |
 | [A002003](seq/A002xxx/A002003/) | a(n) = 2 \* Sum\_{k=0..n-1} binomial(n-1, k)\*binomial(n+k, k). | **57** | 1001 |
+| [A002005](seq/A002xxx/A002005/) | Number of rooted planar cubic maps with 2n vertices. | **66** | 1001 |
+| [A002006](seq/A002xxx/A002006/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **70** | 201 |
+| [A002007](seq/A002xxx/A002007/) | Number of rooted planar maps with 2n+1 trivalent vertices and a root… | **106** | 201 |
+| [A002008](seq/A002xxx/A002008/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **110** | 201 |
+| [A002009](seq/A002xxx/A002009/) | Number of rooted planar maps with 2n+1 trivalent vertices and a root… | **117** | 201 |
+| [A002010](seq/A002xxx/A002010/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **137** | 201 |
 | [A002011](seq/A002xxx/A002011/) | a(n) = 4\*(2n+1)!/n!^2. | **39** | 201 |
+| [A002012](seq/A002xxx/A002012/) | Number of rooted planar maps with three trivalent vertices and a root… | **53** | 23 |
 | [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
 | [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
 | [A002021](seq/A002xxx/A002021/) | Pile of coconuts problem: (n-1)\*(n^n - 1), n even; n^n - n + 1, n odd. | **42** | 100 |
@@ -1963,7 +1970,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002041](seq/A002xxx/A002041/) | Expansion of x/((1-x)(1-4x^2)(1-5x)). | **43** | 1000 |
 | [A002042](seq/A002xxx/A002042/) | a(n) = 7\*4^n. | **24** | 501 |
 | [A002054](seq/A002xxx/A002054/) | Binomial coefficient C(2n+1, n-1). | **52** | 1000 |
+| [A002055](seq/A002xxx/A002055/) | Number of diagonal dissections of a convex n-gon into n-4 regions. | **58** | 96 |
+| [A002056](seq/A002xxx/A002056/) | Number of diagonal dissections of a convex n-gon into n-5 regions. | **61** | 95 |
 | [A002057](seq/A002xxx/A002057/) | Fourth convolution of Catalan numbers: a(n) =… | **52** | 1001 |
+| [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
+| [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

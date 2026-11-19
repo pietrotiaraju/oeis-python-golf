@@ -1,0 +1,6 @@
+{
+  "name": "Number of diagonal dissections of a convex n-gon into n-4 regions.",
+  "offset": 5,
+  "min_terms": 96,
+  "timeout": 60
+}
