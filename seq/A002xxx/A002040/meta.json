@@ -1,0 +1,6 @@
+{
+  "name": "Related to partitions.",
+  "offset": 0,
+  "min_terms": 301,
+  "timeout": 60
+}

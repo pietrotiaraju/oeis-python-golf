@@ -1,0 +1,6 @@
+{
+  "name": "Generalized ballot numbers (first differences of Motzkin numbers).",
+  "offset": 0,
+  "min_terms": 2106,
+  "timeout": 60
+}
