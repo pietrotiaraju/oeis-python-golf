@@ -1,0 +1,6 @@
+{
+  "name": "Number of internal triangles in all triangulations of an (n+1)-gon.",
+  "offset": 5,
+  "min_terms": 25,
+  "timeout": 60
+}
