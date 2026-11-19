@@ -1971,7 +1971,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002022](seq/A002xxx/A002022/) | In the pile of coconuts problem, the number of coconuts that remain… | **35** | 99 |
 | [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
 | [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
-| [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **54** | 2106 |
+| [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **51** | 2106 |
 | [A002039](seq/A002xxx/A002039/) | Convolution inverse of A143348. | **91** | 1001 |
 | [A002040](seq/A002xxx/A002040/) | Related to partitions. | **105** | 301 |
 | [A002041](seq/A002xxx/A002041/) | Expansion of x/((1-x)(1-4x^2)(1-5x)). | **43** | 1000 |
