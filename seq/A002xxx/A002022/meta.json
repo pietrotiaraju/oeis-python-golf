@@ -1,0 +1,6 @@
+{
+  "name": "In the pile of coconuts problem, the number of coconuts that remain to be shared equally at the end of the process.",
+  "offset": 2,
+  "min_terms": 99,
+  "timeout": 60
+}
