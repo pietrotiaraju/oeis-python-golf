@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of floor(7n/2) into n nonnegative integers each no more than 7.",
+  "offset": 0,
+  "min_terms": 800,
+  "timeout": 60
+}
