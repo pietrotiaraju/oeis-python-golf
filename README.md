@@ -1909,6 +1909,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001915](seq/A001xxx/A001915/) | Primes p such that the congruence 2^x == 3 (mod p) is solvable. | **70** | 560 |
 | [A001916](seq/A001xxx/A001916/) | Primes p such that the congruence 2^x = 5 (mod p) is solvable. | **71** | 560 |
 | [A001917](seq/A001xxx/A001917/) | a(n) = (p-1)/x, where p = prime(n) and x = ord(2,p), the smallest… | **71** | 940 |
+| [A001918](seq/A001xxx/A001918/) | Least positive primitive root of n-th prime. | **95** | 500 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001920](seq/A001xxx/A001920/) | Expansion of 1/(1+759\*x^2+2576\*x^3+759\*x^4+x^6). | **68** | 701 |
 | [A001921](seq/A001xxx/A001921/) | a(n) = 14\*a(n-1) - a(n-2) + 6 for n>1, a(0)=0, a(1)=7. | **37** | 201 |
