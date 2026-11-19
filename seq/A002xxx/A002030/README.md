@@ -43,8 +43,8 @@ while[print(a:=A(n:=len(L))-sum(comb(n,k)*k*L[k]//n*A(n-k)for k in range(n)))]:L
 
 - Exact integers, so the program is right for every n. The recursion is
   not cached, and each A(n) costs about n⁴/24 calls, so the time grows
-  like n⁶: 43 terms take about 14 s on a slow PC and the 51 terms of the
-  b-file (n = 0 to 50) about three times that. The bar is 45 terms.
+  like n⁶, and the 51 terms of the b-file (n = 0 to 50) take about 23 s
+  on a slow PC (15 reference seconds). The bar is the whole b-file.
 - Splitting the colours in halves,
   A₅(n) = Σᵣ C(n,r)·2^(r(n−r))·A₂(r)·A₃(n−r) (`A(r,k//2)*A(n-r,k-k//2)`,
   13 bytes more), prints the whole b-file in about 5 s; memoizing A with
