@@ -1930,6 +1930,21 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
+| [A002000](seq/A002xxx/A002000/) | a(n+1) = a(n)\*(a(n)^2 - 3) with a(0) = 7. | **28** | 7 |
+| [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
+| [A002002](seq/A002xxx/A002002/) | a(n) = Sum\_{k=0..n-1} binomial(n,k+1) \* binomial(n+k,k). | **56** | 1001 |
+| [A002003](seq/A002xxx/A002003/) | a(n) = 2 \* Sum\_{k=0..n-1} binomial(n-1, k)\*binomial(n+k, k). | **57** | 1001 |
+| [A002011](seq/A002xxx/A002011/) | a(n) = 4\*(2n+1)!/n!^2. | **39** | 201 |
+| [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
+| [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
+| [A002021](seq/A002xxx/A002021/) | Pile of coconuts problem: (n-1)\*(n^n - 1), n even; n^n - n + 1, n odd. | **42** | 100 |
+| [A002022](seq/A002xxx/A002022/) | In the pile of coconuts problem, the number of coconuts that remain… | **35** | 99 |
+| [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
+| [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
+| [A002041](seq/A002xxx/A002041/) | Expansion of x/((1-x)(1-4x^2)(1-5x)). | **43** | 1000 |
+| [A002042](seq/A002xxx/A002042/) | a(n) = 7\*4^n. | **24** | 501 |
+| [A002054](seq/A002xxx/A002054/) | Binomial coefficient C(2n+1, n-1). | **52** | 1000 |
+| [A002057](seq/A002xxx/A002057/) | Fourth convolution of Catalan numbers: a(n) =… | **52** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

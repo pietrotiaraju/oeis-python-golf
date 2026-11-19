@@ -1,0 +1,6 @@
+{
+  "name": "Pile of coconuts problem: (n-1)*(n^n - 1), n even; n^n - n + 1, n odd.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
