@@ -1906,6 +1906,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001928](seq/A001xxx/A001928/) | Number of connected topologies with n unlabeled nodes. | **283** | 6 |
 | [A001929](seq/A001xxx/A001929/) | Number of connected topologies on n labeled points. | **199** | 6 |
 | [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
+| [A001933](seq/A001xxx/A001933/) | Number of chessboard polyominoes with n squares. | **218** | 10 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
 | [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
