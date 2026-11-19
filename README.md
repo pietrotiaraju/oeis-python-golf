@@ -1977,6 +1977,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002023](seq/A002xxx/A002023/) | a(n) = 6\*4^n. | **24** | 201 |
 | [A002024](seq/A002xxx/A002024/) | k appears k times; a(n) = floor(sqrt(2n) + 1/2). | **35** | 5050 |
 | [A002026](seq/A002xxx/A002026/) | Generalized ballot numbers (first differences of Motzkin numbers). | **51** | 2106 |
+| [A002027](seq/A002xxx/A002027/) | Number of connected graphs on n labeled nodes, each node being… | **161** | 51 |
+| [A002028](seq/A002xxx/A002028/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
+| [A002029](seq/A002xxx/A002029/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
+| [A002031](seq/A002xxx/A002031/) | Number of labeled connected digraphs on n nodes where every node has… | **164** | 99 |
+| [A002032](seq/A002xxx/A002032/) | Number of n-colored connected graphs on n labeled nodes. | **131** | 51 |
 | [A002033](seq/A002xxx/A002033/) | Number of perfect partitions of n. | **76** | 10000 |
 | [A002034](seq/A002xxx/A002034/) | Kempner numbers: smallest positive integer m such that n divides m!. | **58** | 10000 |
 | [A002035](seq/A002xxx/A002035/) | Numbers that contain primes to odd powers only. | **87** | 1000 |
