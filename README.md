@@ -1916,6 +1916,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001941](seq/A001xxx/A001941/) | Absolute values of coefficients of an elliptic function. | **87** | 1001 |
 | [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
 | [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
+| [A001944](seq/A001xxx/A001944/) | Numbers that are the sum of 4 distinct squares: of form w^2 + x^2 +… | **106** | 1000 |
 | [A001950](seq/A001xxx/A001950/) | Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi^2),… | **46** | 10000 |
 | [A001951](seq/A001xxx/A001951/) | A Beatty sequence: a(n) = floor(n\*sqrt(2)). | **46** | 10001 |
 | [A001952](seq/A001xxx/A001952/) | A Beatty sequence: a(n) = floor(n\*(2 + sqrt(2))). | **48** | 10000 |
@@ -1935,7 +1936,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001966](seq/A001xxx/A001966/) | v-pile counts for the 4-Wythoff game with i=2. | **51** | 10001 |
 | [A001967](seq/A001xxx/A001967/) | u-pile positions for the 4-Wythoff game with i=3. | **52** | 10001 |
 | [A001968](seq/A001xxx/A001968/) | v-pile positions of the 4-Wythoff game with i=3. | **54** | 10001 |
+| [A001969](seq/A001xxx/A001969/) | Evil numbers: nonnegative integers with an even number of 1's in… | **40** | 10000 |
 | [A001970](seq/A001xxx/A001970/) | Functional determinants; partitions of partitions; Euler transform… | **107** | 4000 |
+| [A001974](seq/A001xxx/A001974/) | Numbers that are the sum of 3 distinct squares, i.e., numbers of the… | **105** | 1000 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
 | [A001977](seq/A001xxx/A001977/) | Number of partitions of 3n into n parts from the set {0, 1, ..., 6}… | **90** | 1001 |
@@ -1948,6 +1951,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
+| [A001995](seq/A001xxx/A001995/) | Numbers that are the sum of 5 distinct squares: of form v^2 + w^2 +… | **106** | 1000 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A002000](seq/A002xxx/A002000/) | a(n+1) = a(n)\*(a(n)^2 - 3) with a(0) = 7. | **28** | 7 |
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |

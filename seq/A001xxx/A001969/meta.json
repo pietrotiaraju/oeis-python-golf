@@ -1,0 +1,6 @@
+{
+  "name": "Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
