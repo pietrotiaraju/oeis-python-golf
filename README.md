@@ -1989,6 +1989,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002010](seq/A002xxx/A002010/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **137** | 201 |
 | [A002011](seq/A002xxx/A002011/) | a(n) = 4\*(2n+1)!/n!^2. | **39** | 201 |
 | [A002012](seq/A002xxx/A002012/) | Number of rooted planar maps with three trivalent vertices and a root… | **53** | 23 |
+| [A002013](seq/A002xxx/A002013/) | Number of filaments with n square cells. | **220** | 18 |
 | [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
 | [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
 | [A002017](seq/A002xxx/A002017/) | Expansion of e.g.f. exp(sin(x)). | **82** | 101 |
