@@ -2018,6 +2018,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002043](seq/A002xxx/A002043/) | MacMahon's solid partitions of n in which 2 is the smallest summand. | **113** | 999 |
 | [A002044](seq/A002xxx/A002044/) | MacMahon's solid partitions of n in which 3 is the smallest summand. | **125** | 34 |
 | [A002045](seq/A002xxx/A002045/) | MacMahon's solid partitions of n in which 4 is the smallest summand. | **123** | 35 |
+| [A002047](seq/A002xxx/A002047/) | Number of 3 X (2n+1) zero-sum arrays with entries -n,...,0,...,n. | **120** | 8 |
 | [A002048](seq/A002xxx/A002048/) | Segmented numbers, or prime numbers of measurement. | **70** | 9000 |
 | [A002049](seq/A002xxx/A002049/) | Prime numbers of measurement. | **70** | 9000 |
 | [A002050](seq/A002xxx/A002050/) | Number of simplices in barycentric subdivision of n-simplex. | **58** | 425 |
