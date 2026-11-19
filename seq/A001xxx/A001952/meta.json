@@ -1,0 +1,6 @@
+{
+  "name": "A Beatty sequence: a(n) = floor(n*(2 + sqrt(2))).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
