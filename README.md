@@ -1894,20 +1894,30 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001900](seq/A001xxx/A001900/) | Successive numerators of Wallis's approximation to Pi/2 (unreduced). | **34** | 450 |
 | [A001901](seq/A001xxx/A001901/) | Successive numerators of Wallis's approximation to Pi/2 (reduced). | **37** | 24 |
 | [A001902](seq/A001xxx/A001902/) | Successive denominators of Wallis's approximation to Pi/2 (reduced). | **55** | 25 |
+| [A001903](seq/A001xxx/A001903/) | Final digit of 7^n. | **27** | 1001 |
 | [A001904](seq/A001xxx/A001904/) | From higher order Bernoulli numbers: absolute value of numerator of D… | **113** | 201 |
 | [A001905](seq/A001xxx/A001905/) | From higher-order Bernoulli numbers: absolute value of numerator of… | **121** | 200 |
+| [A001906](seq/A001xxx/A001906/) | F(2n) = bisection of Fibonacci sequence: a(n) = 3\*a(n-1) - a(n-2). | **32** | 2389 |
 | [A001907](seq/A001xxx/A001907/) | Expansion of e.g.f. exp(-x)/(1-4\*x). | **38** | 351 |
 | [A001908](seq/A001xxx/A001908/) | E.g.f. exp(-x)/(1-5\*x). | **33** | 101 |
 | [A001909](seq/A001xxx/A001909/) | a(n) = n\*a(n-1) + (n-4)\*a(n-2), a(2) = 0, a(3) = 1. | **48** | 99 |
 | [A001910](seq/A001xxx/A001910/) | a(n) = n\*a(n-1) + (n-5)\*a(n-2). | **48** | 98 |
+| [A001911](seq/A001xxx/A001911/) | a(n) = Fibonacci(n+3) - 2. | **34** | 4784 |
 | [A001912](seq/A001xxx/A001912/) | Numbers k such that 4\*k^2 + 1 is prime. | **64** | 3000 |
 | [A001913](seq/A001xxx/A001913/) | Full reptend primes: primes with primitive root 10. | **62** | 170 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
+| [A001920](seq/A001xxx/A001920/) | Expansion of 1/(1+759\*x^2+2576\*x^3+759\*x^4+x^6). | **68** | 701 |
+| [A001921](seq/A001xxx/A001921/) | a(n) = 14\*a(n-1) - a(n-2) + 6 for n>1, a(0)=0, a(1)=7. | **37** | 201 |
+| [A001922](seq/A001xxx/A001922/) | Numbers k such that 3\*k^2 - 3\*k + 1 is both a square (A000290) and a… | **37** | 801 |
+| [A001923](seq/A001xxx/A001923/) | a(n) = Sum\_{k=1..n} k^k. | **34** | 101 |
+| [A001924](seq/A001xxx/A001924/) | Apply partial sum operator twice to Fibonacci numbers. | **40** | 501 |
 | [A001925](seq/A001xxx/A001925/) | From rook polynomials. | **59** | 1001 |
+| [A001926](seq/A001xxx/A001926/) | G.f.: (1+x)^2/[(1-x)^4(1-x-x^2)^3]. | **67** | 1001 |
 | [A001927](seq/A001xxx/A001927/) | Number of connected partially ordered sets with n labeled points. | **212** | 6 |
 | [A001928](seq/A001xxx/A001928/) | Number of connected topologies with n unlabeled nodes. | **283** | 6 |
 | [A001929](seq/A001xxx/A001929/) | Number of connected topologies on n labeled points. | **199** | 6 |
 | [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
+| [A001932](seq/A001xxx/A001932/) | Sum of Fibonacci (A000045) and Pell (A000129) numbers. | **51** | 502 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
 | [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
@@ -1919,6 +1929,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001942](seq/A001xxx/A001942/) | Expansion of reciprocal of theta series of Leech lattice. | **158** | 377 |
 | [A001943](seq/A001xxx/A001943/) | Expansion of reciprocal of theta series of E\_8 lattice. | **83** | 423 |
 | [A001944](seq/A001xxx/A001944/) | Numbers that are the sum of 4 distinct squares: of form w^2 + x^2 +… | **106** | 1000 |
+| [A001945](seq/A001xxx/A001945/) | a(n+6) = -a(n+5) + a(n+4) + 3a(n+3) + a(n+2) - a(n+1) - a(n). a(n) =… | **63** | 1001 |
+| [A001946](seq/A001xxx/A001946/) | a(n) = 11\*a(n-1) + a(n-2). | **37** | 201 |
+| [A001947](seq/A001xxx/A001947/) | a(n) = Lucas(5\*n+2). | **37** | 201 |
+| [A001949](seq/A001xxx/A001949/) | Solutions of a fifth-order probability difference equation. | **41** | 1001 |
 | [A001950](seq/A001xxx/A001950/) | Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi^2),… | **46** | 10000 |
 | [A001951](seq/A001xxx/A001951/) | A Beatty sequence: a(n) = floor(n\*sqrt(2)). | **46** | 10001 |
 | [A001952](seq/A001xxx/A001952/) | A Beatty sequence: a(n) = floor(n\*(2 + sqrt(2))). | **48** | 10000 |
@@ -1940,6 +1954,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001968](seq/A001xxx/A001968/) | v-pile positions of the 4-Wythoff game with i=3. | **54** | 10001 |
 | [A001969](seq/A001xxx/A001969/) | Evil numbers: nonnegative integers with an even number of 1's in… | **40** | 10000 |
 | [A001970](seq/A001xxx/A001970/) | Functional determinants; partitions of partitions; Euler transform… | **107** | 4000 |
+| [A001971](seq/A001xxx/A001971/) | Nearest integer to n^2/8. | **31** | 10001 |
+| [A001972](seq/A001xxx/A001972/) | Expansion of 1/((1-x)^2\*(1-x^4)) = 1/( (1+x)\*(1+x^2)\*(1-x)^3 ). | **29** | 10001 |
+| [A001973](seq/A001xxx/A001973/) | Expansion of (1+x^3)/((1-x)\*(1-x^2)^2\*(1-x^3)). | **42** | 1001 |
 | [A001974](seq/A001xxx/A001974/) | Numbers that are the sum of 3 distinct squares, i.e., numbers of the… | **105** | 1000 |
 | [A001975](seq/A001xxx/A001975/) | Number of partitions of floor(5n/2) into n nonnegative integers each… | **93** | 1001 |
 | [A001976](seq/A001xxx/A001976/) | Number of partitions of floor(5n/2)-1 into n nonnegative integers… | **95** | 1001 |
@@ -1953,8 +1970,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
+| [A001993](seq/A001xxx/A001993/) | Number of two-rowed partitions of length 3. | **61** | 1001 |
+| [A001994](seq/A001xxx/A001994/) | Expansion of 1/((1-x)\*(1-x^2)^2\*(1-x^3)\*(1-x^4)\*(1-x^5)). | **61** | 1001 |
 | [A001995](seq/A001xxx/A001995/) | Numbers that are the sum of 5 distinct squares: of form v^2 + w^2 +… | **106** | 1000 |
+| [A001996](seq/A001xxx/A001996/) | Number of partitions of n into parts 2, 3, 4, 5, 6, 7. | **68** | 1001 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
+| [A001999](seq/A001xxx/A001999/) | a(n) = a(n-1)\*(a(n-1)^2 - 3). | **28** | 8 |
 | [A002000](seq/A002xxx/A002000/) | a(n+1) = a(n)\*(a(n)^2 - 3) with a(0) = 7. | **28** | 7 |
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
 | [A002002](seq/A002xxx/A002002/) | a(n) = Sum\_{k=0..n-1} binomial(n,k+1) \* binomial(n+k,k). | **56** | 1001 |
