@@ -1,0 +1,6 @@
+{
+  "name": "Apéry's number or Apéry's constant zeta(3). Decimal expansion of zeta(3) = Sum_{m >= 1} 1/m^3.",
+  "offset": 1,
+  "min_terms": 20002,
+  "timeout": 60
+}
