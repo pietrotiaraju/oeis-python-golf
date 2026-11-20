@@ -2089,6 +2089,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **92** | 19999 |
 | [A002114](seq/A002xxx/A002114/) | Glaisher's H' numbers. | **85** | 100 |
 | [A002115](seq/A002xxx/A002115/) | Generalized Euler numbers. | **73** | 167 |
+| [A002117](seq/A002xxx/A002117/) | Apéry's number or Apéry's constant zeta(3). Decimal expansion of… | **109** | 20002 |
 | [A002118](seq/A002xxx/A002118/) | 5th powers written backwards. | **43** | 1001 |
 | [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
 | [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
