@@ -1,0 +1,6 @@
+{
+  "name": "Compressed primes: a(n) is the nearest integer to prime(n)/log prime(n).",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

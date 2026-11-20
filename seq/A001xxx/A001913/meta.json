@@ -1,0 +1,6 @@
+{
+  "name": "Full reptend primes: primes with primitive root 10.",
+  "offset": 1,
+  "min_terms": 170,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 3 distinct squares, i.e., numbers of the form x^2 + y^2 + z^2 with 0 <= x < y < z.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

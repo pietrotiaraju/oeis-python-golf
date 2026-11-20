@@ -1,0 +1,6 @@
+{
+  "name": "Number of perfect partitions of n.",
+  "offset": 0,
+  "min_terms": 10000,
+  "timeout": 60
+}
