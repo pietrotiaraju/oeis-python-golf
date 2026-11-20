@@ -1,0 +1,6 @@
+{
+  "name": "Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).",
+  "offset": 1,
+  "min_terms": 3325,
+  "timeout": 60
+}

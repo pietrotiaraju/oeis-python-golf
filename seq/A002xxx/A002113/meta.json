@@ -1,0 +1,6 @@
+{
+  "name": "Palindromes in base 10.",
+  "offset": 1,
+  "min_terms": 19999,
+  "timeout": 60
+}
