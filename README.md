@@ -1975,6 +1975,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001981](seq/A001xxx/A001981/) | Restricted partitions. | **90** | 760 |
 | [A001982](seq/A001xxx/A001982/) | Number of partitions of 4n-1 into n nonnegative integers each no… | **92** | 760 |
 | [A001983](seq/A001xxx/A001983/) | Numbers that are the sum of 2 distinct squares: of form x^2 + y^2… | **76** | 240 |
+| [A001985](seq/A001xxx/A001985/) | Class numbers associated with terms of A002223. | **225** | 15 |
 | [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
 | [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
