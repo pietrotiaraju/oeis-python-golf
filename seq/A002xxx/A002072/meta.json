@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = smallest number m such that for all k > m, either k or k+1 has a prime factor > prime(n).",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 60
+}
