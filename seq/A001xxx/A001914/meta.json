@@ -1,0 +1,6 @@
+{
+  "name": "Cyclic numbers: 10 is a quadratic residue modulo p and class of mantissa is 2.",
+  "offset": 1,
+  "min_terms": 180,
+  "timeout": 60
+}

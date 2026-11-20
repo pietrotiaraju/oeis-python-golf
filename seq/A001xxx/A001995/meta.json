@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 5 distinct squares: of form v^2 + w^2 + x^2 + y^2 + z^2 with 0 <= v < w < x < y < z.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

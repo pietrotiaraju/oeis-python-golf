@@ -1,0 +1,6 @@
+{
+  "name": "MacMahon's solid partitions of n in which 4 is the smallest summand.",
+  "offset": 4,
+  "min_terms": 35,
+  "timeout": 60
+}

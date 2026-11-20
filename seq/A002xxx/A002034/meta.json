@@ -1,0 +1,6 @@
+{
+  "name": "Kempner numbers: smallest positive integer m such that n divides m!.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
