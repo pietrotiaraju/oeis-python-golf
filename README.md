@@ -2051,12 +2051,29 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
 | [A002060](seq/A002xxx/A002060/) | Number of partitions of an n-gon into (n-5) parts. | **63** | 23 |
+| [A002061](seq/A002xxx/A002061/) | Central polygonal numbers: a(n) = n^2 - n + 1. | **30** | 10001 |
+| [A002062](seq/A002xxx/A002062/) | a(n) = Fibonacci(n) + n. | **42** | 501 |
+| [A002063](seq/A002xxx/A002063/) | a(n) = 9\*4^n. | **24** | 501 |
+| [A002064](seq/A002xxx/A002064/) | Cullen numbers: a(n) = n\*2^n + 1. | **29** | 301 |
+| [A002065](seq/A002xxx/A002065/) | a(n+1) = a(n)^2 + a(n) + 1. | **28** | 13 |
+| [A002066](seq/A002xxx/A002066/) | a(n) = 10\*4^n. | **25** | 501 |
+| [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
+| [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
+| [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
+| [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
+| [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
 | [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
 | [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
 | [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
+| [A002101](seq/A002xxx/A002101/) | Nearest integer to 4 \* Pi \* n^3 / 3. | **101** | 1001 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
+| [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
+| [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
+| [A002110](seq/A002xxx/A002110/) | Primorial numbers (first definition): product of first n primes.… | **49** | 351 |
+| [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **92** | 19999 |
+| [A002118](seq/A002xxx/A002118/) | 5th powers written backwards. | **43** | 1001 |
 | [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
 | [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
 | [A002121](seq/A002xxx/A002121/) | a(0) = 1, a(1) = 0, a(2) = -1; for n >= 3, a(n) = - a(n-2) + Sum\_{… | **93** | 1001 |
@@ -2067,6 +2084,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
+| [A002138](seq/A002xxx/A002138/) | 6th powers written backwards. | **43** | 10001 |
+| [A002140](seq/A002xxx/A002140/) | 7th powers written backwards. | **43** | 10001 |
+| [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
+| [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **56** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
