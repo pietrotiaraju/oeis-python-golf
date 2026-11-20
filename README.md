@@ -2061,6 +2061,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
+| [A002075](seq/A002xxx/A002075/) | Number of equivalence classes with primitive period n of base 3… | **139** | 28 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
