@@ -1,0 +1,6 @@
+{
+  "name": "Number of rooted planar maps with 2n trivalent vertices and a root vertex of valence 6.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that contain primes to odd powers only.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

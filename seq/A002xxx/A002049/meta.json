@@ -1,0 +1,6 @@
+{
+  "name": "Prime numbers of measurement.",
+  "offset": 1,
+  "min_terms": 9000,
+  "timeout": 60
+}
