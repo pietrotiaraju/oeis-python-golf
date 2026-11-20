@@ -1,0 +1,6 @@
+{
+  "name": "G.f.: 1/Product_{k>=1} (1-prime(k)*x^prime(k)).",
+  "offset": 0,
+  "min_terms": 4200,
+  "timeout": 60
+}

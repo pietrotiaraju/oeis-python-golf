@@ -2051,8 +2051,19 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
 | [A002060](seq/A002xxx/A002060/) | Number of partitions of an n-gon into (n-5) parts. | **63** | 23 |
+| [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
+| [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
+| [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
+| [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
+| [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
+| [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
+| [A002121](seq/A002xxx/A002121/) | a(0) = 1, a(1) = 0, a(2) = -1; for n >= 3, a(n) = - a(n-2) + Sum\_{… | **93** | 1001 |
+| [A002122](seq/A002xxx/A002122/) | a(n) = Sum\_{t=0..n} g(t)\*g(n-t) where g(t) = A002121(t). | **119** | 1001 |
+| [A002123](seq/A002xxx/A002123/) | a(1) = 0, a(2) = 0; for n > 2, a(n) - a(n-3) - a(n-5) - ... - a(n-p)… | **95** | 1000 |
+| [A002124](seq/A002xxx/A002124/) | Number of compositions of n into a sum of odd primes. | **86** | 1001 |
+| [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
