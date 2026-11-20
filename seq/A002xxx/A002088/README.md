@@ -37,11 +37,49 @@ while 1:
 - Counting φ(n) one n at a time is shorter but quadratic: see the separate
   record below.
 
+## First 600 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only the first 600 terms have to arrive in time.
+
+### Python 3, 600 terms — 76 bytes
+
+```python
+s=0;n=F=1
+while[print(s)]:s+=sum(1%n==pow(k,F,n)for k in range(n));n+=1;F*=n
+```
+
+**How it works**
+
+- φ(n) counts the k in [0, n) that are units modulo n. F = n! is a
+  multiple of φ(n), which is at most n, so k^F ≡ 1 (mod n) for every unit
+  k (Euler's theorem); a non-unit k shares a prime factor with n, and so
+  does every power of it, so k^F ≢ 1. Hence `1%n==pow(k,F,n)` is exactly
+  the test gcd(k, n) = 1, also at n = 1, where 1 % 1 = 0 = pow(0, 1, 1)
+  counts the one k (the test of [A000010](../../A000xxx/A000010/)).
+- s adds up φ(1) + … + φ(n) and is printed before each step, so a(0) = 0
+  comes first; `F*=n` after `n+=1` keeps F = n!.
+
+**Limits**
+
+- F = n! has about n·log₂ n bits, so every power takes that many
+  squarings and term n costs about n²·log n steps: the first 600 terms come
+  in about 22 reference seconds, and a(1000) would take over a minute. Counting
+  with `math.gcd(n,k)<2` is much faster but three bytes longer (79).
+
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-20 | Python 3 | 116 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 116 | first entry |
+
+**Python 3, 600 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 76 | first entry: Euler's theorem with F = n! |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

@@ -2201,7 +2201,11 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001836](seq/A001xxx/A001836/) | Numbers k such that phi(2k-1) < phi(2k), where phi is Euler's totient… | **96** | 150 | 111 | 1000 |
 | [A001837](seq/A001xxx/A001837/) | Numbers k such that phi(2k+1) < phi(2k). | **96** | 130 | 110 | 10000 |
 | [A001838](seq/A001xxx/A001838/) | Numbers k such that phi(k+2) = phi(k) + 2. | **96** | 300 | 114 | 10000 |
+| [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **76** | 600 | 116 | 50001 |
 | [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **75** | 700 | 85 | 10001 |
+| [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **46** | 16000 | 92 | 19999 |
+| [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **44** | 5000 | 56 | 10000 |
+| [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **44** | 5000 | 56 | 10000 |
 
 <!-- short:end -->
 

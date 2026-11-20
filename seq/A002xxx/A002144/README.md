@@ -32,12 +32,50 @@ while 1:
   pass over r, which has about 98 000 digits at the end of the b-file.
   The whole b-file (10000 terms, up to 225217) comes in about 8
   reference seconds; the bar is the whole b-file in 60 s.
+- Wilson's theorem is shorter but slower: see the separate record below.
+
+## First 5000 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only the first 5000 terms have to arrive in time.
+
+### Python 3, 5000 terms — 44 bytes
+
+```python
+P=k=1
+while[-P%k*k%4-1or print(k)]:P*=k;k+=1
+```
+
+**How it works**
+
+- **Wilson's theorem.** P = (k−1)! satisfies (k−1)! ≡ −1 (mod k) for
+  prime k, and (k−1)! ≡ 0 (mod k) for composite k > 4; at k = 4 it is 2.
+  So `-P%k` is 1 at the primes and 0 or 2 elsewhere.
+- **Filter.** Times k and modulo 4 this gives k mod 4 at the primes and 0
+  at the composites (2·4 ≡ 0 at k = 4, and 0 at k = 1), so `-P%k*k%4-1`
+  is 0 exactly at the primes ≡ 1 (mod 4), and then `print(k)` runs. The
+  list `[…]` is always true, so the loop never ends, as in
+  [A000040](../../A000xxx/A000040/).
+
+**Limits**
+
+- P grows to about k·log₁₀ k digits and every step costs a few passes over
+  it: the first 5000 terms come in about 18 reference seconds, while the
+  whole b-file would take over a minute.
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-20 | Python 3 | 56 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 56 | first entry |
+
+**Python 3, 5000 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 44 | first entry: Wilson's theorem with P = (k−1)! |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer

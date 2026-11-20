@@ -35,12 +35,45 @@ while 1:
   in front, is 96 bytes.
 - The whole b-file (19999 terms, up to 99999999) takes a fraction of a
   second; the bar is the whole b-file in 60 s.
+- Testing every number is half as long but needs 10⁸ tests for the b-file:
+  see the separate record below.
+
+## First 16000 terms
+
+A [separate record](../../../CONTRIBUTING.md#short-bar-records): the same
+rules, but only the first 16000 terms have to arrive in time.
+
+### Python 3, 16000 terms — 46 bytes
+
+```python
+n=0
+while 1:s=str(n);s==s[::-1]==print(n);n+=1
+```
+
+**How it works**
+
+- Every n from 0 up is tested: `s==s[::-1]==print(n)` is a chained
+  comparison, so `print(n)` runs only when the decimal string equals its
+  reversal; it returns None, the comparison is false, and the loop goes on.
+
+**Limits**
+
+- One test per number: the first 16000 terms come in about 22 reference
+  seconds, and the whole b-file (up to 99999999) needs 10⁸ tests.
 
 ## History
 
-| Date | Category | Bytes | Note |
-|---|---|---|---|
-| 2026-11-20 | Python 3 | 92 | first entry |
+**Python 3**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 92 | first entry |
+
+**Python 3, 16000 terms**
+
+| Date | Bytes | Note |
+|---|---|---|
+| 2026-11-20 | 46 | first entry: test every number |
 
 ---
 Sequence name and terms from [The On-Line Encyclopedia of Integer
