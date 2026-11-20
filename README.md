@@ -2057,6 +2057,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002064](seq/A002xxx/A002064/) | Cullen numbers: a(n) = n\*2^n + 1. | **29** | 301 |
 | [A002065](seq/A002xxx/A002065/) | a(n+1) = a(n)^2 + a(n) + 1. | **28** | 13 |
 | [A002066](seq/A002xxx/A002066/) | a(n) = 10\*4^n. | **25** | 501 |
+| [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
+| [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
@@ -2081,6 +2083,9 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002123](seq/A002xxx/A002123/) | a(1) = 0, a(2) = 0; for n > 2, a(n) - a(n-3) - a(n-5) - ... - a(n-p)… | **95** | 1000 |
 | [A002124](seq/A002xxx/A002124/) | Number of compositions of n into a sum of odd primes. | **86** | 1001 |
 | [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
+| [A002126](seq/A002xxx/A002126/) | Number of solutions to n=p+q where p and q are primes or zero. | **69** | 10001 |
+| [A002129](seq/A002xxx/A002129/) | Generalized sum of divisors function: excess of sum of odd divisors… | **65** | 10000 |
+| [A002131](seq/A002xxx/A002131/) | Sum of divisors d of n such that n/d is odd. | **63** | 10000 |
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |

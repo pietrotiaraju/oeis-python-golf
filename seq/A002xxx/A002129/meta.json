@@ -1,0 +1,6 @@
+{
+  "name": "Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

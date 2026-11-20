@@ -1,0 +1,6 @@
+{
+  "name": "Palindromic pentagonal numbers.",
+  "offset": 1,
+  "min_terms": 21,
+  "timeout": 60
+}
