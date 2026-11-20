@@ -1939,6 +1939,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001945](seq/A001xxx/A001945/) | a(n+6) = -a(n+5) + a(n+4) + 3a(n+3) + a(n+2) - a(n+1) - a(n). a(n) =… | **63** | 1001 |
 | [A001946](seq/A001xxx/A001946/) | a(n) = 11\*a(n-1) + a(n-2). | **37** | 201 |
 | [A001947](seq/A001xxx/A001947/) | a(n) = Lucas(5\*n+2). | **37** | 201 |
+| [A001948](seq/A001xxx/A001948/) | These numbers when multiplied by all powers of 4 give the numbers… | **111** | 31 |
 | [A001949](seq/A001xxx/A001949/) | Solutions of a fifth-order probability difference equation. | **41** | 1001 |
 | [A001950](seq/A001xxx/A001950/) | Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n\*phi^2),… | **46** | 10000 |
 | [A001951](seq/A001xxx/A001951/) | A Beatty sequence: a(n) = floor(n\*sqrt(2)). | **46** | 10001 |
