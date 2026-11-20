@@ -2106,6 +2106,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
 | [A002138](seq/A002xxx/A002138/) | 6th powers written backwards. | **43** | 10001 |
+| [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **144** | 3500 |
 | [A002140](seq/A002xxx/A002140/) | 7th powers written backwards. | **43** | 10001 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **56** | 10000 |
@@ -2205,6 +2206,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **76** | 600 | 116 | 50001 |
 | [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **75** | 700 | 85 | 10001 |
 | [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **46** | 16000 | 92 | 19999 |
+| [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **128** | 450 | 144 | 3500 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **44** | 5000 | 56 | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **44** | 5000 | 56 | 10000 |
 
