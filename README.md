@@ -1905,6 +1905,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001911](seq/A001xxx/A001911/) | a(n) = Fibonacci(n+3) - 2. | **34** | 4784 |
 | [A001912](seq/A001xxx/A001912/) | Numbers k such that 4\*k^2 + 1 is prime. | **64** | 3000 |
 | [A001913](seq/A001xxx/A001913/) | Full reptend primes: primes with primitive root 10. | **62** | 170 |
+| [A001914](seq/A001xxx/A001914/) | Cyclic numbers: 10 is a quadratic residue modulo p and class of… | **74** | 180 |
+| [A001915](seq/A001xxx/A001915/) | Primes p such that the congruence 2^x == 3 (mod p) is solvable. | **70** | 560 |
+| [A001916](seq/A001xxx/A001916/) | Primes p such that the congruence 2^x = 5 (mod p) is solvable. | **71** | 560 |
+| [A001917](seq/A001xxx/A001917/) | a(n) = (p-1)/x, where p = prime(n) and x = ord(2,p), the smallest… | **71** | 940 |
+| [A001918](seq/A001xxx/A001918/) | Least positive primitive root of n-th prime. | **95** | 500 |
 | [A001919](seq/A001xxx/A001919/) | Eighth column of quadrinomial coefficients. | **55** | 998 |
 | [A001920](seq/A001xxx/A001920/) | Expansion of 1/(1+759\*x^2+2576\*x^3+759\*x^4+x^6). | **68** | 701 |
 | [A001921](seq/A001xxx/A001921/) | a(n) = 14\*a(n-1) - a(n-2) + 6 for n>1, a(0)=0, a(1)=7. | **37** | 201 |
@@ -1916,6 +1921,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001927](seq/A001xxx/A001927/) | Number of connected partially ordered sets with n labeled points. | **212** | 6 |
 | [A001928](seq/A001xxx/A001928/) | Number of connected topologies with n unlabeled nodes. | **283** | 6 |
 | [A001929](seq/A001xxx/A001929/) | Number of connected topologies on n labeled points. | **199** | 6 |
+| [A001930](seq/A001xxx/A001930/) | Number of topologies, or transitive digraphs with n unlabeled nodes. | **234** | 6 |
 | [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
 | [A001932](seq/A001xxx/A001932/) | Sum of Fibonacci (A000045) and Pell (A000129) numbers. | **51** | 502 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
@@ -1966,6 +1972,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001980](seq/A001xxx/A001980/) | Number of partitions of floor(7n/2)-1 into n nonnegative integers… | **95** | 800 |
 | [A001981](seq/A001xxx/A001981/) | Restricted partitions. | **90** | 760 |
 | [A001982](seq/A001xxx/A001982/) | Number of partitions of 4n-1 into n nonnegative integers each no… | **92** | 760 |
+| [A001983](seq/A001xxx/A001983/) | Numbers that are the sum of 2 distinct squares: of form x^2 + y^2… | **76** | 240 |
 | [A001986](seq/A001xxx/A001986/) | Let p be the n-th odd prime. Then a(n) is the least prime congruent… | **147** | 18 |
 | [A001987](seq/A001xxx/A001987/) | Class numbers associated with terms of A001986. | **231** | 18 |
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
@@ -1980,6 +1987,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
 | [A002002](seq/A002xxx/A002002/) | a(n) = Sum\_{k=0..n-1} binomial(n,k+1) \* binomial(n+k,k). | **56** | 1001 |
 | [A002003](seq/A002xxx/A002003/) | a(n) = 2 \* Sum\_{k=0..n-1} binomial(n-1, k)\*binomial(n+k, k). | **57** | 1001 |
+| [A002004](seq/A002xxx/A002004/) | Davenport-Schinzel numbers of degree 4 on n symbols. | **176** | 6 |
 | [A002005](seq/A002xxx/A002005/) | Number of rooted planar cubic maps with 2n vertices. | **66** | 1001 |
 | [A002006](seq/A002xxx/A002006/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **70** | 201 |
 | [A002007](seq/A002xxx/A002007/) | Number of rooted planar maps with 2n+1 trivalent vertices and a root… | **106** | 201 |
@@ -1988,6 +1996,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002010](seq/A002xxx/A002010/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **137** | 201 |
 | [A002011](seq/A002xxx/A002011/) | a(n) = 4\*(2n+1)!/n!^2. | **39** | 201 |
 | [A002012](seq/A002xxx/A002012/) | Number of rooted planar maps with three trivalent vertices and a root… | **53** | 23 |
+| [A002013](seq/A002xxx/A002013/) | Number of filaments with n square cells. | **220** | 18 |
 | [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
 | [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
 | [A002017](seq/A002xxx/A002017/) | Expansion of e.g.f. exp(sin(x)). | **82** | 101 |
@@ -2003,6 +2012,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002027](seq/A002xxx/A002027/) | Number of connected graphs on n labeled nodes, each node being… | **161** | 51 |
 | [A002028](seq/A002xxx/A002028/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
 | [A002029](seq/A002xxx/A002029/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
+| [A002030](seq/A002xxx/A002030/) | Number of connected graphs on n labeled nodes, each node being… | **180** | 51 |
 | [A002031](seq/A002xxx/A002031/) | Number of labeled connected digraphs on n nodes where every node has… | **164** | 99 |
 | [A002032](seq/A002xxx/A002032/) | Number of n-colored connected graphs on n labeled nodes. | **131** | 51 |
 | [A002033](seq/A002xxx/A002033/) | Number of perfect partitions of n. | **76** | 10000 |
@@ -2018,7 +2028,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002043](seq/A002xxx/A002043/) | MacMahon's solid partitions of n in which 2 is the smallest summand. | **113** | 999 |
 | [A002044](seq/A002xxx/A002044/) | MacMahon's solid partitions of n in which 3 is the smallest summand. | **125** | 34 |
 | [A002045](seq/A002xxx/A002045/) | MacMahon's solid partitions of n in which 4 is the smallest summand. | **123** | 35 |
-| [A002047](seq/A002xxx/A002047/) | Number of 3 X (2n+1) zero-sum arrays with entries -n,...,0,...,n. | **120** | 8 |
+| [A002046](seq/A002xxx/A002046/) | Larger of an amicable pair with smaller member A002025(n). | **130** | 35 |
 | [A002048](seq/A002xxx/A002048/) | Segmented numbers, or prime numbers of measurement. | **70** | 9000 |
 | [A002049](seq/A002xxx/A002049/) | Prime numbers of measurement. | **70** | 9000 |
 | [A002050](seq/A002xxx/A002050/) | Number of simplices in barycentric subdivision of n-simplex. | **58** | 425 |

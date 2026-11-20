@@ -1,0 +1,6 @@
+{
+  "name": "Davenport-Schinzel numbers of degree 4 on n symbols.",
+  "offset": 1,
+  "min_terms": 6,
+  "timeout": 120
+}
