@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = number of partitions of n into semiprimes (more precisely, number of ways of writing n as a sum of products of 2 distinct primes).",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

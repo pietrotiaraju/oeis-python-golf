@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n into nonprime parts.",
+  "offset": 0,
+  "min_terms": 5001,
+  "timeout": 60
+}

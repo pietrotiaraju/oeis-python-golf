@@ -1,0 +1,6 @@
+{
+  "name": "a(1) = 0, a(2) = 0; for n > 2, a(n) - a(n-3) - a(n-5) - ... - a(n-p) = n if n is prime, otherwise = 0, where p = largest prime < n.",
+  "offset": 1,
+  "min_terms": 1000,
+  "timeout": 60
+}

@@ -2050,6 +2050,17 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002057](seq/A002xxx/A002057/) | Fourth convolution of Catalan numbers: a(n) =… | **52** | 1001 |
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
+| [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
+| [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
+| [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
+| [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
+| [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
+| [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
+| [A002121](seq/A002xxx/A002121/) | a(0) = 1, a(1) = 0, a(2) = -1; for n >= 3, a(n) = - a(n-2) + Sum\_{… | **93** | 1001 |
+| [A002122](seq/A002xxx/A002122/) | a(n) = Sum\_{t=0..n} g(t)\*g(n-t) where g(t) = A002121(t). | **119** | 1001 |
+| [A002123](seq/A002xxx/A002123/) | a(1) = 0, a(2) = 0; for n > 2, a(n) - a(n-3) - a(n-5) - ... - a(n-p)… | **95** | 1000 |
+| [A002124](seq/A002xxx/A002124/) | Number of compositions of n into a sum of odd primes. | **86** | 1001 |
+| [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
