@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes of base-3 necklaces of length n, where necklaces are considered equivalent under both rotations and permutations of the symbols.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}
