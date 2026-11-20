@@ -1,0 +1,6 @@
+{
+  "name": "Number of connected graphs on n labeled nodes, each node being colored with one of 5 colors, such that no edge joins nodes of the same color.",
+  "offset": 0,
+  "min_terms": 51,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Primes p such that the congruence 2^x = 5 (mod p) is solvable.",
+  "offset": 1,
+  "min_terms": 560,
+  "timeout": 60
+}

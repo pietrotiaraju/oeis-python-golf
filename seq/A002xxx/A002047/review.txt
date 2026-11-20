@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+ca400c908341 Definition (Coserea's comment): 3 x (2n+1) arrays whose rows are permutations of -n..n, first row in increasing order, every column summing to 0. Column i holds i, s(i), -i-s(i), so a(n) counts permutations s of -n..n with all i+s(i) distinct and in -n..n. The program enumerates exactly these column by column, keeping the sets of unused second-row values and unused sums, and counts each array once; no theorem needed, right for every n. Exponential search, bar 8 terms (n=0..7) with timeout 120.

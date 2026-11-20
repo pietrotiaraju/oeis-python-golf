@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are the sum of 2 distinct squares: of form x^2 + y^2 with 0 <= x < y.",
+  "offset": 1,
+  "min_terms": 240,
+  "timeout": 60
+}
