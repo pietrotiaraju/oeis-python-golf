@@ -2060,13 +2060,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002067](seq/A002xxx/A002067/) | a(n) = Sum\_{k=0..n-1} binomial(2\*n,2\*k)\*a(k)\*a(n-k-1). | **103** | 51 |
 | [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
+| [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
 | [A002084](seq/A002xxx/A002084/) | Sinh(x) / cos(x) = Sum\_{n>=0} a(n)\*x^(2n+1)/(2n+1)!. | **72** | 51 |
 | [A002085](seq/A002xxx/A002085/) | From the expansion of sinh(x) / cos(x): a(n) = odd part of A002084(n). | **80** | 51 |
+| [A002086](seq/A002xxx/A002086/) | Number of circulant tournaments on 2n+1 nodes up to Cayley… | **180** | 200 |
 | [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
 | [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
+| [A002094](seq/A002xxx/A002094/) | Number of unlabeled connected loop-less graphs on n nodes containing… | **294** | 400 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
 | [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
 | [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
