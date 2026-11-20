@@ -1987,6 +1987,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002001](seq/A002xxx/A002001/) | a(n) = 3\*4^(n-1), n>0; a(0)=1. | **29** | 301 |
 | [A002002](seq/A002xxx/A002002/) | a(n) = Sum\_{k=0..n-1} binomial(n,k+1) \* binomial(n+k,k). | **56** | 1001 |
 | [A002003](seq/A002xxx/A002003/) | a(n) = 2 \* Sum\_{k=0..n-1} binomial(n-1, k)\*binomial(n+k, k). | **57** | 1001 |
+| [A002004](seq/A002xxx/A002004/) | Davenport-Schinzel numbers of degree 4 on n symbols. | **176** | 6 |
 | [A002005](seq/A002xxx/A002005/) | Number of rooted planar cubic maps with 2n vertices. | **66** | 1001 |
 | [A002006](seq/A002xxx/A002006/) | Number of rooted planar maps with 2n trivalent vertices and a root… | **70** | 201 |
 | [A002007](seq/A002xxx/A002007/) | Number of rooted planar maps with 2n+1 trivalent vertices and a root… | **106** | 201 |
