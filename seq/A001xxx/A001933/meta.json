@@ -1,0 +1,6 @@
+{
+  "name": "Number of chessboard polyominoes with n squares.",
+  "offset": 1,
+  "min_terms": 10,
+  "timeout": 60
+}

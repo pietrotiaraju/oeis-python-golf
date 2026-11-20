@@ -1924,6 +1924,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001930](seq/A001xxx/A001930/) | Number of topologies, or transitive digraphs with n unlabeled nodes. | **234** | 6 |
 | [A001931](seq/A001xxx/A001931/) | Number of fixed 3-dimensional polycubes with n cells; lattice animals… | **164** | 10 |
 | [A001932](seq/A001xxx/A001932/) | Sum of Fibonacci (A000045) and Pell (A000129) numbers. | **51** | 502 |
+| [A001933](seq/A001xxx/A001933/) | Number of chessboard polyominoes with n squares. | **218** | 10 |
 | [A001934](seq/A001xxx/A001934/) | Expansion of 1/theta\_4(q)^2 in powers of q. | **86** | 7000 |
 | [A001935](seq/A001xxx/A001935/) | Number of partitions with no even part repeated; partitions of n in… | **85** | 8500 |
 | [A001936](seq/A001xxx/A001936/) | Expansion of q^(-1/4) \* (eta(q^4) / eta(q))^2 in powers of q. | **87** | 1001 |
