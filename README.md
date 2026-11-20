@@ -2051,6 +2051,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
 | [A002060](seq/A002xxx/A002060/) | Number of partitions of an n-gon into (n-5) parts. | **63** | 23 |
+| [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
 | [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
 | [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
