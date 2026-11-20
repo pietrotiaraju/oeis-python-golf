@@ -1984,6 +1984,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001994](seq/A001xxx/A001994/) | Expansion of 1/((1-x)\*(1-x^2)^2\*(1-x^3)\*(1-x^4)\*(1-x^5)). | **61** | 1001 |
 | [A001995](seq/A001xxx/A001995/) | Numbers that are the sum of 5 distinct squares: of form v^2 + w^2 +… | **106** | 1000 |
 | [A001996](seq/A001xxx/A001996/) | Number of partitions of n into parts 2, 3, 4, 5, 6, 7. | **68** | 1001 |
+| [A001997](seq/A001xxx/A001997/) | Number of different shapes formed by bending a piece of wire of… | **178** | 15 |
 | [A001998](seq/A001xxx/A001998/) | Bending a piece of wire of length n+1; walks of length n+1 on a… | **35** | 2093 |
 | [A001999](seq/A001xxx/A001999/) | a(n) = a(n-1)\*(a(n-1)^2 - 3). | **28** | 8 |
 | [A002000](seq/A002xxx/A002000/) | a(n+1) = a(n)\*(a(n)^2 - 3) with a(0) = 7. | **28** | 7 |
