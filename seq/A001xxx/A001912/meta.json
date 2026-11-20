@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 4*k^2 + 1 is prime.",
+  "offset": 1,
+  "min_terms": 3000,
+  "timeout": 60
+}

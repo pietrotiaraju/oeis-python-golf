@@ -1,0 +1,6 @@
+{
+  "name": "Prime determinants of forms with class number 2.",
+  "offset": 1,
+  "min_terms": 4000,
+  "timeout": 60
+}

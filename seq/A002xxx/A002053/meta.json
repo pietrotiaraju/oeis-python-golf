@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = least value of m for which Liouville's function A002819(m) = -n.",
+  "offset": 0,
+  "min_terms": 4500,
+  "timeout": 60
+}
