@@ -2062,6 +2062,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
+| [A002080](seq/A002xxx/A002080/) | Number of N-equivalence classes of self-dual threshold functions of n… | **343** | 7 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
