@@ -1979,6 +1979,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A001988](seq/A001xxx/A001988/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 7… | **146** | 18 |
 | [A001989](seq/A001xxx/A001989/) | Class numbers associated with terms of A001988. | **230** | 17 |
 | [A001990](seq/A001xxx/A001990/) | Let p be the n-th odd prime. a(n) is the least prime congruent to 5… | **148** | 26 |
+| [A001991](seq/A001xxx/A001991/) | Class numbers associated with terms of A001990. | **235** | 17 |
 | [A001993](seq/A001xxx/A001993/) | Number of two-rowed partitions of length 3. | **61** | 1001 |
 | [A001994](seq/A001xxx/A001994/) | Expansion of 1/((1-x)\*(1-x^2)^2\*(1-x^3)\*(1-x^4)\*(1-x^5)). | **61** | 1001 |
 | [A001995](seq/A001xxx/A001995/) | Numbers that are the sum of 5 distinct squares: of form v^2 + w^2 +… | **106** | 1000 |
