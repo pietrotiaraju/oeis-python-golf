@@ -2050,6 +2050,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002057](seq/A002xxx/A002057/) | Fourth convolution of Catalan numbers: a(n) =… | **52** | 1001 |
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
+| [A002060](seq/A002xxx/A002060/) | Number of partitions of an n-gon into (n-5) parts. | **63** | 23 |
+| [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
+| [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
+| [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
+| [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
+| [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
