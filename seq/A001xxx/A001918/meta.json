@@ -1,0 +1,6 @@
+{
+  "name": "Least positive primitive root of n-th prime.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}

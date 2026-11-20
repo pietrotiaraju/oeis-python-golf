@@ -1,0 +1,6 @@
+{
+  "name": "A Beatty sequence: floor(n * (sqrt(5) + 3)).",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}

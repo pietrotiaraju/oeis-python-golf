@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 3*k^2 - 3*k + 1 is both a square (A000290) and a centered hexagonal number (A003215).",
+  "offset": 0,
+  "min_terms": 801,
+  "timeout": 60
+}

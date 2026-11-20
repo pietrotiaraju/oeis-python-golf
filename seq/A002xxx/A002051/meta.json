@@ -1,0 +1,6 @@
+{
+  "name": "Steffensen's bracket function [n,2].",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Apply partial sum operator twice to Fibonacci numbers.",
+  "offset": 0,
+  "min_terms": 501,
+  "timeout": 60
+}

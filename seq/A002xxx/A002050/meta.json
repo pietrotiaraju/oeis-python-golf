@@ -1,0 +1,6 @@
+{
+  "name": "Number of simplices in barycentric subdivision of n-simplex.",
+  "offset": 0,
+  "min_terms": 425,
+  "timeout": 60
+}

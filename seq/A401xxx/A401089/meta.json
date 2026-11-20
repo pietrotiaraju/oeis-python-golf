@@ -1,0 +1,6 @@
+{
+  "name": "Number of regular pentagons bounded by the sides and diagonals of a regular 5n-gon.",
+  "offset": 1,
+  "min_terms": 30,
+  "timeout": 60
+}

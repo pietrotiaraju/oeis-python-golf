@@ -1,0 +1,6 @@
+{
+  "name": "Larger of an amicable pair with smaller member A002025(n).",
+  "offset": 1,
+  "min_terms": 35,
+  "timeout": 30
+}

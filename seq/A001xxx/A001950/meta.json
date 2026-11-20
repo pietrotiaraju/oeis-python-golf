@@ -1,0 +1,6 @@
+{
+  "name": "Upper Wythoff sequence (a Beatty sequence): a(n) = floor(n*phi^2), where phi = (1+sqrt(5))/2.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
