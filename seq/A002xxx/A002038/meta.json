@@ -1,0 +1,6 @@
+{
+  "name": "Numbers dividing A002037(i) and larger than A002037(i-1), for some i>0.",
+  "offset": 1,
+  "min_terms": 57,
+  "timeout": 60
+}

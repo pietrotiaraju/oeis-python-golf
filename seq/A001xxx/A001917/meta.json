@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = (p-1)/x, where p = prime(n) and x = ord(2,p), the smallest positive integer such that 2^x == 1 (mod p).",
+  "offset": 2,
+  "min_terms": 940,
+  "timeout": 60
+}

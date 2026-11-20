@@ -1,2 +1,2 @@
-s=e=1;k=3
-while[print(d:=s-3*s//k)]:s+=3*e+(e:=d);k+=1
+e=0;s=k=4
+while[print(e)]:s+=3*e+(e:=s-3*s//k);k+=1
