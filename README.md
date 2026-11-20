@@ -1997,6 +1997,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002011](seq/A002xxx/A002011/) | a(n) = 4\*(2n+1)!/n!^2. | **39** | 201 |
 | [A002012](seq/A002xxx/A002012/) | Number of rooted planar maps with three trivalent vertices and a root… | **53** | 23 |
 | [A002013](seq/A002xxx/A002013/) | Number of filaments with n square cells. | **220** | 18 |
+| [A002014](seq/A002xxx/A002014/) | Number of symmetric filaments (strip polyominoes) with n square cells. | **220** | 18 |
 | [A002015](seq/A002xxx/A002015/) | a(n) = n^2 reduced mod 100. | **30** | 60 |
 | [A002016](seq/A002xxx/A002016/) | Number of first n tetrahedral numbers (A000292) that are relatively… | **83** | 1000 |
 | [A002017](seq/A002xxx/A002017/) | Expansion of e.g.f. exp(sin(x)). | **82** | 101 |
@@ -2029,6 +2030,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002044](seq/A002xxx/A002044/) | MacMahon's solid partitions of n in which 3 is the smallest summand. | **125** | 34 |
 | [A002045](seq/A002xxx/A002045/) | MacMahon's solid partitions of n in which 4 is the smallest summand. | **123** | 35 |
 | [A002046](seq/A002xxx/A002046/) | Larger of an amicable pair with smaller member A002025(n). | **130** | 35 |
+| [A002047](seq/A002xxx/A002047/) | Number of 3 X (2n+1) zero-sum arrays with entries -n,...,0,...,n. | **120** | 8 |
 | [A002048](seq/A002xxx/A002048/) | Segmented numbers, or prime numbers of measurement. | **70** | 9000 |
 | [A002049](seq/A002xxx/A002049/) | Prime numbers of measurement. | **70** | 9000 |
 | [A002050](seq/A002xxx/A002050/) | Number of simplices in barycentric subdivision of n-simplex. | **58** | 425 |
