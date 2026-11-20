@@ -2060,6 +2060,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002067](seq/A002xxx/A002067/) | a(n) = Sum\_{k=0..n-1} binomial(2\*n,2\*k)\*a(k)\*a(n-k-1). | **103** | 51 |
 | [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
+| [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
@@ -2076,8 +2077,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
 | [A002101](seq/A002xxx/A002101/) | Nearest integer to 4 \* Pi \* n^3 / 3. | **101** | 1001 |
+| [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **85** | 10001 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
+| [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
 | [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
 | [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
 | [A002110](seq/A002xxx/A002110/) | Primorial numbers (first definition): product of first n primes.… | **49** | 351 |
@@ -2096,6 +2099,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
 | [A002126](seq/A002xxx/A002126/) | Number of solutions to n=p+q where p and q are primes or zero. | **69** | 10001 |
 | [A002129](seq/A002xxx/A002129/) | Generalized sum of divisors function: excess of sum of odd divisors… | **65** | 10000 |
+| [A002130](seq/A002xxx/A002130/) | Generalized sum of divisors function. | **136** | 55 |
 | [A002131](seq/A002xxx/A002131/) | Sum of divisors d of n such that n/d is odd. | **63** | 10000 |
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
@@ -2197,6 +2201,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001836](seq/A001xxx/A001836/) | Numbers k such that phi(2k-1) < phi(2k), where phi is Euler's totient… | **96** | 150 | 111 | 1000 |
 | [A001837](seq/A001xxx/A001837/) | Numbers k such that phi(2k+1) < phi(2k). | **96** | 130 | 110 | 10000 |
 | [A001838](seq/A001xxx/A001838/) | Numbers k such that phi(k+2) = phi(k) + 2. | **96** | 300 | 114 | 10000 |
+| [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **75** | 700 | 85 | 10001 |
 
 <!-- short:end -->
 
