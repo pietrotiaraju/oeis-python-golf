@@ -1,0 +1,6 @@
+{
+  "name": "Glaisher's H numbers.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
