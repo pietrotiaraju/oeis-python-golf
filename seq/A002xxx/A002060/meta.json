@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of an n-gon into (n-5) parts.",
+  "offset": 7,
+  "min_terms": 23,
+  "timeout": 60
+}
