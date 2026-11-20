@@ -1,0 +1,6 @@
+{
+  "name": "Glaisher's G numbers.",
+  "offset": 1,
+  "min_terms": 254,
+  "timeout": 60
+}

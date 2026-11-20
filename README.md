@@ -2057,11 +2057,14 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002064](seq/A002xxx/A002064/) | Cullen numbers: a(n) = n\*2^n + 1. | **29** | 301 |
 | [A002065](seq/A002xxx/A002065/) | a(n+1) = a(n)^2 + a(n) + 1. | **28** | 13 |
 | [A002066](seq/A002xxx/A002066/) | a(n) = 10\*4^n. | **25** | 501 |
+| [A002067](seq/A002xxx/A002067/) | a(n) = Sum\_{k=0..n-1} binomial(2\*n,2\*k)\*a(k)\*a(n-k-1). | **103** | 51 |
 | [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
+| [A002084](seq/A002xxx/A002084/) | Sinh(x) / cos(x) = Sum\_{n>=0} a(n)\*x^(2n+1)/(2n+1)!. | **72** | 51 |
+| [A002085](seq/A002xxx/A002085/) | From the expansion of sinh(x) / cos(x): a(n) = odd part of A002084(n). | **80** | 51 |
 | [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
 | [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
@@ -2071,10 +2074,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
 | [A002101](seq/A002xxx/A002101/) | Nearest integer to 4 \* Pi \* n^3 / 3. | **101** | 1001 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
+| [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
 | [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
 | [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
 | [A002110](seq/A002xxx/A002110/) | Primorial numbers (first definition): product of first n primes.… | **49** | 351 |
+| [A002111](seq/A002xxx/A002111/) | Glaisher's G numbers. | **103** | 254 |
+| [A002112](seq/A002xxx/A002112/) | Glaisher's H numbers. | **87** | 100 |
 | [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **92** | 19999 |
+| [A002114](seq/A002xxx/A002114/) | Glaisher's H' numbers. | **85** | 100 |
+| [A002115](seq/A002xxx/A002115/) | Generalized Euler numbers. | **73** | 167 |
 | [A002118](seq/A002xxx/A002118/) | 5th powers written backwards. | **43** | 1001 |
 | [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
 | [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
