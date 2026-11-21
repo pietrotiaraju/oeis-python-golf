@@ -1,0 +1,6 @@
+{
+  "name": "From a Goldbach conjecture: records in A185091.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}
