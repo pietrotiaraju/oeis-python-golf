@@ -2070,6 +2070,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002077](seq/A002xxx/A002077/) | Number of N-equivalence classes of self-dual threshold functions of… | **372** | 7 |
 | [A002078](seq/A002xxx/A002078/) | N-equivalence classes of threshold functions of n or fewer variables. | **317** | 7 |
 | [A002079](seq/A002xxx/A002079/) | Number of N-equivalence classes of threshold functions of exactly n… | **335** | 7 |
+| [A002080](seq/A002xxx/A002080/) | Number of N-equivalence classes of self-dual threshold functions of n… | **343** | 7 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
