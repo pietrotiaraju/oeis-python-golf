@@ -2078,6 +2078,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
 | [A002101](seq/A002xxx/A002101/) | Nearest integer to 4 \* Pi \* n^3 / 3. | **101** | 1001 |
 | [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **85** | 10001 |
+| [A002103](seq/A002xxx/A002103/) | Coefficients of expansion of Jacobi nome q in certain powers of… | **149** | 150 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
 | [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
