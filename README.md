@@ -2118,6 +2118,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002143](seq/A002xxx/A002143/) | Class numbers h(-p) where p runs through the primes p == 3 (mod 4). | **137** | 4000 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **56** | 10000 |
+| [A002146](seq/A002xxx/A002146/) | Smallest prime == 7 (mod 8) where Q(sqrt(-p)) has class number 2n+1. | **172** | 184 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
