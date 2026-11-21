@@ -2104,11 +2104,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
 | [A002126](seq/A002xxx/A002126/) | Number of solutions to n=p+q where p and q are primes or zero. | **69** | 10001 |
 | [A002127](seq/A002xxx/A002127/) | MacMahon's generalized sum of divisors function. | **114** | 440 |
+| [A002128](seq/A002xxx/A002128/) | MacMahon's generalized sum of divisors function. | **128** | 100 |
 | [A002129](seq/A002xxx/A002129/) | Generalized sum of divisors function: excess of sum of odd divisors… | **65** | 10000 |
 | [A002130](seq/A002xxx/A002130/) | Generalized sum of divisors function. | **136** | 55 |
 | [A002131](seq/A002xxx/A002131/) | Sum of divisors d of n such that n/d is odd. | **63** | 10000 |
 | [A002132](seq/A002xxx/A002132/) | Generalized sum of divisors function. | **122** | 620 |
 | [A002133](seq/A002xxx/A002133/) | Number of partitions of n with exactly two part sizes. | **92** | 370 |
+| [A002134](seq/A002xxx/A002134/) | Generalized divisor function. Number of partitions of n with exactly… | **123** | 95 |
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
