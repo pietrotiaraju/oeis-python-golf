@@ -2064,6 +2064,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002073](seq/A002xxx/A002073/) | Numerators of coefficients in an asymptotic expansion of the… | **161** | 18 |
 | [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
+| [A002078](seq/A002xxx/A002078/) | N-equivalence classes of threshold functions of n or fewer variables. | **317** | 7 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
