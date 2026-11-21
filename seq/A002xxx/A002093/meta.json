@@ -1,0 +1,6 @@
+{
+  "name": "Highly abundant numbers: numbers k such that sigma(k) > sigma(m) for all m < k.",
+  "offset": 1,
+  "min_terms": 90,
+  "timeout": 60
+}

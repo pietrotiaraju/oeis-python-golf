@@ -1,0 +1,6 @@
+{
+  "name": "Coefficients of expansion of Jacobi nome q in certain powers of (1/2)*(1 - sqrt(k')) / (1 + sqrt(k')).",
+  "offset": 0,
+  "min_terms": 150,
+  "timeout": 60
+}

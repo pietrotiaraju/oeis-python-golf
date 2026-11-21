@@ -1,0 +1,6 @@
+{
+  "name": "Reduced tangent numbers: 2^n*(2^{2n} - 1)*|B_{2n}|/n, where B_n = Bernoulli numbers.",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}

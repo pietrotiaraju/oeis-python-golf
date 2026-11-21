@@ -1,0 +1,6 @@
+{
+  "name": "Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n).",
+  "offset": 1,
+  "min_terms": 2000,
+  "timeout": 60
+}

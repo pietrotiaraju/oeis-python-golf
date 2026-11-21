@@ -1,0 +1,6 @@
+{
+  "name": "From the expansion of sinh(x) / cos(x): a(n) = odd part of A002084(n).",
+  "offset": 0,
+  "min_terms": 51,
+  "timeout": 60
+}

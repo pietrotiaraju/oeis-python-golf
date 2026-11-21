@@ -2051,13 +2051,50 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002058](seq/A002xxx/A002058/) | Number of internal triangles in all triangulations of an (n+1)-gon. | **50** | 25 |
 | [A002059](seq/A002xxx/A002059/) | Number of partitions of an n-gon into (n-4) parts. | **55** | 24 |
 | [A002060](seq/A002xxx/A002060/) | Number of partitions of an n-gon into (n-5) parts. | **63** | 23 |
+| [A002061](seq/A002xxx/A002061/) | Central polygonal numbers: a(n) = n^2 - n + 1. | **30** | 10001 |
+| [A002062](seq/A002xxx/A002062/) | a(n) = Fibonacci(n) + n. | **42** | 501 |
+| [A002063](seq/A002xxx/A002063/) | a(n) = 9\*4^n. | **24** | 501 |
+| [A002064](seq/A002xxx/A002064/) | Cullen numbers: a(n) = n\*2^n + 1. | **29** | 301 |
+| [A002065](seq/A002xxx/A002065/) | a(n+1) = a(n)^2 + a(n) + 1. | **28** | 13 |
+| [A002066](seq/A002xxx/A002066/) | a(n) = 10\*4^n. | **25** | 501 |
+| [A002067](seq/A002xxx/A002067/) | a(n) = Sum\_{k=0..n-1} binomial(2\*n,2\*k)\*a(k)\*a(n-k-1). | **103** | 51 |
+| [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
+| [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
+| [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
+| [A002073](seq/A002xxx/A002073/) | Numerators of coefficients in an asymptotic expansion of the… | **161** | 18 |
 | [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
+| [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
+| [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
+| [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
+| [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
+| [A002084](seq/A002xxx/A002084/) | Sinh(x) / cos(x) = Sum\_{n>=0} a(n)\*x^(2n+1)/(2n+1)!. | **72** | 51 |
+| [A002085](seq/A002xxx/A002085/) | From the expansion of sinh(x) / cos(x): a(n) = odd part of A002084(n). | **80** | 51 |
+| [A002086](seq/A002xxx/A002086/) | Number of circulant tournaments on 2n+1 nodes up to Cayley… | **180** | 200 |
+| [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
+| [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
+| [A002093](seq/A002xxx/A002093/) | Highly abundant numbers: numbers k such that sigma(k) > sigma(m) for… | **76** | 90 |
+| [A002094](seq/A002xxx/A002094/) | Number of unlabeled connected loop-less graphs on n nodes containing… | **294** | 400 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
 | [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
 | [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
 | [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
+| [A002101](seq/A002xxx/A002101/) | Nearest integer to 4 \* Pi \* n^3 / 3. | **101** | 1001 |
+| [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **85** | 10001 |
+| [A002103](seq/A002xxx/A002103/) | Coefficients of expansion of Jacobi nome q in certain powers of… | **149** | 150 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
+| [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
+| [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
+| [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
+| [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
+| [A002110](seq/A002xxx/A002110/) | Primorial numbers (first definition): product of first n primes.… | **49** | 351 |
+| [A002111](seq/A002xxx/A002111/) | Glaisher's G numbers. | **103** | 254 |
+| [A002112](seq/A002xxx/A002112/) | Glaisher's H numbers. | **87** | 100 |
+| [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **92** | 19999 |
+| [A002114](seq/A002xxx/A002114/) | Glaisher's H' numbers. | **85** | 100 |
+| [A002115](seq/A002xxx/A002115/) | Generalized Euler numbers. | **73** | 167 |
+| [A002117](seq/A002xxx/A002117/) | Apéry's number or Apéry's constant zeta(3). Decimal expansion of… | **109** | 20002 |
+| [A002118](seq/A002xxx/A002118/) | 5th powers written backwards. | **43** | 1001 |
 | [A002119](seq/A002xxx/A002119/) | Bessel polynomial y\_n(-2). | **42** | 101 |
 | [A002120](seq/A002xxx/A002120/) | a(1) = 0, a(2) = -2; for n > 2, a(n) + a(n-2) - a(n-3) - a(n-5) - ...… | **101** | 1000 |
 | [A002121](seq/A002xxx/A002121/) | a(0) = 1, a(1) = 0, a(2) = -1; for n >= 3, a(n) = - a(n-2) + Sum\_{… | **93** | 1001 |
@@ -2065,9 +2102,26 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002123](seq/A002xxx/A002123/) | a(1) = 0, a(2) = 0; for n > 2, a(n) - a(n-3) - a(n-5) - ... - a(n-p)… | **95** | 1000 |
 | [A002124](seq/A002xxx/A002124/) | Number of compositions of n into a sum of odd primes. | **86** | 1001 |
 | [A002125](seq/A002xxx/A002125/) | a(n) = Sum\_{k=0..n} f(k)\*f(n-k) where f(k) = A002124(k). | **112** | 1001 |
+| [A002126](seq/A002xxx/A002126/) | Number of solutions to n=p+q where p and q are primes or zero. | **69** | 10001 |
+| [A002127](seq/A002xxx/A002127/) | MacMahon's generalized sum of divisors function. | **114** | 440 |
+| [A002128](seq/A002xxx/A002128/) | MacMahon's generalized sum of divisors function. | **128** | 100 |
+| [A002129](seq/A002xxx/A002129/) | Generalized sum of divisors function: excess of sum of odd divisors… | **65** | 10000 |
+| [A002130](seq/A002xxx/A002130/) | Generalized sum of divisors function. | **136** | 55 |
+| [A002131](seq/A002xxx/A002131/) | Sum of divisors d of n such that n/d is odd. | **63** | 10000 |
+| [A002132](seq/A002xxx/A002132/) | Generalized sum of divisors function. | **122** | 620 |
+| [A002133](seq/A002xxx/A002133/) | Number of partitions of n with exactly two part sizes. | **92** | 370 |
+| [A002134](seq/A002xxx/A002134/) | Generalized divisor function. Number of partitions of n with exactly… | **123** | 95 |
 | [A002135](seq/A002xxx/A002135/) | Number of terms in a symmetrical determinant: a(n) = n\*a(n-1) -… | **59** | 101 |
 | [A002136](seq/A002xxx/A002136/) | Matrices with 2 rows. | **60** | 448 |
 | [A002137](seq/A002xxx/A002137/) | Number of n X n symmetric matrices with nonnegative integer entries,… | **61** | 101 |
+| [A002138](seq/A002xxx/A002138/) | 6th powers written backwards. | **43** | 10001 |
+| [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **144** | 3500 |
+| [A002140](seq/A002xxx/A002140/) | 7th powers written backwards. | **43** | 10001 |
+| [A002143](seq/A002xxx/A002143/) | Class numbers h(-p) where p runs through the primes p == 3 (mod 4). | **137** | 4000 |
+| [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
+| [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **56** | 10000 |
+| [A002146](seq/A002xxx/A002146/) | Smallest prime == 7 (mod 8) where Q(sqrt(-p)) has class number 2n+1. | **172** | 184 |
+| [A002148](seq/A002xxx/A002148/) | Smallest prime p==3 (mod 8) such that Q(sqrt(-p)) has class number… | **173** | 88 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -2161,6 +2215,12 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A001836](seq/A001xxx/A001836/) | Numbers k such that phi(2k-1) < phi(2k), where phi is Euler's totient… | **96** | 150 | 111 | 1000 |
 | [A001837](seq/A001xxx/A001837/) | Numbers k such that phi(2k+1) < phi(2k). | **96** | 130 | 110 | 10000 |
 | [A001838](seq/A001xxx/A001838/) | Numbers k such that phi(k+2) = phi(k) + 2. | **96** | 300 | 114 | 10000 |
+| [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **76** | 600 | 116 | 50001 |
+| [A002102](seq/A002xxx/A002102/) | Number of nonnegative solutions to x^2 + y^2 + z^2 = n. | **75** | 700 | 85 | 10001 |
+| [A002113](seq/A002xxx/A002113/) | Palindromes in base 10. | **46** | 16000 | 92 | 19999 |
+| [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **128** | 450 | 144 | 3500 |
+| [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **44** | 5000 | 56 | 10000 |
+| [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **44** | 5000 | 56 | 10000 |
 
 <!-- short:end -->
 
