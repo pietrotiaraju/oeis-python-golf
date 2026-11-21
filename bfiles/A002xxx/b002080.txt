@@ -1,0 +1,10 @@
+# A002080 (b-file synthesized from sequence entry)
+1 1
+2 2
+3 4
+4 12
+5 81
+6 1684
+7 122921
+8 33207256
+9 34448225389

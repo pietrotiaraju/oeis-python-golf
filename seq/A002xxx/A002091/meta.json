@@ -1,0 +1,6 @@
+{
+  "name": "From a Goldbach conjecture: the location of records in A185091.",
+  "offset": 1,
+  "min_terms": 20,
+  "timeout": 60
+}

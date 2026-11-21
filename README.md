@@ -2061,7 +2061,16 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002068](seq/A002xxx/A002068/) | Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n). | **48** | 2000 |
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
+| [A002071](seq/A002xxx/A002071/) | Number of pairs of consecutive integers x, x+1 such that all prime… | **311** | 11 |
+| [A002072](seq/A002xxx/A002072/) | a(n) = smallest number m such that for all k > m, either k or k+1 has… | **324** | 11 |
+| [A002073](seq/A002xxx/A002073/) | Numerators of coefficients in an asymptotic expansion of the… | **161** | 18 |
+| [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
+| [A002075](seq/A002xxx/A002075/) | Number of equivalence classes with primitive period n of base 3… | **139** | 28 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
+| [A002077](seq/A002xxx/A002077/) | Number of N-equivalence classes of self-dual threshold functions of… | **372** | 7 |
+| [A002078](seq/A002xxx/A002078/) | N-equivalence classes of threshold functions of n or fewer variables. | **317** | 7 |
+| [A002079](seq/A002xxx/A002079/) | Number of N-equivalence classes of threshold functions of exactly n… | **335** | 7 |
+| [A002080](seq/A002xxx/A002080/) | Number of N-equivalence classes of self-dual threshold functions of n… | **343** | 7 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
 | [A002082](seq/A002xxx/A002082/) | 2nd differences are periodic. | **53** | 36 |
 | [A002083](seq/A002xxx/A002083/) | Narayana-Zidek-Capell numbers: a(n) = 1 for n <= 2. Otherwise a(2n) =… | **48** | 3325 |
@@ -2070,10 +2079,13 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002086](seq/A002xxx/A002086/) | Number of circulant tournaments on 2n+1 nodes up to Cayley… | **180** | 200 |
 | [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
 | [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
+| [A002091](seq/A002xxx/A002091/) | From a Goldbach conjecture: the location of records in A185091. | **156** | 20 |
+| [A002092](seq/A002xxx/A002092/) | From a Goldbach conjecture: records in A185091. | **155** | 20 |
 | [A002093](seq/A002xxx/A002093/) | Highly abundant numbers: numbers k such that sigma(k) > sigma(m) for… | **76** | 90 |
 | [A002094](seq/A002xxx/A002094/) | Number of unlabeled connected loop-less graphs on n nodes containing… | **294** | 400 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
 | [A002096](seq/A002xxx/A002096/) | Mixed partitions of n. | **103** | 46 |
+| [A002097](seq/A002xxx/A002097/) | Numbers that are not the sum of 3 nonzero triangular numbers. | **98** | 7 |
 | [A002098](seq/A002xxx/A002098/) | G.f.: 1/Product\_{k>=1} (1-prime(k)\*x^prime(k)). | **119** | 4200 |
 | [A002099](seq/A002xxx/A002099/) | G.f.: -1 + Product\_{k>=1} (1 + prime(k)\*x^prime(k)). | **98** | 501 |
 | [A002100](seq/A002xxx/A002100/) | a(n) = number of partitions of n into semiprimes (more precisely,… | **123** | 1000 |
@@ -2115,6 +2127,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002138](seq/A002xxx/A002138/) | 6th powers written backwards. | **43** | 10001 |
 | [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **144** | 3500 |
 | [A002140](seq/A002xxx/A002140/) | 7th powers written backwards. | **43** | 10001 |
+| [A002141](seq/A002xxx/A002141/) | Class numbers of quadratic fields. | **201** | 20 |
 | [A002142](seq/A002xxx/A002142/) | Primes p == 1 (mod 4) where class number of Q(sqrt p) increases. | **255** | 13 |
 | [A002143](seq/A002xxx/A002143/) | Class numbers h(-p) where p runs through the primes p == 3 (mod 4). | **137** | 4000 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
