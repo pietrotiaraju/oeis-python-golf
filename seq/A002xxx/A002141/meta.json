@@ -1,0 +1,6 @@
+{
+  "name": "Class numbers of quadratic fields.",
+  "offset": 3,
+  "min_terms": 20,
+  "timeout": 60
+}
