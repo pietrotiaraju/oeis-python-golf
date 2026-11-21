@@ -1,0 +1,6 @@
+{
+  "name": "Number of equivalence classes with primitive period n of base 3 necklaces, where necklaces are equivalent under rotation and permutation of symbols.",
+  "offset": 1,
+  "min_terms": 28,
+  "timeout": 60
+}
