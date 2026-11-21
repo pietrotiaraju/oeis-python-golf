@@ -2062,6 +2062,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002069](seq/A002xxx/A002069/) | Palindromic pentagonal numbers. | **55** | 21 |
 | [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
 | [A002071](seq/A002xxx/A002071/) | Number of pairs of consecutive integers x, x+1 such that all prime… | **311** | 11 |
+| [A002072](seq/A002xxx/A002072/) | a(n) = smallest number m such that for all k > m, either k or k+1 has… | **324** | 11 |
 | [A002073](seq/A002xxx/A002073/) | Numerators of coefficients in an asymptotic expansion of the… | **161** | 18 |
 | [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
 | [A002075](seq/A002xxx/A002075/) | Number of equivalence classes with primitive period n of base 3… | **139** | 28 |
