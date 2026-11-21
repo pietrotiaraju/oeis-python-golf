@@ -1,0 +1,6 @@
+{
+  "name": "Shuffling 2n cards.",
+  "offset": 1,
+  "min_terms": 3500,
+  "timeout": 60
+}
