@@ -1,0 +1,6 @@
+{
+  "name": "Number of N-equivalence classes of self-dual threshold functions of n or fewer variables.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 120
+}
