@@ -1,0 +1,8 @@
+# A002097 (b-file synthesized from sequence entry)
+1 1
+2 2
+3 4
+4 6
+5 11
+6 20
+7 29

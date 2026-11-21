@@ -1,0 +1,6 @@
+{
+  "name": "Class numbers h(-p) where p runs through the primes p == 3 (mod 4).",
+  "offset": 1,
+  "min_terms": 4000,
+  "timeout": 60
+}
