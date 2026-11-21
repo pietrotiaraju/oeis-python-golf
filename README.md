@@ -2070,8 +2070,6 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002086](seq/A002xxx/A002086/) | Number of circulant tournaments on 2n+1 nodes up to Cayley… | **180** | 200 |
 | [A002088](seq/A002xxx/A002088/) | Sum of totient function: a(n) = Sum\_{k=1..n} phi(k), cf. A000010. | **116** | 50001 |
 | [A002089](seq/A002xxx/A002089/) | a(n) = 11\*4^n. | **25** | 501 |
-| [A002091](seq/A002xxx/A002091/) | From a Goldbach conjecture: the location of records in A185091. | **156** | 20 |
-| [A002092](seq/A002xxx/A002092/) | From a Goldbach conjecture: records in A185091. | **155** | 20 |
 | [A002093](seq/A002xxx/A002093/) | Highly abundant numbers: numbers k such that sigma(k) > sigma(m) for… | **76** | 90 |
 | [A002094](seq/A002xxx/A002094/) | Number of unlabeled connected loop-less graphs on n nodes containing… | **294** | 400 |
 | [A002095](seq/A002xxx/A002095/) | Number of partitions of n into nonprime parts. | **99** | 5001 |
