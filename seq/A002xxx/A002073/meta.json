@@ -1,0 +1,6 @@
+{
+  "name": "Numerators of coefficients in an asymptotic expansion of the confluent hypergeometric function F(1-b; 2; 4b).",
+  "offset": 0,
+  "min_terms": 18,
+  "timeout": 60
+}
