@@ -2063,6 +2063,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002070](seq/A002xxx/A002070/) | Coefficient of x^p (p = n-th prime) in x \* Product\_{k>=1}… | **111** | 900 |
 | [A002073](seq/A002xxx/A002073/) | Numerators of coefficients in an asymptotic expansion of the… | **161** | 18 |
 | [A002074](seq/A002xxx/A002074/) | Denominators of coefficients in an asymptotic expansion of the… | **163** | 15 |
+| [A002075](seq/A002xxx/A002075/) | Number of equivalence classes with primitive period n of base 3… | **139** | 28 |
 | [A002076](seq/A002xxx/A002076/) | Number of equivalence classes of base-3 necklaces of length n, where… | **117** | 501 |
 | [A002078](seq/A002xxx/A002078/) | N-equivalence classes of threshold functions of n or fewer variables. | **317** | 7 |
 | [A002081](seq/A002xxx/A002081/) | Numbers congruent to {2, 4, 8, 16} (mod 20). | **27** | 10001 |
