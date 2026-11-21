@@ -1,0 +1,6 @@
+{
+  "name": "Number of unlabeled connected loop-less graphs on n nodes containing exactly one cycle (of length at least 2) and with all nodes of degree <= 4.",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}

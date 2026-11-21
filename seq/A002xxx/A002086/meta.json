@@ -1,0 +1,6 @@
+{
+  "name": "Number of circulant tournaments on 2n+1 nodes up to Cayley isomorphism.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
