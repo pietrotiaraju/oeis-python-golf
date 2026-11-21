@@ -2115,6 +2115,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002138](seq/A002xxx/A002138/) | 6th powers written backwards. | **43** | 10001 |
 | [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **144** | 3500 |
 | [A002140](seq/A002xxx/A002140/) | 7th powers written backwards. | **43** | 10001 |
+| [A002143](seq/A002xxx/A002143/) | Class numbers h(-p) where p runs through the primes p == 3 (mod 4). | **137** | 4000 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **56** | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **56** | 10000 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
