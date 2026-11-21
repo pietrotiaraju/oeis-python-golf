@@ -1,0 +1,6 @@
+{
+  "name": "Number of partitions of n with exactly two part sizes.",
+  "offset": 1,
+  "min_terms": 370,
+  "timeout": 60
+}

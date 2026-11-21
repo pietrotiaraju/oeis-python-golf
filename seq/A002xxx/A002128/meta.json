@@ -1,0 +1,6 @@
+{
+  "name": "MacMahon's generalized sum of divisors function.",
+  "offset": 6,
+  "min_terms": 100,
+  "timeout": 60
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Generalized sum of divisors function.",
+  "offset": 4,
+  "min_terms": 620,
+  "timeout": 60
+}

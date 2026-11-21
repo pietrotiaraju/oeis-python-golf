@@ -1,0 +1,6 @@
+{
+  "name": "Number of pairs of consecutive integers x, x+1 such that all prime factors of both x and x+1 are at most the n-th prime.",
+  "offset": 1,
+  "min_terms": 11,
+  "timeout": 60
+}
