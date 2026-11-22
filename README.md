@@ -2136,6 +2136,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002147](seq/A002xxx/A002147/) | Largest prime == 7 (mod 8) with class number 2n+1. | **295** | 50 |
 | [A002148](seq/A002xxx/A002148/) | Smallest prime p==3 (mod 8) such that Q(sqrt(-p)) has class number… | **173** | 88 |
 | [A002149](seq/A002xxx/A002149/) | Largest prime p==3 (mod 8) such that Q(sqrt(-p)) has class number… | **300** | 50 |
+| [A002160](seq/A002xxx/A002160/) | Nearest integer to Pi^n. | **106** | 29 |
+| [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **125** | 10000 |
+| [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
+| [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
