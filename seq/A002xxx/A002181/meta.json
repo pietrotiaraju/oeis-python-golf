@@ -1,0 +1,6 @@
+{
+  "name": "Least number k such that phi(k) = m, where m runs through the values (A002202) taken by phi.",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}
