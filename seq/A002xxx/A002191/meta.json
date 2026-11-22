@@ -1,0 +1,6 @@
+{
+  "name": "Possible values for sum of divisors of n.",
+  "offset": 1,
+  "min_terms": 4500,
+  "timeout": 60
+}
