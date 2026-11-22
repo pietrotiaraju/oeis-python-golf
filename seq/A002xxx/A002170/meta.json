@@ -1,0 +1,6 @@
+{
+  "name": "High temperature series for spin-1/2 Heisenberg susceptibility on 3-dimensional simple cubic lattice.",
+  "offset": 1,
+  "min_terms": 4,
+  "timeout": 120
+}
