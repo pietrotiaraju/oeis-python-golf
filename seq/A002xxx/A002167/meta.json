@@ -1,0 +1,6 @@
+{
+  "name": "High temperature series for spin-1/2 Heisenberg specific heat on 3-dimensional b.c.c. lattice.",
+  "offset": 1,
+  "min_terms": 5,
+  "timeout": 120
+}

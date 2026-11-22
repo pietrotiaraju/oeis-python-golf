@@ -2140,6 +2140,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **125** | 10000 |
 | [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
+| [A002167](seq/A002xxx/A002167/) | High temperature series for spin-1/2 Heisenberg specific heat on… | **628** | 5 |
 | [A002171](seq/A002xxx/A002171/) | Glaisher's chi numbers. a(n) = chi(4\*n + 1). | **88** | 10001 |
 | [A002172](seq/A002xxx/A002172/) | Glaisher's chi numbers chi(p) for p a prime of the form 4m+1. | **92** | 1000 |
 | [A002173](seq/A002xxx/A002173/) | a(n) = Sum\_{d\|n, d == 1 mod 4} d^2 - Sum\_{d\|n, d == 3 mod 4} d^2. | **70** | 10000 |
