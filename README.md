@@ -2140,9 +2140,15 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **125** | 10000 |
 | [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
+| [A002176](seq/A002xxx/A002176/) | a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 <= k <= n}. | **207** | 100 |
+| [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002193](seq/A002xxx/A002193/) | Decimal expansion of square root of 2. | **53** | 16000 |
 | [A002194](seq/A002xxx/A002194/) | Decimal expansion of sqrt(3). | **53** | 16000 |
+| [A002195](seq/A002xxx/A002195/) | Numerators of coefficients for numerical integration. | **124** | 17 |
+| [A002196](seq/A002xxx/A002196/) | Denominators of coefficients for numerical integration. | **126** | 13 |
+| [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
+| [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |

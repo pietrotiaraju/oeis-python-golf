@@ -1,0 +1,6 @@
+{
+  "name": "Denominators of coefficients for numerical integration.",
+  "offset": 0,
+  "min_terms": 13,
+  "timeout": 60
+}
