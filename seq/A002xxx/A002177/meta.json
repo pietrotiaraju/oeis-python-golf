@@ -1,0 +1,6 @@
+{
+  "name": "Numerators of Cotesian numbers (not in lowest terms): A002176(n)*C(n,0).",
+  "offset": 1,
+  "min_terms": 100,
+  "timeout": 60
+}
