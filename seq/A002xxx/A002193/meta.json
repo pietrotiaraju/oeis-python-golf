@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of square root of 2.",
+  "offset": 1,
+  "min_terms": 16000,
+  "timeout": 60
+}

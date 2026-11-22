@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of sqrt(3).",
+  "offset": 1,
+  "min_terms": 16000,
+  "timeout": 60
+}
