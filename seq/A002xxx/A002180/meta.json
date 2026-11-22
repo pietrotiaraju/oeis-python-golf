@@ -1,0 +1,6 @@
+{
+  "name": "Values taken by the half-totient function phi(m)/2.",
+  "offset": 2,
+  "min_terms": 400,
+  "timeout": 60
+}
