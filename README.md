@@ -2149,6 +2149,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002191](seq/A002xxx/A002191/) | Possible values for sum of divisors of n. | **75** | 4500 |
+| [A002192](seq/A002xxx/A002192/) | Least integer with A000203(a(n)) = A002191(n), where A002191 = range… | **84** | 4000 |
 | [A002193](seq/A002xxx/A002193/) | Decimal expansion of square root of 2. | **53** | 16000 |
 | [A002194](seq/A002xxx/A002194/) | Decimal expansion of sqrt(3). | **53** | 16000 |
 | [A002195](seq/A002xxx/A002195/) | Numerators of coefficients for numerical integration. | **124** | 17 |
