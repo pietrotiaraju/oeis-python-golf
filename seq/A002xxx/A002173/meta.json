@@ -1,0 +1,6 @@
+{
+  "name": "a(n) = Sum_{d|n, d == 1 mod 4} d^2 - Sum_{d|n, d == 3 mod 4} d^2.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
