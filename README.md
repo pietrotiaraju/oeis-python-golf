@@ -2151,6 +2151,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002181](seq/A002xxx/A002181/) | Least number k such that phi(k) = m, where m runs through the values… | **120** | 400 |
 | [A002182](seq/A002xxx/A002182/) | Highly composite numbers: numbers n where d(n), the number of… | **194** | 300 |
 | [A002183](seq/A002xxx/A002183/) | Number of divisors of n-th highly composite number. | **194** | 300 |
+| [A002184](seq/A002xxx/A002184/) | a(n) = least primitive factor of 2^(2n+1) - 1. | **109** | 35 |
 | [A002186](seq/A002xxx/A002186/) | Sprague-Grundy values for the game of Kayles (octal games .77 and… | **84** | 105 |
 | [A002187](seq/A002xxx/A002187/) | Sprague-Grundy values for Dawson's Chess (octal game .137). | **79** | 1001 |
 | [A002188](seq/A002xxx/A002188/) | Sprague-Grundy value for Grundy's game when starting with n tokens. | **95** | 20001 |
