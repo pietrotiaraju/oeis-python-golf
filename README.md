@@ -2144,6 +2144,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002173](seq/A002xxx/A002173/) | a(n) = Sum\_{d\|n, d == 1 mod 4} d^2 - Sum\_{d\|n, d == 3 mod 4} d^2. | **70** | 10000 |
 | [A002176](seq/A002xxx/A002176/) | a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 <= k <= n}. | **207** | 100 |
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
+| [A002179](seq/A002xxx/A002179/) | Numerators of Cotesian numbers (not in lowest terms): A002176\*C(n,2). | **217** | 21 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002193](seq/A002xxx/A002193/) | Decimal expansion of square root of 2. | **53** | 16000 |
 | [A002194](seq/A002xxx/A002194/) | Decimal expansion of sqrt(3). | **53** | 16000 |
