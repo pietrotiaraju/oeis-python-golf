@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of square root of Pi.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
