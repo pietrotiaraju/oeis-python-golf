@@ -1,0 +1,6 @@
+{
+  "name": "Sprague-Grundy value of the sieve game on {2, ..., n}: a move crosses out a number not yet crossed out together with all its multiples, and the player who makes the last move wins.",
+  "offset": 1,
+  "min_terms": 30,
+  "timeout": 60
+}
