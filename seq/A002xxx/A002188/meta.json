@@ -1,0 +1,6 @@
+{
+  "name": "Sprague-Grundy value for Grundy's game when starting with n tokens.",
+  "offset": 0,
+  "min_terms": 20001,
+  "timeout": 60
+}
