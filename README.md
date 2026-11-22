@@ -2149,6 +2149,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
 | [A002180](seq/A002xxx/A002180/) | Values taken by the half-totient function phi(m)/2. | **114** | 400 |
 | [A002181](seq/A002xxx/A002181/) | Least number k such that phi(k) = m, where m runs through the values… | **120** | 400 |
+| [A002182](seq/A002xxx/A002182/) | Highly composite numbers: numbers n where d(n), the number of… | **194** | 300 |
+| [A002183](seq/A002xxx/A002183/) | Number of divisors of n-th highly composite number. | **194** | 300 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002191](seq/A002xxx/A002191/) | Possible values for sum of divisors of n. | **75** | 4500 |
 | [A002192](seq/A002xxx/A002192/) | Least integer with A000203(a(n)) = A002191(n), where A002191 = range… | **84** | 4000 |
