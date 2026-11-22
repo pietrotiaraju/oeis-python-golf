@@ -2142,6 +2142,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
 | [A002176](seq/A002xxx/A002176/) | a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 <= k <= n}. | **207** | 100 |
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
+| [A002178](seq/A002xxx/A002178/) | Numerators of Cotesian numbers (not in lowest terms): A002176\*C(n,1). | **213** | 21 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002193](seq/A002xxx/A002193/) | Decimal expansion of square root of 2. | **53** | 16000 |
 | [A002194](seq/A002xxx/A002194/) | Decimal expansion of sqrt(3). | **53** | 16000 |
