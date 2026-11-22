@@ -1,0 +1,6 @@
+{
+  "name": "Least integer with A000203(a(n)) = A002191(n), where A002191 = range of the sum-of-divisors function A000203.",
+  "offset": 1,
+  "min_terms": 4000,
+  "timeout": 60
+}
