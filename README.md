@@ -2255,6 +2255,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **128** | 450 | 144 | 3500 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **44** | 5000 | 56 | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **44** | 5000 | 56 | 10000 |
+| [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **110** | 2000 | 125 | 10000 |
 
 <!-- short:end -->
 
