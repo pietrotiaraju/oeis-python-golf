@@ -2156,6 +2156,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002186](seq/A002xxx/A002186/) | Sprague-Grundy values for the game of Kayles (octal games .77 and… | **84** | 105 |
 | [A002187](seq/A002xxx/A002187/) | Sprague-Grundy values for Dawson's Chess (octal game .137). | **79** | 1001 |
 | [A002188](seq/A002xxx/A002188/) | Sprague-Grundy value for Grundy's game when starting with n tokens. | **95** | 20001 |
+| [A002189](seq/A002xxx/A002189/) | Pseudo-squares: a(n) = the least nonsquare positive integer which is… | **128** | 18 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002191](seq/A002xxx/A002191/) | Possible values for sum of divisors of n. | **75** | 4500 |
 | [A002192](seq/A002xxx/A002192/) | Least integer with A000203(a(n)) = A002191(n), where A002191 = range… | **84** | 4000 |
