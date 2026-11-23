@@ -2175,6 +2175,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
 | [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
 | [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
+| [A002200](seq/A002xxx/A002200/) | Primes of the form 2^q\*3^r\*5^s + 1. | **133** | 5000 |
 | [A002201](seq/A002xxx/A002201/) | Superior highly composite numbers: integers n > 1 for which there is… | **178** | 400 |
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |

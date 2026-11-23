@@ -1,0 +1,6 @@
+{
+  "name": "Primes of the form 2^q*3^r*5^s + 1.",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}
