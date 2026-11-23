@@ -45,7 +45,7 @@ while 1:r=range(n+1);M=f*n+f;K=n*len(bin(n));B=1<<K;print(M*f//gcd(M*f,*[sum((P>
 
 - The b-file has 100 terms (n = 1 to 100), and the bar is the whole b-file
   in 60 s; it takes about 7 reference seconds. The per-k products are
-  the cost; dividing one full product by j + nB instead is faster and
+  the cost; dividing one full product by k + nB instead is faster and
   7 bytes longer.
 
 ## History

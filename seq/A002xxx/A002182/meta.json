@@ -1,0 +1,6 @@
+{
+  "name": "Highly composite numbers: numbers n where d(n), the number of divisors of n (A000005), increases to a record.",
+  "offset": 1,
+  "min_terms": 300,
+  "timeout": 20
+}
