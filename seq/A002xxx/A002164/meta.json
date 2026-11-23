@@ -1,0 +1,6 @@
+{
+  "name": "E.g.f.: high-temperature series in J/2kT for logarithm of partition function for the spin-1/2 linear (1D) Heisenberg model.",
+  "offset": 1,
+  "min_terms": 18,
+  "timeout": 60
+}
