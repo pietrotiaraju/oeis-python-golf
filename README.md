@@ -2182,6 +2182,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
 | [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
+| [A002246](seq/A002xxx/A002246/) | a(1) = 3; for n > 1, a(n) = 4\*phi(n); given a rational number r =… | **76** | 8000 |
 | [A002248](seq/A002xxx/A002248/) | Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n). | **46** | 1000 |
 | [A002249](seq/A002xxx/A002249/) | a(n) = a(n-1) - 2\*a(n-2) with a(0) = 2, a(1) = 1. | **35** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
