@@ -1,0 +1,6 @@
+{
+  "name": "Superior highly composite numbers: integers n > 1 for which there is an e > 0 such that d(n)/n^e >= d(k)/k^e for all k > 1, where the function d(n) counts the divisors of n (A000005).",
+  "offset": 1,
+  "min_terms": 400,
+  "timeout": 60
+}
