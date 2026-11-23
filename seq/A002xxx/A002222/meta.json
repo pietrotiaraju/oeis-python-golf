@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the number of partitions of 5n that can be obtained by adding together five (not necessarily distinct) partitions of n.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 20
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Smallest prime p such that first n primes (p_1=2, ..., p_n) are quintic residues mod p.",
+  "offset": 1,
+  "min_terms": 8,
+  "timeout": 120
+}
