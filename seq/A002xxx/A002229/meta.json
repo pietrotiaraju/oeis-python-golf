@@ -1,0 +1,6 @@
+{
+  "name": "Primitive roots that go with the primes in A002230.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}
