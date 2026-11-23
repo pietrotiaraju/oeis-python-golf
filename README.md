@@ -2177,6 +2177,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
 | [A002200](seq/A002xxx/A002200/) | Primes of the form 2^q\*3^r\*5^s + 1. | **133** | 5000 |
 | [A002201](seq/A002xxx/A002201/) | Superior highly composite numbers: integers n > 1 for which there is… | **178** | 400 |
+| [A002202](seq/A002xxx/A002202/) | Values taken by totient function phi(m) (A000010). | **111** | 500 |
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
 | [A002204](seq/A002xxx/A002204/) | An ill-conditioned determinant. | **75** | 41 |
 | [A002206](seq/A002xxx/A002206/) | Numerators of logarithmic numbers (also of Gregory coefficients G(n)). | **116** | 102 |
