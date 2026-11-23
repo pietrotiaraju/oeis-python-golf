@@ -1,0 +1,6 @@
+{
+  "name": "Primes with record values of the least positive primitive root.",
+  "offset": 1,
+  "min_terms": 9,
+  "timeout": 60
+}

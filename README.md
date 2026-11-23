@@ -2178,6 +2178,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002201](seq/A002xxx/A002201/) | Superior highly composite numbers: integers n > 1 for which there is… | **178** | 400 |
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
+| [A002229](seq/A002xxx/A002229/) | Primitive roots that go with the primes in A002230. | **105** | 9 |
+| [A002230](seq/A002xxx/A002230/) | Primes with record values of the least positive primitive root. | **108** | 9 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
