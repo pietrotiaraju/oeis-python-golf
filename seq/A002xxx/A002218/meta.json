@@ -1,0 +1,6 @@
+{
+  "name": "Number of unlabeled nonseparable (or 2-connected) graphs (or blocks) with n nodes.",
+  "offset": 1,
+  "min_terms": 32,
+  "timeout": 60
+}
