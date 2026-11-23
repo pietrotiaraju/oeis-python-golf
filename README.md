@@ -2142,6 +2142,10 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
 | [A002164](seq/A002xxx/A002164/) | E.g.f.: high-temperature series in J/2kT for logarithm of partition… | **350** | 18 |
+| [A002165](seq/A002xxx/A002165/) | High temperature series for spin-1/2 Heisenberg specific heat on… | **616** | 5 |
+| [A002167](seq/A002xxx/A002167/) | High temperature series for spin-1/2 Heisenberg specific heat on… | **628** | 5 |
+| [A002169](seq/A002xxx/A002169/) | High temperature series for spin-1/2 Heisenberg specific heat on… | **509** | 7 |
+| [A002170](seq/A002xxx/A002170/) | High temperature series for spin-1/2 Heisenberg susceptibility on… | **554** | 4 |
 | [A002171](seq/A002xxx/A002171/) | Glaisher's chi numbers. a(n) = chi(4\*n + 1). | **88** | 10001 |
 | [A002172](seq/A002xxx/A002172/) | Glaisher's chi numbers chi(p) for p a prime of the form 4m+1. | **92** | 1000 |
 | [A002173](seq/A002xxx/A002173/) | a(n) = Sum\_{d\|n, d == 1 mod 4} d^2 - Sum\_{d\|n, d == 3 mod 4} d^2. | **70** | 10000 |
@@ -2149,6 +2153,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002175](seq/A002xxx/A002175/) | Excess of number of divisors of 12n+1 of form 4k+1 over those of form… | **62** | 6000 |
 | [A002176](seq/A002xxx/A002176/) | a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 <= k <= n}. | **207** | 100 |
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
+| [A002178](seq/A002xxx/A002178/) | Numerators of Cotesian numbers (not in lowest terms): A002176\*C(n,1). | **213** | 21 |
+| [A002179](seq/A002xxx/A002179/) | Numerators of Cotesian numbers (not in lowest terms): A002176\*C(n,2). | **217** | 21 |
 | [A002180](seq/A002xxx/A002180/) | Values taken by the half-totient function phi(m)/2. | **114** | 400 |
 | [A002181](seq/A002xxx/A002181/) | Least number k such that phi(k) = m, where m runs through the values… | **120** | 400 |
 | [A002182](seq/A002xxx/A002182/) | Highly composite numbers: numbers n where d(n), the number of… | **194** | 300 |
