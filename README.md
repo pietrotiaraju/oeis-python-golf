@@ -2184,6 +2184,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002207](seq/A002xxx/A002207/) | Denominators of logarithmic numbers (also of Gregory coefficients… | **108** | 102 |
 | [A002208](seq/A002xxx/A002208/) | Numerators of coefficients for numerical integration. | **103** | 101 |
 | [A002209](seq/A002xxx/A002209/) | Denominators of coefficients for numerical integration. | **105** | 101 |
+| [A002210](seq/A002xxx/A002210/) | Decimal expansion of Khinchin's constant. | **360** | 500 |
 | [A002212](seq/A002xxx/A002212/) | Number of restricted hexagonal polyominoes with n cells. | **61** | 201 |
 | [A002213](seq/A002xxx/A002213/) | Number of tree-like polyhexes rooted at a hexagon and containing n… | **126** | 200 |
 | [A002214](seq/A002xxx/A002214/) | Number of unrooted hexagonal polyominoes with n cells and no… | **120** | 200 |
