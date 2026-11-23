@@ -2192,6 +2192,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002215](seq/A002xxx/A002215/) | Number of polyhexes with n hexagons, having reflectional symmetry… | **73** | 200 |
 | [A002216](seq/A002xxx/A002216/) | Harary-Read numbers: restricted hexagonal polyominoes… | **130** | 201 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
+| [A002218](seq/A002xxx/A002218/) | Number of unlabeled nonseparable (or 2-connected) graphs (or blocks)… | **521** | 32 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
