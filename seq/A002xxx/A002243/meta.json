@@ -1,0 +1,6 @@
+{
+  "name": "Numbers that are not the sum of 3 distinct triangular numbers.",
+  "offset": 1,
+  "min_terms": 12,
+  "timeout": 10
+}
