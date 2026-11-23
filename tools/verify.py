@@ -109,7 +109,7 @@ def bucket(aid):
 def bfile(aid):
     path = BFILES / bucket(aid) / f"b{aid[1:]}.txt"
     terms = []
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding="utf-8").splitlines():
         if line.strip() and not line.startswith("#"):
             terms.append(line.split()[1])
     return terms
@@ -330,7 +330,7 @@ def check_program(prog, ref, cfg, page, execute, to_bar=False):
         nbytes = size(prog)
     except ValueError as e:
         return None, [f"{prog.name}: {e}"]
-    src = prog.read_text().removesuffix("\n")
+    src = prog.read_text(encoding="utf-8").removesuffix("\n")
     heading = f"### {category(prog)} — {nbytes} bytes"
     if heading not in page:
         problems.append(f"{prog.name}: page has no heading '{heading}'")
