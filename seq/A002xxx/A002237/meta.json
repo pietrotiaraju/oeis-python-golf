@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 15*2^k - 1 is prime.",
+  "offset": 1,
+  "min_terms": 26,
+  "timeout": 120
+}
