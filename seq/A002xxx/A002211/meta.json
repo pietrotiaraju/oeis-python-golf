@@ -1,0 +1,6 @@
+{
+  "name": "Continued fraction for Khintchine's constant.",
+  "offset": 0,
+  "min_terms": 500,
+  "timeout": 60
+}
