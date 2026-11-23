@@ -1,0 +1,6 @@
+{
+  "name": "Denominators of logarithmic numbers (also of Gregory coefficients G(n)).",
+  "offset": -1,
+  "min_terms": 102,
+  "timeout": 60
+}
