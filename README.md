@@ -2175,6 +2175,12 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
 | [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
 | [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
+| [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
+| [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
+| [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
+| [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
+| [A002248](seq/A002xxx/A002248/) | Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n). | **46** | 1000 |
+| [A002249](seq/A002xxx/A002249/) | a(n) = a(n-1) - 2\*a(n-2) with a(0) = 2, a(1) = 1. | **35** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
