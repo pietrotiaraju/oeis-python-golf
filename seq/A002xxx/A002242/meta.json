@@ -1,0 +1,6 @@
+{
+  "name": "Numbers k such that 45*2^k - 1 is prime.",
+  "offset": 1,
+  "min_terms": 40,
+  "timeout": 120
+}
