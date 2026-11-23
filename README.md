@@ -2178,6 +2178,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002200](seq/A002xxx/A002200/) | Primes of the form 2^q\*3^r\*5^s + 1. | **133** | 5000 |
 | [A002201](seq/A002xxx/A002201/) | Superior highly composite numbers: integers n > 1 for which there is… | **178** | 400 |
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
+| [A002204](seq/A002xxx/A002204/) | An ill-conditioned determinant. | **75** | 41 |
+| [A002206](seq/A002xxx/A002206/) | Numerators of logarithmic numbers (also of Gregory coefficients G(n)). | **116** | 102 |
+| [A002207](seq/A002xxx/A002207/) | Denominators of logarithmic numbers (also of Gregory coefficients… | **108** | 102 |
+| [A002208](seq/A002xxx/A002208/) | Numerators of coefficients for numerical integration. | **103** | 101 |
+| [A002209](seq/A002xxx/A002209/) | Denominators of coefficients for numerical integration. | **105** | 101 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |

@@ -1,0 +1,6 @@
+{
+  "name": "An ill-conditioned determinant.",
+  "offset": 1,
+  "min_terms": 41,
+  "timeout": 60
+}
