@@ -1,0 +1,6 @@
+{
+  "name": "a(n) is the number of partitions of 2n that can be obtained by adding together two (not necessarily distinct) partitions of n.",
+  "offset": 1,
+  "min_terms": 26,
+  "timeout": 30
+}

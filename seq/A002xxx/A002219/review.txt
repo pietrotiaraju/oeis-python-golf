@@ -1,0 +1,3 @@
+# Programs read and approved: the first 12 hex digits of the SHA-256 of the program, then why
+# it computes the sequence for every n. This file changes only through pull requests.
+18463ee1ebec Counts distinct multiset unions of two partitions of n (the entry's example: adding partitions = joining their parts, giving partitions of 2n with parts <= n). Each partition is coded as the sum of B^part with B = 3n > 2n, so codes of unions are sums of codes with no carries and distinct unions have distinct codes; p(n,m) provably yields exactly the partitions of n (induction on n, page). No bound or conjecture: correct for every n.
