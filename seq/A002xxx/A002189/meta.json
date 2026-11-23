@@ -1,0 +1,6 @@
+{
+  "name": "Pseudo-squares: a(n) = the least nonsquare positive integer which is 1 mod 8 and is a (nonzero) quadratic residue modulo the first n odd primes.",
+  "offset": 0,
+  "min_terms": 18,
+  "timeout": 60
+}
