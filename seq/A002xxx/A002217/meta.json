@@ -1,0 +1,6 @@
+{
+  "name": "Starting with n, repeatedly calculate the sum of prime factors (with repetition) of the previous term, until reaching 0 or a fixed point: a(n) is the number of terms in the resulting sequence.",
+  "offset": 1,
+  "min_terms": 10000,
+  "timeout": 60
+}
