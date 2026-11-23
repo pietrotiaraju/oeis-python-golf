@@ -2175,6 +2175,8 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
 | [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
 | [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
+| [A002223](seq/A002xxx/A002223/) | Smallest prime p of form p = 8k-1 such that first n primes (p\_1=2,… | **149** | 22 |
+| [A002224](seq/A002xxx/A002224/) | Smallest prime p of form p = 8k+1 such that first n primes (p\_1=2,… | **149** | 19 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
