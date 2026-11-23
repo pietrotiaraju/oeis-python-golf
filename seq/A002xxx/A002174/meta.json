@@ -1,0 +1,6 @@
+{
+  "name": "Values taken by reduced totient function psi(n).",
+  "offset": 1,
+  "min_terms": 5000,
+  "timeout": 60
+}

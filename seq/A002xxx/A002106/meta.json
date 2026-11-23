@@ -1,0 +1,6 @@
+{
+  "name": "Number of transitive permutation groups of degree n.",
+  "offset": 1,
+  "min_terms": 7,
+  "timeout": 60
+}

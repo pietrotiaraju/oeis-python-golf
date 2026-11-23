@@ -2094,6 +2094,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002103](seq/A002xxx/A002103/) | Coefficients of expansion of Jacobi nome q in certain powers of… | **149** | 150 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
+| [A002106](seq/A002xxx/A002106/) | Number of transitive permutation groups of degree n. | **642** | 7 |
 | [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
 | [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
 | [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
@@ -2140,16 +2141,32 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **125** | 10000 |
 | [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
+| [A002171](seq/A002xxx/A002171/) | Glaisher's chi numbers. a(n) = chi(4\*n + 1). | **88** | 10001 |
+| [A002172](seq/A002xxx/A002172/) | Glaisher's chi numbers chi(p) for p a prime of the form 4m+1. | **92** | 1000 |
+| [A002173](seq/A002xxx/A002173/) | a(n) = Sum\_{d\|n, d == 1 mod 4} d^2 - Sum\_{d\|n, d == 3 mod 4} d^2. | **70** | 10000 |
+| [A002174](seq/A002xxx/A002174/) | Values taken by reduced totient function psi(n). | **120** | 5000 |
+| [A002175](seq/A002xxx/A002175/) | Excess of number of divisors of 12n+1 of form 4k+1 over those of form… | **62** | 6000 |
 | [A002176](seq/A002xxx/A002176/) | a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 <= k <= n}. | **207** | 100 |
 | [A002177](seq/A002xxx/A002177/) | Numerators of Cotesian numbers (not in lowest terms):… | **212** | 100 |
-| [A002178](seq/A002xxx/A002178/) | Numerators of Cotesian numbers (not in lowest terms): A002176\*C(n,1). | **213** | 21 |
+| [A002180](seq/A002xxx/A002180/) | Values taken by the half-totient function phi(m)/2. | **114** | 400 |
+| [A002181](seq/A002xxx/A002181/) | Least number k such that phi(k) = m, where m runs through the values… | **120** | 400 |
+| [A002182](seq/A002xxx/A002182/) | Highly composite numbers: numbers n where d(n), the number of… | **194** | 300 |
+| [A002183](seq/A002xxx/A002183/) | Number of divisors of n-th highly composite number. | **194** | 300 |
+| [A002184](seq/A002xxx/A002184/) | a(n) = least primitive factor of 2^(2n+1) - 1. | **109** | 35 |
+| [A002185](seq/A002xxx/A002185/) | Smallest primitive factor of 2^(2n+1) + 1. | **111** | 31 |
+| [A002186](seq/A002xxx/A002186/) | Sprague-Grundy values for the game of Kayles (octal games .77 and… | **84** | 105 |
+| [A002187](seq/A002xxx/A002187/) | Sprague-Grundy values for Dawson's Chess (octal game .137). | **79** | 1001 |
+| [A002188](seq/A002xxx/A002188/) | Sprague-Grundy value for Grundy's game when starting with n tokens. | **95** | 20001 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
+| [A002191](seq/A002xxx/A002191/) | Possible values for sum of divisors of n. | **75** | 4500 |
+| [A002192](seq/A002xxx/A002192/) | Least integer with A000203(a(n)) = A002191(n), where A002191 = range… | **84** | 4000 |
 | [A002193](seq/A002xxx/A002193/) | Decimal expansion of square root of 2. | **53** | 16000 |
 | [A002194](seq/A002xxx/A002194/) | Decimal expansion of sqrt(3). | **53** | 16000 |
 | [A002195](seq/A002xxx/A002195/) | Numerators of coefficients for numerical integration. | **124** | 17 |
 | [A002196](seq/A002xxx/A002196/) | Denominators of coefficients for numerical integration. | **126** | 13 |
 | [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
 | [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
+| [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |
 | [A034851](seq/A034xxx/A034851/) | Rows of Losanitsch's triangle T(n, k), n >= 0, 0 <= k <= n. | **92** | 5050 |
 | [A035513](seq/A035xxx/A035513/) | Wythoff array read by falling antidiagonals. | **89** | 5151 |
@@ -2250,6 +2267,7 @@ person before it lands ([rules](CONTRIBUTING.md#short-bar-records)).
 | [A002139](seq/A002xxx/A002139/) | Shuffling 2n cards. | **128** | 450 | 144 | 3500 |
 | [A002144](seq/A002xxx/A002144/) | Pythagorean primes: primes of the form 4\*k + 1. | **44** | 5000 | 56 | 10000 |
 | [A002145](seq/A002xxx/A002145/) | Primes of the form 4\*k + 3. | **44** | 5000 | 56 | 10000 |
+| [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **110** | 2000 | 125 | 10000 |
 
 <!-- short:end -->
 
