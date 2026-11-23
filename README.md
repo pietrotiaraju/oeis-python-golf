@@ -2195,6 +2195,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002218](seq/A002xxx/A002218/) | Number of unlabeled nonseparable (or 2-connected) graphs (or blocks)… | **521** | 32 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
+| [A002234](seq/A002xxx/A002234/) | Numbers k such that the Woodall number k\*2^k - 1 is prime. | **132** | 15 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
 | [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
 | [A002246](seq/A002xxx/A002246/) | a(1) = 3; for n > 1, a(n) = 4\*phi(n); given a rational number r =… | **76** | 8000 |
