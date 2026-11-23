@@ -2094,6 +2094,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002103](seq/A002xxx/A002103/) | Coefficients of expansion of Jacobi nome q in certain powers of… | **149** | 150 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
+| [A002106](seq/A002xxx/A002106/) | Number of transitive permutation groups of degree n. | **642** | 7 |
 | [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
 | [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
 | [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
@@ -2140,7 +2141,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002161](seq/A002xxx/A002161/) | Decimal expansion of square root of Pi. | **125** | 10000 |
 | [A002162](seq/A002xxx/A002162/) | Decimal expansion of the natural logarithm of 2. | **84** | 20001 |
 | [A002163](seq/A002xxx/A002163/) | Decimal expansion of square root of 5. | **53** | 16000 |
-| [A002167](seq/A002xxx/A002167/) | High temperature series for spin-1/2 Heisenberg specific heat on… | **628** | 5 |
+| [A002164](seq/A002xxx/A002164/) | E.g.f.: high-temperature series in J/2kT for logarithm of partition… | **350** | 18 |
 | [A002171](seq/A002xxx/A002171/) | Glaisher's chi numbers. a(n) = chi(4\*n + 1). | **88** | 10001 |
 | [A002172](seq/A002xxx/A002172/) | Glaisher's chi numbers chi(p) for p a prime of the form 4m+1. | **92** | 1000 |
 | [A002173](seq/A002xxx/A002173/) | a(n) = Sum\_{d\|n, d == 1 mod 4} d^2 - Sum\_{d\|n, d == 3 mod 4} d^2. | **70** | 10000 |
@@ -2157,6 +2158,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002186](seq/A002xxx/A002186/) | Sprague-Grundy values for the game of Kayles (octal games .77 and… | **84** | 105 |
 | [A002187](seq/A002xxx/A002187/) | Sprague-Grundy values for Dawson's Chess (octal game .137). | **79** | 1001 |
 | [A002188](seq/A002xxx/A002188/) | Sprague-Grundy value for Grundy's game when starting with n tokens. | **95** | 20001 |
+| [A002189](seq/A002xxx/A002189/) | Pseudo-squares: a(n) = the least nonsquare positive integer which is… | **128** | 18 |
 | [A002190](seq/A002xxx/A002190/) | Sum\_{n>=0} a(n)\*x^n/n!^2 = -log(BesselJ(0,2\*sqrt(x))). | **105** | 101 |
 | [A002191](seq/A002xxx/A002191/) | Possible values for sum of divisors of n. | **75** | 4500 |
 | [A002192](seq/A002xxx/A002192/) | Least integer with A000203(a(n)) = A002191(n), where A002191 = range… | **84** | 4000 |
