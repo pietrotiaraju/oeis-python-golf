@@ -2194,13 +2194,31 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
 | [A002218](seq/A002xxx/A002218/) | Number of unlabeled nonseparable (or 2-connected) graphs (or blocks)… | **521** | 32 |
 | [A002219](seq/A002xxx/A002219/) | a(n) is the number of partitions of 2n that can be obtained by adding… | **134** | 26 |
+| [A002220](seq/A002xxx/A002220/) | a(n) is the number of partitions of 3n that can be obtained by adding… | **151** | 18 |
+| [A002221](seq/A002xxx/A002221/) | a(n) is the number of partitions of 4n that can be obtained by adding… | **151** | 14 |
+| [A002222](seq/A002xxx/A002222/) | a(n) is the number of partitions of 5n that can be obtained by adding… | **151** | 12 |
+| [A002223](seq/A002xxx/A002223/) | Smallest prime p of form p = 8k-1 such that first n primes (p\_1=2,… | **149** | 22 |
+| [A002224](seq/A002xxx/A002224/) | Smallest prime p of form p = 8k+1 such that first n primes (p\_1=2,… | **149** | 19 |
+| [A002225](seq/A002xxx/A002225/) | a(n) is the smallest prime p such that each of the first n primes has… | **145** | 12 |
+| [A002226](seq/A002xxx/A002226/) | Smallest prime p such that first n primes (p\_1=2, ..., p\_n) are… | **147** | 8 |
+| [A002227](seq/A002xxx/A002227/) | Smallest prime p such that first n primes (p\_1=2, ..., p\_n) are 7th… | **147** | 6 |
+| [A002228](seq/A002xxx/A002228/) | Smallest prime p such that first n primes (p\_1=2, ..., p\_n) are 11th… | **148** | 5 |
+| [A002229](seq/A002xxx/A002229/) | Primitive roots that go with the primes in A002230. | **105** | 9 |
+| [A002230](seq/A002xxx/A002230/) | Primes with record values of the least positive primitive root. | **108** | 9 |
+| [A002231](seq/A002xxx/A002231/) | Primitive roots that go with the primes in A029932. | **136** | 8 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
 | [A002234](seq/A002xxx/A002234/) | Numbers k such that the Woodall number k\*2^k - 1 is prime. | **132** | 15 |
+| [A002235](seq/A002xxx/A002235/) | Numbers m such that 3\*2^m - 1 is prime. | **128** | 27 |
+| [A002236](seq/A002xxx/A002236/) | Numbers k such that 9\*2^k - 1 is prime. | **129** | 20 |
+| [A002237](seq/A002xxx/A002237/) | Numbers k such that 15\*2^k - 1 is prime. | **132** | 26 |
+| [A002238](seq/A002xxx/A002238/) | Numbers k such that 21\*2^k - 1 is prime. | **132** | 20 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
 | [A002240](seq/A002xxx/A002240/) | Numbers k such that 33\*2^k - 1 is prime. | **128** | 29 |
 | [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
 | [A002242](seq/A002xxx/A002242/) | Numbers k such that 45\*2^k - 1 is prime. | **132** | 40 |
+| [A002243](seq/A002xxx/A002243/) | Numbers that are not the sum of 3 distinct triangular numbers. | **88** | 12 |
+| [A002244](seq/A002xxx/A002244/) | Numbers that are not the sum of 3 distinct nonzero triangular numbers. | **89** | 28 |
 | [A002246](seq/A002xxx/A002246/) | a(1) = 3; for n > 1, a(n) = 4\*phi(n); given a rational number r =… | **76** | 8000 |
 | [A002248](seq/A002xxx/A002248/) | Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n). | **46** | 1000 |
 | [A002249](seq/A002xxx/A002249/) | a(n) = a(n-1) - 2\*a(n-2) with a(0) = 2, a(1) = 1. | **35** | 501 |
