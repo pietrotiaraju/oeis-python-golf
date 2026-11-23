@@ -2178,6 +2178,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
+| [A002234](seq/A002xxx/A002234/) | Numbers k such that the Woodall number k\*2^k - 1 is prime. | **132** | 15 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
 | [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
 | [A002248](seq/A002xxx/A002248/) | Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n). | **46** | 1000 |
