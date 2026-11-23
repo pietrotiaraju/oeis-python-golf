@@ -2094,6 +2094,7 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002103](seq/A002xxx/A002103/) | Coefficients of expansion of Jacobi nome q in certain powers of… | **149** | 150 |
 | [A002104](seq/A002xxx/A002104/) | Logarithmic numbers. | **43** | 101 |
 | [A002105](seq/A002xxx/A002105/) | Reduced tangent numbers: 2^n\*(2^{2n} - 1)\*\|B\_{2n}\|/n, where B\_n =… | **79** | 100 |
+| [A002106](seq/A002xxx/A002106/) | Number of transitive permutation groups of degree n. | **642** | 7 |
 | [A002107](seq/A002xxx/A002107/) | Expansion of Product\_{k>=1} (1 - x^k)^2. | **82** | 10001 |
 | [A002108](seq/A002xxx/A002108/) | 4th powers written backwards. | **43** | 1000 |
 | [A002109](seq/A002xxx/A002109/) | Hyperfactorials: Product\_{k = 1..n} k^k. | **34** | 37 |
