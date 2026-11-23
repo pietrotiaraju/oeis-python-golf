@@ -1,0 +1,6 @@
+{
+  "name": "Numbers m such that 3*2^m - 1 is prime.",
+  "offset": 1,
+  "min_terms": 27,
+  "timeout": 30
+}
