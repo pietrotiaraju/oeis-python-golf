@@ -1,0 +1,6 @@
+{
+  "name": "Number of tree-like polyhexes rooted at a hexagon and containing n hexagons.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

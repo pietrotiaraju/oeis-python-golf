@@ -2175,15 +2175,29 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002197](seq/A002xxx/A002197/) | Numerators of coefficients for numerical integration. | **133** | 101 |
 | [A002198](seq/A002xxx/A002198/) | Denominators of coefficients for numerical integration. | **135** | 101 |
 | [A002199](seq/A002xxx/A002199/) | Least negative primitive root of n-th prime. | **98** | 500 |
+| [A002200](seq/A002xxx/A002200/) | Primes of the form 2^q\*3^r\*5^s + 1. | **133** | 5000 |
 | [A002201](seq/A002xxx/A002201/) | Superior highly composite numbers: integers n > 1 for which there is… | **178** | 400 |
+| [A002202](seq/A002xxx/A002202/) | Values taken by totient function phi(m) (A000010). | **111** | 500 |
 | [A002203](seq/A002xxx/A002203/) | Companion Pell numbers: a(n) = 2\*a(n-1) + a(n-2), a(0) = a(1) = 2. | **33** | 1001 |
+| [A002204](seq/A002xxx/A002204/) | An ill-conditioned determinant. | **75** | 41 |
+| [A002206](seq/A002xxx/A002206/) | Numerators of logarithmic numbers (also of Gregory coefficients G(n)). | **116** | 102 |
+| [A002207](seq/A002xxx/A002207/) | Denominators of logarithmic numbers (also of Gregory coefficients… | **108** | 102 |
+| [A002208](seq/A002xxx/A002208/) | Numerators of coefficients for numerical integration. | **103** | 101 |
+| [A002209](seq/A002xxx/A002209/) | Denominators of coefficients for numerical integration. | **105** | 101 |
+| [A002210](seq/A002xxx/A002210/) | Decimal expansion of Khinchin's constant. | **360** | 500 |
+| [A002211](seq/A002xxx/A002211/) | Continued fraction for Khintchine's constant. | **383** | 500 |
+| [A002212](seq/A002xxx/A002212/) | Number of restricted hexagonal polyominoes with n cells. | **61** | 201 |
+| [A002213](seq/A002xxx/A002213/) | Number of tree-like polyhexes rooted at a hexagon and containing n… | **126** | 200 |
+| [A002214](seq/A002xxx/A002214/) | Number of unrooted hexagonal polyominoes with n cells and no… | **120** | 200 |
+| [A002215](seq/A002xxx/A002215/) | Number of polyhexes with n hexagons, having reflectional symmetry… | **73** | 200 |
+| [A002216](seq/A002xxx/A002216/) | Harary-Read numbers: restricted hexagonal polyominoes… | **130** | 201 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
-| [A002223](seq/A002xxx/A002223/) | Smallest prime p of form p = 8k-1 such that first n primes (p\_1=2,… | **149** | 22 |
-| [A002224](seq/A002xxx/A002224/) | Smallest prime p of form p = 8k+1 such that first n primes (p\_1=2,… | **149** | 19 |
+| [A002218](seq/A002xxx/A002218/) | Number of unlabeled nonseparable (or 2-connected) graphs (or blocks)… | **521** | 32 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |
 | [A002239](seq/A002xxx/A002239/) | 9th powers written backwards. | **43** | 10001 |
 | [A002241](seq/A002xxx/A002241/) | 10th powers written backwards. | **44** | 10001 |
+| [A002246](seq/A002xxx/A002246/) | a(1) = 3; for n > 1, a(n) = 4\*phi(n); given a rational number r =… | **76** | 8000 |
 | [A002248](seq/A002xxx/A002248/) | Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n). | **46** | 1000 |
 | [A002249](seq/A002xxx/A002249/) | a(n) = a(n-1) - 2\*a(n-2) with a(0) = 2, a(1) = 1. | **35** | 501 |
 | [A005150](seq/A005xxx/A005150/) | Look and Say sequence: describe the previous term! (method A -… | **82** | 25 |

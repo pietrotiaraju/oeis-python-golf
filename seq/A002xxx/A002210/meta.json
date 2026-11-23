@@ -1,0 +1,6 @@
+{
+  "name": "Decimal expansion of Khinchin's constant.",
+  "offset": 1,
+  "min_terms": 500,
+  "timeout": 60
+}
