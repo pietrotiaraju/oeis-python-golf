@@ -2184,6 +2184,11 @@ record: see [Short-bar records](#short-bar-records) below the table.
 | [A002207](seq/A002xxx/A002207/) | Denominators of logarithmic numbers (also of Gregory coefficients… | **108** | 102 |
 | [A002208](seq/A002xxx/A002208/) | Numerators of coefficients for numerical integration. | **103** | 101 |
 | [A002209](seq/A002xxx/A002209/) | Denominators of coefficients for numerical integration. | **105** | 101 |
+| [A002212](seq/A002xxx/A002212/) | Number of restricted hexagonal polyominoes with n cells. | **61** | 201 |
+| [A002213](seq/A002xxx/A002213/) | Number of tree-like polyhexes rooted at a hexagon and containing n… | **126** | 200 |
+| [A002214](seq/A002xxx/A002214/) | Number of unrooted hexagonal polyominoes with n cells and no… | **120** | 200 |
+| [A002215](seq/A002xxx/A002215/) | Number of polyhexes with n hexagons, having reflectional symmetry… | **73** | 200 |
+| [A002216](seq/A002xxx/A002216/) | Harary-Read numbers: restricted hexagonal polyominoes… | **130** | 201 |
 | [A002217](seq/A002xxx/A002217/) | Starting with n, repeatedly calculate the sum of prime factors (with… | **96** | 10000 |
 | [A002232](seq/A002xxx/A002232/) | 8th powers written backwards. | **43** | 10001 |
 | [A002233](seq/A002xxx/A002233/) | a(1) = 1; for n > 1, a(n) = least positive prime primitive root of… | **130** | 600 |

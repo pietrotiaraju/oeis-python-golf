@@ -1,0 +1,6 @@
+{
+  "name": "Number of polyhexes with n hexagons, having reflectional symmetry (see Harary and Read for precise definition).",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}

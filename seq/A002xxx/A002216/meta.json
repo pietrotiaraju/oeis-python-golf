@@ -1,0 +1,6 @@
+{
+  "name": "Harary-Read numbers: restricted hexagonal polyominoes (cata-polyhexes) with n cells.",
+  "offset": 0,
+  "min_terms": 201,
+  "timeout": 60
+}

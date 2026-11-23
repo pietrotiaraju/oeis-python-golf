@@ -1,0 +1,6 @@
+{
+  "name": "Number of unrooted hexagonal polyominoes with n cells and no reflections allowed.",
+  "offset": 1,
+  "min_terms": 200,
+  "timeout": 60
+}
